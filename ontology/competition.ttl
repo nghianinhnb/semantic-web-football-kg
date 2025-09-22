@@ -1,146 +1,167 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema: <http://schema.org/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
+@prefix time:   <http://www.w3.org/2006/time#> .
+@prefix dbo:    <http://dbpedia.org/ontology/> .
 
-# Competition hierarchy using standard vocabularies
+@prefix kg:     <https://kg-football.vn/ontology#> .
+@prefix res:    <https://kg-football.vn/resource/> .
+
+############################################################
+# Competition ontology (keeps schema.org/time, adds DBpedia)
+############################################################
+
+### ===== Core classes =====
+
 kg:Competition a owl:Class ;
   rdfs:label "Competition"@en , "Giải đấu"@vi ;
-  rdfs:comment "Football competition or tournament"@en ;
-  rdfs:subClassOf schema:SportsOrganization .
+  rdfs:comment "Football competition or tournament."@en ;
+  rdfs:subClassOf schema:SportsOrganization ,
+                  dbo:SportsTournament .
 
 kg:League a owl:Class ;
   rdfs:label "League"@en , "Giải VĐQG"@vi ;
-  rdfs:comment "League competition"@en ;
+  rdfs:comment "League competition."@en ;
   rdfs:subClassOf kg:Competition ,
-                  schema:SportsLeague .
+                  schema:SportsLeague ,
+                  dbo:SoccerLeague .
 
 kg:Cup a owl:Class ;
   rdfs:label "Cup"@en , "Cúp"@vi ;
-  rdfs:comment "Cup competition"@en ;
+  rdfs:comment "Cup competition."@en ;
   rdfs:subClassOf kg:Competition ,
-                  schema:SportsEvent .
+                  schema:SportsEvent ,
+                  dbo:SportsTournament .
 
 kg:Tournament a owl:Class ;
   rdfs:label "Tournament"@en , "Giải đấu"@vi ;
-  rdfs:comment "Tournament competition"@en ;
+  rdfs:comment "Tournament-style competition."@en ;
   rdfs:subClassOf kg:Competition ,
-                  schema:SportsEvent .
+                  schema:SportsEvent ,
+                  dbo:SportsTournament .
 
-# Season
+### ===== Season =====
+
 kg:Season a owl:Class ;
   rdfs:label "Season"@en , "Mùa giải"@vi ;
-  rdfs:comment "Football season"@en ;
-  rdfs:subClassOf time:TemporalEntity .
+  rdfs:comment "Football season (a specific edition of a competition)."@en ;
+  rdfs:subClassOf time:TemporalEntity ,
+                  dbo:SoccerLeagueSeason .
 
 kg:hasSeason a owl:ObjectProperty ;
   rdfs:label "has season"@en , "có mùa giải"@vi ;
-  rdfs:comment "Competition has seasons"@en ;
+  rdfs:comment "Competition has seasons."@en ;
   rdfs:domain kg:Competition ;
-  rdfs:range kg:Season ;
-  owl:inverseOf kg:seasonOf ;
-  rdfs:subPropertyOf schema:hasPart .
+  rdfs:range  kg:Season ;
+  rdfs:subPropertyOf schema:hasPart ,
+                     dbo:season ;
+  owl:inverseOf kg:seasonOf .
 
 kg:seasonOf a owl:ObjectProperty ;
   rdfs:label "season of"@en , "mùa của"@vi ;
-  rdfs:comment "Season belongs to competition"@en ;
+  rdfs:comment "Season belongs to competition."@en ;
   rdfs:domain kg:Season ;
-  rdfs:range kg:Competition ;
-  rdfs:subPropertyOf schema:partOf .
+  rdfs:range  kg:Competition ;
+  rdfs:subPropertyOf schema:partOf ,
+                     dbo:season .
 
 kg:seasonStart a owl:DatatypeProperty ;
   rdfs:label "season start"@en , "bắt đầu mùa"@vi ;
-  rdfs:comment "Start date of the season"@en ;
+  rdfs:comment "Start date of the season."@en ;
   rdfs:domain kg:Season ;
-  rdfs:range xsd:date ;
-  rdfs:subPropertyOf time:hasBeginning .
+  rdfs:range  xsd:date ;
+  rdfs:subPropertyOf time:hasBeginning ,
+                     dbo:startDate .
 
 kg:seasonEnd a owl:DatatypeProperty ;
   rdfs:label "season end"@en , "kết thúc mùa"@vi ;
-  rdfs:comment "End date of the season"@en ;
+  rdfs:comment "End date of the season."@en ;
   rdfs:domain kg:Season ;
-  rdfs:range xsd:date ;
-  rdfs:subPropertyOf time:hasEnd .
+  rdfs:range  xsd:date ;
+  rdfs:subPropertyOf time:hasEnd ,
+                     dbo:endDate .
 
-# Participation
+### ===== Participation / membership =====
+
 kg:participatesIn a owl:ObjectProperty ;
   rdfs:label "participates in"@en , "tham dự"@vi ;
-  rdfs:comment "Team participates in a season"@en ;
+  rdfs:comment "Team participates in a season."@en ;
   rdfs:domain kg:Team ;
-  rdfs:range kg:Season ;
-  rdfs:subPropertyOf schema:memberOf .
+  rdfs:range  kg:Season ;
+  rdfs:subPropertyOf schema:memberOf ,
+                     dbo:team .
 
-# Competition properties
+### ===== Competition attributes =====
+
 kg:tier a owl:DatatypeProperty ;
   rdfs:label "tier"@en , "hạng"@vi ;
-  rdfs:comment "Level or tier of the competition"@en ;
+  rdfs:comment "Level or tier of the competition (1 = top division)."@en ;
   rdfs:domain kg:Competition ;
-  rdfs:range xsd:positiveInteger .
+  rdfs:range  xsd:positiveInteger .
 
 kg:organizes a owl:ObjectProperty ;
   rdfs:label "organizes"@en , "tổ chức"@vi ;
-  rdfs:comment "Organization organizes a competition"@en ;
+  rdfs:comment "Organization organizes a competition."@en ;
   rdfs:domain kg:Organization ;
-  rdfs:range kg:Competition ;
+  rdfs:range  kg:Competition ;
+  rdfs:subPropertyOf dbo:organiser ;
   owl:inverseOf kg:organizedBy .
 
 kg:organizedBy a owl:ObjectProperty ;
   rdfs:label "organized by"@en , "được tổ chức bởi"@vi ;
-  rdfs:comment "Competition is organized by organization"@en ;
+  rdfs:comment "Competition is organized by an organization."@en ;
   rdfs:domain kg:Competition ;
-  rdfs:range kg:Organization .
+  rdfs:range  kg:Organization ;
+  rdfs:subPropertyOf dbo:organiser .
 
 kg:heldIn a owl:ObjectProperty ;
   rdfs:label "held in"@en , "tổ chức tại"@vi ;
-  rdfs:comment "Competition is held in a country"@en ;
+  rdfs:comment "Competition is held in a country."@en ;
   rdfs:domain kg:Competition ;
-  rdfs:range kg:Country .
+  rdfs:range  kg:Country ;
+  rdfs:subPropertyOf dbo:country .
 
 kg:participantCount a owl:DatatypeProperty ;
   rdfs:label "participant count"@en , "số đội tham gia"@vi ;
-  rdfs:comment "Number of participating teams"@en ;
+  rdfs:comment "Number of participating teams."@en ;
   rdfs:domain kg:Competition ;
-  rdfs:range xsd:positiveInteger .
-
-kg:forAgeGroup a owl:ObjectProperty ;
-  rdfs:label "for age group"@en , "dành cho độ tuổi"@vi ;
-  rdfs:comment "Competition is for specific age group"@en ;
-  rdfs:domain kg:Competition ;
-  rdfs:range kg:AgeGroup .
-
-kg:AgeGroup a owl:Class ;
-  rdfs:label "Age Group"@en , "Nhóm tuổi"@vi ;
-  rdfs:comment "Age group for competition"@en ;
-  rdfs:subClassOf schema:Enumeration .
-
-kg:Organization a owl:Class ;
-  rdfs:label "Organization"@en , "Tổ chức"@vi ;
-  rdfs:comment "Sports organization"@en ;
-  rdfs:subClassOf schema:Organization .
+  rdfs:range  xsd:positiveInteger ;
+  rdfs:subPropertyOf dbo:numberOfTeams .
 
 kg:competitionName a owl:DatatypeProperty ;
   rdfs:label "competition name"@en , "tên giải đấu"@vi ;
-  rdfs:comment "Official name of the competition"@en ;
+  rdfs:comment "Official name of the competition."@en ;
   rdfs:domain kg:Competition ;
-  rdfs:range xsd:string ;
-  rdfs:subPropertyOf schema:name .
+  rdfs:range  xsd:string ;
+  rdfs:subPropertyOf schema:name ,
+                     rdfs:label .
 
-kg:competitionType a owl:ObjectProperty ;
-  rdfs:label "competition type"@en , "loại giải đấu"@vi ;
-  rdfs:comment "Type of competition (league, cup, etc.)"@en ;
+### ===== Age groups & types (internal enumeration) =====
+
+kg:AgeGroup a owl:Class ;
+  rdfs:label "Age Group"@en , "Nhóm tuổi"@vi ;
+  rdfs:comment "Age group for competitions (e.g., U17, U19, U23)."@en ;
+  rdfs:subClassOf schema:Enumeration .
+
+kg:forAgeGroup a owl:ObjectProperty ;
+  rdfs:label "for age group"@en , "dành cho độ tuổi"@vi ;
+  rdfs:comment "Competition is for a specific age group."@en ;
   rdfs:domain kg:Competition ;
-  rdfs:range kg:CompetitionType .
+  rdfs:range  kg:AgeGroup .
 
 kg:CompetitionType a owl:Class ;
   rdfs:label "Competition Type"@en , "Loại giải đấu"@vi ;
-  rdfs:comment "Type of football competition"@en ;
+  rdfs:comment "Type of football competition (league, cup, international…)."@en ;
   rdfs:subClassOf schema:Enumeration .
 
-# Domestic vs International
+kg:competitionType a owl:ObjectProperty ;
+  rdfs:label "competition type"@en , "loại giải đấu"@vi ;
+  rdfs:comment "Type of competition (league, cup, etc.)."@en ;
+  rdfs:domain kg:Competition ;
+  rdfs:range  kg:CompetitionType .
+
 kg:DomesticCompetition a owl:Class ;
   rdfs:label "Domestic Competition"@en , "Giải đấu trong nước"@vi ;
   rdfs:subClassOf kg:CompetitionType .
@@ -148,3 +169,10 @@ kg:DomesticCompetition a owl:Class ;
 kg:InternationalCompetition a owl:Class ;
   rdfs:label "International Competition"@en , "Giải đấu quốc tế"@vi ;
   rdfs:subClassOf kg:CompetitionType .
+
+### ===== Light alignment stubs (no duplicate class declarations) =====
+# tại đây chỉ thêm liên kết align sang DBpedia (an toàn khi load cùng nhau).
+
+kg:Organization rdfs:subClassOf dbo:Organisation .
+kg:Team         rdfs:subClassOf dbo:SportsTeam .
+kg:Country      rdfs:subClassOf dbo:Country .
