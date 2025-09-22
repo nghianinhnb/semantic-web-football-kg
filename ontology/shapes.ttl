@@ -1,397 +1,442 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix schema: <http://schema.org/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix schema:<http://schema.org/> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix kg:    <https://kg-football.vn/ontology#> .
+@prefix res:   <https://kg-football.vn/resource/> .
 
-# Player Shape
+########## COMMON ##########
+
+
+kg:LabelShape a sh:PropertyShape ;
+  sh:path rdfs:label ;
+  sh:minCount 1 ;
+  sh:message "Thiếu rdfs:label (ít nhất 1 ngôn ngữ)."@vi .
+
+#Ít nhất phải có một trong các tên: rdfs:label | foaf:name | schema:name
+kg:AnyNameShape a sh:NodeShape ;
+  sh:or (
+    [ sh:property [ sh:path rdfs:label ; sh:minCount 1 ] ]
+    [ sh:property [ sh:path foaf:name  ; sh:minCount 1 ] ]
+    [ sh:property [ sh:path schema:name; sh:minCount 1 ] ]
+  ) .
+
+########## PLAYER ##########
+
 kg:PlayerShape a sh:NodeShape ;
   sh:targetClass kg:Player ;
-  sh:property [
-    sh:path foaf:name ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:datatype xsd:string ;
-    sh:message "Player must have exactly one name"@en ;
-  ] ;
+
+
+  sh:property kg:LabelShape ;
+  sh:node kg:AnyNameShape ;
+
+  # Birth date
   sh:property [
     sh:path kg:birthDate ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:datatype xsd:date ;
-    sh:message "Player must have exactly one birth date"@en ;
+    sh:message "Player must have exactly one birth date (xsd:date)."@en
   ] ;
+
+  # Quốc tịch: >=1, là Country
   sh:property [
     sh:path kg:nationality ;
     sh:minCount 1 ;
     sh:class kg:Country ;
-    sh:message "Player must have at least one nationality"@en ;
+    sh:message "Player must have at least one nationality (kg:Country)."@en
   ] ;
+
+  # playsFor: >=1, là Team
   sh:property [
     sh:path kg:playsFor ;
     sh:minCount 1 ;
     sh:class kg:Team ;
-    sh:message "Player must play for at least one team"@en ;
+    sh:message "Player must play for at least one Team."@en
   ] ;
+
+  # primaryPosition: >=0, là Position
   sh:property [
     sh:path kg:primaryPosition ;
     sh:class kg:Position ;
-    sh:message "Player must have a primary position"@en ;
+    sh:minCount 0 ;
+    sh:message "Player should have a primary Position."@en
   ] ;
+
+  # shirtNumber: 1..99 (optional)
   sh:property [
     sh:path kg:shirtNumber ;
     sh:datatype xsd:positiveInteger ;
-    sh:minInclusive 1 ;
-    sh:maxInclusive 99 ;
-    sh:message "Shirt number must be between 1 and 99"@en ;
+    sh:minInclusive 1 ; sh:maxInclusive 99 ;
+    sh:minCount 0 ;
+    sh:message "Shirt number must be between 1 and 99."@en
   ] ;
+
+  # height: 1.0..2.5 m (optional)
   sh:property [
     sh:path kg:height ;
     sh:datatype xsd:decimal ;
-    sh:minInclusive 1.0 ;
-    sh:maxInclusive 2.5 ;
-    sh:message "Height must be between 1.0 and 2.5 meters"@en ;
+    sh:minInclusive 1.0 ; sh:maxInclusive 2.5 ;
+    sh:minCount 0 ;
+    sh:message "Height must be between 1.0 and 2.5 meters."@en
   ] ;
+
+  # weight: 40..150 kg (optional)
   sh:property [
     sh:path kg:weight ;
     sh:datatype xsd:decimal ;
-    sh:minInclusive 40.0 ;
-    sh:maxInclusive 150.0 ;
-    sh:message "Weight must be between 40 and 150 kg"@en ;
+    sh:minInclusive 40.0 ; sh:maxInclusive 150.0 ;
+    sh:minCount 0 ;
+    sh:message "Weight must be between 40 and 150 kg."@en
   ] ;
+
+  # Birth date phải ở quá khứ 
   sh:sparql [
     a sh:SPARQLConstraint ;
-    sh:message "Player birth date must be in the past"@en ;
+    sh:message "Player birth date must be in the past."@en ;
     sh:select """
       SELECT $this WHERE {
         $this kg:birthDate ?birthDate .
-        FILTER(?birthDate > NOW())
+        FILTER(?birthDate > xsd:date(NOW()))
       }
-    """ ;
+    """
   ] .
 
-# Team Shape
+########## TEAM / CLUB ##########
+
 kg:TeamShape a sh:NodeShape ;
   sh:targetClass kg:Team ;
-  sh:property [
-    sh:path schema:name ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:datatype xsd:string ;
-    sh:message "Team must have exactly one name"@en ;
-  ] ;
+  sh:property kg:LabelShape ;
+  sh:node kg:AnyNameShape ;
+  # hasCoach: optional, coach là một Person (dùng foaf:Person cho an toàn)
   sh:property [
     sh:path kg:hasCoach ;
-    sh:class kg:Coach ;
-    sh:message "Coach must be a valid Coach instance"@en ;
+    sh:class foaf:Person ;
+    sh:minCount 0 ;
+    sh:message "Coach must be a valid Person."@en
   ] .
 
-# Club Shape
 kg:ClubShape a sh:NodeShape ;
   sh:targetClass kg:Club ;
-  sh:targetSubjectsOf kg:Club ;
+  sh:property kg:LabelShape ;
+  sh:node kg:AnyNameShape ;
   sh:property [
     sh:path kg:foundedDate ;
     sh:datatype xsd:date ;
-    sh:message "Founded date must be a valid date"@en ;
+    sh:minCount 0 ;
+    sh:message "Founded date must be a valid xsd:date."@en
   ] ;
   sh:property [
     sh:path kg:homeStadium ;
     sh:class kg:Stadium ;
-    sh:maxCount 1 ;
-    sh:message "Club can have at most one home stadium"@en ;
+    sh:maxCount 1 ; sh:minCount 0 ;
+    sh:message "Club can have at most one home stadium."@en
   ] ;
   sh:sparql [
     a sh:SPARQLConstraint ;
-    sh:message "Club founded date must be in the past"@en ;
+    sh:message "Club founded date must be in the past."@en ;
     sh:select """
       SELECT $this WHERE {
         $this kg:foundedDate ?foundedDate .
-        FILTER(?foundedDate > NOW())
+        FILTER(?foundedDate > xsd:date(NOW()))
       }
-    """ ;
+    """
   ] .
 
-# Stadium Shape
+########## STADIUM ##########
+
 kg:StadiumShape a sh:NodeShape ;
   sh:targetClass kg:Stadium ;
-  sh:property [
-    sh:path schema:name ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:datatype xsd:string ;
-    sh:message "Stadium must have exactly one name"@en ;
-  ] ;
+  sh:property kg:LabelShape ;
+  sh:node kg:AnyNameShape ;
   sh:property [
     sh:path kg:capacity ;
     sh:datatype xsd:positiveInteger ;
-    sh:minInclusive 1000 ;
-    sh:maxInclusive 200000 ;
-    sh:message "Stadium capacity must be between 1,000 and 200,000"@en ;
+    sh:minInclusive 1000 ; sh:maxInclusive 200000 ;
+    sh:minCount 0 ;
+    sh:message "Stadium capacity must be between 1,000 and 200,000."@en
   ] ;
   sh:property [
     sh:path kg:locatedIn ;
     sh:class kg:City ;
-    sh:message "Stadium must be located in a city"@en ;
+    sh:minCount 0 ;
+    sh:message "Stadium should be located in a City."@en
   ] .
 
-# Match Shape
+########## MATCH ##########
+
 kg:MatchShape a sh:NodeShape ;
   sh:targetClass kg:Match ;
+  sh:property kg:LabelShape ;
   sh:property [
     sh:path kg:homeTeam ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:class kg:Team ;
-    sh:message "Match must have exactly one home team"@en ;
+    sh:message "Match must have exactly one home team."@en
   ] ;
   sh:property [
     sh:path kg:awayTeam ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:class kg:Team ;
-    sh:message "Match must have exactly one away team"@en ;
+    sh:message "Match must have exactly one away team."@en
   ] ;
   sh:property [
     sh:path kg:venue ;
     sh:class kg:Stadium ;
-    sh:message "Match venue must be a valid stadium"@en ;
+    sh:minCount 0 ;
+    sh:message "Match venue must be a Stadium."@en
   ] ;
   sh:property [
     sh:path kg:kickoffTime ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:datatype xsd:dateTime ;
-    sh:message "Match must have exactly one kickoff time"@en ;
+    sh:message "Match must have exactly one kickoff time (xsd:dateTime)."@en
   ] ;
   sh:property [
     sh:path kg:attendance ;
     sh:datatype xsd:nonNegativeInteger ;
-    sh:message "Attendance must be a non-negative integer"@en ;
+    sh:minCount 0 ;
+    sh:message "Attendance must be a non-negative integer."@en
   ] ;
+  # Home ≠ Away
   sh:sparql [
     a sh:SPARQLConstraint ;
-    sh:message "Home team must be different from away team"@en ;
+    sh:message "Home team must be different from away team."@en ;
     sh:select """
       SELECT $this WHERE {
-        $this kg:homeTeam ?homeTeam ;
-               kg:awayTeam ?awayTeam .
+        $this kg:homeTeam ?homeTeam ; kg:awayTeam ?awayTeam .
         FILTER(?homeTeam = ?awayTeam)
       }
-    """ ;
+    """
   ] ;
+  # Attendance ≤ capacity (nếu có)
   sh:sparql [
     a sh:SPARQLConstraint ;
-    sh:message "Attendance cannot exceed stadium capacity"@en ;
+    sh:message "Attendance cannot exceed stadium capacity."@en ;
     sh:select """
       SELECT $this WHERE {
-        $this kg:attendance ?attendance ;
-               kg:venue ?venue .
+        $this kg:attendance ?attendance ; kg:venue ?venue .
         ?venue kg:capacity ?capacity .
         FILTER(?attendance > ?capacity)
       }
-    """ ;
+    "
   ] .
 
-# Appearance Shape
+########## APPEARANCE ##########
+
 kg:AppearanceShape a sh:NodeShape ;
   sh:targetClass kg:Appearance ;
+  sh:property kg:LabelShape ;
   sh:property [
     sh:path kg:appearanceOf ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:class kg:Player ;
-    sh:message "Appearance must reference exactly one player"@en ;
+    sh:message "Appearance must reference exactly one Player."@en
   ] ;
   sh:property [
     sh:path kg:appearanceInMatch ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:class kg:Match ;
-    sh:message "Appearance must reference exactly one match"@en ;
+    sh:message "Appearance must reference exactly one Match."@en
   ] ;
   sh:property [
     sh:path kg:appearanceForTeam ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:class kg:Team ;
-    sh:message "Appearance must reference exactly one team"@en ;
+    sh:message "Appearance must reference exactly one Team."@en
   ] ;
   sh:property [
     sh:path kg:minutesPlayed ;
     sh:datatype xsd:nonNegativeInteger ;
-    sh:minInclusive 0 ;
-    sh:maxInclusive 120 ;
-    sh:message "Minutes played must be between 0 and 120"@en ;
+    sh:minInclusive 0 ; sh:maxInclusive 120 ;
+    sh:minCount 0 ;
+    sh:message "Minutes played must be between 0 and 120."@en
   ] ;
   sh:property [
     sh:path kg:isStarter ;
     sh:datatype xsd:boolean ;
-    sh:message "isStarter must be a boolean value"@en ;
+    sh:minCount 0 ;
+    sh:message "isStarter must be a boolean value."@en
   ] ;
   sh:property [
     sh:path kg:shirtNumberInMatch ;
     sh:datatype xsd:positiveInteger ;
-    sh:minInclusive 1 ;
-    sh:maxInclusive 99 ;
-    sh:message "Shirt number in match must be between 1 and 99"@en ;
+    sh:minInclusive 1 ; sh:maxInclusive 99 ;
+    sh:minCount 0 ;
+    sh:message "Shirt number in match must be between 1 and 99."@en
   ] .
 
-# Goal Event Shape
+########## GOAL EVENT ##########
+
 kg:GoalEventShape a sh:NodeShape ;
   sh:targetClass kg:GoalEvent ;
+  sh:property kg:LabelShape ;
   sh:property [
     sh:path kg:inMatch ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:class kg:Match ;
-    sh:message "Goal event must reference exactly one match"@en ;
+    sh:message "Goal event must reference exactly one Match."@en
   ] ;
   sh:property [
     sh:path kg:byPlayer ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:class kg:Player ;
-    sh:message "Goal event must reference exactly one player"@en ;
+    sh:message "Goal event must reference exactly one Player."@en
   ] ;
   sh:property [
     sh:path kg:forTeam ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:class kg:Team ;
-    sh:message "Goal event must reference exactly one team"@en ;
+    sh:message "Goal event must reference exactly one Team."@en
   ] ;
   sh:property [
     sh:path kg:minute ;
     sh:datatype xsd:nonNegativeInteger ;
-    sh:minInclusive 0 ;
-    sh:maxInclusive 120 ;
-    sh:message "Goal minute must be between 0 and 120"@en ;
+    sh:minInclusive 0 ; sh:maxInclusive 120 ;
+    sh:minCount 0 ;
+    sh:message "Goal minute must be between 0 and 120."@en
   ] ;
   sh:property [
     sh:path kg:second ;
     sh:datatype xsd:nonNegativeInteger ;
-    sh:minInclusive 0 ;
-    sh:maxInclusive 59 ;
-    sh:message "Goal second must be between 0 and 59"@en ;
+    sh:minInclusive 0 ; sh:maxInclusive 59 ;
+    sh:minCount 0 ;
+    sh:message "Goal second must be between 0 and 59."@en
   ] ;
   sh:property [
     sh:path kg:isOwnGoal ;
     sh:datatype xsd:boolean ;
-    sh:message "isOwnGoal must be a boolean value"@en ;
+    sh:minCount 0 ;
+    sh:message "isOwnGoal must be a boolean value."@en
   ] ;
   sh:property [
     sh:path kg:isPenalty ;
     sh:datatype xsd:boolean ;
-    sh:message "isPenalty must be a boolean value"@en ;
+    sh:minCount 0 ;
+    sh:message "isPenalty must be a boolean value."@en
   ] .
 
-# Transfer Shape
+########## TRANSFER ##########
+
 kg:TransferShape a sh:NodeShape ;
   sh:targetClass kg:Transfer ;
+  sh:property kg:LabelShape ;
   sh:property [
     sh:path kg:transferPlayer ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:class kg:Player ;
-    sh:message "Transfer must reference exactly one player"@en ;
+    sh:message "Transfer must reference exactly one Player."@en
   ] ;
   sh:property [
     sh:path kg:fromClub ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:class kg:Club ;
-    sh:message "Transfer must reference exactly one source club"@en ;
+    sh:message "Transfer must reference exactly one source Club."@en
   ] ;
   sh:property [
     sh:path kg:toClub ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:class kg:Club ;
-    sh:message "Transfer must reference exactly one destination club"@en ;
+    sh:message "Transfer must reference exactly one destination Club."@en
   ] ;
   sh:property [
     sh:path kg:transferDate ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
+    sh:minCount 1 ; sh:maxCount 1 ;
     sh:datatype xsd:date ;
-    sh:message "Transfer must have exactly one transfer date"@en ;
+    sh:message "Transfer must have exactly one transfer date (xsd:date)."@en
   ] ;
   sh:property [
     sh:path kg:transferFee ;
     sh:datatype xsd:decimal ;
     sh:minInclusive 0 ;
-    sh:message "Transfer fee must be non-negative"@en ;
+    sh:minCount 0 ;
+    sh:message "Transfer fee must be non-negative."@en
   ] ;
   sh:sparql [
     a sh:SPARQLConstraint ;
-    sh:message "Transfer date must be in the past"@en ;
+    sh:message "Transfer date must be in the past."@en ;
     sh:select """
       SELECT $this WHERE {
         $this kg:transferDate ?transferDate .
-        FILTER(?transferDate > NOW())
+        FILTER(?transferDate > xsd:date(NOW()))
       }
-    """ ;
+    """
   ] ;
   sh:sparql [
     a sh:SPARQLConstraint ;
-    sh:message "Source and destination clubs must be different"@en ;
+    sh:message "Source and destination clubs must be different."@en ;
     sh:select """
       SELECT $this WHERE {
-        $this kg:fromClub ?fromClub ;
-               kg:toClub ?toClub .
+        $this kg:fromClub ?fromClub ; kg:toClub ?toClub .
         FILTER(?fromClub = ?toClub)
       }
-    """ ;
+    """
   ] .
 
-# Competition Shape
+########## COMPETITION / SEASON / LEAGUE ##########
+
 kg:CompetitionShape a sh:NodeShape ;
   sh:targetClass kg:Competition ;
+  sh:property kg:LabelShape ;
+  # competitionName: đúng 1 string (nếu dùng thuộc tính này song song rdfs:label)
   sh:property [
     sh:path kg:competitionName ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
     sh:datatype xsd:string ;
-    sh:message "Competition must have exactly one name"@en ;
+    sh:minCount 1 ; sh:maxCount 1 ;
+    sh:message "Competition must have exactly one competitionName (string)."@en
   ] ;
+  # tier: 1..10 (optional)
   sh:property [
     sh:path kg:tier ;
     sh:datatype xsd:positiveInteger ;
-    sh:minInclusive 1 ;
-    sh:maxInclusive 10 ;
-    sh:message "Competition tier must be between 1 and 10"@en ;
+    sh:minInclusive 1 ; sh:maxInclusive 10 ;
+    sh:minCount 0 ;
+    sh:message "Competition tier must be between 1 and 10."@en
   ] .
 
-# Season Shape
 kg:SeasonShape a sh:NodeShape ;
   sh:targetClass kg:Season ;
+  sh:property kg:LabelShape ;
   sh:property [
     sh:path kg:seasonStart ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
     sh:datatype xsd:date ;
-    sh:message "Season must have exactly one start date"@en ;
+    sh:minCount 1 ; sh:maxCount 1 ;
+    sh:message "Season must have exactly one start date."@en
   ] ;
   sh:property [
     sh:path kg:seasonEnd ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
     sh:datatype xsd:date ;
-    sh:message "Season must have exactly one end date"@en ;
+    sh:minCount 1 ; sh:maxCount 1 ;
+    sh:message "Season must have exactly one end date."@en
   ] ;
+  # Season phải thuộc một Competition
+  sh:property [
+    sh:path kg:seasonOf ;
+    sh:class kg:Competition ;
+    sh:minCount 1 ;
+    sh:message "Season must belong to a Competition (kg:seasonOf)."@en
+  ] ;
+  # start < end
   sh:sparql [
     a sh:SPARQLConstraint ;
-    sh:message "Season start date must be before end date"@en ;
+    sh:message "Season start date must be before end date."@en ;
     sh:select """
       SELECT $this WHERE {
-        $this kg:seasonStart ?start ;
-               kg:seasonEnd ?end .
+        $this kg:seasonStart ?start ; kg:seasonEnd ?end .
         FILTER(?start >= ?end)
       }
-    """ ;
+    "
+  ] .
+
+kg:LeagueShape a sh:NodeShape ;
+  sh:targetClass kg:League ;
+  sh:property kg:LabelShape ;
+  # participantCount: optional
+  sh:property [
+    sh:path kg:participantCount ;
+    sh:datatype xsd:positiveInteger ;
+    sh:minCount 0 ;
+    sh:message "participantCount must be a positive integer."@en
   ] .
