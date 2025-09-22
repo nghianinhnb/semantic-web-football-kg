@@ -1,0 +1,9 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+
+<https://kg-football.vn/ontology/mapping/shapes>
+  a owl:Ontology ;
+  dct:title "KG-Football SHACL (no DBpedia mapping)"@en ;
+  rdfs:comment "SHACL shapes are constraint definitions; they do not map to DBpedia ontology."@en ;
+  owl:imports <https://kg-football.vn/ontology> .
