@@ -64,11 +64,6 @@ kg:Coach a owl:Class ;
   rdfs:subClassOf schema:Person ,
                   foaf:Person .
 
-kg:HeadCoach a owl:Class ;
-  rdfs:label "Head Coach"@en , "Huấn luyện viên trưởng"@vi ;
-  rdfs:comment "Head coach of a team"@en ;
-  rdfs:subClassOf kg:Coach .
-
 kg:AssistantCoach a owl:Class ;
   rdfs:label "Assistant Coach"@en , "Trợ lý huấn luyện viên"@vi ;
   rdfs:comment "Assistant coach"@en ;

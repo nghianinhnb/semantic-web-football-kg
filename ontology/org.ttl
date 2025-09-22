@@ -42,13 +42,6 @@ kg:foundedDate a owl:DatatypeProperty ;
   rdfs:range xsd:date ;
   rdfs:subPropertyOf schema:foundingDate .
 
-kg:league a owl:ObjectProperty ;
-  rdfs:label "league"@en , "giải đấu"@vi ;
-  rdfs:comment "League that the club participates in"@en ;
-  rdfs:domain kg:Club ;
-  rdfs:range kg:League ;
-  rdfs:subPropertyOf schema:memberOf .
-
 # Team management
 kg:Owner a owl:Class ;
   rdfs:label "Owner"@en , "Chủ sở hữu"@vi ;

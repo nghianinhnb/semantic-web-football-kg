@@ -5,9 +5,6 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <http://schema.org/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix cc: <http://creativecommons.org/ns#> .
 @prefix kg: <https://kg-football.vn/ontology#> .
 @prefix res: <https://kg-football.vn/resource/> .
 
@@ -43,17 +40,10 @@ kg:Club a owl:Class ;
   rdfs:subClassOf kg:Team ,
                   schema:SportsTeam .
 
-kg:NationalTeam a owl:Class ;
-  rdfs:label "National Team"@en , "Đội tuyển quốc gia"@vi ;
-  rdfs:comment "National football team"@en ;
-  rdfs:subClassOf kg:Team ,
-                  schema:SportsTeam .
-
 kg:Match a owl:Class ;
   rdfs:label "Match"@en , "Trận đấu"@vi ;
   rdfs:comment "Football match between two teams"@en ;
-  rdfs:subClassOf schema:SportsEvent ,
-                  time:TemporalEntity .
+  rdfs:subClassOf schema:SportsEvent .
 
 kg:Position a owl:Class ;
   rdfs:label "Position"@en , "Vị trí"@vi ;
@@ -66,12 +56,6 @@ kg:playsFor a owl:ObjectProperty ;
   rdfs:comment "Indicates which team a player currently plays for"@en ;
   rdfs:domain kg:Player ;
   rdfs:range kg:Team .
-
-kg:primaryPosition a owl:ObjectProperty ;
-  rdfs:label "primary position"@en , "vị trí sở trường"@vi ;
-  rdfs:comment "Primary playing position of a player"@en ;
-  rdfs:domain kg:Player ;
-  rdfs:range kg:Position .
 
 kg:birthDate a owl:DatatypeProperty ;
   rdfs:label "birth date"@en , "ngày sinh"@vi ;
@@ -111,8 +95,7 @@ kg:kickoffTime a owl:DatatypeProperty ;
   rdfs:label "kickoff time"@en , "thời gian bắt đầu"@vi ;
   rdfs:comment "Start time of the match"@en ;
   rdfs:domain kg:Match ;
-  rdfs:range xsd:dateTime ;
-  rdfs:subPropertyOf time:hasTime .
+  rdfs:range xsd:dateTime .
 
 # Position hierarchy
 kg:Goalkeeper a owl:Class ;
@@ -134,22 +117,3 @@ kg:Forward a owl:Class ;
   rdfs:label "Forward"@en , "Tiền đạo"@vi ;
   rdfs:comment "Forward position"@en ;
   rdfs:subClassOf kg:Position .
-
-# Sample individuals for demonstration
-res:player/Nguyen_Quang_Hai a kg:Player ;
-  foaf:name "Nguyễn Quang Hải"@vi ;
-  kg:birthDate "1997-04-12"^^xsd:date ;
-  kg:primaryPosition res:position/Midfielder ;
-  kg:playsFor res:team/Vietnam ;
-  kg:shirtNumber 19 .
-
-res:team/Vietnam a kg:NationalTeam ;
-  rdfs:label "Vietnam National Team"@en , "Đội tuyển Việt Nam"@vi ;
-  schema:name "Vietnam"@en .
-
-res:position/Midfielder a kg:Midfielder ;
-  rdfs:label "Midfielder"@en , "Tiền vệ"@vi .
-
-res:stadium/My_Dinh a kg:Stadium ;
-  rdfs:label "Mỹ Đình Stadium"@en , "Sân vận động Mỹ Đình"@vi ;
-  schema:name "Mỹ Đình"@vi .

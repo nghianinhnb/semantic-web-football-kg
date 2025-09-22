@@ -26,12 +26,6 @@ kg:Country a owl:Class ;
   rdfs:subClassOf kg:Place ,
                   schema:Country .
 
-kg:Region a owl:Class ;
-  rdfs:label "Region"@en , "Vùng"@vi ;
-  rdfs:comment "Geographic region"@en ;
-  rdfs:subClassOf kg:Place ,
-                  schema:AdministrativeArea .
-
 # Geographic relationships using standard vocabularies
 kg:locatedIn a owl:ObjectProperty ;
   rdfs:label "located in"@en , "thuộc"@vi ;
@@ -39,40 +33,3 @@ kg:locatedIn a owl:ObjectProperty ;
   rdfs:domain kg:Place ;
   rdfs:range kg:Place ;
   rdfs:subPropertyOf schema:containedInPlace .
-
-kg:latitude a owl:DatatypeProperty ;
-  rdfs:label "latitude"@en , "vĩ độ"@vi ;
-  rdfs:comment "Latitude coordinate"@en ;
-  rdfs:domain kg:Place ;
-  rdfs:range xsd:decimal ;
-  rdfs:subPropertyOf schema:latitude .
-
-kg:longitude a owl:DatatypeProperty ;
-  rdfs:label "longitude"@en , "kinh độ"@vi ;
-  rdfs:comment "Longitude coordinate"@en ;
-  rdfs:domain kg:Place ;
-  rdfs:range xsd:decimal ;
-  rdfs:subPropertyOf schema:longitude .
-
-# WKT geometry using GeoSPARQL
-kg:geometry a owl:ObjectProperty ;
-  rdfs:label "geometry"@en , "hình học"@vi ;
-  rdfs:comment "Geometric representation of the place"@en ;
-  rdfs:domain kg:Place ;
-  rdfs:range geo:Feature ;
-  rdfs:subPropertyOf geo:hasGeometry .
-
-kg:wkt a owl:DatatypeProperty ;
-  rdfs:label "WKT"@en , "WKT"@vi ;
-  rdfs:comment "Well-Known Text representation"@en ;
-  rdfs:domain kg:Place ;
-  rdfs:range geo:wktLiteral ;
-  rdfs:subPropertyOf geo:asWKT .
-
-# Country codes
-kg:countryCode a owl:DatatypeProperty ;
-  rdfs:label "country code"@en , "mã quốc gia"@vi ;
-  rdfs:comment "ISO country code"@en ;
-  rdfs:domain kg:Country ;
-  rdfs:range xsd:string ;
-  rdfs:subPropertyOf schema:identifier .
