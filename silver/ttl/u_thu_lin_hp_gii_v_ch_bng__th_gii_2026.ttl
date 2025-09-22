@@ -1,0 +1,184 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:competition/Đấu_thầu_Giải_vô_địch_bóng_đá_thế_giới_2026 a kg:Competition ;
+    kg:competitionName "Đấu thầu giải vô địch bóng đá thế giới 2026" ;
+    kg:heldIn res:country/Hoa_Kỳ ;
+    kg:participantCount 3 .
+
+res:country/Hoa_Kỳ a kg:Country ;
+    rdfs:label "Hoa Kỳ" .
+
+res:country/Canada a kg:Country ;
+    rdfs:label "Canada" .
+
+res:country/México a kg:Country ;
+    rdfs:label "México" .
+
+res:competition/Đấu_thầu_Giải_vô_địch_bóng_đá_thế_giới_2026 kg:organizes res:stadium/Sân_vận_động_Olympic_Montréal ;
+    kg:organizes res:stadium/Sân_vận_động_Commonwealth_Edmonton ;
+    kg:organizes res:stadium/BMO_Field ;
+    kg:organizes res:stadium/Sân_vận_động_Azteca ;
+    kg:organizes res:stadium/Sân_vận_động_BBVA_Bancomer ;
+    kg:organizes res:stadium/Sân_vận_động_Akron ;
+    kg:organizes res:stadium/Estadio_Jalisco ;
+    kg:organizes res:stadium/Estadio_Universitario ;
+    kg:organizes res:stadium/Rose_Bowl ;
+    kg:organizes res:stadium/Sân_vận_động_MetLife ;
+    kg:organizes res:stadium/FedExField ;
+    kg:organizes res:stadium/Sân_vận_động_AT&T ;
+    kg:organizes res:stadium/Sân_vận_động_Mercedes-Benz ;
+    kg:organizes res:stadium/Lincoln_Financial_Field ;
+    kg:organizes res:stadium/Sân_vận_động_Nissan ;
+    kg:organizes res:stadium/Lumen_Field ;
+    kg:organizes res:stadium/Sân_vận_động_Levi's ;
+    kg:organizes res:stadium/Sân_vận_động_Gillette ;
+    kg:organizes res:stadium/Sân_vận_động_Paul_Brown ;
+    kg:organizes res:stadium/Sân_vận_động_Hard_Rock ;
+    kg:organizes res:stadium/Sân_vận_động_Camping_World ;
+
+res:stadium/Sân_vận_động_Olympic_Montréal a kg:Stadium ;
+    kg:capacity 61004 ;
+    kg:locatedIn res:city/Montréal .
+
+res:stadium/Sân_vận_động_Commonwealth_Edmonton a kg:Stadium ;
+    kg:capacity 56302 ;
+    kg:locatedIn res:city/Edmonton .
+
+res:stadium/BMO_Field a kg:Stadium ;
+    kg:capacity 30000 ;
+    kg:locatedIn res:city/Toronto .
+
+res:stadium/Sân_vận_động_Azteca a kg:Stadium ;
+    kg:capacity 87523 ;
+    kg:locatedIn res:city/Thành_phố_México .
+
+res:stadium/Sân_vận_động_BBVA_Bancomer a kg:Stadium ;
+    kg:capacity 53500 ;
+    kg:locatedIn res:city/Monterrey .
+
+res:stadium/Sân_vận_động_Akron a kg:Stadium ;
+    kg:capacity 46232 ;
+    kg:locatedIn res:city/San_Nicolás_de_los_Garza .
+
+res:stadium/Estadio_Jalisco a kg:Stadium ;
+    kg:capacity 23145 ;
+    kg:locatedIn res:city/Guadalajara .
+
+res:stadium/Estadio_Universitario a kg:Stadium ;
+    kg:capacity 25643 ;
+    kg:locatedIn res:city/Leon .
+
+res:stadium/Rose_Bowl a kg:Stadium ;
+    kg:capacity 92000 ;
+    kg:locatedIn res:city/Pasadena .
+
+res:stadium/Sân_vận_động_MetLife a kg:Stadium ;
+    kg:capacity 82500 ;
+    kg:locatedIn res:city/New_York_New_Jersey .
+
+res:stadium/FedExField a kg:Stadium ;
+    kg:capacity 82000 ;
+    kg:locatedIn res:city/Washington_D.C. .
+
+res:stadium/Sân_vận_động_AT&T a kg:Stadium ;
+    kg:capacity 80000 ;
+    kg:locatedIn res:city/Dallas .
+
+res:stadium/Sân_vận_động_Mercedes-Benz a kg:Stadium ;
+    kg:capacity 71000 ;
+    kg:locatedIn res:city/Atlanta .
+
+res:stadium/Lincoln_Financial_Field a kg:Stadium ;
+    kg:capacity 69176 ;
+    kg:locatedIn res:city/Philadelphia .
+
+res:stadium/Sân_vận_động_Nissan a kg:Stadium ;
+    kg:capacity 69143 ;
+    kg:locatedIn res:city/Nashville .
+
+res:stadium/Lumen_Field a kg:Stadium ;
+    kg:capacity 69000 ;
+    kg:locatedIn res:city/Seattle .
+
+res:stadium/Sân_vận_động_Levi's a kg:Stadium ;
+    kg:capacity 68500 ;
+    kg:locatedIn res:city/Santa_Clara .
+
+res:stadium/Sân_vận_động_Gillette a kg:Stadium ;
+    kg:capacity 65878 ;
+    kg:locatedIn res:city/Boston .
+
+res:stadium/Sân_vận_động_Paul_Brown a kg:Stadium ;
+    kg:capacity 65515 ;
+    kg:locatedIn res:city/Cincinnati .
+
+res:stadium/Sân_vận_động_Hard_Rock a kg:Stadium ;
+    kg:capacity 64767 ;
+    kg:locatedIn res:city/Miami .
+
+res:stadium/Sân_vận_động_Camping_World a kg:Stadium ;
+    kg:capacity 60219 ;
+    kg:locatedIn res:city/Miami .
+
+res:city/Montréal a kg:City ;
+    kg:locatedIn res:country/Canada .
+
+res:city/Edmonton a kg:City ;
+    kg:locatedIn res:country/Canada .
+
+res:city/Toronto a kg:City ;
+    kg:locatedIn res:country/Canada .
+
+res:city/Thành_phố_México a kg:City ;
+    kg:locatedIn res:country/México .
+
+res:city/Monterrey a kg:City ;
+    kg:locatedIn res:country/México .
+
+res:city/Guadalajara a kg:City ;
+    kg:locatedIn res:country/México .
+
+res:city/Leon a kg:City ;
+    kg:locatedIn res:country/México .
+
+res:city/Pasadena a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+
+res:city/New_York_New_Jersey a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+
+res:city/Washington_D.C. a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+
+res:city/Dallas a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+
+res:city/Atlanta a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+
+res:city/Philadelphia a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+
+res:city/Nashville a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+
+res:city/Seattle a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+
+res:city/Santa_Clara a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+
+res:city/Boston a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+
+res:city/Cincinnati a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+
+res:city/Miami a kg:City ;
+    kg:locatedIn res:country/Hoa_Kỳ .
+```

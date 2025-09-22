@@ -1,0 +1,238 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Bahrain a kg:Team ;
+    kg:teamName "Bahrain" ;
+    kg:teamAbbreviation "BHR" ;
+    kg:hasCoach res:coach/Gustavo_Zlocewick ;
+    kg:locatedIn res:country/Bahrain .
+
+res:country/Bahrain a kg:Country ;
+    rdfs:label "Bahrain" .
+
+res:coach/Gustavo_Zlocewick a kg:Coach ;
+    kg:manages res:team/Bahrain .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship .
+
+res:season/2006-World_Beach_Soccer_Championship a kg:Season ;
+    kg:seasonOf res:competition/World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:season/2006-Asia_Beach_Soccer_Championship a kg:Season ;
+    kg:seasonOf res:competition/Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:competition/World_Beach_Soccer_Championship a kg:Competition ;
+    kg:competitionName "World Beach Soccer Championship" ;
+    kg:heldIn res:country/Bahrain .
+
+res:competition/Asia_Beach_Soccer_Championship a kg:Competition ;
+    kg:competitionName "Asia Beach Soccer Championship" ;
+    kg:heldIn res:country/Bahrain .
+
+res:match/Bahrain_4-2_Italy a kg:Match ;
+    kg:homeTeam res:team/Bahrain ;
+    kg:awayTeam res:team/Italy ;
+    kg:kickoffTime "2006-11-02"^^xsd:date ;
+    kg:inCompetition res:competition/World_Beach_Soccer_Championship .
+
+res:match/Portugal_6-2_Bahrain a kg:Match ;
+    kg:homeTeam res:team/Portugal ;
+    kg:awayTeam res:team/Bahrain ;
+    kg:kickoffTime "2006-11-09"^^xsd:date ;
+    kg:inCompetition res:competition/World_Beach_Soccer_Championship .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship .
+
+res:team/Bahrain kg:participatesIn res:season/2007-Asia_Beach_Soccer_Championship ;
+    kg:participatesIn res:season/2008-Asia_Beach_Soccer_Championship ;
+    kg:participatesIn res:season/2009-Asia_Beach_Soccer_Championship .
+
+res:season/2007-Asia_Beach_Soccer_Championship a kg:Season ;
+    kg:seasonOf res:competition/Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:season/2008-Asia_Beach_Soccer_Championship a kg:Season ;
+    kg:seasonOf res:competition/Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:season/2009-Asia_Beach_Soccer_Championship a kg:Season ;
+    kg:seasonOf res:competition/Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participatesIn res:season/2007-Asia_Beach_Soccer_Championship ;
+    kg:participatesIn res:season/2008-Asia_Beach_Soccer_Championship ;
+    kg:participatesIn res:season/2009-Asia_Beach_Soccer_Championship .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-Asia_Beach_Soccer_Championship ;
+    kg:participantCount 16 .
+
+res:team/Bahrain kg:participatesIn res:season/2006-World_Beach_Soccer_Championship ;
+    kg:participantCount 24 .
+
+res:team/Bahrain kg:part

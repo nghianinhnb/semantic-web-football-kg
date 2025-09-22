@@ -73,7 +73,7 @@ CÁC CLASS CHÍNH:
 - kg:Coach - rdfs:subClassOf schema:Person
 - kg:AssistantCoach - rdfs:subClassOf kg:Coach
 - kg:Referee - rdfs:subClassOf schema:Person
-- kg:Owner (Chủ sở hữu) - rdfs:subClassOf schema:Person
+- kg:Owner - rdfs:subClassOf schema:Person
 
 # Geographic
 - kg:Place - rdfs:subClassOf schema:Place
@@ -150,20 +150,20 @@ CÁC PROPERTY CHÍNH:
 
 QUY TẮC TRÍCH XUẤT:
 1. Tạo resource URI theo pattern:
-   - res:player/Ten_Cau_Thu (cầu thủ)
-   - res:team/Ten_Doi (đội bóng)
-   - res:club/Ten_CLB (câu lạc bộ)
-   - res:city/Ten_Thanh_Pho (thành phố)
-   - res:country/Ten_Quoc_Gia (quốc gia)
-   - res:stadium/Ten_San (sân vận động)
-   - res:position/Vi_Tri (vị trí)
-   - res:competition/Ten_Giai (giải đấu)
-   - res:season/Mua_Giai (mùa giải)
-   - res:match/Trận_Đấu (trận đấu)
+   - res:player/Ten_Cau_Thu
+   - res:team/Ten_Doi
+   - res:club/Ten_CLB
+   - res:city/Ten_Thanh_Pho
+   - res:country/Ten_Quoc_Gia
+   - res:stadium/Ten_San
+   - res:position/Vi_Tri
+   - res:competition/Ten_Giai
+   - res:season/Mua_Giai
+   - res:match/Trận_Đấu
 
 1. Sử dụng đúng class và property từ ontology trên
-2. Giá trị ngày tháng dùng format xsd:date (YYYY-MM-DD)
-3. Giá trị số dùng xsd:decimal hoặc xsd:positiveInteger hoặc xsd:nonNegativeInteger
+2. Giá trị ngày tháng dùng format xsd:date
+3. Giá trị số dùng xsd:decimal hoặc xsd:positiveInteger
 4. Giá trị chuỗi dùng xsd:string
 5. Giá trị boolean dùng xsd:boolean
 6. Chỉ dùng các Classes và Properties trong namespace kg và các thông tin nêu trên, không bịa ra thêm.
@@ -187,7 +187,7 @@ def main() -> None:
     total = len(items)
     print(f"Bắt đầu chuyển đổi {total} items sang TTL...")
 
-    for item in tqdm(items[26:], total=total-26, desc="Converting to TTL", unit="item"):
+    for item in tqdm(items[211:], total=total-211, desc="Converting to TTL", unit="item"):
         title = item.get("title", "").strip() or "Untitled"
         content = item.get("content", "").strip()
 
@@ -206,9 +206,8 @@ def main() -> None:
 
         generated_ids = model.generate(
             **model_inputs,
-            max_new_tokens=4096,
+            max_new_tokens=3000,
             use_cache=True,
-            repetition_penalty=1.1
         )
         output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist()
         ttl_content = tokenizer.decode(output_ids, skip_special_tokens=True).strip("\n")

@@ -1,0 +1,240 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/AfghanistanBeachFootballNationalTeam a kg:Team ;
+    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Afghanistan" ;
+    kg:teamAbbreviation "AFG" ;
+    kg:hasCoach res:coach/RohullahRastagar ;
+    kg:manages res:coach/RohullahRastagar ;
+    kg:locatedIn res:country/Afghanistan ;
+    kg:participatesIn res:season/2012 ;
+    kg:participatesIn res:season/2013 ;
+    kg:participatesIn res:season/2016 ;
+    kg:participatesIn res:season/2017 ;
+    kg:homeStadium res:stadium/GhaziStadium ;
+    kg:participatesIn res:competition/AsianBeachFootballChampionship ;
+    kg:participatesIn res:competition/WorldBeachFootballChampionship ;
+    kg:participatesIn res:competition/AsianBeachFootballCup .
+
+res:country/Afghanistan a kg:Country ;
+    rdfs:label "Afghanistan" .
+
+res:stadium/GhaziStadium a kg:Stadium ;
+    kg:capacity 25000 ;
+    kg:isHomeOf res:team/AfghanistanBeachFootballNationalTeam .
+
+res:coach/RohullahRastagar a kg:Coach ;
+    kg:manages res:team/AfghanistanBeachFootballNationalTeam .
+
+res:season/2012 a kg:Season ;
+    kg:seasonOf res:competition/AsianBeachFootballCup ;
+    kg:seasonOf res:competition/AsianBeachFootballChampionship .
+
+res:season/2013 a kg:Season ;
+    kg:seasonOf res:competition/AsianBeachFootballChampionship .
+
+res:season/2016 a kg:Season ;
+    kg:seasonOf res:competition/AsianBeachFootballCup ;
+    kg:seasonOf res:competition/AsianBeachFootballChampionship .
+
+res:season/2017 a kg:Season ;
+    kg:seasonOf res:competition/AsianBeachFootballChampionship .
+
+res:competition/AsianBeachFootballChampionship a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển châu Á" .
+
+res:competition/WorldBeachFootballChampionship a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+
+res:competition/AsianBeachFootballCup a kg:Competition ;
+    kg:competitionName "Đại hội thể thao bãi biển châu Á" .
+
+res:player/KaweshBaktashHaidaryAkbari a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:shirtNumber 1 .
+
+res:player/NaderNaderi a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 2 .
+
+res:player/AhmadOmarAchikzai a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 3 .
+
+res:player/HazratGulBaran a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 4 .
+
+res:player/SayedShirDarwish a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 5 .
+
+res:player/MurtazaJafari a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 6 .
+
+res:player/RaofQaderi a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 7 .
+
+res:player/SamiullahMohammadi a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 8 ;
+    kg:topScorer 15 ;
+    kg:mostCaps 13 .
+
+res:player/HamidullahGulzar a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 9 .
+
+res:player/MahmoodAzad a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 10 .
+
+res:player/ZainuddinSharifi a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 11 ;
+    kg:captain true .
+
+res:player/ShahabShahAlavi a kg:Player ;
+    kg:playsFor res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:shirtNumber 12 .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+    rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Defender ;
+    rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Forward ;
+    rdfs:subClassOf kg:Position .
+
+res:match/2012-06-16 a kg:Match ;
+    kg:kickoffTime "2012-06-16"^^xsd:date ;
+    kg:homeTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:awayTeam res:team/China ;
+    kg:venue res:stadium/GhaziStadium ;
+    kg:inCompetition res:competition/AsianBeachFootballCup ;
+    kg:inSeason res:season/2012 ;
+    kg:result "4–6"^^xsd:string .
+
+res:match/2012-06-17 a kg:Match ;
+    kg:kickoffTime "2012-06-17"^^xsd:date ;
+    kg:homeTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:awayTeam res:team/Vietnam ;
+    kg:venue res:stadium/GhaziStadium ;
+    kg:inCompetition res:competition/AsianBeachFootballCup ;
+    kg:inSeason res:season/2012 ;
+    kg:result "3–4"^^xsd:string .
+
+res:match/2012-06-18 a kg:Match ;
+    kg:kickoffTime "2012-06-18"^^xsd:date ;
+    kg:homeTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:awayTeam res:team/Palestine ;
+    kg:venue res:stadium/GhaziStadium ;
+    kg:inCompetition res:competition/AsianBeachFootballCup ;
+    kg:inSeason res:season/2012 ;
+    kg:result "0–7"^^xsd:string .
+
+res:match/2013-01-22 a kg:Match ;
+    kg:kickoffTime "2013-01-22"^^xsd:date ;
+    kg:homeTeam res:team/Qatar ;
+    kg:awayTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:venue res:stadium/Doha ;
+    kg:inCompetition res:competition/AsianBeachFootballChampionship ;
+    kg:inSeason res:season/2013 ;
+    kg:result "7–3"^^xsd:string .
+
+res:match/2013-01-23 a kg:Match ;
+    kg:kickoffTime "2013-01-23"^^xsd:date ;
+    kg:homeTeam res:team/Oman ;
+    kg:awayTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:venue res:stadium/Doha ;
+    kg:inCompetition res:competition/AsianBeachFootballChampionship ;
+    kg:inSeason res:season/2013 ;
+    kg:result "0–7"^^xsd:string .
+
+res:match/2013-01-24 a kg:Match ;
+    kg:kickoffTime "2013-01-24"^^xsd:date ;
+    kg:homeTeam res:team/Australia ;
+    kg:awayTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:venue res:stadium/Doha ;
+    kg:inCompetition res:competition/AsianBeachFootballChampionship ;
+    kg:inSeason res:season/2013 ;
+    kg:result "4–6"^^xsd:string .
+
+res:match/2016-09-25 a kg:Match ;
+    kg:kickoffTime "2016-09-25"^^xsd:date ;
+    kg:homeTeam res:team/Japan ;
+    kg:awayTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:venue res:stadium/DaNang ;
+    kg:inCompetition res:competition/AsianBeachFootballCup ;
+    kg:inSeason res:season/2016 ;
+    kg:result "0–11"^^xsd:string .
+
+res:match/2016-09-26 a kg:Match ;
+    kg:kickoffTime "2016-09-26"^^xsd:date ;
+    kg:homeTeam res:team/China ;
+    kg:awayTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:venue res:stadium/DaNang ;
+    kg:inCompetition res:competition/AsianBeachFootballCup ;
+    kg:inSeason res:season/2016 ;
+    kg:result "9–6"^^xsd:string .
+
+res:match/2016-09-29 a kg:Match ;
+    kg:kickoffTime "2016-09-29"^^xsd:date ;
+    kg:homeTeam res:team/Uzbekistan ;
+    kg:awayTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:venue res:stadium/DaNang ;
+    kg:inCompetition res:competition/AsianBeachFootballCup ;
+    kg:inSeason res:season/2016 ;
+    kg:result "9–4"^^xsd:string .
+
+res:match/2016-09-30 a kg:Match ;
+    kg:kickoffTime "2016-09-30"^^xsd:date ;
+    kg:homeTeam res:team/Oman ;
+    kg:awayTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:venue res:stadium/DaNang ;
+    kg:inCompetition res:competition/AsianBeachFootballCup ;
+    kg:inSeason res:season/2016 ;
+    kg:result "2–8"^^xsd:string .
+
+res:match/2016-10-02 a kg:Match ;
+    kg:kickoffTime "2016-10-02"^^xsd:date ;
+    kg:homeTeam res:team/Lebanon ;
+    kg:awayTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:venue res:stadium/DaNang ;
+    kg:inCompetition res:competition/AsianBeachFootballCup ;
+    kg:inSeason res:season/2016 ;
+    kg:result "5–9"^^xsd:string .
+
+res:match/2017-03-04 a kg:Match ;
+    kg:kickoffTime "2017-03-04"^^xsd:date ;
+    kg:homeTeam res:team/Malaysia ;
+    kg:awayTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:venue res:stadium/KualaTerengganu ;
+    kg:inCompetition res:competition/AsianBeachFootballChampionship ;
+    kg:inSeason res:season/2017 ;
+    kg:result "5–3"^^xsd:string .
+
+res:match/2017-03-05 a kg:Match ;
+    kg:kickoffTime "2017-03-05"^^xsd:date ;
+    kg:homeTeam res:team/China ;
+    kg:awayTeam res:team/AfghanistanBeachFootballNationalTeam ;
+    kg:venue res:stadium

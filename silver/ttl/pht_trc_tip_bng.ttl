@@ -1,0 +1,95 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:freeKick/kickType a kg:FreeKick ;
+    kg:name "Đá phạt trực tiếp" ;
+    kg:description "Đá phạt trực tiếp là một tình huống cố định xảy ra khi một cầu thủ tấn công bị hàng phòng ngự đối phương phạm lỗi nặng phía bên ngoài vòng cấm." ;
+    kg:differentiatesFrom res:freeKick/indirectKick ;
+    kg:canScoreGoal true ;
+    kg:occursWhen "Khi một cầu thủ tấn công bị hàng phòng ngự đối phương phạm lỗi, chẳng hạn như đẩy người, kéo áo..." ;
+    kg:setupRule "Điểm đặt bóng được đặt ở nơi cầu thủ bị phạm lỗi." ;
+    kg:wallDistanceRequirement "Hàng rào phải đứng cách điểm đặt bóng ít nhất là 9,15 m cho tới khi bóng sống." ;
+    kg:wallAdjustmentAllowed true ;
+    kg:goalkeeperCanRequestWallTime true ;
+    kg:penaltyIfInterfered true ;
+    kg:ballLiveImmediately true ;
+    kg:continueIfTouchOutsidePenaltyArea true ;
+    kg:continueIfTouchInsidePenaltyArea true ;
+    kg:canResultInCornerKick true ;
+    kg:canCauseOffside true ;
+    kg:executionMethod "Sút bóng bằng mu bàn chân mạnh hết mức có thể." ;
+    kg:executionMethod "Sút bóng bằng lòng trong bàn chân và đưa bóng đi liệng để đánh lừa các thủ môn và hậu vệ đối phương." ;
+    kg:executionMethod "Sút bóng mạnh và không xoáy (sút lắc lư)." ;
+    kg:executionMethod "Giả vờ vung chân thật mạnh và nhìn vào góc chết của khung thành như khi chuẩn bị sút để tăng sự cảnh giác của thủ môn về một góc." ;
+    kg:strategy "Có hai cầu thủ đứng ở điểm đặt bóng, một người giả vờ đá quả phạt để đánh lừa hàng rào, người thứ hai băng lên dứt điểm." ;
+    kg:strategy "Để một cầu thủ đứng vào hàng rào đối phương, rồi khi trọng tài thổi còi, cầu thủ đó tránh ra để tạo một khoảng trống cho đồng đội thực hiện quả đá phạt." ;
+    kg:strategy "Thực hiện cú đá phạt chậm một nhịp để đánh lừa cho hàng rào đối phương nhảy lên rồi khi đó sẽ sút bóng sệt đi dưới chân hàng rào." .
+
+res:freeKick/indirectKick a kg:FreeKick ;
+    kg:name "Đá phạt gián tiếp" ;
+    kg:differsFrom res:freeKick/kickType .
+
+res:player/ThierryHenry a kg:Player ;
+    kg:playsFor res:team/Arsenal ;
+    kg:primaryPosition kg:Forward .
+
+res:player/RogerVanPersie a kg:Player ;
+    kg:playsFor res:team/Arsenal ;
+    kg:primaryPosition kg:Forward .
+
+res:team/Arsenal a kg:Club ;
+    kg:teamName "Arsenal" .
+
+res:player/RobertoCarlos a kg:Player ;
+    kg:primaryPosition kg:Midfielder .
+
+res:player/StevenGerrard a kg:Player ;
+    kg:primaryPosition kg:Midfielder .
+
+res:player/FrankLampard a kg:Player ;
+    kg:primaryPosition kg:Midfielder .
+
+res:player/ZlatanIbrahimovic a kg:Player ;
+    kg:primaryPosition kg:Forward .
+
+res:player/XabiAlonso a kg:Player ;
+    kg:primaryPosition kg:Midfielder .
+
+res:player/DavidBeckham a kg:Player ;
+    kg:primaryPosition kg:Midfielder .
+
+res:player/LionelMessi a kg:Player ;
+    kg:primaryPosition kg:Forward .
+
+res:player/AndreaPirlo a kg:Player ;
+    kg:primaryPosition kg:Midfielder .
+
+res:player/Juninho a kg:Player ;
+    kg:primaryPosition kg:Midfielder .
+
+res:player/CristianoRonaldo a kg:Player ;
+    kg:primaryPosition kg:Forward .
+
+res:player/ToniKroos a kg:Player ;
+    kg:playsFor res:club/RealMadrid ;
+    kg:primaryPosition kg:Midfielder .
+
+res:player/KevinDeBruyne a kg:Player ;
+    kg:playsFor res:club/ManchesterCity ;
+    kg:primaryPosition kg:Midfielder .
+
+res:player/Ronaldinho a kg:Player ;
+    kg:primaryPosition kg:Forward .
+
+res:player/Rivaldo a kg:Player ;
+    kg:primaryPosition kg:Forward .
+
+res:club/RealMadrid a kg:Club ;
+    kg:teamName "Real Madrid" .
+
+res:club/ManchesterCity a kg:Club ;
+    kg:teamName "Manchester City" .
+```

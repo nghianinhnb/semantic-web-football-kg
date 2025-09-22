@@ -1,0 +1,229 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:club/Than_Quang_Ninh a kg:Club ;
+    kg:teamName "Câu lạc bộ bóng đá Than Quảng Ninh" ;
+    kg:teamAbbreviation "TQN" ;
+    kg:foundedDate "1956-04-24"^^xsd:date ;
+    kg:homeStadium res:stadium/Cam_Phah ;
+    kg:isHomeOf res:stadium/Cam_Phah ;
+    kg:dissolved "2021-08-24"^^xsd:date .
+
+res:stadium/Cam_Phah a kg:Stadium ;
+    kg:capacity 0 ;
+    kg:locatedIn res:city/Cam_Phah .
+
+res:city/Cam_Phah a kg:City ;
+    kg:locatedIn res:country/Viet_Nam .
+
+res:country/Viet_Nam a kg:Country .
+
+res:club/Than_Quang_Ninh kg:hasCoach res:coach/Unknown ;
+
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2000-01_Hang_Nhat_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2001-02_Hang_Nhi_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2003_Hang_Ba_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2004_Hang_Ba_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2005_Hang_Nhi_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2006_Hang_Nhi_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2007_Hang_Nhat_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2008_Hang_Nhat_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2009_Hang_Nhat_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2010_Hang_Nhat_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2011_Hang_Nhat_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2012_Hang_Nhat_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2013_Hang_Nhat_Quoc_gia ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2014_V_League ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2015_V_League ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2016_V_League ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2017_V_League ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2018_V_League ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2019_V_League ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2020_V_League ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2021_V_League ;
+res:club/Than_Quang_Ninh kg:participatesIn res:season/2022_V_League .
+
+res:season/2000-01_Hang_Nhat_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Nhat_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2001-02_Hang_Nhi_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Nhi_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2003_Hang_Ba_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Ba_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2004_Hang_Ba_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Ba_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2005_Hang_Nhi_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Nhi_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2006_Hang_Nhi_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Nhi_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2007_Hang_Nhat_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Nhat_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2008_Hang_Nhat_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Nhat_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2009_Hang_Nhat_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Nhat_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2010_Hang_Nhat_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Nhat_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2011_Hang_Nhat_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Nhat_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2012_Hang_Nhat_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Nhat_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2013_Hang_Nhat_Quoc_gia a kg:Season ;
+    kg:seasonOf res:competition/Hang_Nhat_Quoc_gia ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2014_V_League a kg:Season ;
+    kg:seasonOf res:competition/V_League ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2015_V_League a kg:Season ;
+    kg:seasonOf res:competition/V_League ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2016_V_League a kg:Season ;
+    kg:seasonOf res:competition/V_League ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2017_V_League a kg:Season ;
+    kg:seasonOf res:competition/V_League ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2018_V_League a kg:Season ;
+    kg:seasonOf res:competition/V_League ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2019_V_League a kg:Season ;
+    kg:seasonOf res:competition/V_League ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2020_V_League a kg:Season ;
+    kg:seasonOf res:competition/V_League ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2021_V_League a kg:Season ;
+    kg:seasonOf res:competition/V_League ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:season/2022_V_League a kg:Season ;
+    kg:seasonOf res:competition/V_League ;
+    kg:participatesIn res:club/Than_Quang_Ninh .
+
+res:competition/Hang_Nhat_Quoc_gia a kg:Competition ;
+    kg:competitionName "Giải bóng đá hạng Nhất Quốc gia Việt Nam" .
+
+res:competition/Hang_Nhi_Quoc_gia a kg:Competition ;
+    kg:competitionName "Giải bóng đá hạng Nhì Quốc gia Việt Nam" .
+
+res:competition/Hang_Ba_Quoc_gia a kg:Competition ;
+    kg:competitionName "Giải bóng đá hạng Ba Quốc gia Việt Nam" .
+
+res:competition/V_League a kg:Competition ;
+    kg:competitionName "Giải bóng đá Vô địch Quốc gia" .
+
+res:competition/Cup_Quoc_gia a kg:Competition ;
+    kg:competitionName "Cúp Quốc gia Việt Nam" .
+
+res:competition/Sieu_Cup_Quoc_gia a kg:Competition ;
+    kg:competitionName "Siêu cúp Quốc gia" .
+
+res:competition/AFC_Cup a kg:Competition ;
+    kg:competitionName "AFC Cup" .
+
+res:club/Than_Quang_Ninh kg:hasAchievement res:achievement/2016_Cup_Quoc_gia_Vo_Dich ;
+res:club/Than_Quang_Ninh kg:hasAchievement res:achievement/2016_Sieu_Cup_Quoc_gia_Vo_Dich ;
+res:club/Than_Quang_Ninh kg:hasAchievement res:achievement/2010_Hang_Nhat_Quoc_gia_A_Quan ;
+res:club/Than_Quang_Ninh kg:hasAchievement res:achievement/2013_Hang_Nhat_Quoc_gia_A_Quan ;
+res:club/Than_Quang_Ninh kg:hasAchievement res:achievement/2019_V_League_Hang_3 ;
+res:club/Than_Quang_Ninh kg:hasAchievement res:achievement/2006_Hang_Nhi_Quoc_gia_Vo_Dich ;
+res:club/Than_Quang_Ninh kg:hasAchievement res:achievement/2001-02_Hang_Nhi_Quoc_gia_Thang_Play_Off ;
+res:club/Than_Quang_Ninh kg:hasAchievement res:achievement/2000-01_Hang_Nhat_Quoc_gia_Xuong_Hang .
+
+res:achievement/2016_Cup_Quoc_gia_Vo_Dich a kg:Achievement ;
+    kg:competition res:competition/Cup_Quoc_gia ;
+    kg:year "2016"^^xsd:gYear ;
+    kg:type "Vô địch" .
+
+res:achievement/2016_Sieu_Cup_Quoc_gia_Vo_Dich a kg:Achievement ;
+    kg:competition res:competition/Sieu_Cup_Quoc_gia ;
+    kg:year "2016"^^xsd:gYear ;
+    kg:type "Vô địch" .
+
+res:achievement/2010_Hang_Nhat_Quoc_gia_A_Quan a kg:Achievement ;
+    kg:competition res:competition/Hang_Nhat_Quoc_gia ;
+    kg:year "2010"^^xsd:gYear ;
+    kg:type "Á quân" .
+
+res:achievement/2013_Hang_Nhat_Quoc_gia_A_Quan a kg:Achievement ;
+    kg:competition res:competition/Hang_Nhat_Quoc_gia ;
+    kg:year "2013"^^xsd:gYear ;
+    kg:type "Á quân" .
+
+res:achievement/2019_V_League_Hang_3 a kg:Achievement ;
+    kg:competition res:competition/V_League ;
+    kg:year "2019"^^xsd:gYear ;
+    kg:type "Hạng ba" .
+
+res:achievement/2006_Hang_Nhi_Quoc_gia_Vo_Dich a kg:Achievement ;
+    kg:competition res:competition/Hang_Nhi_Quoc_gia ;
+    kg:year "2006"^^xsd:gYear ;
+    kg:type "Vô địch" .
+
+res:achievement/2001-02_Hang_Nhi_Quoc_gia_Thang_Play_Off a kg:Achievement ;
+    kg:competition res:competition/Hang_Nhi_Quoc_gia ;
+    kg:year "2001-02"^^xsd:gYearRange ;
+    kg:type "Thắng play-off" .
+
+res:achievement/2000-01_Hang_Nhat_Quoc_gia_Xuong_Hang a kg:Achievement ;
+    kg:competition res:competition/Hang_Nhat_Quoc_gia ;
+    kg:year "2000-01"^^xsd:gYearRange ;
+    kg:type "Xuống hạng" .
+
+res:club/Than_Quang_Ninh kg:hasPlayer res:player/Huynh_Tuan_Linh ;
+res:club/Than_Quang_Ninh kg:hasPlayer res:player/Nguyen_Tien_Duy ;
+res:club/Than_Quang_Ninh kg:hasPlayer res:player/Nguyen_Hai_Huy ;
+res:club/Than_Quang_Ninh kg:hasPlayer res:player/Vu_Minh_Tuan ;
+res:club/Than_Quang_Ninh kg:hasPlayer res:player/Mac_Hong_Quan ;
+res:club/Than_Quang_Ninh kg:hasPlayer res:player/Nguyen_Xuan_Tu ;
+res:club/Than_Quang_Ninh kg:hasPlayer res:player/Trinh_Hoa_Hung .
+
+res:player/Huynh_Tuan_Linh a kg:Player .
+
+res:player/Nguyen_Tien_Duy a kg:Player .
+
+res:player/Nguyen_Hai_Huy a kg:Player .
+
+res:player/Vu_Minh_Tuan a kg:Player .
+
+res:player/Mac_Hong_Quan a kg:Player .
+
+res:player/Nguyen_Xuan_Tu a kg:Player .
+
+res:player/Trinh_Hoa_Hung a kg:Player .
+```

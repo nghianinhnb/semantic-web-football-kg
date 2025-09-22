@@ -1,0 +1,232 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang a kg:Club ;
+    kg:teamName "Câu lạc bộ bóng đá Tiền Giang" ;
+    kg:foundedDate "1976-01-01"^^xsd:date ;
+    kg:homeStadium res:stadium/Sân_vận_động_Tiền_Giang ;
+    kg:locatedIn res:city/Mỹ_Tho .
+
+res:stadium/Sân_vận_động_Tiền_Giang a kg:Stadium ;
+    kg:capacity 12000 ;
+    kg:isHomeOf res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang ;
+    kg:locatedIn res:city/Mỹ_Tho .
+
+res:city/Mỹ_Tho a kg:City ;
+    rdfs:label "Mỹ Tho" ;
+    kg:locatedIn res:province/Tiền_Giang .
+
+res:province/Tiền_Giang a kg:Place ;
+    rdfs:label "Tiền Giang" .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2024 .
+
+res:season/Mùa_giải_2024 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation a kg:Competition ;
+    kg:competitionName "Giải bóng đá Hạng Nhì Quốc gia" .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasCoach res:coach/Hà_Vương_Ngầu_Nại .
+
+res:coach/Hà_Vương_Ngầu_Nại a kg:Coach ;
+    kg:manages res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasOwner res:owner/UBND_tỉnh_Tiền_Giang .
+
+res:owner/UBND_tỉnh_Tiền_Giang a kg:Owner ;
+    kg:owns res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:participatesIn res:season/Mùa_giải_2024 .
+
+res:season/Mùa_giải_2024 kg:inCompetition res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2023 .
+
+res:season/Mùa_giải_2023 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2022 .
+
+res:season/Mùa_giải_2022 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2021 .
+
+res:season/Mùa_giải_2021 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2020 .
+
+res:season/Mùa_giải_2020 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2019 .
+
+res:season/Mùa_giải_2019 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2018 .
+
+res:season/Mùa_giải_2018 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2017 .
+
+res:season/Mùa_giải_2017 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2016 .
+
+res:season/Mùa_giải_2016 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2015 .
+
+res:season/Mùa_giải_2015 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2014 .
+
+res:season/Mùa_giải_2014 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2013 .
+
+res:season/Mùa_giải_2013 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2012 .
+
+res:season/Mùa_giải_2012 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2011 .
+
+res:season/Mùa_giải_2011 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2010 .
+
+res:season/Mùa_giải_2010 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:competition/Giải_bóng_đá_Hạng_Nhất_Queen_Nation a kg:Competition ;
+    kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia" .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2009 .
+
+res:season/Mùa_giải_2009 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2008 .
+
+res:season/Mùa_giải_2008 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2007 .
+
+res:season/Mùa_giải_2007 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2006 .
+
+res:season/Mùa_giải_2006 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia a kg:Competition ;
+    kg:competitionName "Giải bóng đá Vô địch Quốc gia (V-League)" .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2005 .
+
+res:season/Mùa_giải_2005 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2004 .
+
+res:season/Mùa_giải_2004 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2003 .
+
+res:season/Mùa_giải_2003 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2002 .
+
+res:season/Mùa_giải_2002 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2001 .
+
+res:season/Mùa_giải_2001 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_2000 .
+
+res:season/Mùa_giải_2000 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_1999 .
+
+res:season/Mùa_giải_1999 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation a kg:Competition ;
+    kg:competitionName "Giải bóng đá Hạng Nhì Quốc gia" .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_1998 .
+
+res:season/Mùa_giải_1998 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_QueeN_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_1997 .
+
+res:season/Mùa_giải_1997 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhì_Queen_Nation ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_1996 .
+
+res:season/Mùa_giải_1996 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_A1_toàn_quốc ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang .
+
+res:competition/Giải_bóng_đá_A1_toàn_quốc a kg:Competition ;
+    kg:competitionName "Giải bóng đá A1 toàn quốc" .
+
+res:club/Câu_lạc_bộ_bóng_đá_Tiền_Giang kg:hasSeason res:season/Mùa_giải_1995 .
+
+res:season/Mùa_giải_1995 a kg:Season ;
+    kg:seasonOf res:competition/Giải_bóng_đá_A1_toàn_quốc ;
+    kg:participatesIn res:club/Câu_lạc_bộ_bóng_đá_T

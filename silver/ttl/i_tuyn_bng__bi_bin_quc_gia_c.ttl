@@ -1,0 +1,127 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Germany_National_Beach_Soccer_Team a kg:Team ;
+    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Đức" ;
+    kg:teamAbbreviation "GER" ;
+    kg:hasCoach res:coach/Sebastian_Ullrich ;
+    kg:manages res:coach/Sebastian_Ullrich ;
+    kg:locatedIn res:country/Germany ;
+    kg:organizes res:competition/World_Beach_Soccer_Championship ;
+    kg:organizes res:competition/European_Beach_Soccer_Championship ;
+    kg:homeStadium res:stadium/O2_World_Berlin ;
+    kg:participatesIn res:season/World_Beach_Soccer_Championship_1995 ;
+    kg:participatesIn res:season/European_Beach_Soccer_Championship_1998 ;
+    kg:participatesIn res:season/European_Beach_Soccer_Championship_1999 ;
+    kg:participatesIn res:season/European_Beach_Soccer_Championship_2001 ;
+    kg:participatesIn res:season/European_Beach_Soccer_Championship_2003 .
+
+res:coach/Sebastian_Ullrich a kg:Coach ;
+    kg:manages res:team/Germany_National_Beach_Soccer_Team .
+
+res:stadium/O2_World_Berlin a kg:Stadium ;
+    kg:locatedIn res:city/Berlin ;
+    kg:capacity 12000 .
+
+res:country/Germany a kg:Country ;
+    kg:locatedIn res:country/Germany .
+
+res:city/Berlin a kg:City ;
+    kg:locatedIn res:country/Germany .
+
+res:competition/World_Beach_Soccer_Championship a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+
+res:competition/European_Beach_Soccer_Championship a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" .
+
+res:season/World_Beach_Soccer_Championship_1995 a kg:Season ;
+    kg:seasonOf res:competition/World_Beach_Soccer_Championship ;
+    kg:participatesIn res:team/Germany_National_Beach_Soccer_Team .
+
+res:season/European_Beach_Soccer_Championship_1998 a kg:Season ;
+    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+    kg:participatesIn res:team/Germany_National_Beach_Soccer_Team .
+
+res:season/European_Beach_Soccer_Championship_1999 a kg:Season ;
+    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+    kg:participatesIn res:team/Germany_National_Beach_Soccer_Team .
+
+res:season/European_Beach_Soccer_Championship_2001 a kg:Season ;
+    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+    kg:participatesIn res:team/Germany_National_Beach_Soccer_Team .
+
+res:season/European_Beach_Soccer_Championship_2003 a kg:Season ;
+    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+    kg:participatesIn res:team/Germany_National_Beach_Soccer_Team .
+
+res:player/Toni_Muller a kg:Player ;
+    kg:playsFor res:team/Germany_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:shirtNumber 1 .
+
+res:player/Anton_Kniller a kg:Player ;
+    kg:playsFor res:team/Germany_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 3 .
+
+res:player/Tim_Engelhardt a kg:Player ;
+    kg:playsFor res:team/Germany_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 5 .
+
+res:player/Christian_Biermann a kg:Player ;
+    kg:playsFor res:team/Germany_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:shirtNumber 7 .
+
+res:player/Sascha_Weirauch a kg:Player ;
+    kg:playsFor res:team/Germany_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:shirtNumber 9 .
+
+res:player/Oliver_Romrig a kg:Player ;
+    kg:playsFor res:team/Germany_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 11 ;
+    kg:isCaptain true .
+
+res:player/Moritz_Westkamper a kg:Player ;
+    kg:playsFor res:team/Germany_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:shirtNumber 12 .
+
+res:player/Christoph_Thurk a kg:Player ;
+    kg:playsFor res:team/Germany_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 13 .
+
+res:player/Tim_Schmitt a kg:Player ;
+    kg:playsFor res:team/Germany_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:shirtNumber 15 .
+
+res:player/Manuel_Monch a kg:Player ;
+    kg:playsFor res:team/Germany_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 17 .
+
+res:player/Valon_Beqiri a kg:Player ;
+    kg:playsFor res:team/Germany_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:shirtNumber 18 .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+    rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Defender ;
+    rdfs:subClassOf kg:Position .
+
+res:position/Midfielder a kg:Midfielder ;
+    rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Forward ;
+    rdfs:subClassOf kg:Position .
