@@ -1,15 +1,21 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <http://schema.org/> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix cc: <http://creativecommons.org/ns#> .
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
+@prefix time:   <http://www.w3.org/2006/time#> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix cc:     <http://creativecommons.org/ns#> .
+@prefix dbo:    <http://dbpedia.org/ontology/> .
+
+@prefix kg:     <https://kg-football.vn/ontology#> .
+@prefix res:    <https://kg-football.vn/resource/> .
+
+############################
+# Ontology header
+############################
 
 <https://kg-football.vn/ontology>
   a owl:Ontology ;
@@ -18,6 +24,7 @@
   dct:license <https://creativecommons.org/licenses/by/4.0/> ;
   dct:issued "2025-01-17"^^xsd:date ;
   owl:versionInfo "1.0.0" ;
+ 
   owl:imports <https://kg-football.vn/ontology/people> ,
               <https://kg-football.vn/ontology/org> ,
               <https://kg-football.vn/ontology/geo> ,
@@ -25,131 +32,233 @@
               <https://kg-football.vn/ontology/match> ,
               <https://kg-football.vn/ontology/transfer> .
 
-# Core Classes with proper alignment to standard vocabularies
+############################
+# Core Classes
+############################
+
 kg:Player a owl:Class ;
   rdfs:label "Player"@en , "Cầu thủ"@vi ;
-  rdfs:comment "Professional football player"@en ;
-  rdfs:subClassOf schema:Person ,
-                  foaf:Person .
+  rdfs:comment "Professional football player."@en ;
+  rdfs:subClassOf schema:Person , foaf:Person , dbo:SoccerPlayer .
 
 kg:Team a owl:Class ;
   rdfs:label "Team"@en , "Đội bóng"@vi ;
-  rdfs:comment "Football team (club or national team)"@en ;
-  rdfs:subClassOf schema:SportsTeam .
+  rdfs:comment "Football team (club or national team)."@en ;
+  rdfs:subClassOf schema:SportsTeam , dbo:SportsTeam .
 
 kg:Club a owl:Class ;
   rdfs:label "Club"@en , "Câu lạc bộ"@vi ;
-  rdfs:comment "Professional football club"@en ;
-  rdfs:subClassOf kg:Team ,
-                  schema:SportsTeam .
+  rdfs:comment "Professional football club."@en ;
+  rdfs:subClassOf kg:Team , schema:SportsTeam , dbo:SoccerClub .
 
 kg:NationalTeam a owl:Class ;
   rdfs:label "National Team"@en , "Đội tuyển quốc gia"@vi ;
-  rdfs:comment "National football team"@en ;
-  rdfs:subClassOf kg:Team ,
-                  schema:SportsTeam .
+  rdfs:comment "National football team."@en ;
+  rdfs:subClassOf kg:Team , schema:SportsTeam , dbo:SportsTeam .
 
 kg:Match a owl:Class ;
   rdfs:label "Match"@en , "Trận đấu"@vi ;
-  rdfs:comment "Football match between two teams"@en ;
-  rdfs:subClassOf schema:SportsEvent ,
-                  time:TemporalEntity .
+  rdfs:comment "Football match between two teams."@en ;
+  rdfs:subClassOf schema:SportsEvent , time:TemporalEntity , dbo:SoccerMatch .
 
 kg:Position a owl:Class ;
   rdfs:label "Position"@en , "Vị trí"@vi ;
-  rdfs:comment "Playing position in football"@en ;
+  rdfs:comment "Playing position in football."@en ;
   rdfs:subClassOf schema:Enumeration .
 
-# Core Properties with proper domains and ranges
-kg:playsFor a owl:ObjectProperty ;
-  rdfs:label "plays for"@en , "thi đấu cho"@vi ;
-  rdfs:comment "Indicates which team a player currently plays for"@en ;
-  rdfs:domain kg:Player ;
-  rdfs:range kg:Team .
-
-kg:primaryPosition a owl:ObjectProperty ;
-  rdfs:label "primary position"@en , "vị trí sở trường"@vi ;
-  rdfs:comment "Primary playing position of a player"@en ;
-  rdfs:domain kg:Player ;
-  rdfs:range kg:Position .
-
-kg:birthDate a owl:DatatypeProperty ;
-  rdfs:label "birth date"@en , "ngày sinh"@vi ;
-  rdfs:comment "Date of birth"@en ;
-  rdfs:domain kg:Player ;
-  rdfs:range xsd:date .
-
-kg:shirtNumber a owl:DatatypeProperty ;
-  rdfs:label "shirt number"@en , "số áo"@vi ;
-  rdfs:comment "Player's jersey number"@en ;
-  rdfs:domain kg:Player ;
-  rdfs:range xsd:positiveInteger .
-
-# Match properties
-kg:homeTeam a owl:ObjectProperty ;
-  rdfs:label "home team"@en , "đội nhà"@vi ;
-  rdfs:comment "Home team in a match"@en ;
-  rdfs:domain kg:Match ;
-  rdfs:range kg:Team ;
-  rdfs:subPropertyOf schema:competitor .
-
-kg:awayTeam a owl:ObjectProperty ;
-  rdfs:label "away team"@en , "đội khách"@vi ;
-  rdfs:comment "Away team in a match"@en ;
-  rdfs:domain kg:Match ;
-  rdfs:range kg:Team ;
-  rdfs:subPropertyOf schema:competitor .
-
-kg:venue a owl:ObjectProperty ;
-  rdfs:label "venue"@en , "địa điểm"@vi ;
-  rdfs:comment "Stadium where the match is played"@en ;
-  rdfs:domain kg:Match ;
-  rdfs:range kg:Stadium ;
-  rdfs:subPropertyOf schema:location .
-
-kg:kickoffTime a owl:DatatypeProperty ;
-  rdfs:label "kickoff time"@en , "thời gian bắt đầu"@vi ;
-  rdfs:comment "Start time of the match"@en ;
-  rdfs:domain kg:Match ;
-  rdfs:range xsd:dateTime ;
-  rdfs:subPropertyOf time:hasTime .
-
-# Position hierarchy
 kg:Goalkeeper a owl:Class ;
   rdfs:label "Goalkeeper"@en , "Thủ môn"@vi ;
-  rdfs:comment "Goalkeeper position"@en ;
+  rdfs:comment "Goalkeeper position."@en ;
   rdfs:subClassOf kg:Position .
 
 kg:Defender a owl:Class ;
   rdfs:label "Defender"@en , "Hậu vệ"@vi ;
-  rdfs:comment "Defender position"@en ;
+  rdfs:comment "Defender position."@en ;
   rdfs:subClassOf kg:Position .
 
 kg:Midfielder a owl:Class ;
   rdfs:label "Midfielder"@en , "Tiền vệ"@vi ;
-  rdfs:comment "Midfielder position"@en ;
+  rdfs:comment "Midfielder position."@en ;
   rdfs:subClassOf kg:Position .
 
 kg:Forward a owl:Class ;
   rdfs:label "Forward"@en , "Tiền đạo"@vi ;
-  rdfs:comment "Forward position"@en ;
+  rdfs:comment "Forward position."@en ;
   rdfs:subClassOf kg:Position .
 
-# Sample individuals for demonstration
+# Được dùng bởi match/club và shapes → cần định nghĩa
+kg:Stadium a owl:Class ;
+  rdfs:label "Stadium"@en , "Sân vận động"@vi ;
+  rdfs:comment "Football stadium."@en ;
+  rdfs:subClassOf dbo:Stadium .
+
+# Một số lớp nền để shapes dùng
+kg:Country a owl:Class ;
+  rdfs:label "Country"@en , "Quốc gia"@vi ;
+  rdfs:subClassOf dbo:Country .
+
+kg:City a owl:Class ;
+  rdfs:label "City"@en , "Thành phố"@vi ;
+  rdfs:subClassOf dbo:Place .
+
+############################
+# Core Object Properties
+############################
+
+kg:playsFor a owl:ObjectProperty ;
+  rdfs:label "plays for"@en , "thi đấu cho"@vi ;
+  rdfs:comment "Indicates which team a player currently plays for."@en ;
+  rdfs:domain kg:Player ;
+  rdfs:range  kg:Team ;
+  rdfs:subPropertyOf dbo:team .
+
+kg:primaryPosition a owl:ObjectProperty ;
+  rdfs:label "primary position"@en , "vị trí sở trường"@vi ;
+  rdfs:comment "Primary playing position of a player."@en ;
+  rdfs:domain kg:Player ;
+  rdfs:range  kg:Position ;
+  rdfs:subPropertyOf dbo:position .
+
+kg:homeTeam a owl:ObjectProperty ;
+  rdfs:label "home team"@en , "đội nhà"@vi ;
+  rdfs:comment "Home team in a match."@en ;
+  rdfs:domain kg:Match ;
+  rdfs:range  kg:Team ;
+  rdfs:subPropertyOf schema:competitor , dbo:homeTeam .
+
+kg:awayTeam a owl:ObjectProperty ;
+  rdfs:label "away team"@en , "đội khách"@vi ;
+  rdfs:comment "Away team in a match."@en ;
+  rdfs:domain kg:Match ;
+  rdfs:range  kg:Team ;
+  rdfs:subPropertyOf schema:competitor , dbo:awayTeam .
+
+kg:venue a owl:ObjectProperty ;
+  rdfs:label "venue"@en , "địa điểm"@vi ;
+  rdfs:comment "Stadium where the match is played."@en ;
+  rdfs:domain kg:Match ;
+  rdfs:range  kg:Stadium ;
+  rdfs:subPropertyOf schema:location , dbo:location .
+
+# shapes yêu cầu:
+kg:hasCoach a owl:ObjectProperty ;
+  rdfs:label "has coach"@en , "huấn luyện viên"@vi ;
+  rdfs:domain kg:Team ;
+  rdfs:range  foaf:Person ;
+  rdfs:subPropertyOf dbo:coach .
+
+kg:homeStadium a owl:ObjectProperty ;
+  rdfs:label "home stadium"@en , "sân nhà"@vi ;
+  rdfs:domain kg:Club ;
+  rdfs:range  kg:Stadium ;
+  rdfs:subPropertyOf dbo:ground .
+
+kg:locatedIn a owl:ObjectProperty ;
+  rdfs:label "located in"@en , "tọa lạc tại"@vi ;
+  rdfs:domain kg:Stadium ;
+  rdfs:range  kg:City ;
+  rdfs:subPropertyOf dbo:location .
+
+############################
+# Core Datatype Properties
+############################
+
+kg:birthDate a owl:DatatypeProperty ;
+  rdfs:label "birth date"@en , "ngày sinh"@vi ;
+  rdfs:comment "Date of birth."@en ;
+  rdfs:domain kg:Player ;
+  rdfs:range  xsd:date ;
+  rdfs:subPropertyOf dbo:birthDate .
+
+kg:shirtNumber a owl:DatatypeProperty ;
+  rdfs:label "shirt number"@en , "số áo"@vi ;
+  rdfs:comment "Player's jersey number."@en ;
+  rdfs:domain kg:Player ;
+  rdfs:range  xsd:positiveInteger ;
+  rdfs:subPropertyOf dbo:number .
+
+kg:kickoffTime a owl:DatatypeProperty ;
+  rdfs:label "kickoff time"@en , "thời gian bắt đầu"@vi ;
+  rdfs:comment "Start time of the match."@en ;
+  rdfs:domain kg:Match ;
+  rdfs:range  xsd:dateTime ;
+  rdfs:subPropertyOf time:hasTime , dbo:time .
+
+# shapes yêu cầu thêm:
+kg:nationality a owl:ObjectProperty ;
+  rdfs:label "nationality"@en , "quốc tịch"@vi ;
+  rdfs:domain kg:Player ;
+  rdfs:range  kg:Country ;
+  rdfs:subPropertyOf dbo:nationality .
+
+kg:height a owl:DatatypeProperty ;
+  rdfs:label "height (m)"@en , "chiều cao (m)"@vi ;
+  rdfs:domain kg:Player ;
+  rdfs:range  xsd:decimal ;
+  rdfs:subPropertyOf dbo:height .
+
+kg:weight a owl:DatatypeProperty ;
+  rdfs:label "weight (kg)"@en , "cân nặng (kg)"@vi ;
+  rdfs:domain kg:Player ;
+  rdfs:range  xsd:decimal ;
+  rdfs:subPropertyOf dbo:weight .
+
+kg:foundedDate a owl:DatatypeProperty ;
+  rdfs:label "founded date"@en , "ngày thành lập"@vi ;
+  rdfs:domain kg:Club ;
+  rdfs:range  xsd:date ;
+  rdfs:subPropertyOf dbo:foundingDate .
+
+kg:capacity a owl:DatatypeProperty ;
+  rdfs:label "capacity"@en , "sức chứa"@vi ;
+  rdfs:domain kg:Stadium ;
+  rdfs:range  xsd:positiveInteger ;
+  rdfs:subPropertyOf dbo:capacity .
+
+kg:attendance a owl:DatatypeProperty ;
+  rdfs:label "attendance"@en , "khán giả"@vi ;
+  rdfs:domain kg:Match ;
+  rdfs:range  xsd:nonNegativeInteger ;
+  rdfs:subPropertyOf dbo:attendance .
+
+############################
+# Sample individuals (optional demo – có thể giữ hoặc xoá)
+############################
+
 res:player/Nguyen_Quang_Hai a kg:Player ;
-  foaf:name "Nguyễn Quang Hải"@vi ;
+  rdfs:label "Nguyễn Quang Hải"@vi , "Nguyen Quang Hai"@en ;
   kg:birthDate "1997-04-12"^^xsd:date ;
   kg:primaryPosition res:position/Midfielder ;
   kg:playsFor res:team/Vietnam ;
-  kg:shirtNumber 19 .
+  kg:shirtNumber 19 ;
+  kg:nationality res:country/Vietnam ;
+  kg:height 1.68 ;
+  kg:weight 65.0 .
 
 res:team/Vietnam a kg:NationalTeam ;
-  rdfs:label "Vietnam National Team"@en , "Đội tuyển Việt Nam"@vi ;
-  schema:name "Vietnam"@en .
+  rdfs:label "Đội tuyển Việt Nam"@vi , "Vietnam National Team"@en .
 
 res:position/Midfielder a kg:Midfielder ;
-  rdfs:label "Midfielder"@en , "Tiền vệ"@vi .
+  rdfs:label "Tiền vệ"@vi , "Midfielder"@en .
 
 res:stadium/My_Dinh a kg:Stadium ;
-  rdfs:label "Mỹ Đình Stadium"@en , "Sân vận động Mỹ Đình"@vi ;
-  schema:name "Mỹ Đình"@vi .
+  rdfs:label "Sân vận động Mỹ Đình"@vi , "My Dinh Stadium"@en ;
+  kg:capacity 40000 ;
+  kg:locatedIn res:city/Hanoi .
+
+res:city/Hanoi a kg:City ;
+  rdfs:label "Hà Nội"@vi , "Hanoi"@en .
+
+res:country/Vietnam a kg:Country ;
+  rdfs:label "Việt Nam"@vi , "Vietnam"@en .
+
+res:match/VIE-THA-2024-01-01 a kg:Match ;
+  rdfs:label "Việt Nam vs Thái Lan (01-01-2024)"@vi , "Vietnam vs Thailand (2024-01-01)"@en ;
+  kg:homeTeam res:team/Vietnam ;
+  kg:awayTeam res:team/Thailand ;
+  kg:venue    res:stadium/My_Dinh ;
+  kg:kickoffTime "2024-01-01T19:30:00"^^xsd:dateTime ;
+  kg:attendance 38000 .
+
+res:team/Thailand a kg:NationalTeam ;
+  rdfs:label "Đội tuyển Thái Lan"@vi , "Thailand National Team"@en .
