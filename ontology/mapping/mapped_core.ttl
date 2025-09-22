@@ -1,0 +1,44 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo:    <http://dbpedia.org/ontology/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+
+@prefix kg:     <https://kg-football.vn/ontology#> .
+
+<https://kg-football.vn/ontology/mapping/core-dbpedia>
+  a owl:Ontology ;
+  owl:imports <https://kg-football.vn/ontology> ;
+  rdfs:label "KG-Football → DBpedia mapping (core)"@en .
+
+### Classes (append-only)
+kg:Player       rdfs:subClassOf dbo:SoccerPlayer .
+kg:Team         rdfs:subClassOf dbo:SportsTeam .
+kg:Club         rdfs:subClassOf dbo:SoccerClub .
+kg:NationalTeam rdfs:subClassOf dbo:SportsTeam .
+kg:Match        rdfs:subClassOf dbo:SoccerMatch .
+kg:Stadium      rdfs:subClassOf dbo:Stadium .
+kg:Country      rdfs:subClassOf dbo:Country .
+kg:City         rdfs:subClassOf dbo:Place .
+
+### Core properties
+kg:playsFor         rdfs:subPropertyOf dbo:team .
+kg:primaryPosition  rdfs:subPropertyOf dbo:position .
+kg:birthDate        rdfs:subPropertyOf dbo:birthDate .
+kg:shirtNumber      rdfs:subPropertyOf dbo:number .
+kg:homeTeam         rdfs:subPropertyOf dbo:homeTeam .
+kg:awayTeam         rdfs:subPropertyOf dbo:awayTeam .
+kg:venue            rdfs:subPropertyOf dbo:location .
+kg:kickoffTime      rdfs:subPropertyOf dbo:time .
+
+### Extra properties used by shapes
+kg:nationality  rdfs:subPropertyOf dbo:nationality .
+kg:height       rdfs:subPropertyOf dbo:height .
+kg:weight       rdfs:subPropertyOf dbo:weight .
+kg:foundedDate  rdfs:subPropertyOf dbo:foundingDate .
+kg:homeStadium  rdfs:subPropertyOf dbo:ground .
+kg:locatedIn    rdfs:subPropertyOf dbo:location .
+kg:capacity     rdfs:subPropertyOf dbo:capacity .
+kg:attendance   rdfs:subPropertyOf dbo:attendance .
