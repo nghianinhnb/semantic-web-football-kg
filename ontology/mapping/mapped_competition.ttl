@@ -1,0 +1,33 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo:    <http://dbpedia.org/ontology/> .
+@prefix schema: <http://schema.org/> .
+@prefix time:   <http://www.w3.org/2006/time#> .
+
+@prefix kg:     <https://kg-football.vn/ontology#> .
+
+<https://kg-football.vn/ontology/mapping/competition-dbpedia>
+  a owl:Ontology ;
+  owl:imports <https://kg-football.vn/ontology> ;
+  rdfs:label "KG-Football → DBpedia mapping (competition)"@en .
+
+### Classes
+kg:Competition rdfs:subClassOf dbo:SportsTournament .
+kg:League      rdfs:subClassOf dbo:SoccerLeague .
+kg:Cup         rdfs:subClassOf dbo:SportsTournament .
+kg:Tournament  rdfs:subClassOf dbo:SportsTournament .
+kg:Season      rdfs:subClassOf dbo:SoccerLeagueSeason .
+
+### Properties
+kg:hasSeason       rdfs:subPropertyOf dbo:season .
+kg:seasonOf        rdfs:subPropertyOf dbo:season .
+kg:seasonStart     rdfs:subPropertyOf dbo:startDate .
+kg:seasonEnd       rdfs:subPropertyOf dbo:endDate .
+kg:participatesIn  rdfs:subPropertyOf dbo:team .
+kg:organizedBy     rdfs:subPropertyOf dbo:organiser .
+kg:organizes       rdfs:subPropertyOf dbo:organiser .
+kg:heldIn          rdfs:subPropertyOf dbo:country .
+kg:participantCount rdfs:subPropertyOf dbo:numberOfTeams .
+kg:competitionName rdfs:subPropertyOf rdfs:label .
