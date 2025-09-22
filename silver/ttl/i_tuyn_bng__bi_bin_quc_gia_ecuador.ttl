@@ -1,0 +1,114 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Ecuador_National_Beach_Soccer_Team a kg:Team ;
+    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Ecuador" ;
+    kg:hasCoach res:coach/Jose_Palma ;
+    kg:manages res:coach/Jose_Palma ;
+    kg:locatedIn res:country/Ecuador .
+
+res:coach/Jose_Palma a kg:Coach ;
+    kg:name "José Palma" .
+
+res:country/Ecuador a kg:Country ;
+    rdfs:label "Ecuador" .
+
+res:player/Hugo_Cevallos a kg:Player ;
+    kg:name "Hugo Cevallos" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "2" ;
+    kg:primaryPosition res:position/Defender ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:player/Carlos_Saltos a kg:Player ;
+    kg:name "Carlos Saltos" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "1" ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:player/Cesar_Barre a kg:Player ;
+    kg:name "Cesar Barre" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "3" ;
+    kg:primaryPosition res:position/Forward ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:player/Mario_Alava a kg:Player ;
+    kg:name "Mario Alava" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "4" ;
+    kg:primaryPosition res:position/Defender ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:player/Jose_Vera a kg:Player ;
+    kg:name "José Vera" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "5" ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:player/Cristhian_Gallegos a kg:Player ;
+    kg:name "Cristhian Gallegos" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "6" ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:player/Segundo_Moreira a kg:Player ;
+    kg:name "Segundo Moreira" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "7" ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:player/Jorge_Bailon a kg:Player ;
+    kg:name "Jorge Bailón" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "8" ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:player/Daniel_Cedeño a kg:Player ;
+    kg:name "Daniel Cedeño" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "9" ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:player/Mauricio_Mera a kg:Player ;
+    kg:name "Mauricio Mera" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "10" ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:player/Joffre_Delgado a kg:Player ;
+    kg:name "Joffre Delgado" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "11" ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:player/Jorge_Leon a kg:Player ;
+    kg:name "Jorge León" ;
+    kg:nationality res:country/Ecuador ;
+    kg:shirtNumber "12" ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:playsFor res:team/Ecuador_National_Beach_Soccer_Team .
+
+res:position/Goalkeeper a kg:Position ;
+    rdfs:subClassOf kg:Goalkeeper .
+
+res:position/Defender a kg:Position ;
+    rdfs:subClassOf kg:Defender .
+
+res:position/Midfielder a kg:Position ;
+    rdfs:subClassOf kg:Midfielder .
+
+res:position/Forward a kg:Position ;
+    rdfs:subClassOf kg:Forward .
+```

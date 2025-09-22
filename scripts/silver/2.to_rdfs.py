@@ -57,11 +57,11 @@ ONTOLOGY ĐẦY ĐỦ:
 
 CÁC CLASS CHÍNH:
 # Core Classes
-- kg:Player - rdfs:subClassOf schema:Person
-- kg:Team - rdfs:subClassOf schema:SportsTeam
-- kg:Club - rdfs:subClassOf kg:Team
-- kg:Match - rdfs:subClassOf schema:SportsEvent
-- kg:Position - rdfs:subClassOf schema:Enumeration
+- kg:Player
+- kg:Team
+- kg:Club
+- kg:Match
+- kg:Position
 
 # Position Hierarchy
 - kg:Goalkeeper - rdfs:subClassOf kg:Position
@@ -70,23 +70,23 @@ CÁC CLASS CHÍNH:
 - kg:Forward - rdfs:subClassOf kg:Position
 
 # People
-- kg:Coach - rdfs:subClassOf schema:Person
+- kg:Coach
 - kg:AssistantCoach - rdfs:subClassOf kg:Coach
-- kg:Referee - rdfs:subClassOf schema:Person
-- kg:Owner - rdfs:subClassOf schema:Person
+- kg:Referee
+- kg:Owner
 
 # Geographic
 - kg:Place - rdfs:subClassOf schema:Place
-- kg:City - rdfs:subClassOf kg:Place, schema:City
-- kg:Country - rdfs:subClassOf kg:Place, schema:Country
+- kg:City - rdfs:subClassOf kg:Place
+- kg:Country - rdfs:subClassOf kg:Place
 
 # Stadium & Venue
-- kg:Stadium - rdfs:subClassOf schema:SportsVenue
+- kg:Stadium
 
 # Competition
-- kg:Competition - rdfs:subClassOf schema:SportsOrganization
+- kg:Competition
 - kg:Season
-- kg:Organization - rdfs:subClassOf schema:Organization
+- kg:Organization
 
 # Other
 - kg:Footedness - rdfs:subClassOf schema:Enumeration
@@ -187,7 +187,7 @@ def main() -> None:
     total = len(items)
     print(f"Bắt đầu chuyển đổi {total} items sang TTL...")
 
-    for item in tqdm(items[211:], total=total-211, desc="Converting to TTL", unit="item"):
+    for item in tqdm(items[236:], total=total-236, desc="Converting to TTL", unit="item"):
         title = item.get("title", "").strip() or "Untitled"
         content = item.get("content", "").strip()
 
@@ -206,8 +206,9 @@ def main() -> None:
 
         generated_ids = model.generate(
             **model_inputs,
-            max_new_tokens=3000,
+            max_new_tokens=4096,
             use_cache=True,
+            repetition_penalty=1.1
         )
         output_ids = generated_ids[0][len(model_inputs.input_ids[0]):].tolist()
         ttl_content = tokenizer.decode(output_ids, skip_special_tokens=True).strip("\n")

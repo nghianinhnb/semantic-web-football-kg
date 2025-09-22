@@ -1,0 +1,187 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia a kg:Team ;
+    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Colombia" ;
+    kg:hasCoach res:coach/Santiago_Alzate .
+
+res:coach/Santiago_Alzate a kg:Coach ;
+    kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia .
+
+res:player/Alejandro_Quintero a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "1"^^xsd:positiveInteger ;
+    kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Edwin_Rojas a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "4"^^xsd:positiveInteger .
+
+res:player/Escalante_Lopez a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "5"^^xsd:positiveInteger ;
+    kg:primaryPosition res:position/Defender .
+
+res:player/Jose_Gomez a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "6"^^xsd:positiveInteger ;
+    kg:primaryPosition res:position/Defender .
+
+res:player/Jose_Arzuza_Fonseca a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "7"^^xsd:positiveInteger ;
+    kg:primaryPosition res:position/Forward .
+
+res:player/Edward_Bonilla a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bánh_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "8"^^xsd:positiveInteger .
+
+res:player/Oscar_Hurtado a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "9"^^xsd:positiveInteger .
+
+res:player/Kevin_Zuluaga a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "10"^^xsd:positiveInteger .
+
+res:player/Kevin_Henao a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "11"^^xsd:positiveInteger .
+
+res:player/Levid_Sanchez a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "12"^^xsd:positiveInteger ;
+    kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Carlos_Mejia a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "13"^^xsd:positiveInteger .
+
+res:player/Miguel_Parra a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:shirtNumber "20"^^xsd:positiveInteger .
+
+res:position/Goalkeeper a kg:Position ;
+    rdfs:subClassOf kg:Goalkeeper .
+
+res:position/Defender a kg:Position ;
+    rdfs:subClassOf kg:Defender .
+
+res:position/Forward a kg:Position ;
+    rdfs:subClassOf kg:Forward .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia kg:locatedIn res:country/Columbia .
+
+res:country/Columbia a kg:Country ;
+    rdfs:label "Colombia" .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+
+res:competition/Copa_América_de_Beach_Soccer a kg:Competition ;
+    kg:competitionName "Copa América de Beach Soccer" .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển khu vực Nam Mỹ" .
+
+res:competition/Đại_hội_thể_thao_bãi_biển_Nam_Mỹ a kg:Competition ;
+    kg:competitionName "Đại hội thể thao bãi biển Nam Mỹ" .
+
+res:season/2009 a kg:Season ;
+    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:season/2011 a kg:Season ;
+    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:season/2013 a kg:Season ;
+    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:season/2015 a kg:Season ;
+    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:season/2017 a kg:Season ;
+    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:season/2016 a kg:Season ;
+    kg:seasonOf res:competition/Copa_América_de_Beach_Soccer .
+
+res:season/2018 a kg:Season ;
+    kg:seasonOf res:competition/Copa_América_de_Beach_Soccer .
+
+res:season/2005 a kg:Season ;
+    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:season/2006 a kg:Season ;
+    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:season/2007 a kg:Season ;
+    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:season/2008 a kg:Season ;
+    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:season/2009 a kg:Season ;
+    kg:seasonOf res:competition/Đại_hội_thể_thao_bãi_biển_Nam_Mỹ .
+
+res:season/2011 a kg:Season ;
+    kg:seasonOf res:competition/Đại_hội_thể_thao_bãi_biển_Nam_Mỹ .
+
+res:season/2014 a kg:Season ;
+    kg:seasonOf res:competition/Đại_hội_thể_thao_bãi_biển_Nam_Mỹ .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia kg:participatesIn res:season/2009 ;
+    kg:participatesIn res:season/2011 ;
+    kg:participatesIn res:season/2013 ;
+    kg:participatesIn res:season/2015 ;
+    kg:participatesIn res:season/2017 ;
+    kg:participatesIn res:season/2016 ;
+    kg:participatesIn res:season/2018 ;
+    kg:participatesIn res:season/2005 ;
+    kg:participatesIn res:season/2006 ;
+    kg:participatesIn res:season/2007 ;
+    kg:participatesIn res:season/2008 ;
+    kg:participatesIn res:season/2009 ;
+    kg:participatesIn res:season/2011 ;
+    kg:participatesIn res:season/2014 .
+
+res:match/2009_12_07_ECU_vs_COL a kg:Match ;
+    kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Ecuador ;
+    kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:kickoffTime "2009-12-07T00:00:00Z"^^xsd:dateTime ;
+    kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:match/2011_08_03_COL_vs_ECU a kg:Match ;
+    kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Brazil ;
+    kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:kickoffTime "2011-08-03T00:00:00Z"^^xsd:dateTime ;
+    kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:match/2009_12_10_COL_vs_BRA a kg:Match ;
+    kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Uruguay ;
+    kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia ;
+    kg:kickoffTime "2009-12-10T00:00:00Z"^^xsd:dateTime ;
+    kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia kg:participatesIn res:season/2009 ;
+    kg:participatesIn res:season/2011 ;
+    kg:participatesIn res:season/2013 ;
+    kg:participatesIn res:season/2015 ;
+    kg:participatesIn res:season/2017 ;
+    kg:participatesIn res:season/2016 ;
+    kg:participatesIn res:season/2018 .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia kg:hasResultInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ ;
+    kg:result "Hạng tư" ;
+    kg:year "2011"^^xsd:gYear .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia kg:hasResultInCompetition res:competition/Copa_América_de_Beach_Soccer ;
+    kg:result "Hạng tám" ;
+    kg:year "2016"^^xsd:gYear .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Colombia kg:hasResultInCompetition res:competition/Đại_hội_thể_thao_bãi_biển_Nam_Mỹ ;
+    kg:result "Hạng tư" ;
+    kg:year "2009"^^xsd:gYear .
+```

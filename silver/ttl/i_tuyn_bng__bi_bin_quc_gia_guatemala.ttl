@@ -1,0 +1,98 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/GuatemalaNationalBeachSoccerTeam a kg:Team ;
+    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Guatemala" ;
+    kg:hasCoach res:coach/RaulAldana ;
+    kg:locatedIn res:country/Guatemala ;
+    kg:organizedBy res:organization/FENAFUTG ;
+    kg:heldIn res:country/Guatemala ;
+    kg:participantCount 3 ;
+    kg:inCompetition res:competition/NorthCentralAmericanAndCaribbeanBeachSoccerChampionship ;
+    kg:bestResult "Tứ kết" ;
+    kg:bestResultYear "2015"^^xsd:gYear ;
+    kg:firstParticipationYear "2011"^^xsd:gYear .
+
+res:organization/FENAFUTG a kg:Organization ;
+    rdfs:label "FENAFUTG" .
+
+res:competition/NorthCentralAmericanAndCaribbeanBeachSoccerChampionship a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" .
+
+res:coach/RaulAldana a kg:Coach ;
+    kg:name "Raul Aldana" ;
+    kg:manages res:team/GuatemalaNationalBeachSoccerTeam .
+
+res:player/GersonAlas a kg:Player ;
+    kg:name "Gerson Alas" ;
+    kg:shirtNumber 1 ;
+    kg:primaryPosition res:position/Goalkeeper .
+
+res:player/FlavioGarcia a kg:Player ;
+    kg:name "Flavio García" ;
+    kg:shirtNumber 2 ;
+    kg:primaryPosition res:position/Defender .
+
+res:player/LuisGarcia a kg:Player ;
+    kg:name "Luis García" ;
+    kg:shirtNumber 3 ;
+    kg:primaryPosition res:position/Defender .
+
+res:player/AngelSaenz a kg:Player ;
+    kg:name "Ángel Sáenz" ;
+    kg:shirtNumber 4 ;
+    kg:primaryPosition res:position/Defender .
+
+res:player/EsauPolanco a kg:Player ;
+    kg:name "Esau Polanco" ;
+    kg:shirtNumber 5 ;
+    kg:primaryPosition res:position/Forward .
+
+res:player/MiguelGonzalez a kg:Player ;
+    kg:name "Miguel Gonzalez" ;
+    kg:shirtNumber 6 ;
+    kg:primaryPosition res:position/Forward .
+
+res:player/JuanAlvarado a kg:Player ;
+    kg:name "Juan Alvarado" ;
+    kg:shirtNumber 7 ;
+    kg:primaryPosition res:position/Forward .
+
+res:player/FerminAvila a kg:Player ;
+    kg:name "Fermin Avila" ;
+    kg:shirtNumber 8 ;
+    kg:primaryPosition res:position/Forward .
+
+res:player/AlexMoran a kg:Player ;
+    kg:name "Alex Moran" ;
+    kg:shirtNumber 9 ;
+    kg:primaryPosition res:position/Forward .
+
+res:player/MarcoAvila a kg:Player ;
+    kg:name "Marco Ávila" ;
+    kg:shirtNumber 10 ;
+    kg:primaryPosition res:position/Forward .
+
+res:player/FrankieRamirez a kg:Player ;
+    kg:name "Frankie Ramírez" ;
+    kg:shirtNumber 11 ;
+    kg:primaryPosition res:position/Forward .
+
+res:player/EverPineda a kg:Player ;
+    kg:name "Ever Pineda" ;
+    kg:shirtNumber 12 ;
+    kg:primaryPosition res:position/Goalkeeper .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+    rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Defender ;
+    rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Forward ;
+    rdfs:subClassOf kg:Position .
+
+res:country/Guatemala a kg:Country ;
+    rdfs:label "Guatemala" .

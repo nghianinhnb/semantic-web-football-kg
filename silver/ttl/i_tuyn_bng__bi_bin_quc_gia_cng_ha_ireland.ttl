@@ -1,0 +1,157 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Cộng_hòa_Ireland a kg:Team ;
+    kg:teamName "Cộng hòa Ireland" ;
+    kg:hasCoach res:coach/Derek_O'Neil ;
+    kg:organizedBy res:organization/Irish_Football_Association ;
+    kg:heldIn res:country/Ireland .
+
+res:organization/Irish_Football_Association a kg:Organization ;
+    rdfs:label "Hiệp hội bóng đá Ireland" .
+
+res:country/Ireland a kg:Country ;
+    rdfs:label "Ireland" .
+
+res:competition/European_Beach_Soccer_League a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" .
+
+res:competition/European_Beach_Soccer_Championship a kg:Competition ;
+    kg:competitionName "Cúp châu Âu" .
+
+res:match/2001-06-01 a kg:Match ;
+    kg:homeTeam res:team/Cộng_hòa_Ireland ;
+    kg:awayTeam res:team/Portugal ;
+    kg:kickoffTime "2001-06-01"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_League ;
+    kg:result "L" .
+
+res:match/2001-06-02 a kg:Match ;
+    kg:homeTeam res:team/Cộng_hòa_Ireland ;
+    kg:awayTeam res:team/Italy ;
+    kg:kickoffTime "2001-06-02"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_League ;
+    kg:result "L" .
+
+res:match/2001-06-03 a kg:Match ;
+    kg:homeTeam res:team/Cộng_hòa_Ireland ;
+    kg:awayTeam res:team/Germany ;
+    kg:kickoffTime "2001-06-03"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_League ;
+    kg:result "L" .
+
+res:match/2001-06-15 a kg:Match ;
+    kg:homeTeam res:team/Portugal ;
+    kg:awayTeam res:team/Cộng_hòa_Ireland ;
+    kg:kickoffTime "2001-06-15"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_League ;
+    kg:result "L" .
+
+res:match/2001-06-16 a kg:Match ;
+    kg:homeTeam res:team/Italy ;
+    kg:awayTeam res:team/Cộng_hòa_Ireland ;
+    kg:kickoffTime "2001-06-16"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_League ;
+    kg:result "L" .
+
+res:match/2001-06-17 a kg:Match ;
+    kg:homeTeam res:team/Germany ;
+    kg:awayTeam res:team/Cộng_hòa_Ireland ;
+    kg:kickoffTime "2001-06-17"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_League ;
+    kg:result "L" .
+
+res:match/2001-08-24 a kg:Match ;
+    kg:homeTeam res:team/Italy ;
+    kg:awayTeam res:team/Cộng_hòa_Ireland ;
+    kg:kickoffTime "2001-08-24"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_League ;
+    kg:result "L" .
+
+res:match/2001-08-25 a kg:Match ;
+    kg:homeTeam res:team/Portugal ;
+    kg:awayTeam res:team/Cộng_hòa_Ireland ;
+    kg:kickoffTime "2001-08-25"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_League ;
+    kg:result "L" .
+
+res:match/2001-08-26 a kg:Match ;
+    kg:homeTeam res:team/Germany ;
+    kg:awayTeam res:team/Cộng_hòa_Ireland ;
+    kg:kickoffTime "2001-08-26"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_League ;
+    kg:result "L" .
+
+res:match/2002-02-15 a kg:Match ;
+    kg:homeTeam res:team/Spain ;
+    kg:awayTeam res:team/Cộng_hòa_Ireland ;
+    kg:kickoffTime "2002-02-15"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_Championship ;
+    kg:result "L" .
+
+res:match/2002-02-16 a kg:Match ;
+    kg:homeTeam res:team/England ;
+    kg:awayTeam res:team/Cộng_hòa_Ireland ;
+    kg:kickoffTime "2002-02-16"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_Championship ;
+    kg:result "L" .
+
+res:match/2002-02-17 a kg:Match ;
+    kg:homeTeam res:team/Switzerland ;
+    kg:awayTeam res:team/Cộng_hòa_Ireland ;
+    kg:kickoffTime "2002-02-17"^^xsd:date ;
+    kg:inCompetition res:competition/European_Beach_Soccer_Championship ;
+    kg:result "L" .
+
+res:player/Seamus_Kelly a kg:Player ;
+    kg:playsFor res:team/Cộng_hòa_Ireland ;
+    kg:shirtNumber 2 ;
+    kg:primaryPosition kg:Goalkeeper ;
+    kg:nationality res:country/Ireland .
+
+res:player/Pat_Trehy a kg:Player ;
+    kg:playsFor res:team/Cộng_hòa_Ireland ;
+    kg:shirtNumber 3 ;
+    kg:primaryPosition kg:Goalkeeper ;
+    kg:nationality res:country/Ireland .
+
+res:player/Gareth_McPhail a kg:Player ;
+    kg:playsFor res:team/Cộng_hòa_Ireland ;
+    kg:shirtNumber 4 ;
+    kg:nationality res:country/Ireland .
+
+res:player/Thomas_Morgan a kg:Player ;
+    kg:playsFor res:team/Cộng_hòa_Ireland ;
+    kg:shirtNumber 5 ;
+    kg:nationality res:country/Ireland .
+
+res:player/Paul_Osam a kg:Player ;
+    kg:playsFor res:team/Cộng_hòa_Ireland ;
+    kg:shirtNumber 6 ;
+    kg:nationality res:country/Ireland .
+
+res:player/Dean_Fitzgerald a kg:Player ;
+    kg:playsFor res:team/Cộng_hòa_Ireland ;
+    kg:shirtNumber 7 ;
+    kg:nationality res:country/Ireland .
+
+res:player/Liam_Kelly a kg:Player ;
+    kg:playsFor res:team/Cộng_hòa_Ireland ;
+    kg:shirtNumber 8 ;
+    kg:nationality res:country/Ireland .
+
+res:player/Derek_O'Neil a kg:Coach ;
+    kg:manages res:team/Cộng_hòa_Ireland .
+
+res:player/Frank_Stapleton a kg:Player ;
+    kg:nationality res:country/Ireland ;
+    kg:primaryPosition kg:Forward .
+
+res:player/Owen_Coyle a kg:Player ;
+    kg:nationality res:country/Ireland ;
+    kg:primaryPosition kg:Midfielder .
+```
