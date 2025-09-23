@@ -7,7 +7,6 @@ services:
       - "3030:3030"
     environment:
       - ADMIN_PASSWORD=admin
-    volumes:
-      - ./data:/fuseki
-      - ../gold/ttl:/dataset
-    command: ["/docker-entrypoint.sh", "--mem", "/fuseki"]
+      - FUSEKI_DATASET=football
+      - FUSEKI_MEM=1
+    restart: unless-stopped

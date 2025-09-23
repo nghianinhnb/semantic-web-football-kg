@@ -1,0 +1,288 @@
+Loaded OK: 266
+Failed: 148
+- cu_lc_b_bng__an_giang.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__an_giang.ttl into http://kg.local/silver/cu_lc_b_bng__an_giang: 400 [line: 17, col: 69] Out of place: [KEYWORD:League]
+
+- cu_lc_b_bng__cn_th.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__cn_th.ttl into http://kg.local/silver/cu_lc_b_bng__cn_th: 400 [line: 22, col: 49] Keyword 'a' not legal at this point
+
+- cu_lc_b_bng__cng_an_thnh_ph_h_ch_minh_2025.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__cng_an_thnh_ph_h_ch_minh_2025.ttl into http://kg.local/silver/cu_lc_b_bng__cng_an_thnh_ph_h_ch_minh_2025: 400 [line: 10, col: 89] Not a valid token for an RDF term: [LPAREN]
+
+- cu_lc_b_bng__hi_phng.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__hi_phng.ttl into http://kg.local/silver/cu_lc_b_bng__hi_phng: 400 [line: 25, col: 68] Out of place: [KEYWORD:League_1]
+
+- cu_lc_b_bng__hu.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__hu.ttl into http://kg.local/silver/cu_lc_b_bng__hu: 400 [line: 23, col: 48] Not a valid token for an RDF term: [DOT]
+
+- cu_lc_b_bng__lm_ng.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__lm_ng.ttl into http://kg.local/silver/cu_lc_b_bng__lm_ng: 400 [line: 10, col: 50] Not a valid token for an RDF term: [DOT]
+
+- cu_lc_b_bng__long_an__tnh_ty_ninh.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__long_an__tnh_ty_ninh.ttl into http://kg.local/silver/cu_lc_b_bng__long_an__tnh_ty_ninh: 400 [line: 10, col: 89] Triples not terminated by DOT
+
+- cu_lc_b_bng__ng__thanh_ha.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__ng__thanh_ha.ttl into http://kg.local/silver/cu_lc_b_bng__ng__thanh_ha: 400 [line: 18, col: 20] Failed to find a prefix name or keyword: ^(94;0x005E)
+
+- cu_lc_b_bng__quy_nhn_united.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__quy_nhn_united.ttl into http://kg.local/silver/cu_lc_b_bng__quy_nhn_united: 400 [line: 25, col: 61] Keyword 'a' not legal at this point
+
+- cu_lc_b_bng__th_cng__viettel.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__th_cng__viettel.ttl into http://kg.local/silver/cu_lc_b_bng__th_cng__viettel: 400 [line: 10, col: 44] Unrecognized keyword: Cong
+
+- cu_lc_b_bng__than_qung_ninh.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__than_qung_ninh.ttl into http://kg.local/silver/cu_lc_b_bng__than_qung_ninh: 400 [line: 23, col: 76] Triples not terminated by DOT
+
+- cu_lc_b_bng__thp_xanh_nam_nh.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__thp_xanh_nam_nh.ttl into http://kg.local/silver/cu_lc_b_bng__thp_xanh_nam_nh: 400 [line: 27, col: 63] Out of place: [KEYWORD:League_1]
+
+- cu_lc_b_bng__ty_ninh.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/cu_lc_b_bng__ty_ninh.ttl into http://kg.local/silver/cu_lc_b_bng__ty_ninh: 400 [line: 32, col: 36] Triples not terminated by DOT
+
+- i_bng__cng_an_thanh_ha.ttl: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+- i_bng__cng_an_thnh_ph_h_ch_minh_1979.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_bng__cng_an_thnh_ph_h_ch_minh_1979.ttl into http://kg.local/silver/i_bng__cng_an_thnh_ph_h_ch_minh_1979: 400 [line: 50, col: 49] Keyword 'a' not legal at this point
+
+- i_bng__sng_b.ttl: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+- i_bng__sng_lam_ngh_tnh_ma_bng_1988.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_bng__sng_lam_ngh_tnh_ma_bng_1988.ttl into http://kg.local/silver/i_bng__sng_lam_ngh_tnh_ma_bng_1988: 400 [line: 10, col: 45] Unrecognized keyword: Lam
+
+- i_bng__tng_cc_ng_st.ttl: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+- i_ph_fc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_ph_fc.ttl into http://kg.local/silver/i_ph_fc: 400 [line: 32, col: 36] Triples not terminated by DOT
+
+- i_trng_bng.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_trng_bng.ttl into http://kg.local/silver/i_trng_bng: 400 [line: 16, col: 111] Out of place: [KEYWORD:S]
+
+- i_tuyn_bng__bi_bin_quc_gia_an_mch.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_an_mch.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_an_mch: 400 [line: 59, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_anh.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_anh.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_anh: 400 [line: 81, col: 81] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_b.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_b.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_b: 400 [line: 10, col: 57] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_bahamas.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_bahamas.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_bahamas: 400 [line: 36, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_belarus.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_belarus.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_belarus: 400 [line: 10, col: 48] Unrecognized keyword: National
+
+- i_tuyn_bng__bi_bin_quc_gia_cameroon.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_cameroon.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_cameroon: 400 [line: 10, col: 49] Unrecognized keyword: National
+
+- i_tuyn_bng__bi_bin_quc_gia_cng_ha_ireland.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_cng_ha_ireland.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_cng_ha_ireland: 400 [line: 98, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_cng_ha_sc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_cng_ha_sc.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_cng_ha_sc: 400 [line: 10, col: 67] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_estonia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_estonia.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_estonia: 400 [line: 129, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_hn_quc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_hn_quc.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_hn_quc: 400 [line: 30, col: 107] Keyword 'a' not legal at this point
+
+- i_tuyn_bng__bi_bin_quc_gia_hy_lp.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_hy_lp.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_hy_lp: 400 [line: 20, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_iran.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_iran.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_iran: 400 [line: 22, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_israel.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_israel.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_israel: 400 [line: 86, col: 79] Keyword 'a' not legal at this point
+
+- i_tuyn_bng__bi_bin_quc_gia_kazakhstan.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_kazakhstan.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_kazakhstan: 400 [line: 51, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_liban.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_liban.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_liban: 400 [line: 24, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_lo.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_lo.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_lo: 400 [line: 10, col: 58] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_maroc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_maroc.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_maroc: 400 [line: 101, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_mauritius.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_mauritius.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_mauritius: 400 [line: 20, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_myanmar.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_myanmar.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_myanmar: 400 [line: 29, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_new_zealand.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_new_zealand.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_new_zealand: 400 [line: 10, col: 44] Unrecognized keyword: Zealand
+
+- i_tuyn_bng__bi_bin_quc_gia_nga.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_nga.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_nga: 400 [line: 13, col: 97] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_nht_bn.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_nht_bn.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_nht_bn: 400 [line: 57, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_o.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_o.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_o: 400 [line: 15, col: 84] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_romnia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_romnia.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_romnia: 400 [line: 19, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_sngal.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_sngal.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_sngal: 400 [line: 25, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_syria.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_syria.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_syria: 400 [line: 13, col: 15] Unrecognized (expected an RDF Term): [VAR:coach]
+
+- i_tuyn_bng__bi_bin_quc_gia_tahiti.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_tahiti.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_tahiti: 400 [line: 57, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_trinidad_v_tobago.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_trinidad_v_tobago.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_trinidad_v_tobago: 400 [line: 15, col: 30] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_trung_quc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_trung_quc.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_trung_quc: 400 [line: 26, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__bi_bin_quc_gia_vanuatu.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__bi_bin_quc_gia_vanuatu.ttl into http://kg.local/silver/i_tuyn_bng__bi_bin_quc_gia_vanuatu: 400 [line: 22, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__ellan_vannin.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__ellan_vannin.ttl into http://kg.local/silver/i_tuyn_bng__ellan_vannin: 400 [line: 16, col: 30] Triples not terminated by DOT
+
+- i_tuyn_bng__n_olympic_vng_quc_lin_hip_anh_v_bc_ireland.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_olympic_vng_quc_lin_hip_anh_v_bc_ireland.ttl into http://kg.local/silver/i_tuyn_bng__n_olympic_vng_quc_lin_hip_anh_v_bc_ireland: 400 [line: 23, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia: 400 [line: 19, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia__rp_x_t.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia__rp_x_t.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia__rp_x_t: 400 [line: 18, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_anh.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_anh.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_anh: 400 [line: 69, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_antille_thuc_h_lan.ttl: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+- i_tuyn_bng__n_quc_gia_bangladesh.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_bangladesh.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_bangladesh: 400 [line: 27, col: 79] Keyword 'a' not legal at this point
+
+- i_tuyn_bng__n_quc_gia_brasil.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_brasil.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_brasil: 400 [line: 51, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_c.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_c.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_c: 400 [line: 36, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_guam.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_guam.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_guam: 400 [line: 19, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_hn_quc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_hn_quc.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_hn_quc: 400 [line: 25, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_lin_x.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_lin_x.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_lin_x: 400 [line: 42, col: 85] Keyword 'a' not legal at this point
+
+- i_tuyn_bng__n_quc_gia_maroc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_maroc.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_maroc: 400 [line: 30, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_ng_timor.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_ng_timor.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_ng_timor: 400 [line: 21, col: 84] Keyword 'a' not legal at this point
+
+- i_tuyn_bng__n_quc_gia_nga.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_nga.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_nga: 400 [line: 10, col: 58] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_nht_bn.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_nht_bn.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_nht_bn: 400 [line: 25, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_nigeria.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_nigeria.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_nigeria: 400 [line: 21, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_o.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_o.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_o: 400 [line: 10, col: 57] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_philippines.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_philippines.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_philippines: 400 [line: 25, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_thy_in.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_thy_in.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_thy_in: 400 [line: 34, col: 20] Failed to find a prefix name or keyword: ^(94;0x005E)
+
+- i_tuyn_bng__n_quc_gia_tip_khc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_tip_khc.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_tip_khc: 400 [line: 10, col: 80] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_trung_quc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_trung_quc.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_trung_quc: 400 [line: 33, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_ty_ban_nha.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_ty_ban_nha.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_ty_ban_nha: 400 [line: 22, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_vit_nam.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_vit_nam.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_vit_nam: 400 [line: 28, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__n_quc_gia_zambia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__n_quc_gia_zambia.ttl into http://kg.local/silver/i_tuyn_bng__n_quc_gia_zambia: 400 [line: 20, col: 26] Triples not terminated by DOT
+
+- i_tuyn_bng__olympic_trung_quc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__olympic_trung_quc.ttl into http://kg.local/silver/i_tuyn_bng__olympic_trung_quc: 400 [line: 10, col: 74] Triples not terminated by DOT
+
+- i_tuyn_bng__olympic_vng_quc_lin_hip_anh_v_bc_ireland.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__olympic_vng_quc_lin_hip_anh_v_bc_ireland.ttl into http://kg.local/silver/i_tuyn_bng__olympic_vng_quc_lin_hip_anh_v_bc_ireland: 400 [line: 49, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia: 400 [line: 18, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia__rp_x_t.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia__rp_x_t.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia__rp_x_t: 400 [line: 150, col: 38] Broken token: 2024-03-26T20:00: .
+
+- i_tuyn_bng__quc_gia_abkhazia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_abkhazia.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_abkhazia: 400 [line: 70, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_albania.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_albania.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_albania: 400 [line: 15, col: 23] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_algrie.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_algrie.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_algrie: 400 [line: 10, col: 48] Not a valid token for an RDF term: [GT]
+
+- i_tuyn_bng__quc_gia_an_mch.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_an_mch.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_an_mch: 400 [line: 28, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_andorra.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_andorra.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_andorra: 400 [line: 19, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_angola.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_angola.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_angola: 400 [line: 66, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_anh.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_anh.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_anh: 400 [line: 15, col: 69] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_antigua_v_barbuda.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_antigua_v_barbuda.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_antigua_v_barbuda: 400 [line: 10, col: 74] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_antille_thuc_h_lan.ttl: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+- i_tuyn_bng__quc_gia_argentina.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_argentina.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_argentina: 400 [line: 82, col: 70] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_azerbaijan.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_azerbaijan.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_azerbaijan: 400 [line: 20, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_b.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_b.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_b: 400 [line: 175, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_b_bin_ng.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_b_bin_ng.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_b_bin_ng: 400 [line: 26, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_b_o_nha.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_b_o_nha.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_b_o_nha: 400 [line: 18, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_ba_lan.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_ba_lan.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_ba_lan: 400 [line: 23, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_bahamas.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_bahamas.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_bahamas: 400 [line: 13, col: 67] Out of place: [UNDERSCORE]
+
+- i_tuyn_bng__quc_gia_bahrain.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_bahrain.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_bahrain: 400 [line: 73, col: 18] Unrecognized (expected an RDF Term): [VAR:]
+
+- i_tuyn_bng__quc_gia_barbados.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_barbados.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_barbados: 400 [line: 81, col: 116] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_bc_macedonia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_bc_macedonia.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_bc_macedonia: 400 [line: 72, col: 18] Unrecognized (expected an RDF Term): [VAR:number]
+
+- i_tuyn_bng__quc_gia_belarus.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_belarus.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_belarus: 400 [line: 14, col: 80] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_belize.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_belize.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_belize: 400 [line: 16, col: 55] Not a valid token for an RDF term: [DOT]
+
+- i_tuyn_bng__quc_gia_bermuda.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_bermuda.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_bermuda: 400 [line: 149, col: 56] Keyword 'a' not legal at this point
+
+- i_tuyn_bng__quc_gia_bhutan.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_bhutan.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_bhutan: 400 [line: 28, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_bolivia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_bolivia.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_bolivia: 400 [line: 20, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_bosna_v_hercegovina.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_bosna_v_hercegovina.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_bosna_v_hercegovina: 400 [line: 10, col: 85] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_brasil.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_brasil.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_brasil: 400 [line: 107, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_campuchia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_campuchia.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_campuchia: 400 [line: 31, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_chile.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_chile.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_chile: 400 [line: 17, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_cng_ha_dn_ch_congo.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_cng_ha_dn_ch_congo.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_cng_ha_dn_ch_congo: 400 [line: 19, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_cng_ha_dn_ch_nhn_dn_triu_tin.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_cng_ha_dn_ch_nhn_dn_triu_tin.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_cng_ha_dn_ch_nhn_dn_triu_tin: 400 [line: 24, col: 35] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_cng_ha_ireland.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_cng_ha_ireland.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_cng_ha_ireland: 400 [line: 21, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_cng_ha_sc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_cng_ha_sc.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_cng_ha_sc: 400 [line: 10, col: 67] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_cng_ha_trung_phi.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_cng_ha_trung_phi.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_cng_ha_trung_phi: 400 [line: 79, col: 74] Keyword 'a' not legal at this point
+
+- i_tuyn_bng__quc_gia_cng_ng_cc_quc_gia_c_lp.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_cng_ng_cc_quc_gia_c_lp.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_cng_ng_cc_quc_gia_c_lp: 400 [line: 18, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_colombia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_colombia.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_colombia: 400 [line: 20, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_comoros.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_comoros.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_comoros: 400 [line: 26, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_croatia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_croatia.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_croatia: 400 [line: 20, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_curaao.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_curaao.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_curaao: 400 [line: 21, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_curaao_19211958.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_curaao_19211958.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_curaao_19211958: 400 [line: 10, col: 53] Not a valid token for an RDF term: [LPAREN]
+
+- i_tuyn_bng__quc_gia_el_salvador.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_el_salvador.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_el_salvador: 400 [line: 13, col: 1 ] Broken token (newline):  ;
+
+- i_tuyn_bng__quc_gia_estonia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_estonia.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_estonia: 400 [line: 14, col: 62] Out of place: [UNDERSCORE]
+
+- i_tuyn_bng__quc_gia_eswatini.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_eswatini.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_eswatini: 400 [line: 31, col: 71] Out of place: [KEYWORD:C]
+
+- i_tuyn_bng__quc_gia_fiji.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_fiji.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_fiji: 400 [line: 20, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_gabon.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_gabon.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_gabon: 400 [line: 21, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_gambia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_gambia.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_gambia: 400 [line: 21, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_ghana.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_ghana.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_ghana: 400 [line: 92, col: 50] Not a valid token for an RDF term: [DOT]
+
+- i_tuyn_bng__quc_gia_greenland.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_greenland.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_greenland: 400 [line: 12, col: 60] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_gruzia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_gruzia.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_gruzia: 400 [line: 27, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_guatemala.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_guatemala.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_guatemala: 400 [line: 50, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_guiana_thuc_php.ttl: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+- i_tuyn_bng__quc_gia_guin-bissau.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_guin-bissau.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_guin-bissau: 400 [line: 19, col: 36] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_guine.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_guine.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_guine: 400 [line: 10, col: 61] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_guinea_xch_o.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_guinea_xch_o.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_guinea_xch_o: 400 [line: 19, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_guyana.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_guyana.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_guyana: 400 [line: 163, col: 18] Unrecognized (expected an RDF Term): [MINUS]
+
+- i_tuyn_bng__quc_gia_h_lan.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_h_lan.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_h_lan: 400 [line: 17, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_haiti.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_haiti.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_haiti: 400 [line: 27, col: 33] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_hn_quc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_hn_quc.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_hn_quc: 400 [line: 29, col: 35] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_indonesia.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_indonesia.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_indonesia: 400 [line: 24, col: 34] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_kurdistan_thuc_iraq.ttl: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+- i_tuyn_bng__quc_gia_n.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_n.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_n: 400 [line: 10, col: 87] Triples not terminated by DOT
+
+- i_tuyn_bng__quc_gia_o.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__quc_gia_o.ttl into http://kg.local/silver/i_tuyn_bng__quc_gia_o: 400 [line: 10, col: 57] Triples not terminated by DOT
+
+- i_tuyn_bng__u-23_quc_gia__rp_x_t.ttl: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+- i_tuyn_bng__u-23_quc_gia_nht_bn.ttl: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+- i_tuyn_bng__u-23_quc_gia_vit_nam.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/i_tuyn_bng__u-23_quc_gia_vit_nam.ttl into http://kg.local/silver/i_tuyn_bng__u-23_quc_gia_vit_nam: 400 [line: 28, col: 67] Keyword 'a' not legal at this point
+
+- jpest_fc.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/jpest_fc.ttl into http://kg.local/silver/jpest_fc: 400 [line: 10, col: 47] Unrecognized keyword: FC
+
+- lvaro_silva_cu_th_bng.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/lvaro_silva_cu_th_bng.ttl into http://kg.local/silver/lvaro_silva_cu_th_bng: 400 [line: 10, col: 49] Unrecognized keyword: Silva
+
+- minh_qun_cu_th_bng.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/minh_qun_cu_th_bng.ttl into http://kg.local/silver/minh_qun_cu_th_bng: 400 [line: 13, col: 16] Unrecognized (expected an RDF Term): [VAR:?]
+
+- ng_giai_l_cu_th_bng.ttl: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+- u_thu_lin_hp_gii_v_ch_bng__th_gii_2026.ttl: Failed to load /home/nghianv/workspace/semantic-web-football-kg/silver/ttl/u_thu_lin_hp_gii_v_ch_bng__th_gii_2026.ttl into http://kg.local/silver/u_thu_lin_hp_gii_v_ch_bng__th_gii_2026: 400 [line: 41, col: 75] Keyword 'a' not legal at this point
+

@@ -2,9 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <http://schema.org/> .
-@prefix time: <http://www.w3.org/2006/time#> .
 @prefix kg: <https://kg-football.vn/ontology#> .
 @prefix res: <https://kg-football.vn/resource/> .
 
@@ -12,7 +10,7 @@
 kg:PlayerShape a sh:NodeShape ;
   sh:targetClass kg:Player ;
   sh:property [
-    sh:path foaf:name ;
+    sh:path kg:name ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:datatype xsd:string ;
@@ -30,6 +28,11 @@ kg:PlayerShape a sh:NodeShape ;
     sh:minCount 1 ;
     sh:class kg:Country ;
     sh:message "Player must have at least one nationality"@en ;
+  ] ;
+  sh:property [
+    sh:path kg:birthPlace ;
+    sh:class kg:City ;
+    sh:message "Player birthPlace must be a City"@en ;
   ] ;
   sh:property [
     sh:path kg:playsFor ;
@@ -63,6 +66,16 @@ kg:PlayerShape a sh:NodeShape ;
     sh:maxInclusive 150.0 ;
     sh:message "Weight must be between 40 and 150 kg"@en ;
   ] ;
+  # people.ttl defines kg:preferredFoot both as DatatypeProperty and ObjectProperty.
+  # Allow either a string or a kg:Footedness node.
+  sh:property [
+    sh:path kg:preferredFoot ;
+    sh:or (
+      [ sh:datatype xsd:string ]
+      [ sh:class kg:Footedness ]
+    ) ;
+    sh:message "preferredFoot must be a string or a Footedness individual"@en ;
+  ] ;
   sh:sparql [
     a sh:SPARQLConstraint ;
     sh:message "Player birth date must be in the past"@en ;
@@ -78,22 +91,39 @@ kg:PlayerShape a sh:NodeShape ;
 kg:TeamShape a sh:NodeShape ;
   sh:targetClass kg:Team ;
   sh:property [
-    sh:path schema:name ;
+    sh:path kg:teamName ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:datatype xsd:string ;
-    sh:message "Team must have exactly one name"@en ;
+    sh:message "Team must have exactly one official name"@en ;
+  ] ;
+  sh:property [
+    sh:path kg:teamAbbreviation ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+    sh:message "Team abbreviation must be a string if present"@en ;
   ] ;
   sh:property [
     sh:path kg:hasCoach ;
+    sh:maxCount 1 ;
     sh:class kg:Coach ;
-    sh:message "Coach must be a valid Coach instance"@en ;
+    sh:message "hasCoach must point to a Coach"@en ;
+  ] ;
+  sh:property [
+    sh:path kg:hasCaptain ;
+    sh:maxCount 1 ;
+    sh:class kg:Player ;
+    sh:message "hasCaptain must point to a Player"@en ;
+  ] ;
+  sh:property [
+    sh:path kg:participatesIn ;
+    sh:class kg:Season ;
+    sh:message "participatesIn must point to a Season"@en ;
   ] .
 
 # Club Shape
 kg:ClubShape a sh:NodeShape ;
   sh:targetClass kg:Club ;
-  sh:targetSubjectsOf kg:Club ;
   sh:property [
     sh:path kg:foundedDate ;
     sh:datatype xsd:date ;
@@ -104,6 +134,12 @@ kg:ClubShape a sh:NodeShape ;
     sh:class kg:Stadium ;
     sh:maxCount 1 ;
     sh:message "Club can have at most one home stadium"@en ;
+  ] ;
+  sh:property [
+    sh:path kg:hasOwner ;
+    sh:maxCount 1 ;
+    sh:class kg:Owner ;
+    sh:message "hasOwner must point to an Owner"@en ;
   ] ;
   sh:sparql [
     a sh:SPARQLConstraint ;
@@ -120,7 +156,7 @@ kg:ClubShape a sh:NodeShape ;
 kg:StadiumShape a sh:NodeShape ;
   sh:targetClass kg:Stadium ;
   sh:property [
-    sh:path schema:name ;
+    sh:path kg:name ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:datatype xsd:string ;
@@ -169,9 +205,25 @@ kg:MatchShape a sh:NodeShape ;
     sh:message "Match must have exactly one kickoff time"@en ;
   ] ;
   sh:property [
-    sh:path kg:attendance ;
-    sh:datatype xsd:nonNegativeInteger ;
-    sh:message "Attendance must be a non-negative integer"@en ;
+    sh:path kg:result ;
+    sh:datatype xsd:string ;
+    sh:message "Result must be a string (e.g., 2-1)"@en ;
+  ] ;
+  sh:property [
+    sh:path kg:inCompetition ;
+    sh:class kg:Competition ;
+    sh:message "inCompetition must point to a Competition"@en ;
+  ] ;
+  sh:property [
+    sh:path kg:inSeason ;
+    sh:class kg:Season ;
+    sh:message "inSeason must point to a Season"@en ;
+  ] ;
+  sh:property [
+    sh:path kg:referee ;
+    sh:maxCount 1 ;
+    sh:class kg:Referee ;
+    sh:message "referee must point to a Referee"@en ;
   ] ;
   sh:sparql [
     a sh:SPARQLConstraint ;
@@ -183,67 +235,6 @@ kg:MatchShape a sh:NodeShape ;
         FILTER(?homeTeam = ?awayTeam)
       }
     """ ;
-  ] ;
-  sh:sparql [
-    a sh:SPARQLConstraint ;
-    sh:message "Attendance cannot exceed stadium capacity"@en ;
-    sh:select """
-      SELECT $this WHERE {
-        $this kg:attendance ?attendance ;
-               kg:venue ?venue .
-        ?venue kg:capacity ?capacity .
-        FILTER(?attendance > ?capacity)
-      }
-    """ ;
-  ] .
-
-# Goal Event Shape
-kg:GoalEventShape a sh:NodeShape ;
-  sh:targetClass kg:GoalEvent ;
-  sh:property [
-    sh:path kg:inMatch ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:class kg:Match ;
-    sh:message "Goal event must reference exactly one match"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:byPlayer ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:class kg:Player ;
-    sh:message "Goal event must reference exactly one player"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:forTeam ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:class kg:Team ;
-    sh:message "Goal event must reference exactly one team"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:minute ;
-    sh:datatype xsd:nonNegativeInteger ;
-    sh:minInclusive 0 ;
-    sh:maxInclusive 120 ;
-    sh:message "Goal minute must be between 0 and 120"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:second ;
-    sh:datatype xsd:nonNegativeInteger ;
-    sh:minInclusive 0 ;
-    sh:maxInclusive 59 ;
-    sh:message "Goal second must be between 0 and 59"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:isOwnGoal ;
-    sh:datatype xsd:boolean ;
-    sh:message "isOwnGoal must be a boolean value"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:isPenalty ;
-    sh:datatype xsd:boolean ;
-    sh:message "isPenalty must be a boolean value"@en ;
   ] .
 
 # Competition Shape
@@ -257,38 +248,98 @@ kg:CompetitionShape a sh:NodeShape ;
     sh:message "Competition must have exactly one name"@en ;
   ] ;
   sh:property [
-    sh:path kg:tier ;
+    sh:path kg:participantCount ;
     sh:datatype xsd:positiveInteger ;
-    sh:minInclusive 1 ;
-    sh:maxInclusive 10 ;
-    sh:message "Competition tier must be between 1 and 10"@en ;
+    sh:message "participantCount must be a positive integer"@en ;
+  ] ;
+  sh:property [
+    sh:path kg:heldIn ;
+    sh:class kg:Country ;
+    sh:message "heldIn must point to a Country"@en ;
+  ] ;
+  sh:property [
+    sh:path kg:hasSeason ;
+    sh:class kg:Season ;
+    sh:message "hasSeason must point to a Season"@en ;
   ] .
 
 # Season Shape
 kg:SeasonShape a sh:NodeShape ;
   sh:targetClass kg:Season ;
   sh:property [
-    sh:path kg:seasonStart ;
+    sh:path kg:seasonOf ;
+    sh:minCount 1 ;
+    sh:class kg:Competition ;
+    sh:message "Season must belong to a Competition via seasonOf"@en ;
+  ] .
+
+# Geo: City and Country Shapes
+kg:CityShape a sh:NodeShape ;
+  sh:targetClass kg:City ;
+  sh:property [
+    sh:path kg:name ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:datatype xsd:date ;
-    sh:message "Season must have exactly one start date"@en ;
+    sh:datatype xsd:string ;
+    sh:message "City must have exactly one name"@en ;
+  ] .
+
+kg:CountryShape a sh:NodeShape ;
+  sh:targetClass kg:Country ;
+  sh:property [
+    sh:path kg:name ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+    sh:message "Country must have exactly one name"@en ;
+  ] .
+
+# Organization and related roles
+kg:OrganizationShape a sh:NodeShape ;
+  sh:targetClass kg:Organization ;
+  sh:property [
+    sh:path kg:hasMember ;
+    sh:class kg:Team ;
+    sh:message "hasMember must point to a Team"@en ;
   ] ;
   sh:property [
-    sh:path kg:seasonEnd ;
+    sh:path kg:organizes ;
+    sh:class kg:Competition ;
+    sh:message "organizes must point to a Competition"@en ;
+  ] .
+
+kg:OwnerShape a sh:NodeShape ;
+  sh:targetClass kg:Owner ;
+  sh:property [
+    sh:path kg:owns ;
+    sh:class kg:Club ;
+    sh:message "owns must point to a Club"@en ;
+  ] .
+
+kg:CoachShape a sh:NodeShape ;
+  sh:targetClass kg:Coach ;
+  sh:property [
+    sh:path kg:manages ;
+    sh:class kg:Team ;
+    sh:message "manages must point to a Team"@en ;
+  ] .
+
+kg:RefereeShape a sh:NodeShape ;
+  sh:targetClass kg:Referee ;
+  sh:property [
+    sh:path kg:name ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    sh:datatype xsd:date ;
-    sh:message "Season must have exactly one end date"@en ;
-  ] ;
-  sh:sparql [
-    a sh:SPARQLConstraint ;
-    sh:message "Season start date must be before end date"@en ;
-    sh:select """
-      SELECT $this WHERE {
-        $this kg:seasonStart ?start ;
-               kg:seasonEnd ?end .
-        FILTER(?start >= ?end)
-      }
-    """ ;
+    sh:datatype xsd:string ;
+    sh:message "Referee must have exactly one name"@en ;
+  ] .
+
+kg:PositionShape a sh:NodeShape ;
+  sh:targetClass kg:Position ;
+  sh:property [
+    sh:path kg:name ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:string ;
+    sh:message "Position must have exactly one name"@en ;
   ] .

@@ -1,0 +1,63 @@
+<Silk>
+  <Prefixes>
+    <Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix id="owl" namespace="http://www.w3.org/2002/07/owl#"/>
+    <Prefix id="schema" namespace="http://schema.org/"/>
+    <Prefix id="kg" namespace="https://kg-football.vn/ontology#"/>
+  </Prefixes>
+
+  <Datasets>
+    <Dataset id="sourceKG" type="sparqlEndpoint">
+      <Param name="endpointURI" value="http://host.docker.internal:3030/football/sparql"/>
+      <Param name="pageSize" value="1000"/>
+    </Dataset>
+
+    <Dataset id="wikidata" type="sparqlEndpoint">
+      <Param name="endpointURI" value="https://query.wikidata.org/sparql"/>
+      <Param name="pageSize" value="1000"/>
+    </Dataset>
+  </Datasets>
+
+  <Linking>
+    <LinkSpec id="players_sameAs">
+      <SourceDataset dataSource="sourceKG" var="s">
+        <RestrictTo>?s a kg:Player</RestrictTo>
+      </SourceDataset>
+      <TargetDataset dataSource="wikidata" var="t">
+        <RestrictTo>?t wdt:P31 wd:Q5 . ?t wdt:P106 wd:Q937857</RestrictTo>
+      </TargetDataset>
+
+      <Outputs>
+        <Output type="file">
+          <Param name="file" value="/opt/silk/workspace/links/players_sameAs.nt"/>
+          <Param name="format" value="N-Triples"/>
+          <Param name="predicateUri" value="http://www.w3.org/2002/07/owl#sameAs"/>
+        </Output>
+      </Outputs>
+
+      <LinkageRule>
+        <Aggregate type="max">
+          <Compare metric="jaroWinkler" threshold="0.93" weight="1.0">
+            <TransformInput function="lowerCase">
+              <Input path="rdfs:label"/>
+            </TransformInput>
+            <TransformInput function="lowerCase">
+              <Input path="rdfs:label"/>
+            </TransformInput>
+          </Compare>
+          <Compare metric="date" threshold="0.0" weight="1.0">
+            <TransformInput function="parseDate">
+              <Input path="schema:birthDate"/>
+            </TransformInput>
+            <TransformInput function="parseDate">
+              <Input path="schema:birthDate"/>
+            </TransformInput>
+          </Compare>
+        </Aggregate>
+      </LinkageRule>
+
+      <Filter threshold="0.95"/>
+    </LinkSpec>
+  </Linking>
+</Silk>
