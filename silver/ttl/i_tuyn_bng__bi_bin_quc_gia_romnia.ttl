@@ -1,151 +1,81 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/România a kg:Team ;
-kg:teamName "România" ;
-kg:teamAbbreviation "ROU" ;
-kg:hasCoach res:coach/Viorel_Farcaș ;
-kg:managedBy res:coach/Viorel_Farcaș ;
-kg:locatedIn res:country/România ;
-kg:member res:player/Iulian_Gândac ;
-kg:member res:player/Iulian_Răvoiu ;
-kg:member res:player/Adrian_Tănase ;
-kg:member res:player/Ionel_Posteucă-Pulhac ;
-kg:member res:player/Liviu_Croitoru ;
-kg:member res:player/Raj_Cărăuleanu ;
-kg:member res:player/Marian_Posteucă-Pulhac ;
-kg:member res:player/Lucian_Chirilă ;
-kg:member res:player/Laurențiu_Marin ;
-kg:member res:player/Maci ;
-kg:member res:player/Cristian_Crecan ;
-kg:member res:player/Emil_Răducu ;
-kg:member res:player/Ionuț_Florea .
-
-res:coach/Viorel_Farcaș a kg:Coach ;
-kg:manages res:team/România .
-
-res:player/Iulian_Gândac a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber "1"^^xsd:positiveInteger .
-
-res:player/Iulian_Răvoiu a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "2"^^xsd:positiveInteger .
-
-res:player/Adrian_Tănase a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "3"^^xsd:positiveInteger .
-
-res:player/Ionel_Posteucă-Pulhac a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "4"^^xsd:positiveInteger .
-
-res:player/Liviu_Croitoru a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "6"^^xsd:positiveInteger .
-
-res:player/Raj_Cărăuleanu a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber "7"^^xsd:positiveInteger .
-
-res:player/Marian_Posteucă-Pulhac a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "10"^^xsd:positiveInteger ;
-kg:otherRole "đội trưởng" .
-
-res:player/Lucian_Chirilă a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "11"^^xsd:positiveInteger .
-
-res:player/Laurențiu_Marin a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber "12"^^xsd:positiveInteger .
-
-res:player/Maci a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "14"^^xsd:positiveInteger ;
-kg:topScorer true .
-
-res:player/Cristian_Crecan a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber "19"^^xsd:positiveInteger .
-
-res:player/Emil_Răducu a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Defender .
-
-res:player/Ionuț_Florea a kg:Player ;
-kg:playsFor res:team/România ;
-kg:primaryPosition kg:Defender .
-
-res:country/România a kg:Country ;
-kg:locatedIn res:country/România ;
-kg:hasTeam res:team/România .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu Superfinal" .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Italian_Event a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu Italian Event" .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_German_Event a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu German Event" .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Dutch_Event a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu Dutch Event" .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Russian_Event a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu Russian Event" .
-
-res:match/Portugal_vs_România a kg:Match ;
-kg:homeTeam res:team/Portugal ;
-kg:awayTeam res:team/România ;
-kg:result "11–0" ;
-kg:venue res:stadium/Jesolo ;
-kg:kickoffTime "2016-09-03"^^xsd:date ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal .
-
-res:stadium/Jesolo a kg:Stadium ;
-kg:locatedIn res:city/Jesolo ;
-kg:capacity 10000 .  # giả định giá trị cho ví dụ
-
-res:city/Jesolo a kg:City ;
-kg:locatedIn res:country/Ý .
-
-res:country/Ý a kg:Country ;
-kg:locatedIn res:country/Ý .
-
-res:team/România kg:participatesIn res:season/2010 ;
-kg:participatesIn res:season/2011 ;
-kg:participatesIn res:season/2012 .
-
-res:season/2010 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal .
-
-res:season/2011 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal .
-
-res:season/2012 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal .
-
-res:team/România kg:rankInCompetition "4"^^xsd:positiveInteger ;
-kg:rankInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal, "2011" ;
-kg:rankInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal, "2012" ;
-kg:rankInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Italian_Event, "2011" ;
-kg:rankInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_German_Event, "2012" ;
-kg:rankInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_German_Event, "2011" ;
-kg:rankInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Dutch_Event, "2010" ;
-kg:rankInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Russian_Event, "2010" .
+res:team/România a kg:Team
+; kg:teamName "România"
+; kg:teamAbbreviation "ROU"
+; kg:hasCoach res:coach/Viorel_Farcaș
+; kg:locatedIn res:country/România .
+res:coach/Viorel_Farcaș a kg:Coach
+; kg:manages res:team/România .
+res:player/Iulian_Gândac a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Iulian_Răvoiu a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Adrian_Tănase a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Ionel_Posteucă-Pulhac a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Liviu_Croitoru a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Raj_Cărăuleanu a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Marian_Posteucă-Pulhac a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Lucian_Chirilă a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Laurențiu_Marin a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Maci a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Cristian_Crecan a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Emil_Răducu a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Defender .
+res:player/Ionuț_Florea a kg:Player
+; kg:playsFor res:team/România
+; kg:primaryPosition kg:Defender .
+res:country/România a kg:Country
+; kg:locatedIn res:country/România .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu Superfinal" .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Italian_Event a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu Italian Event" .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_German_Event a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu German Event" .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Dutch_Event a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu Dutch Event" .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Russian_Event a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu Russian Event" .
+res:match/Portugal_vs_România a kg:Match
+; kg:homeTeam res:team/Portugal
+; kg:awayTeam res:team/România
+; kg:result "11–0"
+; kg:venue res:stadium/Jesolo
+; kg:kickoffTime "2016-09-03"^^xsd:date
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal .
+res:stadium/Jesolo a kg:Stadium
+; kg:locatedIn res:city/Jesolo
+; kg:capacity 10000 .
+res:city/Jesolo a kg:City
+; kg:locatedIn res:country/Ý .
+res:country/Ý a kg:Country
+; kg:locatedIn res:country/Ý .
+res:team/România kg:participatesIn res:season/2010
+; kg:participatesIn res:season/2011
+; kg:participatesIn res:season/2012 .
+res:season/2010 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal .
+res:season/2011 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal .
+res:season/2012 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu_Superfinal .

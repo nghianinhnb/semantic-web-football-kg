@@ -1,155 +1,104 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Sénégal a kg:Team ;
-kg:teamName "Sénégal" ;
-kg:hasCoach res:coach/Amadou_Diop ;
-kg:locatedIn res:country/Sénégal ;
-kg:organizedBy res:organization/Liên_đoàn_bóng_đá_châu_Aphi ;
-kg:participantCount 3 .
-
-res:organization/Liên_đoàn_bóng_đá_châu_Aphi a kg:Organization ;
-rdfs:label "Liên đoàn bóng đá châu Phi" .
-
-res:country/Sénégal a kg:Country ;
-rdfs:label "Sénégal" .
-
-res:coach/Amadou_Diop a kg:Coach ;
-rdfs:label "Amadou Diop" ;
-kg:manages res:team/Sénégal .
-
-res:player/Al_Seyni_Ndiaye a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 1 .
-
-res:player/Ibra_Thioune a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 .
-
-res:player/Ngalla_Sylla a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 3 .
-
-res:player/Cheikh_Ba_(Cheikhouna_Lo) a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 4 .
-
-res:player/Mamadou_Sylla a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 5 .
-
-res:player/Ibrahima_Bakhoum a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 6 .
-
-res:player/Babacar_Fall a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 7 .
-
-res:player/Seydina_Thioub a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 8 .
-
-res:player/Pape_Koukpaki a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 .
-
-res:player/Marcelin_Faye a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 10 .
-
-res:player/Serigne_(Papa)_Ndour a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 11 .
-
-res:player/Mbaye_Mbengue a kg:Player ;
-kg:playsFor res:team/Sénégal ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 12 .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Phi" ;
-kg:heldIn res:country/Sénégal ;
-kg:participantCount 3 .
-
-res:season/2007 a kg:Season ;
-kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
-kg:seasonOf "2007" .
-
-res:season/2008 a kg:Season ;
-kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
-kg:seasonOf "2008" .
-
-res:season/2011 a kg:Season ;
-kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
-kg:seasonOf "2011" .
-
-res:season/2013 a kg:Season ;
-kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
-kg:seasonOf "2013" .
-
-res:season/2015 a kg:Season ;
-kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
-kg:seasonOf "2015" .
-
-res:match/Durban,_Nam_Phí_2006 a kg:Match ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
-kg:inSeason res:season/2006 .
-
-res:match/Durban,_Nam_Phí_2007 a kg:Match ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
-kg:inSeason res:season/2007 .
-
-res:match/Durban,_Nam_Phí_2008 a kg:Match ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
-kg:inSeason res:season/2008 .
-
-res:match/Casablanca,_Maroc_2011 a kg:Match ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
-kg:inSeason res:season/2011 .
-
-res:match/El_Jadida,_Maroc_2013 a kg:Match ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
-kg:inSeason res:season/2013 .
-
-res:match/Roche_Caiman,_Seychelles_2015 a kg:Match ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
-kg:inSeason res:season/2015 .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
-kg:heldIn res:country/Sénégal .
-
-res:season/2007 a kg:Season ;
-kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
-kg:seasonOf "2007" .
-
-res:season/2008 a kg:Season ;
-kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
-kg:seasonOf "2008" .
-
-res:season/2011 a kg:Season ;
-kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
-kg:seasonOf "2011" .
-
-res:season/2013 a kg:Season ;
-kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
-kg:seasonOf "2013" .
-
-res:season/2015 a kg:Season ;
-kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
-kg:seasonOf "2015" .
+res:team/Sénégal a kg:Team
+; kg:teamName "Sénégal"
+; kg:hasCoach res:coach/Amadou_Diop
+; kg:locatedIn res:country/Sénégal
+; kg:organizedBy res:organization/Liên_đoàn_bóng_đá_châu_Aphi
+; kg:participantCount 3 .
+res:organization/Liên_đoàn_bóng_đá_châu_Aphi a kg:Organization
+; rdfs:label "Liên đoàn bóng đá châu Phi" .
+res:country/Sénégal a kg:Country
+; rdfs:label "Sénégal" .
+res:coach/Amadou_Diop a kg:Coach
+; rdfs:label "Amadou Diop"
+; kg:manages res:team/Sénégal .
+res:player/Al_Seyni_Ndiaye a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Ibra_Thioune a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Ngalla_Sylla a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Cheikh_Ba_(Cheikhouna_Lo) a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Mamadou_Sylla a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Ibrahima_Bakhoum a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Babacar_Fall a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Seydina_Thioub a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Pape_Koukpaki a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Marcelin_Faye a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Serigne_(Papa)_Ndour a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Mbaye_Mbengue a kg:Player
+; kg:playsFor res:team/Sénégal
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Phi"
+; kg:heldIn res:country/Sénégal
+; kg:participantCount 3 .
+res:season/2007 a kg:Season
+; kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi
+; kg:seasonOf "2007" .
+res:season/2008 a kg:Season
+; kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi
+; kg:seasonOf "2008" .
+res:season/2011 a kg:Season
+; kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi
+; kg:seasonOf "2011" .
+res:season/2013 a kg:Season
+; kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi
+; kg:seasonOf "2013" .
+res:season/2015 a kg:Season
+; kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi
+; kg:seasonOf "2015" .
+res:match/Durban,_Nam_Phí_2006 a kg:Match
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi
+; kg:inSeason res:season/2006 .
+res:match/Durban,_Nam_Phí_2007 a kg:Match
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi
+; kg:inSeason res:season/2007 .
+res:match/Durban,_Nam_Phí_2008 a kg:Match
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi
+; kg:inSeason res:season/2008 .
+res:match/Casablanca,_Maroc_2011 a kg:Match
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi
+; kg:inSeason res:season/2011 .
+res:match/El_Jadida,_Maroc_2013 a kg:Match
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi
+; kg:inSeason res:season/2013 .
+res:match/Roche_Caiman,_Seychelles_2015 a kg:Match
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi
+; kg:inSeason res:season/2015 .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới"
+; kg:heldIn res:country/Sénégal .
+res:season/2007 a kg:Season
+; kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới
+; kg:seasonOf "2007" .
+res:season/2008 a kg:Season
+; kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới
+; kg:seasonOf "2008" .
+res:season/2011 a kg:Season
+; kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới
+; kg:seasonOf "2011" .
+res:season/2013 a kg:Season
+; kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới
+; kg:seasonOf "2013" .
+res:season/2015 a kg:Season
+; kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới
+; kg:seasonOf "2015" .

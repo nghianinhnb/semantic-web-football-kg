@@ -1,399 +1,201 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Colombia a kg:Team ;
-kg:teamName "Colombia" ;
-kg:teamAbbreviation "COL" ;
-kg:hasCoach res:coach/Nestor_Lorenzo ;
-kg:hasCaptain res:player/James_Rodriguez ;
-kg:isMemberOf kg:CONMEBOL ;
-kg:isMemberOf kg:FIFA ;
-kg:rankInFIFA 12 ;
-kg:mostCaps res:player/David_Ospina ;
-kg:topScorer res:player/Radamel_Falcao ;
-kg:homeStadium res:stadium/Roberto_Melendez_Stadium ;
-kg:worldCupApps 6 ;
-kg:bestWorldCupResult "Quarterfinals" ;
-kg:worldCupFirst 1962 ;
-kg:regionalCupApps 22 ;
-kg:regionalCupBest "Champion" ;
-kg:regionalCupFirst 1945 ;
-kg:confederationsCupApps 1 ;
-kg:confederationsCupBest "Fourth place" ;
-kg:confederationsCupFirst 2003 .
-
-res:coach/Nestor_Lorenzo a kg:Coach ;
-kg:manages res:team/Colombia .
-
-res:player/James_Rodriguez a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 10 ;
-kg:captainOf res:team/Colombia .
-
-res:player/David_Ospina a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 1 ;
-kg:mostCapsForTeam res:team/Colombia ;
-kg:totalCaps 128 .
-
-res:player/Radamel_Falcao a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 ;
-kg:topScorerForTeam res:team/Colombia ;
-kg:totalGoals 36 .
-
-res:stadium/Roberto_Melendez_Stadium a kg:Stadium ;
-kg:capacity 50000 ;
-kg:homeOf res:team/Colombia .
-
-res:competition/FIFA_World_Cup a kg:Competition ;
-kg:competitionName "FIFA World Cup" .
-
-res:competition/Copa_America a kg:Competition ;
-kg:competitionName "Copa América" .
-
-res:competition/Confederations_Cup a kg:Competition ;
-kg:competitionName "Confederations Cup" .
-
-res:season/2014 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup ;
-kg:participatesIn res:team/Colombia .
-
-res:match/2014_World_Cup_Quarterfinal a kg:Match ;
-kg:homeTeam res:team/Colombia ;
-kg:awayTeam res:team/Ukraine ;
-kg:inCompetition res:competition/FIFA_World_Cup ;
-kg:inSeason res:season/2014 ;
-kg:venue res:stadium/Roberto_Melendez_Stadium ;
-kg:kickoffTime "2014-07-14T20:00:00-04:00"^^xsd:dateTime .
-
-res:match/2024_Copa_America_Final a kg:Match ;
-kg:homeTeam res:team/Argentina ;
-kg:awayTeam res:team/Colombia ;
-kg:inCompetition res:competition/Copa_America ;
-kg:inSeason res:season/2024 ;
-kg:venue res:stadium/Hard_Rock_Stadium ;
-kg:kickoffTime "2024-07-14T20:00:00-04:00"^^xsd:dateTime .
-
-res:country/Colombia a kg:Country ;
-kg:locatedIn res:country/South_America .
-
+res:team/Colombia a kg:Team
+; kg:teamName "Colombia"
+; kg:teamAbbreviation "COL"
+; kg:hasCoach res:coach/Nestor_Lorenzo
+; kg:hasCaptain res:player/James_Rodriguez
+; kg:homeStadium res:stadium/Roberto_Melendez_Stadium .
+res:coach/Nestor_Lorenzo a kg:Coach
+; kg:manages res:team/Colombia .
+res:player/James_Rodriguez a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/David_Ospina a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Radamel_Falcao a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:stadium/Roberto_Melendez_Stadium a kg:Stadium
+; kg:capacity 50000 .
+res:competition/FIFA_World_Cup a kg:Competition
+; kg:competitionName "FIFA World Cup" .
+res:competition/Copa_America a kg:Competition
+; kg:competitionName "Copa América" .
+res:competition/Confederations_Cup a kg:Competition
+; kg:competitionName "Confederations Cup" .
+res:season/2014 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup
+; kg:participatesIn res:team/Colombia .
+res:match/2014_World_Cup_Quarterfinal a kg:Match
+; kg:homeTeam res:team/Colombia
+; kg:awayTeam res:team/Ukraine
+; kg:inCompetition res:competition/FIFA_World_Cup
+; kg:inSeason res:season/2014
+; kg:venue res:stadium/Roberto_Melendez_Stadium
+; kg:kickoffTime "2014-07-14T20:00:00-04:00"^^xsd:dateTime .
+res:match/2024_Copa_America_Final a kg:Match
+; kg:homeTeam res:team/Argentina
+; kg:awayTeam res:team/Colombia
+; kg:inCompetition res:competition/Copa_America
+; kg:inSeason res:season/2024
+; kg:venue res:stadium/Hard_Rock_Stadium
+; kg:kickoffTime "2024-07-14T20:00:00-04:00"^^xsd:dateTime .
+res:country/Colombia a kg:Country
+; kg:locatedIn res:country/South_America .
 res:country/South_America a kg:Country .
-
-res:organization/CONMEBOL a kg:Organization ;
-kg:organizes res:competition/Copa_America .
-
-res:organization/FIFA a kg:Organization ;
-kg:organizes res:competition/FIFA_World_Cup .
-
-res:organization/CONMEBOL a kg:Organization ;
-kg:organizes res:competition/Copa_America .
-
-res:team/Colombia kg:isMemberOf res:organization/CONMEBOL ;
-kg:isMemberOf res:organization/FIFA .
-
-res:player/Luis_Diaz a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 7 ;
-kg:totalGoals 14 .
-
-res:player/Jhon_Cordoba a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 14 ;
-kg:totalGoals 4 .
-
-res:player/Yaser_Asprilla a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 22 ;
-kg:totalGoals 2 .
-
-res:player/Jorge_Carrascal a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 20 ;
-kg:totalGoals 2 .
-
-res:player/Jefferson_Lerma a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 16 ;
-kg:totalGoals 3 .
-
-res:player/Mateus_Uribe a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 15 ;
-kg:totalGoals 6 .
-
-res:player/Juan_Fernando_Quintero a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 20 ;
-kg:totalGoals 4 .
-
-res:player/Davinson_Sanchez a kg:Player, kg:Defender ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 23 ;
-kg:totalGoals 2 .
-
-res:player/Santiago_Arias a kg:Player, kg:Defender ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 4 ;
-kg:totalGoals 0 .
-
-res:player/Yerry_Mina a kg:Player, kg:Defender ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:totalGoals 7 .
-
-res:player/Daniel_Munoz a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 21 ;
-kg:totalGoals 3 .
-
-res:player/Camilo_Vargas a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 12 ;
-kg:totalGoals 0 .
-
-res:player/Alvaro_Montero a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 25 ;
-kg:totalGoals 0 .
-
-res:player/Kevin_Cuesta a kg:Player, kg:Defender ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 ;
-kg:totalGoals 0 .
-
-res:player/Jhon_Lucumi a kg:Player, kg:Defender ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 3 ;
-kg:totalGoals 0 .
-
-res:player/Johan_Mojica a kg:Player, kg:Defender ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 17 ;
-kg:totalGoals 1 .
-
-res:player/Deiver_Machado a kg:Player, kg:Defender ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 26 ;
-kg:totalGoals 0 .
-
-res:player/Davinson_Sanchez a kg:Player, kg:Defender ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 23 ;
-kg:totalGoals 2 .
-
-res:player/Miguel_Borja a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 ;
-kg:totalGoals 9 .
-
-res:player/Jhon_Duran a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 14 ;
-kg:totalGoals 1 .
-
-res:player/Luis_Sinisterra a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 18 ;
-kg:totalGoals 4 .
-
-res:player/Rafael_Santos_Borre a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 19 ;
-kg:totalGoals 6 .
-
-res:player/Jhon_Cordoba a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 14 ;
-kg:totalGoals 4 .
-
-res:player/James_Rodriguez a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 10 ;
-kg:totalGoals 28 .
-
-res:player/Mateus_Uribe a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 15 ;
-kg:totalGoals 6 .
-
-res:player/Jefferson_Lerma a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 16 ;
-kg:totalGoals 3 .
-
-res:player/Juan_Fernando_Quintero a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 20 ;
-kg:totalGoals 4 .
-
-res:player/Yaser_Asprilla a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 22 ;
-kg:totalGoals 2 .
-
-res:player/Luis_Diaz a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 7 ;
-kg:totalGoals 14 .
-
-res:player/Miguel_Borja a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 ;
-kg:totalGoals 9 .
-
-res:player/Jhon_Duran a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 14 ;
-kg:totalGoals 1 .
-
-res:player/Luis_Sinisterra a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 18 ;
-kg:totalGoals 4 .
-
-res:player/Rafael_Santos_Borre a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 19 ;
-kg:totalGoals 6 .
-
-res:player/Jhon_Cordoba a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 14 ;
-kg:totalGoals 4 .
-
-res:player/James_Rodriguez a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 10 ;
-kg:totalGoals 28 .
-
-res:player/Mateus_Uribe a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 15 ;
-kg:totalGoals 6 .
-
-res:player/Jefferson_Lerma a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 16 ;
-kg:totalGoals 3 .
-
-res:player/Juan_Fernando_Quintero a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 20 ;
-kg:totalGoals 4 .
-
-res:player/Yaser_Asprilla a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 22 ;
-kg:totalGoals 2 .
-
-res:player/Luis_Diaz a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 7 ;
-kg:totalGoals 14 .
-
-res:player/Miguel_Borja a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 ;
-kg:totalGoals 9 .
-
-res:player/Jhon_Duran a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 14 ;
-kg:totalGoals 1 .
-
-res:player/Luis_Sinisterra a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 18 ;
-kg:totalGoals 4 .
-
-res:player/Rafael_Santos_Borre a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 19 ;
-kg:totalGoals 6 .
-
-res:player/Jhon_Cordoba a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 14 ;
-kg:totalGoals 4 .
-
-res:player/James_Rodriguez a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 10 ;
-kg:totalGoals 28 .
-
-res:player/Mateus_Uribe a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 15 ;
-kg:totalGoals 6 .
-
-res:player/Jefferson_Lerma a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 16 ;
-kg:totalGoals 3 .
-
-res:player/Juan_Fernando_Quintero a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 20 ;
-kg:totalGoals 4 .
-
-res:player/Yaser_Asprilla a kg:Player, kg:Forward ;
-kg:playsFor res:team/Colombia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 22 ;
-
+res:organization/CONMEBOL a kg:Organization
+; kg:organizes res:competition/Copa_America .
+res:organization/FIFA a kg:Organization
+; kg:organizes res:competition/FIFA_World_Cup .
+res:organization/CONMEBOL a kg:Organization
+; kg:organizes res:competition/Copa_America .
+res:player/Luis_Diaz a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jhon_Cordoba a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Yaser_Asprilla a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jorge_Carrascal a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Jefferson_Lerma a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Mateus_Uribe a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Juan_Fernando_Quintero a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Davinson_Sanchez a kg:Player , kg:Defender
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Santiago_Arias a kg:Player , kg:Defender
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Yerry_Mina a kg:Player , kg:Defender
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Daniel_Munoz a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Camilo_Vargas a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Alvaro_Montero a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Kevin_Cuesta a kg:Player , kg:Defender
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Jhon_Lucumi a kg:Player , kg:Defender
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Johan_Mojica a kg:Player , kg:Defender
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Deiver_Machado a kg:Player , kg:Defender
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Davinson_Sanchez a kg:Player , kg:Defender
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Miguel_Borja a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jhon_Duran a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Luis_Sinisterra a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Rafael_Santos_Borre a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jhon_Cordoba a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/James_Rodriguez a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Mateus_Uribe a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Jefferson_Lerma a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Juan_Fernando_Quintero a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Yaser_Asprilla a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Luis_Diaz a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Miguel_Borja a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jhon_Duran a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Luis_Sinisterra a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Rafael_Santos_Borre a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jhon_Cordoba a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/James_Rodriguez a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Mateus_Uribe a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Jefferson_Lerma a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Juan_Fernando_Quintero a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Yaser_Asprilla a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Luis_Diaz a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Miguel_Borja a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jhon_Duran a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Luis_Sinisterra a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Rafael_Santos_Borre a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jhon_Cordoba a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/James_Rodriguez a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Mateus_Uribe a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Jefferson_Lerma a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Juan_Fernando_Quintero a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Yaser_Asprilla a kg:Player , kg:Forward
+; kg:playsFor res:team/Colombia
+; kg:primaryPosition kg:Forward "UNKNOWN" .

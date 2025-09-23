@@ -1,149 +1,104 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Ukrainian_Beach_Football_National_Team a kg:Team ;
-kg:teamName "Ukraina" ;
-kg:hasCoach res:coach/Serhiy_Kucherenko ;
-kg:teamAbbreviation "UKR" ;
-kg:locatedIn res:country/Ukraine ;
-kg:participatesIn res:season/2008_European_Qualifiers_for_World_Beach_Soccer_Championship ;
-kg:participatesIn res:season/2009_European_Qualifiers_for_World_Beach_Soccer_Championship ;
-kg:participatesIn res:season/2011_European_Qualifiers_for_World_Beach_Soccer_Championship ;
-kg:participatesIn res:season/2013_European_Qualifiers_for_World_Beach_Soccer_Championship ;
-kg:participatesIn res:season/2015_European_Qualifiers_for_World_Beach_Soccer_Championship ;
-kg:participatesIn res:season/2017_European_Qualifiers_for_World_Beach_Soccer_Championship .
-
-res:coach/Serhiy_Kucherenko a kg:Coach ;
-kg:manages res:team/Ukrainian_Beach_Football_National_Team .
-
-res:team/Ukrainian_Beach_Football_National_Team kg:participatesIn res:season/2005_World_Beach_Soccer_Championship_Group_6 ;
-kg:participatesIn res:season/2007_European_Beach_Soccer_Championship ;
-kg:participatesIn res:season/2011_World_Beach_Soccer_Championship_Qualification .
-
-res:season/2008_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season ;
-kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship ;
-kg:participantCount 39 ;
-kg:points 12 .
-
-res:season/2009_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season ;
-kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship ;
-kg:participantCount 18 ;
-kg:points 4 .
-
-res:season/2011_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season ;
-kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship ;
-kg:participantCount 16 ;
-kg:points 18 .
-
-res:season/2013_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season ;
-kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship ;
-kg:participantCount 21 ;
-kg:points 10 .
-
-res:season/2015_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season ;
-kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship ;
-kg:participantCount 18 ;
-kg:points 10 .
-
-res:season/2017_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season ;
-kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship ;
-kg:participantCount 10 .
-
-res:season/2005_World_Beach_Soccer_Championship_Group_6 a kg:Season ;
-kg:seasonOf res:competition/World_Beach_Soccer_Championship ;
-kg:points 1 .
-
-res:season/2007_European_Beach_Soccer_Championship a kg:Season ;
-kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
-kg:points 1 .
-
-res:season/2011_World_Beach_Soccer_Championship_Qualification a kg:Season ;
-kg:seasonOf res:competition/Wold_Beach_Soccer_Championship_Qualification ;
-kg:points 1 .
-
-res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "European Qualifiers for World Beach Soccer Championship" .
-
-res:competition/European_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "European Beach Soccer Championship" .
-
-res:competition/World_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "World Beach Soccer Championship" .
-
-res:competition/Wold_Beach_Soccer_Championship_Qualification a kg:Competition ;
-kg:competitionName "World Beach Soccer Championship Qualification" .
-
-res:country/Ukraine a kg:Country ;
-rdfs:label "Ukraine" .
-
-res:player/Vitaliy_Sydorenko a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 1 ;
-kg:primaryPosition res:position/Goalkeeper .
-
-res:player/Evhen_Ryabchuk a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 2 ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Viktor_Panteleychuk a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 3 ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Maksym_Nazarenko a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 4 ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Kostyantyn_Andryeyev a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 5 ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Andriy_Borsuk a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 6 ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Ihor_Borsuk a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 7 ;
-kg:primaryPosition res:position/Defender ;
-kg:otherRole "captain" .
-
-res:player/Roman_Pachev a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 8 ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Oleh_Zborovskyi a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 9 ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Andriy_Yevdokymov a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 10 ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Oleksandr_Korniychuk a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 11 ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Volodymyr_Hladchenko a kg:Player ;
-kg:playsFor res:team/Ukrainian_Beach_Football_National_Team ;
-kg:shirtNumber 12 ;
-kg:primaryPosition res:position/Goalkeeper .
-
-res:position/Goalkeeper a kg:Position ;
-rdfs:subClassOf kg:Goalkeeper .
-
-res:position/Defender a kg:Position ;
-rdfs:subClassOf kg:Defender .
-
-res:position/Forward a kg:Position ;
-rdfs:subClassOf kg:Forward .
+res:team/Ukrainian_Beach_Football_National_Team a kg:Team
+; kg:teamName "Ukraina"
+; kg:hasCoach res:coach/Serhiy_Kucherenko
+; kg:teamAbbreviation "UKR"
+; kg:locatedIn res:country/Ukraine
+; kg:participatesIn res:season/2008_European_Qualifiers_for_World_Beach_Soccer_Championship
+; kg:participatesIn res:season/2009_European_Qualifiers_for_World_Beach_Soccer_Championship
+; kg:participatesIn res:season/2011_European_Qualifiers_for_World_Beach_Soccer_Championship
+; kg:participatesIn res:season/2013_European_Qualifiers_for_World_Beach_Soccer_Championship
+; kg:participatesIn res:season/2015_European_Qualifiers_for_World_Beach_Soccer_Championship
+; kg:participatesIn res:season/2017_European_Qualifiers_for_World_Beach_Soccer_Championship .
+res:coach/Serhiy_Kucherenko a kg:Coach
+; kg:manages res:team/Ukrainian_Beach_Football_National_Team .
+res:team/Ukrainian_Beach_Football_National_Team kg:participatesIn res:season/2005_World_Beach_Soccer_Championship_Group_6
+; kg:participatesIn res:season/2007_European_Beach_Soccer_Championship
+; kg:participatesIn res:season/2011_World_Beach_Soccer_Championship_Qualification .
+res:season/2008_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season
+; kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship
+; kg:participantCount 39 .
+res:season/2009_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season
+; kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship
+; kg:participantCount 18 .
+res:season/2011_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season
+; kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship
+; kg:participantCount 16 .
+res:season/2013_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season
+; kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship
+; kg:participantCount 21 .
+res:season/2015_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season
+; kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship
+; kg:participantCount 18 .
+res:season/2017_European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Season
+; kg:seasonOf res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship
+; kg:participantCount 10 .
+res:season/2005_World_Beach_Soccer_Championship_Group_6 a kg:Season
+; kg:seasonOf res:competition/World_Beach_Soccer_Championship .
+res:season/2007_European_Beach_Soccer_Championship a kg:Season
+; kg:seasonOf res:competition/European_Beach_Soccer_Championship .
+res:season/2011_World_Beach_Soccer_Championship_Qualification a kg:Season
+; kg:seasonOf res:competition/Wold_Beach_Soccer_Championship_Qualification .
+res:competition/European_Qualifiers_for_World_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "European Qualifiers for World Beach Soccer Championship" .
+res:competition/European_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "European Beach Soccer Championship" .
+res:competition/World_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "World Beach Soccer Championship" .
+res:competition/Wold_Beach_Soccer_Championship_Qualification a kg:Competition
+; kg:competitionName "World Beach Soccer Championship Qualification" .
+res:country/Ukraine a kg:Country
+; rdfs:label "Ukraine" .
+res:player/Vitaliy_Sydorenko a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 1
+; kg:primaryPosition res:position/Goalkeeper .
+res:player/Evhen_Ryabchuk a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 2
+; kg:primaryPosition res:position/Defender .
+res:player/Viktor_Panteleychuk a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 3
+; kg:primaryPosition res:position/Forward .
+res:player/Maksym_Nazarenko a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 4
+; kg:primaryPosition res:position/Forward .
+res:player/Kostyantyn_Andryeyev a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 5
+; kg:primaryPosition res:position/Defender .
+res:player/Andriy_Borsuk a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 6
+; kg:primaryPosition res:position/Forward .
+res:player/Ihor_Borsuk a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 7
+; kg:primaryPosition res:position/Defender .
+res:player/Roman_Pachev a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 8
+; kg:primaryPosition res:position/Defender .
+res:player/Oleh_Zborovskyi a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 9
+; kg:primaryPosition res:position/Forward .
+res:player/Andriy_Yevdokymov a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 10
+; kg:primaryPosition res:position/Forward .
+res:player/Oleksandr_Korniychuk a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 11
+; kg:primaryPosition res:position/Forward .
+res:player/Volodymyr_Hladchenko a kg:Player
+; kg:playsFor res:team/Ukrainian_Beach_Football_National_Team
+; kg:shirtNumber 12
+; kg:primaryPosition res:position/Goalkeeper .
+res:position/Goalkeeper a kg:Position
+; rdfs:subClassOf kg:Goalkeeper .
+res:position/Defender a kg:Position
+; rdfs:subClassOf kg:Defender .
+res:position/Forward a kg:Position
+; rdfs:subClassOf kg:Forward .

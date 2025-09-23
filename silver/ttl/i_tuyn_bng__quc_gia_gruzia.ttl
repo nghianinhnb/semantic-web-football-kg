@@ -1,355 +1,126 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Gruzia a kg:Team ;
-kg:teamName "Gruzia" ;
-kg:hasCoach res:person/Willy+Sagnol ;
-kg:hasCaptain res:player/Guram+Kashia ;
-kg:teamAbbreviation "GEO" ;
-kg:locatedIn res:country/Gruzia ;
-kg:homeStadium res:stadium/Boris+Paichadze+Dinamo+Arena .
-
-res:stadium/Boris+Paichadze+Dinamo+Arena a kg:Stadium ;
-kg:locatedIn res:city/Tbilisi .
-
-res:country/Gruzia a kg:Country ;
-rdfs:label "Gruzia" .
-
-res:city/Tbilisi a kg:City ;
-rdfs:label "Tbilisi" .
-
-res:person/Willy+Sagnol a kg:Coach ;
-kg:manages res:team/Gruzia .
-
-res:player/Guram+Kashia a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 4 ;
-kg:birthDate "1987-07-04"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Shota+Arveladze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 ;
-kg:birthDate "1985-04-25"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Khvicha+Kvaratskhelia a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 7 ;
-kg:birthDate "2001-02-12"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Giorgi+Mamardashvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 1 ;
-kg:birthDate "2000-09-29"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Davit+Kereselidze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 12 ;
-kg:birthDate "1999-08-19"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Luka+Gugeshashvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 23 ;
-kg:birthDate "1999-04-29"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Otar+Kakabadze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 ;
-kg:birthDate "1995-06-27"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Saba+Khvadagiani a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 3 ;
-kg:birthDate "2003-01-30"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Guram+Kashia a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 4 ;
-kg:birthDate "1987-07-04"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Saba+Goglichidze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 5 ;
-kg:birthDate "2004-06-25"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Giorgi+Gocholeishvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "2001-02-14"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Luka+Lochoshvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 14 ;
-kg:birthDate "1998-05-29"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Irakli+Azarovi a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 16 ;
-kg:birthDate "2002-02-21"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Giorgi+Kochorashvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 6 ;
-kg:birthDate "1999-06-29"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Zuriko+Davitashvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 10 ;
-kg:birthDate "2001-02-15"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Saba+Lobzhanidze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 11 ;
-kg:birthDate "1994-12-18"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Anzor+Mekvabishvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 15 ;
-kg:birthDate "2001-06-05"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Vladimer+Mamuchashvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 17 ;
-kg:birthDate "1997-08-29"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Giorgi+Tsitaishvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 19 ;
-kg:birthDate "2000-11-18"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Nika+Gagnidze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 20 ;
-kg:birthDate "2001-03-20"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Nodar+Lominadze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 21 ;
-kg:birthDate "2002-04-04"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Giorgi+Abuashvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 22 ;
-kg:birthDate "2003-02-08"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Giorgi+Kvernadze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 18 ;
-kg:birthDate "2003-02-07"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Georges+Mikautadze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 22 ;
-kg:birthDate "2000-10-31"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Budu+Zivzivadze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 8 ;
-kg:birthDate "1994-03-10"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Giorgi+Guliashvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 ;
-kg:birthDate "2001-09-05"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Giorgi+Gvelesiani a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "1991-05-05"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Lasha+Dvali a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "1995-05-14"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Guram+Giorbelidze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "1996-02-25"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Iva+Gelashvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "2001-04-08"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Saba+Kharebashvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "2008-09-03"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Luka+Latsabidze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "2004-03-18"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Solomon+Kvirkvelia a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "1992-02-06"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Aleksandre+Kalandadze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "2001-05-09"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Jemal+Tabidze a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "1996-03-18"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Luka+Gadrani a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "1997-04-12"^^xsd:date ;
-kg:birthPlace res:city/Tbilisi ;
-kg:nationality res:country/Gruzia ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Otar+Kiteishvili a kg:Player ;
-kg:playsFor res:team/Gruzia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 13 ;
-kg:birthDate "1996-03-2
+res:team/Gruzia a kg:Team
+; kg:teamName "Gruzia"
+; kg:hasCoach res:person/Willy+Sagnol
+; kg:hasCaptain res:player/Guram+Kashia
+; kg:teamAbbreviation "GEO"
+; kg:locatedIn res:country/Gruzia
+; kg:homeStadium res:stadium/Boris+Paichadze+Dinamo+Arena .
+res:stadium/Boris+Paichadze+Dinamo+Arena a kg:Stadium
+; kg:locatedIn res:city/Tbilisi .
+res:country/Gruzia a kg:Country
+; rdfs:label "Gruzia" .
+res:city/Tbilisi a kg:City
+; rdfs:label "Tbilisi" .
+res:person/Willy+Sagnol a kg:Coach
+; kg:manages res:team/Gruzia .
+res:player/Guram+Kashia a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Shota+Arveladze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Khvicha+Kvaratskhelia a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Giorgi+Mamardashvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Davit+Kereselidze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Luka+Gugeshashvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Otar+Kakabadze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Saba+Khvadagiani a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Guram+Kashia a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Saba+Goglichidze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Giorgi+Gocholeishvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Luka+Lochoshvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Irakli+Azarovi a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Giorgi+Kochorashvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Zuriko+Davitashvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Saba+Lobzhanidze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Anzor+Mekvabishvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Vladimer+Mamuchashvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Giorgi+Tsitaishvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Nika+Gagnidze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Nodar+Lominadze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Giorgi+Abuashvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Giorgi+Kvernadze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Georges+Mikautadze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Budu+Zivzivadze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Giorgi+Guliashvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Giorgi+Gvelesiani a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Lasha+Dvali a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Guram+Giorbelidze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Iva+Gelashvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Saba+Kharebashvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Luka+Latsabidze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Solomon+Kvirkvelia a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Aleksandre+Kalandadze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Jemal+Tabidze a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Luka+Gadrani a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Otar+Kiteishvili a kg:Player
+; kg:playsFor res:team/Gruzia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .

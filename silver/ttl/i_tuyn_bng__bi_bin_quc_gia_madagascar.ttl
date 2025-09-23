@@ -1,119 +1,83 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Madagascar a kg:Team ;
-kg:teamName "Madagascar" ;
-kg:hasCoach res:coach/Claude_Barrabe ;
-kg:locatedIn res:country/Madagascar ;
-kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Madagascar ;
-kg:participantCount "1"^^xsd:positiveInteger ;
-kg:heldIn res:country/Madagascar ;
-kg:competitionName "World Cup" ;
-kg:bestResult "Vòng bảng" ;
-kg:worldCupApps "1"^^xsd:positiveInteger ;
-kg:worldCupBestResult "Vòng bảng" ;
-kg:regionalCompetitionName "Giải vô địch bóng đá bãi biển châu Phi" ;
-kg:regionalApps "3"^^xsd:positiveInteger ;
-kg:regionalBestResult "Vô địch" ;
-kg:regionalYear "2015"^^xsd:gYear .
-
-res:coach/Claude_Barrabe a kg:Coach ;
-kg:name "Claude Barrabe" .
-
-res:organization/Liên_đoàn_bóng_đá_Madagascar a kg:Organization ;
-kg:locatedIn res:country/Madagascar .
-
-res:country/Madagascar a kg:Country ;
-rdfs:label "Madagascar" .
-
-res:player/Jhorialy_Rafalimanana a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber "1"^^xsd:positiveInteger .
-
-res:player/Ymelda_Razafimandimby a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "2"^^xsd:positiveInteger .
-
-res:player/Pierralit_Tovonay a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "3"^^xsd:positiveInteger .
-
-res:player/Giovanni_Oscar_Etienne a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "4"^^xsd:positiveInteger .
-
-res:player/Anderson_Solofoniaina_Rakotoson a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "5"^^xsd:positiveInteger .
-
-res:player/Aime_Rafidison a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "6"^^xsd:positiveInteger .
-
-res:player/Tianasoa_Rabeasimbola a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "7"^^xsd:positiveInteger ;
-kg:captain true .
-
-res:player/Tokiniaina_Francegal_Randriamapandry a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "8"^^xsd:positiveInteger .
-
-res:player/Aurelien_Razamanana a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "9"^^xsd:positiveInteger .
-
-res:player/Flavien_Razafimahatratra a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "10"^^xsd:positiveInteger .
-
-res:player/Juliot_Ratsimarinala a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "11"^^xsd:positiveInteger .
-
-res:player/Rakotonirina_Robin_Jean_Claude a kg:Player ;
-kg:playsFor res:team/Madagascar ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber "12"^^xsd:positiveInteger .
-
-res:position/Goalkeeper a kg:Goalkeeper ;
-rdfs:subClassOf kg:Position .
-
-res:position/Defender a kg:Defender ;
-rdfs:subClassOf kg:Position .
-
-res:position/Midfielder a kg:Midfielder ;
-rdfs:subClassOf kg:Position .
-
-res:position/Forward a kg:Forward ;
-rdfs:subClassOf kg:Position .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Phi" ;
-kg:heldIn res:country/Madagascar ;
-kg:participantCount "7"^^xsd:positiveInteger .
-
-res:season/2011 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi ;
-kg:result "Hạng ba" .
-
-res:season/2013 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi ;
-kg:result "Vòng bảng" .
-
-res:season/2015 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi ;
-kg:result "Vô địch" .
+res:team/Madagascar a kg:Team
+; kg:teamName "Madagascar"
+; kg:hasCoach res:coach/Claude_Barrabe
+; kg:locatedIn res:country/Madagascar
+; kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Madagascar
+; kg:participantCount "1"^^xsd:positiveInteger
+; kg:heldIn res:country/Madagascar
+; kg:competitionName "World Cup" .
+res:coach/Claude_Barrabe a kg:Coach
+; kg:name "Claude Barrabe" .
+res:organization/Liên_đoàn_bóng_đá_Madagascar a kg:Organization
+; kg:locatedIn res:country/Madagascar .
+res:country/Madagascar a kg:Country
+; rdfs:label "Madagascar" .
+res:player/Jhorialy_Rafalimanana a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber "1"^^xsd:positiveInteger .
+res:player/Ymelda_Razafimandimby a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "2"^^xsd:positiveInteger .
+res:player/Pierralit_Tovonay a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "3"^^xsd:positiveInteger .
+res:player/Giovanni_Oscar_Etienne a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "4"^^xsd:positiveInteger .
+res:player/Anderson_Solofoniaina_Rakotoson a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "5"^^xsd:positiveInteger .
+res:player/Aime_Rafidison a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "6"^^xsd:positiveInteger .
+res:player/Tianasoa_Rabeasimbola a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "7"^^xsd:positiveInteger .
+res:player/Tokiniaina_Francegal_Randriamapandry a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "8"^^xsd:positiveInteger .
+res:player/Aurelien_Razamanana a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "9"^^xsd:positiveInteger .
+res:player/Flavien_Razafimahatratra a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "10"^^xsd:positiveInteger .
+res:player/Juliot_Ratsimarinala a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "11"^^xsd:positiveInteger .
+res:player/Rakotonirina_Robin_Jean_Claude a kg:Player
+; kg:playsFor res:team/Madagascar
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber "12"^^xsd:positiveInteger .
+res:position/Goalkeeper a kg:Goalkeeper
+; rdfs:subClassOf kg:Position .
+res:position/Defender a kg:Defender
+; rdfs:subClassOf kg:Position .
+res:position/Midfielder a kg:Midfielder
+; rdfs:subClassOf kg:Position .
+res:position/Forward a kg:Forward
+; rdfs:subClassOf kg:Position .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Phi"
+; kg:heldIn res:country/Madagascar
+; kg:participantCount "7"^^xsd:positiveInteger .
+res:season/2011 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi
+; kg:result "Hạng ba" .
+res:season/2013 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi
+; kg:result "Vòng bảng" .
+res:season/2015 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi
+; kg:result "Vô địch" .

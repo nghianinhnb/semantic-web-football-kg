@@ -1,202 +1,116 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Chile a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Chile" ;
-kg:hasCoach "" ;
-kg:hasCaptain res:player/Arturo_Vidal ;
-kg:mostCaps res:player/Alexis_Sánchez ;
-kg:topScorer res:player/Alexis_Sánchez ;
-kg:homeStadium res:stadium/Julio_Martinez_Pradanos ;
-kg:FIFARank res:ranking/FIFA_World_Rankings_CHI ;
-kg:firstRankingDate "1993-08-01"^^xsd:date ;
-kg:maxFIFARank 3 ;
-kg:maxFIFARankDate "2016-04-01"^^xsd:date ;
-kg:minFIFARank 84 ;
-kg:minFIFARankDate "2002-12-01"^^xsd:date ;
-kg:ELORank res:ranking/World_Football_Elo_Ratings_CHI ;
-kg:maxElORank 5 ;
-kg:maxElORankDate "2015-10-01"^^xsd:date ;
-kg:minElORank 60 ;
-kg:minElORankDate "2003-04-01"^^xsd:date ;
-kg:worldCupApps 9 ;
-kg:worldCupFirst "1930" ;
-kg:worldCupBest "Hạng ba" ;
-kg:regionalCupApps 41 ;
-kg:regionalCupFirst "1916" ;
-kg:regionalCupBest "Vô địch" ;
-kg:confederationsCupApps 1 ;
-kg:confederationsCupFirst "2017" ;
-kg:confederationsCupBest "Á quân" .
-
-res:player/Alexis_Sánchez a kg:Player ;
-kg:playsFor res:team/Chile ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1988-12-19"^^xsd:date ;
-kg:birthPlace res:city/Santiago ;
-kg:nationality res:country/Chile ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:LeftFooted ;
-kg:mostCaps 167 ;
-kg:topScorer 51 .
-
-res:player/Arturo_Vidal a kg:Player ;
-kg:playsFor res:team/Chile ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1987-05-18"^^xsd:date ;
-kg:birthPlace res:city/Santiago ;
-kg:nationality res:country/Chile ;
-kg:shirtNumber 8 ;
-kg:preferredFoot kg:RightFooted ;
-kg:captainOf res:team/Chile .
-
-res:stadium/Julio_Martinez_Pradanos a kg:Stadium ;
-kg:capacity 44000 ;
-kg:locatedIn res:city/Santiago .
-
-res:ranking/FIFA_World_Rankings_CHI a kg:Ranking ;
-kg:ranks res:team/Chile .
-
-res:ranking/World_Football_Elo_Ratings_CHI a kg:Ranking ;
-kg:ranks res:team/Chile .
-
-res:city/Santiago a kg:City ;
-kg:locatedIn res:country/Chile .
-
-res:country/Chile a kg:Country ;
-kg:name "Chile" .
-
-res:competition/World_Cup a kg:Competition ;
-kg:competitionName "Giải bóng đá vô địch thế giới" .
-
-res:competition/Copa_America a kg:Competition ;
-kg:competitionName "Cúp bóng đá Nam Mỹ" .
-
-res:competition/Confederations_Cup a kg:Competition ;
-kg:competitionName "Cúp Liên đoàn các châu lục" .
-
-res:match/CHI_versus_ALB a kg:Match ;
-kg:homeTeam res:team/Chile ;
-kg:awayTeam res:team/Albania ;
-kg:venue res:stadium/Ennio_Tardini ;
-kg:kickoffTime "2024-03-22T20:45:00+01:00"^^xsd:dateTime ;
-kg:result "W" ;
-kg:inCompetition res:competition/Other ;
-
-res:match/CHI_versus_FRA a kg:Match ;
-kg:homeTeam res:team/France ;
-kg:awayTeam res:team/Chile ;
-kg:venue res:stadium/Vélodrome ;
-kg:kickoffTime "2024-03-26T21:00:00+01:00"^^xsd:dateTime ;
-kg:result "L" ;
-kg:inCompetition res:competition/Other ;
-
-res:match/CHI_versus_PAR a kg:Match ;
-kg:homeTeam res:team/Chile ;
-kg:awayTeam res:team/Paraguay ;
-kg:venue res:stadium/Julio_Martinez_Pradanos ;
-kg:kickoffTime "2024-06-11T21:00:00-03:00"^^xsd:dateTime ;
-kg:result "W" ;
-kg:inCompetition res:competition/Copa_America ;
-
-res:match/CHI_versus_PER a kg:Match ;
-kg:homeTeam res:team/Peru ;
-kg:awayTeam res:team/Chile ;
-kg:venue res:stadium/AT&T ;
-kg:kickoffTime "2024-06-21T19:00:00-05:00"^^xsd:dateTime ;
-kg:result "D" ;
-kg:inCompetition res:competition/Copa_America ;
-
-res:match/CHI_versus_ARG a kg:Match ;
-kg:homeTeam res:team/Chile ;
-kg:awayTeam res:team/Argentina ;
-kg:venue res:stadium/MetLife ;
-kg:kickoffTime "2024-06-25T21:00:00-04:00"^^xsd:dateTime ;
-kg:result "L" ;
-kg:inCompetition res:competition/Copa_America ;
-
-res:match/CHI_versus_CAN a kg:Match ;
-kg:homeTeam res:team/Canada ;
-kg:awayTeam res:team/Chile ;
-kg:venue res:stadium/Exploria ;
-kg:kickoffTime "2024-06-29T20:00:00-04:00"^^xsd:dateTime ;
-kg:result "D" ;
-kg:inCompetition res:competition/Copa_America .
-
-res:team/Albania a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Albania".
-
-res:team/France a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Pháp".
-
-res:team/Paraguay a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Paraguay".
-
-res:team/Peru a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Peru".
-
-res:team/Argentina a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Argentina".
-
-res:team/Canada a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Canada".
-
-res:stadium/Ennio_Tardini a kg:Stadium ;
-kg:locatedIn res:city/Parma .
-
-res:stadium/Vélodrome a kg:Stadium ;
-kg:locatedIn res:city/Marseille .
-
-res:stadium/AT&T a kg:Stadium ;
-kg:locatedIn res:city/Arlington .
-
-res:stadium/MetLife a kg:Stadium ;
-kg:locatedIn res:city/East_Rutherford .
-
-res:stadium/Exploria a kg:Stadium ;
-kg:locatedIn res:city/Orlando .
-
-res:city/Parma a kg:City ;
-kg:locatedIn res:country/Italy .
-
-res:city/Marseille a kg:City ;
-kg:locatedIn res:country/France .
-
-res:city/Arlington a kg:City ;
-kg:locatedIn res:country/United_States .
-
-res:city/East_Rutherford a kg:City ;
-kg:locatedIn res:country/United_States .
-
-res:city/Orlando a kg:City ;
-kg:locatedIn res:country/United_States .
-
-res:country/Italy a kg:Country ;
-kg:name "Italy" .
-
-res:country/France a kg:Country ;
-kg:name "France" .
-
-res:country/United_States a kg:Country ;
-kg:name "United States" .
-
-res:country/Argentina a kg:Country ;
-kg:name "Argentina" .
-
-res:country/Canada a kg:Country ;
-kg:name "Canada" .
-
-res:competition/Other a kg:Competition ;
-kg:competitionName "Giao hữu" .
-
-res:competition/Copa_America a kg:Competition ;
-kg:competitionName "Copa América" .
-
-res:competition/World_Cup a kg:Competition ;
-kg:competitionName "Giải bóng đá vô địch thế giới" .
-
-res:competition/Confederations_Cup a kg:Competition ;
-kg:competitionName "Cúp Liên đoàn các châu lục" .
+res:team/Chile a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Chile"
+; kg:hasCoach ""
+; kg:hasCaptain res:player/Arturo_Vidal
+; kg:homeStadium res:stadium/Julio_Martinez_Pradanos .
+res:player/Alexis_Sánchez a kg:Player
+; kg:playsFor res:team/Chile
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Arturo_Vidal a kg:Player
+; kg:playsFor res:team/Chile
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:stadium/Julio_Martinez_Pradanos a kg:Stadium
+; kg:capacity 44000
+; kg:locatedIn res:city/Santiago .
+res:city/Santiago a kg:City
+; kg:locatedIn res:country/Chile .
+res:country/Chile a kg:Country
+; kg:name "Chile" .
+res:competition/World_Cup a kg:Competition
+; kg:competitionName "Giải bóng đá vô địch thế giới" .
+res:competition/Copa_America a kg:Competition
+; kg:competitionName "Cúp bóng đá Nam Mỹ" .
+res:competition/Confederations_Cup a kg:Competition
+; kg:competitionName "Cúp Liên đoàn các châu lục" .
+res:match/CHI_versus_ALB a kg:Match
+; kg:homeTeam res:team/Chile
+; kg:awayTeam res:team/Albania
+; kg:venue res:stadium/Ennio_Tardini
+; kg:kickoffTime "2024-03-22T20:45:00+01:00"^^xsd:dateTime
+; kg:result "W"
+; kg:inCompetition res:competition/Other
+; res:match/CHI_versus_FRA a kg:Match
+; kg:homeTeam res:team/France
+; kg:awayTeam res:team/Chile
+; kg:venue res:stadium/Vélodrome
+; kg:kickoffTime "2024-03-26T21:00:00+01:00"^^xsd:dateTime
+; kg:result "L"
+; kg:inCompetition res:competition/Other
+; res:match/CHI_versus_PAR a kg:Match
+; kg:homeTeam res:team/Chile
+; kg:awayTeam res:team/Paraguay
+; kg:venue res:stadium/Julio_Martinez_Pradanos
+; kg:kickoffTime "2024-06-11T21:00:00-03:00"^^xsd:dateTime
+; kg:result "W"
+; kg:inCompetition res:competition/Copa_America
+; res:match/CHI_versus_PER a kg:Match
+; kg:homeTeam res:team/Peru
+; kg:awayTeam res:team/Chile
+; kg:venue res:stadium/AT&T
+; kg:kickoffTime "2024-06-21T19:00:00-05:00"^^xsd:dateTime
+; kg:result "D"
+; kg:inCompetition res:competition/Copa_America
+; res:match/CHI_versus_ARG a kg:Match
+; kg:homeTeam res:team/Chile
+; kg:awayTeam res:team/Argentina
+; kg:venue res:stadium/MetLife
+; kg:kickoffTime "2024-06-25T21:00:00-04:00"^^xsd:dateTime
+; kg:result "L"
+; kg:inCompetition res:competition/Copa_America
+; res:match/CHI_versus_CAN a kg:Match
+; kg:homeTeam res:team/Canada
+; kg:awayTeam res:team/Chile
+; kg:venue res:stadium/Exploria
+; kg:kickoffTime "2024-06-29T20:00:00-04:00"^^xsd:dateTime
+; kg:result "D"
+; kg:inCompetition res:competition/Copa_America .
+res:team/Albania a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Albania" .
+res:team/France a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Pháp" .
+res:team/Paraguay a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Paraguay" .
+res:team/Peru a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Peru" .
+res:team/Argentina a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Argentina" .
+res:team/Canada a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Canada" .
+res:stadium/Ennio_Tardini a kg:Stadium
+; kg:locatedIn res:city/Parma .
+res:stadium/Vélodrome a kg:Stadium
+; kg:locatedIn res:city/Marseille .
+res:stadium/AT&T a kg:Stadium
+; kg:locatedIn res:city/Arlington .
+res:stadium/MetLife a kg:Stadium
+; kg:locatedIn res:city/East_Rutherford .
+res:stadium/Exploria a kg:Stadium
+; kg:locatedIn res:city/Orlando .
+res:city/Parma a kg:City
+; kg:locatedIn res:country/Italy .
+res:city/Marseille a kg:City
+; kg:locatedIn res:country/France .
+res:city/Arlington a kg:City
+; kg:locatedIn res:country/United_States .
+res:city/East_Rutherford a kg:City
+; kg:locatedIn res:country/United_States .
+res:city/Orlando a kg:City
+; kg:locatedIn res:country/United_States .
+res:country/Italy a kg:Country
+; kg:name "Italy" .
+res:country/France a kg:Country
+; kg:name "France" .
+res:country/United_States a kg:Country
+; kg:name "United States" .
+res:country/Argentina a kg:Country
+; kg:name "Argentina" .
+res:country/Canada a kg:Country
+; kg:name "Canada" .
+res:competition/Other a kg:Competition
+; kg:competitionName "Giao hữu" .
+res:competition/Copa_America a kg:Competition
+; kg:competitionName "Copa América" .
+res:competition/World_Cup a kg:Competition
+; kg:competitionName "Giải bóng đá vô địch thế giới" .
+res:competition/Confederations_Cup a kg:Competition
+; kg:competitionName "Cúp Liên đoàn các châu lục" .

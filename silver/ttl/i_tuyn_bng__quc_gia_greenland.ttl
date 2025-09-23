@@ -1,279 +1,119 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Greenland a kg:Team ;
-kg:teamName "Greenland" ;
-kg:hasCoach res:coach/Rene Olsen, res:coach/Tekle Ghrebrelul ;
-kg:hasCaptain res:player/Niklas Kreutzmann ;
-kg:homeStadium res:stadium/San_Vien_Dong_Nuuk ;
-kg:manages res:coach/Rene Olsen, res:coach/Tekle Ghrebrelul ;
-kg:isCaptain res:player/Niklas Kreutzmann .
-
-res:coach/Rene Olsen a kg:Coach ;
-kg:manages res:team/Greenland .
-
-res:coach/Tekle Ghrebrelul a kg:Coach ;
-kg:manages res:team/Greenland .
-
-res:player/Niklas Kreutzmann a kg:Player ;
-kg:isCaptain res:team/Greenland .
-
-res:stadium/San_Vien_Dong_Nuuk a kg:Stadium ;
-kg:isHomeOf res:team/Greenland .
-
-res:team/Greenland kg:FIFAcode "GRL" ;
-kg:EloRank 200 ;
-kg:memberOf res:organization/Hiep_hoi_bong_da_Greenland .
-
-res:organization/Hiep_hoi_bong_da_Greenland a kg:Organization ;
-kg:organizedBy res:team/Greenland .
-
-res:match/Tran_dau_dau_tien_cua_greenland a kg:Match ;
-kg:homeTeam res:team/FAROE_Islands ;
-kg:awayTeam res:team/Greenland ;
-kg:kickoffTime "1980-07-02"^^xsd:date ;
-kg:venue res:place/Iceland .
-
-res:match/Tran_thua_dam_nhat_cua_greenland a kg:Match ;
-kg:homeTeam res:team/FAROE_Islands ;
-kg:awayTeam res:team/Greenland ;
-kg:kickoffTime "1980-07-02"^^xsd:date ;
-kg:venue res:place/Iceland .
-
-res:match/Tran_thang_dam_nhat_cua_greenland a kg:Match ;
-kg:homeTeam res:team/Greenland ;
-kg:awayTeam res:team/Sark ;
-kg:kickoffTime "2003-07-01"^^xsd:date ;
-kg:venue res:place/St_Martin_s .
-
-res:competition/Giai_vo_dich_bong_da_Island_Games a kg:Competition ;
-kg:competitionName "Island Games" ;
-kg:organizedBy res:organization/Hiep_hoi_bong_da_Island_Games .
-
+res:team/Greenland a kg:Team
+; kg:teamName "Greenland"
+; kg:hasCoach res:coach/Rene Olsen , res:coach/Tekle Ghrebrelul
+; kg:hasCaptain res:player/Niklas Kreutzmann
+; kg:homeStadium res:stadium/San_Vien_Dong_Nuuk
+; kg:manages res:coach/Rene Olsen , res:coach/Tekle Ghrebrelul
+; kg:isCaptain res:player/Niklas Kreutzmann .
+res:coach/Rene Olsen a kg:Coach
+; kg:manages res:team/Greenland .
+res:coach/Tekle Ghrebrelul a kg:Coach
+; kg:manages res:team/Greenland .
+res:player/Niklas Kreutzmann a kg:Player
+; kg:isCaptain res:team/Greenland .
+res:stadium/San_Vien_Dong_Nuuk a kg:Stadium
+; kg:isHomeOf res:team/Greenland .
+res:organization/Hiep_hoi_bong_da_Greenland a kg:Organization
+; kg:organizedBy res:team/Greenland .
+res:match/Tran_dau_dau_tien_cua_greenland a kg:Match
+; kg:homeTeam res:team/FAROE_Islands
+; kg:awayTeam res:team/Greenland
+; kg:kickoffTime "1980-07-02"^^xsd:date
+; kg:venue res:place/Iceland .
+res:match/Tran_thua_dam_nhat_cua_greenland a kg:Match
+; kg:homeTeam res:team/FAROE_Islands
+; kg:awayTeam res:team/Greenland
+; kg:kickoffTime "1980-07-02"^^xsd:date
+; kg:venue res:place/Iceland .
+res:match/Tran_thang_dam_nhat_cua_greenland a kg:Match
+; kg:homeTeam res:team/Greenland
+; kg:awayTeam res:team/Sark
+; kg:kickoffTime "2003-07-01"^^xsd:date
+; kg:venue res:place/St_Martin_s .
+res:competition/Giai_vo_dich_bong_da_Island_Games a kg:Competition
+; kg:competitionName "Island Games"
+; kg:organizedBy res:organization/Hiep_hoi_bong_da_Island_Games .
 res:organization/Hiep_hoi_bong_da_Island_Games a kg:Organization .
-
-res:season/1989 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/1991 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/1993 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/1995 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/1997 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/1999 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/2001 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/2003 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/2005 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/2007 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games .
-
-res:season/2009 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/2011 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/2013 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/2015 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:season/2017 a kg:Season ;
-kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games ;
-kg:participatesIn res:team/Greenland .
-
-res:team/Greenland kg:participatesIn res:season/1989, res:season/1991, res:season/1993, res:season/1995, res:season/1997, res:season/1999, res:season/2001, res:season/2003, res:season/2005, res:season/2007, res:season/2009, res:season/2011, res:season/2013, res:season/2015, res:season/2017 .
-
+res:season/1989 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/1991 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/1993 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/1995 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/1997 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/1999 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/2001 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/2003 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/2005 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/2007 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games .
+res:season/2009 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/2011 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/2013 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/2015 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:season/2017 a kg:Season
+; kg:seasonOf res:competition/Giai_vo_dich_bong_da_Island_Games
+; kg:participatesIn res:team/Greenland .
+res:team/Greenland kg:participatesIn res:season/1989 , res:season/1991 , res:season/1993 , res:season/1995 , res:season/1997 , res:season/1999 , res:season/2001 , res:season/2003 , res:season/2005 , res:season/2007 , res:season/2009 , res:season/2011 , res:season/2013 , res:season/2015 , res:season/2017 .
 res:team/Greenland kg:participatesIn res:competition/FIFI_Wild_Cup_2006 .
-
-res:competition/FIFI_Wild_Cup_2006 a kg:Competition ;
-kg:competitionName "FIFI Wild Cup 2006" ;
-kg:organizedBy res:organization/FIFI .
-
+res:competition/FIFI_Wild_Cup_2006 a kg:Competition
+; kg:competitionName "FIFI Wild Cup 2006"
+; kg:organizedBy res:organization/FIFI .
 res:organization/FIFI a kg:Organization .
-
-res:match/Tran_thua_cua_greenland_truoc_North_Cyprus a kg:Match ;
-kg:homeTeam res:team/North_Cyprus ;
-kg:awayTeam res:team/Greenland ;
-kg:kickoffTime "2006-06-01"^^xsd:date .
-
-res:match/Tran_thua_cua_greenland_truoc_Zanzibar a kg:Match ;
-kg:homeTeam res:team/Zanzibar ;
-kg:awayTeam res:team/Greenland ;
-kg:kickoffTime "2006-06-02"^^xsd:date .
-
+res:match/Tran_thua_cua_greenland_truoc_North_Cyprus a kg:Match
+; kg:homeTeam res:team/North_Cyprus
+; kg:awayTeam res:team/Greenland
+; kg:kickoffTime "2006-06-01"^^xsd:date .
+res:match/Tran_thua_cua_greenland_truoc_Zanzibar a kg:Match
+; kg:homeTeam res:team/Zanzibar
+; kg:awayTeam res:team/Greenland
+; kg:kickoffTime "2006-06-02"^^xsd:date .
 res:team/Greenland kg:participatesIn res:competition/ELF_Cup .
-
-res:competition/ELF_Cup a kg:Competition ;
-kg:competitionName "ELF Cup" ;
-kg:organizedBy res:organization/ELF .
-
+res:competition/ELF_Cup a kg:Competition
+; kg:competitionName "ELF Cup"
+; kg:organizedBy res:organization/ELF .
 res:organization/ELF a kg:Organization .
-
-res:match/Tran_thang_cua_greenland_truoc_Gagauzia a kg:Match ;
-kg:homeTeam res:team/Greenland ;
-kg:awayTeam res:team/Gagauzia ;
-kg:kickoffTime "2006-06-01"^^xsd:date .
-
-res:match/Hoa_cua_greenland_truoc_Zanzibar a kg:Match ;
-kg:homeTeam res:team/Zanzibar ;
-kg:awayTeam res:team/Greenland ;
-kg:kickoffTime "2006-06-02"^^xsd:date .
-
-res:match/Thua_cua_greenland_truoc_Kyrgyzstan a kg:Match ;
-kg:homeTeam res:team/Kyrgyzstan ;
-kg:awayTeam res:team/Greenland ;
-kg:kickoffTime "2006-06-03"^^xsd:date .
-
-res:team/Greenland kg:memberOf res:organization/IFU .
-
+res:match/Tran_thang_cua_greenland_truoc_Gagauzia a kg:Match
+; kg:homeTeam res:team/Greenland
+; kg:awayTeam res:team/Gagauzia
+; kg:kickoffTime "2006-06-01"^^xsd:date .
+res:match/Hoa_cua_greenland_truoc_Zanzibar a kg:Match
+; kg:homeTeam res:team/Zanzibar
+; kg:awayTeam res:team/Greenland
+; kg:kickoffTime "2006-06-02"^^xsd:date .
+res:match/Thua_cua_greenland_truoc_Kyrgyzstan a kg:Match
+; kg:homeTeam res:team/Kyrgyzstan
+; kg:awayTeam res:team/Greenland
+; kg:kickoffTime "2006-06-03"^^xsd:date .
 res:organization/IFU a kg:Organization .
-
-res:team/Greenland kg:memberOf res:organization/Hiep_hoi_bong_da_Island_Games .
-
-res:team/Greenland kg:memberOf res:organization/UEFA, res:organization/CONCACAF .
-
-res:stadium/San_Vien_Dong_Nuuk a kg:Stadium ;
-kg:capacity 10000 ;
-kg:locatedIn res:place/Nuuk .
-
-res:place/Nuuk a kg:City ;
-kg:locatedIn res:country/Greenland .
-
-res:country/Greenland a kg:Country ;
-
-res:team/Greenland kg:notMemberOf res:organization/FIFA .
-
-res:team/Greenland kg:hasSponsor res:sponsor/Kelme, res:sponsor/Air_Greenland, res:sponsor/Coca_Cola, res:sponsor/Pilersuisoq, res:sponsor/Arla_Foods, res:sponsor/Brugsen, res:sponsor/Agentur_HAP, res:sponsor/Nuna_Fonden, res:sponsor/Paarisa .
-
-res:sponsor/Kelme a kg:Sponsor .
-
-res:sponsor/Air_Greenland a kg:Sponsor .
-
-res:sponsor/Coca_Cola a kg:Sponsor .
-
-res:sponsor/Pilersuisoq a kg:Sponsor .
-
-res:sponsor/Arla_Foods a kg:Sponsor .
-
-res:sponsor/Brugsen a kg:Sponsor .
-
-res:sponsor/Agentur_HAP a kg:Sponsor .
-
-res:sponsor/Nuna_Fonden a kg:Sponsor .
-
-res:sponsor/Paarisa a kg:Sponsor .
-
-res:stadium/San_Vien_Dong_Nuuk kg:material "synthetic grass" ;
-kg:locatedIn res:place/Nuuk .
-
-res:team/Greenland kg:usesStadium res:stadium/San_Vien_Dong_Nuuk .
-
-res:team/Greenland kg:hasUniformColor "red", "white" ;
-kg:hasUniformPattern "_GreenlandHome10", "_GreenlandAway10" .
-
-res:team/Greenland kg:hasUniformLogo res:image/Greenland_Football_Association.svg .
-
-res:team/Greenland kg:hasNickname "Polar-Bamserne" .
-
-res:team/Greenland kg:hasAlternativeName "Polar-Bamserne" .
-
-res:team/Greenland kg:hasNationalSymbol res:image/Greenland_Football_Association.svg .
-
-res:team/Greenland kg:hasInternationalDebut res:match/Tran_dau_dau_tien_cua_greenland .
-
-res:team/Greenland kg:hasBiggestWin res:match/Tran_thang_dam_nhat_cua_greenland .
-
-res:team/Greenland kg:hasBiggestLoss res:match/Tran_thua_dam_nhat_cua_greenland .
-
-res:team/Greenland kg:hasMajorTournament res:competition/Giai_vo_dich_bong_da_Island_Games, res:competition/FIFI_Wild_Cup_2006, res:competition/ELF_Cup .
-
-res:team/Greenland kg:hasHistoricalEvent res:event/Greenland_vs_Tibet .
-
-res:event/Greenland_vs_Tibet a kg:Event ;
-kg:location res:place/China ;
-kg:description "Trận đấu giữa Greenland và Tây Tạng, Trung Quốc đe dọa cấm vận tôm Greenland nếu trận đấu diễn ra." .
-
-res:team/Greenland kg:hasWorldCupQualification false .
-
-res:team/Greenland kg:hasEuroQualification false .
-
-res:team/Greenland kg:hasAsianCupQualification false .
-
-res:team/Greenland kg:hasAfricaCupQualification false .
-
-res:team/Greenland kg:hasSouthAmericanCupQualification false .
-
-res:team/Greenland kg:hasConcacafGoldCupQualification false .
-
-res:team/Greenland kg:hasUEFAEuropeanChampionshipQualification false .
-
-res:team/Greenland kg:hasContinentalCupQualification false .
-
-res:team/Greenland kg:hasWorldLeagueQualification false .
-
-res:team/Greenland kg:hasIntercontinentalCupQualification false .
-
-res:team/Greenland kg:hasUEFAChampionsLeagueQualification false .
-
-res:team/Greenland kg:hasUEFAEuropaLeagueQualification false .
-
-res:team/Greenland kg:hasUEFAYouthChampionshipQualification false .
-
-res:team/Greenland kg:hasUEFAWomenCupQualification false .
-
-res:team/Greenland kg:hasUEFAUnder21Qualification false .
-
-res:team/Greenland kg:hasUEFAUnder19Qualification false .
-
-res:team/Greenland kg:hasUEFAUnder17Qualification false .
-
-res:team/Greenland kg:hasUEFAUnder21ChampionshipQualification false .
-
-res:team/Greenland kg:hasUEFAUnder19ChampionshipQualification false .
-
-res:team/Greenland kg:hasUEFAUnder17ChampionshipQualification false .
-
-res:team/Greenland kg:hasUEFAYouthTournaments false .
-
-res:team/Greenland kg:hasUEFAYouthLeagues false .
-
-res:team/Greenland kg:hasUEFAYouthClubs false .
-
-res:team/Greenland kg:hasUEFAYouthTeams false .
-
-res:team/Greenland kg:hasUEFAYouthPlayers false .
-
-res:team/Greenland kg:hasUEFAYouthCoaches false .
+res:stadium/San_Vien_Dong_Nuuk a kg:Stadium
+; kg:capacity 10000
+; kg:locatedIn res:place/Nuuk .
+res:place/Nuuk a kg:City
+; kg:locatedIn res:country/Greenland .
+res:country/Greenland a kg:Country .
+res:stadium/San_Vien_Dong_Nuuk kg:locatedIn res:place/Nuuk .

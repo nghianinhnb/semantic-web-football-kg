@@ -1,73 +1,42 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Bahrain女足国家队 a kg:Team ;
-kg:teamName "Bahrain National Women's Football Team" ;
-kg:hasCoach res:coach/Khalid_Al_Harban ;
-kg:homeStadium res:stadium/Sân_vận_động_Qốc_gia_Bahrain ;
-kg:locatedIn res:country/Bahrain ;
-kg:member res:player/Reem_Al_Hashmi ;
-kg:captain res:player/Yasmine_Fayez .
-
-res:country/Bahrain a kg:Country ;
-rdfs:label "Bahrain" .
-
-res:stadium/Sân_vận_động_Qốc_gia_Bahrain a kg:Stadium ;
-kg:locatedIn res:country/Bahrain .
-
-res:coach/Khalid_Al_Harban a kg:Coach ;
-kg:manages res:team/Bahrain女足国家队 .
-
-res:player/Reem_Al_Hashmi a kg:Player ;
-kg:playsFor res:team/Bahrain女足国家队 ;
-kg:mostCaps "58"^^xsd:positiveInteger ;
-kg:topScorer "51"^^xsd:positiveInteger .
-
-res:player/Yasmine_Fayez a kg:Player ;
-kg:playsFor res:team/Bahrain女足国家队 ;
-kg:captain true .
-
-res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới a kg:Competition ;
-kg:competitionName "Women's World Cup" .
-
-res:competition/Cúp_bóng_đá_nữ_châu_Á a kg:Competition ;
-kg:competitionName "Asian Cup" .
-
-res:competition/Á_Vận_Hội a kg:Competition ;
-kg:competitionName "Asian Games" .
-
-res:competition/Giải_vô_địch_bóng_đá_nữ_Tây_Á a kg:Competition ;
-kg:competitionName "West Asian Championship" .
-
-res:competition/Cúp_bóng_đá_nữ_Ả_Rập a kg:Competition ;
-kg:competitionName "Arab Cup" .
-
-res:match/Bahrain_7–0_Maldives a kg:Match ;
-kg:homeTeam res:team/Bahrain女足国家队 ;
-kg:awayTeam res:team/Maldives女足国家队 ;
-kg:venue res:place/Male ;
-kg:kickoffTime "2007-04-22"^^xsd:date .
-
-res:match/Bahrain_17–0_Qatar a kg:Match ;
-kg:homeTeam res:team/Bahrain女足国家队 ;
-kg:awayTeam res:team/Qatar女足国家队 ;
-kg:venue res:place/Riffa ;
-kg:kickoffTime "2010-10-18"^^xsd:date .
-
-res:match/Jordan_9–0_Bahrain a kg:Match ;
-kg:homeTeam res:team/Jordan女足国家队 ;
-kg:awayTeam res:team/Bahrain女足国家队 ;
-kg:venue res:place/Amman ;
-kg:kickoffTime "2005-09-25"^^xsd:date .
-
-res:country/Bahrain a kg:Country ;
-kg:FIFA_rank "64"^^xsd:positiveInteger ;
-kg:FIFA_max "64"^^xsd:positiveInteger ;
-kg:FIFA_max_date "2010-03"^^xsd:gYearMonth ;
-kg:FIFA_min "144"^^xsd:positiveInteger ;
-kg:FIFA_min_date "2007-12"^^xsd:gYearMonth .
-
-res:team/Bahrain女足国家队 a kg:Team ;
-kg:formed "2003"^^xsd:gYear .
+res:team/Bahrain女足国家队 a kg:Team
+; kg:teamName "Bahrain National Women's Football Team"
+; kg:hasCoach res:coach/Khalid_Al_Harban
+; kg:homeStadium res:stadium/Sân_vận_động_Qốc_gia_Bahrain
+; kg:locatedIn res:country/Bahrain .
+res:country/Bahrain a kg:Country
+; rdfs:label "Bahrain" .
+res:stadium/Sân_vận_động_Qốc_gia_Bahrain a kg:Stadium
+; kg:locatedIn res:country/Bahrain .
+res:coach/Khalid_Al_Harban a kg:Coach
+; kg:manages res:team/Bahrain女足国家队 .
+res:player/Reem_Al_Hashmi a kg:Player
+; kg:playsFor res:team/Bahrain女足国家队 .
+res:player/Yasmine_Fayez a kg:Player
+; kg:playsFor res:team/Bahrain女足国家队 .
+res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới a kg:Competition
+; kg:competitionName "Women's World Cup" .
+res:competition/Cúp_bóng_đá_nữ_châu_Á a kg:Competition
+; kg:competitionName "Asian Cup" .
+res:competition/Á_Vận_Hội a kg:Competition
+; kg:competitionName "Asian Games" .
+res:competition/Giải_vô_địch_bóng_đá_nữ_Tây_Á a kg:Competition
+; kg:competitionName "West Asian Championship" .
+res:competition/Cúp_bóng_đá_nữ_Ả_Rập a kg:Competition
+; kg:competitionName "Arab Cup" .
+res:match/Bahrain_7–0_Maldives a kg:Match
+; kg:homeTeam res:team/Bahrain女足国家队
+; kg:awayTeam res:team/Maldives女足国家队
+; kg:venue res:place/Male
+; kg:kickoffTime "2007-04-22"^^xsd:date .
+res:match/Bahrain_17–0_Qatar a kg:Match
+; kg:homeTeam res:team/Bahrain女足国家队
+; kg:awayTeam res:team/Qatar女足国家队
+; kg:venue res:place/Riffa
+; kg:kickoffTime "2010-10-18"^^xsd:date .
+res:match/Jordan_9–0_Bahrain a kg:Match
+; kg:homeTeam res:team/Jordan女足国家队
+; kg:awayTeam res:team/Bahrain女足国家队
+; kg:venue res:place/Amman
+; kg:kickoffTime "2005-09-25"^^xsd:date .
+res:country/Bahrain a kg:Country .
+res:team/Bahrain女足国家队 a kg:Team .

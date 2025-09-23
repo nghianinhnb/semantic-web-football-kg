@@ -1,140 +1,54 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ a kg:Team ;
-kg:teamName "Đội tuyển bóng đá nữ quốc gia Ấn Độ" ;
-kg:teamAbbreviation "IND" ;
-kg:hasCoach res:coach/Maymol_Rocky ;
-kg:manages res:coach/Sapna_Sapho ;
-kg:locatedIn res:country/Ấn_Độ .
-
+res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ a kg:Team
+; kg:teamName "Đội tuyển bóng đá nữ quốc gia Ấn Độ"
+; kg:teamAbbreviation "IND"
+; kg:hasCoach res:coach/Maymol_Rocky
+; kg:manages res:coach/Sapna_Sapho
+; kg:locatedIn res:country/Ấn_Độ .
 res:country/Ấn_Độ a kg:Country .
-
-res:coach/Maymol_Rocky a kg:Coach ;
-kg:manages res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ .
-
-res:coach/Sapna_Sapho a kg:Coach ;
-kg:manages res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ .
-
-res:player/Oinam_Bembem_Devi a kg:Player ;
-kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:mostCaps "85"^^xsd:positiveInteger .
-
-res:player/Sasmita_Malik a kg:Player ;
-kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:topScorer "40"^^xsd:positiveInteger .
-
-res:player/Ngangom_Bala_Devi a kg:Player ;
-kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:captain true .
-
-res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Á" .
-
-res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
-
-res:competition/Á_Vận_Hội a kg:Competition ;
-kg:competitionName "Á Vận Hội" .
-
-res:competition/Giải_vô_địch_bóng_đá_nữ_Nam_Á a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ Nam Á" .
-
-res:competition/Đại_hội_Thể_thao_Nam_Á a kg:Competition ;
-kg:competitionName "Đại hội Thể thao Nam Á" .
-
-res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ kg:participatesIn res:season/1979 ;
-kg:participatesIn res:season/1983 .
-
-res:season/1979 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á .
-
-res:season/1983 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á .
-
-res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ kg:regionalCupApps "10"^^xsd:positiveInteger ;
-kg:regionalCupFirst res:season/1979 ;
-kg:regionalCupBest res:season/1979, res:season/1983 .
-
-res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ kg:fifaRank "57"^^xsd:positiveInteger ;
-kg:fifaMax "49"^^xsd:positiveInteger ;
-kg:fifaMaxDate "2013-12"^^xsd:gYearMonth ;
-kg:fifaMin "100"^^xsd:positiveInteger ;
-kg:fifaMinDate "2009-09"^^xsd:gYearMonth .
-
-res:match/Ấn_Độ_5–0_Singapore a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:awayTeam res:team/Singapore ;
-kg:kickoffTime "1981-06-07"^^xsd:date ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á .
-
-res:match/Ấn_Độ_18–0_Bangladesh a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:awayTeam res:team/Bangladesh ;
-kg:kickoffTime "2010-12-13"^^xsd:date ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á .
-
-res:match/Trung_Qual_16–0_Ấn_Độ a kg:Match ;
-kg:homeTeam res:team/Trung_Quốc ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:kickoffTime "1998-12-11"^^xsd:date ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á .
-
-res:coach/Sushil_Bhattacharya a kg:Coach ;
-kg:coachedTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:startDate "1975"^^xsd:gYear ;
-kg:endDate "2005"^^xsd:gYear ;
-kg:matches "35"^^xsd:positiveInteger ;
-kg:wins "16"^^xsd:positiveInteger ;
-kg:draws "3"^^xsd:positiveInteger ;
-kg:losses "16"^^xsd:positiveInteger ;
-kg:winPercentage "45.71"^^xsd:decimal .
-
-res:coach/Harjinder_Singh a kg:Coach ;
-kg:coachedTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:startDate "2005"^^xsd:gYear ;
-kg:endDate "2010"^^xsd:gYear ;
-kg:matches "9"^^xsd:positiveInteger ;
-kg:wins "2"^^xsd:positiveInteger ;
-kg:losses "7"^^xsd:positiveInteger ;
-kg:winPercentage "22.22"^^xsd:decimal .
-
-res:coach/Mohammad_Shahid_Jabbar a kg:Coach ;
-kg:coachedTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:startDate "2010"^^xsd:gYear ;
-kg:endDate "2013"^^xsd:gYear ;
-kg:matches "21"^^xsd:positiveInteger ;
-kg:wins "19"^^xsd:positiveInteger ;
-kg:losses "1"^^xsd:positiveInteger ;
-kg:winPercentage "90.47"^^xsd:decimal .
-
-res:coach/Anadi_Barua a kg:Coach ;
-kg:coachedTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:startDate "2013"^^xsd:gYear ;
-kg:endDate "2014"^^xsd:gYear ;
-kg:matches "5"^^xsd:positiveInteger ;
-kg:wins "2"^^xsd:positiveInteger ;
-kg:draws "1"^^xsd:positiveInteger ;
-kg:losses "1"^^xsd:positiveInteger ;
-kg:winPercentage "40.00"^^xsd:decimal .
-
-res:coach/Tarun_Roy a kg:Coach ;
-kg:coachedTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:startDate "2014"^^xsd:gYear ;
-kg:endDate "2015"^^xsd:gYear ;
-kg:matches "8"^^xsd:positiveInteger ;
-kg:wins "6"^^xsd:positiveInteger ;
-kg:losses "2"^^xsd:positiveInteger ;
-kg:winPercentage "75.00"^^xsd:decimal .
-
-res:coach/Sajid_Dar a kg:Coach ;
-kg:coachedTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ ;
-kg:startDate "2015"^^xsd:gYear ;
-kg:matches "14"^^xsd:positiveInteger ;
-kg:wins "7"^^xsd:positiveInteger ;
-kg:draws "3"^^xsd:positiveInteger ;
-kg:losses "6"^^xsd:positiveInteger ;
-kg:winPercentage "50.00"^^xsd:decimal .
+res:coach/Maymol_Rocky a kg:Coach
+; kg:manages res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ .
+res:coach/Sapna_Sapho a kg:Coach
+; kg:manages res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ .
+res:player/Oinam_Bembem_Devi a kg:Player
+; kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ .
+res:player/Sasmita_Malik a kg:Player
+; kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ .
+res:player/Ngangom_Bala_Devi a kg:Player
+; kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ .
+res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Á" .
+res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
+res:competition/Á_Vận_Hội a kg:Competition
+; kg:competitionName "Á Vận Hội" .
+res:competition/Giải_vô_địch_bóng_đá_nữ_Nam_Á a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ Nam Á" .
+res:competition/Đại_hội_Thể_thao_Nam_Á a kg:Competition
+; kg:competitionName "Đại hội Thể thao Nam Á" .
+res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ kg:participatesIn res:season/1979
+; kg:participatesIn res:season/1983 .
+res:season/1979 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á .
+res:season/1983 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á .
+res:match/Ấn_Độ_5–0_Singapore a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ
+; kg:awayTeam res:team/Singapore
+; kg:kickoffTime "1981-06-07"^^xsd:date
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á .
+res:match/Ấn_Độ_18–0_Bangladesh a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ
+; kg:awayTeam res:team/Bangladesh
+; kg:kickoffTime "2010-12-13"^^xsd:date
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á .
+res:match/Trung_Qual_16–0_Ấn_Độ a kg:Match
+; kg:homeTeam res:team/Trung_Quốc
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Ấn_Độ
+; kg:kickoffTime "1998-12-11"^^xsd:date
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_nữ_châu_Á .
+res:coach/Sushil_Bhattacharya a kg:Coach .
+res:coach/Harjinder_Singh a kg:Coach .
+res:coach/Mohammad_Shahid_Jabbar a kg:Coach .
+res:coach/Anadi_Barua a kg:Coach .
+res:coach/Tarun_Roy a kg:Coach .
+res:coach/Sajid_Dar a kg:Coach .

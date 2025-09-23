@@ -1,184 +1,104 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Iran_Beach_Soccer_National_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Iran" ;
-kg:teamAbbreviation "IRN" ;
-kg:hasCoach res:coach/Marco_Octavio ;
-kg:manages res:coach/Marco_Octavio ;
-kg:locatedIn res:country/Iran ;
-kg:homeStadium res:stadium/Takhti_Sport_Complex ;
-kg:participatesIn res:competition/Asia_Beach_Soccer_Championship ;
-kg:participatesIn res:competition/FIFA_Beach_Soccer_World_Cup ;
-kg:participantCount "7"^^xsd:positiveInteger ;
-kg:competitionResult "Hạng ba" ;
-kg:competitionResult "Vô địch" ;
-kg:mostCaps "" ;
-kg:topScorer "" ;
-kg:captain res:player/Mohammad_Ahmadzadeh .
-
-res:player/Mohammad_Ahmadzadeh a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "11"^^xsd:positiveInteger .
-
-res:coach/Marco_Octavio a kg:Coach ;
-kg:manages res:team/Iran_Beach_Soccer_National_Team .
-
-res:stadium/Takhti_Sport_Complex a kg:Stadium ;
-kg:locatedIn res:city/Tehran ;
-kg:capacity "50000"^^xsd:positiveInteger .
-
-res:country/Iran a kg:Country ;
-kg:locatedIn res:region/Asia .
-
-res:competition/Asia_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Á" ;
-kg:organizes res:organization/Asian_Football_Confederation .
-
-res:competition/FIFA_Beach_Soccer_World_Cup a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
-kg:organizes res:organization/FIFA .
-
-res:organization/Asian_Football_Confederation a kg:Organization ;
-kg:name "Liên đoàn bóng đá châu Á (AFC)" .
-
-res:organization/FIFA a kg:Organization ;
-kg:name "Fédération Internationale de Football Association (FIFA)" .
-
-res:organization/Iranian_Football_Federation a kg:Organization ;
-kg:name "Liên đoàn bóng đá Iran (IFF)" .
-
-res:team/Iran_Beach_Soccer_National_Team kg:managedBy res:organization/Iranian_Football_Federation .
-
-res:player/Peyman_Hosseini a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber "1"^^xsd:positiveInteger .
-
-res:player/Amir_Hossein_Akbari a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "2"^^xsd:positiveInteger .
-
-res:player/Hassan_Abdollahi a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "3"^^xsd:positiveInteger .
-
-res:player/Mehdi_Hassani_Nozari a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "4"^^xsd:positiveInteger .
-
-res:player/Ali_Naderi a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "5"^^xsd:positiveInteger .
-
-res:player/Mostafa_Kiani a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "6"^^xsd:positiveInteger .
-
-res:player/Mehran_Morshedizadeh a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "7"^^xsd:positiveInteger .
-
-res:player/Farid_Boloukbashi a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "8"^^xsd:positiveInteger .
-
-res:player/Mohammad_Ali_Mokhtari a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "9"^^xsd:positiveInteger .
-
-res:player/Moslem_Mesigar a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "10"^^xsd:positiveInteger .
-
-res:player/Hamid_Behzadpour a kg:Player ;
-kg:playsFor res:team/Iran_Beach_Soccer_National_Team ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber "12"^^xsd:positiveInteger .
-
-res:city/Tehran a kg:City ;
-kg:locatedIn res:country/Iran .
-
-res:city/Sari a kg:City ;
-kg:locatedIn res:country/Iran .
-
-res:city/Ordos a kg:City ;
-kg:locatedIn res:country/China .
-
-res:city/Dubai a kg:City ;
-kg:locatedIn res:country/UAE .
-
+res:team/Iran_Beach_Soccer_National_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Iran"
+; kg:teamAbbreviation "IRN"
+; kg:hasCoach res:coach/Marco_Octavio
+; kg:manages res:coach/Marco_Octavio
+; kg:locatedIn res:country/Iran
+; kg:homeStadium res:stadium/Takhti_Sport_Complex
+; kg:participatesIn res:competition/Asia_Beach_Soccer_Championship
+; kg:participatesIn res:competition/FIFA_Beach_Soccer_World_Cup
+; kg:participantCount "7"^^xsd:positiveInteger .
+res:player/Mohammad_Ahmadzadeh a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:coach/Marco_Octavio a kg:Coach
+; kg:manages res:team/Iran_Beach_Soccer_National_Team .
+res:stadium/Takhti_Sport_Complex a kg:Stadium
+; kg:locatedIn res:city/Tehran
+; kg:capacity "50000"^^xsd:positiveInteger .
+res:country/Iran a kg:Country
+; kg:locatedIn res:region/Asia .
+res:competition/Asia_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Á"
+; kg:organizes res:organization/Asian_Football_Confederation .
+res:competition/FIFA_Beach_Soccer_World_Cup a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới"
+; kg:organizes res:organization/FIFA .
+res:organization/Asian_Football_Confederation a kg:Organization
+; kg:name "Liên đoàn bóng đá châu Á (AFC)" .
+res:organization/FIFA a kg:Organization
+; kg:name "Fédération Internationale de Football Association (FIFA)" .
+res:organization/Iranian_Football_Federation a kg:Organization
+; kg:name "Liên đoàn bóng đá Iran (IFF)" .
+res:player/Peyman_Hosseini a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Amir_Hossein_Akbari a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Hassan_Abdollahi a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Mehdi_Hassani_Nozari a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Ali_Naderi a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Mostafa_Kiani a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Mehran_Morshedizadeh a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Farid_Boloukbashi a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Mohammad_Ali_Mokhtari a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Moslem_Mesigar a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Hamid_Behzadpour a kg:Player
+; kg:playsFor res:team/Iran_Beach_Soccer_National_Team
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:city/Tehran a kg:City
+; kg:locatedIn res:country/Iran .
+res:city/Sari a kg:City
+; kg:locatedIn res:country/Iran .
+res:city/Ordos a kg:City
+; kg:locatedIn res:country/China .
+res:city/Dubai a kg:City
+; kg:locatedIn res:country/UAE .
 res:country/Iran a kg:Country .
-
 res:country/UAE a kg:Country .
-
 res:country/China a kg:Country .
-
 res:country/Qatar a kg:Country .
-
 res:country/Malaysia a kg:Country .
-
 res:country/Japan a kg:Country .
-
 res:country/Bahrain a kg:Country .
-
 res:country/Philippines a kg:Country .
-
 res:country/Italy a kg:Country .
-
 res:country/USA a kg:Country .
-
 res:country/Egypt a kg:Country .
-
 res:country/Russia a kg:Country .
-
 res:country/Tahiti a kg:Country .
-
 res:country/Nigeria a kg:Country .
-
 res:country/Switzerland a kg:Country .
-
 res:country/Brazil a kg:Country .
-
 res:country/Argentina a kg:Country .
-
 res:country/Germany a kg:Country .
-
 res:country/Portugal a kg:Country .
-
 res:country/Oman a kg:Country .
-
 res:country/India a kg:Country .
-
 res:country/Saudi_Arabia a kg:Country .
-
 res:country/Kuwait a kg:Country .
-
 res:country/United_Kingdom a kg:Country .
-
 res:country/South_Korea a kg:Country .
-
 res:country/Spain a kg:Country .
-
 res:country/Costa_Rica a kg:Country .
-
 res:country/Mexico a kg:Country .
-
 res:country/Senegal a kg:Country .
-
 res:country/Uruguay a kg:Country .
-
 res:country/Ukraine a kg:Country .

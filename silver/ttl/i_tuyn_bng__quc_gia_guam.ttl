@@ -1,55 +1,20 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Guam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Guam" ;
-kg:hasCoach res:coach/Karl_Dodd ;
-kg:hasCaptain res:player/Jason_Cunliffe ;
-kg:isCaptain res:player/Jason_Cunliffe ;
-kg:mostCaps res:player/Jason_Cunliffe ;
-kg:topScorer res:player/Jason_Cunliffe ;
-kg:homeStadium res:stadium/San_Vien_Dong_Guam ;
-kg:homeStadium res:stadium/Trung_Tam_Dao_Tao_QG_GFA ;
-kg:FIFATrigramme "GUM" ;
-kg:FIFARank res:rank/FIFA_Rank ;
-kg:FIFAMax 146 ;
-kg:FIFAMaxDate "2015-09-08"^^xsd:date ;
-kg:FIFAMin 206 ;
-kg:FIFAMinDate "2023-04"^^xsd:gYearMonth ;
-kg:EloRank res:rank/Elo_Rank ;
-kg:EloMax 197 ;
-kg:EloMaxDate "2015-06"^^xsd:gYearMonth ;
-kg:EloMin 228 ;
-kg:EloMinDate "2007-03"^^xsd:gYearMonth ;
-kg:confederation res:organization/AFC ;
-kg:subConfederation res:organization/EAFF ;
-kg:association res:organization/Ho_i_Phong_Bong_da_Guam .
-
-res:coach/Karl_Dodd a kg:Coach ;
-kg:manages res:team/Guam .
-
-res:player/Jason_Cunliffe a kg:Player, kg:Forward ;
-kg:playsFor res:team/Guam ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 10 ;
-kg:mostCaps 59 ;
-kg:topScorer 22 .
-
-res:stadium/San_Vien_Dong_Guam a kg:Stadium ;
-kg:isHomeOf res:team/Guam .
-
-res:stadium/Trung_Tam_Dao_Tao_QG_GFA a kg:Stadium ;
-kg:isHomeOf res:team/Guam .
-
+res:team/Guam a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Guam"
+; kg:hasCoach res:coach/Karl_Dodd
+; kg:hasCaptain res:player/Jason_Cunliffe
+; kg:isCaptain res:player/Jason_Cunliffe
+; kg:homeStadium res:stadium/San_Vien_Dong_Guam
+; kg:homeStadium res:stadium/Trung_Tam_Dao_Tao_QG_GFA .
+res:coach/Karl_Dodd a kg:Coach
+; kg:manages res:team/Guam .
+res:player/Jason_Cunliffe a kg:Player , kg:Forward
+; kg:playsFor res:team/Guam
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 10 .
+res:stadium/San_Vien_Dong_Guam a kg:Stadium
+; kg:isHomeOf res:team/Guam .
+res:stadium/Trung_Tam_Dao_Tao_QG_GFA a kg:Stadium
+; kg:isHomeOf res:team/Guam .
 res:organization/AFC a kg:Organization .
-
 res:organization/EAFF a kg:Organization .
-
 res:organization/Ho_i_Phong_Bong_da_Guam a kg:Organization .
-
-res:rank/FIFA_Rank a kg:Rank .
-
-res:rank/Elo_Rank a kg:Rank .

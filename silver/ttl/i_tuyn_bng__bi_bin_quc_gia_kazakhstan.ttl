@@ -1,131 +1,75 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/KazakhstanNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Kazakhstan" ;
-kg:locatedIn res:country/Kazakhstan ;
-kg:hasCoach "" ;
-kg:organizes res:competition/EuropeanQualificationForWorldBeachSoccerChampionship .
-
-res:country/Kazakhstan a kg:Country ;
-rdfs:label "Kazakhstan" .
-
-res:competition/EuropeanQualificationForWorldBeachSoccerChampionship a kg:Competition ;
-kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới khu vực châu Âu" ;
-kg:heldIn res:country/Kazakhstan .
-
-res:match/KazakhstanVsNorway a kg:Match ;
-kg:homeTeam res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:awayTeam res:team/NorwayNationalBeachSoccerTeam ;
-kg:kickoffTime "2016-09-05"^^xsd:date ;
-kg:venue res:place/Jesolo ;
-kg:result "3-1"^^xsd:string .
-
-res:match/KazakhstanVsRussia a kg:Match ;
-kg:homeTeam res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:awayTeam res:team/RussiaNationalBeachSoccerTeam ;
-kg:kickoffTime "2016-09-02"^^xsd:date ;
-kg:venue res:place/Jesolo ;
-kg:result "1-5"^^xsd:string .
-
-res:place/Jesolo a kg:Place ;
-rdfs:label "Jesolo" ;
-kg:locatedIn res:country/Italy .
-
-res:team/NorwayNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Na Uy" .
-
-res:team/RussiaNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Nga" .
-
-res:country/Italy a kg:Country ;
-rdfs:label "Ý" .
-
-res:team/KazakhstanNationalBeachSoccerTeam kg:participatesIn res:season/2011EuropeanQualification ;
-kg:participatesIn res:season/2017EuropeanQualification .
-
-res:season/2011EuropeanQualification a kg:Season ;
-kg:seasonOf res:competition/EuropeanQualificationForWorldBeachSoccerChampionship ;
-kg:participatesIn res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:stage "Vòng bảng"^^xsd:string ;
-kg:matchesPlayed "3"^^xsd:positiveInteger ;
-kg:wins "0"^^xsd:positiveInteger ;
-kg:draws "0"^^xsd:positiveInteger ;
-kg:losses "3"^^xsd:positiveInteger ;
-kg:goalsScored "5"^^xsd:positiveInteger ;
-kg:goalsConceded "22"^^xsd:positiveInteger ;
-kg:points "-17"^^xsd:decimal .
-
-res:season/2017EuropeanQualification a kg:Season ;
-kg:seasonOf res:competition/EuropeanQualificationForWorldBeachSoccerChampionship ;
-kg:participatesIn res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:stage "Vòng bảng"^^xsd:string ;
-kg:matchesPlayed "3"^^xsd:positiveInteger ;
-kg:wins "1"^^xsd:positiveInteger ;
-kg:draws "0"^^xsd:positiveInteger ;
-kg:losses "2"^^xsd:positiveInteger ;
-kg:goalsScored "6"^^xsd:positiveInteger ;
-kg:goalsConceded "11"^^xsd:positiveInteger ;
-kg:points "-5"^^xsd:decimal .
-
-res:player/YuriNovikov a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber "1"^^xsd:positiveInteger .
-
-res:player/SergeyKuyatkouskiy a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "2"^^xsd:positiveInteger .
-
-res:player/OlegZarechnyy a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "3"^^xsd:positiveInteger .
-
-res:player/DmitriyPerevyortov a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "4"^^xsd:positiveInteger .
-
-res:player/VitaliyYaloutsev a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "5"^^xsd:positiveInteger .
-
-res:player/KanatAldabergenov a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "6"^^xsd:positiveInteger .
-
-res:player/KairatAldabergenov a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "7"^^xsd:positiveInteger .
-
-res:player/YesbolIskakov a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "8"^^xsd:positiveInteger .
-
-res:player/BauryrzhanAlibayev a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "9"^^xsd:positiveInteger .
-
-res:player/BeknazarUvakbayev a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "10"^^xsd:positiveInteger .
-
-res:player/NurzmanAbdakassilou a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "11"^^xsd:positiveInteger .
-
-res:player/KanatbekTurkestanov a kg:Player ;
-kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber "12"^^xsd:positiveInteger .
+res:team/KazakhstanNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Kazakhstan"
+; kg:locatedIn res:country/Kazakhstan
+; kg:hasCoach ""
+; kg:organizes res:competition/EuropeanQualificationForWorldBeachSoccerChampionship .
+res:country/Kazakhstan a kg:Country
+; rdfs:label "Kazakhstan" .
+res:competition/EuropeanQualificationForWorldBeachSoccerChampionship a kg:Competition
+; kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới khu vực châu Âu"
+; kg:heldIn res:country/Kazakhstan .
+res:match/KazakhstanVsNorway a kg:Match
+; kg:homeTeam res:team/KazakhstanNationalBeachSoccerTeam
+; kg:awayTeam res:team/NorwayNationalBeachSoccerTeam
+; kg:kickoffTime "2016-09-05"^^xsd:date
+; kg:venue res:place/Jesolo
+; kg:result "3-1"^^xsd:string .
+res:match/KazakhstanVsRussia a kg:Match
+; kg:homeTeam res:team/KazakhstanNationalBeachSoccerTeam
+; kg:awayTeam res:team/RussiaNationalBeachSoccerTeam
+; kg:kickoffTime "2016-09-02"^^xsd:date
+; kg:venue res:place/Jesolo
+; kg:result "1-5"^^xsd:string .
+res:place/Jesolo a kg:Place
+; rdfs:label "Jesolo"
+; kg:locatedIn res:country/Italy .
+res:team/NorwayNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Na Uy" .
+res:team/RussiaNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Nga" .
+res:country/Italy a kg:Country
+; rdfs:label "Ý" .
+res:team/KazakhstanNationalBeachSoccerTeam kg:participatesIn res:season/2011EuropeanQualification
+; kg:participatesIn res:season/2017EuropeanQualification .
+res:season/2011EuropeanQualification a kg:Season
+; kg:seasonOf res:competition/EuropeanQualificationForWorldBeachSoccerChampionship
+; kg:participatesIn res:team/KazakhstanNationalBeachSoccerTeam .
+res:season/2017EuropeanQualification a kg:Season
+; kg:seasonOf res:competition/EuropeanQualificationForWorldBeachSoccerChampionship
+; kg:participatesIn res:team/KazakhstanNationalBeachSoccerTeam .
+res:player/YuriNovikov a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/SergeyKuyatkouskiy a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/OlegZarechnyy a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/DmitriyPerevyortov a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/VitaliyYaloutsev a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/KanatAldabergenov a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/KairatAldabergenov a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/YesbolIskakov a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/BauryrzhanAlibayev a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/BeknazarUvakbayev a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/NurzmanAbdakassilou a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/KanatbekTurkestanov a kg:Player
+; kg:playsFor res:team/KazakhstanNationalBeachSoccerTeam
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .

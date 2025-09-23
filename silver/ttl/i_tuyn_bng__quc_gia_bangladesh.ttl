@@ -1,255 +1,209 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Bangladesh a kg:Team ;
-kg:teamName "Bangladesh" ;
-kg:hasCoach res:coach/Javier_Cabrera ;
-kg:hasCaptain res:player/Jamal_Bhuyan ;
-kg:homeStadium res:stadium/San_Van_Dong_Quoc_Gia_Bangabandhu ;
-kg:teamAbbreviation "BAN" ;
-kg:locatedIn res:country/Bangladesh .
-
-res:coach/Javier_Cabrera a kg:Coach ;
-kg:manages res:team/Bangladesh .
-
-res:player/Jamal_Bhuyan a kg:Player ;
-kg:isCaptain res:team/Bangladesh .
-
-res:stadium/San_Van_Dong_Quoc_Gia_Bangabandhu a kg:Stadium ;
-kg:isHomeOf res:team/Bangladesh .
-
+res:team/Bangladesh a kg:Team
+; kg:teamName "Bangladesh"
+; kg:hasCoach res:coach/Javier_Cabrera
+; kg:hasCaptain res:player/Jamal_Bhuyan
+; kg:homeStadium res:stadium/San_Van_Dong_Quoc_Gia_Bangabandhu
+; kg:teamAbbreviation "BAN"
+; kg:locatedIn res:country/Bangladesh .
+res:coach/Javier_Cabrera a kg:Coach
+; kg:manages res:team/Bangladesh .
+res:player/Jamal_Bhuyan a kg:Player
+; kg:isCaptain res:team/Bangladesh .
+res:stadium/San_Van_Dong_Quoc_Gia_Bangabandhu a kg:Stadium
+; kg:isHomeOf res:team/Bangladesh .
 res:country/Bangladesh a kg:Country .
-
-res:player/Jahid_Hasan_Ameli a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 11 ;
-kg:mostCaps 64 ;
-kg:topScorer 15 .
-
-res:competition/Cup_Bong_Da_Chau_A a kg:Competition ;
-kg:competitionName "Cúp bóng đá châu Á" .
-
-res:competition/Giai_Vo_Dich_Bong_Da_Nam_A a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá Nam Á" .
-
-res:competition/Dai_Hoi_The_Thao_Chau_A a kg:Competition ;
-kg:competitionName "Đại hội Thể thao châu Á" .
-
-res:competition/FIFA_World_Cup a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá thế giới" .
-
-res:season/1980 a kg:Season ;
-kg:seasonOf res:competition/Cup_Bong_Da_Chau_A ;
-kg:participatesIn res:team/Bangladesh .
-
-res:match/1973_Malaysia a kg:Match ;
-kg:homeTeam res:team/Malaysia ;
-kg:awayTeam res:team/Bangladesh ;
-kg:kickoffTime "1973-07-26"^^xsd:date .
-
-res:match/1985_MDV a kg:Match ;
-kg:homeTeam res:team/Bangladesh ;
-kg:awayTeam res:team/Maldives ;
-kg:kickoffTime "1985-12-23"^^xsd:date .
-
-res:match/1979_KOR a kg:Match ;
-kg:homeTeam res:team/Korea ;
-kg:awayTeam res:team/Bangladesh ;
-kg:kickoffTime "1979-09-16"^^xsd:date .
-
-res:match/1982_IRN a kg:Match ;
-kg:homeTeam res:team/Iran ;
-kg:awayTeam res:team/Bangladesh ;
-kg:kickoffTime "1982-02-25"^^xsd:date .
-
-res:player/Pappu_Hossain a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1 ;
-kg:birthDate "1999-04-07"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Mitul_Marma a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 13 ;
-kg:birthDate "2003-12-11"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Mehedi_Hasan_Srabon a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 23 ;
-kg:birthDate "2005-08-12"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Shakil_Hossain a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 2 ;
-kg:birthDate "2002-07-06"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Rahmat_Mia a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 3 ;
-kg:birthDate "1999-12-08"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Hasan_Murad_Tipu a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 4 ;
-kg:birthDate "1998-01-02"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Bishwanath_Ghosh a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 12 ;
-kg:birthDate "1999-05-30"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Tariq_Kazi a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 14 ;
-kg:birthDate "2000-10-06"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Isa_Faysal a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 18 ;
-kg:birthDate "1999-08-20"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Alomgir_Molla a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 22 ;
-kg:birthDate "2000-11-06"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Mohammad_Ridoy a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 5 ;
-kg:birthDate "2002-01-01"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Jamal_Bhuyan a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 6 ;
-kg:birthDate "1990-04-10"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh ;
-kg:isCaptain res:team/Bangladesh .
-
-res:player/Shekh_Morsalin a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 7 ;
-kg:birthDate "2005-11-25"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Rabiul_Hasan a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 8 ;
-kg:birthDate "1999-06-26"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Mohamed_Sohel_Rana a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 16 ;
-kg:birthDate "1996-06-01"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Sohel_Rana a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 17 ;
-kg:birthDate "1995-03-27"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Mojibur_Rahman_Jony a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 20 ;
-kg:birthDate "2005-01-01"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Jayed_Ahmed a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 21 ;
-kg:birthDate "2002-12-14"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Sumon_Reza a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 9 ;
-kg:birthDate "1995-06-15"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Dipok_Roy a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 10 ;
-kg:birthDate "2002-08-12"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Foysal_Ahmed_Fahim a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 11 ;
-kg:birthDate "2002-02-24"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Md_Rafiqul_Islam a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 15 ;
-kg:birthDate "2004-02-12"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:player/Mohammad_Ibrahim a kg:Player ;
-kg:playsFor res:team/Bangladesh ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 19 ;
-kg:birthDate "1997-08-07"^^xsd:date ;
-kg:birthPlace res:city/Dhaka ;
-kg:nationality res:country/Bangladesh .
-
-res:city/Dhaka a kg:City ;
-kg:locatedIn res:country/Bangladesh .
+res:player/Jahid_Hasan_Ameli a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 11 .
+res:competition/Cup_Bong_Da_Chau_A a kg:Competition
+; kg:competitionName "Cúp bóng đá châu Á" .
+res:competition/Giai_Vo_Dich_Bong_Da_Nam_A a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá Nam Á" .
+res:competition/Dai_Hoi_The_Thao_Chau_A a kg:Competition
+; kg:competitionName "Đại hội Thể thao châu Á" .
+res:competition/FIFA_World_Cup a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá thế giới" .
+res:season/1980 a kg:Season
+; kg:seasonOf res:competition/Cup_Bong_Da_Chau_A
+; kg:participatesIn res:team/Bangladesh .
+res:match/1973_Malaysia a kg:Match
+; kg:homeTeam res:team/Malaysia
+; kg:awayTeam res:team/Bangladesh
+; kg:kickoffTime "1973-07-26"^^xsd:date .
+res:match/1985_MDV a kg:Match
+; kg:homeTeam res:team/Bangladesh
+; kg:awayTeam res:team/Maldives
+; kg:kickoffTime "1985-12-23"^^xsd:date .
+res:match/1979_KOR a kg:Match
+; kg:homeTeam res:team/Korea
+; kg:awayTeam res:team/Bangladesh
+; kg:kickoffTime "1979-09-16"^^xsd:date .
+res:match/1982_IRN a kg:Match
+; kg:homeTeam res:team/Iran
+; kg:awayTeam res:team/Bangladesh
+; kg:kickoffTime "1982-02-25"^^xsd:date .
+res:player/Pappu_Hossain a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1
+; kg:birthDate "1999-04-07"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Mitul_Marma a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 13
+; kg:birthDate "2003-12-11"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Mehedi_Hasan_Srabon a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 23
+; kg:birthDate "2005-08-12"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Shakil_Hossain a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 2
+; kg:birthDate "2002-07-06"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Rahmat_Mia a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 3
+; kg:birthDate "1999-12-08"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Hasan_Murad_Tipu a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 4
+; kg:birthDate "1998-01-02"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Bishwanath_Ghosh a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 12
+; kg:birthDate "1999-05-30"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Tariq_Kazi a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 14
+; kg:birthDate "2000-10-06"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Isa_Faysal a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 18
+; kg:birthDate "1999-08-20"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Alomgir_Molla a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 22
+; kg:birthDate "2000-11-06"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Mohammad_Ridoy a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 5
+; kg:birthDate "2002-01-01"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Jamal_Bhuyan a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 6
+; kg:birthDate "1990-04-10"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh
+; kg:isCaptain res:team/Bangladesh .
+res:player/Shekh_Morsalin a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 7
+; kg:birthDate "2005-11-25"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Rabiul_Hasan a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 8
+; kg:birthDate "1999-06-26"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Mohamed_Sohel_Rana a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 16
+; kg:birthDate "1996-06-01"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Sohel_Rana a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 17
+; kg:birthDate "1995-03-27"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Mojibur_Rahman_Jony a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 20
+; kg:birthDate "2005-01-01"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Jayed_Ahmed a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 21
+; kg:birthDate "2002-12-14"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Sumon_Reza a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 9
+; kg:birthDate "1995-06-15"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Dipok_Roy a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 10
+; kg:birthDate "2002-08-12"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Foysal_Ahmed_Fahim a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 11
+; kg:birthDate "2002-02-24"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Md_Rafiqul_Islam a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 15
+; kg:birthDate "2004-02-12"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:player/Mohammad_Ibrahim a kg:Player
+; kg:playsFor res:team/Bangladesh
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 19
+; kg:birthDate "1997-08-07"^^xsd:date
+; kg:birthPlace res:city/Dhaka
+; kg:nationality res:country/Bangladesh .
+res:city/Dhaka a kg:City
+; kg:locatedIn res:country/Bangladesh .

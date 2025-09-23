@@ -1,106 +1,53 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/ItalyNationalWomenFootballTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá nữ quốc gia Ý" ;
-kg:teamAbbreviation "ITA" ;
-kg:hasCoach res:coach/Milena_Bertolini ;
-kg:manages res:coach/Milena_Bertolini ;
-kg:captain res:player/Barbara_Bonansea ;
-kg:mostCaps res:player/Patrizia_Panico ;
-kg:topScorer res:player/Patrizia_Panico, res:player/Elisabetta_Vignotto ;
-kg:FIFARank "19"^^xsd:integer ;
-kg:FIFAMaxRank "10"^^xsd:integer ;
-kg:FIFAMaxRankDate "2003-07-01"^^xsd:date ;
-kg:FIFAMinRank "19"^^xsd:integer ;
-kg:FIFAMinRankDate "2017-03-01"^^xsd:date ;
-kg:worldCupApps "4"^^xsd:integer ;
-kg:worldCupFirst "1991"^^xsd:gYear ;
-kg:worldCupBest res:competition/FIFA_Women's_World_Cup_1991, res:competition/FIFA_Women's_World_Cup_2019 ;
-kg:regionalCupApps "11"^^xsd:integer ;
-kg:regionalCupFirst res:competition/European_Championship_for_Women_1984 ;
-kg:regionalCupBest res:competition/European_Championship_for_Women_1993, res:competition/European_Championship_for_Women_1997 ;
-kg:confederation res:country/Europe ;
-kg:association res:organization/Italian_Football_Federation ;
-kg:badge "FIGC Logo 2017 (no stars).svg" ;
-kg:badgeSize "138"^^xsd:positiveInteger ;
-kg:nickname "Azzurre" ;
-kg:firstGame res:match/Italy_vs_Czechoslovakia_1968 ;
-kg:largestWin res:match/Italy_vs_Macedonia_2014 ;
-kg:largestLoss res:match/Denmark_vs_Italy_1982 .
-
-res:coach/Milena_Bertolini a kg:Coach ;
-kg:manages res:team/ItalyNationalWomenFootballTeam .
-
-res:player/Barbara_Bonansea a kg:Player ;
-kg:playsFor res:team/ItalyNationalWomenFootballTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "11"^^xsd:positiveInteger .
-
-res:player/Patrizia_Panico a kg:Player ;
-kg:playsFor res:team/ItalyNationalWomenFootballTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "10"^^xsd:positiveInteger ;
-kg:topScorer "107"^^xsd:positiveInteger .
-
-res:player/Elisabetta_Vignotto a kg:Player ;
-kg:playsFor res:team/ItalyNationalWomenFootballTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "10"^^xsd:positiveInteger ;
-kg:topScorer "107"^^xsd:positiveInteger .
-
-res:organization/Italian_Football_Federation a kg:Organization ;
-kg:organizes res:team/ItalyNationalWomenFootballTeam .
-
+res:team/ItalyNationalWomenFootballTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá nữ quốc gia Ý"
+; kg:teamAbbreviation "ITA"
+; kg:hasCoach res:coach/Milena_Bertolini
+; kg:manages res:coach/Milena_Bertolini .
+res:coach/Milena_Bertolini a kg:Coach
+; kg:manages res:team/ItalyNationalWomenFootballTeam .
+res:player/Barbara_Bonansea a kg:Player
+; kg:playsFor res:team/ItalyNationalWomenFootballTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Patrizia_Panico a kg:Player
+; kg:playsFor res:team/ItalyNationalWomenFootballTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Elisabetta_Vignotto a kg:Player
+; kg:playsFor res:team/ItalyNationalWomenFootballTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:organization/Italian_Football_Federation a kg:Organization
+; kg:organizes res:team/ItalyNationalWomenFootballTeam .
 res:country/Europe a kg:Country .
-
-res:competition/FIFA_Women's_World_Cup_1991 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới 1991" .
-
-res:competition/FIFA_Women's_World_Cup_2019 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới 2019" .
-
-res:competition/European_Championship_for_Women_1984 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Âu 1984" .
-
-res:competition/European_Championship_for_Women_1993 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Âu 1993" .
-
-res:competition/European_Championship_for_Women_1997 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Âu 1997" .
-
-res:match/Italy_vs_Czechoslovakia_1968 a kg:Match ;
-kg:homeTeam res:team/ItalyNationalWomenFootballTeam ;
-kg:awayTeam res:team/Czechoslovakia ;
-kg:kickoffTime "1968-02-23"^^xsd:date ;
-kg:venue res:place/Viareggio .
-
-res:match/Italy_vs_Macedonia_2014 a kg:Match ;
-kg:homeTeam res:team/ItalyNationalWomenFootballTeam ;
-kg:awayTeam res:team/Macedonia ;
-kg:kickoffTime "2014-09-17"^^xsd:date ;
-kg:venue res:place/Vercelli .
-
-res:match/Denmark_vs_Italy_1982 a kg:Match ;
-kg:homeTeam res:team/Denmark ;
-kg:awayTeam res:team/ItalyNationalWomenFootballTeam ;
-kg:kickoffTime "1982-05-16"^^xsd:date ;
-kg:venue res:place/Ringsted .
-
-res:place/Viareggio a kg:City ;
-kg:locatedIn res:country/Italy .
-
-res:place/Vercelli a kg:City ;
-kg:locatedIn res:country/Italy .
-
-res:place/Ringsted a kg:City ;
-kg:locatedIn res:country/Denmark .
-
+res:competition/FIFA_Women's_World_Cup_1991 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới 1991" .
+res:competition/FIFA_Women's_World_Cup_2019 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới 2019" .
+res:competition/European_Championship_for_Women_1984 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Âu 1984" .
+res:competition/European_Championship_for_Women_1993 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Âu 1993" .
+res:competition/European_Championship_for_Women_1997 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Âu 1997" .
+res:match/Italy_vs_Czechoslovakia_1968 a kg:Match
+; kg:homeTeam res:team/ItalyNationalWomenFootballTeam
+; kg:awayTeam res:team/Czechoslovakia
+; kg:kickoffTime "1968-02-23"^^xsd:date
+; kg:venue res:place/Viareggio .
+res:match/Italy_vs_Macedonia_2014 a kg:Match
+; kg:homeTeam res:team/ItalyNationalWomenFootballTeam
+; kg:awayTeam res:team/Macedonia
+; kg:kickoffTime "2014-09-17"^^xsd:date
+; kg:venue res:place/Vercelli .
+res:match/Denmark_vs_Italy_1982 a kg:Match
+; kg:homeTeam res:team/Denmark
+; kg:awayTeam res:team/ItalyNationalWomenFootballTeam
+; kg:kickoffTime "1982-05-16"^^xsd:date
+; kg:venue res:place/Ringsted .
+res:place/Viareggio a kg:City
+; kg:locatedIn res:country/Italy .
+res:place/Vercelli a kg:City
+; kg:locatedIn res:country/Italy .
+res:place/Ringsted a kg:City
+; kg:locatedIn res:country/Denmark .
 res:country/Italy a kg:Country .
-
 res:country/Denmark a kg:Country .
-
 res:country/Macedonia a kg:Country .

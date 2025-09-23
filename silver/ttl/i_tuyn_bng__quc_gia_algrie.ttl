@@ -1,128 +1,56 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Afrique > kg:teamName "Algérie" ;
-kg:hasCoach res:coach/Vladimir_Petković ;
-kg:hasCaptain res:player/Riyad_Mahrez ;
-kg:mostCaps res:player/Aïssa_Mandi ;
-kg:topScorer res:player/Islam_Slimani ;
-kg:homeStadium res:stadium/Stade_de_Nelson_Mandela ;
-kg:FIFATrigramme "ALG" ;
-kg:FIFARank "ALG" ;
-kg:FIFAMax 15 ;
-kg:FIFAMaxDate "2014-10" ;
-kg:FIFAMin 103 ;
-kg:FIFAMinDate "2008-06" ;
-kg:EloRank "ALG" ;
-kg:EloMax 8 ;
-kg:EloMaxDate "1981-12" ;
-kg:EloMin 85 ;
-kg:EloMinDate "2018-10" ;
-kg:association res:organization/Ligue_Algerienne_de_Football ;
-kg:confederation res:organization/CFA ;
-
-kg:firstGame "TUN vs ALG 1–2" ;
-kg:largestWin "ALG 15–1 South Yemen" ;
-kg:largestLoss "East Germany 5–0 ALG" ;
-kg:worldCupApps 4 ;
-kg:worldCupFirst "1982" ;
-kg:worldCupBest "Vòng 2 (2014)" ;
-kg:regionalCupApps 21 ;
-kg:regionalCupFirst "1968" ;
-kg:regionalCupBest "Vô địch (1990, 2019)" .
-
-res:coach/Vladimir_Petković a kg:Coach ;
-kg:manages res:team/Afrique .
-
-res:player/Riyad_Mahrez a kg:Player ;
-kg:playsFor res:team/Afrique ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 10 ;
-kg:birthDate "1991-02-21"^^xsd:date ;
-kg:birthPlace res:city/Algiers ;
-kg:nationality res:country/Algeria ;
-kg:height 178.0^^xsd:decimal ;
-kg:weight 72.0^^xsd:decimal ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Aïssa_Mandi a kg:Player ;
-kg:playsFor res:team/Afrique ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 ;
-kg:birthDate "1991-10-22"^^xsd:date ;
-kg:birthPlace res:city/Oran ;
-kg:nationality res:country/Algeria ;
-kg:height 191.0^^xsd:decimal ;
-kg:weight 81.0^^xsd:decimal ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Islam_Slimani a kg:Player ;
-kg:playsFor res:team/Afrique ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 ;
-kg:birthDate "1988-06-18"^^xsd:date ;
-kg:birthPlace res:city/Constantine ;
-kg:nationality res:country/Algeria ;
-kg:height 188.0^^xsd:decimal ;
-kg:weight 76.0^^xsd:decimal ;
-kg:preferredFoot kg:LeftFooted .
-
-res:stadium/Stade_de_Nelson_Mandela a kg:Stadium ;
-kg:capacity 80000 ;
-kg:homeStadium res:club/USM_Alger .
-
+res:team/Afrique > kg:teamName "Algérie"
+; kg:hasCoach res:coach/Vladimir_Petković
+; kg:hasCaptain res:player/Riyad_Mahrez
+; kg:homeStadium res:stadium/Stade_de_Nelson_Mandela .
+res:coach/Vladimir_Petković a kg:Coach
+; kg:manages res:team/Afrique .
+res:player/Riyad_Mahrez a kg:Player
+; kg:playsFor res:team/Afrique
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Aïssa_Mandi a kg:Player
+; kg:playsFor res:team/Afrique
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Islam_Slimani a kg:Player
+; kg:playsFor res:team/Afrique
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:stadium/Stade_de_Nelson_Mandela a kg:Stadium
+; kg:capacity 80000
+; kg:homeStadium res:club/USM_Alger .
 res:organization/Ligue_Algerienne_de_Football a kg:Organization .
-
 res:organization/CFA a kg:Organization .
-
-res:country/Algeria a kg:Country ;
-kg:locatedIn res:region/Africa .
-
-res:city/Algiers a kg:City ;
-kg:locatedIn res:country/Algeria .
-
-res:city/Oran a kg:City ;
-kg:locatedIn res:country/Algeria .
-
-res:city/Constantine a kg:City ;
-kg:locatedIn res:country/Algeria .
-
-res:club/USM_Alger a kg:Club ;
-kg:homeStadium res:stadium/Stade_de_Nelson_Mandela .
-
-res:competition/CAN a kg:Competition ;
-kg:competitionName "Cúp bóng đá châu Phi" .
-
-res:competition/FIFA_World_Cup a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá thế giới" .
-
-res:season/1990 a kg:Season ;
-kg:seasonOf res:competition/CAN .
-
-res:season/2014 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup .
-
-res:match/1990_CAN_Final a kg:Match ;
-kg:homeTeam res:team/Afrique ;
-kg:awayTeam res:team/Egypt ;
-kg:venue res:stadium/Stade_de_Nelson_Mandela ;
-kg:kickoffTime "1990-01-01T00:00:00Z"^^xsd:dateTime ;
-kg:inCompetition res:competition/CAN ;
-kg:inSeason res:season/1990 ;
-kg:referee res:referee/John_Hodgson .
-
-res:match/2014_WC_Round_of_16 a kg:Match ;
-kg:homeTeam res:team/Afrique ;
-kg:awayTeam res:team/Germany ;
-kg:venue res:stadium/Stade_de_Nelson_Mandela ;
-kg:kickoffTime "2014-06-15T00:00:00Z"^^xsd:dateTime ;
-kg:inCompetition res:competition/FIFA_World_Cup ;
-kg:inSeason res:season/2014 ;
-kg:referee res:referee/Mark_Clattenburg .
-
+res:country/Algeria a kg:Country
+; kg:locatedIn res:region/Africa .
+res:city/Algiers a kg:City
+; kg:locatedIn res:country/Algeria .
+res:city/Oran a kg:City
+; kg:locatedIn res:country/Algeria .
+res:city/Constantine a kg:City
+; kg:locatedIn res:country/Algeria .
+res:club/USM_Alger a kg:Club
+; kg:homeStadium res:stadium/Stade_de_Nelson_Mandela .
+res:competition/CAN a kg:Competition
+; kg:competitionName "Cúp bóng đá châu Phi" .
+res:competition/FIFA_World_Cup a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá thế giới" .
+res:season/1990 a kg:Season
+; kg:seasonOf res:competition/CAN .
+res:season/2014 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup .
+res:match/1990_CAN_Final a kg:Match
+; kg:homeTeam res:team/Afrique
+; kg:awayTeam res:team/Egypt
+; kg:venue res:stadium/Stade_de_Nelson_Mandela
+; kg:kickoffTime "1990-01-01T00:00:00Z"^^xsd:dateTime
+; kg:inCompetition res:competition/CAN
+; kg:inSeason res:season/1990
+; kg:referee res:referee/John_Hodgson .
+res:match/2014_WC_Round_of_16 a kg:Match
+; kg:homeTeam res:team/Afrique
+; kg:awayTeam res:team/Germany
+; kg:venue res:stadium/Stade_de_Nelson_Mandela
+; kg:kickoffTime "2014-06-15T00:00:00Z"^^xsd:dateTime
+; kg:inCompetition res:competition/FIFA_World_Cup
+; kg:inSeason res:season/2014
+; kg:referee res:referee/Mark_Clattenburg .
 res:referee/John_Hodgson a kg:Referee .
-
 res:referee/Mark_Clattenburg a kg:Referee .

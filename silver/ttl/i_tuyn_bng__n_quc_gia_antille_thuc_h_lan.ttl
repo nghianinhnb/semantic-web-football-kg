@@ -1,78 +1,59 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Antille thuộc Hà Lan a kg:Team ;
-kg:teamName "Antille thuộc Hà Lan" ;
-kg:teamAbbreviation "ANT" ;
-kg:locatedIn res:country/Antille thuộc Hà Lan ;
-kg:participatesIn res:competition/CARIFORUM Women's Football Championship 2006 ;
-kg:participatesIn res:competition/Torneo Internashonal di Futbòl di Dama 2007 .
-
+res:team/Antille thuộc Hà Lan a kg:Team
+; kg:teamName "Antille thuộc Hà Lan"
+; kg:teamAbbreviation "ANT"
+; kg:locatedIn res:country/Antille thuộc Hà Lan
+; kg:participatesIn res:competition/CARIFORUM Women's Football Championship 2006
+; kg:participatesIn res:competition/Torneo Internashonal di Futbòl di Dama 2007 .
 res:country/Antille thuộc Hà Lan a kg:Country .
-
-res:competition/CARIFORUM Women's Football Championship 2006 a kg:Competition ;
-kg:competitionName "CARIFORUM Women's Football Championship 2006" ;
-kg:heldIn res:country/Antille thuộc Hà Lan .
-
-res:competition/Torneo Internashonal di Futbòl di Dama 2007 a kg:Competition ;
-kg:competitionName "Torneo Internashonal di Futbòl di Dama 2007" ;
-kg:heldIn res:country/Antille thuộc Hà Lan .
-
-res:match/Antille thuộc Hà Lan vs Cayman Islands 2006 a kg:Match ;
-kg:homeTeam res:team/Antille thuộc Hà Lan ;
-kg:awayTeam res:team/Cayman Islands ;
-kg:kickoffTime "2006-03-18"^^xsd:date ;
-kg:venue res:place/George Town, Quần đảo Cayman ;
-kg:inCompetition res:competition/CARIFORUM Women's Football Championship 2006 .
-
+res:competition/CARIFORUM Women's Football Championship 2006 a kg:Competition
+; kg:competitionName "CARIFORUM Women's Football Championship 2006"
+; kg:heldIn res:country/Antille thuộc Hà Lan .
+res:competition/Torneo Internashonal di Futbòl di Dama 2007 a kg:Competition
+; kg:competitionName "Torneo Internashonal di Futbòl di Dama 2007"
+; kg:heldIn res:country/Antille thuộc Hà Lan .
+res:match/Antille thuộc Hà Lan vs Cayman Islands 2006 a kg:Match
+; kg:homeTeam res:team/Antille thuộc Hà Lan
+; kg:awayTeam res:team/Cayman Islands
+; kg:kickoffTime "2006-03-18"^^xsd:date
+; kg:venue res:place/George Town , Quần đảo Cayman
+; kg:inCompetition res:competition/CARIFORUM Women's Football Championship 2006 .
 res:place/George Town, Quần đảo Cayman a kg:Place .
-
-res:match/Antille thuộc Hà Lan vs Suriname 2006 a kg:Match ;
-kg:homeTeam res:team/Antille thuộc Hà Lan ;
-kg:awayTeam res:team/Suriname ;
-kg:kickoffTime "2006-05-03"^^xsd:date ;
-kg:venue res:place/Oranjestad, Aruba ;
-kg:inCompetition res:competition/CARIFORUM Women's Football Championship 2006 .
-
+res:match/Antille thuộc Hà Lan vs Suriname 2006 a kg:Match
+; kg:homeTeam res:team/Antille thuộc Hà Lan
+; kg:awayTeam res:team/Suriname
+; kg:kickoffTime "2006-05-03"^^xsd:date
+; kg:venue res:place/Oranjestad , Aruba
+; kg:inCompetition res:competition/CARIFORUM Women's Football Championship 2006 .
 res:place/Oranjestad, Aruba a kg:Place .
-
-res:match/Antille thuộc Hà Lan vs Aruba 2006 a kg:Match ;
-kg:homeTeam res:team/Antille thuộc Hà Lan ;
-kg:awayTeam res:team/Aruba ;
-kg:kickoffTime "2006-05-05"^^xsd:date ;
-kg:venue res:place/Oranjestad, Aruba ;
-kg:inCompetition res:competition/CARIFORUM Women's Football Championship 2006 .
-
-res:match/Antille thuộc Hà Lan vs Suriname 2007 a kg:Match ;
-kg:homeTeam res:team/Antille thuộc Hà Lan ;
-kg:awayTeam res:team/Suriname ;
-kg:kickoffTime "2007-06-30"^^xsd:date ;
-kg:venue res:place/Oranjestad, Aruba ;
-kg:inCompetition res:competition/Torneo Internashonal di Futbòl di Dama 2007 .
-
-res:match/Antille thuộc Hà Lan vs Aruba 2007 a kg:Match ;
-kg:homeTeam res:team/Antille thuộc Hà Lan ;
-kg:awayTeam res:team/Aruba ;
-kg:kickoffTime "2007-07-01"^^xsd:date ;
-kg:venue res:place/Oranjestad, Aruba ;
-kg:inCompetition res:competition/Torneo Internashonal di Futbòl di Dama 2007 .
-
-res:team/Antille thuộc Hà Lan U-17 a kg:Team ;
-kg:teamName "Antille thuộc Hà Lan U-17" ;
-kg:locatedIn res:country/Antille thuộc Hà Lan ;
-kg:participatesIn res:competition/CONCACAF Women's U-17 Championship Qualifiers 2010 .
-
-res:team/Antille thuộc Hà Lan U-19 a kg:Team ;
-kg:teamName "Antille thuộc Hà Lan U-19" ;
-kg:locatedIn res:country/Antille thuộc Hà Lan ;
-kg:participatesIn res:competition/CONCACAF Women's U-19 Championship Qualifiers 2006 .
-
-res:competition/CONCACAF Women's U-17 Championship Qualifiers 2010 a kg:Competition ;
-kg:competitionName "CONCACAF Women's U-17 Championship Qualifiers 2010" ;
-kg:heldIn res:country/Antille thuộc Hà Lan .
-
-res:competition/CONCACAF Women's U-19 Championship Qualifiers 2006 a kg:Competition ;
-kg:competitionName "CONCACAF Women's U-19 Championship Qualifiers 2006" ;
-kg:heldIn res:country/Antille thuộc Hà Lan .
+res:match/Antille thuộc Hà Lan vs Aruba 2006 a kg:Match
+; kg:homeTeam res:team/Antille thuộc Hà Lan
+; kg:awayTeam res:team/Aruba
+; kg:kickoffTime "2006-05-05"^^xsd:date
+; kg:venue res:place/Oranjestad , Aruba
+; kg:inCompetition res:competition/CARIFORUM Women's Football Championship 2006 .
+res:match/Antille thuộc Hà Lan vs Suriname 2007 a kg:Match
+; kg:homeTeam res:team/Antille thuộc Hà Lan
+; kg:awayTeam res:team/Suriname
+; kg:kickoffTime "2007-06-30"^^xsd:date
+; kg:venue res:place/Oranjestad , Aruba
+; kg:inCompetition res:competition/Torneo Internashonal di Futbòl di Dama 2007 .
+res:match/Antille thuộc Hà Lan vs Aruba 2007 a kg:Match
+; kg:homeTeam res:team/Antille thuộc Hà Lan
+; kg:awayTeam res:team/Aruba
+; kg:kickoffTime "2007-07-01"^^xsd:date
+; kg:venue res:place/Oranjestad , Aruba
+; kg:inCompetition res:competition/Torneo Internashonal di Futbòl di Dama 2007 .
+res:team/Antille thuộc Hà Lan U-17 a kg:Team
+; kg:teamName "Antille thuộc Hà Lan U-17"
+; kg:locatedIn res:country/Antille thuộc Hà Lan
+; kg:participatesIn res:competition/CONCACAF Women's U-17 Championship Qualifiers 2010 .
+res:team/Antille thuộc Hà Lan U-19 a kg:Team
+; kg:teamName "Antille thuộc Hà Lan U-19"
+; kg:locatedIn res:country/Antille thuộc Hà Lan
+; kg:participatesIn res:competition/CONCACAF Women's U-19 Championship Qualifiers 2006 .
+res:competition/CONCACAF Women's U-17 Championship Qualifiers 2010 a kg:Competition
+; kg:competitionName "CONCACAF Women's U-17 Championship Qualifiers 2010"
+; kg:heldIn res:country/Antille thuộc Hà Lan .
+res:competition/CONCACAF Women's U-19 Championship Qualifiers 2006 a kg:Competition
+; kg:competitionName "CONCACAF Women's U-19 Championship Qualifiers 2006"
+; kg:heldIn res:country/Antille thuộc Hà Lan .

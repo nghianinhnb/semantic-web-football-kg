@@ -1,125 +1,70 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Ai Cập" ;
-kg:hasCoach res:coach/Badr_El_Din_Mahmoud ;
-kg:locatedIn res:country/Ai_Cap ;
-kg:organizedBy res:organization/Hiep_Hoan_Bong_Da_Ai_Cap .
-
-res:organization/Hiep_Hoan_Bong_Da_Ai_Cap
-a kg:Organization ;
-rdfs:label "Hiệp hội bóng đá Ai Cập" .
-
-res:country/Ai_Cap
-a kg:Country ;
-rdfs:label "Ai Cập" .
-
-res:coach/Badr_El_Din_Mahmoud
-a kg:Coach ;
-kg:manages res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia .
-
-res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_Ai
-a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Phi" .
-
-res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
-kg:participatesIn res:season/2006 ;
-kg:participatesIn res:season/2011 .
-
-res:season/2006
-a kg:Season ;
-kg:seasonOf res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_Ai .
-
-res:season/2011
-a kg:Season ;
-kg:seasonOf res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_Ai .
-
-res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
-kg:participantCount 7 .
-
-res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
-kg:bestResult "Hạng ba" .
-
-res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
-kg:participatesIn res:season/2006 ;
-kg:participatesIn res:season/2011 .
-
-res:player/Mohamed_Fawzy
-a kg:Player ;
-kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1 .
-
-res:player/Mohamed_Zeinhom
-a kg:Player ;
-kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 2 .
-
-res:player/Mohamed_Rashid_Do_Rom
-a kg:Player ;
-kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 4 .
-
-res:player/Moustafa_Abdelrahman
-a kg:Player ;
-kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 5 .
-
-res:player/Mido
-a kg:Player ;
-kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 6 .
-
-res:player/Ahmed_Abou_Serie
-a kg:Player ;
-kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 7 .
-
-res:player/Mizo
-a kg:Player ;
-kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 8 .
-
-res:player/Hany_Ahmed
-a kg:Player ;
-kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 9 .
-
-res:player/Ali_Elbarbary
-a kg:Player ;
-kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 10 .
-
-res:player/Mahmoud
-a kg:Player ;
-kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 22 .
-
-res:position/Goalkeeper
-a kg:Position ;
-rdfs:subClassOf kg:Goalkeeper .
-
-res:position/Defender
-a kg:Position ;
-rdfs:subClassOf kg:Defender .
-
-res:position/Midfielder
-a kg:Position ;
-rdfs:subClassOf kg:Midfielder .
-
-res:position/Forward
-a kg:Position ;
-rdfs:subClassOf kg:Forward .
+res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Ai Cập"
+; kg:hasCoach res:coach/Badr_El_Din_Mahmoud
+; kg:locatedIn res:country/Ai_Cap
+; kg:organizedBy res:organization/Hiep_Hoan_Bong_Da_Ai_Cap .
+res:organization/Hiep_Hoan_Bong_Da_Ai_Cap a kg:Organization
+; rdfs:label "Hiệp hội bóng đá Ai Cập" .
+res:country/Ai_Cap a kg:Country
+; rdfs:label "Ai Cập" .
+res:coach/Badr_El_Din_Mahmoud a kg:Coach
+; kg:manages res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia .
+res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_Ai a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Phi" .
+res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia kg:participatesIn res:season/2006
+; kg:participatesIn res:season/2011 .
+res:season/2006 a kg:Season
+; kg:seasonOf res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_Ai .
+res:season/2011 a kg:Season
+; kg:seasonOf res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_Ai .
+res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia kg:participantCount 7 .
+res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia kg:participatesIn res:season/2006
+; kg:participatesIn res:season/2011 .
+res:player/Mohamed_Fawzy a kg:Player
+; kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1 .
+res:player/Mohamed_Zeinhom a kg:Player
+; kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 2 .
+res:player/Mohamed_Rashid_Do_Rom a kg:Player
+; kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 4 .
+res:player/Moustafa_Abdelrahman a kg:Player
+; kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 5 .
+res:player/Mido a kg:Player
+; kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 6 .
+res:player/Ahmed_Abou_Serie a kg:Player
+; kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 7 .
+res:player/Mizo a kg:Player
+; kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 8 .
+res:player/Hany_Ahmed a kg:Player
+; kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 9 .
+res:player/Ali_Elbarbary a kg:Player
+; kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 10 .
+res:player/Mahmoud a kg:Player
+; kg:playsFor res:team/Ai_Cap_Bong_Da_Bai_Bien_Quoc_Gia
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 22 .
+res:position/Goalkeeper a kg:Position
+; rdfs:subClassOf kg:Goalkeeper .
+res:position/Defender a kg:Position
+; rdfs:subClassOf kg:Defender .
+res:position/Midfielder a kg:Position
+; rdfs:subClassOf kg:Midfielder .
+res:position/Forward a kg:Position
+; rdfs:subClassOf kg:Forward .

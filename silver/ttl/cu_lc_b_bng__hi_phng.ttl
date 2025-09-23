@@ -1,271 +1,139 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:club/Hải_Phòng a kg:Club ;
-kg:teamName "Câu lạc bộ bóng đá Hải Phòng" ;
-kg:teamAbbreviation "HPFC" ;
-kg:foundedDate "1952-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Lạch_Tray ;
-kg:hasOwner res:person/Văn_Trần_Hoàn ;
-kg:hasCoach res:coach/Chu_Đình_Nghiêm .
-
-res:stadium/Lạch_Tray a kg:Stadium ;
-kg:capacity 30000 ;
-kg:isHomeOf res:club/Hải_Phòng .
-
-res:person/Văn_Trần_Hoàn a kg:Owner ;
-kg:owns res:club/Hải_Phòng .
-
-res:coach/Chu_Đình_Nghiêm a kg:Coach ;
-kg:manages res:club/Hải_Phòng .
-
-res:club/Hải_Phòng kg:participatesIn res:season/2024–25 ;
-kg:inCompetition res:competition/V.League_1 .
-
-res:competition/V.League_1 a kg:Competition ;
-kg:competitionName "V.League 1" .
-
-res:season/2024–25 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:participatesIn res:season/2024–25 ;
-kg:position "Thứ 6" .
-
+res:club/Hải_Phòng a kg:Club
+; kg:teamName "Câu lạc bộ bóng đá Hải Phòng"
+; kg:teamAbbreviation "HPFC"
+; kg:foundedDate "1952-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Lạch_Tray
+; kg:hasOwner res:person/Văn_Trần_Hoàn
+; kg:hasCoach res:coach/Chu_Đình_Nghiêm .
+res:stadium/Lạch_Tray a kg:Stadium
+; kg:capacity 30000
+; kg:isHomeOf res:club/Hải_Phòng .
+res:person/Văn_Trần_Hoàn a kg:Owner
+; kg:owns res:club/Hải_Phòng .
+res:coach/Chu_Đình_Nghiêm a kg:Coach
+; kg:manages res:club/Hải_Phòng .
+res:club/Hải_Phòng kg:participatesIn res:season/2024–25
+; kg:inCompetition res:competition/V.League_1 .
+res:competition/V.League_1 a kg:Competition
+; kg:competitionName "V.League 1" .
+res:season/2024–25 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:participatesIn res:season/2024–25 .
 res:club/Hải_Phòng kg:hasSeason res:season/2024–25 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2023–24 ;
-kg:position "Thứ 7" .
-
-res:season/2023–24 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2022 ;
-kg:position "Thứ 2" .
-
-res:season/2022 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2021 ;
-kg:position "Thứ 6" .
-
-res:season/2021 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2020 ;
-kg:position "Thứ 12" .
-
-res:season/2020 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2019 ;
-kg:position "Thứ 12" .
-
-res:season/2019 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2018 ;
-kg:position "Thứ 6" .
-
-res:season/2018 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2017 ;
-kg:position "Thứ 7" .
-
-res:season/2017 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2016 ;
-kg:position "Thứ 2" .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2015 ;
-kg:position "Thứ 6" .
-
-res:season/2015 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2014 ;
-kg:position "Thứ 10" .
-
-res:season/2014 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2013 ;
-kg:position "Thứ 6" .
-
-res:season/2013 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2012 ;
-kg:position "Thứ 14" .
-
-res:season/2012 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2011 ;
-kg:position "Thứ 12" .
-
-res:season/2011 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2010 ;
-kg:position "Thứ 2" .
-
-res:season/2010 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2009 ;
-kg:position "Thứ 7" .
-
-res:season/2009 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2008 ;
-kg:position "Thứ 3" .
-
-res:season/2008 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2007 ;
-kg:position "Thứ 2" .
-
-res:season/2007 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2006 ;
-kg:position "Thứ 12" .
-
-res:season/2006 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2005 ;
-kg:position "Thứ 7" .
-
-res:season/2005 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2004 ;
-kg:position "Thứ 10" .
-
-res:season/2004 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2003 ;
-kg:position "Vô địch" .
-
-res:season/2003 a kg:Season ;
-kg:seasonOf res:competition/Giải_hạng_nhất_quốc_gia_Việt_Nam .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2002 ;
-kg:position "Thứ 10" .
-
-res:season/2002 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2001 ;
-kg:position "Thứ 6" .
-
-res:season/2001 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2000 ;
-kg:position "Thứ 6" .
-
-res:season/2000 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/1995 ;
-kg:position "Vô địch" .
-
-res:season/1995 a kg:Season ;
-kg:seasonOf res:competition/Giải_hạng_nhất_quốc_gia_Việt_Nam .
-
-res:club/Hải_Phòng kg:hasSeason res:season/1998 ;
-kg:position "Á quân" .
-
-res:season/1998 a kg:Season ;
-kg:seasonOf res:competition/Giải_bóng_đá_Cúp_quốc_gia_Việt_Nam .
-
-res:club/Hải_Phòng kg:hasSeason res:season/1995 ;
-kg:position "Vô địch" .
-
-res:season/1995 a kg:Season ;
-kg:seasonOf res:competition/Cúp_quốc_gia .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2014 ;
-kg:position "Thứ 10" .
-
-res:season/2014 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2015 ;
-kg:position "Thứ 6" .
-
-res:season/2015 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2016 ;
-kg:position "Thứ 2" .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2017 ;
-kg:position "Thứ 7" .
-
-res:season/2017 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2018 ;
-kg:position "Thứ 6" .
-
-res:season/2018 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2019 ;
-kg:position "Thứ 12" .
-
-res:season/2019 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2020 ;
-kg:position "Thứ 12" .
-
-res:season/2020 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2021 ;
-kg:position "Thứ 6" .
-
-res:season/2021 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2022 ;
-kg:position "Thứ 2" .
-
-res:season/2022 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2023 ;
-kg:position "Thứ 6" .
-
-res:season/2023 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2023–24 ;
-kg:position "Thứ 7" .
-
-res:season/2023–24 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
-
-res:club/Hải_Phòng kg:hasSeason res:season/2024–25 ;
-kg:position "Thứ 6" .
-
-res:season/2024–25 a kg:Season ;
-kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2023–24 .
+res:season/2023–24 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2022 .
+res:season/2022 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2021 .
+res:season/2021 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2020 .
+res:season/2020 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2019 .
+res:season/2019 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2018 .
+res:season/2018 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2017 .
+res:season/2017 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2016 .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2015 .
+res:season/2015 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2014 .
+res:season/2014 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2013 .
+res:season/2013 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2012 .
+res:season/2012 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2011 .
+res:season/2011 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2010 .
+res:season/2010 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2009 .
+res:season/2009 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2008 .
+res:season/2008 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2007 .
+res:season/2007 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2006 .
+res:season/2006 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2005 .
+res:season/2005 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2004 .
+res:season/2004 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2003 .
+res:season/2003 a kg:Season
+; kg:seasonOf res:competition/Giải_hạng_nhất_quốc_gia_Việt_Nam .
+res:club/Hải_Phòng kg:hasSeason res:season/2002 .
+res:season/2002 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2001 .
+res:season/2001 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2000 .
+res:season/2000 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/1995 .
+res:season/1995 a kg:Season
+; kg:seasonOf res:competition/Giải_hạng_nhất_quốc_gia_Việt_Nam .
+res:club/Hải_Phòng kg:hasSeason res:season/1998 .
+res:season/1998 a kg:Season
+; kg:seasonOf res:competition/Giải_bóng_đá_Cúp_quốc_gia_Việt_Nam .
+res:club/Hải_Phòng kg:hasSeason res:season/1995 .
+res:season/1995 a kg:Season
+; kg:seasonOf res:competition/Cúp_quốc_gia .
+res:club/Hải_Phòng kg:hasSeason res:season/2014 .
+res:season/2014 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2015 .
+res:season/2015 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2016 .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2017 .
+res:season/2017 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2018 .
+res:season/2018 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2019 .
+res:season/2019 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2020 .
+res:season/2020 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2021 .
+res:season/2021 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2022 .
+res:season/2022 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2023 .
+res:season/2023 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2023–24 .
+res:season/2023–24 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .
+res:club/Hải_Phòng kg:hasSeason res:season/2024–25 .
+res:season/2024–25 a kg:Season
+; kg:seasonOf res:competition/V.League_1 .

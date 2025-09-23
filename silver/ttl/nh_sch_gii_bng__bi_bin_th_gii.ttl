@@ -1,14 +1,8 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-[] a kg:Match ;
-kg:homeTeam res:team/Đội_Bóng_Hoàng_Thái_Nam ;
-kg:awayTeam res:team/Đội_Bóng_Hoàng_Thái_Nam ;
-kg:venue res:stadium/Sân_Vân_Phong ;
-kg:kickoffTime "2024-05-18T10:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Bãi_Biển_Mondial ;
-kg:inSeason res:season/Mùa_2024 ;
-kg:referee res:person/Phạm_Thị_Xuân_Hoa .
+[] a kg:Match
+; kg:homeTeam res:team/Đội_Bóng_Hoàng_Thái_Nam
+; kg:awayTeam res:team/Đội_Bóng_Hoàng_Thái_Nam
+; kg:venue res:stadium/Sân_Vân_Phong
+; kg:kickoffTime "2024-05-18T10:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Bãi_Biển_Mondial
+; kg:inSeason res:season/Mùa_2024
+; kg:referee res:person/Phạm_Thị_Xuân_Hoa .

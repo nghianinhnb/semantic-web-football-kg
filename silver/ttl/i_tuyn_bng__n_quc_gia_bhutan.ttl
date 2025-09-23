@@ -1,48 +1,32 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Bhutan_Female_National_Football_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá nữ quốc gia Bhutan" ;
-kg:hasCoach res:coach/Namgay ;
-kg:locatedIn res:country/Bhutan ;
-kg:homeStadium res:stadium/Changlimithang_Stadium ;
-kg:organizes res:competition/AFC_Women_s_Championship ;
-kg:organizes res:competition/South_Asian_Women_s_Championship .
-
+res:team/Bhutan_Female_National_Football_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá nữ quốc gia Bhutan"
+; kg:hasCoach res:coach/Namgay
+; kg:locatedIn res:country/Bhutan
+; kg:homeStadium res:stadium/Changlimithang_Stadium
+; kg:organizes res:competition/AFC_Women_s_Championship
+; kg:organizes res:competition/South_Asian_Women_s_Championship .
 res:country/Bhutan a kg:Country .
-
-res:stadium/Changlimithang_Stadium a kg:Stadium ;
-kg:locatedIn res:country/Bhutan .
-
-res:coach/Namgay a kg:Coach ;
-kg:manages res:team/Bhutan_Female_National_Football_Team .
-
-res:competition/AFC_Women_s_Championship a kg:Competition ;
-kg:competitionName "Cúp bóng đá nữ châu Á" .
-
-res:competition/South_Asian_Women_s_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ Nam Á" .
-
-res:match/Bhutan_vs_Bangladesh_2010 a kg:Match ;
-kg:homeTeam res:team/Bhutan_Female_National_Football_Team ;
-kg:awayTeam res:team/Bangladesh_Female_National_Football_Team ;
-kg:kickoffTime "2010-12-06"^^xsd:date ;
-kg:venue res:stadium/Dhaka_Stadium .
-
-res:match/Bhutan_vs_India_2010 a kg:Match ;
-kg:homeTeam res:team/Bangladesh_Female_National_Football_Team ;
-kg:awayTeam res:team/Bhutan_Female_National_Football_Team ;
-kg:kickoffTime "2010-12-13"^^xsd:date ;
-kg:venue res:stadium/Coxs_Bazar_Stadium .
-
+res:stadium/Changlimithang_Stadium a kg:Stadium
+; kg:locatedIn res:country/Bhutan .
+res:coach/Namgay a kg:Coach
+; kg:manages res:team/Bhutan_Female_National_Football_Team .
+res:competition/AFC_Women_s_Championship a kg:Competition
+; kg:competitionName "Cúp bóng đá nữ châu Á" .
+res:competition/South_Asian_Women_s_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ Nam Á" .
+res:match/Bhutan_vs_Bangladesh_2010 a kg:Match
+; kg:homeTeam res:team/Bhutan_Female_National_Football_Team
+; kg:awayTeam res:team/Bangladesh_Female_National_Football_Team
+; kg:kickoffTime "2010-12-06"^^xsd:date
+; kg:venue res:stadium/Dhaka_Stadium .
+res:match/Bhutan_vs_India_2010 a kg:Match
+; kg:homeTeam res:team/Bangladesh_Female_National_Football_Team
+; kg:awayTeam res:team/Bhutan_Female_National_Football_Team
+; kg:kickoffTime "2010-12-13"^^xsd:date
+; kg:venue res:stadium/Coxs_Bazar_Stadium .
 res:team/Bangladesh_Female_National_Football_Team a kg:Team .
-
-res:stadium/Dhaka_Stadium a kg:Stadium ;
-kg:locatedIn res:country/Bangladesh .
-
-res:stadium/Coxs_Bazar_Stadium a kg:Stadium ;
-kg:locatedIn res:country/Bangladesh .
-
+res:stadium/Dhaka_Stadium a kg:Stadium
+; kg:locatedIn res:country/Bangladesh .
+res:stadium/Coxs_Bazar_Stadium a kg:Stadium
+; kg:locatedIn res:country/Bangladesh .
 res:country/Bangladesh a kg:Country .

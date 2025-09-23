@@ -1,110 +1,58 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/VanuatuNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Vanuatu" ;
-kg:teamAbbreviation "VAN" ;
-kg:hasCoach res:coach/RichardIwai ;
-kg:locatedIn res:country/Vanuatu .
-
-res:country/Vanuatu a kg:Country ;
-rdfs:label "Vanuatu" .
-
-res:coach/RichardIwai a kg:Coach ;
-kg:manages res:team/VanuatuNationalBeachSoccerTeam ;
-rdfs:label "Richard Iwai" .
-
-res:player/ChikauMansale a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 1 ;
-rdfs:label "Chikau Mansale" .
-
-res:player/AndrewChichirua a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 ;
-rdfs:label "Andrew Chichirua" .
-
-res:player/BrianKaltack a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 3 ;
-rdfs:label "Brian Kaltack" .
-
-res:player/FiliamyNikiau a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 4 ;
-rdfs:label "Filiamy Nikiau" .
-
-res:player/SeimataChilia a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 7 ;
-rdfs:label "Seimata Chilia" .
-
-res:player/DonMansale a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 8 ;
-rdfs:label "Don Mansale" .
-
-res:player/IvongWilson a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 9 ;
-rdfs:label "Ivong Wilson" .
-
-res:player/RichardIwai a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 10 ;
-rdfs:label "Richard Iwai" .
-
-res:player/EtienneMermer a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 11 ;
-rdfs:label "Etienne Mermer" .
-
-res:player/FrançoisSakama a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 13 ;
-rdfs:label "François Sakama" .
-
-res:player/LucienHinge a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 16 ;
-rdfs:label "Lucien Hinge" .
-
-res:player/AltredMansale a kg:Player ;
-kg:playsFor res:team/VanuatuNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 20 ;
-rdfs:label "Altred Mansale" .
-
-res:competition/OceaniaBeachSoccerChampionship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Đại Dương" ;
-kg:heldIn res:country/Vanuatu .
-
-res:team/VanuatuNationalBeachSoccerTeam kg:participatesIn res:season/2006 ;
-kg:participatesIn res:season/2007 ;
-kg:participatesIn res:season/2009 .
-
-res:season/2006 a kg:Season ;
-kg:seasonOf res:competition/OceaniaBeachSoccerChampionship .
-
-res:season/2007 a kg:Season ;
-kg:seasonOf res:competition/OceaniaBeachSoccerChampionship .
-
-res:season/2009 a kg:Season ;
-kg:seasonOf res:competition/OceaniaBeachSoccerChampionship .
-
-res:team/VanuatuNationalBeachSoccerTeam kg:bestResultInCompetition res:competition/OceaniaBeachSoccerChampionship ;
-kg:bestResult "Á quân" ;
-kg:bestResultYears ("2006", "2007", "2009") .
+res:team/VanuatuNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Vanuatu"
+; kg:teamAbbreviation "VAN"
+; kg:hasCoach res:coach/RichardIwai
+; kg:locatedIn res:country/Vanuatu .
+res:country/Vanuatu a kg:Country
+; rdfs:label "Vanuatu" .
+res:coach/RichardIwai a kg:Coach
+; kg:manages res:team/VanuatuNationalBeachSoccerTeam
+; rdfs:label "Richard Iwai" .
+res:player/ChikauMansale a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/AndrewChichirua a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/BrianKaltack a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/FiliamyNikiau a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/SeimataChilia a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/DonMansale a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/IvongWilson a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/RichardIwai a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/EtienneMermer a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/FrançoisSakama a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/LucienHinge a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/AltredMansale a kg:Player
+; kg:playsFor res:team/VanuatuNationalBeachSoccerTeam
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:competition/OceaniaBeachSoccerChampionship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Đại Dương"
+; kg:heldIn res:country/Vanuatu .
+res:team/VanuatuNationalBeachSoccerTeam kg:participatesIn res:season/2006
+; kg:participatesIn res:season/2007
+; kg:participatesIn res:season/2009 .
+res:season/2006 a kg:Season
+; kg:seasonOf res:competition/OceaniaBeachSoccerChampionship .
+res:season/2007 a kg:Season
+; kg:seasonOf res:competition/OceaniaBeachSoccerChampionship .
+res:season/2009 a kg:Season
+; kg:seasonOf res:competition/OceaniaBeachSoccerChampionship .

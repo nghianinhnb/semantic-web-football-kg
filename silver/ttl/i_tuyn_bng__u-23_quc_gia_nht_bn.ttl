@@ -1,171 +1,116 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/U23 Nhật Bản a kg:Team ;
-kg:teamName "U23 Nhật Bản" ;
-kg:hasCoach res:coach/Oiwa Go ;
-kg:manages res:coach/Oiwa Go ;
-kg:teamAbbreviation "U23 Nhật Bản" ;
-kg:participatesIn res:season/Thế vận hội Mùa hè 2012 ;
-kg:participatesIn res:season/Thế vận hội Mùa hè 2020 .
-
-res:coach/Oiwa Go a kg:Coach ;
-kg:manages res:team/U23 Nhật Bản .
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/Cúp bóng đá U-23 châu Á 2016 ;
-kg:participatesIn res:season/Cúp bóng đá U-23 châu Á 2024 ;
-kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2010 .
-
-res:season/Thế vận hội Mùa hè 2012 a kg:Season ;
-kg:seasonOf res:competition/Thế vận hội Mùa hè .
-
-res:season/Thế vận hội Mùa hè 2020 a kg:Season ;
-kg:seasonOf res:competition/Thế vận hội Mùa hè .
-
-res:season/Cúp bóng đá U-23 châu Á 2016 a kg:Season ;
-kg:seasonOf res:competition/Cúp bóng đá U-23 châu Á .
-
-res:season/Cúp bóng đá U-23 châu Á 2024 a kg:Season ;
-kg:seasonOf res:competition/Cúp bóng đá U-23 châu Á .
-
-res:season/Bóng đá tại Đại hội Thể thao châu Á 2010 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:competition/Thế vận hội Mùa hè a kg:Competition ;
-kg:competitionName "Thế vận hội Mùa hè" ;
-kg:heldIn res:country/Japan .
-
-res:competition/Cúp bóng đá U-23 châu Á a kg:Competition ;
-kg:competitionName "Cúp bóng đá U-23 châu Á" ;
-kg:heldIn res:country/Japan .
-
-res:competition/Đại hội Thể thao châu Á a kg:Competition ;
-kg:competitionName "Đại hội Thể thao châu Á" ;
-kg:heldIn res:country/Japan .
-
-res:country/Japan a kg:Country ;
-rdfs:label "Nhật Bản" .
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/Thế vận hội Mùa hè 1996 ;
-kg:participatesIn res:season/Thế vận hội Mùa hè 2000 ;
-kg:participatesIn res:season/Thế vận hội Mùa hè 2004 ;
-kg:participatesIn res:season/Thế vận hội Mùa hè 2008 .
-
-res:season/Thế vận hội Mùa hè 1996 a kg:Season ;
-kg:seasonOf res:competition/Thế vận hội Mùa hè .
-
-res:season/Thế vận hội Mùa hè 2000 a kg:Season ;
-kg:seasonOf res:competition/Thế vận hội Mùa hè .
-
-res:season/Thế vận hội Mùa hè 2004 a kg:Season ;
-kg:seasonOf res:competition/Thế vận hội Mùa hè .
-
-res:season/Thế vận hội Mùa hè 2008 a kg:Season ;
-kg:seasonOf res:competition/Thế vận hội Mùa hè .
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/Đại hội Thể thao châu Á 2002 ;
-kg:participatesIn res:season/Đại hội Thể thao châu Á 2006 ;
-kg:participatesIn res:season/Đại hội Thể thao châu Á 2014 ;
-kg:participatesIn res:season/Đại hội Thể thao châu Á 2018 ;
-kg:participatesIn res:season/Đại hội Thể thao châu Á 2022 .
-
-res:season/Đại hội Thể thao châu Á 2002 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:season/Đại hội Thể thao châu Á 2006 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:season/Đại hội Thể thao châu Á 2014 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:season/Đại hội Thể thao châu Á 2018 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:season/Đại hội Thể thao châu Á 2022 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/Giải vô địch bóng đá U-23 châu Á 2013 ;
-kg:participatesIn res:season/Giải vô địch bóng đá U-23 châu Á 2018 ;
-kg:participatesIn res:season/Giải vô địch bóng đá U-23 châu Á 2020 ;
-kg:participatesIn res:season/Giải vô địch bóng đá U-23 châu Á 2022 .
-
-res:season/Giải vô địch bóng đá U-23 châu Á 2013 a kg:Season ;
-kg:seasonOf res:competition/Giải vô địch bóng đá U-23 châu Á .
-
-res:season/Giải vô địch bóng đá U-23 châu Á 2018 a kg:Season ;
-kg:seasonOf res:competition/Giải vô địch bóng đá U-23 châu Á .
-
-res:season/Giải vô địch bóng đá U-23 châu Á 2020 a kg:Season ;
-kg:seasonOf res:competition/Giải vô địch bóng đá U-23 châu Á .
-
-res:season/Giải vô địch bóng đá U-23 châu Á 2022 a kg:Season ;
-kg:seasonOf res:competition/Giải vô địch bóng đá U-23 châu Á .
-
-res:competition/Giải vô địch bóng đá U-23 châu Á a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá U-23 châu Á" ;
-kg:heldIn res:country/Japan .
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/Asiad 2002 ;
-kg:participatesIn res:season/Asiad 2006 ;
-kg:participatesIn res:season/Asiad 2010 ;
-kg:participatesIn res:season/Asiad 2014 ;
-kg:participatesIn res:season/Asiad 2018 ;
-kg:participatesIn res:season/Asiad 2022 .
-
-res:season/Asiad 2002 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:season/Asiad 2006 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:season/Asiad 2010 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:season/Asiad 2014 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:season/Asiad 2018 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:season/Asiad 2022 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
+res:team/U23 Nhật Bản a kg:Team
+; kg:teamName "U23 Nhật Bản"
+; kg:hasCoach res:coach/Oiwa Go
+; kg:manages res:coach/Oiwa Go
+; kg:teamAbbreviation "U23 Nhật Bản"
+; kg:participatesIn res:season/Thế vận hội Mùa hè 2012
+; kg:participatesIn res:season/Thế vận hội Mùa hè 2020 .
+res:coach/Oiwa Go a kg:Coach
+; kg:manages res:team/U23 Nhật Bản .
+res:team/U23 Nhật Bản kg:participatesIn res:season/Cúp bóng đá U-23 châu Á 2016
+; kg:participatesIn res:season/Cúp bóng đá U-23 châu Á 2024
+; kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2010 .
+res:season/Thế vận hội Mùa hè 2012 a kg:Season
+; kg:seasonOf res:competition/Thế vận hội Mùa hè .
+res:season/Thế vận hội Mùa hè 2020 a kg:Season
+; kg:seasonOf res:competition/Thế vận hội Mùa hè .
+res:season/Cúp bóng đá U-23 châu Á 2016 a kg:Season
+; kg:seasonOf res:competition/Cúp bóng đá U-23 châu Á .
+res:season/Cúp bóng đá U-23 châu Á 2024 a kg:Season
+; kg:seasonOf res:competition/Cúp bóng đá U-23 châu Á .
+res:season/Bóng đá tại Đại hội Thể thao châu Á 2010 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:competition/Thế vận hội Mùa hè a kg:Competition
+; kg:competitionName "Thế vận hội Mùa hè"
+; kg:heldIn res:country/Japan .
+res:competition/Cúp bóng đá U-23 châu Á a kg:Competition
+; kg:competitionName "Cúp bóng đá U-23 châu Á"
+; kg:heldIn res:country/Japan .
+res:competition/Đại hội Thể thao châu Á a kg:Competition
+; kg:competitionName "Đại hội Thể thao châu Á"
+; kg:heldIn res:country/Japan .
+res:country/Japan a kg:Country
+; rdfs:label "Nhật Bản" .
+res:team/U23 Nhật Bản kg:participatesIn res:season/Thế vận hội Mùa hè 1996
+; kg:participatesIn res:season/Thế vận hội Mùa hè 2000
+; kg:participatesIn res:season/Thế vận hội Mùa hè 2004
+; kg:participatesIn res:season/Thế vận hội Mùa hè 2008 .
+res:season/Thế vận hội Mùa hè 1996 a kg:Season
+; kg:seasonOf res:competition/Thế vận hội Mùa hè .
+res:season/Thế vận hội Mùa hè 2000 a kg:Season
+; kg:seasonOf res:competition/Thế vận hội Mùa hè .
+res:season/Thế vận hội Mùa hè 2004 a kg:Season
+; kg:seasonOf res:competition/Thế vận hội Mùa hè .
+res:season/Thế vận hội Mùa hè 2008 a kg:Season
+; kg:seasonOf res:competition/Thế vận hội Mùa hè .
+res:team/U23 Nhật Bản kg:participatesIn res:season/Đại hội Thể thao châu Á 2002
+; kg:participatesIn res:season/Đại hội Thể thao châu Á 2006
+; kg:participatesIn res:season/Đại hội Thể thao châu Á 2014
+; kg:participatesIn res:season/Đại hội Thể thao châu Á 2018
+; kg:participatesIn res:season/Đại hội Thể thao châu Á 2022 .
+res:season/Đại hội Thể thao châu Á 2002 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:season/Đại hội Thể thao châu Á 2006 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:season/Đại hội Thể thao châu Á 2014 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:season/Đại hội Thể thao châu Á 2018 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:season/Đại hội Thể thao châu Á 2022 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:team/U23 Nhật Bản kg:participatesIn res:season/Giải vô địch bóng đá U-23 châu Á 2013
+; kg:participatesIn res:season/Giải vô địch bóng đá U-23 châu Á 2018
+; kg:participatesIn res:season/Giải vô địch bóng đá U-23 châu Á 2020
+; kg:participatesIn res:season/Giải vô địch bóng đá U-23 châu Á 2022 .
+res:season/Giải vô địch bóng đá U-23 châu Á 2013 a kg:Season
+; kg:seasonOf res:competition/Giải vô địch bóng đá U-23 châu Á .
+res:season/Giải vô địch bóng đá U-23 châu Á 2018 a kg:Season
+; kg:seasonOf res:competition/Giải vô địch bóng đá U-23 châu Á .
+res:season/Giải vô địch bóng đá U-23 châu Á 2020 a kg:Season
+; kg:seasonOf res:competition/Giải vô địch bóng đá U-23 châu Á .
+res:season/Giải vô địch bóng đá U-23 châu Á 2022 a kg:Season
+; kg:seasonOf res:competition/Giải vô địch bóng đá U-23 châu Á .
+res:competition/Giải vô địch bóng đá U-23 châu Á a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá U-23 châu Á"
+; kg:heldIn res:country/Japan .
+res:team/U23 Nhật Bản kg:participatesIn res:season/Asiad 2002
+; kg:participatesIn res:season/Asiad 2006
+; kg:participatesIn res:season/Asiad 2010
+; kg:participatesIn res:season/Asiad 2014
+; kg:participatesIn res:season/Asiad 2018
+; kg:participatesIn res:season/Asiad 2022 .
+res:season/Asiad 2002 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:season/Asiad 2006 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:season/Asiad 2010 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:season/Asiad 2014 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:season/Asiad 2018 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:season/Asiad 2022 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
 res:team/U23 Nhật Bản kg:participatesIn res:season/2018 Toulon Tournament .
-
-res:season/2018 Toulon Tournament a kg:Season ;
-kg:seasonOf res:competition/Toulon Tournament .
-
-res:competition/Toulon Tournament a kg:Competition ;
-kg:competitionName "Toulon Tournament" ;
-kg:heldIn res:country/France .
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2018 ;
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2022 ;
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2026 ;
-
-res:season/Bóng đá tại Đại hội Thể thao châu Á 2026 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2030 ;
-
-res:season/Bóng đá tại Đại hội Thể thao châu Á 2030 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2034 ;
-
-res:season/Bóng đá tại Đại hội Thể thao châu Á 2034 a kg:Season ;
-kg:seasonOf res:competition/Đại hội Thể thao châu Á .
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/2020 Toulon Tournament ;
-
-res:season/2020 Toulon Tournament a kg:Season ;
-kg:seasonOf res:competition/Toulon Tournament .
-
-res:team/U23 Nhật Bản kg:participatesIn res:season/2024 Toulon Tournament ;
-
-res:season/2024 Toulon Tournament a kg:Season ;
-kg:seasonOf res:competition/Toulon Tournament .
+res:season/2018 Toulon Tournament a kg:Season
+; kg:seasonOf res:competition/Toulon Tournament .
+res:competition/Toulon Tournament a kg:Competition
+; kg:competitionName "Toulon Tournament"
+; kg:heldIn res:country/France .
+res:team/U23 Nhật Bản kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2018
+; res:team/U23 Nhật Bản kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2022
+; res:team/U23 Nhật Bản kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2026
+; res:season/Bóng đá tại Đại hội Thể thao châu Á 2026 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:team/U23 Nhật Bản kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2030
+; res:season/Bóng đá tại Đại hội Thể thao châu Á 2030 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:team/U23 Nhật Bản kg:participatesIn res:season/Bóng đá tại Đại hội Thể thao châu Á 2034
+; res:season/Bóng đá tại Đại hội Thể thao châu Á 2034 a kg:Season
+; kg:seasonOf res:competition/Đại hội Thể thao châu Á .
+res:team/U23 Nhật Bản kg:participatesIn res:season/2020 Toulon Tournament
+; res:season/2020 Toulon Tournament a kg:Season
+; kg:seasonOf res:competition/Toulon Tournament .
+res:team/U23 Nhật Bản kg:participatesIn res:season/2024 Toulon Tournament
+; res:season/2024 Toulon Tournament a kg:Season
+; kg:seasonOf res:competition/Toulon Tournament .

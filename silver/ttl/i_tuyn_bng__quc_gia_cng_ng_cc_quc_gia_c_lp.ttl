@@ -1,273 +1,139 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Cộng_đồng_các_quốc_giả_độc_lập a kg:Team ;
-kg:teamName "Cộng đồng các quốc gia độc lập" ;
-kg:hasCoach res:coach/Anatoly_Byshovets ;
-kg:participatesIn res:season/Euro_1992 .
-
-res:coach/Anatoly_Byshovets a kg:Coach ;
-kg:manages res:team/Cộng_đồng_các_quốc_giả_độc_lập .
-
-res:player/Dmitri_Kharine a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1968-08-16"^^xsd:date ;
-kg:birthPlace res:city/Moscow ;
-kg:nationality res:country/Russia ;
-kg:shirtNumber 1 .
-
-res:player/Andrey_Chernyshov a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1968-01-07"^^xsd:date ;
-kg:birthPlace res:city/Moscow ;
-kg:nationality res:country/Russia ;
-kg:shirtNumber 2 .
-
-res:player/Kakhaber_Tskhadadze a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1968-09-07"^^xsd:date ;
-kg:birthPlace res:city/Kyiv ;
-kg:nationality res:country/Ukraine ;
-kg:shirtNumber 3 .
-
-res:player/Akhrik_Tsveiba a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1966-09-10"^^xsd:date ;
-kg:birthPlace res:city/Kyiv ;
-kg:nationality res:country/Ukraine ;
-kg:shirtNumber 4 .
-
-res:player/Oleh_Kuznetsov a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1963-03-22"^^xsd:date ;
-kg:birthPlace res:city/Glasgow ;
-kg:nationality res:country/Scotland ;
-kg:shirtNumber 5 .
-
-res:player/Igor_Shaliomov a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1969-02-02"^^xsd:date ;
-kg:birthPlace res:city/Foggia ;
-kg:nationality res:country/Italy ;
-kg:shirtNumber 6 .
-
-res:player/Oleksiy_Mykhaylychenko a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1963-03-30"^^xsd:date ;
-kg:birthPlace res:city/Glasgow ;
-kg:nationality res:country/Scotland ;
-kg:shirtNumber 7 .
-
-res:player/Andrei_Kanchelskis a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1969-01-23"^^xsd:date ;
-kg:birthPlace res:city/Manchester ;
-kg:nationality res:country/England ;
-kg:shirtNumber 8 .
-
-res:player/Sergei_Aleinikov a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1961-11-07"^^xsd:date ;
-kg:birthPlace res:city/Lecce ;
-kg:nationality res:country/Italy ;
-kg:shirtNumber 9 .
-
-res:player/Igor_Dobrovolski a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1967-08-27"^^xsd:date ;
-kg:birthPlace res:city/Servette ;
-kg:nationality res:country/Switzerland ;
-kg:shirtNumber 10 .
-
-res:player/Sergei_Yuran a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1969-06-11"^^xsd:date ;
-kg:birthPlace res:city/Lisbon ;
-kg:nationality res:country/Portugal ;
-kg:shirtNumber 11 .
-
-res:player/Stanislav_Cherchesov a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1963-09-02"^^xsd:date ;
-kg:birthPlace res:city/Moscow ;
-kg:nationality res:country/Russia ;
-kg:shirtNumber 12 .
-
-res:player/Sergei_Kiriakov a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1970-01-01"^^xsd:date ;
-kg:birthPlace res:city/Bangkok ;
-kg:nationality res:country/Thailand ;
-kg:shirtNumber 13 .
-
-res:player/Volodymyr_Lyutyi a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1962-04-20"^^xsd:date ;
-kg:birthPlace res:city/Duisburg ;
-kg:nationality res:country/Germany ;
-kg:shirtNumber 14 .
-
-res:player/Igor_Kolyvanov a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1968-03-06"^^xsd:date ;
-kg:birthPlace res:city/Foggia ;
-kg:nationality res:country/Italy ;
-kg:shirtNumber 15 .
-
-res:player/Dmitri_Kuznetsov a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1965-08-28"^^xsd:date ;
-kg:birthPlace res:city/Barcelona ;
-kg:nationality res:country/Spain ;
-kg:shirtNumber 16 .
-
-res:player/Igor_Korneev a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1967-09-04"^^xsd:date ;
-kg:birthPlace res:city/Barcelona ;
-kg:nationality res:country/Spain ;
-kg:shirtNumber 17 .
-
-res:player/Viktor_Onopko a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1969-10-14"^^xsd:date ;
-kg:birthPlace res:city/Moscow ;
-kg:nationality res:country/Russia ;
-kg:shirtNumber 18 .
-
-res:player/Igor_Lediakhov a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1968-05-22"^^xsd:date ;
-kg:birthPlace res:city/Moscow ;
-kg:nationality res:country/Russia ;
-kg:shirtNumber 19 .
-
-res:player/Andrei_Ivanov a kg:Player ;
-kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1967-04-06"^^xsd:date ;
-kg:birthPlace res:city/Moscow ;
-kg:nationality res:country/Russia ;
-kg:shirtNumber 20 .
-
-res:season/Euro_1992 a kg:Season ;
-kg:seasonOf res:competition/Euro ;
-kg:participatesIn res:team/Cộng_đồng_các_quốc_giả_độc_lập .
-
-res:competition/Euro a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá châu Âu" ;
-kg:organizes res:season/Euro_1992 .
-
-res:match/USA_vs_CIS a kg:Match ;
-kg:homeTeam res:team/USA ;
-kg:awayTeam res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:kickoffTime "1992-01-25T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro ;
-kg:inSeason res:season/Euro_1992 .
-
-res:match/CIS_vs_Scotland a kg:Match ;
-kg:homeTeam res:team/Scotland ;
-kg:awayTeam res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:kickoffTime "1992-06-18T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro ;
-kg:inSeason res:season/Euro_1992 .
-
-res:match/CIS_vs_El_Salvador a kg:Match ;
-kg:homeTeam res:team/El_Salvador ;
-kg:awayTeam res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:kickoffTime "1992-01-29T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro ;
-kg:inSeason res:season/Euro_1992 .
-
-res:match/CIS_vs_Mexico a kg:Match ;
-kg:homeTeam res:team/Mexico ;
-kg:awayTeam res:team/Cộng_đồng_các_quốc_giả_độc_lập ;
-kg:kickoffTime "1992-03-08T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro ;
-kg:inSeason res:season/Euro_1992 .
-
-res:team/Nga a kg:Team ;
-kg:teamName "Nga" ;
-kg:hasCoach res:coach/Anatoly_Byshovets .
-
-res:country/Russia a kg:Country ;
-kg:locatedIn res:country/Russia .
-
-res:country/Ukraine a kg:Country ;
-kg:locatedIn res:country/Ukraine .
-
-res:country/El_Salvador a kg:Country ;
-kg:locatedIn res:country/El_Salvador .
-
-res:country/Mexico a kg:Country ;
-kg:locatedIn res:country/Mexico .
-
-res:country/USA a kg:Country ;
-kg:locatedIn res:country/USA .
-
-res:country/Scotland a kg:Country ;
-kg:locatedIn res:country/Scotland .
-
-res:city/Moscow a kg:City ;
-kg:locatedIn res:country/Russia .
-
-res:city/Kyiv a kg:City ;
-kg:locatedIn res:country/Ukraine .
-
-res:city/Glasgow a kg:City ;
-kg:locatedIn res:country/Scotland .
-
-res:city/Servette a kg:City ;
-kg:locatedIn res:country/Switzerland .
-
-res:city/Foggia a kg:City ;
-kg:locatedIn res:country/Italy .
-
-res:city/Lecce a kg:City ;
-kg:locatedIn res:country/Italy .
-
-res:city/Duisburg a kg:City ;
-kg:locatedIn res:country/Germany .
-
-res:city/Barcelona a kg:City ;
-kg:locatedIn res:country/Spain .
-
-res:city/Lisbon a kg:City ;
-kg:locatedIn res:country/Portugal .
-
-res:city/Bangkok a kg:City ;
-kg:locatedIn res:country/Thailand .
-
-res:city/San_Salvador a kg:City ;
-kg:locatedIn res:country/El_Salvador .
-
-res:city/Mexico_City a kg:City ;
-kg:locatedIn res:country/Mexico .
-
-res:city/Norrköping a kg:City ;
-kg:locatedIn res:country/Sweden .
-
-res:country/Sweden a kg:Country ;
-kg:locatedIn res:country/Sweden .
+res:team/Cộng_đồng_các_quốc_giả_độc_lập a kg:Team
+; kg:teamName "Cộng đồng các quốc gia độc lập"
+; kg:hasCoach res:coach/Anatoly_Byshovets
+; kg:participatesIn res:season/Euro_1992 .
+res:coach/Anatoly_Byshovets a kg:Coach
+; kg:manages res:team/Cộng_đồng_các_quốc_giả_độc_lập .
+res:player/Dmitri_Kharine a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Andrey_Chernyshov a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Kakhaber_Tskhadadze a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Akhrik_Tsveiba a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Oleh_Kuznetsov a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Igor_Shaliomov a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Oleksiy_Mykhaylychenko a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Andrei_Kanchelskis a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Sergei_Aleinikov a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Igor_Dobrovolski a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Sergei_Yuran a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Stanislav_Cherchesov a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Sergei_Kiriakov a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Volodymyr_Lyutyi a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Igor_Kolyvanov a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Dmitri_Kuznetsov a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Igor_Korneev a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Viktor_Onopko a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Igor_Lediakhov a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Andrei_Ivanov a kg:Player
+; kg:playsFor res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:season/Euro_1992 a kg:Season
+; kg:seasonOf res:competition/Euro
+; kg:participatesIn res:team/Cộng_đồng_các_quốc_giả_độc_lập .
+res:competition/Euro a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá châu Âu"
+; kg:organizes res:season/Euro_1992 .
+res:match/USA_vs_CIS a kg:Match
+; kg:homeTeam res:team/USA
+; kg:awayTeam res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:kickoffTime "1992-01-25T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Euro
+; kg:inSeason res:season/Euro_1992 .
+res:match/CIS_vs_Scotland a kg:Match
+; kg:homeTeam res:team/Scotland
+; kg:awayTeam res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:kickoffTime "1992-06-18T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Euro
+; kg:inSeason res:season/Euro_1992 .
+res:match/CIS_vs_El_Salvador a kg:Match
+; kg:homeTeam res:team/El_Salvador
+; kg:awayTeam res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:kickoffTime "1992-01-29T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Euro
+; kg:inSeason res:season/Euro_1992 .
+res:match/CIS_vs_Mexico a kg:Match
+; kg:homeTeam res:team/Mexico
+; kg:awayTeam res:team/Cộng_đồng_các_quốc_giả_độc_lập
+; kg:kickoffTime "1992-03-08T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Euro
+; kg:inSeason res:season/Euro_1992 .
+res:team/Nga a kg:Team
+; kg:teamName "Nga"
+; kg:hasCoach res:coach/Anatoly_Byshovets .
+res:country/Russia a kg:Country
+; kg:locatedIn res:country/Russia .
+res:country/Ukraine a kg:Country
+; kg:locatedIn res:country/Ukraine .
+res:country/El_Salvador a kg:Country
+; kg:locatedIn res:country/El_Salvador .
+res:country/Mexico a kg:Country
+; kg:locatedIn res:country/Mexico .
+res:country/USA a kg:Country
+; kg:locatedIn res:country/USA .
+res:country/Scotland a kg:Country
+; kg:locatedIn res:country/Scotland .
+res:city/Moscow a kg:City
+; kg:locatedIn res:country/Russia .
+res:city/Kyiv a kg:City
+; kg:locatedIn res:country/Ukraine .
+res:city/Glasgow a kg:City
+; kg:locatedIn res:country/Scotland .
+res:city/Servette a kg:City
+; kg:locatedIn res:country/Switzerland .
+res:city/Foggia a kg:City
+; kg:locatedIn res:country/Italy .
+res:city/Lecce a kg:City
+; kg:locatedIn res:country/Italy .
+res:city/Duisburg a kg:City
+; kg:locatedIn res:country/Germany .
+res:city/Barcelona a kg:City
+; kg:locatedIn res:country/Spain .
+res:city/Lisbon a kg:City
+; kg:locatedIn res:country/Portugal .
+res:city/Bangkok a kg:City
+; kg:locatedIn res:country/Thailand .
+res:city/San_Salvador a kg:City
+; kg:locatedIn res:country/El_Salvador .
+res:city/Mexico_City a kg:City
+; kg:locatedIn res:country/Mexico .
+res:city/Norrköping a kg:City
+; kg:locatedIn res:country/Sweden .
+res:country/Sweden a kg:Country
+; kg:locatedIn res:country/Sweden .

@@ -1,325 +1,209 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/North_Korea_National_Football_Team a kg:Team ;
-kg:teamName "Cộng hòa Dân chủ Nhân dân Triều Tiên" ;
-kg:hasCoach res:coach/Sin_Yong-nam ;
-kg:hasCaptain res:player/Jong_Il-gwan ;
-kg:teamAbbreviation "PRK" ;
-kg:locatedIn res:country/North_Korea .
-
-res:coach/Sin_Yong-nam a kg:Coach ;
-kg:manages res:team/North_Korea_National_Football_Team .
-
-res:player/Jong_Il-gwan a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 11 ;
-kg:birthDate "1992-10-30"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "183"^^xsd:decimal ;
-kg:weight "75"^^xsd:decimal .
-
-res:player/Ri_Myongguk a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 5 ;
-kg:birthDate "1985-04-16"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "185"^^xsd:decimal ;
-kg:weight "78"^^xsd:decimal .
-
-res:player/Kang_Juhyoek a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1 ;
-kg:birthDate "1997-05-31"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "192"^^xsd:decimal ;
-kg:weight "85"^^xsd:decimal .
-
-res:player/Sin_Tae_song a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 18 ;
-kg:birthDate "2000-05-30"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "190"^^xsd:decimal ;
-kg:weight "80"^^xsd:decimal .
-
-res:player/Yu_Kwang_jun a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 21 ;
-kg:birthDate "2000-11-05"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "191"^^xsd:decimal ;
-kg:weight "82"^^xsd:decimal .
-
-res:player/Jang_Kuk_chol a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 3 ;
-kg:birthDate "1994-02-16"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "188"^^xsd:decimal ;
-kg:weight "77"^^xsd:decimal .
-
-res:player/Kim_Jin_hyuk a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 2 ;
-kg:birthDate "1992-03-09"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "186"^^xsd:decimal ;
-kg:weight "76"^^xsd:decimal .
-
-res:player/Jong_Kum_song a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 5 ;
-kg:birthDate "1997-01-24"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "185"^^xsd:decimal ;
-kg:weight "78"^^xsd:decimal .
-
-res:player/Choe_Ok_chol a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 14 ;
-kg:birthDate "1998-11-11"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "184"^^xsd:decimal ;
-kg:weight "75"^^xsd:decimal .
-
-res:player/Kim_Yu_song a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 16 ;
-kg:birthDate "2003-07-18"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "182"^^xsd:decimal ;
-kg:weight "73"^^xsd:decimal .
-
-res:player/Kang_Kuk_chol a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 17 ;
-kg:birthDate "1999-09-29"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "187"^^xsd:decimal ;
-kg:weight "76"^^xsd:decimal .
-
-res:player/Kim_Pom_hyok a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 4 ;
-kg:birthDate "2002-04-15"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "178"^^xsd:decimal ;
-kg:weight "70"^^xsd:decimal .
-
-res:player/Kye_Tam a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 6 ;
-kg:birthDate "2000-10-06"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "179"^^xsd:decimal ;
-kg:weight "72"^^xsd:decimal .
-
-res:player/Ri_Hun a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 7 ;
-kg:birthDate "1997-08-31"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "177"^^xsd:decimal ;
-kg:weight "71"^^xsd:decimal .
-
-res:player/Ri_Un_chol a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 15 ;
-kg:birthDate "1995-07-13"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "178"^^xsd:decimal ;
-kg:weight "73"^^xsd:decimal .
-
-res:player/Kim_Sung_hye a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 19 ;
-kg:birthDate "2003-01-15"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "176"^^xsd:decimal ;
-kg:weight "69"^^xsd:decimal .
-
-res:player/Paek_Chung_song a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 20 ;
-kg:birthDate "2000-02-25"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "177"^^xsd:decimal ;
-kg:weight "71"^^xsd:decimal .
-
-res:player/Kim_Kuk_bom a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 22 ;
-kg:birthDate "1995-02-19"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "179"^^xsd:decimal ;
-kg:weight "74"^^xsd:decimal .
-
-res:player/Kim_Kum_chon a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 23 ;
-kg:birthDate "2003-03-10"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "175"^^xsd:decimal ;
-kg:weight "68"^^xsd:decimal .
-
-res:player/Kim_Kuk_jin a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 8 ;
-kg:birthDate "2000-10-11"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "178"^^xsd:decimal ;
-kg:weight "72"^^xsd:decimal .
-
-res:player/Ri_Jo_guk a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 9 ;
-kg:birthDate "2002-05-09"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "177"^^xsd:decimal ;
-kg:weight "70"^^xsd:decimal .
-
-res:player/Han_Kwang_song a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 10 ;
-kg:birthDate "1998-09-11"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "179"^^xsd:decimal ;
-kg:weight "73"^^xsd:decimal .
-
-res:player/Choe_Ju_song a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 12 ;
-kg:birthDate "1996-01-27"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "178"^^xsd:decimal ;
-kg:weight "72"^^xsd:decimal .
-
-res:player/Ri_Il_song a kg:Player ;
-kg:playsFor res:team/North_Korea_National_Football_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 13 ;
-kg:birthDate "2004-01-14"^^xsd:date ;
-kg:nationality res:country/North_Korea ;
-kg:preferredFoot kg:RightFooted ;
-kg:birthPlace res:city/Pyongyang ;
-kg:height "175"^^xsd:decimal ;
-kg:weight "69"^^xsd:decimal .
-
-res:country/North_Korea a kg:Country ;
-rdfs:label "Cộng hòa Dân chủ Nhân dân Triều Tiên" .
-
-res:stadium/Stadium_Kim_Il_sung a kg:Stadium ;
-kg:capacity "100000"^^xsd:positiveInteger ;
-kg:isHomeOf res:team/North_Korea_National_Football_Team .
-
-res:competition/FIFA_World_Cup a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá thế giới" .
-
-res:competition/Asian_Cup a kg:Competition ;
-kg:competitionName "Cúp bóng đá châu Á" .
-
-res:competition/ASEAN_Games a kg:Competition ;
-kg:competitionName "Á vận hội" .
-
-res:competition/AFC_Challenge_Cup a kg:Competition ;
-kg:competitionName "Cúp Challenge AFC" .
-
-res:competition/East_Asian_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá Đông Á" .
-
-res:club/Hwaebul_Sports_Club a kg:Club ;
-kg:homeStadium res:stadium/Stadium_Kim_Il_sung ;
-kg:isHomeOf res:stadium/Stadium_Kim_Il_sung .
-
-res:club/April_25_Sports_Club a kg:Club ;
-kg:homeStadium res:stadium/Stadium_Kim_Il_sung ;
-kg:isHomeOf res:stadium/Stadium_Kim_Il_sung .
-
-res:club/Ryomyong_Sports_Club a kg:Club ;
-kg:homeStadium res:stadium/Stadium_Kim_Il_sung ;
-kg:isHomeOf res:stadium/Stadium_Kim_Il_sung .
-
-res:club/Kigwancha_Sports_Club a kg:Club ;
-kg:homeStadium res:stadium/Stadium_Kim_Il_sung ;
-kg:isHomeOf res:stadium/Stadium_Kim_Il_sung .
-
-res:club/Amnokgang_Sports_Club a kg:Club ;
-kg:homeStadium res:stadium/Stadium_Kim_Il_sung ;
-kg:isHomeOf res:stadium/Stadium_Kim_Il_sung .
-
-res:club/Sonbong_Sports_Club a kg:Club ;
-kg:homeStadium res:stadium/Stadium_Kim_Il_sung ;
-kg:isHomeOf res:stadium/Stadium_Kim_Il_s
+res:team/North_Korea_National_Football_Team a kg:Team
+; kg:teamName "Cộng hòa Dân chủ Nhân dân Triều Tiên"
+; kg:hasCoach res:coach/Sin_Yong-nam
+; kg:hasCaptain res:player/Jong_Il-gwan
+; kg:teamAbbreviation "PRK"
+; kg:locatedIn res:country/North_Korea .
+res:coach/Sin_Yong-nam a kg:Coach
+; kg:manages res:team/North_Korea_National_Football_Team .
+res:player/Jong_Il-gwan a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 11
+; kg:birthDate "1992-10-30"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Ri_Myongguk a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 5
+; kg:birthDate "1985-04-16"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Kang_Juhyoek a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1
+; kg:birthDate "1997-05-31"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Sin_Tae_song a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 18
+; kg:birthDate "2000-05-30"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Yu_Kwang_jun a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 21
+; kg:birthDate "2000-11-05"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Jang_Kuk_chol a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 3
+; kg:birthDate "1994-02-16"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Kim_Jin_hyuk a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 2
+; kg:birthDate "1992-03-09"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Jong_Kum_song a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 5
+; kg:birthDate "1997-01-24"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Choe_Ok_chol a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 14
+; kg:birthDate "1998-11-11"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Kim_Yu_song a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 16
+; kg:birthDate "2003-07-18"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Kang_Kuk_chol a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 17
+; kg:birthDate "1999-09-29"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Kim_Pom_hyok a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 4
+; kg:birthDate "2002-04-15"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Kye_Tam a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 6
+; kg:birthDate "2000-10-06"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Ri_Hun a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 7
+; kg:birthDate "1997-08-31"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Ri_Un_chol a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 15
+; kg:birthDate "1995-07-13"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Kim_Sung_hye a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 19
+; kg:birthDate "2003-01-15"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Paek_Chung_song a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 20
+; kg:birthDate "2000-02-25"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Kim_Kuk_bom a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 22
+; kg:birthDate "1995-02-19"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Kim_Kum_chon a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 23
+; kg:birthDate "2003-03-10"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Kim_Kuk_jin a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 8
+; kg:birthDate "2000-10-11"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Ri_Jo_guk a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 9
+; kg:birthDate "2002-05-09"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Han_Kwang_song a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 10
+; kg:birthDate "1998-09-11"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Choe_Ju_song a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 12
+; kg:birthDate "1996-01-27"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Ri_Il_song a kg:Player
+; kg:playsFor res:team/North_Korea_National_Football_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 13
+; kg:birthDate "2004-01-14"^^xsd:date
+; kg:nationality res:country/North_Korea
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:country/North_Korea a kg:Country
+; rdfs:label "Cộng hòa Dân chủ Nhân dân Triều Tiên" .
+res:stadium/Stadium_Kim_Il_sung a kg:Stadium
+; kg:capacity "100000"^^xsd:positiveInteger
+; kg:isHomeOf res:team/North_Korea_National_Football_Team .
+res:competition/FIFA_World_Cup a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá thế giới" .
+res:competition/Asian_Cup a kg:Competition
+; kg:competitionName "Cúp bóng đá châu Á" .
+res:competition/ASEAN_Games a kg:Competition
+; kg:competitionName "Á vận hội" .
+res:competition/AFC_Challenge_Cup a kg:Competition
+; kg:competitionName "Cúp Challenge AFC" .
+res:competition/East_Asian_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá Đông Á" .
+res:club/Hwaebul_Sports_Club a kg:Club
+; kg:homeStadium res:stadium/Stadium_Kim_Il_sung
+; kg:isHomeOf res:stadium/Stadium_Kim_Il_sung .
+res:club/April_25_Sports_Club a kg:Club
+; kg:homeStadium res:stadium/Stadium_Kim_Il_sung
+; kg:isHomeOf res:stadium/Stadium_Kim_Il_sung .
+res:club/Ryomyong_Sports_Club a kg:Club
+; kg:homeStadium res:stadium/Stadium_Kim_Il_sung
+; kg:isHomeOf res:stadium/Stadium_Kim_Il_sung .
+res:club/Kigwancha_Sports_Club a kg:Club
+; kg:homeStadium res:stadium/Stadium_Kim_Il_sung
+; kg:isHomeOf res:stadium/Stadium_Kim_Il_sung .
+res:club/Amnokgang_Sports_Club a kg:Club
+; kg:homeStadium res:stadium/Stadium_Kim_Il_sung
+; kg:isHomeOf res:stadium/Stadium_Kim_Il_sung .
+res:club/Sonbong_Sports_Club a kg:Club
+; kg:homeStadium res:stadium/Stadium_Kim_Il_sung
+; kg:isHomeOf res:stadium/Stadium_Kim_Il_s .

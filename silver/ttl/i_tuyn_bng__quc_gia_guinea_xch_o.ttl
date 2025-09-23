@@ -1,152 +1,91 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Guinea_Xich_Dao a kg:Team ;
-kg:teamName "Guinea Xích Đạo" ;
-kg:hasCoach res:coach/Juan_Obiang_Ndong ;
-kg:hasCaptain res:player/Emilio_Nsue ;
-kg:mostCaps res:player/Juvenal_Edjogo-Owono ;
-kg:topScorer res:player/Emilio_Nsue ;
-kg:homeStadium res:stadium/San_Van_Dong_Bata, res:stadium/San_Van_Dong_Malabo ;
-kg:fifaTrigramme "EQG" ;
-kg:maxFIFA 49 ;
-kg:maxFIFADate "2015-02-01"^^xsd:date ;
-kg:minFIFA 195 ;
-kg:minFIFADate "1998-12-01"^^xsd:date ;
-kg:eloMax 127 ;
-kg:eloMaxDate "2015-01-31"^^xsd:date ;
-kg:eloMin 187 ;
-kg:eloMinDate "2003-03-01"^^xsd:date ;
-kg:firstGame "1975-05-23"^^xsd:date ;
-kg:largestWin "2016-09-04"^^xsd:date, "2024-01-22"^^xsd:date ;
-kg:largestLoss "1990-12-13"^^xsd:date ;
-kg:regionalCupApps 4 ;
-kg:regionalCupFirst "2012" ;
-kg:regionalCupBest "Hạng tư" ;
-kg:regionalCup "Cúp bóng đá châu Phi" ;
-kg:confederation res:organization/CAF ;
-kg:association res:organization/Lien_Bo_Dao_Guinea_Xich_Dao .
-
-res:coach/Juan_Obiang_Ndong a kg:Coach ;
-kg:manages res:team/Guinea_Xich_Dao .
-
-res:player/Emilio_Nsue a kg:Player, kg:Forward ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 10 ;
-kg:topScorer true ;
-kg:captain true .
-
-res:player/Juvenal_Edjogo-Owono a kg:Player ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:mostCaps true .
-
-res:stadium/San_Van_Dong_Bata a kg:Stadium ;
-kg:isHomeOf res:team/Guinea_Xich_Dao .
-
-res:stadium/San_Van_Dong_Malabo a kg:Stadium ;
-kg:isHomeOf res:team/Guinea_Xich_Dao .
-
-res:organization/CAF a kg:Organization ;
-kg:organizes res:competition/Cup_Bong_Dao_Chau_Aphi .
-
-res:organization/Lien_Bo_Dao_Guinea_Xich_Dao a kg:Organization ;
-kg:manages res:team/Guinea_Xich_Dao .
-
-res:competition/Cup_Bong_Dao_Chau_Aphi a kg:Competition ;
-kg:competitionName "Cúp bóng đá châu Phi" .
-
-res:player/Jesus_Owono a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 1 .
-
-res:player/Aitor_Embela a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 13 .
-
-res:player/Manuel_Sapunga a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 23 .
-
-res:player/Luis_Enrique_Nsue a kg:Player, kg:Defender ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 2 .
-
-res:player/Marvin_Anieboh a kg:Player, kg:Defender ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 3 .
-
-res:player/Santi_Boriko a kg:Player, kg:Defender ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 4 .
-
-res:player/Basilio_Ndong a kg:Player, kg:Defender ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 11 .
-
-res:player/Michael_Ngaah a kg:Player, kg:Defender ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 12 .
-
-res:player/Carlos_Akapo a kg:Player, kg:Defender, kg:ViceCaptain ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 15 .
-
-res:player/Saul_Coco a kg:Player, kg:Defender ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 16 .
-
-res:player/Esteban_Obiang a kg:Player, kg:Defender ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 21 .
-
-res:player/Omar_Mascarell a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 5 .
-
-res:player/Jannick_Buyla a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 8 .
-
-res:player/Pedro_Obiang a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 14 .
-
-res:player/Gael_Joel_Akogo a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 17 .
-
-res:player/Alex_Masogo a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 19 .
-
-res:player/Santiago_Eneme a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 20 .
-
-res:player/Pablo_Ganet a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 22 .
-
-res:player/Iban_Salvador a kg:Player, kg:Forward ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 6 .
-
-res:player/Jose_Nabil_Ondo a kg:Player, kg:Forward ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 7 .
-
-res:player/Dorian_Jr a kg:Player, kg:Forward ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 9 .
-
-res:player/Emilio_Nsue a kg:Player, kg:Forward, kg:Captain ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 10 .
-
-res:player/Loren_Zuniga a kg:Player, kg:Forward ;
-kg:playsFor res:team/Guinea_Xich_Dao ;
-kg:shirtNumber 18 .
+res:team/Guinea_Xich_Dao a kg:Team
+; kg:teamName "Guinea Xích Đạo"
+; kg:hasCoach res:coach/Juan_Obiang_Ndong
+; kg:hasCaptain res:player/Emilio_Nsue
+; kg:homeStadium res:stadium/San_Van_Dong_Bata , res:stadium/San_Van_Dong_Malabo .
+res:coach/Juan_Obiang_Ndong a kg:Coach
+; kg:manages res:team/Guinea_Xich_Dao .
+res:player/Emilio_Nsue a kg:Player , kg:Forward
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Juvenal_Edjogo-Owono a kg:Player
+; kg:playsFor res:team/Guinea_Xich_Dao .
+res:stadium/San_Van_Dong_Bata a kg:Stadium
+; kg:isHomeOf res:team/Guinea_Xich_Dao .
+res:stadium/San_Van_Dong_Malabo a kg:Stadium
+; kg:isHomeOf res:team/Guinea_Xich_Dao .
+res:organization/CAF a kg:Organization
+; kg:organizes res:competition/Cup_Bong_Dao_Chau_Aphi .
+res:organization/Lien_Bo_Dao_Guinea_Xich_Dao a kg:Organization
+; kg:manages res:team/Guinea_Xich_Dao .
+res:competition/Cup_Bong_Dao_Chau_Aphi a kg:Competition
+; kg:competitionName "Cúp bóng đá châu Phi" .
+res:player/Jesus_Owono a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 1 .
+res:player/Aitor_Embela a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 13 .
+res:player/Manuel_Sapunga a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 23 .
+res:player/Luis_Enrique_Nsue a kg:Player , kg:Defender
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 2 .
+res:player/Marvin_Anieboh a kg:Player , kg:Defender
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 3 .
+res:player/Santi_Boriko a kg:Player , kg:Defender
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 4 .
+res:player/Basilio_Ndong a kg:Player , kg:Defender
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 11 .
+res:player/Michael_Ngaah a kg:Player , kg:Defender
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 12 .
+res:player/Carlos_Akapo a kg:Player , kg:Defender
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 15 .
+res:player/Saul_Coco a kg:Player , kg:Defender
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 16 .
+res:player/Esteban_Obiang a kg:Player , kg:Defender
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 21 .
+res:player/Omar_Mascarell a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 5 .
+res:player/Jannick_Buyla a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 8 .
+res:player/Pedro_Obiang a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 14 .
+res:player/Gael_Joel_Akogo a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 17 .
+res:player/Alex_Masogo a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 19 .
+res:player/Santiago_Eneme a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 20 .
+res:player/Pablo_Ganet a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 22 .
+res:player/Iban_Salvador a kg:Player , kg:Forward
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 6 .
+res:player/Jose_Nabil_Ondo a kg:Player , kg:Forward
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 7 .
+res:player/Dorian_Jr a kg:Player , kg:Forward
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 9 .
+res:player/Emilio_Nsue a kg:Player , kg:Forward
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 10 .
+res:player/Loren_Zuniga a kg:Player , kg:Forward
+; kg:playsFor res:team/Guinea_Xich_Dao
+; kg:shirtNumber 18 .

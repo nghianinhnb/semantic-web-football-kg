@@ -1,271 +1,217 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Gibraltar a kg:Team ;
-kg:teamName "Gibraltar" ;
-kg:hasCoach res:coach/Julio_César_Ribas ;
-kg:hasCaptain res:player/Roy_Chipolina ;
-kg:homeStadium res:stadium/Sân_vận_động_Victoria ;
-kg:locatedIn res:country/Gibraltar .
-
+res:team/Gibraltar a kg:Team
+; kg:teamName "Gibraltar"
+; kg:hasCoach res:coach/Julio_César_Ribas
+; kg:hasCaptain res:player/Roy_Chipolina
+; kg:homeStadium res:stadium/Sân_vận_động_Victoria
+; kg:locatedIn res:country/Gibraltar .
 res:country/Gibraltar a kg:Country .
-
 res:stadium/Sân_vận_động_Victoria a kg:Stadium .
-
-res:coach/Julio_César_Ribas a kg:Coach ;
-kg:manages res:team/Gibraltar .
-
-res:player/Roy_Chipolina a kg:Player, kg:Forward ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 14 ;
-kg:birthDate "1983-01-20"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Liam_Walker a kg:Player, kg:Forward ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 10 ;
-kg:birthDate "1988-04-13"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Dayle_Coleing a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 23 ;
-kg:birthDate "1996-10-23"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Bradley_Banda a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1 ;
-kg:birthDate "1998-01-20"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Jaylan_Hankins a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 13 ;
-kg:birthDate "2000-11-17"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Joseph_Chipolina a kg:Player, kg:Defender ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 3 ;
-kg:birthDate "1987-12-14"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Jayce_Olivero a kg:Player, kg:Defender ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 12 ;
-kg:birthDate "1998-07-02"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Louie_Annesley a kg:Player, kg:Defender ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 5 ;
-kg:birthDate "2000-05-03"^^xsd:date ;
-kg:nationality res:country/England .
-
-res:player/Aymen_Mouelhi a kg:Player, kg:Defender ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 16 ;
-kg:birthDate "1986-09-14"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Ethan_Britto a kg:Player, kg:Defender ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 20 ;
-kg:birthDate "2000-11-30"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Ethan_Jolley a kg:Player, kg:Defender ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 2 ;
-kg:birthDate "1997-03-29"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Bernardo_Lopes a kg:Player, kg:Defender ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 6 ;
-kg:birthDate "1993-07-30"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Liam_Walker a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 10 ;
-kg:birthDate "1988-04-13"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Anthony_Hernandez a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 18 ;
-kg:birthDate "1995-02-03"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Graeme_Torrilla a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 22 ;
-kg:birthDate "1997-09-03"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Kian_Ronan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 17 ;
-kg:birthDate "2001-03-09"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Julian_Valarino a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 11 ;
-kg:birthDate "2000-06-23"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Mohamed_Badr a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 8 ;
-kg:birthDate "1989-11-25"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Nicholas_Pozo a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 4 ;
-kg:birthDate "2005-01-19"^^xsd:date ;
-kg:nationality res:country/Spain .
-
-res:player/Lee_Casciaro a kg:Player, kg:Forward ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 7 ;
-kg:birthDate "1981-09-29"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Reece_Styche a kg:Player, kg:Forward ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 9 ;
-kg:birthDate "1989-05-03"^^xsd:date ;
-kg:nationality res:country/England .
-
-res:player/Tjay_De_Barr a kg:Player, kg:Forward ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 19 ;
-kg:birthDate "2000-03-13"^^xsd:date ;
-kg:nationality res:country/England .
-
-res:player/Jamie_Coombes a kg:Player, kg:Forward ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 21 ;
-kg:birthDate "1996-05-27"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Kelvin_Morgan a kg:Player, kg:Forward ;
-kg:playsFor res:team/Gibraltar ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 15 ;
-kg:birthDate "1997-11-14"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Christian_Lopez a kg:Player, kg:Goalkeeper ;
-kg:birthDate "2001-02-10"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Bradley_Avellano a kg:Player, kg:Goalkeeper ;
-kg:birthDate "2002-11-01"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Harry_Victor a kg:Player, kg:Goalkeeper ;
-kg:birthDate "2004-01-29"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Jamie_Robba a kg:Player, kg:Goalkeeper ;
-kg:birthDate "1991-10-26"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Jack_Sergeant a kg:Player, kg:Defender ;
-kg:birthDate "1995-02-27"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Scott_Wiseman a kg:Player, kg:Defender ;
-kg:birthDate "1985-10-09"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Ethan_Santos a kg:Player, kg:Defender ;
-kg:birthDate "1998-12-22"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Jamie_Bosio a kg:Player, kg:Defender ;
-kg:birthDate "1991-03-27"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Lee_Coombes a kg:Player, kg:Defender ;
-kg:birthDate "1996-06-20"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Stefan_Thorne a kg:Player, kg:Defender ;
-kg:birthDate "2003-03-28"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Julian_Britto a kg:Player, kg:Defender ;
-kg:birthDate "2004-06-28"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Ethan_Llambias a kg:Player, kg:Defender ;
-kg:birthDate "2000-11-23"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Scott_Ballantine a kg:Player, kg:Midfielder ;
-kg:birthDate "1996-04-12"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Evan_De_Haro a kg:Player, kg:Midfielder ;
-kg:birthDate "2002-09-28"^^xsd:date ;
-kg:nationality res:country/England .
-
-res:player/Alain_Pons a kg:Player, kg:Midfielder ;
-kg:birthDate "1995-09-16"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Bilal_Douah a kg:Player, kg:Midfielder ;
-kg:birthDate "2003-07-25"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Omar_Salah a kg:Player, kg:Midfielder ;
-kg:birthDate "2003-10-02"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Michael_Yome a kg:Player, kg:Forward ;
-kg:birthDate "1994-08-29"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Adam_Gracia a kg:Player, kg:Forward ;
-kg:birthDate "2001-05-28"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Ellis_Wilson a kg:Player, kg:Forward ;
-kg:birthDate "2003-09-11"^^xsd:date ;
-kg:nationality res:country/Gibraltar .
-
-res:player/Jaiden_Bartolo a kg:Player, kg:Forward ;
-kg:birthDate "2006-02-10"^^xsd:date ;
-kg:nationality res:country/Unknown .
+res:coach/Julio_César_Ribas a kg:Coach
+; kg:manages res:team/Gibraltar .
+res:player/Roy_Chipolina a kg:Player , kg:Forward
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 14
+; kg:birthDate "1983-01-20"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Liam_Walker a kg:Player , kg:Forward
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 10
+; kg:birthDate "1988-04-13"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Dayle_Coleing a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 23
+; kg:birthDate "1996-10-23"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Bradley_Banda a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1
+; kg:birthDate "1998-01-20"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Jaylan_Hankins a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 13
+; kg:birthDate "2000-11-17"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Joseph_Chipolina a kg:Player , kg:Defender
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 3
+; kg:birthDate "1987-12-14"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Jayce_Olivero a kg:Player , kg:Defender
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 12
+; kg:birthDate "1998-07-02"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Louie_Annesley a kg:Player , kg:Defender
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 5
+; kg:birthDate "2000-05-03"^^xsd:date
+; kg:nationality res:country/England .
+res:player/Aymen_Mouelhi a kg:Player , kg:Defender
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 16
+; kg:birthDate "1986-09-14"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Ethan_Britto a kg:Player , kg:Defender
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 20
+; kg:birthDate "2000-11-30"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Ethan_Jolley a kg:Player , kg:Defender
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 2
+; kg:birthDate "1997-03-29"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Bernardo_Lopes a kg:Player , kg:Defender
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 6
+; kg:birthDate "1993-07-30"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Liam_Walker a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 10
+; kg:birthDate "1988-04-13"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Anthony_Hernandez a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 18
+; kg:birthDate "1995-02-03"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Graeme_Torrilla a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 22
+; kg:birthDate "1997-09-03"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Kian_Ronan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 17
+; kg:birthDate "2001-03-09"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Julian_Valarino a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 11
+; kg:birthDate "2000-06-23"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Mohamed_Badr a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 8
+; kg:birthDate "1989-11-25"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Nicholas_Pozo a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 4
+; kg:birthDate "2005-01-19"^^xsd:date
+; kg:nationality res:country/Spain .
+res:player/Lee_Casciaro a kg:Player , kg:Forward
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 7
+; kg:birthDate "1981-09-29"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Reece_Styche a kg:Player , kg:Forward
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 9
+; kg:birthDate "1989-05-03"^^xsd:date
+; kg:nationality res:country/England .
+res:player/Tjay_De_Barr a kg:Player , kg:Forward
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 19
+; kg:birthDate "2000-03-13"^^xsd:date
+; kg:nationality res:country/England .
+res:player/Jamie_Coombes a kg:Player , kg:Forward
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 21
+; kg:birthDate "1996-05-27"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Kelvin_Morgan a kg:Player , kg:Forward
+; kg:playsFor res:team/Gibraltar
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 15
+; kg:birthDate "1997-11-14"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Christian_Lopez a kg:Player , kg:Goalkeeper
+; kg:birthDate "2001-02-10"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Bradley_Avellano a kg:Player , kg:Goalkeeper
+; kg:birthDate "2002-11-01"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Harry_Victor a kg:Player , kg:Goalkeeper
+; kg:birthDate "2004-01-29"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Jamie_Robba a kg:Player , kg:Goalkeeper
+; kg:birthDate "1991-10-26"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Jack_Sergeant a kg:Player , kg:Defender
+; kg:birthDate "1995-02-27"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Scott_Wiseman a kg:Player , kg:Defender
+; kg:birthDate "1985-10-09"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Ethan_Santos a kg:Player , kg:Defender
+; kg:birthDate "1998-12-22"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Jamie_Bosio a kg:Player , kg:Defender
+; kg:birthDate "1991-03-27"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Lee_Coombes a kg:Player , kg:Defender
+; kg:birthDate "1996-06-20"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Stefan_Thorne a kg:Player , kg:Defender
+; kg:birthDate "2003-03-28"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Julian_Britto a kg:Player , kg:Defender
+; kg:birthDate "2004-06-28"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Ethan_Llambias a kg:Player , kg:Defender
+; kg:birthDate "2000-11-23"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Scott_Ballantine a kg:Player , kg:Midfielder
+; kg:birthDate "1996-04-12"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Evan_De_Haro a kg:Player , kg:Midfielder
+; kg:birthDate "2002-09-28"^^xsd:date
+; kg:nationality res:country/England .
+res:player/Alain_Pons a kg:Player , kg:Midfielder
+; kg:birthDate "1995-09-16"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Bilal_Douah a kg:Player , kg:Midfielder
+; kg:birthDate "2003-07-25"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Omar_Salah a kg:Player , kg:Midfielder
+; kg:birthDate "2003-10-02"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Michael_Yome a kg:Player , kg:Forward
+; kg:birthDate "1994-08-29"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Adam_Gracia a kg:Player , kg:Forward
+; kg:birthDate "2001-05-28"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Ellis_Wilson a kg:Player , kg:Forward
+; kg:birthDate "2003-09-11"^^xsd:date
+; kg:nationality res:country/Gibraltar .
+res:player/Jaiden_Bartolo a kg:Player , kg:Forward
+; kg:birthDate "2006-02-10"^^xsd:date
+; kg:nationality res:country/Unknown .

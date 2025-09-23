@@ -1,349 +1,238 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Armenia a kg:Team ;
-kg:teamName "Armenia" ;
-kg:hasCoach res:coach/Joaquín_Caparrós ;
-kg:hasCaptain res:player/Henrikh_Mkhitaryan ;
-kg:teamAbbreviation "ARM" ;
-kg:isCaptain res:player/Henrikh_Mkhitaryan .
-
-res:coach/Joaquín_Caparrós a kg:Coach ;
-kg:manages res:team/Armenia .
-
-res:player/Henrikh_Mkhitaryan a kg:Player, kg:Forward ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 10 ;
-kg:topScorer true ;
-kg:mostCaps false .
-
-res:player/Sargis_Hovsepyan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender ;
-kg:mostCaps true .
-
-res:stadium/Stadion_Vazgen_Sargsyan a kg:Stadium ;
-kg:isHomeOf res:team/Armenia .
-
-res:stadium/Stadion_Hrazdan a kg:Stadium ;
-kg:isHomeOf res:team/Armenia .
-
+res:team/Armenia a kg:Team
+; kg:teamName "Armenia"
+; kg:hasCoach res:coach/Joaquín_Caparrós
+; kg:hasCaptain res:player/Henrikh_Mkhitaryan
+; kg:teamAbbreviation "ARM"
+; kg:isCaptain res:player/Henrikh_Mkhitaryan .
+res:coach/Joaquín_Caparrós a kg:Coach
+; kg:manages res:team/Armenia .
+res:player/Henrikh_Mkhitaryan a kg:Player , kg:Forward
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 10 .
+res:player/Sargis_Hovsepyan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender .
+res:stadium/Stadion_Vazgen_Sargsyan a kg:Stadium
+; kg:isHomeOf res:team/Armenia .
+res:stadium/Stadion_Hrazdan a kg:Stadium
+; kg:isHomeOf res:team/Armenia .
 res:country/Armenia a kg:Country .
-
 res:competition/FIFA_World_Cup a kg:Competition .
-
 res:competition/Euro a kg:Competition .
-
 res:competition/UEFA_Nations_League a kg:Competition .
-
-res:season/2018-19 a kg:Season ;
-kg:seasonOf res:competition/UEFA_Nations_League .
-
-res:season/2020-21 a kg:Season ;
-kg:seasonOf res:competition/UEFA_Nations_League .
-
-res:season/2022-23 a kg:Season ;
-kg:seasonOf res:competition/UEFA_Nations_League .
-
-res:match/ARM_vs_MDA a kg:Match ;
-kg:homeTeam res:team/Armenia ;
-kg:awayTeam res:team/Moldova ;
-kg:kickoffTime "1992-10-12"^^xsd:date .
-
-res:match/ARM_vs_GUA a kg:Match ;
-kg:homeTeam res:team/Armenia ;
-kg:awayTeam res:team/Guatemala ;
-kg:kickoffTime "2016-05-28"^^xsd:date .
-
-res:match/CHI_vs_ARM a kg:Match ;
-kg:homeTeam res:team/Chile ;
-kg:awayTeam res:team/Armenia ;
-kg:kickoffTime "1997-01-04"^^xsd:date .
-
-res:match/GEO_vs_ARM a kg:Match ;
-kg:homeTeam res:team/Georgia ;
-kg:awayTeam res:team/Armenia ;
-kg:kickoffTime "1997-03-30"^^xsd:date .
-
-res:player/Stanislav_Buchnev a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1 .
-
-res:player/Henri_Avagyan a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 16 .
-
-res:player/Arman_Nersesyan a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 12 .
-
-res:player/Kamo_Hovhannisyan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 13 .
-
-res:player/Varazdat_Haroyan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 3 ;
-kg:isCaptain true .
-
-res:player/Hrayr_Mkoyan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 15 .
-
-res:player/Taron_Voskanyan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 4 .
-
-res:player/Styopa_Mkrtchyan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 21 .
-
-res:player/Davit_Terteryan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 2 .
-
-res:player/Hakob_Hakobyan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 17 .
-
-res:player/Zhirayr_Margaryan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 8 .
-
-res:player/Arman_Ghazaryan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 22 .
-
-res:player/Aventis_Aventisian a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "" .
-
-res:player/Artak_Grigoryan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 5 .
-
-res:player/Edgar_Babayan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 9 .
-
-res:player/Artak_Dashyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 10 .
-
-res:player/Petros_Avetisyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 18 .
-
-res:player/Hovhannes_Harutyunyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 11 .
-
-res:player/Artur_Serobyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "" .
-
-res:player/Narek_Grigoryan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 19 .
-
-res:player/Artur_Galoyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 14 .
-
-res:player/Serob_Galstyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 20 .
-
-res:player/Sergey_Mkrtchyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 6 .
-
-res:player/Vahan_Bichakhchyan a kg:Player, kg:Forward ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 23 .
-
-res:player/Zhirayr_Shaghoyan a kg:Player, kg:Forward ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 7 .
-
-res:player/David_Yurchenko a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Goalkeeper .
-
-res:player/Arsen_Beglaryan a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Goalkeeper .
-
-res:player/Hovhannes_Hambardzumyan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Jordy_Monroy a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender .
-
-res:player/André_Calisir a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Arman_Hovhannisyan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Hayk_Ishkhanyan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Hovhannes_Nazaryan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Eduard_Spertsyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Khoren_Bayramyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Karen_Muradyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Edgar_Malakyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Solomon_Udo a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Wbeymar_Angulo a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Rudik_Mkrtchyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Gevorg_Ghazaryan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Erik_Vardanyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Artyom_Avanesyan a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Lucas_Zelarayán a kg:Player, kg:Forward ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Tigran_Barseghyan a kg:Player, kg:Forward ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Sargis_Adamyan a kg:Player, kg:Forward ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Artur_Miranyan a kg:Player, kg:Forward ;
-kg:playsFor res:team/Armenia ;
-kg:primaryPosition res:position/Forward .
-
-res:coach/Eduard_Markarov a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "1992-01-01"^^xsd:date ;
-kg:endDate "1994-12-31"^^xsd:date .
-
-res:coach/Samvel_Darbinyan a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "1995-01-01"^^xsd:date ;
-kg:endDate "1996-12-31"^^xsd:date .
-
-res:coach/Khoren_Hovhannisyan a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "1996-01-01"^^xsd:date ;
-kg:endDate "1997-12-31"^^xsd:date .
-
-res:coach/Souren_Barseghyan a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "1998-01-01"^^xsd:date ;
-kg:endDate "1999-12-31"^^xsd:date .
-
-res:coach/Varuzhan_Sukiasyan a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "2000-01-01"^^xsd:date ;
-kg:endDate "2001-12-31"^^xsd:date .
-
-res:coach/Adranik_Adamyan a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "2002-01-01"^^xsd:date ;
-kg:endDate "2002-12-31"^^xsd:date .
-
-res:coach/Oscar_Lopez a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "2002-01-01"^^xsd:date ;
-kg:endDate "2002-12-31"^^xsd:date .
-
-res:coach/Adranik_Adamyan a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "2003-01-01"^^xsd:date ;
-kg:endDate "2003-12-31"^^xsd:date .
-
-res:coach/Mihai_Stoichiță a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "2003-01-01"^^xsd:date ;
-kg:endDate "2004-12-31"^^xsd:date .
-
-res:coach/Bernard_Casoni a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "2004-01-01"^^xsd:date ;
-kg:endDate "2005-12-31"^^xsd:date .
-
-res:coach/Henk_Wisman a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "2005-01-01"^^xsd:date ;
-kg:endDate "2006-12-31"^^xsd:date .
-
-res:coach/Ian_Porterfield a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "2006-01-01"^^xsd:date ;
-kg:endDate "2007-12-31"^^xsd:date .
-
-res:coach/Vardan_Minasyan a kg:Coach ;
-kg:manages res:team/Armenia ;
-kg:startDate "2007-01-01"^^xsd:date ;
-kg:endDate "2007-12-31"^^xsd:date .
+res:season/2018-19 a kg:Season
+; kg:seasonOf res:competition/UEFA_Nations_League .
+res:season/2020-21 a kg:Season
+; kg:seasonOf res:competition/UEFA_Nations_League .
+res:season/2022-23 a kg:Season
+; kg:seasonOf res:competition/UEFA_Nations_League .
+res:match/ARM_vs_MDA a kg:Match
+; kg:homeTeam res:team/Armenia
+; kg:awayTeam res:team/Moldova
+; kg:kickoffTime "1992-10-12"^^xsd:date .
+res:match/ARM_vs_GUA a kg:Match
+; kg:homeTeam res:team/Armenia
+; kg:awayTeam res:team/Guatemala
+; kg:kickoffTime "2016-05-28"^^xsd:date .
+res:match/CHI_vs_ARM a kg:Match
+; kg:homeTeam res:team/Chile
+; kg:awayTeam res:team/Armenia
+; kg:kickoffTime "1997-01-04"^^xsd:date .
+res:match/GEO_vs_ARM a kg:Match
+; kg:homeTeam res:team/Georgia
+; kg:awayTeam res:team/Armenia
+; kg:kickoffTime "1997-03-30"^^xsd:date .
+res:player/Stanislav_Buchnev a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1 .
+res:player/Henri_Avagyan a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 16 .
+res:player/Arman_Nersesyan a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 12 .
+res:player/Kamo_Hovhannisyan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 13 .
+res:player/Varazdat_Haroyan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 3
+; kg:isCaptain true .
+res:player/Hrayr_Mkoyan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 15 .
+res:player/Taron_Voskanyan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 4 .
+res:player/Styopa_Mkrtchyan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 21 .
+res:player/Davit_Terteryan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 2 .
+res:player/Hakob_Hakobyan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 17 .
+res:player/Zhirayr_Margaryan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 8 .
+res:player/Arman_Ghazaryan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 22 .
+res:player/Aventis_Aventisian a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "" .
+res:player/Artak_Grigoryan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 5 .
+res:player/Edgar_Babayan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 9 .
+res:player/Artak_Dashyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 10 .
+res:player/Petros_Avetisyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 18 .
+res:player/Hovhannes_Harutyunyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 11 .
+res:player/Artur_Serobyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "" .
+res:player/Narek_Grigoryan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 19 .
+res:player/Artur_Galoyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 14 .
+res:player/Serob_Galstyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 20 .
+res:player/Sergey_Mkrtchyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 6 .
+res:player/Vahan_Bichakhchyan a kg:Player , kg:Forward
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 23 .
+res:player/Zhirayr_Shaghoyan a kg:Player , kg:Forward
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 7 .
+res:player/David_Yurchenko a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Goalkeeper .
+res:player/Arsen_Beglaryan a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Goalkeeper .
+res:player/Hovhannes_Hambardzumyan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender .
+res:player/Jordy_Monroy a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender .
+res:player/André_Calisir a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender .
+res:player/Arman_Hovhannisyan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender .
+res:player/Hayk_Ishkhanyan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender .
+res:player/Hovhannes_Nazaryan a kg:Player , kg:Defender
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Defender .
+res:player/Eduard_Spertsyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder .
+res:player/Khoren_Bayramyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder .
+res:player/Karen_Muradyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder .
+res:player/Edgar_Malakyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder .
+res:player/Solomon_Udo a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder .
+res:player/Wbeymar_Angulo a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder .
+res:player/Rudik_Mkrtchyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder .
+res:player/Gevorg_Ghazaryan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder .
+res:player/Erik_Vardanyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder .
+res:player/Artyom_Avanesyan a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Midfielder .
+res:player/Lucas_Zelarayán a kg:Player , kg:Forward
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Forward .
+res:player/Tigran_Barseghyan a kg:Player , kg:Forward
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Forward .
+res:player/Sargis_Adamyan a kg:Player , kg:Forward
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Forward .
+res:player/Artur_Miranyan a kg:Player , kg:Forward
+; kg:playsFor res:team/Armenia
+; kg:primaryPosition res:position/Forward .
+res:coach/Eduard_Markarov a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Samvel_Darbinyan a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Khoren_Hovhannisyan a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Souren_Barseghyan a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Varuzhan_Sukiasyan a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Adranik_Adamyan a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Oscar_Lopez a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Adranik_Adamyan a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Mihai_Stoichiță a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Bernard_Casoni a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Henk_Wisman a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Ian_Porterfield a kg:Coach
+; kg:manages res:team/Armenia .
+res:coach/Vardan_Minasyan a kg:Coach
+; kg:manages res:team/Armenia .

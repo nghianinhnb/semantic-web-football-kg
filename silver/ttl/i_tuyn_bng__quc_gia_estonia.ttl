@@ -1,280 +1,123 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Estonia a kg:Team ;
-kg:teamName "Estonia" ;
-kg:hasCoach res:person/Martin_Reim ;
-kg:hasCaptain res:player/Ragnar_Klavan ;
-kg:homeStadium res:stadium/A._Le_Coq_Arena .
-
-res:person/Martin_Reim a kg:Coach ;
-kg:manages res:team/Estonia .
-
-res:player/Ragnar_Klavan a kg:Player ;
-kg:isCaptain res:team/Estonia .
-
-res:stadium/A._Le_Coq_Arena a kg:Stadium ;
-kg:isHomeOf res:team/Estonia .
-
-res:team/Estonia kg:mostCaps res:player/Martin_Reim ;
-kg:topScorer res:player/Andres_Oper .
-
-res:player/Martin_Reim a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber "157"^^xsd:positiveInteger ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Andres_Oper a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "38"^^xsd:positiveInteger .
-
+res:team/Estonia a kg:Team
+; kg:teamName "Estonia"
+; kg:hasCoach res:person/Martin_Reim
+; kg:hasCaptain res:player/Ragnar_Klavan
+; kg:homeStadium res:stadium/A._Le_Coq_Arena .
+res:person/Martin_Reim a kg:Coach
+; kg:manages res:team/Estonia .
+res:player/Ragnar_Klavan a kg:Player
+; kg:isCaptain res:team/Estonia .
+res:stadium/A._Le_Coq_Arena a kg:Stadium
+; kg:isHomeOf res:team/Estonia .
+res:player/Martin_Reim a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Andres_Oper a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
 res:stadium/A._Le_Coq_Arena kg:capacity "10600"^^xsd:positiveInteger .
-
-res:team/Estonia kg:firstGame [
-a kg:Match ;
-kg:homeTeam res:team/Estonia ;
-kg:awayTeam res:team/Finnish_National_Football_Team ;
-kg:venue res:stadium/A._Le_Coq_Arena ;
-kg:kickoffTime "1920-10-17"^^xsd:date ;
-kg:result "0-6"
+res:team/Estonia kg:homeTeam res:team/Estonia
+; kg:awayTeam res:team/Finnish_National_Football_Team
+; kg:venue res:stadium/A._Le_Coq_Arena
+; kg:kickoffTime "1920-10-17"^^xsd:date
+; kg:result "0-6"
 ] .
-
-res:team/Estonia kg:largestWin [
-a kg:Match ;
-kg:homeTeam res:team/Estonia ;
-kg:awayTeam res:team/Lithuanian_National_Football_Team ;
-kg:venue res:stadium/A._Le_Coq_Arena ;
-kg:kickoffTime "1928-07-26"^^xsd:date ;
-kg:result "6-0"
+res:team/Estonia kg:homeTeam res:team/Estonia
+; kg:awayTeam res:team/Lithuanian_National_Football_Team
+; kg:venue res:stadium/A._Le_Coq_Arena
+; kg:kickoffTime "1928-07-26"^^xsd:date
+; kg:result "6-0"
 ] .
-
-res:team/Estonia kg:largestLoss [
-a kg:Match ;
-kg:homeTeam res:team/Finnish_National_Football_Team ;
-kg:awayTeam res:team/Estonia ;
-kg:venue res:stadium/Helsinki ;
-kg:kickoffTime "1922-08-11"^^xsd:date ;
-kg:result "10-2"
+res:team/Estonia kg:homeTeam res:team/Finnish_National_Football_Team
+; kg:awayTeam res:team/Estonia
+; kg:venue res:stadium/Helsinki
+; kg:kickoffTime "1922-08-11"^^xsd:date
+; kg:result "10-2"
 ] .
-
-res:team/Estonia kg:largestLoss [
-a kg:Match ;
-kg:homeTeam res:team/German_National_Football_Team ;
-kg:awayTeam res:team/Estonia ;
-kg:venue res:stadium/Maiz ;
-kg:kickoffTime "2019-06-12"^^xsd:date ;
-kg:result "8-0"
+res:team/Estonia kg:homeTeam res:team/German_National_Football_Team
+; kg:awayTeam res:team/Estonia
+; kg:venue res:stadium/Maiz
+; kg:kickoffTime "2019-06-12"^^xsd:date
+; kg:result "8-0"
 ] .
-
-res:team/Estonia kg:FIFA_Rank "137"^^xsd:positiveInteger ;
-kg:FIFA_Max "47"^^xsd:positiveInteger ;
-kg:FIFA_Max_Date "2012-03"^^xsd:gYearMonth ;
-kg:FIFA_Min "137"^^xsd:positiveInteger ;
-kg:FIFA_Min_Date "2008-10"^^xsd:gYearMonth .
-
-res:team/Estonia kg:Elo_Rank "175"^^xsd:positiveInteger ;
-kg:Elo_Max "51"^^xsd:positiveInteger ;
-kg:Elo_Max_Date "1927-08"^^xsd:gYearMonth ;
-kg:Elo_Min "175"^^xsd:positiveInteger ;
-kg:Elo_Min_Date "1995-08"^^xsd:gYearMonth .
-
-res:team/Estonia kg:confederation res:organization/UEFA .
-
 res:organization/UEFA a kg:Organization .
-
-res:team/Estonia kg:association res:organization/Estonian_Football_Association .
-
 res:organization/Estonian_Football_Association a kg:Organization .
-
-res:team/Estonia kg:region res:competition/European_Championship .
-
-res:competition/European_Championship a kg:Competition ;
-kg:competitionName "European Championship" .
-
-res:team/Estonia kg:worldCupApps "0"^^xsd:nonNegativeInteger .
-
-res:team/Estonia kg:uefaNationsLeague [
-a kg:Competition ;
-kg:competitionName "UEFA Nations League" ;
-kg:participantCount "3"^^xsd:positiveInteger
+res:competition/European_Championship a kg:Competition
+; kg:competitionName "European Championship" .
+res:team/Estonia kg:competitionName "UEFA Nations League"
+; kg:participantCount "3"^^xsd:positiveInteger
 ] .
-
-res:team/Estonia kg:olympicGames [
-a kg:Event ;
-kg:eventName "Olympics" ;
-kg:result "18th"
+res:team/Estonia kg:result "18th"
 ] .
-
-res:player/Matvei_Igonen a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber "1"^^xsd:positiveInteger ;
-kg:birthDate "1996-10-02"^^xsd:date ;
-kg:nationality res:country/Estonia .
-
-res:player/Karl_Hein a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber "12"^^xsd:positiveInteger ;
-kg:birthDate "2002-04-13"^^xsd:date ;
-kg:nationality res:country/England .
-
-res:player/Karl_Andre_Vallner a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber "22"^^xsd:positiveInteger ;
-kg:birthDate "1998-02-28"^^xsd:date ;
-kg:nationality res:country/Estonia .
-
-res:player/Marten_Kuusk a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "2"^^xsd:positiveInteger ;
-kg:birthDate "1996-04-05"^^xsd:date ;
-kg:nationality res:country/Estonia .
-
-res:player/Andreas_Vaher a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "3"^^xsd:positiveInteger ;
-kg:birthDate "2004-04-15"^^xsd:date ;
-kg:nationality res:country/Italy .
-
-res:player/Michael_Lilander a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "13"^^xsd:positiveInteger ;
-kg:birthDate "1997-06-20"^^xsd:date ;
-kg:nationality res:country/Estonia .
-
-res:player/Markkus_Seppik a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "16"^^xsd:positiveInteger ;
-kg:birthDate "2001-04-16"^^xsd:date ;
-kg:nationality res:country/Estonia .
-
-res:player/Karol_Mets a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "18"^^xsd:positiveInteger ;
-kg:birthDate "1993-05-16"^^xsd:date ;
-kg:nationality res:country/Switzerland .
-
-res:player/Ken_Kallaste a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "19"^^xsd:positiveInteger ;
-kg:birthDate "1988-08-31"^^xsd:date ;
-kg:nationality res:country/Estonia .
-
-res:player/Nikita_Baranov a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "21"^^xsd:positiveInteger ;
-kg:birthDate "1992-08-19"^^xsd:date ;
-kg:nationality res:country/Armenia .
-
-res:player/Taijo_Teniste a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "23"^^xsd:positiveInteger ;
-kg:birthDate "1988-01-31"^^xsd:date ;
-kg:nationality res:country/Estonia .
-
-res:player/Rasmus_Peetson a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber "24"^^xsd:positiveInteger ;
-kg:birthDate "1995-05-03"^^xsd:date ;
-kg:nationality res:country/Estonia .
-
-res:player/Mattias_Kait a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber "4"^^xsd:positiveInteger ;
-kg:birthDate "1998-06-29"^^xsd:date ;
-kg:nationality res:country/Romania .
-
-res:player/Rocco_Robert_Shein a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber "5"^^xsd:positiveInteger ;
-kg:birthDate "2003-07-14"^^xsd:date ;
-kg:nationality res:country/Netherlands .
-
-res:player/Markus_Soomets a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber "6"^^xsd:positiveInteger ;
-kg:birthDate "2000-03-02"^^xsd:date ;
-kg:nationality res:country/Estonia .
-
-res:player/Georgi_Tunjov a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber "7"^^xsd:positiveInteger ;
-kg:birthDate "2001-04-17"^^xsd:date ;
-kg:nationality res:country/Italy .
-
-res:player/Konstantin_Vassiljev a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber "14"^^xsd:positiveInteger ;
-kg:birthDate "1984-08-16"^^xsd:date ;
-kg:nationality res:country/Estonia ;
-kg:isCaptain res:team/Estonia .
-
-res:player/Martin_Miller a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber "17"^^xsd:positiveInteger ;
-kg:birthDate "1997-09-25"^^xsd:date ;
-kg:nationality res:country/Estonia .
-
-res:player/Bogdan_Vastchuk a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber "20"^^xsd:positiveInteger ;
-kg:birthDate "1995-10-04"^^xsd:date ;
-kg:nationality res:country/Poland .
-
-res:player/Vlasiy_Sinyavskiy a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "8"^^xsd:positiveInteger ;
-kg:birthDate "1996-11-27"^^xsd:date ;
-kg:nationality res:country/Czech_Republic .
-
-res:player/Erik_Sorga a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "9"^^xsd:positiveInteger ;
-kg:birthDate "1999-07-08"^^xsd:date ;
-kg:nationality res:country/Sweden .
-
-res:player/Sergei_Zenjov a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "10"^^xsd:positiveInteger ;
-kg:birthDate "1989-04-20"^^xsd:date ;
-kg:nationality res:country/Estonia .
-
-res:player/Frank_Liivak a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "11"^^xsd:positiveInteger ;
-kg:birthDate "1996-11-27"^^xsd:date ;
-kg:nationality res:country/Ireland .
-
-res:player/Rauno_Sappinen a kg:Player ;
-kg:playsFor res:team/Estonia ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber "15"^^xsd:positiveInteger ;
-kg:birthDate "1996-01-23"^^xsd:date ;
-kg:nationality res:country/Poland .
+res:player/Matvei_Igonen a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Karl_Hein a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Karl_Andre_Vallner a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Marten_Kuusk a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Andreas_Vaher a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Michael_Lilander a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Markkus_Seppik a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Karol_Mets a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Ken_Kallaste a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Nikita_Baranov a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Taijo_Teniste a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Rasmus_Peetson a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Mattias_Kait a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Rocco_Robert_Shein a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Markus_Soomets a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Georgi_Tunjov a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Konstantin_Vassiljev a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Martin_Miller a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Bogdan_Vastchuk a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Vlasiy_Sinyavskiy a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Erik_Sorga a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Sergei_Zenjov a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Frank_Liivak a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Rauno_Sappinen a kg:Player
+; kg:playsFor res:team/Estonia
+; kg:primaryPosition kg:Forward "UNKNOWN" .

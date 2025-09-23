@@ -1,96 +1,72 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Solomon_Islands_National_Beach_Soccer_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Quần đảo Solomon" ;
-kg:hasCoach res:coach/Gideon_Omokirio ;
-kg:locatedIn res:country/Solomon_Islands ;
-kg:organizes res:competition/Oceania_Beach_Soccer_Championship ;
-kg:organizes res:competition/FIFA_Beach_Soccer_World_Cup ;
-kg:participantCount "5"^^xsd:positiveInteger .
-
-res:country/Solomon_Islands a kg:Country ;
-rdfs:label "Quần đảo Solomon" .
-
-res:competition/Oceania_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Đại Dương" ;
-kg:heldIn res:country/Solomon_Islands ;
-kg:participantCount "5"^^xsd:positiveInteger .
-
-res:competition/FIFA_Beach_Soccer_World_Cup a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
-kg:participantCount "5"^^xsd:positiveInteger .
-
-res:coach/Gideon_Omokirio a kg:Coach ;
-kg:manages res:team/Solomon_Islands_National_Beach_Soccer_Team .
-
-res:player/Abraham_Bird a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber "1"^^xsd:positiveInteger .
-
-res:player/Samson_Takayama a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "2"^^xsd:positiveInteger .
-
-res:player/Seni_Ngava a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "3"^^xsd:positiveInteger .
-
-res:player/Patrick_Marie a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "4"^^xsd:positiveInteger .
-
-res:player/Anthony_Talo a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "5"^^xsd:positiveInteger .
-
-res:player/Nicholas_Muri a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "6"^^xsd:positiveInteger .
-
-res:player/Robert_Laua a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "7"^^xsd:positiveInteger .
-
-res:player/McPhilip_Aisa a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "8"^^xsd:positiveInteger .
-
-res:player/Augustine_Anisi a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "9"^^xsd:positiveInteger .
-
-res:player/James_Naka a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "10"^^xsd:positiveInteger .
-
-res:player/Joe_Luwi a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "11"^^xsd:positiveInteger .
-
-res:player/Fred_Hale a kg:Player ;
-kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber "12"^^xsd:positiveInteger .
-
-res:position/Goalkeeper a kg:Goalkeeper ;
-rdfs:label "GK" .
-
-res:position/Defender a kg:Defender ;
-rdfs:label "DF" .
-
-res:position/Forward a kg:Forward ;
-rdfs:label "FW" .
+res:team/Solomon_Islands_National_Beach_Soccer_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Quần đảo Solomon"
+; kg:hasCoach res:coach/Gideon_Omokirio
+; kg:locatedIn res:country/Solomon_Islands
+; kg:organizes res:competition/Oceania_Beach_Soccer_Championship
+; kg:organizes res:competition/FIFA_Beach_Soccer_World_Cup
+; kg:participantCount "5"^^xsd:positiveInteger .
+res:country/Solomon_Islands a kg:Country
+; rdfs:label "Quần đảo Solomon" .
+res:competition/Oceania_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Đại Dương"
+; kg:heldIn res:country/Solomon_Islands
+; kg:participantCount "5"^^xsd:positiveInteger .
+res:competition/FIFA_Beach_Soccer_World_Cup a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới"
+; kg:participantCount "5"^^xsd:positiveInteger .
+res:coach/Gideon_Omokirio a kg:Coach
+; kg:manages res:team/Solomon_Islands_National_Beach_Soccer_Team .
+res:player/Abraham_Bird a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber "1"^^xsd:positiveInteger .
+res:player/Samson_Takayama a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "2"^^xsd:positiveInteger .
+res:player/Seni_Ngava a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "3"^^xsd:positiveInteger .
+res:player/Patrick_Marie a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "4"^^xsd:positiveInteger .
+res:player/Anthony_Talo a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "5"^^xsd:positiveInteger .
+res:player/Nicholas_Muri a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "6"^^xsd:positiveInteger .
+res:player/Robert_Laua a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "7"^^xsd:positiveInteger .
+res:player/McPhilip_Aisa a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "8"^^xsd:positiveInteger .
+res:player/Augustine_Anisi a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "9"^^xsd:positiveInteger .
+res:player/James_Naka a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "10"^^xsd:positiveInteger .
+res:player/Joe_Luwi a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "11"^^xsd:positiveInteger .
+res:player/Fred_Hale a kg:Player
+; kg:playsFor res:team/Solomon_Islands_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber "12"^^xsd:positiveInteger .
+res:position/Goalkeeper a kg:Goalkeeper
+; rdfs:label "GK" .
+res:position/Defender a kg:Defender
+; rdfs:label "DF" .
+res:position/Forward a kg:Forward
+; rdfs:label "FW" .

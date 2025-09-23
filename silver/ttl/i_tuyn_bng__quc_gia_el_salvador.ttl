@@ -1,14 +1,8 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/El%20Salvador a kg:Team ;
-kg:teamName "El Salvador" ;
-kg:hasCoach res:coach/Carlos%20de%20los%20Cobos" ;
-kg:hasCaptain res:player/Henry%20Hernandez" ;
-kg:homeStadium res:stadium/Cuscatlan" ;
+res:team/El%20Salvador a kg:Team
+; kg:teamName "El Salvador"
+; kg:hasCoach res:coach/Carlos%20de%20los%20Cobos" ;
+kg:hasCaptain res:player/Henry%20Hernandez"
+; kg:homeStadium res:stadium/Cuscatlan" ;
 kg:FIFATrigramme "SLV" ;
 kg:FIFARank "???" ;
 kg:FIFAMax 49 ;
@@ -19,283 +13,136 @@ kg:EloRank "???" ;
 kg:EloMax 40 ;
 kg:EloMaxDate "1943-12-01"^^xsd:date ;
 kg:EloMin 125 ;
-kg:EloMinDate "2007-04-01"^^xsd:date ;
-kg:firstGame res:match/First%20Game%20vs%20Guatemala" ;
-kg:largestWin res:match/Largest%20Win%20vs%20Anguilla" ;
-kg:largestLoss res:match/Largest%20Loss%20vs%20Hungary" ;
-kg:worldCupApps 2 ;
-kg:worldCupFirst "1970" ;
-kg:worldCupBest "Vòng%20bảng" ;
-kg:regionalCupApps 19 ;
-kg:regionalCupFirst "1963" ;
-kg:regionalCupBest "Á%20quân" .
-
-res:coach/Carlos%20de%20los%20Cobos a kg:Coach ;
-kg:manages res:team/El%20Salvador" .
-
-res:player/Henry%20Hernandez a kg:Player ;
-kg:isCaptain res:team/El%20Salvador" .
-
-res:stadium/Cuscatlan a kg:Stadium ;
-kg:homeStadium res:team/El%20Salvador" .
-
-res:match/First%20Game%20vs%20Guatemala a kg:Match ;
-kg:homeTeam res:team/El%20Salvador" ;
-kg:awayTeam res:team/Guatemala" ;
-kg:kickoffTime "1921-09-14T00:00:00Z"^^xsd:dateTime .
-
-res:match/Largest%20Win%20vs%20Anguilla a kg:Match ;
-kg:homeTeam res:team/El%20Salvador" ;
-kg:awayTeam res:team/Anguilla" ;
-kg:kickoffTime "2008-02-06T00:00:00Z"^^xsd:dateTime .
-
-res:match/Largest%20Loss%20vs%20Hungary a kg:Match ;
-kg:homeTeam res:team/Hungary" ;
-kg:awayTeam res:team/El%20Salvador" ;
-kg:kickoffTime "1982-06-15T00:00:00Z"^^xsd:dateTime .
-
-res:team/Guatemala a kg:Team ;
-kg:teamName "Guatemala" .
-
-res:team/Anguilla a kg:Team ;
-kg:teamName "Anguilla" .
-
-res:team/Hungary a kg:Team ;
-kg:teamName "Hungary" .
-
-res:competition/World%20Cup a kg:Competition ;
-kg:competitionName "Giải%20bóng%20đá%20vô%20địch%20thế%20giới" .
-
-res:season/1970 a kg:Season ;
-kg:seasonOf res:competition/World%20Cup" .
-
-res:season/1982 a kg:Season ;
-kg:seasonOf res:competition/World%20Cup" .
-
+kg:EloMinDate "2007-04-01"^^xsd:date .
+res:coach/Carlos%20de%20los%20Cobos a kg:Coach
+; kg:manages res:team/El%20Salvador" .
+res:player/Henry%20Hernandez a kg:Player
+; kg:isCaptain res:team/El%20Salvador" .
+res:stadium/Cuscatlan a kg:Stadium
+; kg:homeStadium res:team/El%20Salvador" .
+res:match/First%20Game%20vs%20Guatemala a kg:Match
+; kg:homeTeam res:team/El%20Salvador" ;
+kg:awayTeam res:team/Guatemala"
+; kg:kickoffTime "1921-09-14T00:00:00Z"^^xsd:dateTime .
+res:match/Largest%20Win%20vs%20Anguilla a kg:Match
+; kg:homeTeam res:team/El%20Salvador" ;
+kg:awayTeam res:team/Anguilla"
+; kg:kickoffTime "2008-02-06T00:00:00Z"^^xsd:dateTime .
+res:match/Largest%20Loss%20vs%20Hungary a kg:Match
+; kg:homeTeam res:team/Hungary" ;
+kg:awayTeam res:team/El%20Salvador"
+; kg:kickoffTime "1982-06-15T00:00:00Z"^^xsd:dateTime .
+res:team/Guatemala a kg:Team
+; kg:teamName "Guatemala" .
+res:team/Anguilla a kg:Team
+; kg:teamName "Anguilla" .
+res:team/Hungary a kg:Team
+; kg:teamName "Hungary" .
+res:competition/World%20Cup a kg:Competition
+; kg:competitionName "Giải%20bóng%20đá%20vô%20địch%20thế%20giới" .
+res:season/1970 a kg:Season
+; kg:seasonOf res:competition/World%20Cup" .
+res:season/1982 a kg:Season
+; kg:seasonOf res:competition/World%20Cup" .
 res:team/El%20Salvador kg:participatesIn res:season/1970" ;
 kg:participatesIn res:season/1982" .
-
-res:competition/Copa%20América%20Central a kg:Competition ;
-kg:competitionName "Cúp%20Vàng%20CONCACAF" .
-
-res:season/1963 a kg:Season ;
-kg:seasonOf res:competition/Copa%20América%20Central" .
-
-res:season/1981 a kg:Season ;
-kg:seasonOf res:competition/Copa%20América%20Central" .
-
+res:competition/Copa%20América%20Central a kg:Competition
+; kg:competitionName "Cúp%20Vàng%20CONCACAF" .
+res:season/1963 a kg:Season
+; kg:seasonOf res:competition/Copa%20América%20Central" .
+res:season/1981 a kg:Season
+; kg:seasonOf res:competition/Copa%20América%20Central" .
 res:team/El%20Salvador kg:participatesIn res:season/1963" ;
 kg:participatesIn res:season/1981" .
-
-res:team/El%20Salvador kg:regionalCupApps 19 .
-
-res:team/El%20Salvador kg:worldCupApps 2 .
-
-res:player/Alfredo%20Pacheco a kg:Player ;
-kg:mostCaps 86 .
-
-res:player/Raúl%20Díaz%20Arce a kg:Player ;
-kg:topScorer 39 .
-
-res:player/Mario%20González a kg:Player ;
-kg:shirtNumber 1 ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1997-05-20"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Tomás%20Romero a kg:Player ;
-kg:shirtNumber 18 ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "2000-12-19"^^xsd:date ;
-kg:nationality res:country/Canada" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Óscar%20Pleitez a kg:Player ;
-kg:shirtNumber 22 ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1993-02-06"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Bryan%20Tamacas a kg:Player ;
-kg:shirtNumber 21 ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1995-02-21"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Roberto%20Domínguez a kg:Player ;
-kg:shirtNumber 3 ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1997-05-09"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Eriq%20Zavaleta a kg:Player ;
-kg:shirtNumber 4 ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1992-08-02"^^xsd:date ;
-kg:nationality res:country/USA" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Alex%20Roldán a kg:Player ;
-kg:shirtNumber 15 ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1996-07-28"^^xsd:date ;
-kg:nationality res:country/USA" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Ronald%20Rodríguez a kg:Player ;
-kg:shirtNumber 5 ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1998-09-22"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/William%20Canales a kg:Player ;
-kg:shirtNumber 12 ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1995-02-18"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Erick%20Cabalceta a kg:Player ;
-kg:shirtNumber 2 ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1993-01-09"^^xsd:date ;
-kg:nationality res:country/Costa%20Rica" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Narciso%20Orellana a kg:Player ;
-kg:shirtNumber 6 ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1995-01-28"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Jairo%20Henríquez a kg:Player ;
-kg:shirtNumber 17 ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1993-08-31"^^xsd:date ;
-kg:nationality res:country/USA" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Bryan%20Landaverde a kg:Player ;
-kg:shirtNumber 8 ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1995-05-27"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Christian%20Martínez a kg:Player ;
-kg:shirtNumber 14 ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1994-08-12"^^xsd:date ;
-kg:nationality res:country/USA" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Melvin%20Cartagena a kg:Player ;
-kg:shirtNumber 23 ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1999-07-30"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Leonardo%20Menjívar a kg:Player ;
-kg:shirtNumber 13 ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "2001-10-24"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Joshua%20Pérez a kg:Player ;
-kg:shirtNumber 7 ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1998-01-21"^^xsd:date ;
-kg:nationality res:country/Italy" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Harold%20Osorio a kg:Player ;
-kg:shirtNumber 16 ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "2003-08-20"^^xsd:date ;
-kg:nationality res:country/USA" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Cristian%20Gil a kg:Player ;
-kg:shirtNumber 11 ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1996-11-05"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Kevin%20Reyes a kg:Player ;
-kg:shirtNumber 19 ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1999-08-28"^^xsd:date ;
-kg:nationality res:country/El%20Salvador" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Mayer%20Gil a kg:Player ;
-kg:shirtNumber 10 ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "2003-09-07"^^xsd:date ;
-kg:nationality res:country/Columbia" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:player/Brayan%20Gil a kg:Player ;
-kg:shirtNumber 9 ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "2001-06-28"^^xsd:date ;
-kg:nationality res:country/England" ;
-kg:playsFor res:team/El%20Salvador" .
-
-res:country/El%20Salvador a kg:Country ;
-kg:locatedIn res:region/Central%20America" .
-
-res:country/Guatemala a kg:Country ;
-kg:locatedIn res:region/Central%20America" .
-
-res:country/Hungary a kg:Country ;
-kg:locatedIn res:region/Europe" .
-
-res:country/Anguilla a kg:Country ;
-kg:locatedIn res:region/Caribbean" .
-
-res:country/Canada a kg:Country ;
-kg:locatedIn res:region/North%20America" .
-
-res:country/USA a kg:Country ;
-kg:locatedIn res:region/North%20America" .
-
-res:country/Costa%20Rica a kg:Country ;
-kg:locatedIn res:region/Central%20America" .
-
-res:country/Italy a kg:Country ;
-kg:locatedIn res:region/Europe" .
-
-res:country/England a kg:Country ;
-kg:locateding res:region/Europe" .
-
-res:country/Columbia a kg:Country ;
-kg:locatedIn res:region/South%20America" .
-
-res:region/Central%20America a kg:Region ;
-kg:locatedIn res:region/america" .
-
-res:region/North%20America a kg:Region ;
-kg:locatedIn res:region/america" .
-
-res:region/Caribbean a kg:Region ;
-kg:locatedIn res:region/america" .
-
-res:region/Europe a kg:Region ;
-kg:locatedIn res:region/europe" .
-
-res:region/South%20America a kg:Region ;
-kg:locatedIn res:region/americas" .
-
-res:region/america a kg:Region .
-
-res:region/europe a kg:Region .
+res:player/Alfredo%20Pacheco a kg:Player .
+res:player/Raúl%20Díaz%20Arce a kg:Player .
+res:player/Mario%20González a kg:Player
+; kg:shirtNumber 1
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Tomás%20Romero a kg:Player
+; kg:shirtNumber 18
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Óscar%20Pleitez a kg:Player
+; kg:shirtNumber 22
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Bryan%20Tamacas a kg:Player
+; kg:shirtNumber 21
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Roberto%20Domínguez a kg:Player
+; kg:shirtNumber 3
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Eriq%20Zavaleta a kg:Player
+; kg:shirtNumber 4
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Alex%20Roldán a kg:Player
+; kg:shirtNumber 15
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Ronald%20Rodríguez a kg:Player
+; kg:shirtNumber 5
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/William%20Canales a kg:Player
+; kg:shirtNumber 12
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Erick%20Cabalceta a kg:Player
+; kg:shirtNumber 2
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Narciso%20Orellana a kg:Player
+; kg:shirtNumber 6
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Jairo%20Henríquez a kg:Player
+; kg:shirtNumber 17
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Bryan%20Landaverde a kg:Player
+; kg:shirtNumber 8
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Christian%20Martínez a kg:Player
+; kg:shirtNumber 14
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Melvin%20Cartagena a kg:Player
+; kg:shirtNumber 23
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Leonardo%20Menjívar a kg:Player
+; kg:shirtNumber 13
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Joshua%20Pérez a kg:Player
+; kg:shirtNumber 7
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Harold%20Osorio a kg:Player
+; kg:shirtNumber 16
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Cristian%20Gil a kg:Player
+; kg:shirtNumber 11
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Kevin%20Reyes a kg:Player
+; kg:shirtNumber 19
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Mayer%20Gil a kg:Player
+; kg:shirtNumber 10
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Brayan%20Gil a kg:Player
+; kg:shirtNumber 9
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:country/El%20Salvador a kg:Country
+; kg:locatedIn res:region/Central%20America" .
+res:country/Guatemala a kg:Country
+; kg:locatedIn res:region/Central%20America" .
+res:country/Hungary a kg:Country
+; kg:locatedIn res:region/Europe" .
+res:country/Anguilla a kg:Country
+; kg:locatedIn res:region/Caribbean" .
+res:country/Canada a kg:Country
+; kg:locatedIn res:region/North%20America" .
+res:country/USA a kg:Country
+; kg:locatedIn res:region/North%20America" .
+res:country/Costa%20Rica a kg:Country
+; kg:locatedIn res:region/Central%20America" .
+res:country/Italy a kg:Country
+; kg:locatedIn res:region/Europe" .
+res:country/England a kg:Country .
+res:country/Columbia a kg:Country
+; kg:locatedIn res:region/South%20America" .
+res:region/Central%20America kg:locatedIn res:region/america" .
+res:region/North%20America kg:locatedIn res:region/america" .
+res:region/Caribbean kg:locatedIn res:region/america" .
+res:region/Europe kg:locatedIn res:region/europe" .
+res:region/South%20America kg:locatedIn res:region/americas" .

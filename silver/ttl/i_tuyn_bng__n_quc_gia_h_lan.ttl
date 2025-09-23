@@ -1,111 +1,65 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/NetherlandsNationalWomenFootballTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá nữ quốc gia Hà Lan" ;
-kg:teamAbbreviation "NED" ;
-kg:hasCoach res:coach/Andries_Jonker ;
-kg:manages res:coach/Andries_Jonker ;
-kg:participatesIn res:season/Euro_2009 ;
-kg:participatesIn res:season/Euro_2013 ;
-kg:participatesIn res:season/Euro_2022 ;
-kg:participatesIn res:season/WorldCup_2015 ;
-kg:participatesIn res:season/WorldCup_2019 ;
-kg:participatesIn res:season/WorldCup_2023 ;
-kg:participatesIn res:season/AlgarveCup_1995 ;
-kg:participatesIn res:season/AlgarveCup_1997 ;
-kg:participatesIn res:season/AlgarveCup_1998 ;
-kg:participatesIn res:season/AlgarveCup_2017 ;
-kg:participatesIn res:season/AlgarveCup_2018 ;
-kg:participatesIn res:season/AlgarveCup_2019 .
-
-res:coach/Andries_Jonker a kg:Coach ;
-kg:manages res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/Euro_2009 a kg:Season ;
-kg:seasonOf res:competition/EuropeanChampionship ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/Euro_2013 a kg:Season ;
-kg:seasonOf res:competition/EuropeanChampionship ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/Euro_2022 a kg:Season ;
-kg:seasonOf res:competition/EuropeanChampionship ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/WorldCup_2015 a kg:Season ;
-kg:seasonOf res:competition/FIFAWomenWorldCup ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/WorldCup_2019 a kg:Season ;
-kg:seasonOf res:competition/FIFAWomenWorldCup ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/WorldCup_2023 a kg:Season ;
-kg:seasonOf res:competition/FIFAWomenWorldCup ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/AlgarveCup_1995 a kg:Season ;
-kg:seasonOf res:competition/AlgarveCup ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/AlgarveCup_1997 a kg:Season ;
-kg:seasonOf res:competition/AlgarveCup ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/AlgarveCup_1998 a kg:Season ;
-kg:seasonOf res:competition/AlgarveCup ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/AlgarveCup_2017 a kg:Season ;
-kg:seasonOf res:competition/AlgarveCup ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/AlgarveCup_2018 a kg:Season ;
-kg:seasonOf res:competition/AlgarveCup ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:season/AlgarveCup_2019 a kg:Season ;
-kg:seasonOf res:competition/AlgarveCup ;
-kg:participatedBy res:team/NetherlandsNationalWomenFootballTeam .
-
-res:competition/EuropeanChampionship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Âu" .
-
-res:competition/FIFAWomenWorldCup a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
-
-res:competition/AlgarveCup a kg:Competition ;
-kg:competitionName "Cúp Algarve" .
-
-res:team/NetherlandsNationalWomenFootballTeam kg:participatesIn res:season/Euro_2009 ;
-kg:participatesIn res:season/Euro_2013 ;
-kg:participatesIn res:season/Euro_2022 ;
-kg:participatesIn res:season/WorldCup_2015 ;
-kg:participatesIn res:season/WorldCup_2019 ;
-kg:participatesIn res:season/WorldCup_2023 ;
-kg:participatesIn res:season/AlgarveCup_1995 ;
-kg:participatesIn res:season/AlgarveCup_1997 ;
-kg:participatesIn res:season/AlgarveCup_1998 ;
-kg:participatesIn res:season/AlgarveCup_2017 ;
-kg:participatesIn res:season/AlgarveCup_2018 ;
-kg:participatesIn res:season/AlgarveCup_2019 .
-
-res:team/NetherlandsNationalWomenFootballTeam kg:participatesIn res:season/Euro_2009 ;
-kg:resultInCompetition "Bán kết" ;
-kg:rankInCompetition "3rd" .
-
-res:team/NetherlandsNationalWomenFootballTeam kg:participatesIn res:season/Euro_2017 ;
-kg:resultInCompetition "Vô địch" ;
-kg:rankInCompetition "1st" .
-
-res:team/NetherlandsNationalWomenFootballTeam kg:participatesIn res:season/WorldCup_2019 ;
-kg:resultInCompetition "Á quân" ;
-kg:rankInCompetition "2nd" .
-
-res:team/NetherlandsNationalWomenFootballTeam kg:participatesIn res:season/AlgarveCup_2018 ;
-kg:resultInCompetition "Vô địch" ;
-kg:rankInCompetition "1st" .
+res:team/NetherlandsNationalWomenFootballTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá nữ quốc gia Hà Lan"
+; kg:teamAbbreviation "NED"
+; kg:hasCoach res:coach/Andries_Jonker
+; kg:manages res:coach/Andries_Jonker
+; kg:participatesIn res:season/Euro_2009
+; kg:participatesIn res:season/Euro_2013
+; kg:participatesIn res:season/Euro_2022
+; kg:participatesIn res:season/WorldCup_2015
+; kg:participatesIn res:season/WorldCup_2019
+; kg:participatesIn res:season/WorldCup_2023
+; kg:participatesIn res:season/AlgarveCup_1995
+; kg:participatesIn res:season/AlgarveCup_1997
+; kg:participatesIn res:season/AlgarveCup_1998
+; kg:participatesIn res:season/AlgarveCup_2017
+; kg:participatesIn res:season/AlgarveCup_2018
+; kg:participatesIn res:season/AlgarveCup_2019 .
+res:coach/Andries_Jonker a kg:Coach
+; kg:manages res:team/NetherlandsNationalWomenFootballTeam .
+res:season/Euro_2009 a kg:Season
+; kg:seasonOf res:competition/EuropeanChampionship .
+res:season/Euro_2013 a kg:Season
+; kg:seasonOf res:competition/EuropeanChampionship .
+res:season/Euro_2022 a kg:Season
+; kg:seasonOf res:competition/EuropeanChampionship .
+res:season/WorldCup_2015 a kg:Season
+; kg:seasonOf res:competition/FIFAWomenWorldCup .
+res:season/WorldCup_2019 a kg:Season
+; kg:seasonOf res:competition/FIFAWomenWorldCup .
+res:season/WorldCup_2023 a kg:Season
+; kg:seasonOf res:competition/FIFAWomenWorldCup .
+res:season/AlgarveCup_1995 a kg:Season
+; kg:seasonOf res:competition/AlgarveCup .
+res:season/AlgarveCup_1997 a kg:Season
+; kg:seasonOf res:competition/AlgarveCup .
+res:season/AlgarveCup_1998 a kg:Season
+; kg:seasonOf res:competition/AlgarveCup .
+res:season/AlgarveCup_2017 a kg:Season
+; kg:seasonOf res:competition/AlgarveCup .
+res:season/AlgarveCup_2018 a kg:Season
+; kg:seasonOf res:competition/AlgarveCup .
+res:season/AlgarveCup_2019 a kg:Season
+; kg:seasonOf res:competition/AlgarveCup .
+res:competition/EuropeanChampionship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Âu" .
+res:competition/FIFAWomenWorldCup a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
+res:competition/AlgarveCup a kg:Competition
+; kg:competitionName "Cúp Algarve" .
+res:team/NetherlandsNationalWomenFootballTeam kg:participatesIn res:season/Euro_2009
+; kg:participatesIn res:season/Euro_2013
+; kg:participatesIn res:season/Euro_2022
+; kg:participatesIn res:season/WorldCup_2015
+; kg:participatesIn res:season/WorldCup_2019
+; kg:participatesIn res:season/WorldCup_2023
+; kg:participatesIn res:season/AlgarveCup_1995
+; kg:participatesIn res:season/AlgarveCup_1997
+; kg:participatesIn res:season/AlgarveCup_1998
+; kg:participatesIn res:season/AlgarveCup_2017
+; kg:participatesIn res:season/AlgarveCup_2018
+; kg:participatesIn res:season/AlgarveCup_2019 .
+res:team/NetherlandsNationalWomenFootballTeam kg:participatesIn res:season/Euro_2009 .
+res:team/NetherlandsNationalWomenFootballTeam kg:participatesIn res:season/Euro_2017 .
+res:team/NetherlandsNationalWomenFootballTeam kg:participatesIn res:season/WorldCup_2019 .
+res:team/NetherlandsNationalWomenFootballTeam kg:participatesIn res:season/AlgarveCup_2018 .

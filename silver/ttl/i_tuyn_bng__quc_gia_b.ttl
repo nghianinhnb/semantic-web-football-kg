@@ -1,307 +1,199 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Belgium a kg:Team ;
-kg:teamName "Bỉ" ;
-kg:hasCoach res:coach/Domenico_Tedesco ;
-kg:hasCaptain res:player/Kevin_de_Bruyne ;
-kg:teamAbbreviation "BEL" ;
-kg:homeStadium res:stadium/King_Baudouin_Stadium ;
-kg:isPartOf kg:Confederation/UEFA .
-
-res:coach/Domenico_Tedesco a kg:Coach ;
-kg:manages res:team/Belgium .
-
-res:player/Kevin_de_Bruyne a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Midfielder .
-
-res:stadium/King_Baudouin_Stadium a kg:Stadium ;
-kg:capacity 50000 ;
-kg:isHomeOf res:team/Belgium .
-
-res:confederation/UEFA a kg:Confederation ;
-kg:abbreviation "UEFA" ;
-kg:name "Liên đoàn Bóng đá Châu Âu" .
-
-res:organization/FIFA a kg:Organization ;
-kg:abbreviation "FIFA" ;
-kg:name "Fédération Internationale de Football Association" .
-
-res:team/Belgium kg:participatesIn res:season/2024_Euro_Qualification ;
-kg:participatesIn res:season/2026_World_Cup_Qualification .
-
-res:season/2024_Euro_Qualification a kg:Season ;
-kg:seasonOf res:competition/Euro_2024 .
-
-res:season/2026_World_Cup_Qualification a kg:Season ;
-kg:seasonOf res:competition/World_Cup_2026 .
-
-res:competition/Euro_2024 a kg:Competition ;
-kg:competitionName "UEFA European Championship 2024" .
-
-res:competition/World_Cup_2026 a kg:Competition ;
-kg:competitionName "FIFA World Cup 2026" .
-
-res:team/Belgium kg:participatesIn res:season/2024_Nations_League ;
-kg:participatesIn res:season/2024_Friendly_Matches .
-
-res:season/2024_Nations_League a kg:Season ;
-kg:seasonOf res:competition/Nations_League_2024_25 .
-
-res:season/2024_Friendly_Matches a kg:Season ;
-kg:seasonOf res:competition/Friendly_Matches .
-
-res:competition/Nations_League_2024_25 a kg:Competition ;
-kg:competitionName "UEFA Nations League 2024–25" .
-
-res:competition/Friendly_Matches a kg:Competition ;
-kg:competitionName "Friendly Matches" .
-
-res:match/Belgium_vs_Ireland_2024 a kg:Match ;
-kg:homeTeam res:team/Belgium ;
-kg:awayTeam res:team/Ireland ;
-kg:venue res:stadium/Aviva_Stadium ;
-kg:kickoffTime "2024-03-23T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Friendly_Matches ;
-kg:inSeason res:season/2024_Friendly_Matches ;
-kg:result "D" ;
-kg:referee res:referee/Rohit_Saggi .
-
-res:match/Belgium_vs_England_2024 a kg:Match ;
-kg:homeTeam res:team/Belgium ;
-kg:awayTeam res:team/England ;
-kg:venue res:stadium/Wembley_Stadium ;
-kg:kickoffTime "2024-03-26T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Friendly_Matches ;
-kg:inSeason res:season/2024_Friendly_Matches ;
-kg:result "D" ;
-kg:referee res:referee/Sebastian_Gishamer .
-
-res:match/Belgium_vs_Montenegro_2024 a kg:Match ;
-kg:homeTeam res:team/Belgium ;
-kg:awayTeam res:team/Montenegro ;
-kg:venue res:stadium/King_Baudouin_Stadium ;
-kg:kickoffTime "2024-06-05T20:30:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Friendly_Matches ;
-kg:inSeason res:season/2024_Friendly_Matches ;
-kg:result "W" ;
-kg:referee res:referee/Kristoffer_Karlsson .
-
-res:match/Belgium_vs_Luxembourg_2024 a kg:Match ;
-kg:homeTeam res:team/Belgium ;
-kg:awayTeam res:team/Luxembourg ;
-kg:venue res:stadium/King_Baudouin_Stadium ;
-kg:kickoffTime "2024-06-08T20:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Friendly_Matches ;
-kg:inSeason res:season/2024_Friendly_Matches ;
-kg:result "W" ;
-kg:referee res:referee/Pawel_Raczkowski .
-
-res:match/Belgium_vs_Slovakia_2024 a kg:Match ;
-kg:homeTeam res:team/Slovakia ;
-kg:awayTeam res:team/Belgium ;
-kg:venue res:stadium/Waldstadion ;
-kg:kickoffTime "2024-06-17T18:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro_2024 ;
-kg:inSeason res:season/2024_Euro_Qualification ;
-kg:result "L" ;
-kg:referee res:referee/Halil_Umut_Meler .
-
-res:match/Belgium_vs_Romania_2024 a kg:Match ;
-kg:homeTeam res:team/Belgium ;
-kg:awayTeam res:team/Romania ;
-kg:venue res:stadium/RheinEnergieStadion ;
-kg:kickoffTime "2024-06-22T21:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro_2024 ;
-kg:inSeason res:season/2024_Euro_Qualification ;
-kg:result "W" ;
-kg:referee res:referee/Szymon_Marciniak .
-
-res:match/Belgium_vs_Ukraine_2024 a kg:Match ;
-kg:homeTeam res:team/Ukraine ;
-kg:awayTeam res:team/Belgium ;
-kg:venue res:stadium/MHPArena ;
-kg:kickoffTime "2024-06-26T18:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro_2024 ;
-kg:inSeason res:season/2024_Euro_Qualification ;
-kg:result "D" ;
-kg:referee res:referee/Anthony_Taylor .
-
-res:match/Belgium_vs_France_2024 a kg:Match ;
-kg:homeTeam res:team/France ;
-kg:awayTeam res:team/Belgium ;
-kg:venue res:stadium/Merkur_Spiel_Arena ;
-kg:kickoffTime "2024-07-01T18:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro_2024 ;
-kg:inSeason res:season/2024_Euro_Qualification ;
-kg:result "L" ;
-kg:referee res:referee/Glenn_Nyberg .
-
-res:match/Belgium_vs_Israel_2024 a kg:Match ;
-kg:homeTeam res:team/Belgium ;
-kg:awayTeam res:team/Israel ;
-kg:venue res:stadium/Nagyerdei_Stadium ;
-kg:kickoffTime "2024-09-06T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Nations_League_2024_25 ;
-kg:inSeason res:season/2024_Nations_League ;
-kg:result "W" ;
-kg:referee res:referee/Michael_Oliver .
-
-res:match/Belgium_vs_France_2024_2 a kg:Match ;
-kg:homeTeam res:team/France ;
-kg:awayTeam res:team/Belgium ;
-kg:venue res:stadium/Parc_Olympique_Lyonnais ;
-kg:kickoffTime "2024-09-09T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Nations_League_2024_25 ;
-kg:inSeason res:season/2024_Nations_League ;
-kg:result "L" ;
-kg:referee res:referee/Tobias_Stieler .
-
-res:match/Belgium_vs_Italy_2024 a kg:Match ;
-kg:homeTeam res:team/Belgium ;
-kg:awayTeam res:team/Italy ;
-kg:venue res:stadium/Stadio_Olimpico ;
-kg:kickoffTime "2024-10-10T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Nations_League_2024_25 ;
-kg:inSeason res:season/2024_Nations_League ;
-kg:result "D" ;
-kg:referee res:referee/Espen_Eskas .
-
-res:match/Belgium_vs_France_2024_3 a kg:Match ;
-kg:homeTeam res:team/Belgium ;
-kg:awayTeam res:team/France ;
-kg:venue res:stadium/King_Baudouin_Stadium ;
-kg:kickoffTime "2024-10-14T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Nations_League_2024_25 ;
-kg:inSeason res:season/2024_Nations_League ;
-kg:result "L" ;
-kg:referee res:referee/Irfan_Peljto .
-
-res:match/Belgium_vs_Italy_2024_2 a kg:Match ;
-kg:homeTeam res:team/Belgium ;
-kg:awayTeam res:team/Italy ;
-kg:venue res:stadium/King_Baudouin_Stadium ;
-kg:kickoffTime "2024-11-14T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Nations_League_2024_25 ;
-kg:inSeason res:season/2024_Nations_League ;
-kg:result "L" ;
-kg:referee res:referee/Radu_Petrescu .
-
-res:match/Israel_vs_Belgium_2024 a kg:Match ;
-kg:homeTeam res:team/Israel ;
-kg:awayTeam res:team/Belgium ;
-kg:venue res:stadium/Bozsik_Arena ;
-kg:kickoffTime "2024-11-17T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Nations_League_2024_25 ;
-kg:inSeason res:season/2024_Nations_League ;
-kg:result "L" ;
-kg:referee res:referee/Sebastian_Gishamer .
-
-res:player/Jan_Vertonghen a kg:Player, kg:Defender ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1987-04-24"^^xsd:date ;
-kg:birthPlace res:city/Brussels ;
-kg:nationality res:country/Belgium ;
-kg:shirtNumber 21 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Romelu_Lukaku a kg:Player, kg:Forward ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1993-05-13"^^xsd:date ;
-kg:birthPlace res:city/Brussels ;
-kg:nationality res:country/Belgium ;
-kg:shirtNumber 9 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Kevin_De_Bruyne a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1991-06-28"^^xsd:date ;
-kg:birthPlace res:city/Brussels ;
-kg:nationality res:country/Belgium ;
-kg:shirtNumber 7 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Thibaut_Courtois a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1992-05-11"^^xsd:date ;
-kg:birthPlace res:city/Brussels ;
-kg:nationality res:country/Belgium ;
-kg:shirtNumber 1 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Eden_Hazard a kg:Player, kg:Forward ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1988-01-07"^^xsd:date ;
-kg:birthPlace res:city/La_Haye ;
-kg:nationality res:country/Belgium ;
-kg:shirtNumber 11 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Jan_Ceulemans a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1951-04-16"^^xsd:date ;
-kg:birthPlace res:city/Brussels ;
-kg:nationality res:country/Belgium ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Mark_Verstegen a kg:Player, kg:Defender ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1970-08-15"^^xsd:date ;
-kg:birthPlace res:city/Brussels ;
-kg:nationality res:country/Belgium ;
-kg:shirtNumber 3 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Paul_Van_Himst a kg:Player, kg:Forward ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1938-10-22"^^xsd:date ;
-kg:birthPlace res:city/Brussels ;
-kg:nationality res:country/Belgium ;
-kg:shirtNumber 9 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Jan_Verstegen a kg:Player, kg:Defender ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1975-06-02"^^xsd:date ;
-kg:birthPlace res:city/Brussels ;
-kg:nationality res:country/Belgium ;
-kg:shirtNumber 17 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Mark_Van_der_Veer a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1985-08-23"^^xsd:date ;
-kg:birthPlace res:city/Brussels ;
-kg:nationality res:country/Belgium ;
-kg:shirtNumber 14 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Mark_Van_der_Veer a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1985-08-23"^^xsd:date ;
-kg:birthPlace res:city/Brussels ;
-kg:nationality res:country/Belgium ;
-kg:shirtNumber 14 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Mark_Van_der_Veer a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Belgium ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1985-08-23"^^xsd:date ;
-kg:birthPlace res:city/Brussels ;
+res:team/Belgium a kg:Team
+; kg:teamName "Bỉ"
+; kg:hasCoach res:coach/Domenico_Tedesco
+; kg:hasCaptain res:player/Kevin_de_Bruyne
+; kg:teamAbbreviation "BEL"
+; kg:homeStadium res:stadium/King_Baudouin_Stadium .
+res:coach/Domenico_Tedesco a kg:Coach
+; kg:manages res:team/Belgium .
+res:player/Kevin_de_Bruyne a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Midfielder .
+res:stadium/King_Baudouin_Stadium a kg:Stadium
+; kg:capacity 50000
+; kg:isHomeOf res:team/Belgium .
+res:confederation/UEFA kg:name "Liên đoàn Bóng đá Châu Âu" .
+res:organization/FIFA a kg:Organization
+; kg:name "Fédération Internationale de Football Association" .
+res:team/Belgium kg:participatesIn res:season/2024_Euro_Qualification
+; kg:participatesIn res:season/2026_World_Cup_Qualification .
+res:season/2024_Euro_Qualification a kg:Season
+; kg:seasonOf res:competition/Euro_2024 .
+res:season/2026_World_Cup_Qualification a kg:Season
+; kg:seasonOf res:competition/World_Cup_2026 .
+res:competition/Euro_2024 a kg:Competition
+; kg:competitionName "UEFA European Championship 2024" .
+res:competition/World_Cup_2026 a kg:Competition
+; kg:competitionName "FIFA World Cup 2026" .
+res:team/Belgium kg:participatesIn res:season/2024_Nations_League
+; kg:participatesIn res:season/2024_Friendly_Matches .
+res:season/2024_Nations_League a kg:Season
+; kg:seasonOf res:competition/Nations_League_2024_25 .
+res:season/2024_Friendly_Matches a kg:Season
+; kg:seasonOf res:competition/Friendly_Matches .
+res:competition/Nations_League_2024_25 a kg:Competition
+; kg:competitionName "UEFA Nations League 2024–25" .
+res:competition/Friendly_Matches a kg:Competition
+; kg:competitionName "Friendly Matches" .
+res:match/Belgium_vs_Ireland_2024 a kg:Match
+; kg:homeTeam res:team/Belgium
+; kg:awayTeam res:team/Ireland
+; kg:venue res:stadium/Aviva_Stadium
+; kg:kickoffTime "2024-03-23T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Friendly_Matches
+; kg:inSeason res:season/2024_Friendly_Matches
+; kg:result "D"
+; kg:referee res:referee/Rohit_Saggi .
+res:match/Belgium_vs_England_2024 a kg:Match
+; kg:homeTeam res:team/Belgium
+; kg:awayTeam res:team/England
+; kg:venue res:stadium/Wembley_Stadium
+; kg:kickoffTime "2024-03-26T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Friendly_Matches
+; kg:inSeason res:season/2024_Friendly_Matches
+; kg:result "D"
+; kg:referee res:referee/Sebastian_Gishamer .
+res:match/Belgium_vs_Montenegro_2024 a kg:Match
+; kg:homeTeam res:team/Belgium
+; kg:awayTeam res:team/Montenegro
+; kg:venue res:stadium/King_Baudouin_Stadium
+; kg:kickoffTime "2024-06-05T20:30:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Friendly_Matches
+; kg:inSeason res:season/2024_Friendly_Matches
+; kg:result "W"
+; kg:referee res:referee/Kristoffer_Karlsson .
+res:match/Belgium_vs_Luxembourg_2024 a kg:Match
+; kg:homeTeam res:team/Belgium
+; kg:awayTeam res:team/Luxembourg
+; kg:venue res:stadium/King_Baudouin_Stadium
+; kg:kickoffTime "2024-06-08T20:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Friendly_Matches
+; kg:inSeason res:season/2024_Friendly_Matches
+; kg:result "W"
+; kg:referee res:referee/Pawel_Raczkowski .
+res:match/Belgium_vs_Slovakia_2024 a kg:Match
+; kg:homeTeam res:team/Slovakia
+; kg:awayTeam res:team/Belgium
+; kg:venue res:stadium/Waldstadion
+; kg:kickoffTime "2024-06-17T18:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Euro_2024
+; kg:inSeason res:season/2024_Euro_Qualification
+; kg:result "L"
+; kg:referee res:referee/Halil_Umut_Meler .
+res:match/Belgium_vs_Romania_2024 a kg:Match
+; kg:homeTeam res:team/Belgium
+; kg:awayTeam res:team/Romania
+; kg:venue res:stadium/RheinEnergieStadion
+; kg:kickoffTime "2024-06-22T21:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Euro_2024
+; kg:inSeason res:season/2024_Euro_Qualification
+; kg:result "W"
+; kg:referee res:referee/Szymon_Marciniak .
+res:match/Belgium_vs_Ukraine_2024 a kg:Match
+; kg:homeTeam res:team/Ukraine
+; kg:awayTeam res:team/Belgium
+; kg:venue res:stadium/MHPArena
+; kg:kickoffTime "2024-06-26T18:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Euro_2024
+; kg:inSeason res:season/2024_Euro_Qualification
+; kg:result "D"
+; kg:referee res:referee/Anthony_Taylor .
+res:match/Belgium_vs_France_2024 a kg:Match
+; kg:homeTeam res:team/France
+; kg:awayTeam res:team/Belgium
+; kg:venue res:stadium/Merkur_Spiel_Arena
+; kg:kickoffTime "2024-07-01T18:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Euro_2024
+; kg:inSeason res:season/2024_Euro_Qualification
+; kg:result "L"
+; kg:referee res:referee/Glenn_Nyberg .
+res:match/Belgium_vs_Israel_2024 a kg:Match
+; kg:homeTeam res:team/Belgium
+; kg:awayTeam res:team/Israel
+; kg:venue res:stadium/Nagyerdei_Stadium
+; kg:kickoffTime "2024-09-06T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Nations_League_2024_25
+; kg:inSeason res:season/2024_Nations_League
+; kg:result "W"
+; kg:referee res:referee/Michael_Oliver .
+res:match/Belgium_vs_France_2024_2 a kg:Match
+; kg:homeTeam res:team/France
+; kg:awayTeam res:team/Belgium
+; kg:venue res:stadium/Parc_Olympique_Lyonnais
+; kg:kickoffTime "2024-09-09T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Nations_League_2024_25
+; kg:inSeason res:season/2024_Nations_League
+; kg:result "L"
+; kg:referee res:referee/Tobias_Stieler .
+res:match/Belgium_vs_Italy_2024 a kg:Match
+; kg:homeTeam res:team/Belgium
+; kg:awayTeam res:team/Italy
+; kg:venue res:stadium/Stadio_Olimpico
+; kg:kickoffTime "2024-10-10T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Nations_League_2024_25
+; kg:inSeason res:season/2024_Nations_League
+; kg:result "D"
+; kg:referee res:referee/Espen_Eskas .
+res:match/Belgium_vs_France_2024_3 a kg:Match
+; kg:homeTeam res:team/Belgium
+; kg:awayTeam res:team/France
+; kg:venue res:stadium/King_Baudouin_Stadium
+; kg:kickoffTime "2024-10-14T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Nations_League_2024_25
+; kg:inSeason res:season/2024_Nations_League
+; kg:result "L"
+; kg:referee res:referee/Irfan_Peljto .
+res:match/Belgium_vs_Italy_2024_2 a kg:Match
+; kg:homeTeam res:team/Belgium
+; kg:awayTeam res:team/Italy
+; kg:venue res:stadium/King_Baudouin_Stadium
+; kg:kickoffTime "2024-11-14T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Nations_League_2024_25
+; kg:inSeason res:season/2024_Nations_League
+; kg:result "L"
+; kg:referee res:referee/Radu_Petrescu .
+res:match/Israel_vs_Belgium_2024 a kg:Match
+; kg:homeTeam res:team/Israel
+; kg:awayTeam res:team/Belgium
+; kg:venue res:stadium/Bozsik_Arena
+; kg:kickoffTime "2024-11-17T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Nations_League_2024_25
+; kg:inSeason res:season/2024_Nations_League
+; kg:result "L"
+; kg:referee res:referee/Sebastian_Gishamer .
+res:player/Jan_Vertonghen a kg:Player , kg:Defender
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Romelu_Lukaku a kg:Player , kg:Forward
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Kevin_De_Bruyne a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Thibaut_Courtois a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Eden_Hazard a kg:Player , kg:Forward
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jan_Ceulemans a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Mark_Verstegen a kg:Player , kg:Defender
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Paul_Van_Himst a kg:Player , kg:Forward
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jan_Verstegen a kg:Player , kg:Defender
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Mark_Van_der_Veer a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Mark_Van_der_Veer a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Mark_Van_der_Veer a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Belgium
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .

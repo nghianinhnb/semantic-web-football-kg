@@ -1,182 +1,143 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/SwedenNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Thụy Điển" ;
-kg:teamAbbreviation "SWE" ;
-kg:hasCoach res:coach/SergioDeSouza ;
-kg:locatedIn res:country/Sweden .
-
-res:country/Sweden a kg:Country ;
-rdfs:label "Thụy Điển" .
-
-res:coach/SergioDeSouza a kg:Coach ;
-kg:manages res:team/SwedenNationalBeachSoccerTeam ;
-rdfs:label "Sergio de Souza" .
-
-res:player/MalteHammarskog a kg:Player ;
-kg:playsFor res:team/SwedenNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:nationality res:country/Sweden ;
-rdfs:label "Malte Hammarskog" .
-
-res:player/FabioBrasse a kg:Player ;
-kg:playsFor res:team/SwedenNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Midfielder ;
-kg:nationality res:country/Sweden ;
-rdfs:label "Fabio Brasse" .
-
-res:player/AlexandreDeSantana a kg:Player ;
-kg:playsFor res:team/SwedenNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Forward ;
-kg:nationality res:country/Sweden ;
-rdfs:label "Alexandre De Santana" .
-
-res:player/HusseinSaadMahdi a kg:Player ;
-kg:playsFor res:team/SwedenNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Defender ;
-kg:nationality res:country/Sweden ;
-rdfs:label "Hussein Saad Mahdi" .
-
-res:player/PavelShirzadAzziz a kg:Player ;
-kg:playsFor res:team/SwedenNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Midfielder ;
-kg:nationality res:country/Sweden ;
-rdfs:label "Pavel Shirzad Azziz" .
-
-res:player/NoorZadran a kg:Player ;
-kg:playsFor res:team/SwedenNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Midfielder ;
-kg:nationality res:country/Sweden ;
-rdfs:label "Noor Zadran" .
-
-res:player/SalahUdDinMalik a kg:Player ;
-kg:playsFor res:team/SwedenNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Forward ;
-kg:nationality res:country/Sweden ;
-rdfs:label "Salah-ud-din Malik" .
-
-res:player/SaikouManneh a kg:Player ;
-kg:playsFor res:team/SwedenNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Forward ;
-kg:nationality res:country/Sweden ;
-rdfs:label "Saikou Manneh" .
-
-res:player/AhmedTamin a kg:Player ;
-kg:playsFor res:team/SwedenNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Defender ;
-kg:nationality res:country/Sweden ;
-rdfs:label "Ahmed Tamin" .
-
-res:player/ErikGustafsson a kg:Player ;
-kg:playsFor res:team/SwedenNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:nationality res:country/Sweden ;
-rdfs:label "Erik Gustafsson" .
-
-res:position/Goalkeeper a kg:Goalkeeper ;
-rdfs:label "Goalkeeper" .
-
-res:position/Midfielder a kg:Midfielder ;
-rdfs:label "Midfielder" .
-
-res:position/Forward a kg:Forward ;
-rdfs:label "Forward" .
-
-res:position/Defender a kg:Defender ;
-rdfs:label "Defender" .
-
-res:competition/EuropeanBeachSoccerLeague a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" ;
-rdfs:label "European Beach Soccer League" .
-
-res:match/SWEvsUKR2004 a kg:Match ;
-kg:homeTeam res:team/SwedenNationalBeachSoccerTeam ;
-kg:awayTeam res:team/UkraineNationalBeachSoccerTeam ;
-kg:kickoffTime "2004-08-06"^^xsd:date ;
-kg:inCompetition res:competition/EuropeanBeachSoccerLeague ;
-kg:venue res:stadium/PalmaDeMajorca ;
-kg:result "L" ;
-rdfs:label "Swedish vs Ukrainian match on August 6, 2004" .
-
-res:stadium/PalmaDeMajorca a kg:Stadium ;
-kg:locatedIn res:city/PalmaDeMajorca ;
-rdfs:label "Palma de Majorca" .
-
-res:city/PalmaDeMajorca a kg:City ;
-kg:locatedIn res:country/Spain ;
-rdfs:label "Palma de Majorca" .
-
-res:country/Spain a kg:Country ;
-rdfs:label "Tây Ban Nha" .
-
-res:match/SWEvsGRE2004 a kg:Match ;
-kg:homeTeam res:team/SwedenNationalBeachSoccerTeam ;
-kg:awayTeam res:team/GreeceNationalBeachSoccerTeam ;
-kg:kickoffTime "2004-08-07"^^xsd:date ;
-kg:inCompetition res:competition/EuropeanBeachSoccerLeague ;
-kg:venue res:stadium/PalmaDeMajorca ;
-kg:result "L" ;
-rdfs:label "Swedish vs Greek match on August 7, 2004" .
-
-res:match/SWEvsNED2013 a kg:Match ;
-kg:homeTeam res:team/SwedenNationalBeachSoccerTeam ;
-kg:awayTeam res:team/NetherlandsNationalBeachSoccerTeam ;
-kg:kickoffTime "2013-07-12"^^xsd:date ;
-kg:inCompetition res:competition/BSWWTour ;
-kg:venue res:stadium/Malmoe ;
-kg:result "L" ;
-rdfs:label "Swedish vs Dutch match on July 12, 2013" .
-
-res:stadium/Malmoe a kg:Stadium ;
-kg:locatedIn res:city/Malmoe ;
-rdfs:label "Malmö" .
-
-res:city/Malmoe a kg:City ;
-kg:locatedIn res:country/Sweden ;
-rdfs:label "Malmö" .
-
-res:match/SWEvsDEN2013 a kg:Match ;
-kg:homeTeam res:team/SwedenNationalBeachSoccerTeam ;
-kg:awayTeam res:team/DenmarkNationalBeachSoccerTeam ;
-kg:kickoffTime "2013-07-13"^^xsd:date ;
-kg:inCompetition res:competition/BSWWTour ;
-kg:venue res:stadium/Malmoe ;
-kg:result "L" ;
-rdfs:label "Swedish vs Danish match on July 13, 2013" .
-
-res:match/SWEvsENG2013 a kg:Match ;
-kg:homeTeam res:team/SwedenNationalBeachSoccerTeam ;
-kg:awayTeam res:team/EnglandNationalBeachSoccerTeam ;
-kg:kickoffTime "2013-07-14"^^xsd:date ;
-kg:inCompetition res:competition/BSWWTour ;
-kg:venue res:stadium/Malmoe ;
-kg:result "L" ;
-rdfs:label "Swedish vs English match on July 14, 2013" .
-
-res:competition/BSWWTour a kg:Competition ;
-kg:competitionName "BSWW Tour" ;
-rdfs:label "BSWW Tour" .
-
-res:team/UkraineNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Ukraine" ;
-kg:teamAbbreviation "UKR" .
-
-res:team/GreeceNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Hy Lạp" ;
-kg:teamAbbreviation "GRE" .
-
-res:team/NetherlandsNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Hà Lan" ;
-kg:teamAbbreviation "NED" .
-
-res:team/DenmarkNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Đan Mạch" ;
-kg:teamAbbreviation "DEN" .
-
-res:team/EnglandNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Anh" ;
-kg:teamAbbreviation "ENG" .
+res:team/SwedenNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Thụy Điển"
+; kg:teamAbbreviation "SWE"
+; kg:hasCoach res:coach/SergioDeSouza
+; kg:locatedIn res:country/Sweden .
+res:country/Sweden a kg:Country
+; rdfs:label "Thụy Điển" .
+res:coach/SergioDeSouza a kg:Coach
+; kg:manages res:team/SwedenNationalBeachSoccerTeam
+; rdfs:label "Sergio de Souza" .
+res:player/MalteHammarskog a kg:Player
+; kg:playsFor res:team/SwedenNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Goalkeeper
+; kg:nationality res:country/Sweden
+; rdfs:label "Malte Hammarskog" .
+res:player/FabioBrasse a kg:Player
+; kg:playsFor res:team/SwedenNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Midfielder
+; kg:nationality res:country/Sweden
+; rdfs:label "Fabio Brasse" .
+res:player/AlexandreDeSantana a kg:Player
+; kg:playsFor res:team/SwedenNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Forward
+; kg:nationality res:country/Sweden
+; rdfs:label "Alexandre De Santana" .
+res:player/HusseinSaadMahdi a kg:Player
+; kg:playsFor res:team/SwedenNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Defender
+; kg:nationality res:country/Sweden
+; rdfs:label "Hussein Saad Mahdi" .
+res:player/PavelShirzadAzziz a kg:Player
+; kg:playsFor res:team/SwedenNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Midfielder
+; kg:nationality res:country/Sweden
+; rdfs:label "Pavel Shirzad Azziz" .
+res:player/NoorZadran a kg:Player
+; kg:playsFor res:team/SwedenNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Midfielder
+; kg:nationality res:country/Sweden
+; rdfs:label "Noor Zadran" .
+res:player/SalahUdDinMalik a kg:Player
+; kg:playsFor res:team/SwedenNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Forward
+; kg:nationality res:country/Sweden
+; rdfs:label "Salah-ud-din Malik" .
+res:player/SaikouManneh a kg:Player
+; kg:playsFor res:team/SwedenNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Forward
+; kg:nationality res:country/Sweden
+; rdfs:label "Saikou Manneh" .
+res:player/AhmedTamin a kg:Player
+; kg:playsFor res:team/SwedenNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Defender
+; kg:nationality res:country/Sweden
+; rdfs:label "Ahmed Tamin" .
+res:player/ErikGustafsson a kg:Player
+; kg:playsFor res:team/SwedenNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Goalkeeper
+; kg:nationality res:country/Sweden
+; rdfs:label "Erik Gustafsson" .
+res:position/Goalkeeper a kg:Goalkeeper
+; rdfs:label "Goalkeeper" .
+res:position/Midfielder a kg:Midfielder
+; rdfs:label "Midfielder" .
+res:position/Forward a kg:Forward
+; rdfs:label "Forward" .
+res:position/Defender a kg:Defender
+; rdfs:label "Defender" .
+res:competition/EuropeanBeachSoccerLeague a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu"
+; rdfs:label "European Beach Soccer League" .
+res:match/SWEvsUKR2004 a kg:Match
+; kg:homeTeam res:team/SwedenNationalBeachSoccerTeam
+; kg:awayTeam res:team/UkraineNationalBeachSoccerTeam
+; kg:kickoffTime "2004-08-06"^^xsd:date
+; kg:inCompetition res:competition/EuropeanBeachSoccerLeague
+; kg:venue res:stadium/PalmaDeMajorca
+; kg:result "L"
+; rdfs:label "Swedish vs Ukrainian match on August 6, 2004" .
+res:stadium/PalmaDeMajorca a kg:Stadium
+; kg:locatedIn res:city/PalmaDeMajorca
+; rdfs:label "Palma de Majorca" .
+res:city/PalmaDeMajorca a kg:City
+; kg:locatedIn res:country/Spain
+; rdfs:label "Palma de Majorca" .
+res:country/Spain a kg:Country
+; rdfs:label "Tây Ban Nha" .
+res:match/SWEvsGRE2004 a kg:Match
+; kg:homeTeam res:team/SwedenNationalBeachSoccerTeam
+; kg:awayTeam res:team/GreeceNationalBeachSoccerTeam
+; kg:kickoffTime "2004-08-07"^^xsd:date
+; kg:inCompetition res:competition/EuropeanBeachSoccerLeague
+; kg:venue res:stadium/PalmaDeMajorca
+; kg:result "L"
+; rdfs:label "Swedish vs Greek match on August 7, 2004" .
+res:match/SWEvsNED2013 a kg:Match
+; kg:homeTeam res:team/SwedenNationalBeachSoccerTeam
+; kg:awayTeam res:team/NetherlandsNationalBeachSoccerTeam
+; kg:kickoffTime "2013-07-12"^^xsd:date
+; kg:inCompetition res:competition/BSWWTour
+; kg:venue res:stadium/Malmoe
+; kg:result "L"
+; rdfs:label "Swedish vs Dutch match on July 12, 2013" .
+res:stadium/Malmoe a kg:Stadium
+; kg:locatedIn res:city/Malmoe
+; rdfs:label "Malmö" .
+res:city/Malmoe a kg:City
+; kg:locatedIn res:country/Sweden
+; rdfs:label "Malmö" .
+res:match/SWEvsDEN2013 a kg:Match
+; kg:homeTeam res:team/SwedenNationalBeachSoccerTeam
+; kg:awayTeam res:team/DenmarkNationalBeachSoccerTeam
+; kg:kickoffTime "2013-07-13"^^xsd:date
+; kg:inCompetition res:competition/BSWWTour
+; kg:venue res:stadium/Malmoe
+; kg:result "L"
+; rdfs:label "Swedish vs Danish match on July 13, 2013" .
+res:match/SWEvsENG2013 a kg:Match
+; kg:homeTeam res:team/SwedenNationalBeachSoccerTeam
+; kg:awayTeam res:team/EnglandNationalBeachSoccerTeam
+; kg:kickoffTime "2013-07-14"^^xsd:date
+; kg:inCompetition res:competition/BSWWTour
+; kg:venue res:stadium/Malmoe
+; kg:result "L"
+; rdfs:label "Swedish vs English match on July 14, 2013" .
+res:competition/BSWWTour a kg:Competition
+; kg:competitionName "BSWW Tour"
+; rdfs:label "BSWW Tour" .
+res:team/UkraineNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Ukraine"
+; kg:teamAbbreviation "UKR" .
+res:team/GreeceNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Hy Lạp"
+; kg:teamAbbreviation "GRE" .
+res:team/NetherlandsNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Hà Lan"
+; kg:teamAbbreviation "NED" .
+res:team/DenmarkNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Đan Mạch"
+; kg:teamAbbreviation "DEN" .
+res:team/EnglandNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Anh"
+; kg:teamAbbreviation "ENG" .

@@ -1,254 +1,204 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Botswana a kg:Team ;
-kg:teamName "Botswana national football team" ;
-kg:teamAbbreviation "BOT" ;
-kg:hasCoach res:coach/Didier_Gomes_Da_Rosa ;
-kg:hasCaptain res:player/Thatayaone_Ditlhokwe ;
-kg:homeStadium res:stadium/San_Van_Dong_Quoc_Gia_Botswana ;
-kg:locatedIn res:country/Botswana .
-
+res:team/Botswana a kg:Team
+; kg:teamName "Botswana national football team"
+; kg:teamAbbreviation "BOT"
+; kg:hasCoach res:coach/Didier_Gomes_Da_Rosa
+; kg:hasCaptain res:player/Thatayaone_Ditlhokwe
+; kg:homeStadium res:stadium/San_Van_Dong_Quoc_Gia_Botswana
+; kg:locatedIn res:country/Botswana .
 res:country/Botswana a kg:Country .
-
 res:stadium/San_Van_Dong_Quoc_Gia_Botswana a kg:Stadium .
-
-res:coach/Didier_Gomes_Da_Rosa a kg:Coach ;
-kg:manages res:team/Botswana .
-
-res:player/Thatayaone_Ditlhokwe a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:isCaptain res:team/Botswana .
-
-res:player/Joel_Mogorosi a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 92 .
-
-res:player/Jerome_Ramatlhakwane a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 24 ;
-kg:topScorer true .
-
-res:position/Goalkeeper a kg:Goalkeeper, kg:Position .
-
-res:position/Defender a kg:Defender, kg:Position .
-
-res:position/Midfielder a kg:Midfielder, kg:Position .
-
-res:position/Forward a kg:Forward, kg:Position .
-
-res:match/Botswana_vs_Malawi_1968 a kg:Match ;
-kg:homeTeam res:team/Botswana ;
-kg:awayTeam res:team/Malawi ;
-kg:kickoffTime "1968-07-13"^^xsd:date ;
-kg:inCompetition res:competition/Africa_Cup_of_Nations .
-
-res:match/Botswana_vs_Swaziland_2002 a kg:Match ;
-kg:homeTeam res:team/Botswana ;
-kg:awayTeam res:team/Swaziland ;
-kg:kickoffTime "2002-03-02"^^xsd:date ;
-kg:inCompetition res:competition/Africa_Cup_of_Nations .
-
-res:match/Botswana_vs_Zimbabwe_1990 a kg:Match ;
-kg:homeTeam res:team/Botswana ;
-kg:awayTeam res:team/Zimbabwe ;
-kg:kickoffTime "1990-08-26"^^xsd:date ;
-kg:inCompetition res:competition/Africa_Cup_of_Nations .
-
-res:competition/Africa_Cup_of_Nations a kg:Competition ;
-kg:competitionName "Africa Cup of Nations" ;
-kg:organizedBy res:organization/Caf ;
-kg:heldIn res:country/Botswana .
-
+res:coach/Didier_Gomes_Da_Rosa a kg:Coach
+; kg:manages res:team/Botswana .
+res:player/Thatayaone_Ditlhokwe a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:isCaptain res:team/Botswana .
+res:player/Joel_Mogorosi a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 92 .
+res:player/Jerome_Ramatlhakwane a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 24 .
+res:position/Goalkeeper a kg:Goalkeeper , kg:Position .
+res:position/Defender a kg:Defender , kg:Position .
+res:position/Midfielder a kg:Midfielder , kg:Position .
+res:position/Forward a kg:Forward , kg:Position .
+res:match/Botswana_vs_Malawi_1968 a kg:Match
+; kg:homeTeam res:team/Botswana
+; kg:awayTeam res:team/Malawi
+; kg:kickoffTime "1968-07-13"^^xsd:date
+; kg:inCompetition res:competition/Africa_Cup_of_Nations .
+res:match/Botswana_vs_Swaziland_2002 a kg:Match
+; kg:homeTeam res:team/Botswana
+; kg:awayTeam res:team/Swaziland
+; kg:kickoffTime "2002-03-02"^^xsd:date
+; kg:inCompetition res:competition/Africa_Cup_of_Nations .
+res:match/Botswana_vs_Zimbabwe_1990 a kg:Match
+; kg:homeTeam res:team/Botswana
+; kg:awayTeam res:team/Zimbabwe
+; kg:kickoffTime "1990-08-26"^^xsd:date
+; kg:inCompetition res:competition/Africa_Cup_of_Nations .
+res:competition/Africa_Cup_of_Nations a kg:Competition
+; kg:competitionName "Africa Cup of Nations"
+; kg:organizedBy res:organization/Caf
+; kg:heldIn res:country/Botswana .
 res:organization/Caf a kg:Organization .
-
-res:player/Kabelo_Dambe a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1 ;
-kg:birthDate "1990-05-10"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Mwampole_Masule a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 23 ;
-kg:birthDate "1991-09-05"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Wagarre_Dikago a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 3 ;
-kg:nationality res:country/Botswana .
-
-res:player/Bokamoso_Moeba a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 4 ;
-kg:nationality res:country/Botswana .
-
-res:player/Edwin_Olerile a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 5 ;
-kg:birthDate "1986-07-15"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Oscar_Ncenga a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 14 ;
-kg:birthDate "1984-02-27"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Leutlwetse_Tshireletso a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 6 ;
-kg:birthDate "1985-08-25"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Moshe_Gaolaolwe a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 7 ;
-kg:birthDate "1993-12-25"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Otlantshekela_Mooketsi a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 8 ;
-kg:nationality res:country/Botswana .
-
-res:player/Obonye_Moswate a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 9 ;
-kg:birthDate "1986-06-08"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Pelontle_Lerole a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 10 ;
-kg:nationality res:country/Botswana .
-
-res:player/Mogogi_Gabonamong a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 11 ;
-kg:birthDate "1982-09-10"^^xsd:date ;
-kg:nationality res:country/RSA .
-
-res:player/Joel_Mogorosi a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 12 ;
-kg:birthDate "1984-08-02"^^xsd:date ;
-kg:nationality res:country/RSA .
-
-res:player/Ofentse_Nato a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 13 ;
-kg:birthDate "1989-10-01"^^xsd:date ;
-kg:nationality res:country/India .
-
-res:player/Boitumelo_Mafoko a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 14 ;
-kg:birthDate "1982-02-11"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Jackie_Mothatego a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 15 ;
-kg:birthDate "1987-02-18"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Onalethata_Tshekiso a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 16 ;
-kg:birthDate "1981-05-14"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Bonolo_Phuduhudu a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 17 ;
-kg:birthDate "1985-09-25"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Thato_Ogopotse a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 18 ;
-kg:nationality res:country/Botswana .
-
-res:player/Karabo_Phirir a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 19 ;
-kg:nationality res:country/Botswana .
-
-res:player/Kabelo_Seakanyeng a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 20 ;
-kg:nationality res:country/Botswana .
-
-res:player/Mandla_Mgadla a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 21 ;
-kg:birthDate "1987-02-18"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Galebgwe_Moyana a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 22 ;
-kg:nationality res:country/Botswana .
-
-res:player/Jerome_Ramatlhakwane a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 9 ;
-kg:birthDate "1985-10-29"^^xsd:date ;
-kg:nationality res:country/COD .
-
-res:player/Lemponye_Tshireletso a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 10 ;
-kg:birthDate "1984-09-21"^^xsd:date ;
-kg:nationality res:country/Botswana .
-
-res:player/Mogakolodi_Ngele a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 11 ;
-kg:birthDate "1990-10-06"^^xsd:date ;
-kg:nationality res:country/RSA .
-
-res:player/Onkabetse_Makgantai a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 12 ;
-kg:nationality res:country/Botswana .
-
-res:player/Unobatsha_Mbaiwa a kg:Player ;
-kg:playsFor res:team/Botswana ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 13 ;
-kg:nationality res:country/Botswana .
+res:player/Kabelo_Dambe a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1
+; kg:birthDate "1990-05-10"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Mwampole_Masule a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 23
+; kg:birthDate "1991-09-05"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Wagarre_Dikago a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 3
+; kg:nationality res:country/Botswana .
+res:player/Bokamoso_Moeba a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 4
+; kg:nationality res:country/Botswana .
+res:player/Edwin_Olerile a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 5
+; kg:birthDate "1986-07-15"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Oscar_Ncenga a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 14
+; kg:birthDate "1984-02-27"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Leutlwetse_Tshireletso a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 6
+; kg:birthDate "1985-08-25"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Moshe_Gaolaolwe a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 7
+; kg:birthDate "1993-12-25"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Otlantshekela_Mooketsi a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 8
+; kg:nationality res:country/Botswana .
+res:player/Obonye_Moswate a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 9
+; kg:birthDate "1986-06-08"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Pelontle_Lerole a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 10
+; kg:nationality res:country/Botswana .
+res:player/Mogogi_Gabonamong a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 11
+; kg:birthDate "1982-09-10"^^xsd:date
+; kg:nationality res:country/RSA .
+res:player/Joel_Mogorosi a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 12
+; kg:birthDate "1984-08-02"^^xsd:date
+; kg:nationality res:country/RSA .
+res:player/Ofentse_Nato a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 13
+; kg:birthDate "1989-10-01"^^xsd:date
+; kg:nationality res:country/India .
+res:player/Boitumelo_Mafoko a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 14
+; kg:birthDate "1982-02-11"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Jackie_Mothatego a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 15
+; kg:birthDate "1987-02-18"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Onalethata_Tshekiso a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 16
+; kg:birthDate "1981-05-14"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Bonolo_Phuduhudu a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 17
+; kg:birthDate "1985-09-25"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Thato_Ogopotse a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 18
+; kg:nationality res:country/Botswana .
+res:player/Karabo_Phirir a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 19
+; kg:nationality res:country/Botswana .
+res:player/Kabelo_Seakanyeng a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 20
+; kg:nationality res:country/Botswana .
+res:player/Mandla_Mgadla a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 21
+; kg:birthDate "1987-02-18"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Galebgwe_Moyana a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 22
+; kg:nationality res:country/Botswana .
+res:player/Jerome_Ramatlhakwane a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 9
+; kg:birthDate "1985-10-29"^^xsd:date
+; kg:nationality res:country/COD .
+res:player/Lemponye_Tshireletso a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 10
+; kg:birthDate "1984-09-21"^^xsd:date
+; kg:nationality res:country/Botswana .
+res:player/Mogakolodi_Ngele a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 11
+; kg:birthDate "1990-10-06"^^xsd:date
+; kg:nationality res:country/RSA .
+res:player/Onkabetse_Makgantai a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 12
+; kg:nationality res:country/Botswana .
+res:player/Unobatsha_Mbaiwa a kg:Player
+; kg:playsFor res:team/Botswana
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 13
+; kg:nationality res:country/Botswana .

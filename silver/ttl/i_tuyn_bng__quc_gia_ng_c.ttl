@@ -1,192 +1,126 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/EastGermany a kg:Team ;
-kg:teamName "Đông Đức" ;
-kg:teamAbbreviation "GDR" ;
-kg:hasCoach res:coach/WilliOelgardt, res:coach/HansSiegert, res:coach/JanosGyarmati, res:coach/FritzGodicke, res:coach/HeinzKruegel, res:coach/KarloSoos, res:coach/HaraldSeeger, res:coach/GeorgBuschner, res:coach/RudolfKrause, res:coach/BerndStange, res:coach/ManfredZapf, res:coach/EduardGeyer ;
-kg:hasCaptain res:player/JoachimStreich ;
-kg:isCaptain res:player/JoachimStreich ;
-kg:manages res:coach/WilliOelgardt, res:coach/HansSiegert, res:coach/JanosGyarmati, res:coach/FritzGodicke, res:coach/HeinzKruegel, res:coach/KarloSoos, res:coach/HaraldSeeger, res:coach/GeorgBuschner, res:coach/RudolfKrause, res:coach/BerndStange, res:coach/ManfredZapf, res:coach/EduardGeyer ;
-kg:participatesIn res:season/1974WorldCup, res:season/1974Euro, res:season/1976SummerOlympics, res:season/1980SummerOlympics, res:season/1984SummerOlympics, res:season/1988SummerOlympics, res:season/1992SummerOlympics, res:season/1964SummerOlympics, res:season/1968SummerOlympics, res:season/1972SummerOlympics, res:season/1952SummerOlympics, res:season/1956SummerOlympics, res:season/1960SummerOlympics, res:season/1964SummerOlympics, res:season/1968SummerOlympics, res:season/1972SummerOlympics, res:season/1976SummerOlympics, res:season/1980SummerOlympics, res:season/1984SummerOlympics, res:season/1988SummerOlympics, res:season/1992SummerOlympics ;
-kg:homeStadium res:stadium/Zentralstadion ;
-kg:locatedIn res:country/EastGermany ;
-
-kg:participatesIn res:season/1974WorldCup, res:season/1974Euro, res:season/1976SummerOlympics, res:season/1980SummerOlympics, res:season/1984SummerOlympics, res:season/1988SummerOlympics, res:season/1992SummerOlympics, res:season/1964SummerOlympics, res:season/1968SummerOlympics, res:season/1972SummerOlympics, res:season/1952SummerOlympics, res:season/1956SummerOlympics, res:season/1960SummerOlympics, res:season/1964SummerOlympics, res:season/1968SummerOlympics, res:season/1972SummerOlympics, res:season/1976SummerOlympics, res:season/1980SummerOlympics, res:season/1984SummerOlympics, res:season/1988SummerOlympics, res:season/1992SummerOlympics.
-
-res:stadium/Zentralstadion a kg:Stadium ;
-kg:isHomeOf res:team/EastGermany.
-
-res:player/JoachimStreich a kg:Player ;
-kg:playsFor res:team/EastGermany ;
-kg:primaryPosition kg:Forward ;
-kg:mostCaps 102 ;
-kg:topScorer 55.
-
-res:player/HansJuergenDoerner a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/JurgenCroy a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/KonradWeise a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/EberhardVogel a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/BerndBraunsch a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/PeterDucke a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/MartinHoffmann a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/LotharKurbjuweit a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/RonaldKreer a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/GerdKische a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/MatthiasLiebers a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/ReinhardHaefner a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/JurgenPommerenke a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/RainerErnst a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/HenningFrenzel a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/JurgenSparwasser a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/AndreasThom a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/HansJuergenKreische a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/UlfKirsten a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/DieterErler a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/JorgStubner a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/ReneMuller a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/DirkStahmann a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:player/RuedigerSchnuphase a kg:Player ;
-kg:playsFor res:team/EastGermany.
-
-res:coach/WilliOelgardt a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:coach/HansSiegert a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:coach/JanosGyarmati a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:coach/FritzGodicke a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:coach/HeinzKruegel a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:coach/KarloSoos a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:coach/HaraldSeeger a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:coach/GeorgBuschner a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:coach/RudolfKrause a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:coach/BerndStange a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:coach/ManfredZapf a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:coach/EduardGeyer a kg:Coach ;
-kg:manages res:team/EastGermany.
-
-res:country/EastGermany a kg:Country ;
-kg:locatedIn res:place/EastGermany.
-
-res:stadium/Zentralstadion a kg:Stadium ;
-kg:locatedIn res:city/Leipzig.
-
-res:city/Leipzig a kg:City ;
-kg:locatedIn res:country/EastGermany.
-
-res:season/1974WorldCup a kg:Season ;
-kg:seasonOf res:competition/WorldCup.
-
-res:season/1974Euro a kg:Season ;
-kg:seasonOf res:competition/EuroCup.
-
-res:season/1976SummerOlympics a kg:Season ;
-kg:seasonOf res:competition/SpringOlympicGames.
-
-res:season/1980SummerOlympics a kg:Season ;
-kg:seasonOf res:competition/SpringOlympicGames.
-
-res:season/1984SummerOlympics a kg:Season ;
-kg:seasonOf res:competition/SpringOlympicGames.
-
-res:season/1988SummerOlympics a kg:Season ;
-kg:seasonOf res:competition/SpringOlympicGames.
-
-res:season/1992SummerOlympics a kg:Season ;
-kg:seasonOf res:competition/SpringOlympicGames.
-
-res:season/1964SummerOlympics a kg:Season ;
-kg:seasonOf res:competition/SpringOlympicGames.
-
-res:season/1968SummerOlympics a kg:Season ;
-kg:seasonOf res:competition/SpringOlympicGames.
-
-res:season/1972SummerOlympics a kg:Season ;
-kg:seasonOf res:competition/SpringOlympicGames.
-
-res:season/1952SummerOlympics a kg:Season ;
-kg:seasonOf res:competition/SpringOlympicGames.
-
-res:season/1956SummerOlympics a kg:Season ;
-kg:seasonOf res:competition/SpringOlympicGames.
-
-res:season/1960SummerOlympics a kg:Season ;
-kg:seasonOf res:competition/SpringOlympicGames.
-
-res:competition/WorldCup a kg:Competition ;
-kg:competitionName "Giải bóng đá vô địch thế giới".
-
-res:competition/EuroCup a kg:Competition ;
-kg:competitionName "Giải vô địch châu Âu".
-
-res:competition/SpringOlympicGames a kg:Competition ;
-kg:competitionName "Bóng đá tại Thế vận hội Mùa hè".
+res:team/EastGermany a kg:Team
+; kg:teamName "Đông Đức"
+; kg:teamAbbreviation "GDR"
+; kg:hasCoach res:coach/WilliOelgardt , res:coach/HansSiegert , res:coach/JanosGyarmati , res:coach/FritzGodicke , res:coach/HeinzKruegel , res:coach/KarloSoos , res:coach/HaraldSeeger , res:coach/GeorgBuschner , res:coach/RudolfKrause , res:coach/BerndStange , res:coach/ManfredZapf , res:coach/EduardGeyer
+; kg:hasCaptain res:player/JoachimStreich
+; kg:isCaptain res:player/JoachimStreich
+; kg:manages res:coach/WilliOelgardt , res:coach/HansSiegert , res:coach/JanosGyarmati , res:coach/FritzGodicke , res:coach/HeinzKruegel , res:coach/KarloSoos , res:coach/HaraldSeeger , res:coach/GeorgBuschner , res:coach/RudolfKrause , res:coach/BerndStange , res:coach/ManfredZapf , res:coach/EduardGeyer
+; kg:participatesIn res:season/1974WorldCup , res:season/1974Euro , res:season/1976SummerOlympics , res:season/1980SummerOlympics , res:season/1984SummerOlympics , res:season/1988SummerOlympics , res:season/1992SummerOlympics , res:season/1964SummerOlympics , res:season/1968SummerOlympics , res:season/1972SummerOlympics , res:season/1952SummerOlympics , res:season/1956SummerOlympics , res:season/1960SummerOlympics , res:season/1964SummerOlympics , res:season/1968SummerOlympics , res:season/1972SummerOlympics , res:season/1976SummerOlympics , res:season/1980SummerOlympics , res:season/1984SummerOlympics , res:season/1988SummerOlympics , res:season/1992SummerOlympics
+; kg:homeStadium res:stadium/Zentralstadion
+; kg:locatedIn res:country/EastGermany
+; kg:participatesIn res:season/1974WorldCup , res:season/1974Euro , res:season/1976SummerOlympics , res:season/1980SummerOlympics , res:season/1984SummerOlympics , res:season/1988SummerOlympics , res:season/1992SummerOlympics , res:season/1964SummerOlympics , res:season/1968SummerOlympics , res:season/1972SummerOlympics , res:season/1952SummerOlympics , res:season/1956SummerOlympics , res:season/1960SummerOlympics , res:season/1964SummerOlympics , res:season/1968SummerOlympics , res:season/1972SummerOlympics , res:season/1976SummerOlympics , res:season/1980SummerOlympics , res:season/1984SummerOlympics , res:season/1988SummerOlympics , res:season/1992SummerOlympics .
+res:stadium/Zentralstadion a kg:Stadium
+; kg:isHomeOf res:team/EastGermany .
+res:player/JoachimStreich a kg:Player
+; kg:playsFor res:team/EastGermany
+; kg:primaryPosition kg:Forward .
+res:player/HansJuergenDoerner a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/JurgenCroy a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/KonradWeise a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/EberhardVogel a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/BerndBraunsch a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/PeterDucke a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/MartinHoffmann a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/LotharKurbjuweit a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/RonaldKreer a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/GerdKische a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/MatthiasLiebers a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/ReinhardHaefner a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/JurgenPommerenke a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/RainerErnst a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/HenningFrenzel a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/JurgenSparwasser a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/AndreasThom a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/HansJuergenKreische a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/UlfKirsten a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/DieterErler a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/JorgStubner a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/ReneMuller a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/DirkStahmann a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:player/RuedigerSchnuphase a kg:Player
+; kg:playsFor res:team/EastGermany .
+res:coach/WilliOelgardt a kg:Coach
+; kg:manages res:team/EastGermany .
+res:coach/HansSiegert a kg:Coach
+; kg:manages res:team/EastGermany .
+res:coach/JanosGyarmati a kg:Coach
+; kg:manages res:team/EastGermany .
+res:coach/FritzGodicke a kg:Coach
+; kg:manages res:team/EastGermany .
+res:coach/HeinzKruegel a kg:Coach
+; kg:manages res:team/EastGermany .
+res:coach/KarloSoos a kg:Coach
+; kg:manages res:team/EastGermany .
+res:coach/HaraldSeeger a kg:Coach
+; kg:manages res:team/EastGermany .
+res:coach/GeorgBuschner a kg:Coach
+; kg:manages res:team/EastGermany .
+res:coach/RudolfKrause a kg:Coach
+; kg:manages res:team/EastGermany .
+res:coach/BerndStange a kg:Coach
+; kg:manages res:team/EastGermany .
+res:coach/ManfredZapf a kg:Coach
+; kg:manages res:team/EastGermany .
+res:coach/EduardGeyer a kg:Coach
+; kg:manages res:team/EastGermany .
+res:country/EastGermany a kg:Country
+; kg:locatedIn res:place/EastGermany .
+res:stadium/Zentralstadion a kg:Stadium
+; kg:locatedIn res:city/Leipzig .
+res:city/Leipzig a kg:City
+; kg:locatedIn res:country/EastGermany .
+res:season/1974WorldCup a kg:Season
+; kg:seasonOf res:competition/WorldCup .
+res:season/1974Euro a kg:Season
+; kg:seasonOf res:competition/EuroCup .
+res:season/1976SummerOlympics a kg:Season
+; kg:seasonOf res:competition/SpringOlympicGames .
+res:season/1980SummerOlympics a kg:Season
+; kg:seasonOf res:competition/SpringOlympicGames .
+res:season/1984SummerOlympics a kg:Season
+; kg:seasonOf res:competition/SpringOlympicGames .
+res:season/1988SummerOlympics a kg:Season
+; kg:seasonOf res:competition/SpringOlympicGames .
+res:season/1992SummerOlympics a kg:Season
+; kg:seasonOf res:competition/SpringOlympicGames .
+res:season/1964SummerOlympics a kg:Season
+; kg:seasonOf res:competition/SpringOlympicGames .
+res:season/1968SummerOlympics a kg:Season
+; kg:seasonOf res:competition/SpringOlympicGames .
+res:season/1972SummerOlympics a kg:Season
+; kg:seasonOf res:competition/SpringOlympicGames .
+res:season/1952SummerOlympics a kg:Season
+; kg:seasonOf res:competition/SpringOlympicGames .
+res:season/1956SummerOlympics a kg:Season
+; kg:seasonOf res:competition/SpringOlympicGames .
+res:season/1960SummerOlympics a kg:Season
+; kg:seasonOf res:competition/SpringOlympicGames .
+res:competition/WorldCup a kg:Competition
+; kg:competitionName "Giải bóng đá vô địch thế giới" .
+res:competition/EuroCup a kg:Competition
+; kg:competitionName "Giải vô địch châu Âu" .
+res:competition/SpringOlympicGames a kg:Competition
+; kg:competitionName "Bóng đá tại Thế vận hội Mùa hè" .

@@ -1,171 +1,135 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Eritrea a kg:Team ;
-kg:teamName "Eritrea" ;
-kg:hasCoach res:coach/Alemseged_Efrem ;
-kg:hasCaptain res:player/Henok_Goitom ;
-kg:teamAbbreviation "ERI" ;
-kg:locatedIn res:country/Eritrea .
-
-res:country/Eritrea a kg:Country ;
-rdfs:label "Eritrea" .
-
-res:coach/Alemseged_Efrem a kg:Coach ;
-kg:manages res:team/Eritrea .
-
-res:player/Henok_Goitom a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:isCaptain res:team/Eritrea .
-
-res:club/Red_Sea_FC a kg:Club ;
-kg:locatedIn res:city/Asmara ;
-kg:homeStadium res:stadium/San_Van_Dong_Cicero .
-
-res:stadium/San_Van_Dong_Cicero a kg:Stadium ;
-kg:isHomeOf res:club/Red_Sea_FC .
-
-res:position/Goalkeeper a kg:Goalkeeper ;
-rdfs:subClassOf kg:Position .
-
-res:position/Defender a kg:Defender ;
-rdfs:subClassOf kg:Position .
-
-res:position/Midfielder a kg:Midfielder ;
-rdfs:subClassOf kg:Position .
-
-res:position/Forward a kg:Forward ;
-rdfs:subClassOf kg:Position .
-
-res:player/Kibrom_Solomon a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:birthDate "2000-09-10"^^xsd:date ;
-kg:birthPlace res:city/Denden ;
-kg:nationality res:country/Eritrea ;
-kg:shirtNumber 1 .
-
-res:player/Abdulahi_Abdurahman a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:birthDate "1986-01-01"^^xsd:date ;
-kg:nationality res:country/Eritrea ;
-kg:shirtNumber 20 .
-
-res:player/Eyob_Girmay a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1996-11-12"^^xsd:date ;
-kg:shirtNumber 2 .
-
-res:player/Filmon_Tumzghi a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1993-03-24"^^xsd:date ;
-kg:shirtNumber 3 .
-
-res:player/Robel_Teklemichael a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "2000-07-24"^^xsd:date ;
-kg:shirtNumber 4 ;
-kg:isCaptain res:team/Eritrea .
-
-res:player/Herman_Fessehaye a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "2000-11-10"^^xsd:date ;
-kg:shirtNumber 5 .
-
-res:player/Ablelom_Teklezgi a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1996-09-01"^^xsd:date ;
-kg:shirtNumber 17 .
-
-res:player/Abel_Okray a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1996-11-20"^^xsd:date ;
-kg:shirtNumber 6 .
-
-res:player/Yonas_Solomon a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1994-06-21"^^xsd:date ;
-kg:shirtNumber 7 .
-
-res:player/Samiyuma_Alexander a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1991-05-16"^^xsd:date ;
-kg:shirtNumber 8 .
-
-res:player/Senai_Hagos a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1992-12-02"^^xsd:date ;
-kg:shirtNumber 11 .
-
-res:player/Christoffer_Forsell a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1994-02-19"^^xsd:date ;
-kg:shirtNumber 14 .
-
-res:player/Sammy_Simon a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1998-05-17"^^xsd:date ;
-kg:shirtNumber 13 .
-
-res:player/Mohammed_Saeid a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1990-12-24"^^xsd:date ;
-kg:shirtNumber 16 .
-
-res:player/Robel_Asfeha a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1987-01-31"^^xsd:date ;
-kg:shirtNumber 18 .
-
-res:player/Alexander_Andue a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1998-06-05"^^xsd:date ;
-kg:shirtNumber 19 .
-
-res:player/Henok_Goitom a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1984-09-22"^^xsd:date ;
-kg:shirtNumber 9 ;
-kg:isCaptain res:team/Eritrea .
-
-res:player/Ali_Sulieman a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "2000-01-01"^^xsd:date ;
-kg:shirtNumber 10 .
-
-res:player/Ezana_Kahsay a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1994-11-16"^^xsd:date ;
-kg:shirtNumber 12 .
-
-res:player/Ermias_Tekie_Simon a kg:Player ;
-kg:playsFor res:team/Eritrea ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1986-09-29"^^xsd:date ;
-kg:shirtNumber 15 .
-
-res:city/Asmara a kg:City ;
-kg:locatedIn res:country/Eritrea .
-
-res:city/Denden a kg:City ;
-kg:locatedIn res:country/Eritrea .
+res:team/Eritrea a kg:Team
+; kg:teamName "Eritrea"
+; kg:hasCoach res:coach/Alemseged_Efrem
+; kg:hasCaptain res:player/Henok_Goitom
+; kg:teamAbbreviation "ERI"
+; kg:locatedIn res:country/Eritrea .
+res:country/Eritrea a kg:Country
+; rdfs:label "Eritrea" .
+res:coach/Alemseged_Efrem a kg:Coach
+; kg:manages res:team/Eritrea .
+res:player/Henok_Goitom a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:isCaptain res:team/Eritrea .
+res:club/Red_Sea_FC a kg:Club
+; kg:locatedIn res:city/Asmara
+; kg:homeStadium res:stadium/San_Van_Dong_Cicero .
+res:stadium/San_Van_Dong_Cicero a kg:Stadium
+; kg:isHomeOf res:club/Red_Sea_FC .
+res:position/Goalkeeper a kg:Goalkeeper
+; rdfs:subClassOf kg:Position .
+res:position/Defender a kg:Defender
+; rdfs:subClassOf kg:Position .
+res:position/Midfielder a kg:Midfielder
+; rdfs:subClassOf kg:Position .
+res:position/Forward a kg:Forward
+; rdfs:subClassOf kg:Position .
+res:player/Kibrom_Solomon a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Goalkeeper
+; kg:birthDate "2000-09-10"^^xsd:date
+; kg:birthPlace res:city/Denden
+; kg:nationality res:country/Eritrea
+; kg:shirtNumber 1 .
+res:player/Abdulahi_Abdurahman a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Goalkeeper
+; kg:birthDate "1986-01-01"^^xsd:date
+; kg:nationality res:country/Eritrea
+; kg:shirtNumber 20 .
+res:player/Eyob_Girmay a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1996-11-12"^^xsd:date
+; kg:shirtNumber 2 .
+res:player/Filmon_Tumzghi a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1993-03-24"^^xsd:date
+; kg:shirtNumber 3 .
+res:player/Robel_Teklemichael a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "2000-07-24"^^xsd:date
+; kg:shirtNumber 4
+; kg:isCaptain res:team/Eritrea .
+res:player/Herman_Fessehaye a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "2000-11-10"^^xsd:date
+; kg:shirtNumber 5 .
+res:player/Ablelom_Teklezgi a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1996-09-01"^^xsd:date
+; kg:shirtNumber 17 .
+res:player/Abel_Okray a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1996-11-20"^^xsd:date
+; kg:shirtNumber 6 .
+res:player/Yonas_Solomon a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1994-06-21"^^xsd:date
+; kg:shirtNumber 7 .
+res:player/Samiyuma_Alexander a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1991-05-16"^^xsd:date
+; kg:shirtNumber 8 .
+res:player/Senai_Hagos a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1992-12-02"^^xsd:date
+; kg:shirtNumber 11 .
+res:player/Christoffer_Forsell a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1994-02-19"^^xsd:date
+; kg:shirtNumber 14 .
+res:player/Sammy_Simon a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1998-05-17"^^xsd:date
+; kg:shirtNumber 13 .
+res:player/Mohammed_Saeid a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1990-12-24"^^xsd:date
+; kg:shirtNumber 16 .
+res:player/Robel_Asfeha a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1987-01-31"^^xsd:date
+; kg:shirtNumber 18 .
+res:player/Alexander_Andue a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1998-06-05"^^xsd:date
+; kg:shirtNumber 19 .
+res:player/Henok_Goitom a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1984-09-22"^^xsd:date
+; kg:shirtNumber 9
+; kg:isCaptain res:team/Eritrea .
+res:player/Ali_Sulieman a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "2000-01-01"^^xsd:date
+; kg:shirtNumber 10 .
+res:player/Ezana_Kahsay a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1994-11-16"^^xsd:date
+; kg:shirtNumber 12 .
+res:player/Ermias_Tekie_Simon a kg:Player
+; kg:playsFor res:team/Eritrea
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1986-09-29"^^xsd:date
+; kg:shirtNumber 15 .
+res:city/Asmara a kg:City
+; kg:locatedIn res:country/Eritrea .
+res:city/Denden a kg:City
+; kg:locatedIn res:country/Eritrea .

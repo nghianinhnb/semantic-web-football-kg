@@ -1,135 +1,76 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Argentina a kg:Team ;
-kg:teamName "Argentina" ;
-kg:hasCoach res:coach/Lionel_Scaloni ;
-kg:hasCaptain res:player/Lionel_Messi ;
-kg:mostCaps res:player/Lionel_Messi ;
-kg:topScorer res:player/Lionel_Messi ;
-kg:homeStadium res:stadium/Estadio_Monumental_Buenos_Aires ;
-kg:FIFARank 1 ;
-kg:FIFAMax 1 ;
-kg:FIFAMin 20 ;
-kg:FIFAMaxDate "2007-03-01"^^xsd:date ;
-kg:FIFAMinDate "1996-08-01"^^xsd:date ;
-kg:ELORank 1 ;
-kg:ELOMax 1 ;
-kg:ELOMin 26 ;
-kg:ELOMaxDate "1902-01-01"^^xsd:date ;
-kg:ELOMinDate "1990-06-01"^^xsd:date .
-
-res:coach/Lionel_Scaloni a kg:Coach ;
-kg:manages res:team/Argentina .
-
-res:player/Lionel_Messi a kg:Player, kg:Forward ;
-kg:playsFor res:team/Argentina ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1987-06-24"^^xsd:date ;
-kg:birthPlace res:city/Buenos_Aires ;
-kg:nationality res:country/Argentina ;
-kg:height 170.0 ;
-kg:weight 70.0 ;
-kg:shirtNumber 10 ;
-kg:preferredFoot res:footedness/LeftFooted .
-
-res:stadium/Estadio_Monumental_Buenos_Aires a kg:Stadium ;
-kg:capacity 70000 ;
-kg:isHomeOf res:club/River_Platform .
-
-res:club/River_Platform a kg:Club ;
-kg:foundedDate "1889-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Estadio_Monumental_Buenos_Aires .
-
-res:position/Forward a kg:Position ;
-rdfs:subClassOf kg:Position .
-
+res:team/Argentina a kg:Team
+; kg:teamName "Argentina"
+; kg:hasCoach res:coach/Lionel_Scaloni
+; kg:hasCaptain res:player/Lionel_Messi
+; kg:homeStadium res:stadium/Estadio_Monumental_Buenos_Aires .
+res:coach/Lionel_Scaloni a kg:Coach
+; kg:manages res:team/Argentina .
+res:player/Lionel_Messi a kg:Player , kg:Forward
+; kg:playsFor res:team/Argentina
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1987-06-24"^^xsd:date
+; kg:birthPlace res:city/Buenos_Aires
+; kg:nationality res:country/Argentina
+; kg:height 170.0
+; kg:weight 70.0
+; kg:shirtNumber 10
+; kg:preferredFoot res:footedness/LeftFooted .
+res:stadium/Estadio_Monumental_Buenos_Aires a kg:Stadium
+; kg:capacity 70000
+; kg:isHomeOf res:club/River_Platform .
+res:club/River_Platform a kg:Club
+; kg:foundedDate "1889-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Estadio_Monumental_Buenos_Aires .
+res:position/Forward a kg:Position
+; rdfs:subClassOf kg:Position .
 res:country/Argentina a kg:Country .
-
-res:city/Buenos_Aires a kg:City ;
-kg:locatedIn res:country/Argentina .
-
-res:competition/FIFA_World_Cup a kg:Competition ;
-kg:competitionName "FIFA World Cup" .
-
-res:season/2022 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup .
-
-res:match/2022_WC_Final a kg:Match ;
-kg:homeTeam res:team/Argentina ;
-kg:awayTeam res:team/France ;
-kg:venue res:stadium/Lusail_Iconic_Stadium ;
-kg:kickoffTime "2022-12-18T18:00:00Z"^^xsd:dateTime ;
-kg:inCompetition res:competition/FIFA_World_Cup ;
-kg:inSeason res:season/2022 ;
-kg:referee res:referee/John_Hawkins .
-
+res:city/Buenos_Aires a kg:City
+; kg:locatedIn res:country/Argentina .
+res:competition/FIFA_World_Cup a kg:Competition
+; kg:competitionName "FIFA World Cup" .
+res:season/2022 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup .
+res:match/2022_WC_Final a kg:Match
+; kg:homeTeam res:team/Argentina
+; kg:awayTeam res:team/France
+; kg:venue res:stadium/Lusail_Iconic_Stadium
+; kg:kickoffTime "2022-12-18T18:00:00Z"^^xsd:dateTime
+; kg:inCompetition res:competition/FIFA_World_Cup
+; kg:inSeason res:season/2022
+; kg:referee res:referee/John_Hawkins .
 res:referee/John_Hawkins a kg:Referee .
-
 res:team/Argentina kg:participatesIn res:season/2022 .
-
 res:team/Argentina kg:hasCoach res:coach/Lionel_Scaloni .
-
 res:player/Lionel_Messi kg:isCaptain res:team/Argentina .
-
-res:team/Argentina kg:mostCaps res:player/Lionel_Messi .
-
-res:team/Argentina kg:topScorer res:player/Lionel_Messi .
-
-res:stadium/Lusail_Iconic_Stadium a kg:Stadium ;
-kg:capacity 86000 .
-
-res:competition/Copa_America a kg:Competition ;
-kg:competitionName "Copa America" .
-
-res:season/2024 a kg:Season ;
-kg:seasonOf res:competition/Copa_America .
-
-res:match/2024_Copa_America_Final a kg:Match ;
-kg:homeTeam res:team/Argentina ;
-kg:awayTeam res:team/Uruguay ;
-kg:venue res:stadium/Lusail_Iconic_Stadium ;
-kg:kickoffTime "2024-07-15T18:00:00Z"^^xsd:dateTime ;
-kg:inCompetition res:competition/Copa_America ;
-kg:inSeason res:season/2024 .
-
+res:stadium/Lusail_Iconic_Stadium a kg:Stadium
+; kg:capacity 86000 .
+res:competition/Copa_America a kg:Competition
+; kg:competitionName "Copa America" .
+res:season/2024 a kg:Season
+; kg:seasonOf res:competition/Copa_America .
+res:match/2024_Copa_America_Final a kg:Match
+; kg:homeTeam res:team/Argentina
+; kg:awayTeam res:team/Uruguay
+; kg:venue res:stadium/Lusail_Iconic_Stadium
+; kg:kickoffTime "2024-07-15T18:00:00Z"^^xsd:dateTime
+; kg:inCompetition res:competition/Copa_America
+; kg:inSeason res:season/2024 .
 res:team/Argentina kg:participatesIn res:season/2024 .
-
 res:team/Argentina kg:hasCoach res:coach/Lionel_Scaloni .
-
 res:player/Lionel_Messi kg:isCaptain res:team/Argentina .
-
-res:team/Argentina kg:mostCaps res:player/Lionel_Messi .
-
-res:team/Argentina kg:topScorer res:player/Lionel_Messi .
-
 res:stadium/Lusail_Iconic_Stadium kg:isHomeOf res:team/Argentina .
-
-res:competition/Confederations_Cup a kg:Competition ;
-kg:competitionName "Confederations Cup" .
-
-res:season/1992 a kg:Season ;
-kg:seasonOf res:competition/Confederations_Cup .
-
-res:match/1992_Confederations_Cup_Final a kg:Match ;
-kg:homeTeam res:team/Argentina ;
-kg:awayTeam res:team/Saudi_Arabia ;
-kg:venue res:stadium/Lusail_Iconic_Stadium ;
-kg:kickoffTime "1992-03-15T18:00:00Z"^^xsd:dateTime ;
-kg:inCompetition res:competition/Confederations_Cup ;
-kg:inSeason res:season/1992 ;
-
-res:team/Argentina kg:participatesIn res:season/1992 .
-
+res:competition/Confederations_Cup a kg:Competition
+; kg:competitionName "Confederations Cup" .
+res:season/1992 a kg:Season
+; kg:seasonOf res:competition/Confederations_Cup .
+res:match/1992_Confederations_Cup_Final a kg:Match
+; kg:homeTeam res:team/Argentina
+; kg:awayTeam res:team/Saudi_Arabia
+; kg:venue res:stadium/Lusail_Iconic_Stadium
+; kg:kickoffTime "1992-03-15T18:00:00Z"^^xsd:dateTime
+; kg:inCompetition res:competition/Confederations_Cup
+; kg:inSeason res:season/1992
+; res:team/Argentina kg:participatesIn res:season/1992 .
 res:team/Argentina kg:hasCoach res:coach/Lionel_Scaloni .
-
 res:player/Lionel_Messi kg:isCaptain res:team/Argentina .
-
-res:team/Argentina kg:mostCaps res:player/Lionel_Messi .
-
-res:team/Argentina kg:topScorer res:player/Lionel_Messi .
-
 res:stadium/Lusail_Iconic_Stadium kg:isHomeOf res:team/Argentina .

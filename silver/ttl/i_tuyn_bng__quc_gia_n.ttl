@@ -1,329 +1,244 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Ấn_Độ a kg:teamName "Đội tuyển bóng đá quốc gia Ấn Độ" ;
-a kg:Team ;
-kg:hasCoach res:coach/Igor_Štimac ;
-kg:hasCaptain res:player/Sunil_Chhetri ;
-kg:teamAbbreviation "IND" ;
-kg:locatedIn res:country/Ấn_Độ .
-
-res:country/Ấn_Độ a kg:Country ;
-rdfs:label "Ấn Độ" .
-
-res:coach/Igor_Štimac a kg:Coach ;
-kg:manages res:team/Đội_tuyển_bóng_đá_quốc_gia_Ấn_Độ .
-
-res:player/Sunil_Chhetri a kg:Player, kg:Forward ;
-kg:playsFor res:team/Đội_tuyển_bóng_đá_quốc_gia_Ấn_Độ ;
-kg:isCaptain res:team/Đội_tuyển_bóng_đá_quốc_gia_Ấn_Độ ;
-kg:birthDate "1984-08-03"^^xsd:date ;
-kg:birthPlace res:city/Kolkata ;
-kg:nationality res:country/Ấn_Độ ;
-kg:shirtNumber 11 ;
-kg:preferredFoot kg:RightFooted .
-
-res:city/Kolkata a kg:City ;
-rdfs:label "Kolkata" ;
-kg:locatedIn res:country/Ấn_Độ .
-
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Ấn_Độ a kg:teamName "Đội tuyển bóng đá quốc gia Ấn Độ"
+; a kg:Team
+; kg:hasCoach res:coach/Igor_Štimac
+; kg:hasCaptain res:player/Sunil_Chhetri
+; kg:teamAbbreviation "IND"
+; kg:locatedIn res:country/Ấn_Độ .
+res:country/Ấn_Độ a kg:Country
+; rdfs:label "Ấn Độ" .
+res:coach/Igor_Štimac a kg:Coach
+; kg:manages res:team/Đội_tuyển_bóng_đá_quốc_gia_Ấn_Độ .
+res:player/Sunil_Chhetri a kg:Player , kg:Forward
+; kg:playsFor res:team/Đội_tuyển_bóng_đá_quốc_gia_Ấn_Độ
+; kg:isCaptain res:team/Đội_tuyển_bóng_đá_quốc_gia_Ấn_Độ
+; kg:birthDate "1984-08-03"^^xsd:date
+; kg:birthPlace res:city/Kolkata
+; kg:nationality res:country/Ấn_Độ
+; kg:shirtNumber 11
+; kg:preferredFoot kg:RightFooted .
+res:city/Kolkata a kg:City
+; rdfs:label "Kolkata"
+; kg:locatedIn res:country/Ấn_Độ .
 res:position/Forward a kg:Position .
-
-res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium ;
-rdfs:label "Sân vận động Khuman Lampak Main" ;
-kg:locatedIn res:city/Imphal .
-
-res:stadium/Sân_vận_động_Kalinga a kg:Stadium ;
-rdfs:label "Sân vận động Kalinga" ;
-kg:locatedIn res:city/Bhubaneswar .
-
-res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium ;
-rdfs:label "Sân vận động Sree Kanteerava" ;
-kg:locatedIn res:city/Bangalore .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Delhi .
-
-res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium ;
-rdfs:label "Sân vận động Salt Lake" ;
-kg:locatedIn res:city/Kolkata .
-
-res:stadium/Sân_vận_động_Fatorda a kg:Stadium ;
-rdfs:label "Sân vận động Fatorda" ;
-kg:locatedIn res:city/Margao .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Cochin .
-
-res:stadium/Mumbai_Football_Arena a kg:Stadium ;
-rdfs:label "Mumbai Football Arena" ;
-kg:locatedIn res:city/Mumbai .
-
-res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium ;
-rdfs:label "Sân vận động Indira Gandhi Athletic" ;
-kg:locatedIn res:city/Guwahati .
-
-res:stadium/EKA_Arena a kg:Stadium ;
-rdfs:label "EKA Arena" ;
-kg:locatedIn res:city/Ahmedabad .
-
-res:stadium/Sân_vận_động_Trivandrum a kg:Stadium ;
-rdfs:label "Sân vận động Trivandrum" ;
-kg:locatedIn res:city/Trivandrum .
-
-res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium ;
-rdfs:label "Sân vận động Khuman Lampak Main" ;
-kg:locatedIn res:city/Imphal .
-
-res:stadium/Sân_vận_động_Kalinga a kg:Stadium ;
-rdfs:label "Sân vận động Kalinga" ;
-kg:locatedIn res:city/Bhubaneswar .
-
-res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium ;
-rdfs:label "Sân vận động Sree Kanteerava" ;
-kg:locatedIn res:city/Bangalore .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Delhi .
-
-res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium ;
-rdfs:label "Sân vận động Salt Lake" ;
-kg:locatedIn res:city/Kolkata .
-
-res:stadium/Sân_vận_động_Fatorda a kg:Stadium ;
-rdfs:label "Sân vận động Fatorda" ;
-kg:locatedIn res:city/Margao .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Cochin .
-
-res:stadium/Mumbai_Football_Arena a kg:Stadium ;
-rdfs:label "Mumbai Football Arena" ;
-kg:locatedIn res:city/Mumbai .
-
-res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium ;
-rdfs:label "Sân vận động Indira Gandhi Athletic" ;
-kg:locatedIn res:city/Guwahati .
-
-res:stadium/EKA_Arena a kg:Stadium ;
-rdfs:label "EKA Arena" ;
-kg:locatedIn res:city/Ahmedabad .
-
-res:stadium/Sân_vận_động_Trivandrum a kg:Stadium ;
-rdfs:label "Sân vận động Trivandrum" ;
-kg:locatedIn res:city/Trivandrum .
-
-res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium ;
-rdfs:label "Sân vận động Khuman Lampak Main" ;
-kg:locatedIn res:city/Imphal .
-
-res:stadium/Sân_vận_động_Kalinga a kg:Stadium ;
-rdfs:label "Sân vận động Kalinga" ;
-kg:locatedIn res:city/Bhubaneswar .
-
-res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium ;
-rdfs:label "Sân vận động Sree Kanteerava" ;
-kg:locatedIn res:city/Bangalore .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Delhi .
-
-res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium ;
-rdfs:label "Sân vận động Salt Lake" ;
-kg:locatedIn res:city/Kolkata .
-
-res:stadium/Sân_vận_động_Fatorda a kg:Stadium ;
-rdfs:label "Sân vận động Fatorda" ;
-kg:locatedIn res:city/Margao .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Cochin .
-
-res:stadium/Mumbai_Football_Arena a kg:Stadium ;
-rdfs:label "Mumbai Football Arena" ;
-kg:locatedIn res:city/Mumbai .
-
-res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium ;
-rdfs:label "Sân vận động Indira Gandhi Athletic" ;
-kg:locatedIn res:city/Guwahati .
-
-res:stadium/EKA_Arena a kg:Stadium ;
-rdfs:label "EKA Arena" ;
-kg:locatedIn res:city/Ahmedabad .
-
-res:stadium/Sân_vận_động_Trivandrum a kg:Stadium ;
-rdfs:label "Sân vận động Trivandrum" ;
-kg:locatedIn res:city/Trivandrum .
-
-res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium ;
-rdfs:label "Sân vận động Khuman Lampak Main" ;
-kg:locatedIn res:city/Imphal .
-
-res:stadium/Sân_vận_động_Kalinga a kg:Stadium ;
-rdfs:label "Sân vận động Kalinga" ;
-kg:locatedIn res:city/Bhubaneswar .
-
-res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium ;
-rdfs:label "Sân vận động Sree Kanteerava" ;
-kg:locatedIn res:city/Bangalore .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Delhi .
-
-res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium ;
-rdfs:label "Sân vận động Salt Lake" ;
-kg:locatedIn res:city/Kolkata .
-
-res:stadium/Sân_vận_động_Fatorda a kg:Stadium ;
-rdfs:label "Sân vận động Fatorda" ;
-kg:locatedIn res:city/Margao .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Cochin .
-
-res:stadium/Mumbai_Football_Arena a kg:Stadium ;
-rdfs:label "Mumbai Football Arena" ;
-kg:locatedIn res:city/Mumbai .
-
-res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium ;
-rdfs:label "Sân vận động Indira Gandhi Athletic" ;
-kg:locatedIn res:city/Guwahati .
-
-res:stadium/EKA_Arena a kg:Stadium ;
-rdfs:label "EKA Arena" ;
-kg:locatedIn res:city/Ahmedabad .
-
-res:stadium/Sân_vận_động_Trivandrum a kg:Stadium ;
-rdfs:label "Sân vận động Trivandrum" ;
-kg:locatedIn res:city/Trivandrum .
-
-res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium ;
-rdfs:label "Sân vận động Khuman Lampak Main" ;
-kg:locatedIn res:city/Imphal .
-
-res:stadium/Sân_vận_động_Kalinga a kg:Stadium ;
-rdfs:label "Sân vận động Kalinga" ;
-kg:locatedIn res:city/Bhubaneswar .
-
-res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium ;
-rdfs:label "Sân vận động Sree Kanteerava" ;
-kg:locatedIn res:city/Bangalore .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Delhi .
-
-res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium ;
-rdfs:label "Sân vận động Salt Lake" ;
-kg:locatedIn res:city/Kolkata .
-
-res:stadium/Sân_vận_động_Fatorda a kg:Stadium ;
-rdfs:label "Sân vận động Fatorda" ;
-kg:locatedIn res:city/Margao .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Cochin .
-
-res:stadium/Mumbai_Football_Arena a kg:Stadium ;
-rdfs:label "Mumbai Football Arena" ;
-kg:locatedIn res:city/Mumbai .
-
-res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium ;
-rdfs:label "Sân vận động Indira Gandhi Athletic" ;
-kg:locatedIn res:city/Guwahati .
-
-res:stadium/EKA_Arena a kg:Stadium ;
-rdfs:label "EKA Arena" ;
-kg:locatedIn res:city/Ahmedabad .
-
-res:stadium/Sân_vận_động_Trivandrum a kg:Stadium ;
-rdfs:label "Sân vận động Trivandrum" ;
-kg:locatedIn res:city/Trivandrum .
-
-res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium ;
-rdfs:label "Sân vận động Khuman Lampak Main" ;
-kg:locatedIn res:city/Imphal .
-
-res:stadium/Sân_vận_động_Kalinga a kg:Stadium ;
-rdfs:label "Sân vận động Kalinga" ;
-kg:locatedIn res:city/Bhubaneswar .
-
-res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium ;
-rdfs:label "Sân vận động Sree Kanteerava" ;
-kg:locatedIn res:city/Bangalore .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Delhi .
-
-res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium ;
-rdfs:label "Sân vận động Salt Lake" ;
-kg:locatedIn res:city/Kolkata .
-
-res:stadium/Sân_vận_động_Fatorda a kg:Stadium ;
-rdfs:label "Sân vận động Fatorda" ;
-kg:locatedIn res:city/Margao .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Cochin .
-
-res:stadium/Mumbai_Football_Arena a kg:Stadium ;
-rdfs:label "Mumbai Football Arena" ;
-kg:locatedIn res:city/Mumbai .
-
-res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium ;
-rdfs:label "Sân vận động Indira Gandhi Athletic" ;
-kg:locatedIn res:city/Guwahati .
-
-res:stadium/EKA_Arena a kg:Stadium ;
-rdfs:label "EKA Arena" ;
-kg:locatedIn res:city/Ahmedabad .
-
-res:stadium/Sân_vận_động_Trivandrum a kg:Stadium ;
-rdfs:label "Sân vận động Trivandrum" ;
-kg:locatedIn res:city/Trivandrum .
-
-res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium ;
-rdfs:label "Sân vận động Khuman Lampak Main" ;
-kg:locatedIn res:city/Imphal .
-
-res:stadium/Sân_vận_động_Kalinga a kg:Stadium ;
-rdfs:label "Sân vận động Kalinga" ;
-kg:locatedIn res:city/Bhubaneswar .
-
-res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium ;
-rdfs:label "Sân vận động Sree Kanteerava" ;
-kg:locatedIn res:city/Bangalore .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Delhi .
-
-res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium ;
-rdfs:label "Sân vận động Salt Lake" ;
-kg:locatedIn res:city/Kolkata .
-
-res:stadium/Sân_vận_động_Fatorda a kg:Stadium ;
-rdfs:label "Sân vận động Fatorda" ;
-kg:locatedIn res:city/Margao .
-
-res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium ;
-rdfs:label "Sân vận động Jawaharlal Nehru" ;
-kg:locatedIn res:city/Cochin .
-
-res:stadium/Mumbai_Football_Arena a kg:Stadium ;
-rdfs:label "Mumbai Football Arena" ;
-kg:locatedIn res:city .
+res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium
+; rdfs:label "Sân vận động Khuman Lampak Main"
+; kg:locatedIn res:city/Imphal .
+res:stadium/Sân_vận_động_Kalinga a kg:Stadium
+; rdfs:label "Sân vận động Kalinga"
+; kg:locatedIn res:city/Bhubaneswar .
+res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium
+; rdfs:label "Sân vận động Sree Kanteerava"
+; kg:locatedIn res:city/Bangalore .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Delhi .
+res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium
+; rdfs:label "Sân vận động Salt Lake"
+; kg:locatedIn res:city/Kolkata .
+res:stadium/Sân_vận_động_Fatorda a kg:Stadium
+; rdfs:label "Sân vận động Fatorda"
+; kg:locatedIn res:city/Margao .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Cochin .
+res:stadium/Mumbai_Football_Arena a kg:Stadium
+; rdfs:label "Mumbai Football Arena"
+; kg:locatedIn res:city/Mumbai .
+res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium
+; rdfs:label "Sân vận động Indira Gandhi Athletic"
+; kg:locatedIn res:city/Guwahati .
+res:stadium/EKA_Arena a kg:Stadium
+; rdfs:label "EKA Arena"
+; kg:locatedIn res:city/Ahmedabad .
+res:stadium/Sân_vận_động_Trivandrum a kg:Stadium
+; rdfs:label "Sân vận động Trivandrum"
+; kg:locatedIn res:city/Trivandrum .
+res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium
+; rdfs:label "Sân vận động Khuman Lampak Main"
+; kg:locatedIn res:city/Imphal .
+res:stadium/Sân_vận_động_Kalinga a kg:Stadium
+; rdfs:label "Sân vận động Kalinga"
+; kg:locatedIn res:city/Bhubaneswar .
+res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium
+; rdfs:label "Sân vận động Sree Kanteerava"
+; kg:locatedIn res:city/Bangalore .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Delhi .
+res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium
+; rdfs:label "Sân vận động Salt Lake"
+; kg:locatedIn res:city/Kolkata .
+res:stadium/Sân_vận_động_Fatorda a kg:Stadium
+; rdfs:label "Sân vận động Fatorda"
+; kg:locatedIn res:city/Margao .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Cochin .
+res:stadium/Mumbai_Football_Arena a kg:Stadium
+; rdfs:label "Mumbai Football Arena"
+; kg:locatedIn res:city/Mumbai .
+res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium
+; rdfs:label "Sân vận động Indira Gandhi Athletic"
+; kg:locatedIn res:city/Guwahati .
+res:stadium/EKA_Arena a kg:Stadium
+; rdfs:label "EKA Arena"
+; kg:locatedIn res:city/Ahmedabad .
+res:stadium/Sân_vận_động_Trivandrum a kg:Stadium
+; rdfs:label "Sân vận động Trivandrum"
+; kg:locatedIn res:city/Trivandrum .
+res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium
+; rdfs:label "Sân vận động Khuman Lampak Main"
+; kg:locatedIn res:city/Imphal .
+res:stadium/Sân_vận_động_Kalinga a kg:Stadium
+; rdfs:label "Sân vận động Kalinga"
+; kg:locatedIn res:city/Bhubaneswar .
+res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium
+; rdfs:label "Sân vận động Sree Kanteerava"
+; kg:locatedIn res:city/Bangalore .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Delhi .
+res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium
+; rdfs:label "Sân vận động Salt Lake"
+; kg:locatedIn res:city/Kolkata .
+res:stadium/Sân_vận_động_Fatorda a kg:Stadium
+; rdfs:label "Sân vận động Fatorda"
+; kg:locatedIn res:city/Margao .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Cochin .
+res:stadium/Mumbai_Football_Arena a kg:Stadium
+; rdfs:label "Mumbai Football Arena"
+; kg:locatedIn res:city/Mumbai .
+res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium
+; rdfs:label "Sân vận động Indira Gandhi Athletic"
+; kg:locatedIn res:city/Guwahati .
+res:stadium/EKA_Arena a kg:Stadium
+; rdfs:label "EKA Arena"
+; kg:locatedIn res:city/Ahmedabad .
+res:stadium/Sân_vận_động_Trivandrum a kg:Stadium
+; rdfs:label "Sân vận động Trivandrum"
+; kg:locatedIn res:city/Trivandrum .
+res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium
+; rdfs:label "Sân vận động Khuman Lampak Main"
+; kg:locatedIn res:city/Imphal .
+res:stadium/Sân_vận_động_Kalinga a kg:Stadium
+; rdfs:label "Sân vận động Kalinga"
+; kg:locatedIn res:city/Bhubaneswar .
+res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium
+; rdfs:label "Sân vận động Sree Kanteerava"
+; kg:locatedIn res:city/Bangalore .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Delhi .
+res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium
+; rdfs:label "Sân vận động Salt Lake"
+; kg:locatedIn res:city/Kolkata .
+res:stadium/Sân_vận_động_Fatorda a kg:Stadium
+; rdfs:label "Sân vận động Fatorda"
+; kg:locatedIn res:city/Margao .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Cochin .
+res:stadium/Mumbai_Football_Arena a kg:Stadium
+; rdfs:label "Mumbai Football Arena"
+; kg:locatedIn res:city/Mumbai .
+res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium
+; rdfs:label "Sân vận động Indira Gandhi Athletic"
+; kg:locatedIn res:city/Guwahati .
+res:stadium/EKA_Arena a kg:Stadium
+; rdfs:label "EKA Arena"
+; kg:locatedIn res:city/Ahmedabad .
+res:stadium/Sân_vận_động_Trivandrum a kg:Stadium
+; rdfs:label "Sân vận động Trivandrum"
+; kg:locatedIn res:city/Trivandrum .
+res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium
+; rdfs:label "Sân vận động Khuman Lampak Main"
+; kg:locatedIn res:city/Imphal .
+res:stadium/Sân_vận_động_Kalinga a kg:Stadium
+; rdfs:label "Sân vận động Kalinga"
+; kg:locatedIn res:city/Bhubaneswar .
+res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium
+; rdfs:label "Sân vận động Sree Kanteerava"
+; kg:locatedIn res:city/Bangalore .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Delhi .
+res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium
+; rdfs:label "Sân vận động Salt Lake"
+; kg:locatedIn res:city/Kolkata .
+res:stadium/Sân_vận_động_Fatorda a kg:Stadium
+; rdfs:label "Sân vận động Fatorda"
+; kg:locatedIn res:city/Margao .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Cochin .
+res:stadium/Mumbai_Football_Arena a kg:Stadium
+; rdfs:label "Mumbai Football Arena"
+; kg:locatedIn res:city/Mumbai .
+res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium
+; rdfs:label "Sân vận động Indira Gandhi Athletic"
+; kg:locatedIn res:city/Guwahati .
+res:stadium/EKA_Arena a kg:Stadium
+; rdfs:label "EKA Arena"
+; kg:locatedIn res:city/Ahmedabad .
+res:stadium/Sân_vận_động_Trivandrum a kg:Stadium
+; rdfs:label "Sân vận động Trivandrum"
+; kg:locatedIn res:city/Trivandrum .
+res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium
+; rdfs:label "Sân vận động Khuman Lampak Main"
+; kg:locatedIn res:city/Imphal .
+res:stadium/Sân_vận_động_Kalinga a kg:Stadium
+; rdfs:label "Sân vận động Kalinga"
+; kg:locatedIn res:city/Bhubaneswar .
+res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium
+; rdfs:label "Sân vận động Sree Kanteerava"
+; kg:locatedIn res:city/Bangalore .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Delhi .
+res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium
+; rdfs:label "Sân vận động Salt Lake"
+; kg:locatedIn res:city/Kolkata .
+res:stadium/Sân_vận_động_Fatorda a kg:Stadium
+; rdfs:label "Sân vận động Fatorda"
+; kg:locatedIn res:city/Margao .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Cochin .
+res:stadium/Mumbai_Football_Arena a kg:Stadium
+; rdfs:label "Mumbai Football Arena"
+; kg:locatedIn res:city/Mumbai .
+res:stadium/Sân_vận_động_Indira_Gandhi_Athletic a kg:Stadium
+; rdfs:label "Sân vận động Indira Gandhi Athletic"
+; kg:locatedIn res:city/Guwahati .
+res:stadium/EKA_Arena a kg:Stadium
+; rdfs:label "EKA Arena"
+; kg:locatedIn res:city/Ahmedabad .
+res:stadium/Sân_vận_động_Trivandrum a kg:Stadium
+; rdfs:label "Sân vận động Trivandrum"
+; kg:locatedIn res:city/Trivandrum .
+res:stadium/Sân_vận_động_Khuma_n_Lampak_Main a kg:Stadium
+; rdfs:label "Sân vận động Khuman Lampak Main"
+; kg:locatedIn res:city/Imphal .
+res:stadium/Sân_vận_động_Kalinga a kg:Stadium
+; rdfs:label "Sân vận động Kalinga"
+; kg:locatedIn res:city/Bhubaneswar .
+res:stadium/Sân_vận_động_Sree_Kanteerava a kg:Stadium
+; rdfs:label "Sân vận động Sree Kanteerava"
+; kg:locatedIn res:city/Bangalore .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Delhi .
+res:stadium/Sân_vận_động_Salt_Lake a kg:Stadium
+; rdfs:label "Sân vận động Salt Lake"
+; kg:locatedIn res:city/Kolkata .
+res:stadium/Sân_vận_động_Fatorda a kg:Stadium
+; rdfs:label "Sân vận động Fatorda"
+; kg:locatedIn res:city/Margao .
+res:stadium/Sân_vận_động_Jawaharlal_Nehru a kg:Stadium
+; rdfs:label "Sân vận động Jawaharlal Nehru"
+; kg:locatedIn res:city/Cochin .
+res:stadium/Mumbai_Football_Arena a kg:Stadium
+; rdfs:label "Mumbai Football Arena"
+; kg:locatedIn res:city .

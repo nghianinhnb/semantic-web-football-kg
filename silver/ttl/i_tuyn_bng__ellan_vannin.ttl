@@ -1,231 +1,189 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Ellan_Vannin a kg:Team ;
-kg:teamName "Ellan Vannin"^^xsd:string ;
-kg:locatedIn res:country/Isle_of_Man ;
-kg:hasCoach res:coach/Chris_Bass ;
-kg:homeStadium res:stadium/The_Bowl ;
-kg:organizes res:competition/ConIFA_World_Football_Championship ;
-kg:participantCount "2"@xsd:positiveInteger ;
-kg:organizedBy res:organization/International_Federation_of_Associated_Football_Isle_of_Man ;
-kg:participatesIn res:season/2014_ConIFA_World_Football_Championship ;
-
-kg:hasAssistantCoach res:assistant_coach/Lee_Dixon ;
-kg:strengthAndConditioning res:staff/Ben_Carling ;
-kg:captain res:player/Frank_Jones .
-
-res:organization/International_Federation_of_Associated_Football_Isle_of_Man a kg:Organization ;
-kg:locatedIn res:country/Isle_of_Man .
-
-res:competition/ConIFA_World_Football_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá thế giới ConIFA"^^xsd:string ;
-kg:heldIn res:country/Isle_of_Man .
-
-res:season/2014_ConIFA_World_Football_Championship a kg:Season ;
-kg:seasonOf res:competition/ConIFA_World_Football_Championship .
-
-res:stadium/The_Bowl a kg:Stadium ;
-kg:capacity "3000"@xsd:positiveInteger ;
-kg:locatedIn res:city/Douglas ;
-kg:isHomeOf res:team/Ellan_Vannin .
-
-res:city/Douglas a kg:City ;
-kg:locatedIn res:country/Isle_of_Man .
-
+res:team/Ellan_Vannin a kg:Team
+; kg:teamName "Ellan Vannin"^^xsd:string
+; kg:locatedIn res:country/Isle_of_Man
+; kg:hasCoach res:coach/Chris_Bass
+; kg:homeStadium res:stadium/The_Bowl
+; kg:organizes res:competition/ConIFA_World_Football_Championship
+; kg:participantCount "2"@xsd:positiveInteger
+; kg:organizedBy res:organization/International_Federation_of_Associated_Football_Isle_of_Man
+; kg:participatesIn res:season/2014_ConIFA_World_Football_Championship .
+res:organization/International_Federation_of_Associated_Football_Isle_of_Man a kg:Organization
+; kg:locatedIn res:country/Isle_of_Man .
+res:competition/ConIFA_World_Football_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá thế giới ConIFA"^^xsd:string
+; kg:heldIn res:country/Isle_of_Man .
+res:season/2014_ConIFA_World_Football_Championship a kg:Season
+; kg:seasonOf res:competition/ConIFA_World_Football_Championship .
+res:stadium/The_Bowl a kg:Stadium
+; kg:capacity "3000"@xsd:positiveInteger
+; kg:locatedIn res:city/Douglas
+; kg:isHomeOf res:team/Ellan_Vannin .
+res:city/Douglas a kg:City
+; kg:locatedIn res:country/Isle_of_Man .
 res:country/Isle_of_Man a kg:Country .
-
-res:coach/Chris_Bass a kg:Coach ;
-kg:manages res:team/Ellan_Vannin .
-
-res:assistant_coach/Lee_Dixon a kg:AssistantCoach ;
-kg:manages res:team/Ellan_Vannin .
-
-res:staff/Ben_Carling a kg:Staff ;
-kg:worksFor res:team/Ellan_Vannin .
-
-res:player/Andy_Perry a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:birthDate "1982-05-19"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "1"@xsd:positiveInteger ;
-kg:club res:club/St_Georges_A.F.C. .
-
-res:player/Dean_Kearns a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:birthDate "1993-06-17"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "25"@xsd:positiveInteger ;
-kg:club res:club/Rushen_United_F.C. .
-
-res:player/Jack_McVey a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1991-01-13"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "14"@xsd:positiveInteger ;
-kg:club res:club/St_Georges_A.F.C. .
-
-res:player/Sam_Caine a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1988-05-26"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "2"@xsd:positiveInteger ;
-kg:club res:club/St_Georges_A.F.C. .
-
-res:player/Sean_Quaye a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1984-08-19"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "4"@xsd:positiveInteger ;
-kg:club res:club/St_Georges_A.F.C. .
-
-res:player/Cameron_Lee a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1993-08-22"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "17"@xsd:positiveInteger ;
-kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
-
-res:player/Darren_Cain a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1988-04-02"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "15"@xsd:positiveInteger ;
-kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
-
-res:player/Tom_Callister a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1994-03-28"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "7"@xsd:positiveInteger ;
-kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
-
-res:player/Andrew_Burkitt a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "2000-08-03"^^xsd:date ;
-kg:birthPlace res:city/Laxey ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "24"@xsd:positiveInteger ;
-kg:club res:club/Laxey_A.F.C. .
-
-res:player/Frank_Jones a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1987-10-22"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "8"@xsd:positiveInteger ;
-kg:club res:club/St_Georges_A.F.C. ;
-kg:captain true .
-
-res:player/Joey_Morling a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1997-01-03"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "11"@xsd:positiveInteger ;
-kg:club res:club/St_Georges_A.F.C. .
-
-res:player/Dan_Bell a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1986-01-26"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "18"@xsd:positiveInteger ;
-kg:club res:club/Peel_A.F.C. .
-
-res:player/Mike_Williams a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1994-08-19"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "21"@xsd:positiveInteger ;
-kg:club res:club/Rushen_United_F.C. .
-
-res:player/Daniel_Simpson a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1995-07-28"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "5"@xsd:positiveInteger ;
-kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
-
-res:player/Alex_Holden a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1996-01-12"^^xsd:date ;
-kg:birthPlace res:city/Bottesford_Town ;
-kg:nationality res:country/England ;
-kg:shirtNumber "10"@xsd:positiveInteger ;
-kg:club res:club/Bottesford_Town_F.C. .
-
-res:player/Joel_Ibanez a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "2000-10-02"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "3"@xsd:positiveInteger ;
-kg:club res:club/St_Georges_A.F.C. .
-
-res:player/Joey_Quayle a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1999-03-04"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "6"@xsd:positiveInteger ;
-kg:club res:club/St_Georges_A.F.C. .
-
-res:player/Brodie_Patience a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1998-02-07"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "22"@xsd:positiveInteger ;
-kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
-
-res:player/Ryan_Burns a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1994-03-18"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "12"@xsd:positiveInteger ;
-kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
-
-res:player/Ciaran_McNultey a kg:Player ;
-kg:playsFor res:team/Ellan_Vannin ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1987-07-01"^^xsd:date ;
-kg:birthPlace res:city/Douglas ;
-kg:nationality res:country/Isle_of_Man ;
-kg:shirtNumber "9"@xsd:positiveInteger ;
-kg:club res:club/St_Georges_A.F.C. .
-
-res:player/Stephen_Whitley a kg:Player ;
-kg:playsFor res:team/Ell
+res:coach/Chris_Bass a kg:Coach
+; kg:manages res:team/Ellan_Vannin .
+res:assistant_coach/Lee_Dixon a kg:AssistantCoach
+; kg:manages res:team/Ellan_Vannin .
+res:player/Andy_Perry a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Goalkeeper
+; kg:birthDate "1982-05-19"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "1"@xsd:positiveInteger
+; kg:club res:club/St_Georges_A.F.C. .
+res:player/Dean_Kearns a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Goalkeeper
+; kg:birthDate "1993-06-17"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "25"@xsd:positiveInteger
+; kg:club res:club/Rushen_United_F.C. .
+res:player/Jack_McVey a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1991-01-13"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "14"@xsd:positiveInteger
+; kg:club res:club/St_Georges_A.F.C. .
+res:player/Sam_Caine a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1988-05-26"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "2"@xsd:positiveInteger
+; kg:club res:club/St_Georges_A.F.C. .
+res:player/Sean_Quaye a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1984-08-19"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "4"@xsd:positiveInteger
+; kg:club res:club/St_Georges_A.F.C. .
+res:player/Cameron_Lee a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1993-08-22"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "17"@xsd:positiveInteger
+; kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
+res:player/Darren_Cain a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1988-04-02"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "15"@xsd:positiveInteger
+; kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
+res:player/Tom_Callister a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1994-03-28"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "7"@xsd:positiveInteger
+; kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
+res:player/Andrew_Burkitt a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "2000-08-03"^^xsd:date
+; kg:birthPlace res:city/Laxey
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "24"@xsd:positiveInteger
+; kg:club res:club/Laxey_A.F.C. .
+res:player/Frank_Jones a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1987-10-22"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "8"@xsd:positiveInteger
+; kg:club res:club/St_Georges_A.F.C. .
+res:player/Joey_Morling a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1997-01-03"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "11"@xsd:positiveInteger
+; kg:club res:club/St_Georges_A.F.C. .
+res:player/Dan_Bell a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1986-01-26"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "18"@xsd:positiveInteger
+; kg:club res:club/Peel_A.F.C. .
+res:player/Mike_Williams a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1994-08-19"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "21"@xsd:positiveInteger
+; kg:club res:club/Rushen_United_F.C. .
+res:player/Daniel_Simpson a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1995-07-28"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "5"@xsd:positiveInteger
+; kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
+res:player/Alex_Holden a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1996-01-12"^^xsd:date
+; kg:birthPlace res:city/Bottesford_Town
+; kg:nationality res:country/England
+; kg:shirtNumber "10"@xsd:positiveInteger
+; kg:club res:club/Bottesford_Town_F.C. .
+res:player/Joel_Ibanez a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "2000-10-02"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "3"@xsd:positiveInteger
+; kg:club res:club/St_Georges_A.F.C. .
+res:player/Joey_Quayle a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1999-03-04"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "6"@xsd:positiveInteger
+; kg:club res:club/St_Georges_A.F.C. .
+res:player/Brodie_Patience a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1998-02-07"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "22"@xsd:positiveInteger
+; kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
+res:player/Ryan_Burns a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1994-03-18"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "12"@xsd:positiveInteger
+; kg:club res:club/Corinthians_A.F.C._(Isle_of_Man) .
+res:player/Ciaran_McNultey a kg:Player
+; kg:playsFor res:team/Ellan_Vannin
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1987-07-01"^^xsd:date
+; kg:birthPlace res:city/Douglas
+; kg:nationality res:country/Isle_of_Man
+; kg:shirtNumber "9"@xsd:positiveInteger
+; kg:club res:club/St_Georges_A.F.C. .
+res:player/Stephen_Whitley a kg:Player
+; kg:playsFor res:team/Ell .

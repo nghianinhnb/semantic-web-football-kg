@@ -1,308 +1,204 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:club/Dong_Thap a kg:Club ;
-kg:teamName "Câu lạc bộ bóng đá Đồng Tháp" ;
-kg:hasOwner res:person/Lam_Trung_Hieu ;
-kg:hasOwner res:person/Nguyen_Trung_Son ;
-kg:homeStadium res:stadium/Cao_Lanh ;
-kg:foundedDate "1976-01-01"^^xsd:date ;
-kg:locatedIn res:city/My_Tra ;
-kg:participatesIn res:season/2024-25 ;
-kg:isHomeOf res:stadium/Cao_Lanh .
-
-res:stadium/Cao_Lanh a kg:Stadium ;
-kg:capacity 23000 ;
-kg:isHomeOf res:club/Dong_Thap .
-
-res:person/Lam_Trung_Hieu a kg:Owner ;
-kg:owns res:club/Dong_Thap .
-
-res:person/Nguyen_Trung_Son a kg:Owner ;
-kg:owns res:club/Dong_Thap .
-
+res:club/Dong_Thap a kg:Club
+; kg:teamName "Câu lạc bộ bóng đá Đồng Tháp"
+; kg:hasOwner res:person/Lam_Trung_Hieu
+; kg:hasOwner res:person/Nguyen_Trung_Son
+; kg:homeStadium res:stadium/Cao_Lanh
+; kg:foundedDate "1976-01-01"^^xsd:date
+; kg:locatedIn res:city/My_Tra
+; kg:participatesIn res:season/2024-25
+; kg:isHomeOf res:stadium/Cao_Lanh .
+res:stadium/Cao_Lanh a kg:Stadium
+; kg:capacity 23000
+; kg:isHomeOf res:club/Dong_Thap .
+res:person/Lam_Trung_Hieu a kg:Owner
+; kg:owns res:club/Dong_Thap .
+res:person/Nguyen_Trung_Son a kg:Owner
+; kg:owns res:club/Dong_Thap .
 res:club/Dong_Thap kg:hasCoach res:person/Phan_Thanh_Binh .
-
-res:person/Phan_Thanh_Binh a kg:Coach ;
-kg:manages res:club/Dong_Thap .
-
-res:season/2024-25 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
-res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam a kg:Competition ;
-kg:competitionName "Giải bóng đá hạng nhất quốc gia Việt Nam" .
-
+res:person/Phan_Thanh_Binh a kg:Coach
+; kg:manages res:club/Dong_Thap .
+res:season/2024-25 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
+res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam a kg:Competition
+; kg:competitionName "Giải bóng đá hạng nhất quốc gia Việt Nam" .
 res:club/Dong_Thap kg:participatesIn res:season/2024-25 .
-
 res:club/Dong_Thap kg:participatesIn res:season/2023-24 .
-
-res:season/2023-24 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2023-24 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2022-23 .
-
-res:season/2022-23 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2022-23 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2021-22 .
-
-res:season/2021-22 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2021-22 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2020-21 .
-
-res:season/2020-21 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2020-21 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2019-20 .
-
-res:season/2019-20 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2019-20 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2018-19 .
-
-res:season/2018-19 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2018-19 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2017-18 .
-
-res:season/2017-18 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2017-18 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2016-17 .
-
-res:season/2016-17 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2016-17 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2015-16 .
-
-res:season/2015-16 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2015-16 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2014-15 .
-
-res:season/2014-15 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2014-15 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2013-14 .
-
-res:season/2013-14 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2013-14 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2012-13 .
-
-res:season/2012-13 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2012-13 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2011-12 .
-
-res:season/2011-12 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2011-12 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2010-11 .
-
-res:season/2010-11 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2010-11 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2009-10 .
-
-res:season/2009-10 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2009-10 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2008-09 .
-
-res:season/2008-09 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2008-09 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2007-08 .
-
-res:season/2007-08 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2007-08 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2006-07 .
-
-res:season/2006-07 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2006-07 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2005-06 .
-
-res:season/2005-06 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2005-06 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2004-05 .
-
-res:season/2004-05 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2004-05 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2003-04 .
-
-res:season/2003-04 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2003-04 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2002-03 .
-
-res:season/2002-03 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2002-03 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2001-02 .
-
-res:season/2001-02 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2001-02 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/2000-01 .
-
-res:season/2000-01 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/2000-01 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1999-00 .
-
-res:season/1999-00 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1999-00 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1998-99 .
-
-res:season/1998-99 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1998-99 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1997-98 .
-
-res:season/1997-98 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1997-98 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1996-97 .
-
-res:season/1996-97 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1996-97 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1995-96 .
-
-res:season/1995-96 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1995-96 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1994-95 .
-
-res:season/1994-95 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1994-95 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1993-94 .
-
-res:season/1993-94 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1993-94 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1992-93 .
-
-res:season/1992-93 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1992-93 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1991-92 .
-
-res:season/1991-92 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1991-92 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1990-91 .
-
-res:season/1990-91 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1990-91 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1989-90 .
-
-res:season/1989-90 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1989-90 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1988-89 .
-
-res:season/1988-89 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1988-89 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1987-88 .
-
-res:season/1987-88 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1987-88 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1986-87 .
-
-res:season/1986-87 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1986-87 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1985-86 .
-
-res:season/1985-86 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1985-86 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1984-85 .
-
-res:season/1984-85 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1984-85 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1983-84 .
-
-res:season/1983-84 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1983-84 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1982-83 .
-
-res:season/1982-83 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1982-83 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1981-82 .
-
-res:season/1981-82 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1981-82 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1980-81 .
-
-res:season/1980-81 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam ;
-kg:participatesIn res:club/Dong_Thap .
-
+res:season/1980-81 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_Quoc_Gia_Viet_Nam
+; kg:participatesIn res:club/Dong_Thap .
 res:club/Dong_Thap kg:participatesIn res:season/1979-80 .
-
-res:season/1979-80 a kg:Season ;
-kg:seasonOf res:competition/Hang_Nhat_
+res:season/1979-80 a kg:Season
+; kg:seasonOf res:competition/Hang_Nhat_ .

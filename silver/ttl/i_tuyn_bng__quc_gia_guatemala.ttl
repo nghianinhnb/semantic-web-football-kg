@@ -1,342 +1,198 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Guatemala a kg:Team ;
-kg:teamName "Guatemala" ;
-kg:teamAbbreviation "GUA" ;
-kg:hasCoach res:coach/Amarini_Villatoro ;
-kg:hasCaptain res:player/Ricardo_Jerez ;
-kg:homeStadium res:stadium/Doroteo_Guamuch_Flores ;
-kg:participatesIn res:season/Copa_America_2023 ;
-
-kg:participatesIn res:season/Copa_America_1963 ;
-kg:participatesIn res:season/Copa_America_1965 ;
-kg:participatesIn res:season/Copa_America_1967 ;
-kg:participatesIn res:season/Copa_America_1969 ;
-kg:participatesIn res:season/Copa_America_1971 ;
-kg:participatesIn res:season/Copa_America_1973 ;
-kg:participatesIn res:season/Copa_America_1977 ;
-kg:participatesIn res:season/Copa_America_1981 ;
-kg:participatesIn res:season/Copa_America_1985 ;
-kg:participatesIn res:season/Copa_America_1989 ;
-kg:participatesIn res:season/Copa_America_1991 ;
-kg:participatesIn res:season/Copa_America_1993 ;
-kg:participatesIn res:season/Copa_America_1996 ;
-kg:participatesIn res:season/Copa_America_1998 ;
-kg:participatesIn res:season/Copa_America_2000 ;
-kg:participatesIn res:season/Copa_America_2002 ;
-kg:participatesIn res:season/Copa_America_2003 ;
-kg:participatesIn res:season/Copa_America_2005 ;
-kg:participatesIn res:season/Copa_America_2007 ;
-kg:participatesIn res:season/Copa_America_2009 ;
-kg:participatesIn res:season/Copa_America_2011 ;
-kg:participatesIn res:season/Copa_America_2013 ;
-kg:participatesIn res:season/Copa_America_2015 ;
-kg:participatesIn res:season/Copa_America_2017 ;
-kg:participatesIn res:season/Copa_America_2019 ;
-kg:participatesIn res:season/Copa_America_2021 ;
-kg:participatesIn res:season/Copa_America_2023 .
-
-res:stadium/Doroteo_Guamuch_Flores a kg:Stadium ;
-kg:isHomeOf res:team/Guatemala .
-
-res:coach/Amarini_Villatoro a kg:Coach ;
-kg:manages res:team/Guatemala .
-
-res:player/Ricardo_Jerez a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1986-02-04"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Nicholas_Hagen a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1996-08-02"^^xsd:date ;
-kg:nationality res:country/Israel .
-
-res:player/Fredy_Perez a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1994-12-09"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Jose_Carlos_Pinto a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1993-06-16"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Gerardo_Gordillo a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1994-08-17"^^xsd:date ;
-kg:nationality res:country/Brazil .
-
-res:player/Jose_Morales a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1996-12-03"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Jose_Ardon a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "2000-01-20"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Nicolas_Samayoa a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1995-08-02"^^xsd:date ;
-kg:nationality res:country/Romania .
-
-res:player/Aaron_Herrera a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1997-06-06"^^xsd:date ;
-kg:nationality res:country/Canada .
-
-res:player/Rodrigo_Saravia a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1993-02-22"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Carlos_Mejia a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1991-11-13"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Alejandro_Galindo a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1992-03-05"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Jorge_Aparicio a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1992-11-21"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Stheven_Robles a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1995-11-12"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Oscar_Castellanos a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "2000-01-18"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Antonio_Lopez a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1997-04-10"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Marlon_Sequen a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1993-06-23"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Pedro_Altan a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1997-06-04"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Cesar_Archila a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1993-07-30"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Darwin_Lom a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1997-07-14"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Rubio_Rubin a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1996-03-01"^^xsd:date ;
-kg:nationality res:country/USA .
-
-res:player/Nathaniel_Mendez-Laing a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1992-04-15"^^xsd:date ;
-kg:nationality res:country/England .
-
-res:player/Esteban_Garcia a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1998-03-06"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Moisés_Hernandez a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1992-03-05"^^xsd:date ;
-kg:nationality res:country/USA .
-
-res:player/Cristian_Jimenez a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1995-04-26"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Kevin_Ruiz a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1995-05-18"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Matan_Peleg a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1993-11-11"^^xsd:date ;
-kg:nationality res:country/Israel .
-
-res:player/Javier_Gonzalez a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1998-04-27"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Aslinn_Rodas a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1992-10-07"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Jose_Mario_Rosales a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1993-06-24"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Dewinder_Bradley a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1994-06-01"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Jose_Franco a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "2001-10-17"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Oscar_Santis a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1999-03-25"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Anderson_Ortiz a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "2001-11-07"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Robin_Betancourth a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1991-11-25"^^xsd:date ;
-kg:nationality res:country/Venezuela .
-
-res:player/Jose_Carlos_Martinez a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1997-10-10"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Andres_Lezcano a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1990-05-05"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/William_Cardoza a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "2002-07-29"^^xsd:date ;
-kg:nationality res:country/Guatemala .
-
-res:player/Arquimides_Ordones a kg:Player ;
-kg:playsFor res:team/Guatemala ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "2003-08-05"^^xsd:date ;
-kg:nationality res:country/USA .
-
-res:country/Guatemala a kg:Country ;
-kg:locatedIn res:country/Guatemala .
-
-res:country/Israel a kg:Country ;
-kg:locatedIn res:country/Israel .
-
-res:country/Brazil a kg:Country ;
-kg:locatedIn res:country/Brazil .
-
-res:country/Romania a kg:Country ;
-kg:locatedIn res:country/Romania .
-
-res:country/Canada a kg:Country ;
-kg:locatedIn res:country/Canada .
-
-res:country/USA a kg:Country ;
-kg:locatedIn res:country/USA .
-
-res:country/Venezuela a kg:Country ;
-kg:locatedIn res:country/Venezuela .
-
-res:country/England a kg:Country ;
-kg:locatedIn res:country/England .
-
-res:stadium/Doroteo_Guamuch_Flores a kg:Stadium ;
-kg:isHomeOf res:team/Guatemala .
-
-res:competition/Copa_America a kg:Competition ;
-kg:competitionName "Copa America" ;
-kg:organizes res:organization/CONCACAF .
-
-res:organization/CONCACAF a kg:Organization ;
-kg:organizes res:competition/Copa_America .
-
-res:season/Copa_America_1963 a kg:Season ;
-kg:seasonOf res:competition/Copa_America ;
-kg:participatesIn res:team/Guatemala .
-
-res:season/Copa_America_1965 a kg:Season ;
-kg:seasonOf res:competition/Copa_America ;
-kg:participatesIn res:team/Guatemala .
-
-res:season/Copa_America_1967 a kg:Season ;
-kg:seasonOf res:competition/Copa_America ;
-kg:participatesIn res:team/Guatemala .
-
-res:season/Copa_America_1969 a kg:Season ;
-kg:seasonOf res:competition/Copa_America ;
-kg:participatesIn res:team/Guatemala .
-
-res:season/Copa_America_1971 a kg:Season ;
-kg:seasonOf res:competition/Copa_America ;
-kg:participatesIn res:team/Guatemala .
-
-res:season/Copa_America_1973 a kg:Season ;
-kg:seasonOf res:competition/Copa_America ;
-kg:participatesIn res:team/Guatemala .
-
-res:season/Copa_America_1977 a kg:Season ;
-kg:seasonOf res:competition/Copa_Americ
+res:team/Guatemala a kg:Team
+; kg:teamName "Guatemala"
+; kg:teamAbbreviation "GUA"
+; kg:hasCoach res:coach/Amarini_Villatoro
+; kg:hasCaptain res:player/Ricardo_Jerez
+; kg:homeStadium res:stadium/Doroteo_Guamuch_Flores
+; kg:participatesIn res:season/Copa_America_2023
+; kg:participatesIn res:season/Copa_America_1963
+; kg:participatesIn res:season/Copa_America_1965
+; kg:participatesIn res:season/Copa_America_1967
+; kg:participatesIn res:season/Copa_America_1969
+; kg:participatesIn res:season/Copa_America_1971
+; kg:participatesIn res:season/Copa_America_1973
+; kg:participatesIn res:season/Copa_America_1977
+; kg:participatesIn res:season/Copa_America_1981
+; kg:participatesIn res:season/Copa_America_1985
+; kg:participatesIn res:season/Copa_America_1989
+; kg:participatesIn res:season/Copa_America_1991
+; kg:participatesIn res:season/Copa_America_1993
+; kg:participatesIn res:season/Copa_America_1996
+; kg:participatesIn res:season/Copa_America_1998
+; kg:participatesIn res:season/Copa_America_2000
+; kg:participatesIn res:season/Copa_America_2002
+; kg:participatesIn res:season/Copa_America_2003
+; kg:participatesIn res:season/Copa_America_2005
+; kg:participatesIn res:season/Copa_America_2007
+; kg:participatesIn res:season/Copa_America_2009
+; kg:participatesIn res:season/Copa_America_2011
+; kg:participatesIn res:season/Copa_America_2013
+; kg:participatesIn res:season/Copa_America_2015
+; kg:participatesIn res:season/Copa_America_2017
+; kg:participatesIn res:season/Copa_America_2019
+; kg:participatesIn res:season/Copa_America_2021
+; kg:participatesIn res:season/Copa_America_2023 .
+res:stadium/Doroteo_Guamuch_Flores a kg:Stadium
+; kg:isHomeOf res:team/Guatemala .
+res:coach/Amarini_Villatoro a kg:Coach
+; kg:manages res:team/Guatemala .
+res:player/Ricardo_Jerez a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Nicholas_Hagen a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Fredy_Perez a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Jose_Carlos_Pinto a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Gerardo_Gordillo a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Jose_Morales a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Jose_Ardon a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Nicolas_Samayoa a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Aaron_Herrera a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Rodrigo_Saravia a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Carlos_Mejia a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Alejandro_Galindo a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Jorge_Aparicio a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Stheven_Robles a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Oscar_Castellanos a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Antonio_Lopez a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Marlon_Sequen a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Pedro_Altan a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Cesar_Archila a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Darwin_Lom a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Rubio_Rubin a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Nathaniel_Mendez-Laing a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Esteban_Garcia a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Moisés_Hernandez a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Cristian_Jimenez a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Kevin_Ruiz a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Matan_Peleg a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Javier_Gonzalez a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Aslinn_Rodas a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Jose_Mario_Rosales a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Dewinder_Bradley a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jose_Franco a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Oscar_Santis a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Anderson_Ortiz a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Robin_Betancourth a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jose_Carlos_Martinez a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Andres_Lezcano a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/William_Cardoza a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Arquimides_Ordones a kg:Player
+; kg:playsFor res:team/Guatemala
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:country/Guatemala a kg:Country
+; kg:locatedIn res:country/Guatemala .
+res:country/Israel a kg:Country
+; kg:locatedIn res:country/Israel .
+res:country/Brazil a kg:Country
+; kg:locatedIn res:country/Brazil .
+res:country/Romania a kg:Country
+; kg:locatedIn res:country/Romania .
+res:country/Canada a kg:Country
+; kg:locatedIn res:country/Canada .
+res:country/USA a kg:Country
+; kg:locatedIn res:country/USA .
+res:country/Venezuela a kg:Country
+; kg:locatedIn res:country/Venezuela .
+res:country/England a kg:Country
+; kg:locatedIn res:country/England .
+res:stadium/Doroteo_Guamuch_Flores a kg:Stadium
+; kg:isHomeOf res:team/Guatemala .
+res:competition/Copa_America a kg:Competition
+; kg:competitionName "Copa America"
+; kg:organizes res:organization/CONCACAF .
+res:organization/CONCACAF a kg:Organization
+; kg:organizes res:competition/Copa_America .
+res:season/Copa_America_1963 a kg:Season
+; kg:seasonOf res:competition/Copa_America
+; kg:participatesIn res:team/Guatemala .
+res:season/Copa_America_1965 a kg:Season
+; kg:seasonOf res:competition/Copa_America
+; kg:participatesIn res:team/Guatemala .
+res:season/Copa_America_1967 a kg:Season
+; kg:seasonOf res:competition/Copa_America
+; kg:participatesIn res:team/Guatemala .
+res:season/Copa_America_1969 a kg:Season
+; kg:seasonOf res:competition/Copa_America
+; kg:participatesIn res:team/Guatemala .
+res:season/Copa_America_1971 a kg:Season
+; kg:seasonOf res:competition/Copa_America
+; kg:participatesIn res:team/Guatemala .
+res:season/Copa_America_1973 a kg:Season
+; kg:seasonOf res:competition/Copa_America
+; kg:participatesIn res:team/Guatemala .
+res:season/Copa_America_1977 a kg:Season
+; kg:seasonOf res:competition/Copa_Americ .

@@ -1,106 +1,81 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/BulgariaNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Bulgaria" ;
-kg:teamAbbreviation "BUL" ;
-kg:hasCoach res:coach/SimeonHristov ;
-kg:locatedIn res:country/Bulgaria ;
-kg:participatesIn res:season/2009 ;
-kg:participatesIn res:season/2011 .
-
-res:coach/SimeonHristov a kg:Coach ;
-rdfs:label "Simeon Hristov" ;
-kg:manages res:team/BulgariaNationalBeachSoccerTeam .
-
-res:country/Bulgaria a kg:Country ;
-rdfs:label "Bulgaria" .
-
-res:season/2009 a kg:Season ;
-kg:seasonOf res:competition/WorldBeachSoccerChampionshipQualifiers_Europe ;
-kg:participatesIn res:team/BulgariaNationalBeachSoccerTeam .
-
-res:season/2011 a kg:Season ;
-kg:seasonOf res:competition/WorldBeachSoccerChampionshipQualifiers_Europe ;
-kg:participatesIn res:team/BulgariaNationalBeachSoccerTeam .
-
-res:competition/WorldBeachSoccerChampionshipQualifiers_Europe a kg:Competition ;
-kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới khu vực châu Âu" .
-
-res:player/GiorgiSavov a kg:Player ;
-rdfs:label "Giorgi Savov" ;
-kg:playsFor res:team/BulgariaNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1 .
-
-res:player/ChavdarPetrov a kg:Player ;
-rdfs:label "Chavdar Petrov" ;
-kg:playsFor res:team/BulgariaNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 3 .
-
-res:player/GeorgiMinkov a kg:Player ;
-rdfs:label "Georgi Minkov" ;
-kg:playsFor res:team/BulgariaNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 7 .
-
-res:player/PavelAdamov a kg:Player ;
-rdfs:label "Pavel Adamov" ;
-kg:playsFor res:team/BulgariaNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 8 .
-
-res:player/FilipFilipov a kg:Player ;
-rdfs:label "Filip Filipov" ;
-kg:playsFor res:team/BulgariaNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 9 .
-
-res:player/SimeonHristov a kg:Player ;
-rdfs:label "Simeon Hristov" ;
-kg:playsFor res:team/BulgariaNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 10 .
-
-res:player/KaloyanTsvetkov a kg:Player ;
-rdfs:label "Kaloyan Tsvetkov" ;
-kg:playsFor res:team/BulgariaNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 11 .
-
-res:player/SvetoslavMandikov a kg:Player ;
-rdfs:label "Svetoslav Mandikov" ;
-kg:playsFor res:team/BulgariaNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 16 .
-
-res:player/ZhivkoParashkevov a kg:Player ;
-rdfs:label "Zhivko Parashkevov" ;
-kg:playsFor res:team/BulgariaNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 19 .
-
-res:player/KonstadinIvanov a kg:Player ;
-rdfs:label "Konstadin Ivanov" ;
-kg:playsFor res:team/BulgariaNationalBeachSoccerTeam ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 22 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:position/Goalkeeper a kg:Position ;
-rdfs:label "Goalkeeper" .
-
-res:position/Defender a kg:Position ;
-rdfs:label "Defender" .
-
-res:position/Midfielder a kg:Position ;
-rdfs:label "Midfielder" .
-
-res:position/Forward a kg:Position ;
-rdfs:label "Forward" .
-
-res:country/Bulgaria a kg:Country ;
-rdfs:label "Bulgaria" .
+res:team/BulgariaNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Bulgaria"
+; kg:teamAbbreviation "BUL"
+; kg:hasCoach res:coach/SimeonHristov
+; kg:locatedIn res:country/Bulgaria
+; kg:participatesIn res:season/2009
+; kg:participatesIn res:season/2011 .
+res:coach/SimeonHristov a kg:Coach
+; rdfs:label "Simeon Hristov"
+; kg:manages res:team/BulgariaNationalBeachSoccerTeam .
+res:country/Bulgaria a kg:Country
+; rdfs:label "Bulgaria" .
+res:season/2009 a kg:Season
+; kg:seasonOf res:competition/WorldBeachSoccerChampionshipQualifiers_Europe
+; kg:participatesIn res:team/BulgariaNationalBeachSoccerTeam .
+res:season/2011 a kg:Season
+; kg:seasonOf res:competition/WorldBeachSoccerChampionshipQualifiers_Europe
+; kg:participatesIn res:team/BulgariaNationalBeachSoccerTeam .
+res:competition/WorldBeachSoccerChampionshipQualifiers_Europe a kg:Competition
+; kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới khu vực châu Âu" .
+res:player/GiorgiSavov a kg:Player
+; rdfs:label "Giorgi Savov"
+; kg:playsFor res:team/BulgariaNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1 .
+res:player/ChavdarPetrov a kg:Player
+; rdfs:label "Chavdar Petrov"
+; kg:playsFor res:team/BulgariaNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 3 .
+res:player/GeorgiMinkov a kg:Player
+; rdfs:label "Georgi Minkov"
+; kg:playsFor res:team/BulgariaNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 7 .
+res:player/PavelAdamov a kg:Player
+; rdfs:label "Pavel Adamov"
+; kg:playsFor res:team/BulgariaNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 8 .
+res:player/FilipFilipov a kg:Player
+; rdfs:label "Filip Filipov"
+; kg:playsFor res:team/BulgariaNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 9 .
+res:player/SimeonHristov a kg:Player
+; rdfs:label "Simeon Hristov"
+; kg:playsFor res:team/BulgariaNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 10 .
+res:player/KaloyanTsvetkov a kg:Player
+; rdfs:label "Kaloyan Tsvetkov"
+; kg:playsFor res:team/BulgariaNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 11 .
+res:player/SvetoslavMandikov a kg:Player
+; rdfs:label "Svetoslav Mandikov"
+; kg:playsFor res:team/BulgariaNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 16 .
+res:player/ZhivkoParashkevov a kg:Player
+; rdfs:label "Zhivko Parashkevov"
+; kg:playsFor res:team/BulgariaNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 19 .
+res:player/KonstadinIvanov a kg:Player
+; rdfs:label "Konstadin Ivanov"
+; kg:playsFor res:team/BulgariaNationalBeachSoccerTeam
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 22
+; kg:preferredFoot kg:LeftFooted .
+res:position/Goalkeeper a kg:Position
+; rdfs:label "Goalkeeper" .
+res:position/Defender a kg:Position
+; rdfs:label "Defender" .
+res:position/Midfielder a kg:Position
+; rdfs:label "Midfielder" .
+res:position/Forward a kg:Position
+; rdfs:label "Forward" .
+res:country/Bulgaria a kg:Country
+; rdfs:label "Bulgaria" .

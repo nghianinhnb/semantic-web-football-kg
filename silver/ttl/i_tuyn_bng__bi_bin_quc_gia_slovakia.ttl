@@ -1,79 +1,45 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Slovakian_Beach_Football_National_Team a kg:Team ;
-kg:teamName "Slovakia" ;
-kg:hasCoach res:coach/Marek_Kostoláni, res:coach/Michal_Kanyai ;
-kg:manages res:coach/Marek_Kostoláni, res:coach/Michal_Kanyai ;
-kg:captain res:player/Marián_Drahoš ;
-kg:organisedBy res:organization/Slovak_Football_Association ;
-kg:confederation res:country/Europe ;
-kg:memberOf res:competition/World_Beach_Soccer_Championship_Qualification_European_Zone ;
-kg:bestPerformanceInCompetition "Round of 16 in World Beach Soccer Championship Qualification European Zone" ;
-kg:participatedInSeason "2008", "2011", "2015" ;
-kg:firstMatch res:match/2008_Benidorm_vs_Poland ;
-kg:largestWin res:match/2015_Linz_vs_Norway ;
-kg:largestLoss res:match/2014_Jesolo_vs_Switzerland .
-
-res:match/2008_Benidorm_vs_Poland a kg:Match ;
-kg:homeTeam res:team/Slovakian_Beach_Football_National_Team ;
-kg:awayTeam res:team/Poland ;
-kg:venue res:place/Benidorm ;
-kg:kickoffTime "2008-05-11"^^xsd:date ;
-kg:result "1-4" .
-
-res:match/2015_Linz_vs_Norway a kg:Match ;
-kg:homeTeam res:team/Slovakian_Beach_Football_National_Team ;
-kg:awayTeam res:team/Norway ;
-kg:venue res:place/Linz ;
-kg:kickoffTime "2015-07-19"^^xsd:date ;
-kg:result "8-4" .
-
-res:match/2014_Jesolo_vs_Switzerland a kg:Match ;
-kg:homeTeam res:team/Slovakian_Beach_Football_National_Team ;
-kg:awayTeam res:team/Switzerland ;
-kg:venue res:place/Jesolo ;
-kg:kickoffTime "2014-08-05"^^xsd:date ;
-kg:result "0-14" .
-
-res:coach/Marek_Kostoláni a kg:Coach ;
-kg:manages res:team/Slovakian_Beach_Football_National_Team .
-
-res:coach/Michal_Kanyai a kg:Coach ;
-kg:manages res:team/Slovakian_Beach_Football_National_Team .
-
-res:player/Marián_Drahoš a kg:Player ;
-kg:playsFor res:team/Slovakian_Beach_Football_National_Team ;
-kg:captainOf res:team/Slovakian_Beach_Football_National_Team .
-
-res:organization/Slovak_Football_Association a kg:Organization ;
-kg:managedTeam res:team/Slovakian_Beach_Football_National_Team .
-
-res:competition/World_Beach_Soccer_Championship_Qualification_European_Zone a kg:Competition ;
-kg:competitionName "World Beach Soccer Championship Qualification European Zone" ;
-kg:heldIn res:country/Europe .
-
+res:team/Slovakian_Beach_Football_National_Team a kg:Team
+; kg:teamName "Slovakia"
+; kg:hasCoach res:coach/Marek_Kostoláni , res:coach/Michal_Kanyai
+; kg:manages res:coach/Marek_Kostoláni , res:coach/Michal_Kanyai .
+res:match/2008_Benidorm_vs_Poland a kg:Match
+; kg:homeTeam res:team/Slovakian_Beach_Football_National_Team
+; kg:awayTeam res:team/Poland
+; kg:venue res:place/Benidorm
+; kg:kickoffTime "2008-05-11"^^xsd:date
+; kg:result "1-4" .
+res:match/2015_Linz_vs_Norway a kg:Match
+; kg:homeTeam res:team/Slovakian_Beach_Football_National_Team
+; kg:awayTeam res:team/Norway
+; kg:venue res:place/Linz
+; kg:kickoffTime "2015-07-19"^^xsd:date
+; kg:result "8-4" .
+res:match/2014_Jesolo_vs_Switzerland a kg:Match
+; kg:homeTeam res:team/Slovakian_Beach_Football_National_Team
+; kg:awayTeam res:team/Switzerland
+; kg:venue res:place/Jesolo
+; kg:kickoffTime "2014-08-05"^^xsd:date
+; kg:result "0-14" .
+res:coach/Marek_Kostoláni a kg:Coach
+; kg:manages res:team/Slovakian_Beach_Football_National_Team .
+res:coach/Michal_Kanyai a kg:Coach
+; kg:manages res:team/Slovakian_Beach_Football_National_Team .
+res:player/Marián_Drahoš a kg:Player
+; kg:playsFor res:team/Slovakian_Beach_Football_National_Team .
+res:organization/Slovak_Football_Association a kg:Organization .
+res:competition/World_Beach_Soccer_Championship_Qualification_European_Zone a kg:Competition
+; kg:competitionName "World Beach Soccer Championship Qualification European Zone"
+; kg:heldIn res:country/Europe .
 res:country/Europe a kg:Country .
-
-res:place/Benidorm a kg:City ;
-kg:locatedIn res:country/Spain .
-
-res:place/Linz a kg:City ;
-kg:locatedIn res:country/Austria .
-
-res:place/Jesolo a kg:City ;
-kg:locatedIn res:country/Italy .
-
+res:place/Benidorm a kg:City
+; kg:locatedIn res:country/Spain .
+res:place/Linz a kg:City
+; kg:locatedIn res:country/Austria .
+res:place/Jesolo a kg:City
+; kg:locatedIn res:country/Italy .
 res:team/Poland a kg:Team .
-
 res:team/Norway a kg:Team .
-
 res:team/Switzerland a kg:Team .
-
 res:country/Spain a kg:Country .
-
 res:country/Austria a kg:Country .
-
 res:country/Italy a kg:Country .

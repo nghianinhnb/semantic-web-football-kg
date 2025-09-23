@@ -1,101 +1,75 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Costa_Rica_Beach_Soccer_National_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Costa Rica" ;
-kg:hasCoach res:coach/Franklin_Zuñiga ;
-kg:locatedIn res:country/Costa_Rica ;
-kg:participantCount "2"^^xsd:positiveInteger ;
-kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Costa_Rica ;
-kg:heldIn res:country/Costa_Rica ;
-kg:participatesIn res:competition/World_Beach_Soccer_Championship ;
-kg:participatesIn res:competition/North_Central_American_and_Caribbean_Beach_Soccer_Championship .
-
+res:team/Costa_Rica_Beach_Soccer_National_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Costa Rica"
+; kg:hasCoach res:coach/Franklin_Zuñiga
+; kg:locatedIn res:country/Costa_Rica
+; kg:participantCount "2"^^xsd:positiveInteger
+; kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Costa_Rica
+; kg:heldIn res:country/Costa_Rica
+; kg:participatesIn res:competition/World_Beach_Soccer_Championship
+; kg:participatesIn res:competition/North_Central_American_and_Caribbean_Beach_Soccer_Championship .
 res:organization/Liên_đoàn_bóng_đá_Costa_Rica a kg:Organization .
-
-res:coach/Franklin_Zuñiga a kg:Coach ;
-kg:manages res:team/Costa_Rica_Beach_Soccer_National_Team .
-
-res:competition/World_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
-kg:participantCount "15"^^xsd:positiveInteger .
-
-res:competition/North_Central_American_and_Caribbean_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" ;
-kg:participantCount "6"^^xsd:positiveInteger .
-
-res:player/Claudio_Adanis a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber "1"^^xsd:positiveInteger .
-
-res:player/Andres_Villegas a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "2"^^xsd:positiveInteger .
-
-res:player/Jose_Mendoza a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "3"^^xsd:positiveInteger .
-
-res:player/Alfredo_Azuola a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "4"^^xsd:positiveInteger .
-
-res:player/Luis_Jimenez a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "5"^^xsd:positiveInteger .
-
-res:player/Christian_Sanchez a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "6"^^xsd:positiveInteger .
-
-res:player/William_Leon a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "7"^^xsd:positiveInteger .
-
-res:player/Jason_Campos a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "8"^^xsd:positiveInteger .
-
-res:player/Greivin_Pacheco a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "9"^^xsd:positiveInteger .
-
-res:player/Danny_Jonhson a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "10"^^xsd:positiveInteger .
-
-res:player/Jossimar_Downer a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "11"^^xsd:positiveInteger .
-
-res:player/Niels_Fallas a kg:Player ;
-kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber "12"^^xsd:positiveInteger .
-
-res:position/Goalkeeper a kg:Position ;
-rdfs:subClassOf kg:Position .
-
-res:position/Defender a kg:Position ;
-rdfs:subClassOf kg:Position .
-
-res:position/Midfielder a kg:Position ;
-rdfs:subClassOf kg:Position .
-
-res:position/Forward a kg:Position ;
-rdfs:subClassOf kg:Position .
-
+res:coach/Franklin_Zuñiga a kg:Coach
+; kg:manages res:team/Costa_Rica_Beach_Soccer_National_Team .
+res:competition/World_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới"
+; kg:participantCount "15"^^xsd:positiveInteger .
+res:competition/North_Central_American_and_Caribbean_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe"
+; kg:participantCount "6"^^xsd:positiveInteger .
+res:player/Claudio_Adanis a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber "1"^^xsd:positiveInteger .
+res:player/Andres_Villegas a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "2"^^xsd:positiveInteger .
+res:player/Jose_Mendoza a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "3"^^xsd:positiveInteger .
+res:player/Alfredo_Azuola a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "4"^^xsd:positiveInteger .
+res:player/Luis_Jimenez a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "5"^^xsd:positiveInteger .
+res:player/Christian_Sanchez a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "6"^^xsd:positiveInteger .
+res:player/William_Leon a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "7"^^xsd:positiveInteger .
+res:player/Jason_Campos a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "8"^^xsd:positiveInteger .
+res:player/Greivin_Pacheco a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "9"^^xsd:positiveInteger .
+res:player/Danny_Jonhson a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "10"^^xsd:positiveInteger .
+res:player/Jossimar_Downer a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "11"^^xsd:positiveInteger .
+res:player/Niels_Fallas a kg:Player
+; kg:playsFor res:team/Costa_Rica_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber "12"^^xsd:positiveInteger .
+res:position/Goalkeeper a kg:Position
+; rdfs:subClassOf kg:Position .
+res:position/Defender a kg:Position
+; rdfs:subClassOf kg:Position .
+res:position/Midfielder a kg:Position
+; rdfs:subClassOf kg:Position .
+res:position/Forward a kg:Position
+; rdfs:subClassOf kg:Position .
 res:country/Costa_Rica a kg:Country .

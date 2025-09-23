@@ -1,189 +1,48 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Japanese_National_Women%27s_Football_Team a kg:Team ;
-kg:teamName "Japanese National Women's Football Team" ;
-kg:teamAbbreviation "JPN" ;
-kg:hasCoach res:coach/Ikeda_Futoshi ;
-kg:manages res:coach/Ikeda_Futoshi ;
-kg:hasCaptain res:player/Kumagai_Saki ;
-kg:participatesIn res:competition/FIFA_World_Cup_Women ;
-kg:participatesIn res:competition/Olympic_Games ;
-
-kg:participatesIn res:competition/Asian_Championship_Women ;
-kg:participatesIn res:competition/East_Asian_Championship_Women ;
-kg:participatesIn res:competition/Asian_Games_Women ;
-
-kg:recordInCompetition res:match/1991_World_Cup_Group_Stage ;
-kg:recordInCompetition res:match/1995_World_Cup_Group_Stage ;
-kg:recordInCompetition res:match/1999_World_Cup_Group_Stage ;
-kg:recordInCompetition res:match/2003_World_Cup_Group_Stage ;
-kg:recordInCompetition res:match/2007_World_Cup_Group_Stage ;
-kg:recordInCompetition res:match/2011_World_Cup_Final ;
-kg:recordInCompetition res:match/2015_World_Cup_Final ;
-kg:recordInCompetition res:match/2019_World_Cup_Round_of_16 ;
-kg:recordInCompetition res:match/2023_World_Cup_Quarterfinals ;
-kg:recordInCompetition res:match/2027_World_Cup_Not_Yet_Held ;
-
-kg:recordInCompetition res:match/1996_Olympics_Group_Stage ;
-kg:recordInCompetition res:match/2000_Olympics_Qualification_Failed ;
-kg:recordInCompetition res:match/2004_Olympics_Quarterfinals ;
-kg:recordInCompetition res:match/2008_Olympics_Fourth_Place_Match ;
-kg:recordInCompetition res:match/2012_Olympics_Final ;
-kg:recordInCompetition res:match/2016_Olympics_Qualification_Failed ;
-kg:recordInCompetition res:match/2020_Olympics_Quarterfinals ;
-kg:recordInCompetition res:match/2024_Olympics_Quarterfinals ;
-kg:recordInCompetition res:match/2028_Olympics_Not_Yet_Held ;
-
-kg:recordInCompetition res:match/1977_Asian_Championship_Group_Stage ;
-kg:recordInCompetition res:match/1981_Asian_Championship_Group_Stage ;
-kg:recordInCompetition res:match/1986_Asian_Championship_Final ;
-kg:recordInCompetition res:match/1989_Asian_Championship_Third_Place_Match ;
-kg:recordInCompetition res:match/1991_Asian_Championship_Final ;
-kg:recordInCompetition res:match/1993_Asian_Championship_Third_Place_Match ;
-kg:recordInCompetition res:match/1995_Asian_Championship_Final ;
-kg:recordInCompetition res:match/1997_Asian_Championship_Third_Place_Match ;
-kg:recordInCompetition res:match/1999_Asian_Championship_Fourth_Place_Match ;
-kg:recordInCompetition res:match/2001_Asian_Championship_Final ;
-kg:recordInCompetition res:match/2003_Asian_Championship_Fourth_Place_Match ;
-kg:recordInCompetition res:match/2006_Asian_Championship_Fourth_Place_Match ;
-kg:recordInCompetition res:match/2008_Asian_Championship_Third_Place_Match ;
-kg:recordInCompetition res:match/2010_Asian_Championship_Fourth_Place_Match ;
-kg:recordInCompetition res:match/2014_Asian_Championship_Final ;
-kg:recordInCompetition res:match/2018_Asian_Championship_Final ;
-kg:recordInCompetition res:match/2022_Asian_Championship_Third_Place_Match ;
-kg:recordInCompetition res:match/2026_Asian_Championship_Qualified ;
-
-kg:recordInCompetition res:match/2005_East_Asian_Championship_Third_Place_Match ;
-kg:recordInCompetition res:match/2008_East_Asian_Championship_Final ;
-kg:recordInCompetition res:match/2010_East_Asian_Championship_Final ;
-kg:recordInCompetition res:match/2013_East_Asian_Championship_SemiFinal ;
-kg:recordInCompetition res:match/2015_East_Asian_Championship_Third_Place_Match ;
-kg:recordInCompetition res:match/2017_East_Asian_Championship_SemiFinal ;
-kg:recordInCompetition res:match/2019_East_Asian_Championship_Final ;
-kg:recordInCompetition res:match/2022_East_Asian_Championship_SemiFinal ;
-
-kg:recordInCompetition res:match/1990_Asian_Games_Group_Stage ;
-kg:recordInCompetition res:match/1994_Asian_Games_Group_Stage ;
-kg:recordInCompetition res:match/1998_Asian_Games_Bronze_Match ;
-kg:recordInCompetition res:match/2002_Asian_Games_Bronze_Match ;
-kg:recordInCompetition res:match/2006_Asian_Games_Silver_Match ;
-kg:recordInCompetition res:match/2010_Asian_Games_Gold_Match ;
-kg:recordInCompetition res:match/2014_Asian_Games_Silver_Match ;
-kg:recordInCompetition res:match/2018_Asian_Games_Gold_Match ;
-kg:recordInCompetition res:match/2022_Asian_Games_Gold_Match ;
-kg:recordInCompetition res:match/2026_Asian_Games_Not_Yet_Held ;
-
-kg:mostCaps res:player/Sawa_Homare ;
-kg:topScorer res:player/Sawa_Homare ;
-kg:currentRanking res:ranking/2022_FIFA_Women%27s_World_Rankings ;
-kg:maxRanking res:rank/3 ;
-kg:minRanking res:rank/14 ;
-kg:bestPerformance res:performance/2011_World_Cup_Champions ;
-kg:bestOlympicResult res:medal/Silver_2012_London_Olympics ;
-kg:bestAsianCupResult res:medal/Gold_2014_and_2018_Asian_Championships ;
-
-kg:associatedWith res:organization/Japan_Football_Association ;
-kg:confederation res:organization/AFC ;
-kg:subConfederation res:organization/EAFF ;
-kg:nickname "Nadeshiko Japan" ;
-kg:firstGame res:match/1981_Japan_v_Taiwan ;
-kg:largestWin res:match/1997_Japan_v_Guam ;
-kg:largestLoss res:match/1999_USA_v_Japan ;
-
-kg:member res:player/Yamashita_Ayaka ;
-kg:member res:player/Ikeda_Sakiko ;
-kg:member res:player/Hirao_Chika ;
-kg:member res:player/Utsugi_Rumi ;
-kg:member res:player/Sameshima_Aya ;
-kg:member res:player/Kumagai_Saki ;
-kg:member res:player/Shimizu_Risa ;
-kg:member res:player/Ichise_Nana ;
-kg:member res:player/Miyake_Shiori ;
-kg:member res:player/Minami_Moeka ;
-kg:member res:player/Miyagawa_Asato ;
-kg:member res:player/Sakaguchi_Mizuho ;
-kg:member res:player/Nakajima_Emii ;
-kg:member res:player/Hasegawa_Yui ;
-kg:member res:player/Momiki_Yuka ;
-kg:member res:player/Miura_Narumi ;
-kg:member res:player/Sugita_Hina ;
-kg:member res:player/Sugasawa_Yuika ;
-kg:member res:player/Iwabuchi_Mana ;
-kg:member res:player/Yokoyama_Kumi ;
-kg:member res:player/Endo_Jun ;
-kg:member res:player/Kobayashi_Rikako ;
-kg:member res:player/Takarada_Saori .
-
-res:coach/Ikeda_Futoshi a kg:Coach ;
-kg:name "Ikeda Futoshi" .
-
-res:player/Kumagai_Saki a kg:Player ;
-kg:name "Kumagai Saki" ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 4 ;
-kg:birthDate "1990-10-17"^^xsd:date ;
-kg:birthPlace res:city/Tokyo ;
-kg:nationality res:country/Japan ;
-kg:playsFor res:team/Japanese_National_Women%27s_Football_Team .
-
-res:player/Sawa_Homare a kg:Player ;
-kg:name "Sawa Homare" ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 10 ;
-kg:birthDate "1978-10-22"^^xsd:date ;
-kg:birthPlace res:city/Tokyo ;
-kg:nationality res:country/Japan ;
-kg:playsFor res:team/Japanese_National_Women%27s_Football_Team ;
-kg:mostCaps 205 ;
-kg:topScorer 83 .
-
-res:organization/Japan_Football_Association a kg:Organization ;
-kg:name "Japan Football Association (JFA)" .
-
-res:organization/AFC a kg:Organization ;
-kg:name "Asia Football Confederation (AFC)" .
-
-res:organization/EAFF a kg:Organization ;
-kg:name "East Asian Football Federation (EAFF)" .
-
-res:competition/FIFA_World_Cup_Women a kg:Competition ;
-kg:name "FIFA Women's World Cup" .
-
-res:competition/Olympic_Games a kg:Competition ;
-kg:name "Olympic Games" .
-
-res:competition/Asian_Championship_Women a kg:Competition ;
-kg:name "Asian Championship Women's Football" .
-
-res:competition/East_Asian_Championship_Women a kg:Competition ;
-kg:name "East Asian Championship Women's Football" .
-
-res:competition/Asian_Games_Women a kg:Competition ;
-kg:name "Asian Games Women's Football" .
-
-res:match/1981_Japan_v_Taiwan a kg:Match ;
-kg:homeTeam res:team/Japanese_National_Women%27s_Football_Team ;
-kg:awayTeam res:team/Taiwan_National_Women%27s_Football_Team ;
-kg:score "1–0" ;
-kg:location res:city/Hong_Kong ;
-kg:kickoffTime "1981-06-07"^^xsd:date .
-
-res:match/1997_Japan_v_Guam a kg:Match ;
-kg:homeTeam res:team/Japanese_National_Women%27s_Football_Team ;
-kg:awayTeam res:team/Guam_National_Women%27s_Football_Team ;
-kg:score "21–0" ;
-kg:location res:city/Guangzhou ;
-kg:kickoffTime "1997-12-05"^^xsd:date .
-
-res:match/1999_USA_v_Japan a kg:Match ;
-kg:homeTeam res:team/United_States_National_Women%27s_Football_Team ;
-kg:awayTeam res:team/Japanese_National_Women%27s_Football_Team ;
-kg:score "9–0" ;
-kg:location res:city/Charlotte ;
-kg:kickoffTime "1999-04-29"^^xsd:date .
-
-res:match/2011_World_Cup_Final a kg:Match ;
-kg:homeTeam
+res:team/Japanese_National_Women%27s_Football_Team a kg:Team
+; kg:teamName "Japanese National Women's Football Team"
+; kg:teamAbbreviation "JPN"
+; kg:hasCoach res:coach/Ikeda_Futoshi
+; kg:manages res:coach/Ikeda_Futoshi
+; kg:hasCaptain res:player/Kumagai_Saki
+; kg:participatesIn res:competition/FIFA_World_Cup_Women
+; kg:participatesIn res:competition/Olympic_Games
+; kg:participatesIn res:competition/Asian_Championship_Women
+; kg:participatesIn res:competition/East_Asian_Championship_Women
+; kg:participatesIn res:competition/Asian_Games_Women .
+res:coach/Ikeda_Futoshi a kg:Coach
+; kg:name "Ikeda Futoshi" .
+res:player/Kumagai_Saki a kg:Player
+; kg:name "Kumagai Saki"
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Sawa_Homare a kg:Player
+; kg:name "Sawa Homare"
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:organization/Japan_Football_Association a kg:Organization
+; kg:name "Japan Football Association (JFA)" .
+res:organization/AFC a kg:Organization
+; kg:name "Asia Football Confederation (AFC)" .
+res:organization/EAFF a kg:Organization
+; kg:name "East Asian Football Federation (EAFF)" .
+res:competition/FIFA_World_Cup_Women a kg:Competition
+; kg:name "FIFA Women's World Cup" .
+res:competition/Olympic_Games a kg:Competition
+; kg:name "Olympic Games" .
+res:competition/Asian_Championship_Women a kg:Competition
+; kg:name "Asian Championship Women's Football" .
+res:competition/East_Asian_Championship_Women a kg:Competition
+; kg:name "East Asian Championship Women's Football" .
+res:competition/Asian_Games_Women a kg:Competition
+; kg:name "Asian Games Women's Football" .
+res:match/1981_Japan_v_Taiwan a kg:Match
+; kg:homeTeam res:team/Japanese_National_Women%27s_Football_Team
+; kg:awayTeam res:team/Taiwan_National_Women%27s_Football_Team
+; kg:kickoffTime "1981-06-07"^^xsd:date .
+res:match/1997_Japan_v_Guam a kg:Match
+; kg:homeTeam res:team/Japanese_National_Women%27s_Football_Team
+; kg:awayTeam res:team/Guam_National_Women%27s_Football_Team
+; kg:kickoffTime "1997-12-05"^^xsd:date .
+res:match/1999_USA_v_Japan a kg:Match
+; kg:homeTeam res:team/United_States_National_Women%27s_Football_Team
+; kg:awayTeam res:team/Japanese_National_Women%27s_Football_Team
+; kg:kickoffTime "1999-04-29"^^xsd:date .
+res:match/2011_World_Cup_Final a kg:Match .

@@ -1,50 +1,33 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Qatar_National_Beach_Soccer_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Qatar" ;
-kg:teamAbbreviation "QAT" ;
-kg:locatedIn res:country/Qatar ;
-kg:hasCoach [] ;
-kg:manages [] ;
-kg:participatesIn res:competition/Asian_Beach_Sports_Games .
-
-res:country/Qatar a kg:Country ;
-rdfs:label "Qatar" .
-
-res:competition/Asian_Beach_Sports_Games a kg:Competition ;
-kg:competitionName "Đại hội thể thao bãi biển châu Á" ;
-kg:heldIn res:country/Qatar ;
-kg:participantCount 14 .
-
-res:player/Ahmed_Farahan a kg:Player ;
-kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
-
-res:player/Rashid_Al_Kaabi a kg:Player ;
-kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
-
-res:player/Rashid_Mubarak a kg:Player ;
-kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
-
-res:player/Hamad_Ali a kg:Player ;
-kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
-
-res:player/Saleh_Al_Kuwari a kg:Player ;
-kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
-
-res:player/Shehab_Menour a kg:Player ;
-kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
-
-res:player/Ali_Mohammed a kg:Player ;
-kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
-
-res:player/Mohammed_Fahad a kg:Player ;
-kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
-
-res:player/Mohammed_Rashid a kg:Player ;
-kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
-
-res:player/Jafal_Rashid a kg:Player ;
-kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
+res:team/Qatar_National_Beach_Soccer_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Qatar"
+; kg:teamAbbreviation "QAT"
+; kg:locatedIn res:country/Qatar
+; kg:hasCoach []
+; kg:manages []
+; kg:participatesIn res:competition/Asian_Beach_Sports_Games .
+res:country/Qatar a kg:Country
+; rdfs:label "Qatar" .
+res:competition/Asian_Beach_Sports_Games a kg:Competition
+; kg:competitionName "Đại hội thể thao bãi biển châu Á"
+; kg:heldIn res:country/Qatar
+; kg:participantCount 14 .
+res:player/Ahmed_Farahan a kg:Player
+; kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
+res:player/Rashid_Al_Kaabi a kg:Player
+; kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
+res:player/Rashid_Mubarak a kg:Player
+; kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
+res:player/Hamad_Ali a kg:Player
+; kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
+res:player/Saleh_Al_Kuwari a kg:Player
+; kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
+res:player/Shehab_Menour a kg:Player
+; kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
+res:player/Ali_Mohammed a kg:Player
+; kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
+res:player/Mohammed_Fahad a kg:Player
+; kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
+res:player/Mohammed_Rashid a kg:Player
+; kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .
+res:player/Jafal_Rashid a kg:Player
+; kg:playsFor res:team/Qatar_National_Beach_Soccer_Team .

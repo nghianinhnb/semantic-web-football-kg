@@ -1,87 +1,54 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/El_Salvador_Beach_Soccer_National_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia El Salvador" ;
-kg:hasCoach res:coach/Rudis_Gonzalez_Gallo ;
-kg:locatedIn res:country/El_Salvador ;
-kg:member res:player/Douglas_Zavala ;
-kg:member res:player/Heber_Ramos ;
-kg:member res:player/Tomas_Hernandez ;
-kg:member res:player/Roberto_Membreño ;
-kg:member res:player/Melvin_Segovia ;
-kg:member res:player/Elmer_Robles ;
-kg:member res:player/Darwin_Ramirez ;
-kg:member res:player/Jose_Batres ;
-kg:member res:player/Rafael_Rizo ;
-kg:member res:player/Eliodoro_Portillo .
-
-res:coach/Rudis_Gonzalez_Gallo a kg:Coach ;
-kg:manages res:team/El_Salvador_Beach_Soccer_National_Team .
-
-res:player/Douglas_Zavala a kg:Player ;
-kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "2"^^xsd:positiveInteger .
-
-res:player/Heber_Ramos a kg:Player ;
-kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "3"^^xsd:positiveInteger .
-
-res:player/Tomas_Hernandez a kg:Player ;
-kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "4"^^xsd:positiveInteger .
-
-res:player/Roberto_Membreño a kg:Player ;
-kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "5"^^xsd:positiveInteger .
-
-res:player/Melvin_Segovia a kg:Player ;
-kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "6"^^xsd:positiveInteger .
-
-res:player/Elmer_Robles a kg:Player ;
-kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "7"^^xsd:positiveInteger .
-
-res:player/Darwin_Ramirez a kg:Player ;
-kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "8"^^xsd:positiveInteger .
-
-res:player/Jose_Batres a kg:Player ;
-kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "9"^^xsd:positiveInteger ;
-kg:isCaptain true .
-
-res:player/Rafael_Rizo a kg:Player ;
-kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "11"^^xsd:positiveInteger .
-
-res:player/Eliodoro_Portillo a kg:Player ;
-kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber "12"^^xsd:positiveInteger .
-
+res:team/El_Salvador_Beach_Soccer_National_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia El Salvador"
+; kg:hasCoach res:coach/Rudis_Gonzalez_Gallo
+; kg:locatedIn res:country/El_Salvador .
+res:coach/Rudis_Gonzalez_Gallo a kg:Coach
+; kg:manages res:team/El_Salvador_Beach_Soccer_National_Team .
+res:player/Douglas_Zavala a kg:Player
+; kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "2"^^xsd:positiveInteger .
+res:player/Heber_Ramos a kg:Player
+; kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "3"^^xsd:positiveInteger .
+res:player/Tomas_Hernandez a kg:Player
+; kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "4"^^xsd:positiveInteger .
+res:player/Roberto_Membreño a kg:Player
+; kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "5"^^xsd:positiveInteger .
+res:player/Melvin_Segovia a kg:Player
+; kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "6"^^xsd:positiveInteger .
+res:player/Elmer_Robles a kg:Player
+; kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "7"^^xsd:positiveInteger .
+res:player/Darwin_Ramirez a kg:Player
+; kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "8"^^xsd:positiveInteger .
+res:player/Jose_Batres a kg:Player
+; kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "9"^^xsd:positiveInteger
+; kg:isCaptain true .
+res:player/Rafael_Rizo a kg:Player
+; kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "11"^^xsd:positiveInteger .
+res:player/Eliodoro_Portillo a kg:Player
+; kg:playsFor res:team/El_Salvador_Beach_Soccer_National_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber "12"^^xsd:positiveInteger .
 res:position/Defender a kg:Defender .
-
 res:position/Midfielder a kg:Midfielder .
-
 res:position/Forward a kg:Forward .
-
 res:position/Goalkeeper a kg:Goalkeeper .
-
-res:country/El_Salvador a kg:Country ;
-rdfs:label "El Salvador" .
-
+res:country/El_Salvador a kg:Country
+; rdfs:label "El Salvador" .
 res:team/El_Salvador_Beach_Soccer_National_Team kg:locatedIn res:country/El_Salvador .

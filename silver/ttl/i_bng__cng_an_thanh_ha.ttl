@@ -1,33 +1,21 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:club/Đội bóng đá Công an Thanh Hóa a kg:Club ;
-kg:teamName "Đội bóng đá Công an Thanh Hóa"^^xsd:string ;
-kg:teamAbbreviation "Công an Thanh Hóa"^^xsd:string ;
-kg:foundedDate "1947-01-01"^^xsd:date ;
-kg:hasOwner res:owner/Công an tỉnh Thanh Hóa ;
-kg:homeStadium res:stadium/Sân vận động Thanh Hóa .
-
-res:owner/Công an tỉnh Thanh Hóa a kg:Owner ;
-kg:owns res:club/Đội bóng đá Công an Thanh Hóa .
-
-res:stadium/Sân vận động Thanh Hóa a kg:Stadium ;
-kg:capacity 14000^^xsd:positiveInteger ;
-kg:isHomeOf res:club/Đội bóng đá Công an Thanh Hóa .
-
-res:city/Thanh Hóa a kg:City ;
-kg:locatedIn res:country/Việt Nam .
-
+res:club/Đội bóng đá Công an Thanh Hóa a kg:Club
+; kg:teamName "Đội bóng đá Công an Thanh Hóa"^^xsd:string
+; kg:teamAbbreviation "Công an Thanh Hóa"^^xsd:string
+; kg:foundedDate "1947-01-01"^^xsd:date
+; kg:hasOwner res:owner/Công an tỉnh Thanh Hóa
+; kg:homeStadium res:stadium/Sân vận động Thanh Hóa .
+res:owner/Công an tỉnh Thanh Hóa a kg:Owner
+; kg:owns res:club/Đội bóng đá Công an Thanh Hóa .
+res:stadium/Sân vận động Thanh Hóa a kg:Stadium
+; kg:capacity 14000^^xsd:positiveInteger
+; kg:isHomeOf res:club/Đội bóng đá Công an Thanh Hóa .
+res:city/Thanh Hóa a kg:City
+; kg:locatedIn res:country/Việt Nam .
 res:country/Việt Nam a kg:Country .
-
-res:position/Đội bóng xứ Thanh a kg:Position ;
-rdfs:label "Đội bóng xứ Thanh"^^xsd:string .
-
-res:position/Hào khí Lam Sơn a kg:Position ;
-rdfs:label "Hào khí Lam Sơn"^^xsd:string .
-
+res:position/Đội bóng xứ Thanh a kg:Position
+; rdfs:label "Đội bóng xứ Thanh"^^xsd:string .
+res:position/Hào khí Lam Sơn a kg:Position
+; rdfs:label "Hào khí Lam Sơn"^^xsd:string .
 res:club/Đội bóng đá Công an Thanh Hóa kg:hasCoach res:coach/Lê Văn Bảng .
 res:club/Đội bóng đá Công an Thanh Hóa kg:hasCoach res:coach/Bùi Khắc Khoan .
 res:club/Đội bóng đá Công an Thanh Hóa kg:hasCoach res:coach/Cao Phi Vòng .

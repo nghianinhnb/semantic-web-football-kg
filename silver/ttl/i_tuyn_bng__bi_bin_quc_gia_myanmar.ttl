@@ -1,74 +1,53 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Myanmar a kg:Team ;
-kg:teamName "Myanmar" ;
-kg:hasCoach "" ;
-kg:manages "" ;
-kg:locatedIn res:country/Myanmar ;
-kg:organizedBy res:organization/LienDoanBongDaMyanmar .
-
-res:organization/LienDoanBongDaMyanmar a kg:Organization ;
-kg:organizes res:competition/World_Beach_Soccer_Championship ;
-kg:organizes res:competition/ASEAN_Beach_Soccer_Championship .
-
-res:competition/World_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
-kg:heldIn res:country/Myanmar ;
-kg:participantCount 2 .
-
-res:competition/ASEAN_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển Đông Nam Á" ;
-kg:heldIn res:country/Myanmar ;
-kg:participantCount 2 .
-
-res:player/Ya_Wai_Zin a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber "1" .
-
-res:player/Si_Thu_Aung a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:shirtNumber "2" .
-
-res:player/Zaw_Ye_Maung a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:shirtNumber "3" .
-
-res:player/Zaw_Zaw_Tun a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:shirtNumber "4" .
-
-res:player/Htein_Lin a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:shirtNumber "5" .
-
-res:player/Wai_Phyo a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:shirtNumber "6" .
-
-res:player/Pyae_Phyo_Aung a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:shirtNumber "7" .
-
-res:player/Chan_Oo a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:shirtNumber "8" .
-
-res:player/Aung_Than_Win a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:shirtNumber "9" .
-
-res:player/Aung_Soe_Moe a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:shirtNumber "10" .
-
-res:player/Tun_Lin_Oo a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:shirtNumber "11" .
-
-res:player/Htin_Kyaw_Aung a kg:Player ;
-kg:playsFor res:team/Myanmar ;
-kg:shirtNumber "12" .
+res:team/Myanmar a kg:Team
+; kg:teamName "Myanmar"
+; kg:hasCoach ""
+; kg:manages ""
+; kg:locatedIn res:country/Myanmar
+; kg:organizedBy res:organization/LienDoanBongDaMyanmar .
+res:organization/LienDoanBongDaMyanmar a kg:Organization
+; kg:organizes res:competition/World_Beach_Soccer_Championship
+; kg:organizes res:competition/ASEAN_Beach_Soccer_Championship .
+res:competition/World_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới"
+; kg:heldIn res:country/Myanmar
+; kg:participantCount 2 .
+res:competition/ASEAN_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển Đông Nam Á"
+; kg:heldIn res:country/Myanmar
+; kg:participantCount 2 .
+res:player/Ya_Wai_Zin a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Si_Thu_Aung a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:shirtNumber "2" .
+res:player/Zaw_Ye_Maung a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:shirtNumber "3" .
+res:player/Zaw_Zaw_Tun a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:shirtNumber "4" .
+res:player/Htein_Lin a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:shirtNumber "5" .
+res:player/Wai_Phyo a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:shirtNumber "6" .
+res:player/Pyae_Phyo_Aung a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:shirtNumber "7" .
+res:player/Chan_Oo a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:shirtNumber "8" .
+res:player/Aung_Than_Win a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:shirtNumber "9" .
+res:player/Aung_Soe_Moe a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:shirtNumber "10" .
+res:player/Tun_Lin_Oo a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:shirtNumber "11" .
+res:player/Htin_Kyaw_Aung a kg:Player
+; kg:playsFor res:team/Myanmar
+; kg:shirtNumber "12" .

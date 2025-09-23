@@ -1,95 +1,49 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Burundi a kg:Team ;
-kg:teamName "Burundi" ;
-kg:teamAbbreviation "BDI" ;
-kg:hasCoach res:coach/Joslin_Bipfubusa ;
-kg:hasCaptain res:player/Saido_Berahino ;
-kg:homeStadium res:stadium/San_Vien_Dong_Hoang_Tu_Louis_Rwagasore .
-
-res:coach/Joslin_Bipfubusa a kg:Coach ;
-kg:manages res:team/Burundi .
-
-res:player/Saido_Berahino a kg:Player ;
-kg:isCaptain res:team/Burundi .
-
-res:stadium/San_Vien_Dong_Hoang_Tu_Louis_Rwagasore a kg:Stadium ;
-kg:isHomeOf res:team/Burundi .
-
-res:player/Karim_Nizigiyimana a kg:Player ;
-kg:playsFor res:team/Burundi ;
-kg:mostCaps 54 .
-
-res:player/Fiston_Abdul_Razak a kg:Player ;
-kg:playsFor res:team/Burundi ;
-kg:topScorer 19 .
-
-res:team/Burundi kg:FIFA_rank 160 ;
-kg:FIFA_max 96 ;
-kg:FIFA_max_date "1993-08-01"^^xsd:date ;
-kg:FIFA_min 160 ;
-kg:FIFA_min_date "1998-07-01"^^xsd:date ;
-kg:Elo_rank 168 ;
-kg:Elo_max 89 ;
-kg:Elo_max_date "1998-12-13"^^xsd:date ;
-kg:Elo_min 168 ;
-kg:Elo_min_date "2019-12-13"^^xsd:date .
-
-res:team/Burundi kg:firstGame "1964-10-09"^^xsd:date ;
-kg:largestWin 7 ;
-kg:largestLoss 0 ;
-kg:worldCupApps 0 ;
-kg:regionalCupApps 1 ;
-kg:regionalCupBest "Vòng bảng" ;
-kg:regionalCupFirst "2019" .
-
-res:team/Burundi kg:confederation res:organization/CAF ;
-kg:association res:organization/Lien_Union_Ballon_de_Foot_Burundi .
-
-res:organization/Lien_Union_Ballon_de_Foot_Burundi a kg:Organization ;
-kg:name "Liên đoàn bóng đá Burundi" ;
-kg:officialName "Fédération de Football du Burundi" .
-
-res:organization/CAF a kg:Organization ;
-kg:name "CAF" ;
-kg:region "Châu Phi" .
-
-res:match/1964-10-09 a kg:Match ;
-kg:homeTeam res:team/Burundi ;
-kg:awayTeam res:team/Uganda ;
-kg:kickoffTime "1964-10-09"^^xsd:date .
-
-res:match/2017-03-11 a kg:Match ;
-kg:homeTeam res:team/Burundi ;
-kg:awayTeam res:team/Djibouti ;
-kg:kickoffTime "2017-03-11"^^xsd:date .
-
-res:match/1977-12-24 a kg:Match ;
-kg:homeTeam res:team/Congo ;
-kg:awayTeam res:team/Burundi ;
-kg:kickoffTime "1977-12-24"^^xsd:date .
-
-res:competition/Cup_of_Africa a kg:Competition ;
-kg:competitionName "Cúp bóng đá châu Phi" .
-
-res:season/2019 a kg:Season ;
-kg:seasonOf res:competition/Cup_of_Africa ;
-kg:participatesIn res:team/Burundi .
-
-res:match/2019-06-21 a kg:Match ;
-kg:homeTeam res:team/Burundi ;
-kg:awayTeam res:team/Madagascar ;
-kg:kickoffTime "2019-06-21"^^xsd:date .
-
-res:match/2019-06-24 a kg:Match ;
-kg:homeTeam res:team/Burundi ;
-kg:awayTeam res:team/Nigeria ;
-kg:kickoffTime "2019-06-24"^^xsd:date .
-
-res:match/2019-06-28 a kg:Match ;
-kg:homeTeam res:team/Burundi ;
-kg:awayTeam res:team/Guinea ;
-kg:kickoffTime "2019-06-28"^^xsd:date .
+res:team/Burundi a kg:Team
+; kg:teamName "Burundi"
+; kg:teamAbbreviation "BDI"
+; kg:hasCoach res:coach/Joslin_Bipfubusa
+; kg:hasCaptain res:player/Saido_Berahino
+; kg:homeStadium res:stadium/San_Vien_Dong_Hoang_Tu_Louis_Rwagasore .
+res:coach/Joslin_Bipfubusa a kg:Coach
+; kg:manages res:team/Burundi .
+res:player/Saido_Berahino a kg:Player
+; kg:isCaptain res:team/Burundi .
+res:stadium/San_Vien_Dong_Hoang_Tu_Louis_Rwagasore a kg:Stadium
+; kg:isHomeOf res:team/Burundi .
+res:player/Karim_Nizigiyimana a kg:Player
+; kg:playsFor res:team/Burundi .
+res:player/Fiston_Abdul_Razak a kg:Player
+; kg:playsFor res:team/Burundi .
+res:organization/Lien_Union_Ballon_de_Foot_Burundi a kg:Organization
+; kg:name "Liên đoàn bóng đá Burundi" .
+res:organization/CAF a kg:Organization
+; kg:name "CAF" .
+res:match/1964-10-09 a kg:Match
+; kg:homeTeam res:team/Burundi
+; kg:awayTeam res:team/Uganda
+; kg:kickoffTime "1964-10-09"^^xsd:date .
+res:match/2017-03-11 a kg:Match
+; kg:homeTeam res:team/Burundi
+; kg:awayTeam res:team/Djibouti
+; kg:kickoffTime "2017-03-11"^^xsd:date .
+res:match/1977-12-24 a kg:Match
+; kg:homeTeam res:team/Congo
+; kg:awayTeam res:team/Burundi
+; kg:kickoffTime "1977-12-24"^^xsd:date .
+res:competition/Cup_of_Africa a kg:Competition
+; kg:competitionName "Cúp bóng đá châu Phi" .
+res:season/2019 a kg:Season
+; kg:seasonOf res:competition/Cup_of_Africa
+; kg:participatesIn res:team/Burundi .
+res:match/2019-06-21 a kg:Match
+; kg:homeTeam res:team/Burundi
+; kg:awayTeam res:team/Madagascar
+; kg:kickoffTime "2019-06-21"^^xsd:date .
+res:match/2019-06-24 a kg:Match
+; kg:homeTeam res:team/Burundi
+; kg:awayTeam res:team/Nigeria
+; kg:kickoffTime "2019-06-24"^^xsd:date .
+res:match/2019-06-28 a kg:Match
+; kg:homeTeam res:team/Burundi
+; kg:awayTeam res:team/Guinea
+; kg:kickoffTime "2019-06-28"^^xsd:date .

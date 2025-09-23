@@ -1,121 +1,91 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Albania_National_Beach_Soccer_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Albania" ;
-kg:hasCoach res:coach/Ergys_Kadiu ;
-kg:manages res:coach/Ergys_Kadiu ;
-kg:locatedIn res:country/Albania ;
-kg:organizes res:competition/Mediterranean_Beach_Sports_Games_2015 .
-
-res:coach/Ergys_Kadiu a kg:Coach ;
-kg:manages res:team/Albania_National_Beach_Soccer_Team .
-
+res:team/Albania_National_Beach_Soccer_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Albania"
+; kg:hasCoach res:coach/Ergys_Kadiu
+; kg:manages res:coach/Ergys_Kadiu
+; kg:locatedIn res:country/Albania
+; kg:organizes res:competition/Mediterranean_Beach_Sports_Games_2015 .
+res:coach/Ergys_Kadiu a kg:Coach
+; kg:manages res:team/Albania_National_Beach_Soccer_Team .
 res:country/Albania a kg:Country .
-
-res:competition/Mediterranean_Beach_Sports_Games_2015 a kg:Competition ;
-kg:competitionName "Đại hội thể thao bãi biển Địa Trung Hải 2015" ;
-kg:heldIn res:country/Albania ;
-kg:participantCount 20 .
-
-res:match/Albania_vs_Kosovo_2012 a kg:Match ;
-kg:homeTeam res:team/Albania_National_Beach_Soccer_Team ;
-kg:awayTeam res:team/Kosovo_National_Beach_Soccer_Team ;
-kg:kickoffTime "2012-06-01"^^xsd:date ;
-kg:inCompetition res:competition/Mediterranean_Beach_Sports_Games_2015 .
-
-res:match/Albania_vs_Libya_2015 a kg:Match ;
-kg:homeTeam res:team/Libya_National_Beach_Soccer_Team ;
-kg:awayTeam res:team/Albania_National_Beach_Soccer_Team ;
-kg:kickoffTime "2015-09-04"^^xsd:date ;
-kg:inCompetition res:competition/Mediterranean_Beach_Sports_Games_2015 .
-
-res:match/Albania_vs_Malta_2015 a kg:Match ;
-kg:homeTeam res:team/Albania_National_Beach_Soccer_Team ;
-kg:awayTeam res:team/Malta_National_Beach_Soccer_Team ;
-kg:kickoffTime "2015-09-05"^^xsd:date ;
-kg:inCompetition res:competition/Mediterranean_Beach_Sports_Games_2015 .
-
-res:player/Klodian_Rrapi a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1 .
-
-res:player/Enea_Kadiu a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 3 .
-
-res:player/Arjan_Bllumbi a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 4 ;
-kg:isCaptain true .
-
-res:player/Marvin_Turtulli a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 5 .
-
-res:player/Rigest_Karaj a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 6 .
-
-res:player/Elion_Spahiu a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 7 .
-
-res:player/Erion_Hoxha a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 8 .
-
-res:player/Endrit_Kaca a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 9 .
-
-res:player/Olsi_Bajollari a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 10 .
-
-res:player/Admir_Mehja a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 11 .
-
-res:player/Klajdi_Metani a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 12 .
-
-res:player/Blendi_Gockaj a kg:Player ;
-kg:playsFor res:team/Albania_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 14 .
-
-res:position/Goalkeeper a kg:Position ;
-rdfs:subClassOf kg:Position .
-
-res:position/Defender a kg:Position ;
-rdfs:subClassOf kg:Position .
-
-res:position/Midfielder a kg:Position ;
-rdfs:subClassOf kg:Position .
-
-res:position/Forward a kg:Position ;
-rdfs:subClassOf kg:Position .
-
-res:team/Kosovo_National_Beach_Soccer_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Kosovo" .
-
-res:team/Malta_National_Beach_Soccer_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Malta" .
-
-res:team/Libya_National_Beach_Soccer_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Libya" .
+res:competition/Mediterranean_Beach_Sports_Games_2015 a kg:Competition
+; kg:competitionName "Đại hội thể thao bãi biển Địa Trung Hải 2015"
+; kg:heldIn res:country/Albania
+; kg:participantCount 20 .
+res:match/Albania_vs_Kosovo_2012 a kg:Match
+; kg:homeTeam res:team/Albania_National_Beach_Soccer_Team
+; kg:awayTeam res:team/Kosovo_National_Beach_Soccer_Team
+; kg:kickoffTime "2012-06-01"^^xsd:date
+; kg:inCompetition res:competition/Mediterranean_Beach_Sports_Games_2015 .
+res:match/Albania_vs_Libya_2015 a kg:Match
+; kg:homeTeam res:team/Libya_National_Beach_Soccer_Team
+; kg:awayTeam res:team/Albania_National_Beach_Soccer_Team
+; kg:kickoffTime "2015-09-04"^^xsd:date
+; kg:inCompetition res:competition/Mediterranean_Beach_Sports_Games_2015 .
+res:match/Albania_vs_Malta_2015 a kg:Match
+; kg:homeTeam res:team/Albania_National_Beach_Soccer_Team
+; kg:awayTeam res:team/Malta_National_Beach_Soccer_Team
+; kg:kickoffTime "2015-09-05"^^xsd:date
+; kg:inCompetition res:competition/Mediterranean_Beach_Sports_Games_2015 .
+res:player/Klodian_Rrapi a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1 .
+res:player/Enea_Kadiu a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 3 .
+res:player/Arjan_Bllumbi a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 4
+; kg:isCaptain true .
+res:player/Marvin_Turtulli a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 5 .
+res:player/Rigest_Karaj a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 6 .
+res:player/Elion_Spahiu a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 7 .
+res:player/Erion_Hoxha a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 8 .
+res:player/Endrit_Kaca a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 9 .
+res:player/Olsi_Bajollari a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 10 .
+res:player/Admir_Mehja a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 11 .
+res:player/Klajdi_Metani a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 12 .
+res:player/Blendi_Gockaj a kg:Player
+; kg:playsFor res:team/Albania_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 14 .
+res:position/Goalkeeper a kg:Position
+; rdfs:subClassOf kg:Position .
+res:position/Defender a kg:Position
+; rdfs:subClassOf kg:Position .
+res:position/Midfielder a kg:Position
+; rdfs:subClassOf kg:Position .
+res:position/Forward a kg:Position
+; rdfs:subClassOf kg:Position .
+res:team/Kosovo_National_Beach_Soccer_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Kosovo" .
+res:team/Malta_National_Beach_Soccer_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Malta" .
+res:team/Libya_National_Beach_Soccer_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Libya" .

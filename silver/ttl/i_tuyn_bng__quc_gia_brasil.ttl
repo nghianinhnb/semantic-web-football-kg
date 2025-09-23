@@ -1,339 +1,148 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Brazil a kg:Team ;
-kg:teamName "Brasil" ;
-kg:teamAbbreviation "BRA" ;
-kg:hasCoach res:coach/Carlo_Ancelotti ;
-kg:hasCaptain res:player/Marquinhos ;
-kg:playsFor res:player/Cafu ;
-kg:playsFor res:player/Neymar ;
-kg:playsFor res:player/Ronaldo ;
-kg:playsFor res:player/Pelé ;
-kg:playsFor res:player/Zico ;
-kg:playsFor res:player/Ronaldinho ;
-kg:playsFor res:player/Romário ;
-kg:playsFor res:player/Rivaldo ;
-kg:playsFor res:player/Garrincha ;
-kg:playsFor res:player/Diego_Maradona ;
-kg:playsFor res:player/Kaká ;
-kg:playsFor res:player/Luís_Felipe_Scolari ;
-kg:playsFor res:player/Dunga ;
-kg:playsFor res:player/Tite ;
-kg:playsFor res:player/Mano_Menezes ;
-kg:playsFor res:player/José_Pacheco ;
-kg:playsFor res:player/José_Mourinho ;
-kg:playsFor res:player/Fernando_Santos ;
-kg:playsFor res:player/Luis_Fabiano ;
-kg:playsFor res:player/Sérgio_Branco ;
-kg:playsFor res:player/Ademir ;
-kg:playsFor res:player/Leônidas_da_Silva ;
-kg:playsFor res:player/Aldair ;
-kg:playsFor res:player/Amarildo ;
-kg:playsFor res:player/Bebeto ;
-kg:playsFor res:player/Hilderaldo_Bellini ;
-kg:playsFor res:player/Hércules_Brito_Ruas ;
-kg:playsFor res:player/Adriano_Leite_Ribeiro ;
-kg:playsFor res:player/Dadá_Maravilha ;
-kg:playsFor res:player/Dida ;
-kg:playsFor res:player/Didi ;
-kg:playsFor res:player/Dirceu ;
-kg:playsFor res:player/Djalma_Santos ;
-kg:playsFor res:player/Domingos_da_Guia ;
-kg:playsFor res:player/Dorval_Rodrigues ;
-kg:playsFor res:player/Eder ;
-kg:playsFor res:player/Edinho ;
-kg:playsFor res:player/Edmundo ;
-kg:playsFor res:player/Everaldo ;
-kg:playsFor res:player/Paulo_Roberto_Falcão ;
-kg:playsFor res:player/Feitiço ;
-kg:playsFor res:player/Felix_Miéli_Venerando ;
-kg:playsFor res:player/Francisco_Marinho ;
-kg:playsFor res:player/Friaça ;
-kg:playsFor res:player/Arthur_Friedenreich ;
-kg:playsFor res:player/Garrincha ;
-kg:playsFor res:player/Gérson ;
-kg:playsFor res:player/Gilmar ;
-kg:playsFor res:player/Jair_da_Costa ;
-kg:playsFor res:player/Jairzinho ;
-kg:playsFor res:player/Jorginho ;
-kg:playsFor res:player/Júlio_César ;
-kg:playsFor res:player/Júnior ;
-kg:playsFor res:player/Kaká ;
-kg:playsFor res:player/Leandro ;
-kg:playsFor res:player/Emerson_Leão ;
-kg:playsFor res:player/Leonardo_Nascimento_de_Araujo ;
-kg:playsFor res:player/Leônidas_da_Silva ;
-kg:playsFor res:player/Luiz_Antônio_da_Costa ;
-kg:playsFor res:player/Marcelo_Vieira ;
-kg:playsFor res:player/Márcio_Santos ;
-kg:playsFor res:player/Marcos_Roberto_Silveira_Reis ;
-kg:playsFor res:player/Mauro ;
-kg:playsFor res:player/Moacir_Barbas ;
-kg:playsFor res:player/Neymar_Jr. ;
-kg:playsFor res:player/Nílton_Santos ;
-kg:playsFor res:player/Orlando ;
-kg:playsFor res:player/José_Oscar_Bernardi ;
-kg:playsFor res:player/Pelé ;
-kg:playsFor res:player/Pepe ;
-kg:playsFor res:player/Wilson_da_Silva_Piazza ;
-kg:playsFor res:player/Preguinho ;
-kg:playsFor res:player/Rivelino ;
-kg:playsFor res:player/Rivaldo ;
-kg:playsFor res:player/Roberto_Carlos ;
-kg:playsFor res:player/Romário ;
-kg:playsFor res:player/Ronaldinho ;
-kg:playsFor res:player/Ronaldo ;
-kg:playsFor res:player/Robinho ;
-kg:playsFor res:player/Serginho_Chulapa ;
-kg:playsFor res:player/Sócrates ;
-kg:playsFor res:player/Claudio_Taffarel ;
-kg:playsFor res:player/Tostão ;
-kg:playsFor res:player/Valdir_Peres ;
-kg:playsFor res:player/Vavá ;
-kg:playsFor res:player/Zico ;
-kg:playsFor res:player/Zito ;
-kg:playsFor res:player/Zizinho ;
-kg:playsFor res:player/Zózimo .
-
-res:team/Brazil kg:playsFor res:player/Alisson_Becker ;
-kg:playsFor res:player/Bento ;
-kg:playsFor res:player/Hugo_Souza ;
-kg:playsFor res:player/Danilo ;
-kg:playsFor res:player/Alexsandro ;
-kg:playsFor res:player/Marquinhos ;
-kg:playsFor res:player/Alex_Sandro ;
-kg:playsFor res:player/Vanderson ;
-kg:playsFor res:player/Léo_Ortiz ;
-kg:playsFor res:player/Lucas_Beraldo ;
-kg:playsFor res:player/Wesley_França ;
-kg:playsFor res:player/Carlos_Augusto ;
-kg:playsFor res:player/Casemiro ;
-kg:playsFor res:player/Gerson ;
-kg:playsFor res:player/Bruno_Guimarães ;
-kg:playsFor res:player/Éderson ;
-kg:playsFor res:player/Andrey_Santos ;
-kg:playsFor res:player/Richarlison ;
-kg:playsFor res:player/Vinícius_Júnior ;
-kg:playsFor res:player/Raphinha ;
-kg:playsFor res:player/Antony ;
-kg:playsFor res:player/Estêvão_Willian ;
-kg:playsFor res:player/Matheus_Cunha ;
-kg:playsFor res:player/Gabriel_Martinelli .
-
-res:coach/Carlo_Ancelotti a kg:Coach ;
-kg:manages res:team/Brazil .
-
-res:player/Marquinhos a kg:Player ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1994-05-14"^^xsd:date ;
-kg:birthPlace res:city/Rio_de_Janeiro ;
-kg:nationality res:country/Brazil ;
-kg:height "190"^^xsd:decimal ;
-kg:weight "83"^^xsd:decimal ;
-kg:shirtNumber 13 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Cafu a kg:Player ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1970-06-13"^^xsd:date ;
-kg:birthPlace res:city/Rio_de_Janeiro ;
-kg:nationality res:country/Brazil ;
-kg:height "183"^^xsd:decimal ;
-kg:weight "77"^^xsd:decimal ;
-kg:shirtNumber 2 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Neymar a kg:Player ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1992-02-05"^^xsd:date ;
-kg:birthPlace res:city/Mogi_das_Cruz ;
-kg:nationality res:country/Brazil ;
-kg:height "175"^^xsd:decimal ;
-kg:weight "71"^^xsd:decimal ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Ronaldo a kg:Player ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1976-01-21"^^xsd:date ;
-kg:birthPlace res:city/Paulo ;
-kg:nationality res:country/Brazil ;
-kg:height "180"^^xsd:decimal ;
-kg:weight "72"^^xsd:decimal ;
-kg:shirtNumber 9 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Pelé a kg:Player ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1940-10-23"^^xsd:date ;
-kg:birthPlace res:city/Tres_Coracoes ;
-kg:nationality res:country/Brazil ;
-kg:height "168"^^xsd:decimal ;
-kg:weight "65"^^xsd:decimal ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Zico a kg:Player ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1958-04-03"^^xsd:date ;
-kg:birthPlace res:city/Rio_de_Janeiro ;
-kg:nationality res:country/Brazil ;
-kg:height "178"^^xsd:decimal ;
-kg:weight "75"^^xsd:decimal ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Ronaldinho a kg:Player ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1980-03-21"^^xsd:date ;
-kg:birthPlace res:city/Ponta_Preta ;
-kg:nationality res:country/Brazil ;
-kg:height "178"^^xsd:decimal ;
-kg:weight "70"^^xsd:decimal ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Romário a kg:Player ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1966-01-29"^^xsd:date ;
-kg:birthPlace res:city/Belo_Horizonte ;
-kg:nationality res:country/Brazil ;
-kg:height "176"^^xsd:decimal ;
-kg:weight "73"^^xsd:decimal ;
-kg:shirtNumber 11 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Rivaldo a kg:Player ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1972-04-19"^^xsd:date ;
-kg:birthPlace res:city/São_Paulo ;
-kg:nationality res:country/Brazil ;
-kg:height "179"^^xsd:decimal ;
-kg:weight "72"^^xsd:decimal ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Garrincha a kg:Player ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1933-10-03"^^xsd:date ;
-kg:birthPlace res:city/Petrópolis ;
-kg:nationality res:country/Brazil ;
-kg:height "170"^^xsd:decimal ;
-kg:weight "68"^^xsd:decimal ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Diego_Maradona a kg:Player ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1960-10-30"^^xsd:date ;
-kg:birthPlace res:country/Argentina ;
-kg:nationality res:country/Argentina ;
-kg:height "165"^^xsd:decimal ;
-kg:weight "67"^^xsd:decimal ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Kaká a kg:Player ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1982-04-19"^^xsd:date ;
-kg:birthPlace res:city/São_Paulo ;
-kg:nationality res:country/Brazil ;
-kg:height "182"^^xsd:decimal ;
-kg:weight "75"^^xsd:decimal ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Luís_Felipe_Scolari a kg:Coach ;
-kg:manages res:team/Brazil .
-
-res:player/Dunga a kg:Coach ;
-kg:manages res:team/Brazil .
-
-res:player/Tite a kg:Coach ;
-kg:manages res:team/Brazil .
-
-res:player/Mano_Menezes a kg:Coach ;
-kg:manages res:team/Brazil .
-
-res:player/José_Pacheco a kg:Coach ;
-kg:manages res:team/Brazil .
-
-res:player/José_Mourinho a kg:Coach ;
-kg:manages res:team/Brazil .
-
-res:player/Fernando_Santos a kg:Coach ;
-kg:manages res:team/Brazil .
-
-res:player/Luis_Fabiano a kg:Player ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1983-08-10"^^xsd:date ;
-kg:birthPlace res:city/São_Paulo ;
-kg:nationality res:country/Brazil ;
-kg:height "185"^^xsd:decimal ;
-kg:weight "78"^^xsd:decimal ;
-kg:shirtNumber 11 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Sérgio_Branco a kg:Player ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1958-08-21"^^xsd:date ;
-kg:birthPlace res:city/São_Paulo ;
-kg:nationality res:country/Brazil ;
-kg:height "183"^^xsd:decimal ;
-kg:weight "77"^^xsd:decimal ;
-kg:shirtNumber 3 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Ademir a kg:Player ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1918-07-26"^^xsd:date ;
-kg:birthPlace res:city/Pernambuco ;
-kg:nationality res:country/Brazil ;
-kg:height "178"^^xsd:decimal ;
-kg:weight "72"^^xsd:decimal ;
-kg:shirtNumber 9 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Leônidas_da_Silva a kg:Player ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1913-07-22"^^xsd:date ;
-kg:birthPlace res:city/São_Paulo ;
-kg:nationality res:country/Brazil ;
-kg:height "175"^^xsd:decimal ;
-kg:weight "68"^^xsd:decimal ;
-kg:shirtNumber 9 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Aldair a kg:Player ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1960-02-17"^^xsd:date ;
-kg:birthPlace res:city/São_Paulo ;
-kg:nationality res:country/Brazil ;
-kg:height "185"^^xsd:decimal ;
-kg:weight "78"^^xsd:decimal ;
-kg:shirtNumber 3 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Amarildo a kg:Player ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1931-04-20"^^xsd:date ;
-kg:birthPlace res:city/São_Paulo ;
-kg:nationality res:country/Brazil ;
-kg:height "178"^^xsd:decimal ;
-kg:weight "72"^^xsd:decimal ;
-kg:shirtNumber 9 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Bebeto a kg:Player ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1969-02-25"^^xsd:date ;
-kg:birthPlace res:city/São_Paulo ;
-kg:nationality res:country/Brazil ;
-kg:height "175"^^xsd:decimal ;
-kg:weight "70"^^xsd:decimal ;
-kg:shirtNumber 9 ;
-kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:team/Brazil a kg:Team
+; kg:teamName "Brasil"
+; kg:teamAbbreviation "BRA"
+; kg:hasCoach res:coach/Carlo_Ancelotti
+; kg:hasCaptain res:player/Marquinhos
+; kg:playsFor res:player/Cafu
+; kg:playsFor res:player/Neymar
+; kg:playsFor res:player/Ronaldo
+; kg:playsFor res:player/Pelé
+; kg:playsFor res:player/Zico
+; kg:playsFor res:player/Ronaldinho
+; kg:playsFor res:player/Romário
+; kg:playsFor res:player/Rivaldo
+; kg:playsFor res:player/Garrincha
+; kg:playsFor res:player/Diego_Maradona
+; kg:playsFor res:player/Kaká
+; kg:playsFor res:player/Luís_Felipe_Scolari
+; kg:playsFor res:player/Dunga
+; kg:playsFor res:player/Tite
+; kg:playsFor res:player/Mano_Menezes
+; kg:playsFor res:player/José_Pacheco
+; kg:playsFor res:player/José_Mourinho
+; kg:playsFor res:player/Fernando_Santos
+; kg:playsFor res:player/Luis_Fabiano
+; kg:playsFor res:player/Sérgio_Branco
+; kg:playsFor res:player/Ademir
+; kg:playsFor res:player/Leônidas_da_Silva
+; kg:playsFor res:player/Aldair
+; kg:playsFor res:player/Amarildo
+; kg:playsFor res:player/Bebeto
+; kg:playsFor res:player/Hilderaldo_Bellini
+; kg:playsFor res:player/Hércules_Brito_Ruas
+; kg:playsFor res:player/Adriano_Leite_Ribeiro
+; kg:playsFor res:player/Dadá_Maravilha
+; kg:playsFor res:player/Dida
+; kg:playsFor res:player/Didi
+; kg:playsFor res:player/Dirceu
+; kg:playsFor res:player/Djalma_Santos
+; kg:playsFor res:player/Domingos_da_Guia
+; kg:playsFor res:player/Dorval_Rodrigues
+; kg:playsFor res:player/Eder
+; kg:playsFor res:player/Edinho
+; kg:playsFor res:player/Edmundo
+; kg:playsFor res:player/Everaldo
+; kg:playsFor res:player/Paulo_Roberto_Falcão
+; kg:playsFor res:player/Feitiço
+; kg:playsFor res:player/Felix_Miéli_Venerando
+; kg:playsFor res:player/Francisco_Marinho
+; kg:playsFor res:player/Friaça
+; kg:playsFor res:player/Arthur_Friedenreich
+; kg:playsFor res:player/Garrincha
+; kg:playsFor res:player/Gérson
+; kg:playsFor res:player/Gilmar
+; kg:playsFor res:player/Jair_da_Costa
+; kg:playsFor res:player/Jairzinho
+; kg:playsFor res:player/Jorginho
+; kg:playsFor res:player/Júlio_César
+; kg:playsFor res:player/Júnior
+; kg:playsFor res:player/Kaká
+; kg:playsFor res:player/Leandro
+; kg:playsFor res:player/Emerson_Leão
+; kg:playsFor res:player/Leonardo_Nascimento_de_Araujo
+; kg:playsFor res:player/Leônidas_da_Silva
+; kg:playsFor res:player/Luiz_Antônio_da_Costa
+; kg:playsFor res:player/Marcelo_Vieira
+; kg:playsFor res:player/Márcio_Santos
+; kg:playsFor res:player/Marcos_Roberto_Silveira_Reis
+; kg:playsFor res:player/Mauro
+; kg:playsFor res:player/Moacir_Barbas
+; kg:playsFor res:player/Neymar_Jr .
+res:team/Brazil kg:playsFor res:player/Alisson_Becker
+; kg:playsFor res:player/Bento
+; kg:playsFor res:player/Hugo_Souza
+; kg:playsFor res:player/Danilo
+; kg:playsFor res:player/Alexsandro
+; kg:playsFor res:player/Marquinhos
+; kg:playsFor res:player/Alex_Sandro
+; kg:playsFor res:player/Vanderson
+; kg:playsFor res:player/Léo_Ortiz
+; kg:playsFor res:player/Lucas_Beraldo
+; kg:playsFor res:player/Wesley_França
+; kg:playsFor res:player/Carlos_Augusto
+; kg:playsFor res:player/Casemiro
+; kg:playsFor res:player/Gerson
+; kg:playsFor res:player/Bruno_Guimarães
+; kg:playsFor res:player/Éderson
+; kg:playsFor res:player/Andrey_Santos
+; kg:playsFor res:player/Richarlison
+; kg:playsFor res:player/Vinícius_Júnior
+; kg:playsFor res:player/Raphinha
+; kg:playsFor res:player/Antony
+; kg:playsFor res:player/Estêvão_Willian
+; kg:playsFor res:player/Matheus_Cunha
+; kg:playsFor res:player/Gabriel_Martinelli .
+res:coach/Carlo_Ancelotti a kg:Coach
+; kg:manages res:team/Brazil .
+res:player/Marquinhos a kg:Player
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Cafu a kg:Player
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Neymar a kg:Player
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Ronaldo a kg:Player
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Pelé a kg:Player
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Zico a kg:Player
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Ronaldinho a kg:Player
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Romário a kg:Player
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Rivaldo a kg:Player
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Garrincha a kg:Player
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Diego_Maradona a kg:Player
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Kaká a kg:Player
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Luís_Felipe_Scolari a kg:Coach
+; kg:manages res:team/Brazil .
+res:player/Dunga a kg:Coach
+; kg:manages res:team/Brazil .
+res:player/Tite a kg:Coach
+; kg:manages res:team/Brazil .
+res:player/Mano_Menezes a kg:Coach
+; kg:manages res:team/Brazil .
+res:player/José_Pacheco a kg:Coach
+; kg:manages res:team/Brazil .
+res:player/José_Mourinho a kg:Coach
+; kg:manages res:team/Brazil .
+res:player/Fernando_Santos a kg:Coach
+; kg:manages res:team/Brazil .
+res:player/Luis_Fabiano a kg:Player
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Sérgio_Branco a kg:Player
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Ademir a kg:Player
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Leônidas_da_Silva a kg:Player
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Aldair a kg:Player
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Amarildo a kg:Player
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Bebeto a kg:Player
+; kg:primaryPosition kg:Forward "UNKNOWN" .

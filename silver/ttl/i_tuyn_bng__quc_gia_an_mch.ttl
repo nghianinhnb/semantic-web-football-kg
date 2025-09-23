@@ -1,378 +1,187 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Dan_Mac_Quoc_Gia_Dan_Mac
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Đan Mạch" ;
-kg:teamAbbreviation "DEN" ;
-kg:hasCoach res:coach/Brian_Riemer ;
-kg:hasCaptain res:player/Pierre_Emile_Hojbjerg ;
-kg:locatedIn res:country/Dan_Mac ;
-kg:homeStadium res:stadium/Parken .
-
-res:coach/Brian_Riemer
-a kg:Coach ;
-kg:manages res:team/Dan_Mac_Quoc_Gia_Dan_Mac .
-
-res:player/Pierre_Emile_Hojbjerg
-a kg:Player ;
-kg:isCaptain res:team/Dan_Mac_Quoc_Gia_Dan_Mac .
-
-res:stadium/Parken
-a kg:Stadium ;
-kg:capacity 30000 ;
-kg:isHomeOf res:team/Dan_Mac_Quoc_Gia_Dan_Mac .
-
-res:country/Dan_Mac
-a kg:Country ;
-rdfs:label "Đan Mạch" .
-
-res:team/Dan_Mac_Quoc_Gia_Dan_Mac
-kg:mostCaps res:player/Christian_Eriksen ;
-kg:topScorer res:player/Poul_Nielsen, res:player/Jon_Dahl_Tomasson .
-
-res:player/Christian_Eriksen
-a kg:Player ;
-kg:playsFor res:team/Dan_Mac_Quoc_Gia_Dan_Mac ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1992-02-14"^^xsd:date ;
-kg:birthPlace res:city/Copenhagen ;
-kg:nationality res:country/Dan_Mac ;
-kg:shirtNumber 10 .
-
-res:player/Poul_Nielsen
-a kg:Player ;
-kg:playsFor res:team/Dan_Mac_Quoc_Gia_Dan_Mac ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1910-01-01"^^xsd:date ;
-kg:birthPlace res:city/Copenhagen ;
-kg:nationality res:country/Dan_Mac ;
-kg:shirtNumber 9 .
-
-res:player/Jon_Dahl_Tomasson
-a kg:Player ;
-kg:playsFor res:team/Dan_Mac_Quoc_Gia_Dan_Mac ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1978-01-01"^^xsd:date ;
-kg:birthPlace res:city/Copenhagen ;
-kg:nationality res:country/Dan_Mac ;
-kg:shirtNumber 11 .
-
-res:city/Copenhagen
-a kg:City ;
-kg:locatedIn res:country/Dan_Mac .
-
-res:competition/FIFA_World_Cup
-a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá thế giới" .
-
-res:competition/European_Championship
-a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá châu Âu" .
-
-res:competition/Confederations_Cup
-a kg:Competition ;
-kg:competitionName "Cúp Liên đoàn các châu lục" .
-
-res:season/1992
-a kg:Season ;
-kg:seasonOf res:competition/European_Championship .
-
-res:season/1995
-a kg:Season ;
-kg:seasonOf res:competition/Confederations_Cup .
-
-res:match/1992_European_Championship_Final
-a kg:Match ;
-kg:homeTeam res:team/Dan_Mac_Quoc_Gia_Dan_Mac ;
-kg:awayTeam res:team/Germany ;
-kg:venue res:stadium/Parken ;
-kg:kickoffTime "1992-06-26T20:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/European_Championship ;
-kg:inSeason res:season/1992 ;
-kg:referee res:referee/Kari_Silfverberg .
-
-res:referee/Kari_Silfverberg
-a kg:Referee .
-
-res:match/1995_Confederations_Cup_Final
-a kg:Match ;
-kg:homeTeam res:team/Dan_Mac_Quoc_Gia_Dan_Mac ;
-kg:awayTeam res:team/Argentina ;
-kg:venue res:stadium/Parken ;
-kg:kickoffTime "1995-03-26T20:00+01:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Confederations_Cup ;
-kg:inSeason res:season/1995 ;
-kg:referee res:referee/Ronald_Bergmann .
-
-res:referee/Ronald_Bergmann
-a kg:Referee .
-
-res:team/Dan_Mac_Quoc_Gia_Dan_Mac
-kg:worldCupApps "6"^^xsd:positiveInteger ;
-kg:worldCupFirst "1986"^^xsd:gYear ;
-kg:worldCupBest res:match/1998_World_Cup_Quarterfinals .
-
-res:match/1998_World_Cup_Quarterfinals
-a kg:Match ;
-kg:homeTeam res:team/Dan_Mac_Quoc_Gia_Dan_Mac ;
-kg:awayTeam res:team/Brazil ;
-kg:venue res:stadium/Stuttgart ;
-kg:kickoffTime "1998-06-26T20:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/FIFA_World_Cup ;
-kg:inSeason res:season/1998 ;
-kg:referee res:referee/Sandro_Schärer .
-
-res:stadium/Stuttgart
-a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Stuttgart .
-
-res:team/Germany
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Đức" .
-
-res:team/Argentina
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Argentina" .
-
-res:team/Brazil
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Brazil" .
-
-res:team/Sweden
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Thụy Điển" .
-
-res:team/Norway
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Na Uy" .
-
-res:team/Switzerland
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Thụy Sĩ" .
-
-res:team/France
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Pháp" .
-
-res:team/FAROE
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Faroe Islands" .
-
-res:team/Finland
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Phần Lan" .
-
-res:team/Italy
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Ý" .
-
-res:team/Hungary
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Hungary" .
-
-res:team/England
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Anh" .
-
-res:team/Netherlands
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Hà Lan" .
-
-res:team/Ukraine
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Ukraine" .
-
-res:team/Czech_Republic
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Cộng hòa Séc" .
-
-res:team/Spain
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Tây Ban Nha" .
-
-res:team/Belgium
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Bỉ" .
-
-res:team/Portugal
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Bồ Đào Nha" .
-
-res:team/Scotland
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Scotland" .
-
-res:team/Slovenia
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Slovenia" .
-
-res:team/Slovakia
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Slovakia" .
-
-res:team/Austria
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Áo" .
-
-res:team/South_Korea
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Hàn Quốc" .
-
-res:team/Japan
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Nhật Bản" .
-
-res:team/Canada
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Canada" .
-
-res:team/Mexico
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Mexico" .
-
-res:team/USA
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Hoa Kỳ" .
-
-res:team/Qatar
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Qatar" .
-
-res:team/China
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Trung Quốc" .
-
-res:team/Russia
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Nga" .
-
-res:team/Saudi_Arabia
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Ả Rập Saudi" .
-
-res:team/Croatia
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Croatia" .
-
-res:team/Costa_Rica
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Costa Rica" .
-
-res:team/Uruguay
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Uruguay" .
-
-res:team/Colombia
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Colombia" .
-
-res:team/Peru
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Peru" .
-
-res:team/Argentina
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Argentina" .
-
-res:team/Paraguay
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Paraguay" .
-
-res:team/Ukraine
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Ukraine" .
-
-res:team/Seychelles
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Seychelles" .
-
-res:team/Zimbabwe
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Zimbabwe" .
-
-res:team/Georgia
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Georgia" .
-
-res:team/Libya
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Libya" .
-
-res:team/Algeria
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Algeria" .
-
-res:team/Iran
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Iran" .
-
-res:team/Costa_Rica
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Costa Rica" .
-
-res:team/El_Salvador
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia El Salvador" .
-
-res:team/Honduras
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Honduras" .
-
-res:team/Chile
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Chile" .
-
-res:team/Bolivia
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Bolivia" .
-
-res:team/Equatorial_Guinea
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Guinea Xích đạo" .
-
-res:team/Ghana
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Ghana" .
-
-res:team/Chad
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Chad" .
-
-res:team/Cameroon
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Cameroon" .
-
-res:team/Nigeria
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Nigeria" .
-
-res:team/Senegal
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Senegal" .
-
-res:team/Guinea
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Guinea" .
-
-res:team/Mali
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Mali" .
-
-res:team/Mauritania
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Mauritania" .
-
-res:team/Togo
-a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Togo" .
-
-res:team/Benin
-a kg:Team ;
-kg:team
-
-... (tiếp tục trích xuất các triples cho các đội tuyển, cầu thủ, trận đấu, mùa giải, giải đấu, v.v.) ...
+res:team/Dan_Mac_Quoc_Gia_Dan_Mac a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Đan Mạch"
+; kg:teamAbbreviation "DEN"
+; kg:hasCoach res:coach/Brian_Riemer
+; kg:hasCaptain res:player/Pierre_Emile_Hojbjerg
+; kg:locatedIn res:country/Dan_Mac
+; kg:homeStadium res:stadium/Parken .
+res:coach/Brian_Riemer a kg:Coach
+; kg:manages res:team/Dan_Mac_Quoc_Gia_Dan_Mac .
+res:player/Pierre_Emile_Hojbjerg a kg:Player
+; kg:isCaptain res:team/Dan_Mac_Quoc_Gia_Dan_Mac .
+res:stadium/Parken a kg:Stadium
+; kg:capacity 30000
+; kg:isHomeOf res:team/Dan_Mac_Quoc_Gia_Dan_Mac .
+res:country/Dan_Mac a kg:Country
+; rdfs:label "Đan Mạch" .
+res:player/Christian_Eriksen a kg:Player
+; kg:playsFor res:team/Dan_Mac_Quoc_Gia_Dan_Mac
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Poul_Nielsen a kg:Player
+; kg:playsFor res:team/Dan_Mac_Quoc_Gia_Dan_Mac
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jon_Dahl_Tomasson a kg:Player
+; kg:playsFor res:team/Dan_Mac_Quoc_Gia_Dan_Mac
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:city/Copenhagen a kg:City
+; kg:locatedIn res:country/Dan_Mac .
+res:competition/FIFA_World_Cup a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá thế giới" .
+res:competition/European_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá châu Âu" .
+res:competition/Confederations_Cup a kg:Competition
+; kg:competitionName "Cúp Liên đoàn các châu lục" .
+res:season/1992 a kg:Season
+; kg:seasonOf res:competition/European_Championship .
+res:season/1995 a kg:Season
+; kg:seasonOf res:competition/Confederations_Cup .
+res:match/1992_European_Championship_Final a kg:Match
+; kg:homeTeam res:team/Dan_Mac_Quoc_Gia_Dan_Mac
+; kg:awayTeam res:team/Germany
+; kg:venue res:stadium/Parken
+; kg:kickoffTime "1992-06-26T20:00+02:00"^^xsd:dateTime
+; kg:inCompetition res:competition/European_Championship
+; kg:inSeason res:season/1992
+; kg:referee res:referee/Kari_Silfverberg .
+res:referee/Kari_Silfverberg a kg:Referee .
+res:match/1995_Confederations_Cup_Final a kg:Match
+; kg:homeTeam res:team/Dan_Mac_Quoc_Gia_Dan_Mac
+; kg:awayTeam res:team/Argentina
+; kg:venue res:stadium/Parken
+; kg:kickoffTime "1995-03-26T20:00+01:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Confederations_Cup
+; kg:inSeason res:season/1995
+; kg:referee res:referee/Ronald_Bergmann .
+res:referee/Ronald_Bergmann a kg:Referee .
+res:match/1998_World_Cup_Quarterfinals a kg:Match
+; kg:homeTeam res:team/Dan_Mac_Quoc_Gia_Dan_Mac
+; kg:awayTeam res:team/Brazil
+; kg:venue res:stadium/Stuttgart
+; kg:kickoffTime "1998-06-26T20:00+02:00"^^xsd:dateTime
+; kg:inCompetition res:competition/FIFA_World_Cup
+; kg:inSeason res:season/1998
+; kg:referee res:referee/Sandro_Schärer .
+res:stadium/Stuttgart a kg:Stadium
+; kg:capacity 60000
+; kg:locatedIn res:city/Stuttgart .
+res:team/Germany a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Đức" .
+res:team/Argentina a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Argentina" .
+res:team/Brazil a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Brazil" .
+res:team/Sweden a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Thụy Điển" .
+res:team/Norway a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Na Uy" .
+res:team/Switzerland a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Thụy Sĩ" .
+res:team/France a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Pháp" .
+res:team/FAROE a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Faroe Islands" .
+res:team/Finland a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Phần Lan" .
+res:team/Italy a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Ý" .
+res:team/Hungary a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Hungary" .
+res:team/England a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Anh" .
+res:team/Netherlands a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Hà Lan" .
+res:team/Ukraine a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Ukraine" .
+res:team/Czech_Republic a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Cộng hòa Séc" .
+res:team/Spain a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Tây Ban Nha" .
+res:team/Belgium a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Bỉ" .
+res:team/Portugal a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Bồ Đào Nha" .
+res:team/Scotland a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Scotland" .
+res:team/Slovenia a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Slovenia" .
+res:team/Slovakia a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Slovakia" .
+res:team/Austria a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Áo" .
+res:team/South_Korea a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Hàn Quốc" .
+res:team/Japan a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Nhật Bản" .
+res:team/Canada a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Canada" .
+res:team/Mexico a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Mexico" .
+res:team/USA a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Hoa Kỳ" .
+res:team/Qatar a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Qatar" .
+res:team/China a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Trung Quốc" .
+res:team/Russia a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Nga" .
+res:team/Saudi_Arabia a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Ả Rập Saudi" .
+res:team/Croatia a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Croatia" .
+res:team/Costa_Rica a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Costa Rica" .
+res:team/Uruguay a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Uruguay" .
+res:team/Colombia a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Colombia" .
+res:team/Peru a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Peru" .
+res:team/Argentina a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Argentina" .
+res:team/Paraguay a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Paraguay" .
+res:team/Ukraine a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Ukraine" .
+res:team/Seychelles a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Seychelles" .
+res:team/Zimbabwe a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Zimbabwe" .
+res:team/Georgia a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Georgia" .
+res:team/Libya a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Libya" .
+res:team/Algeria a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Algeria" .
+res:team/Iran a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Iran" .
+res:team/Costa_Rica a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Costa Rica" .
+res:team/El_Salvador a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia El Salvador" .
+res:team/Honduras a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Honduras" .
+res:team/Chile a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Chile" .
+res:team/Bolivia a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Bolivia" .
+res:team/Equatorial_Guinea a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Guinea Xích đạo" .
+res:team/Ghana a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Ghana" .
+res:team/Chad a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Chad" .
+res:team/Cameroon a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Cameroon" .
+res:team/Nigeria a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Nigeria" .
+res:team/Senegal a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Senegal" .
+res:team/Guinea a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Guinea" .
+res:team/Mali a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Mali" .
+res:team/Mauritania a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Mauritania" .
+res:team/Togo a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Togo" .
+res:team/Benin a kg:Team .

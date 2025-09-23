@@ -1,76 +1,34 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/BruneiNationalFootballTeam a kg:Team ;
-kg:teamName "Brunei National Football Team" ;
-kg:teamAbbreviation "BRU" ;
-kg:hasCoach res:coach/MarioRivera ;
-kg:hasCaptain res:player/FaiqBolkiah ;
-kg:isManagedBy res:coach/MarioRivera ;
-kg:isCaptainOf res:player/FaiqBolkiah ;
-kg:homeStadium res:stadium/NationalStadiumHassanalBolkiah ;
-kg:mostCaps res:player/AzwanSaleh ;
-kg:topScorer res:player/ShahRazenSaid ;
-kg:confederation res:organization/AsianFootballConfederation ;
-kg:subConfederation res:organization/ASEANFootballFederation ;
-kg:FIFARank 203 ;
-kg:FIFARankDate "2012-10"^^xsd:date ;
-kg:FIFAMaxRank 145 ;
-kg:FIFAMaxRankDate "1993-08"^^xsd:date ;
-kg:EloRank ? ;
-kg:largestWin res:match/BruneivsTimorLeste2022 ;
-kg:largestLoss res:match/BruneivsUAE2001 ;
-kg:firstInternationalMatch res:match/BruneivsMalaysia1971 ;
-kg:region res:region/Asia ;
-kg:participatedInCompetition res:competition/WorldCupQualification ;
-kg:participatedInCompetition res:competition/AsianCupQualification ;
-kg:participatedInCompetition res:competition/SEAChampionship ;
-kg:participatedInCompetition res:competition/ASEANCupQualification .
-
-res:coach/MarioRivera a kg:Coach ;
-kg:name "Mario Rivera" ;
-kg:manages res:team/BruneiNationalFootballTeam .
-
-res:player/FaiqBolkiah a kg:Player ;
-kg:name "Faiq Bolkiah" ;
-kg:isCaptainOf res:team/BruneiNationalFootballTeam .
-
-res:player/AzwanSaleh a kg:Player ;
-kg:name "Azwan Saleh" ;
-kg:mostCapsForTeam res:team/BruneiNationalFootballTeam ;
-kg:totalCaps 26 .
-
-res:player/ShahRazenSaid a kg:Player ;
-kg:name "Shah Razen Said" ;
-kg:topScorerForTeam res:team/BruneiNationalFootballTeam ;
-kg:totalGoals 8 .
-
-res:stadium/NationalStadiumHassanalBolkiah a kg:Stadium ;
-kg:name "National Stadium Hassanal Bolkiah" ;
-kg:isHomeOf res:team/BruneiNationalFootballTeam .
-
-res:organization/AsianFootballConfederation a kg:Organization ;
-kg:name "Asian Football Confederation (AFC)" .
-
-res:organization/ASEANFootballFederation a kg:Organization ;
-kg:name "ASEAN Football Federation (AFF)" .
-
-res:match/BruneivsTimorLeste2022 a kg:Match ;
-kg:homeTeam res:team/BruneiNationalFootballTeam ;
-kg:awayTeam res:team/TimorLesteNationalFootballTeam ;
-kg:result "6-2" ;
-kg:date "2022-11-05"^^xsd:date .
-
-res:match/BruneivsUAE2001 a kg:Match ;
-kg:homeTeam res:team/UAENationalFootballTeam ;
-kg:awayTeam res:team/BruneiNationalFootballTeam ;
-kg:result "12-0" ;
-kg:date "2001-04-14"^^xsd:date .
-
-res:match/BruneivsMalaysia1971 a kg:Match ;
-kg:homeTeam res:team/MalaysiaNationalFootballTeam ;
-kg:awayTeam res:team/BruneiNationalFootballTeam ;
-kg:result "8-0" ;
-kg:date "1971-05-22"^^xsd:date .
+res:team/BruneiNationalFootballTeam a kg:Team
+; kg:teamName "Brunei National Football Team"
+; kg:teamAbbreviation "BRU"
+; kg:hasCoach res:coach/MarioRivera
+; kg:hasCaptain res:player/FaiqBolkiah
+; kg:homeStadium res:stadium/NationalStadiumHassanalBolkiah .
+res:coach/MarioRivera a kg:Coach
+; kg:name "Mario Rivera"
+; kg:manages res:team/BruneiNationalFootballTeam .
+res:player/FaiqBolkiah a kg:Player
+; kg:name "Faiq Bolkiah" .
+res:player/AzwanSaleh a kg:Player
+; kg:name "Azwan Saleh" .
+res:player/ShahRazenSaid a kg:Player
+; kg:name "Shah Razen Said" .
+res:stadium/NationalStadiumHassanalBolkiah a kg:Stadium
+; kg:name "National Stadium Hassanal Bolkiah"
+; kg:isHomeOf res:team/BruneiNationalFootballTeam .
+res:organization/AsianFootballConfederation a kg:Organization
+; kg:name "Asian Football Confederation (AFC)" .
+res:organization/ASEANFootballFederation a kg:Organization
+; kg:name "ASEAN Football Federation (AFF)" .
+res:match/BruneivsTimorLeste2022 a kg:Match
+; kg:homeTeam res:team/BruneiNationalFootballTeam
+; kg:awayTeam res:team/TimorLesteNationalFootballTeam
+; kg:result "6-2" .
+res:match/BruneivsUAE2001 a kg:Match
+; kg:homeTeam res:team/UAENationalFootballTeam
+; kg:awayTeam res:team/BruneiNationalFootballTeam
+; kg:result "12-0" .
+res:match/BruneivsMalaysia1971 a kg:Match
+; kg:homeTeam res:team/MalaysiaNationalFootballTeam
+; kg:awayTeam res:team/BruneiNationalFootballTeam
+; kg:result "8-0" .

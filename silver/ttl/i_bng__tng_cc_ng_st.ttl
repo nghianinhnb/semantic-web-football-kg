@@ -1,64 +1,38 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:club/Đội bóng đá Tổng cục Đường sắt a rdfs:type kg:Club ;
-kg:teamName "Đội bóng đá Tổng cục Đường sắt" ;
-kg:teamAbbreviation "Tổng cục Đường sắt" ;
-kg:foundedDate "1956-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Hàng Đẫy ;
-kg:isHomeOf res:stadium/Hàng Đẫy ;
-kg:hasOwner res:organization/Tổng cục Đường sắt Việt Nam .
-
-res:stadium/Hàng Đẫy a rdfs:type kg:Stadium ;
-kg:capacity 22500 .
-
-res:organization/Tổng cục Đường sắt Việt Nam a rdfs:type kg:Organization ;
-kg:owns res:club/Đội bóng đá Tổng cục Đường sắt .
-
-res:club/Đội bóng đá Tổng cục Đường sắt kg:participatesIn res:season/Mùa giải 1980 ;
-kg:participatesIn res:season/Mùa giải 1985 .
-
-res:season/Mùa giải 1980 a rdfs:type kg:Season ;
-kg:seasonOf res:competition/Giải bóng đá A1 toàn quốc lần thứ I .
-
-res:competition/Giải bóng đá A1 toàn quốc lần thứ I a rdfs:type kg:Competition ;
-kg:competitionName "Giải bóng đá A1 toàn quốc lần thứ I" .
-
+res:club/Đội bóng đá Tổng cục Đường sắt a rdfs:type kg:Club
+; kg:teamName "Đội bóng đá Tổng cục Đường sắt"
+; kg:teamAbbreviation "Tổng cục Đường sắt"
+; kg:foundedDate "1956-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Hàng Đẫy
+; kg:isHomeOf res:stadium/Hàng Đẫy
+; kg:hasOwner res:organization/Tổng cục Đường sắt Việt Nam .
+res:stadium/Hàng Đẫy a rdfs:type kg:Stadium
+; kg:capacity 22500 .
+res:organization/Tổng cục Đường sắt Việt Nam a rdfs:type kg:Organization
+; kg:owns res:club/Đội bóng đá Tổng cục Đường sắt .
+res:club/Đội bóng đá Tổng cục Đường sắt kg:participatesIn res:season/Mùa giải 1980
+; kg:participatesIn res:season/Mùa giải 1985 .
+res:season/Mùa giải 1980 a rdfs:type kg:Season
+; kg:seasonOf res:competition/Giải bóng đá A1 toàn quốc lần thứ I .
+res:competition/Giải bóng đá A1 toàn quốc lần thứ I a rdfs:type kg:Competition
+; kg:competitionName "Giải bóng đá A1 toàn quốc lần thứ I" .
 res:club/Đội bóng đá Tổngục Đường sắt kg:participatesIn res:season/Mùa giải 1985 .
-
-res:season/Mùa giải 1985 a rdfs:type kg:Season ;
-kg:seasonOf res:competition/Giải bóng đá A1 toàn quốc lần thứ I .
-
-res:club/Đội bóng đá Tổng cục Đường sắt kg:hasCoach res:person/Lê Thụy Hải ;
-kg:hasCoach res:person/Mai Đức Chung ;
-kg:hasCoach res:person/Lê Khắc Chính .
-
+res:season/Mùa giải 1985 a rdfs:type kg:Season
+; kg:seasonOf res:competition/Giải bóng đá A1 toàn quốc lần thứ I .
+res:club/Đội bóng đá Tổng cục Đường sắt kg:hasCoach res:person/Lê Thụy Hải
+; kg:hasCoach res:person/Mai Đức Chung
+; kg:hasCoach res:person/Lê Khắc Chính .
 res:person/Lê Thụy Hải a rdfs:type kg:Coach .
-
 res:person/Mai Đức Chung a rdfs:type kg:Coach .
-
 res:person/Lê Khắc Chính a rdfs:type kg:Coach .
-
-res:club/Đội bóng đá Tổng cục Đường sắt kg:disbandedDate "2000-01-01"^^xsd:date .
-
-res:club/Câu lạc bộ Bóng đá ACB a rdfs:type kg:Club ;
-kg:teamName "Câu lạc bộ Bóng đá ACB" ;
-kg:teamAbbreviation "ACB" .
-
-res:club/Đội bóng đá Tổng cục Đường sắt kg:disbandedInto res:club/Câu lạc bộ Bóng đá ACB .
-
-res:match/Đội bóng đá Tổng cục Đường sắt 0–2 Công nhân Cảng Sài Gòn a rdfs:type kg:Match ;
-kg:homeTeam res:club/Đội bóng đá Tổng cục Đường sắt ;
-kg:awayTeam res:club/Công nhân Cảng Sài Gòn ;
-kg:venue res:stadium/Hàng Đẫy ;
-kg:inCompetition res:competition/Giải bóng đá A1 toàn quốc lần thứ I .
-
-res:club/Công nhân Cảng Sài Gòn a rdfs:type kg:Club ;
-kg:teamName "Công nhân Cảng Sài Gòn" .
-
-res:club/Đội bóng đá Tổng cục Đường sắt kg:rivalry res:club/Đội bóng đá Thể Công .
-
-res:club/Đội bóng đá Thể Công a rdfs:type kg:Club ;
-kg:teamName "Đội bóng đá Thể Công" .
+res:club/Câu lạc bộ Bóng đá ACB a rdfs:type kg:Club
+; kg:teamName "Câu lạc bộ Bóng đá ACB"
+; kg:teamAbbreviation "ACB" .
+res:match/Đội bóng đá Tổng cục Đường sắt 0–2 Công nhân Cảng Sài Gòn a rdfs:type kg:Match
+; kg:homeTeam res:club/Đội bóng đá Tổng cục Đường sắt
+; kg:awayTeam res:club/Công nhân Cảng Sài Gòn
+; kg:venue res:stadium/Hàng Đẫy
+; kg:inCompetition res:competition/Giải bóng đá A1 toàn quốc lần thứ I .
+res:club/Công nhân Cảng Sài Gòn a rdfs:type kg:Club
+; kg:teamName "Công nhân Cảng Sài Gòn" .
+res:club/Đội bóng đá Thể Công a rdfs:type kg:Club
+; kg:teamName "Đội bóng đá Thể Công" .

@@ -1,254 +1,146 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:club/Huế a kg:Club ;
-kg:teamName "Câu lạc bộ bóng đá Huế" ;
-kg:foundedDate "1976-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Tự_Do ;
-kg:hasOwner res:person/Đoàn_bóng_đá_Huế ;
-kg:hasCoach res:coach/Nguyễn_Dức_Dũng .
-
-res:stadium/Tự_Do a kg:Stadium ;
-kg:capacity 28000 ;
-kg:isHomeOf res:club/Huế .
-
-res:person/Đoàn_bóng_đá_Huế a kg:Owner ;
-kg:owns res:club/Huế .
-
-res:coach/Nguyễn_Dức_Dũng a kg:Coach ;
-kg:manages res:club/Huế .
-
-res:competition/V.League_2 a kg:Competition ;
-kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia Việt Nam" .
-
-res:season/V.League_2-2023_24 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:participatesIn res:season/V.League_2-2023_24 ;
-kg:positionInLeague "Thứ 4" .
-
+res:club/Huế a kg:Club
+; kg:teamName "Câu lạc bộ bóng đá Huế"
+; kg:foundedDate "1976-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Tự_Do
+; kg:hasOwner res:person/Đoàn_bóng_đá_Huế
+; kg:hasCoach res:coach/Nguyễn_Dức_Dũng .
+res:stadium/Tự_Do a kg:Stadium
+; kg:capacity 28000
+; kg:isHomeOf res:club/Huế .
+res:person/Đoàn_bóng_đá_Huế a kg:Owner
+; kg:owns res:club/Huế .
+res:coach/Nguyễn_Dức_Dũng a kg:Coach
+; kg:manages res:club/Huế .
+res:competition/V.League_2 a kg:Competition
+; kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia Việt Nam" .
+res:season/V.League_2-2023_24 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:season/V.League_2-2023_24 .
 res:competition/V.League_2 kg:heldIn res:country/Viet_Nam .
-
-res:country/Viet_Nam a kg:Country ;
-rdfs:label "Việt Nam" .
-
-res:city/Hue a kg:City ;
-rdfs:label "Huế" ;
-kg:locatedIn res:country/Viet_Nam .
-
+res:country/Viet_Nam a kg:Country
+; rdfs:label "Việt Nam" .
+res:city/Hue a kg:City
+; rdfs:label "Huế"
+; kg:locatedIn res:country/Viet_Nam .
 res:club/Huế kg:locatedIn res:city/Hue .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2013 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2013 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
 res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2013 kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia 2013–14" .
-
-res:club/Huế kg:positionInLeague "Vô địch" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2013 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2015 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Á quân" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2015 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2017 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Á quân" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2017 .
-
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2013 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2015 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2015 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2017 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2017 .
 res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2013 kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia 2013–14" .
-
 res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2015 kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia 2015–16" .
-
 res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2017 kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia 2017–18" .
-
-res:competition/Giải_thể_thao_hữu_nghiệp_các_nước_tiểu_vùng_sông_Mê_Kông_2014 a kg:Competition ;
-kg:competitionName "Giải thể thao hữu nghị các nước tiểu vùng sông Mê Kông 2014" ;
-kg:heldIn res:country/Viet_Nam .
-
-res:club/Huế kg:participatesIn res:competition/Giải_thể_thao_hữu_nghiệp_các_nước_tiểu_vùng_sông_Mê_Kông_2014 ;
-kg:positionInLeague "Vô địch" .
-
-res:competition/Đại_hội_Thể_dục_Thể_thao_toàn_quốc_2014 a kg:Competition ;
-kg:competitionName "Đại hội Thể dục Thể thao toàn quốc 2014" ;
-kg:heldIn res:country/Viet_Nam .
-
-res:club/Huế kg:participatesIn res:competition/Đại_hội_Thể_dục_Thể_thao_toàn_quốc_2014 ;
-kg:positionInLeague "Á quân" .
-
-res:competition/Giải_bóng_đá_hạng_nhì_quốc_gia_2012 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Hạng ba" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhì_quốc_gia_2012 .
-
-res:competition/Giải_bóng_đá_hạng_nhì_quốc_gia_2013 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Vô địch" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhì_quốc_gia_2013 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2023_24 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 4" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2023_24 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2024_25 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 11" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2024_25 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2019 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 6" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2019 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2022 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 7" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2022 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2023 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 6" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2023 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2016 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 7" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2016 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2018 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 7" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2018 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2010 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 11" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2010 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2009 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 5" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2009 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2008 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 6" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2008 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2007 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 13" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2007 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2006 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 3" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2006 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2005 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 5" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2005 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2004 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 3" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2004 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2003 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 4" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2003 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2001 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 8" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2001 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2000 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 7" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2000 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1999 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 4" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1999 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1998 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Đồng thứ 3" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1998 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1997 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Không rõ" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1997 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1996 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Thứ 11" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1996 .
-
-res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1995 a kg:Season ;
-kg:seasonOf res:competition/V.League_2 ;
-kg:participatesIn res:club/Huế .
-
-res:club/Huế kg:positionInLeague "Á quân" ;
-kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1995 .
+res:competition/Giải_thể_thao_hữu_nghiệp_các_nước_tiểu_vùng_sông_Mê_Kông_2014 a kg:Competition
+; kg:competitionName "Giải thể thao hữu nghị các nước tiểu vùng sông Mê Kông 2014"
+; kg:heldIn res:country/Viet_Nam .
+res:club/Huế kg:participatesIn res:competition/Giải_thể_thao_hữu_nghiệp_các_nước_tiểu_vùng_sông_Mê_Kông_2014 .
+res:competition/Đại_hội_Thể_dục_Thể_thao_toàn_quốc_2014 a kg:Competition
+; kg:competitionName "Đại hội Thể dục Thể thao toàn quốc 2014"
+; kg:heldIn res:country/Viet_Nam .
+res:club/Huế kg:participatesIn res:competition/Đại_hội_Thể_dục_Thể_thao_toàn_quốc_2014 .
+res:competition/Giải_bóng_đá_hạng_nhì_quốc_gia_2012 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhì_quốc_gia_2012 .
+res:competition/Giải_bóng_đá_hạng_nhì_quốc_gia_2013 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhì_quốc_gia_2013 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2023_24 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2023_24 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2024_25 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2024_25 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2019 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2019 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2022 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2022 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2023 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2023 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2016 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2016 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2018 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2018 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2010 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2010 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2009 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2009 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2008 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2008 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2007 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2007 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2006 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2006 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2005 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2005 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2004 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2004 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2003 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2003 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2001 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2001 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2000 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_2000 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1999 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1999 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1998 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1998 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1997 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1997 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1996 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1996 .
+res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1995 a kg:Season
+; kg:seasonOf res:competition/V.League_2
+; kg:participatesIn res:club/Huế .
+res:club/Huế kg:participatesIn res:competition/Giải_bóng_đá_hạng_nhất_quốc_gia_1995 .

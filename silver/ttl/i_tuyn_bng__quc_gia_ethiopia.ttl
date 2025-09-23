@@ -1,160 +1,122 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Ethiopia a kg:Team ;
-kg:teamName "Ethiopia" ;
-kg:teamAbbreviation "ETH" ;
-kg:hasCoach res:coach/Abraham_Mebrautu ;
-kg:hasCaptain res:player/Shimelis_Bekele ;
-kg:locatedIn res:country/Ethiopia ;
-kg:homeStadium res:stadium/Addis_Ababa_Stadium, res:stadium/Bahir_Dar_Stadium ;
-kg:isCaptain res:player/Shimelis_Bekele ;
-kg:manages res:coach/Abraham_Mebrautu .
-
-res:coach/Abraham_Mebrautu a kg:Coach ;
-kg:manages res:team/Ethiopia .
-
-res:player/Shimelis_Bekele a kg:Player ;
-kg:playsFor res:team/Ethiopia ;
-kg:isCaptain res:team/Ethiopia .
-
-res:stadium/Addis_Ababa_Stadium a kg:Stadium ;
-kg:isHomeOf res:team/Ethiopia .
-
-res:stadium/Bahir_Dar_Stadium a kg:Stadium ;
-kg:isHomeOf res:team/Ethiopia .
-
-res:country/Ethiopia a kg:Country ;
-kg:locatedIn res:country/Ethiopia .
-
-res:competition/Africa_Cup_of_Nations a kg:Competition ;
-kg:competitionName "Africa Cup of Nations" .
-
-res:competition/CECAFA_Cup a kg:Competition ;
-kg:competitionName "CECAFA Cup" .
-
-res:team/Ethiopia kg:participatesIn res:season/1957_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/1962_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/1963_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/1965_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/1968_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/1970_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/1972_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/1974_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/1976_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/1982_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/2001_CECAFA_Cup ;
-kg:participatesIn res:season/2002_CECAFA_Cup ;
-kg:participatesIn res:season/2004_CECAFA_Cup ;
-kg:participatesIn res:season/2005_CECAFA_Cup ;
-kg:participatesIn res:season/2006_CECAFA_Cup ;
-kg:participatesIn res:season/2007_CECAFA_Cup ;
-kg:participatesIn res:season/2009_CECAFA_Cup ;
-kg:participatesIn res:season/2010_CECAFA_Cup ;
-kg:participatesIn res:season/2013_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/2015_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/2019_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/2021_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/2023_Africa_Cup_of_Nations ;
-kg:participatesIn res:season/2025_Africa_Cup_of_Nations .
-
-res:season/1957_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 9 ;
-kg:heldIn res:country/Ethiopia .
-
-res:season/1962_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 9 ;
-kg:heldIn res:country/Ethiopia .
-
-res:season/1963_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 9 .
-
-res:season/1965_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 9 .
-
-res:season/1968_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 9 .
-
-res:season/1970_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 9 .
-
-res:season/1972_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 9 .
-
-res:season/1974_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 9 .
-
-res:season/1976_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 9 .
-
-res:season/1982_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 9 .
-
-res:season/2001_CECAFA_Cup a kg:Season ;
-kg:seasonOf res:competition/CECAFA_Cup ;
-kg:participantCount 8 .
-
-res:season/2002_CECAFA_Cup a kg:Season ;
-kg:seasonOf res:competition/CECAFA_Cup ;
-kg:participantCount 8 .
-
-res:season/2004_CECAFA_Cup a kg:Season ;
-kg:seasonOf res:competition/CECAFA_Cup ;
-kg:participantCount 9 .
-
-res:season/2005_CECAFA_Cup a kg:Season ;
-kg:seasonOf res:competition/CECAFA_Cup ;
-kg:participantCount 8 .
-
-res:season/2006_CECAFA_Cup a kg:Season ;
-kg:seasonOf res:competition/CECAFA_Cup ;
-kg:participantCount 8 .
-
-res:season/2007_CECAFA_Cup a kg:Season ;
-kg:seasonOf res:competition/CECAFA_Cup ;
-kg:participantCount 8 .
-
-res:season/2009_CECAFA_Cup a kg:Season ;
-kg:seasonOf res:competition/CECAFA_Cup ;
-kg:participantCount 8 .
-
-res:season/2010_CECAFA_Cup a kg:Season ;
-kg:seasonOf res:competition/CECAFA_Cup ;
-kg:participantCount 8 .
-
-res:season/2013_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 24 .
-
-res:season/2015_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 24 .
-
-res:season/2019_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 24 .
-
-res:season/2021_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 24 .
-
-res:season/2023_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 24 .
-
-res:season/2025_Africa_Cup_of_Nations a kg:Season ;
-kg:seasonOf res:competition/Africa_Cup_of_Nations ;
-kg:participantCount 24 .
+res:team/Ethiopia a kg:Team
+; kg:teamName "Ethiopia"
+; kg:teamAbbreviation "ETH"
+; kg:hasCoach res:coach/Abraham_Mebrautu
+; kg:hasCaptain res:player/Shimelis_Bekele
+; kg:locatedIn res:country/Ethiopia
+; kg:homeStadium res:stadium/Addis_Ababa_Stadium , res:stadium/Bahir_Dar_Stadium
+; kg:isCaptain res:player/Shimelis_Bekele
+; kg:manages res:coach/Abraham_Mebrautu .
+res:coach/Abraham_Mebrautu a kg:Coach
+; kg:manages res:team/Ethiopia .
+res:player/Shimelis_Bekele a kg:Player
+; kg:playsFor res:team/Ethiopia
+; kg:isCaptain res:team/Ethiopia .
+res:stadium/Addis_Ababa_Stadium a kg:Stadium
+; kg:isHomeOf res:team/Ethiopia .
+res:stadium/Bahir_Dar_Stadium a kg:Stadium
+; kg:isHomeOf res:team/Ethiopia .
+res:country/Ethiopia a kg:Country
+; kg:locatedIn res:country/Ethiopia .
+res:competition/Africa_Cup_of_Nations a kg:Competition
+; kg:competitionName "Africa Cup of Nations" .
+res:competition/CECAFA_Cup a kg:Competition
+; kg:competitionName "CECAFA Cup" .
+res:team/Ethiopia kg:participatesIn res:season/1957_Africa_Cup_of_Nations
+; kg:participatesIn res:season/1962_Africa_Cup_of_Nations
+; kg:participatesIn res:season/1963_Africa_Cup_of_Nations
+; kg:participatesIn res:season/1965_Africa_Cup_of_Nations
+; kg:participatesIn res:season/1968_Africa_Cup_of_Nations
+; kg:participatesIn res:season/1970_Africa_Cup_of_Nations
+; kg:participatesIn res:season/1972_Africa_Cup_of_Nations
+; kg:participatesIn res:season/1974_Africa_Cup_of_Nations
+; kg:participatesIn res:season/1976_Africa_Cup_of_Nations
+; kg:participatesIn res:season/1982_Africa_Cup_of_Nations
+; kg:participatesIn res:season/2001_CECAFA_Cup
+; kg:participatesIn res:season/2002_CECAFA_Cup
+; kg:participatesIn res:season/2004_CECAFA_Cup
+; kg:participatesIn res:season/2005_CECAFA_Cup
+; kg:participatesIn res:season/2006_CECAFA_Cup
+; kg:participatesIn res:season/2007_CECAFA_Cup
+; kg:participatesIn res:season/2009_CECAFA_Cup
+; kg:participatesIn res:season/2010_CECAFA_Cup
+; kg:participatesIn res:season/2013_Africa_Cup_of_Nations
+; kg:participatesIn res:season/2015_Africa_Cup_of_Nations
+; kg:participatesIn res:season/2019_Africa_Cup_of_Nations
+; kg:participatesIn res:season/2021_Africa_Cup_of_Nations
+; kg:participatesIn res:season/2023_Africa_Cup_of_Nations
+; kg:participatesIn res:season/2025_Africa_Cup_of_Nations .
+res:season/1957_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 9
+; kg:heldIn res:country/Ethiopia .
+res:season/1962_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 9
+; kg:heldIn res:country/Ethiopia .
+res:season/1963_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 9 .
+res:season/1965_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 9 .
+res:season/1968_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 9 .
+res:season/1970_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 9 .
+res:season/1972_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 9 .
+res:season/1974_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 9 .
+res:season/1976_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 9 .
+res:season/1982_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 9 .
+res:season/2001_CECAFA_Cup a kg:Season
+; kg:seasonOf res:competition/CECAFA_Cup
+; kg:participantCount 8 .
+res:season/2002_CECAFA_Cup a kg:Season
+; kg:seasonOf res:competition/CECAFA_Cup
+; kg:participantCount 8 .
+res:season/2004_CECAFA_Cup a kg:Season
+; kg:seasonOf res:competition/CECAFA_Cup
+; kg:participantCount 9 .
+res:season/2005_CECAFA_Cup a kg:Season
+; kg:seasonOf res:competition/CECAFA_Cup
+; kg:participantCount 8 .
+res:season/2006_CECAFA_Cup a kg:Season
+; kg:seasonOf res:competition/CECAFA_Cup
+; kg:participantCount 8 .
+res:season/2007_CECAFA_Cup a kg:Season
+; kg:seasonOf res:competition/CECAFA_Cup
+; kg:participantCount 8 .
+res:season/2009_CECAFA_Cup a kg:Season
+; kg:seasonOf res:competition/CECAFA_Cup
+; kg:participantCount 8 .
+res:season/2010_CECAFA_Cup a kg:Season
+; kg:seasonOf res:competition/CECAFA_Cup
+; kg:participantCount 8 .
+res:season/2013_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 24 .
+res:season/2015_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 24 .
+res:season/2019_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 24 .
+res:season/2021_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 24 .
+res:season/2023_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 24 .
+res:season/2025_Africa_Cup_of_Nations a kg:Season
+; kg:seasonOf res:competition/Africa_Cup_of_Nations
+; kg:participantCount 24 .

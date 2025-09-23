@@ -1,453 +1,294 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Cộng_hoà_Trung_Phí a kg:Team ;
-kg:teamName "Cộng hòa Trung Phi" ;
-kg:hasCoach res:coach/Etienne_Momokoamas ;
-kg:hasCaptain res:player/Foxi_Kéthévoama ;
-kg:homeStadium res:stadium/Sân_vận_động_Barthélemy_Boganda ;
-kg:teamAbbreviation "CTA" ;
-kg:locatedIn res:country/Cộng_hoà_Trung_Phí .
-
-res:country/Cộng_hoà_Trung_Phí a kg:Country ;
-rdfs:label "Cộng hòa Trung Phi" .
-
-res:stadium/Sân_vận_động_Barthélemy_Boganda a kg:Stadium ;
-kg:isHomeOf res:team/Cộng_hoà_Trung_Phí .
-
-res:coach/Etienne_Momokoamas a kg:Coach ;
-kg:manages res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Foxi_Kéthévoama a kg:Player ;
-kg:isCaptain res:team/Cộng_hoà_Trung_Phí ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Maurel_Abimala a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Marcellin_Biandao a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Saturnin_Ngarsouma a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Flory_Yangao a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Amos_Youga a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Leonce_Namgbema a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Cherubin_Merius_Basse-Zokana a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Hugo_Gambor a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Kenny_Kima_Beyissa a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Chris_Mbai_Assem a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Boko_Cyrille_Kokpakpa a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Fordeau_Miambaye a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Isaac_Ngoma a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Axel_Urie a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Melki_Ndokomandji a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Donald_Guesset a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Gabriel_Oualengbe a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Ghislain_Mounguide a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Michel_Judicael_Binguimale a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Parfait_Namsona a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Louis_Mafouta a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Christian-Theodor_Yawanendji-Malipangou a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Moustapha_Djimet a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Dimitri_Kogbeto a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Geoffrey_Kondogbia a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:player/Toussaint_Gombe-Fei a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Trung_Phí .
-
-res:team/Cộng_hoà_Trung_Phí kg:participatesIn res:season/Vòng_loại_World_Cup_2026 ;
-
-res:competition/Vòng_loại_World_Cup_2026 a kg:Competition ;
-kg:competitionName "Vòng loại World Cup 2026" .
-
-res:match/CTA_vs_MLI a kg:Match ;
-kg:homeTeam res:team/Cộng_hoà_Trung_Phí ;
-kg:awayTeam res:team/Madagascar ;
-kg:kickoffTime "1959-06-01T00:00:00Z"^^xsd:dateTime ;
-kg:inCompetition res:competition/Vòng_loại_World_Cup_2026 .
-
-res:match/CTA_vs_BHU a kg:Match ;
-kg:homeTeam res:team/Cộng_hoà_Trung_Phí ;
-kg:awayTeam res:team/Bhutan ;
-kg:kickoffTime "2024-03-22T00:00:00Z"^^xsd:dateTime ;
-kg:inCompetition res:competition/FIFA_Series_2024 .
-
-res:match/CIV_vs_CTA a kg:Match ;
-kg:homeTeam res:team/Bờ_Biển_Ngà ;
-kg:awayTeam res:team/Cộng_hoà_Trung_Phí ;
-kg:kickoffTime "1961-12-27T00:00:00Z"^^xsd:dateTime ;
-kg:inCompetition res:competition/Vòng_loại_AFCON_1962 .
-
-res:competition/AFCON a kg:Competition ;
-kg:competitionName "Cúp bóng đá châu Phi" .
-
-res:competition/FIFA_Series_2024 a kg:Competition ;
-kg:competitionName "FIFA Series 2024" .
-
-res:season/Vòng_loại_World_Cup_2026 a kg:Season ;
-kg:seasonOf res:competition/Vòng_loại_World_Cup_2026 .
-
-res:season/Vòng_loại_AFCON_1962 a kg:Season ;
-kg:seasonOf res:competition/AFCON .
-
-res:team/Cộng_hoà_Trung_Phí kg:participatesIn res:season/Vòng_loại_AFCON_1962 ;
-
-res:club/Olympic_Real_de_Bangui a kg:Club ;
-kg:homeStadium res:stadium/Sân_vận_động_Barthélemy_Boganda ;
-kg:isHomeOf res:stadium/Sân_vận_động_Barthélemy_Boganda .
-
+res:team/Cộng_hoà_Trung_Phí a kg:Team
+; kg:teamName "Cộng hòa Trung Phi"
+; kg:hasCoach res:coach/Etienne_Momokoamas
+; kg:hasCaptain res:player/Foxi_Kéthévoama
+; kg:homeStadium res:stadium/Sân_vận_động_Barthélemy_Boganda
+; kg:teamAbbreviation "CTA"
+; kg:locatedIn res:country/Cộng_hoà_Trung_Phí .
+res:country/Cộng_hoà_Trung_Phí a kg:Country
+; rdfs:label "Cộng hòa Trung Phi" .
+res:stadium/Sân_vận_động_Barthélemy_Boganda a kg:Stadium
+; kg:isHomeOf res:team/Cộng_hoà_Trung_Phí .
+res:coach/Etienne_Momokoamas a kg:Coach
+; kg:manages res:team/Cộng_hoà_Trung_Phí .
+res:player/Foxi_Kéthévoama a kg:Player
+; kg:isCaptain res:team/Cộng_hoà_Trung_Phí
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Maurel_Abimala a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Marcellin_Biandao a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Saturnin_Ngarsouma a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Flory_Yangao a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Amos_Youga a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Leonce_Namgbema a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Cherubin_Merius_Basse-Zokana a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Hugo_Gambor a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Kenny_Kima_Beyissa a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Chris_Mbai_Assem a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Boko_Cyrille_Kokpakpa a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Fordeau_Miambaye a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Isaac_Ngoma a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Axel_Urie a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Melki_Ndokomandji a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Donald_Guesset a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Gabriel_Oualengbe a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Ghislain_Mounguide a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Michel_Judicael_Binguimale a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Parfait_Namsona a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Louis_Mafouta a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Christian-Theodor_Yawanendji-Malipangou a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Moustapha_Djimet a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Dimitri_Kogbeto a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Geoffrey_Kondogbia a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:player/Toussaint_Gombe-Fei a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Trung_Phí .
+res:team/Cộng_hoà_Trung_Phí kg:participatesIn res:season/Vòng_loại_World_Cup_2026
+; res:competition/Vòng_loại_World_Cup_2026 a kg:Competition
+; kg:competitionName "Vòng loại World Cup 2026" .
+res:match/CTA_vs_MLI a kg:Match
+; kg:homeTeam res:team/Cộng_hoà_Trung_Phí
+; kg:awayTeam res:team/Madagascar
+; kg:kickoffTime "1959-06-01T00:00:00Z"^^xsd:dateTime
+; kg:inCompetition res:competition/Vòng_loại_World_Cup_2026 .
+res:match/CTA_vs_BHU a kg:Match
+; kg:homeTeam res:team/Cộng_hoà_Trung_Phí
+; kg:awayTeam res:team/Bhutan
+; kg:kickoffTime "2024-03-22T00:00:00Z"^^xsd:dateTime
+; kg:inCompetition res:competition/FIFA_Series_2024 .
+res:match/CIV_vs_CTA a kg:Match
+; kg:homeTeam res:team/Bờ_Biển_Ngà
+; kg:awayTeam res:team/Cộng_hoà_Trung_Phí
+; kg:kickoffTime "1961-12-27T00:00:00Z"^^xsd:dateTime
+; kg:inCompetition res:competition/Vòng_loại_AFCON_1962 .
+res:competition/AFCON a kg:Competition
+; kg:competitionName "Cúp bóng đá châu Phi" .
+res:competition/FIFA_Series_2024 a kg:Competition
+; kg:competitionName "FIFA Series 2024" .
+res:season/Vòng_loại_World_Cup_2026 a kg:Season
+; kg:seasonOf res:competition/Vòng_loại_World_Cup_2026 .
+res:season/Vòng_loại_AFCON_1962 a kg:Season
+; kg:seasonOf res:competition/AFCON .
+res:team/Cộng_hoà_Trung_Phí kg:participatesIn res:season/Vòng_loại_AFCON_1962
+; res:club/Olympic_Real_de_Bangui a kg:Club
+; kg:homeStadium res:stadium/Sân_vận_động_Barthélemy_Boganda
+; kg:isHomeOf res:stadium/Sân_vận_động_Barthélemy_Boganda .
 res:club/Debreceni_VSC a kg:Club .
-
 res:club/Red_Star_FC_Bangui a kg:Club .
-
 res:club/ES_Troyes_AC a kg:Club .
-
 res:club/R_E_Virton a kg:Club .
-
 res:club/New_England_Revolution_II a kg:Club .
-
 res:club/AS_Tempête_Mocaf a kg:Club .
-
 res:club/Al_Kharaitiyat_SC a kg:Club .
-
 res:club/En_Avant_Guingamp a kg:Club .
-
 res:club/Gasosi_United a kg:Club .
-
 res:club/FC_Dinamo_Minsk a kg:Club .
-
 res:club/SC_Toulon a kg:Club .
-
 res:club/DFC_8ème_Arrondissement a kg:Club .
-
 res:club/SCAF_Tocages a kg:Club .
-
 res:club/Balikesirspor a kg:Club .
-
 res:club/Neuchâtel_Xamax_FCS a kg:Club .
-
 res:club/MFK_Vyškov a kg:Club .
-
 res:club/AS_Tempete a kg:Club .
-
 res:position/GK a kg:Goalkeeper .
-
 res:position/DF a kg:Defender .
-
 res:position/MF a kg:Midfielder .
-
 res:position/FW a kg:Forward .
-
 res:footedness/LeftFooted a kg:LeftFooted .
-
 res:footedness/RightFooted a kg:RightFooted .
-
 res:footedness/BothFooted a kg:BothFooted .
-
-res:place/Bangui a kg:City ;
-kg:locatedIn res:country/Cộng_hoà_Trung_Phí .
-
-res:place/Paris a kg:City ;
-kg:locatedIn res:country/France .
-
-res:place/Brussels a kg:City ;
-kg:locatedIn res:country/Belgium .
-
-res:place/Sofia a kg:City ;
-kg:locatedIn res:country/Bulgaria .
-
-res:place/Nicosia a kg:City ;
-kg:locatedIn res:country/Cyprus .
-
-res:place/Tripoli a kg:City ;
-kg:locatedIn res:country/Libya .
-
-res:place/Marrakech a kg:City ;
-kg:locatedIn res:country/Morocco .
-
-res:country/France a kg:Country ;
-rdfs:label "France" .
-
-res:country/Belgium a kg:Country ;
-rdfs:label "Belgium" .
-
-res:country/Rwanda a kg:Country ;
-rdfs:label "Rwanda" .
-
-res:country/Italy a kg:Country ;
-rdfs:label "Italy" .
-
-res:country/South_Africa a kg:Country ;
-rdfs:label "South Africa" .
-
-res:country/England a kg:Country ;
-rdfs:label "England" .
-
-res:country/Spain a kg:Country ;
-rdfs:label "Spain" .
-
-res:country/Germany a kg:Country ;
-rdfs:label "Germany" .
-
-res:country/Japan a kg:Country ;
-rdfs:label "Japan" .
-
-res:country/Qatar a kg:Country ;
-rdfs:label "Qatar" .
-
-res:country/Morocco a kg:Country ;
-rdfs:label "Morocco" .
-
-res:country/Zimbabwe a kg:Country ;
-rdfs:label "Zimbabwe" .
-
-res:country/Cameroon a kg:Country ;
-rdfs:label "Cameroon" .
-
-res:country/Gabon a kg:Country ;
-rdfs:label "Gabon" .
-
-res:country/Ghana a kg:Country ;
-rdfs:label "Ghana" .
-
-res:country/Seychelles a kg:Country ;
-rdfs:label "Seychelles" .
-
-res:country/Sri_Lanka a kg:Country ;
-rdfs:label "Sri Lanka" .
-
-res:country/Bhutan a kg:Country ;
-rdfs:label "Bhutan" .
-
-res:country/Papua_New_Guinea a kg:Country ;
-rdfs:label "Papua New Guinea" .
-
-res:country/Algeria a kg:Country ;
-rdfs:label "Algeria" .
-
-res:country/China a kg:Country ;
-rdfs:label "China" .
-
-res:country/Botswana a kg:Country ;
-rdfs:label "Botswana" .
-
-res:country/South_Korea a kg:Country ;
-rdfs:label "South Korea" .
-
-res:country/Burundi a kg:Country ;
-rdfs:label "Burundi" .
-
-res:country/Equatorial_Guinea a kg:Country ;
-rdfs:label "Equatorial Guinea" .
-
-res:country/Madagascar a kg:Country ;
-rdfs:label "Madagascar" .
-
-res:country/Chad a kg:Country ;
-rdfs:label "Chad" .
-
-res:country/Nigeria a kg:Country ;
-rdfs:label "Nigeria" .
-
-res:country/Burkina_Faso a kg:Country ;
-rdfs:label "Burkina Faso" .
-
-res:country/Republic_of_the_Congo a kg:Country ;
-rdfs:label "Republic of the Congo" .
-
-res:country/Comoros a kg:Country ;
-rdfs:label "Comoros" .
-
-res:country/Mali a kg:Country ;
-rdfs:label "Mali" .
-
-res:country/Tunisia a kg:Country ;
-rdfs:label "Tunisia" .
-
-res:country/Uganda a kg:Country ;
-rdfs:label "Uganda" .
-
-res:country/Egypt a kg:Country ;
-rdfs:label "Egypt" .
-
-res:country/Sudan a kg:Country ;
-rdfs:label "Sudan" .
-
-res:country/Zambia a kg:Country ;
-rdfs:label "Zambia" .
-
-res:country/Zimbabwe a kg:Country ;
-rdfs:label "Zimbabwe" .
-
-res:country/United_Arab_Emirates a kg:Country ;
-rdfs:label "United Arab Emirates" .
-
-res:country/Seychelles a kg:Country ;
-rdfs:label "Seychelles" .
-
-res:country/Costa_Rica a kg:Country ;
-rdfs:label "Costa Rica" .
-
-res:country/Mexico a kg:Country ;
-rdfs:label "Mexico" .
-
-res:country/Canada a kg:Country ;
-rdfs:label "Canada" .
-
-res:country/United_States a kg:Country ;
-rdfs:label "United States" .
-
-res:country/Saudi_Arabia a kg:Country ;
-rdfs:label "Saudi Arabia" .
-
-res:country/Argentina a kg:Country ;
-rdfs:label "Argentina" .
-
-res:country/Uruguay a kg:Country ;
-rdfs:label "Uruguay" .
-
-res:country/Peru a kg:Country ;
-rdfs:label "Peru" .
-
-res:country/Bolivia a kg:Country ;
-rdfs:label "Bolivia" .
-
-res:country/Paraguay a kg:Country ;
-rdfs:label "Paraguay" .
-
-res:country/Costa_Rica a kg:Country ;
-rdfs:label "Costa Rica" .
-
-res:country/El_Salvador a kg:Country ;
-rdfs:label "El Salvador" .
-
-res:country/Honduras a kg:Country ;
-rdfs:label "Honduras" .
-
-res:country/Nicaragua a kg:Country ;
-rdfs:label "Nicaragua" .
-
-res:country/Guatemala a kg:Country ;
-rdfs:label "Guatemala" .
-
-res:country/Belize a kg:Country ;
-rdfs:label "Belize" .
-
-res:country/Guadeloupe a kg:Country ;
-rdfs:label "Guadeloupe" .
-
-res:country/French_Guiana a kg:Country ;
-rdfs:label "French Guiana" .
-
-res:country/Martinique a kg:Country ;
-rdfs:label "Martinique" .
-
-res:country/Guyana a kg:Country ;
-rdfs:label "Guyana" .
-
-res:country/Barbados a kg:Country ;
-rdfs:label "Barbados" .
-
-res:country/Trinidad_and_Tobago a kg:Country ;
-rdfs:label "Trinidad and Tobago" .
-
-res:country/Jamaica a kg:Country ;
-rdfs:label "Jamaica" .
-
-res:country/Haiti a kg:Country ;
-rdfs:label "Haiti" .
-
-res:country/Dominican_Republic a kg:Country ;
-rdfs:label "Dominican Republic" .
-
-res:country/Cuba a kg:Country ;
-rdfs:label "Cuba" .
-
-res:country/Panama a kg:Country ;
-rdfs:label "Panama" .
-
-res:country/Brazil a kg:Country ;
-rdfs:label "Brazil" .
-
-res:country/Colombia a kg:Country ;
-rdfs:label "Colombia" .
-
-res:country/Venezuela a kg:Country ;
-rdfs:label "Venezuela" .
-
-res:country/Chile a kg:Country ;
-rdfs:label "Chile" .
-
-res:country/Paraguay a kg:Country ;
-rdfs:label "Paraguay" .
-
-res:country/Uruguay a kg:Country ;
-rdfs:label "Uruguay" .
-
-res:country/Bolivia a kg:Country ;
-rdfs:label "Bolivia" .
-
-res:country/Peru a kg:Country ;
-rdfs:label "Peru" .
-
-res:country/Argentina a kg:Country ;
-rdfs:label "Argentina" .
-
-res:country/Uruguay a kg:Country ;
-rdfs:label "Uruguay" .
-
-res:country/Brazil a kg:Country ;
-rdfs:label "Brazil" .
-
-res:country/Colombia a kg:Country ;
-rdfs:label "Colombia" .
-
-res:country
+res:place/Bangui a kg:City
+; kg:locatedIn res:country/Cộng_hoà_Trung_Phí .
+res:place/Paris a kg:City
+; kg:locatedIn res:country/France .
+res:place/Brussels a kg:City
+; kg:locatedIn res:country/Belgium .
+res:place/Sofia a kg:City
+; kg:locatedIn res:country/Bulgaria .
+res:place/Nicosia a kg:City
+; kg:locatedIn res:country/Cyprus .
+res:place/Tripoli a kg:City
+; kg:locatedIn res:country/Libya .
+res:place/Marrakech a kg:City
+; kg:locatedIn res:country/Morocco .
+res:country/France a kg:Country
+; rdfs:label "France" .
+res:country/Belgium a kg:Country
+; rdfs:label "Belgium" .
+res:country/Rwanda a kg:Country
+; rdfs:label "Rwanda" .
+res:country/Italy a kg:Country
+; rdfs:label "Italy" .
+res:country/South_Africa a kg:Country
+; rdfs:label "South Africa" .
+res:country/England a kg:Country
+; rdfs:label "England" .
+res:country/Spain a kg:Country
+; rdfs:label "Spain" .
+res:country/Germany a kg:Country
+; rdfs:label "Germany" .
+res:country/Japan a kg:Country
+; rdfs:label "Japan" .
+res:country/Qatar a kg:Country
+; rdfs:label "Qatar" .
+res:country/Morocco a kg:Country
+; rdfs:label "Morocco" .
+res:country/Zimbabwe a kg:Country
+; rdfs:label "Zimbabwe" .
+res:country/Cameroon a kg:Country
+; rdfs:label "Cameroon" .
+res:country/Gabon a kg:Country
+; rdfs:label "Gabon" .
+res:country/Ghana a kg:Country
+; rdfs:label "Ghana" .
+res:country/Seychelles a kg:Country
+; rdfs:label "Seychelles" .
+res:country/Sri_Lanka a kg:Country
+; rdfs:label "Sri Lanka" .
+res:country/Bhutan a kg:Country
+; rdfs:label "Bhutan" .
+res:country/Papua_New_Guinea a kg:Country
+; rdfs:label "Papua New Guinea" .
+res:country/Algeria a kg:Country
+; rdfs:label "Algeria" .
+res:country/China a kg:Country
+; rdfs:label "China" .
+res:country/Botswana a kg:Country
+; rdfs:label "Botswana" .
+res:country/South_Korea a kg:Country
+; rdfs:label "South Korea" .
+res:country/Burundi a kg:Country
+; rdfs:label "Burundi" .
+res:country/Equatorial_Guinea a kg:Country
+; rdfs:label "Equatorial Guinea" .
+res:country/Madagascar a kg:Country
+; rdfs:label "Madagascar" .
+res:country/Chad a kg:Country
+; rdfs:label "Chad" .
+res:country/Nigeria a kg:Country
+; rdfs:label "Nigeria" .
+res:country/Burkina_Faso a kg:Country
+; rdfs:label "Burkina Faso" .
+res:country/Republic_of_the_Congo a kg:Country
+; rdfs:label "Republic of the Congo" .
+res:country/Comoros a kg:Country
+; rdfs:label "Comoros" .
+res:country/Mali a kg:Country
+; rdfs:label "Mali" .
+res:country/Tunisia a kg:Country
+; rdfs:label "Tunisia" .
+res:country/Uganda a kg:Country
+; rdfs:label "Uganda" .
+res:country/Egypt a kg:Country
+; rdfs:label "Egypt" .
+res:country/Sudan a kg:Country
+; rdfs:label "Sudan" .
+res:country/Zambia a kg:Country
+; rdfs:label "Zambia" .
+res:country/Zimbabwe a kg:Country
+; rdfs:label "Zimbabwe" .
+res:country/United_Arab_Emirates a kg:Country
+; rdfs:label "United Arab Emirates" .
+res:country/Seychelles a kg:Country
+; rdfs:label "Seychelles" .
+res:country/Costa_Rica a kg:Country
+; rdfs:label "Costa Rica" .
+res:country/Mexico a kg:Country
+; rdfs:label "Mexico" .
+res:country/Canada a kg:Country
+; rdfs:label "Canada" .
+res:country/United_States a kg:Country
+; rdfs:label "United States" .
+res:country/Saudi_Arabia a kg:Country
+; rdfs:label "Saudi Arabia" .
+res:country/Argentina a kg:Country
+; rdfs:label "Argentina" .
+res:country/Uruguay a kg:Country
+; rdfs:label "Uruguay" .
+res:country/Peru a kg:Country
+; rdfs:label "Peru" .
+res:country/Bolivia a kg:Country
+; rdfs:label "Bolivia" .
+res:country/Paraguay a kg:Country
+; rdfs:label "Paraguay" .
+res:country/Costa_Rica a kg:Country
+; rdfs:label "Costa Rica" .
+res:country/El_Salvador a kg:Country
+; rdfs:label "El Salvador" .
+res:country/Honduras a kg:Country
+; rdfs:label "Honduras" .
+res:country/Nicaragua a kg:Country
+; rdfs:label "Nicaragua" .
+res:country/Guatemala a kg:Country
+; rdfs:label "Guatemala" .
+res:country/Belize a kg:Country
+; rdfs:label "Belize" .
+res:country/Guadeloupe a kg:Country
+; rdfs:label "Guadeloupe" .
+res:country/French_Guiana a kg:Country
+; rdfs:label "French Guiana" .
+res:country/Martinique a kg:Country
+; rdfs:label "Martinique" .
+res:country/Guyana a kg:Country
+; rdfs:label "Guyana" .
+res:country/Barbados a kg:Country
+; rdfs:label "Barbados" .
+res:country/Trinidad_and_Tobago a kg:Country
+; rdfs:label "Trinidad and Tobago" .
+res:country/Jamaica a kg:Country
+; rdfs:label "Jamaica" .
+res:country/Haiti a kg:Country
+; rdfs:label "Haiti" .
+res:country/Dominican_Republic a kg:Country
+; rdfs:label "Dominican Republic" .
+res:country/Cuba a kg:Country
+; rdfs:label "Cuba" .
+res:country/Panama a kg:Country
+; rdfs:label "Panama" .
+res:country/Brazil a kg:Country
+; rdfs:label "Brazil" .
+res:country/Colombia a kg:Country
+; rdfs:label "Colombia" .
+res:country/Venezuela a kg:Country
+; rdfs:label "Venezuela" .
+res:country/Chile a kg:Country
+; rdfs:label "Chile" .
+res:country/Paraguay a kg:Country
+; rdfs:label "Paraguay" .
+res:country/Uruguay a kg:Country
+; rdfs:label "Uruguay" .
+res:country/Bolivia a kg:Country
+; rdfs:label "Bolivia" .
+res:country/Peru a kg:Country
+; rdfs:label "Peru" .
+res:country/Argentina a kg:Country
+; rdfs:label "Argentina" .
+res:country/Uruguay a kg:Country
+; rdfs:label "Uruguay" .
+res:country/Brazil a kg:Country
+; rdfs:label "Brazil" .
+res:country/Colombia a kg:Country
+; rdfs:label "Colombia" .

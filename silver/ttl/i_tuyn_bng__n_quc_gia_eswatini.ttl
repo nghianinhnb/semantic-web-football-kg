@@ -1,200 +1,142 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/EswatiniNationalWomenFootballTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá nữ quốc gia Eswatini" ;
-kg:hasCoach res:coach/ChristianThwala ;
-kg:locatedIn res:country/Eswatini .
-
-res:country/Eswatini a kg:Country ;
-rdfs:label "Eswatini" .
-
-res:coach/ChristianThwala a kg:Coach ;
-kg:manages res:team/EswatiniNationalWomenFootballTeam .
-
-res:match/FirstGame a kg:Match ;
-kg:homeTeam res:team/SouthAfricaWomen ;
-kg:awayTeam res:team/EswatiniNationalWomenFootballTeam ;
-kg:venue res:place/Johannesburg ;
-kg:kickoffTime "1993-05-30"^^xsd:date .
-
-res:place/Johannesburg a kg:City ;
-rdfs:label "Johannesburg" ;
-kg:locatedIn res:country/SouthAfrica .
-
-res:country/SouthAfrica a kg:Country ;
-rdfs:label "Nam Phi" .
-
-res:match/LargestWin a kg:Match ;
-kg:homeTeam res:team/EswatiniNationalWomenFootballTeam ;
-kg:awayTeam res:team/AngolaWomen ;
-kg:venue res:place/Ibhayi ;
-kg:kickoffTime "2019-08-03"^^xsd:date .
-
-res:place/Ibhayi a kg:City ;
-rdfs:label "Ibhayi" ;
-kg:locatedIn res:country/Eswatini .
-
-res:match/LargestLoss a kg:Match ;
-kg:homeTeam res:team/SouthAfricaWomen ;
-kg:awayTeam res:team/EswatiniNationalWomenFootballTeam ;
-kg:venue res:place/Johannesburg ;
-kg:kickoffTime "1993-05-30"^^xsd:date .
-
-res:team/SouthAfricaWomen a kg:Team ;
-kg:teamName "Đội tuyển bóng đá nữ quốc gia Nam Phi" .
-
-res:team/AngolaWomen a kg:Team ;
-kg:teamName "Đội tuyển bóng đá nữ quốc gia Angola" .
-
-res:team/MozambiqueWomen a kg:Team ;
-kg:teamName "Đội tuyển bóng đá nữ quốc gia Mozambique" .
-
-res:match/2008Mozambique a kg:Match ;
-kg:homeTeam res:team/EswatiniNationalWomenFootballTeam ;
-kg:awayTeam res:team/MozambiqueWomen ;
-kg:result "3-1" ;
-kg:kickoffTime "2008-05-30"^^xsd:date .
-
-res:organization/FederationOfEswatini a kg:Organization ;
-kg:organizes res:competition/CupOfAfrica ;
-kg:organizes res:competition/WorldCupQualification .
-
-res:competition/CupOfAfrica a kg:Competition ;
-kg:competitionName "Cúp bóng đá nữ châu Phi" .
-
-res:competition/WorldCupQualification a kg:Competition ;
-kg:competitionName "Vòng loại Giải vô địch bóng đá nữ thế giới" .
-
-res:competition/WorldCup1991 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới 1991" ;
-kg:heldIn res:country/China .
-
-res:competition/WorldCup1995 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới 1995" ;
-kg:heldIn res:country/Sweden .
-
-res:competition/WorldCup1999 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới 1999" ;
-kg:heldIn res:country/UnitedStates .
-
-res:competition/WorldCup2003 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới 2003" ;
-kg:heldIn res:country/UnitedStates .
-
-res:competition/WorldCup2007 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới 2007" ;
-kg:heldIn res:country/China .
-
-res:competition/WorldCup2011 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới 2011" ;
-kg:heldIn res:country/Germany .
-
-res:competition/WorldCup2015 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới 2015" ;
-kg:heldIn res:country/Canada .
-
-res:competition/CupOfAfrica1991 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 1991" .
-
-res:competition/CupOfAfrica1995 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 1995" .
-
-res:competition/CupOfAfrica1998 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 1998" ;
-kg:heldIn res:country/Nigeria .
-
-res:competition/CupOfAfrica2000 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2000" ;
-kg:heldIn res:country/SouthAfrica .
-
-res:competition/CupOfAfrica2002 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2002" ;
-kg:heldIn res:country/Nigeria .
-
-res:competition/CupOfAfrica2004 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2004" ;
-kg:heldIn res:country/SouthAfrica .
-
-res:competition/CupOfAfrica2006 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2006" ;
-kg:heldIn res:country/Nigeria .
-
-res:competition/CupOfAfrica2008 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2008" ;
-kg:heldIn res:country/EquatorialGuinea .
-
-res:competition/CupOfAfrica2010 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2010" ;
-kg:heldIn res:country/SouthAfrica .
-
-res:competition/CupOfAfrica2012 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2012" ;
-kg:heldIn res:country/EquatorialGuinea .
-
-res:competition/CupOfAfrica2014 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2014" ;
-kg:heldIn res:country/Namibia .
-
-res:competition/CupOfAfrica2016 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2016" ;
-kg:heldIn res:country/Cameroon .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica1998 ;
-kg:result "Không vượt qua vòng loại" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica1991 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica1995 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2000 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2002 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2004 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2006 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2008 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2010 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2012 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2014 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2016 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup1991 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup1995 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup1999 ;
-kg:result "Không vượt qua vòng loại" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup2003 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup2007 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup2011 ;
-kg:result "Không tham dự" .
-
-res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup2015 ;
-kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá nữ quốc gia Eswatini"
+; kg:hasCoach res:coach/ChristianThwala
+; kg:locatedIn res:country/Eswatini .
+res:country/Eswatini a kg:Country
+; rdfs:label "Eswatini" .
+res:coach/ChristianThwala a kg:Coach
+; kg:manages res:team/EswatiniNationalWomenFootballTeam .
+res:match/FirstGame a kg:Match
+; kg:homeTeam res:team/SouthAfricaWomen
+; kg:awayTeam res:team/EswatiniNationalWomenFootballTeam
+; kg:venue res:place/Johannesburg
+; kg:kickoffTime "1993-05-30"^^xsd:date .
+res:place/Johannesburg a kg:City
+; rdfs:label "Johannesburg"
+; kg:locatedIn res:country/SouthAfrica .
+res:country/SouthAfrica a kg:Country
+; rdfs:label "Nam Phi" .
+res:match/LargestWin a kg:Match
+; kg:homeTeam res:team/EswatiniNationalWomenFootballTeam
+; kg:awayTeam res:team/AngolaWomen
+; kg:venue res:place/Ibhayi
+; kg:kickoffTime "2019-08-03"^^xsd:date .
+res:place/Ibhayi a kg:City
+; rdfs:label "Ibhayi"
+; kg:locatedIn res:country/Eswatini .
+res:match/LargestLoss a kg:Match
+; kg:homeTeam res:team/SouthAfricaWomen
+; kg:awayTeam res:team/EswatiniNationalWomenFootballTeam
+; kg:venue res:place/Johannesburg
+; kg:kickoffTime "1993-05-30"^^xsd:date .
+res:team/SouthAfricaWomen a kg:Team
+; kg:teamName "Đội tuyển bóng đá nữ quốc gia Nam Phi" .
+res:team/AngolaWomen a kg:Team
+; kg:teamName "Đội tuyển bóng đá nữ quốc gia Angola" .
+res:team/MozambiqueWomen a kg:Team
+; kg:teamName "Đội tuyển bóng đá nữ quốc gia Mozambique" .
+res:match/2008Mozambique a kg:Match
+; kg:homeTeam res:team/EswatiniNationalWomenFootballTeam
+; kg:awayTeam res:team/MozambiqueWomen
+; kg:result "3-1"
+; kg:kickoffTime "2008-05-30"^^xsd:date .
+res:organization/FederationOfEswatini a kg:Organization
+; kg:organizes res:competition/CupOfAfrica
+; kg:organizes res:competition/WorldCupQualification .
+res:competition/CupOfAfrica a kg:Competition
+; kg:competitionName "Cúp bóng đá nữ châu Phi" .
+res:competition/WorldCupQualification a kg:Competition
+; kg:competitionName "Vòng loại Giải vô địch bóng đá nữ thế giới" .
+res:competition/WorldCup1991 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới 1991"
+; kg:heldIn res:country/China .
+res:competition/WorldCup1995 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới 1995"
+; kg:heldIn res:country/Sweden .
+res:competition/WorldCup1999 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới 1999"
+; kg:heldIn res:country/UnitedStates .
+res:competition/WorldCup2003 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới 2003"
+; kg:heldIn res:country/UnitedStates .
+res:competition/WorldCup2007 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới 2007"
+; kg:heldIn res:country/China .
+res:competition/WorldCup2011 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới 2011"
+; kg:heldIn res:country/Germany .
+res:competition/WorldCup2015 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới 2015"
+; kg:heldIn res:country/Canada .
+res:competition/CupOfAfrica1991 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 1991" .
+res:competition/CupOfAfrica1995 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 1995" .
+res:competition/CupOfAfrica1998 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 1998"
+; kg:heldIn res:country/Nigeria .
+res:competition/CupOfAfrica2000 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2000"
+; kg:heldIn res:country/SouthAfrica .
+res:competition/CupOfAfrica2002 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2002"
+; kg:heldIn res:country/Nigeria .
+res:competition/CupOfAfrica2004 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2004"
+; kg:heldIn res:country/SouthAfrica .
+res:competition/CupOfAfrica2006 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2006"
+; kg:heldIn res:country/Nigeria .
+res:competition/CupOfAfrica2008 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2008"
+; kg:heldIn res:country/EquatorialGuinea .
+res:competition/CupOfAfrica2010 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2010"
+; kg:heldIn res:country/SouthAfrica .
+res:competition/CupOfAfrica2012 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2012"
+; kg:heldIn res:country/EquatorialGuinea .
+res:competition/CupOfAfrica2014 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2014"
+; kg:heldIn res:country/Namibia .
+res:competition/CupOfAfrica2016 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Phi 2016"
+; kg:heldIn res:country/Cameroon .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica1998
+; kg:result "Không vượt qua vòng loại" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica1991
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica1995
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2000
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2002
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2004
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2006
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2008
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2010
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2012
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2014
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/CupOfAfrica2016
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup1991
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup1995
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup1999
+; kg:result "Không vượt qua vòng loại" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup2003
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup2007
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup2011
+; kg:result "Không tham dự" .
+res:team/EswatiniNationalWomenFootballTeam kg:participatesIn res:competition/WorldCup2015
+; kg:result "Không tham dự" .

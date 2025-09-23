@@ -1,118 +1,45 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Guiné-Bissau a kg:Team ;
-kg:teamName "Guiné-Bissau" ;
-kg:hasCoach res:coach/Baciro_Candé ;
-kg:hasCaptain res:player/Jonas_Mendes ;
-kg:isPartOf kg:Confederation/CAF ;
-kg:homeStadium res:stadium/Sân_vận_động_24_tháng_9 , res:stadium/Sân_vận_động_Lino_Correia ;
-kg:mostCaps res:player/Jonas_Mendes ;
-kg:topScorer res:player/Nando_Có ;
-kg:FIFA_Trigramme "GNB" ;
-kg:FIFA_Rank "???" ;
-kg:FIFA_max 68 ;
-kg:FIFA_max_date "2016-11-01"^^xsd:date ;
-kg:FIFA_min 195 ;
-kg:FIFA_min_date "2010-02-03"^^xsd:date ;
-kg:Elo_Rank "???" ;
-kg:Elo_max 99 ;
-kg:Elo_max_date "1984-11-02"^^xsd:date ;
-kg:Elo_min 157 ;
-kg:Elo_min_date "2000-04-23"^^xsd:date , "2001-06-10"^^xsd:date ;
-kg:firstGame "1952-06-02"^^xsd:date ;
-kg:largestWin res:match/Guiné_Bissau_7-2_Benin ;
-kg:largestLoss res:match/Mali_6-1_Guiné_Bissau ;
-kg:worldCupApps 0 ;
-kg:regionalCupApps 4 ;
-kg:regionalCupFirst "2017" ;
-kg:regionalCupBest "Vòng 1" .
-
-res:coach/Baciro_Candé a kg:Coach ;
-kg:manages res:team/Guiné-Bissau .
-
-res:player/Jonas_Mendes a kg:Player ;
-kg:playsFor res:team/Guiné-Bissau ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1989-11-20"^^xsd:date ;
-kg:birthPlace res:city/Bissau ;
-kg:nationality res:country/Guiné-Bissau ;
-kg:shirtNumber 1 ;
-kg:preferredFoot kg:RightFooted ;
-kg:captainOf res:team/Guiné-Bissau ;
-kg:caps 58 ;
-kg:goals 0 ;
-kg:currentClub res:club/Kalamata_F.C. .
-
-res:player/Nando_Có a kg:Player ;
-kg:playsFor res:team/Guiné-Bissau ;
-kg:primaryPosition kg:Forward ;
-kg:topScorer 9 ;
-kg:currentClub res:club/Unknown .
-
+res:team/Guiné-Bissau a kg:Team
+; kg:teamName "Guiné-Bissau"
+; kg:hasCoach res:coach/Baciro_Candé
+; kg:hasCaptain res:player/Jonas_Mendes
+; kg:homeStadium res:stadium/Sân_vận_động_24_tháng_9 , res:stadium/Sân_vận_động_Lino_Correia .
+res:coach/Baciro_Candé a kg:Coach
+; kg:manages res:team/Guiné-Bissau .
+res:player/Jonas_Mendes a kg:Player
+; kg:playsFor res:team/Guiné-Bissau
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Nando_Có a kg:Player
+; kg:playsFor res:team/Guiné-Bissau
+; kg:primaryPosition kg:Forward .
 res:stadium/Sân_vận_động_24_tháng_9 a kg:Stadium .
-
 res:stadium/Sân_vận_động_Lino_Correia a kg:Stadium .
-
-res:match/Guiné_Bissau_7-2_Benin a kg:Match ;
-kg:homeTeam res:team/Guiné-Bissau ;
-kg:awayTeam res:team/Benin ;
-kg:kickoffTime "2001-11-03"^^xsd:date .
-
-res:match/Mali_6-1_Guiné_Bissau a kg:Match ;
-kg:homeTeam res:team/Mali ;
-kg:awayTeam res:team/Guiné-Bissau ;
-kg:kickoffTime "1997-12-01"^^xsd:date .
-
+res:match/Guiné_Bissau_7-2_Benin a kg:Match
+; kg:homeTeam res:team/Guiné-Bissau
+; kg:awayTeam res:team/Benin
+; kg:kickoffTime "2001-11-03"^^xsd:date .
+res:match/Mali_6-1_Guiné_Bissau a kg:Match
+; kg:homeTeam res:team/Mali
+; kg:awayTeam res:team/Guiné-Bissau
+; kg:kickoffTime "1997-12-01"^^xsd:date .
 res:country/Guiné-Bissau a kg:Country .
-
-res:confederation/CAF a kg:Confederation .
-
 res:competition/Cúp_bóng_đá_châu_Aphi a kg:Competition .
-
 res:team/Benin a kg:Team .
-
 res:team/Mali a kg:Team .
-
 res:club/Kalamata_F.C. a kg:Club .
-
 res:club/Unknown a kg:Club .
-
-res:city/Bissau a kg:City ;
-kg:locatedIn res:country/Guiné-Bissau .
-
-res:position/Goalkeeper a kg:Goalkeeper ;
-rdfs:subClassOf kg:Position .
-
-res:position/Defender a kg:Defender ;
-rdfs:subClassOf kg:Position .
-
-res:position/Midfielder a kg:Midfielder ;
-rdfs:subClassOf kg:Position .
-
-res:position/Forward a kg:Forward ;
-rdfs:subClassOf kg:Position .
-
-res:footedness/LeftFooted a kg:LeftFooted ;
-rdfs:subClassOf kg:Footedness .
-
-res:footedness/RightFooted a kg:RightFooted ;
-rdfs:subClassOf kg:Footedness .
-
-res:footedness/BothFooted a kg:BothFooted ;
-rdfs:subClassOf kg:Footedness .
-
-res:ageGroup/Under18 a kg:AgeGroup .
-
-res:ageGroup/Under20 a kg:AgeGroup .
-
-res:ageGroup/Under22 a kg:AgeGroup .
-
-res:ageGroup/Under25 a kg:AgeGroup .
-
-res:ageGroup/Under30 a kg:AgeGroup .
-
-res:ageGroup/Over30 a kg:AgeGroup .
+res:city/Bissau a kg:City
+; kg:locatedIn res:country/Guiné-Bissau .
+res:position/Goalkeeper a kg:Goalkeeper
+; rdfs:subClassOf kg:Position .
+res:position/Defender a kg:Defender
+; rdfs:subClassOf kg:Position .
+res:position/Midfielder a kg:Midfielder
+; rdfs:subClassOf kg:Position .
+res:position/Forward a kg:Forward
+; rdfs:subClassOf kg:Position .
+res:footedness/LeftFooted a kg:LeftFooted
+; rdfs:subClassOf kg:Footedness .
+res:footedness/RightFooted a kg:RightFooted
+; rdfs:subClassOf kg:Footedness .
+res:footedness/BothFooted a kg:BothFooted
+; rdfs:subClassOf kg:Footedness .

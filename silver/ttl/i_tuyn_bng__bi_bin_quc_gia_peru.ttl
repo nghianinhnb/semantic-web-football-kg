@@ -1,140 +1,103 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Peru a kg:Team ;
-kg:teamName "Peru" ;
-kg:hasCoach res:coach/Jaime_Drago ;
-kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Peru ;
-kg:heldIn res:country/Peru ;
-kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2000 ;
-kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2006 ;
-kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2008 ;
-kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2009 ;
-kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2011 ;
-kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2013 ;
-kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2015 .
-
+res:team/Peru a kg:Team
+; kg:teamName "Peru"
+; kg:hasCoach res:coach/Jaime_Drago
+; kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Peru
+; kg:heldIn res:country/Peru
+; kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2000
+; kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2006
+; kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2008
+; kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2009
+; kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2011
+; kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2013
+; kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2015 .
 res:organization/Liên_đoàn_bóng_đá_Peru a kg:Organization .
-
-res:coach/Jaime_Drago a kg:Coach ;
-kg:manages res:team/Peru .
-
-res:player/Ignacio_Drago a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:primaryPosition res:position/GK ;
-kg:nationality res:country/Peru ;
-kg:shirtNumber "1"^^xsd:positiveInteger .
-
-res:player/Oswaldo_Rivas a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:primaryPosition res:position/MF ;
-kg:nationality res:country/Peru ;
-kg:shirtNumber "2"^^xsd:positiveInteger .
-
-res:player/Rodolfo_Maurtua a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:primaryPosition res:position/MF ;
-kg:nationality res:country/Peru ;
-kg:shirtNumber "3"^^xsd:positiveInteger .
-
-res:player/Yomar_Pérez a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:primaryPosition res:position/DF ;
-kg:nationality res:country/Peru ;
-kg:shirtNumber "4"^^xsd:positiveInteger .
-
-res:player/Andy_Moscoso a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:primaryPosition res:position/MF ;
-kg:nationality res:country/Peru ;
-kg:shirtNumber "6"^^xsd:positiveInteger .
-
-res:player/Sócrates_Moscoso a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:primaryPosition res:position/MF ;
-kg:nationality res:country/Peru ;
-kg:shirtNumber "7"^^xsd:positiveInteger .
-
-res:player/Juan_Paulino_Burga a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:nationality res:country/Peru ;
-kg:shirtNumber "8"^^xsd:positiveInteger .
-
-res:player/Alex_Valera a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:nationality res:country/Peru ;
-kg:shirtNumber "9"^^xsd:positiveInteger .
-
-res:player/Juan_Cominges a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:primaryPosition res:position/FW ;
-kg:nationality res:country/Peru ;
-kg:shirtNumber "10"^^xsd:positiveInteger .
-
-res:player/Billyvardo_Velezmoro a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:primaryPosition res:position/FW ;
-kg:nationality res:country/Peru ;
-kg:shirtNumber "11"^^xsd:positiveInteger .
-
-res:player/Carlos_Torres a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:primaryPosition res:position/GK ;
-kg:nationality res:country/Peru ;
-kg:shirtNumber "12"^^xsd:positiveInteger .
-
-res:player/Luiggi_Muchotrigo a kg:Player ;
-kg:playsFor res:team/Peru ;
-kg:nationality res:country/Peru .
-
+res:coach/Jaime_Drago a kg:Coach
+; kg:manages res:team/Peru .
+res:player/Ignacio_Drago a kg:Player
+; kg:playsFor res:team/Peru
+; kg:primaryPosition res:position/GK
+; kg:nationality res:country/Peru
+; kg:shirtNumber "1"^^xsd:positiveInteger .
+res:player/Oswaldo_Rivas a kg:Player
+; kg:playsFor res:team/Peru
+; kg:primaryPosition res:position/MF
+; kg:nationality res:country/Peru
+; kg:shirtNumber "2"^^xsd:positiveInteger .
+res:player/Rodolfo_Maurtua a kg:Player
+; kg:playsFor res:team/Peru
+; kg:primaryPosition res:position/MF
+; kg:nationality res:country/Peru
+; kg:shirtNumber "3"^^xsd:positiveInteger .
+res:player/Yomar_Pérez a kg:Player
+; kg:playsFor res:team/Peru
+; kg:primaryPosition res:position/DF
+; kg:nationality res:country/Peru
+; kg:shirtNumber "4"^^xsd:positiveInteger .
+res:player/Andy_Moscoso a kg:Player
+; kg:playsFor res:team/Peru
+; kg:primaryPosition res:position/MF
+; kg:nationality res:country/Peru
+; kg:shirtNumber "6"^^xsd:positiveInteger .
+res:player/Sócrates_Moscoso a kg:Player
+; kg:playsFor res:team/Peru
+; kg:primaryPosition res:position/MF
+; kg:nationality res:country/Peru
+; kg:shirtNumber "7"^^xsd:positiveInteger .
+res:player/Juan_Paulino_Burga a kg:Player
+; kg:playsFor res:team/Peru
+; kg:nationality res:country/Peru
+; kg:shirtNumber "8"^^xsd:positiveInteger .
+res:player/Alex_Valera a kg:Player
+; kg:playsFor res:team/Peru
+; kg:nationality res:country/Peru
+; kg:shirtNumber "9"^^xsd:positiveInteger .
+res:player/Juan_Cominges a kg:Player
+; kg:playsFor res:team/Peru
+; kg:primaryPosition res:position/FW
+; kg:nationality res:country/Peru
+; kg:shirtNumber "10"^^xsd:positiveInteger .
+res:player/Billyvardo_Velezmoro a kg:Player
+; kg:playsFor res:team/Peru
+; kg:primaryPosition res:position/FW
+; kg:nationality res:country/Peru
+; kg:shirtNumber "11"^^xsd:positiveInteger .
+res:player/Carlos_Torres a kg:Player
+; kg:playsFor res:team/Peru
+; kg:primaryPosition res:position/GK
+; kg:nationality res:country/Peru
+; kg:shirtNumber "12"^^xsd:positiveInteger .
+res:player/Luiggi_Muchotrigo a kg:Player
+; kg:playsFor res:team/Peru
+; kg:nationality res:country/Peru .
 res:position/GK a kg:Goalkeeper .
-
 res:position/MF a kg:Midfielder .
-
 res:position/DF a kg:Defender .
-
 res:position/FW a kg:Forward .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2000 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2000" ;
-kg:organizes res:organization/BSWW ;
-kg:participantCount "5"^^xsd:positiveInteger ;
-kg:heldIn res:country/Brasil .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2006 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2006" ;
-kg:organizes res:organization/CONMEBOL ;
-kg:participantCount "6"^^xsd:positiveInteger ;
-kg:heldIn res:country/Peru .
-
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2000 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2000"
+; kg:organizes res:organization/BSWW
+; kg:participantCount "5"^^xsd:positiveInteger
+; kg:heldIn res:country/Brasil .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ_2006 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2006"
+; kg:organizes res:organization/CONMEBOL
+; kg:participantCount "6"^^xsd:positiveInteger
+; kg:heldIn res:country/Peru .
 res:country/Peru a kg:Country .
-
 res:country/Brasil a kg:Country .
-
 res:organization/BSWW a kg:Organization .
-
 res:organization/CONMEBOL a kg:Organization .
-
 res:organization/Liên_đoàn_bóng_đá_Peru a kg:Organization .
-
-res:match/Trận_Đấu_1998 a kg:Match ;
-kg:homeTeam res:team/Peru ;
-kg:awayTeam res:team/Argentina ;
-kg:venue res:place/Rio_de_Janeiro ;
-kg:kickoffTime "1998-01-18"^^xsd:date ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_1998 ;
-kg:score "5–4" .
-
-res:place/Rio_de_Janeiro a kg:City ;
-kg:locatedIn res:country/Brasil .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_1998 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 1998" ;
-kg:organizes res:organization/BSWW ;
-kg:heldIn res:country/Brasil .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2000 a kg:Competition ;
-kg:bestResult "Á quân" .
+res:match/Trận_Đấu_1998 a kg:Match
+; kg:homeTeam res:team/Peru
+; kg:awayTeam res:team/Argentina
+; kg:venue res:place/Rio_de_Janeiro
+; kg:kickoffTime "1998-01-18"^^xsd:date
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_1998 .
+res:place/Rio_de_Janeiro a kg:City
+; kg:locatedIn res:country/Brasil .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_1998 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 1998"
+; kg:organizes res:organization/BSWW
+; kg:heldIn res:country/Brasil .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2000 a kg:Competition .

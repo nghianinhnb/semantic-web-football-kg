@@ -1,298 +1,158 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Cộng_hoà_Ireland a kg:Team ;
-kg:teamName "Cộng hòa Ireland" ;
-kg:hasCoach res:coach/Stephen_Kenny ;
-kg:hasCaptain res:player/Séamus_Coleman ;
-kg:teamAbbreviation "IRL" ;
-kg:locatedIn res:country/Cộng_hoà_Ireland .
-
+res:team/Cộng_hoà_Ireland a kg:Team
+; kg:teamName "Cộng hòa Ireland"
+; kg:hasCoach res:coach/Stephen_Kenny
+; kg:hasCaptain res:player/Séamus_Coleman
+; kg:teamAbbreviation "IRL"
+; kg:locatedIn res:country/Cộng_hoà_Ireland .
 res:country/Cộng_hoà_Ireland a kg:Country .
-
-res:coach/Stephen_Kenny a kg:Coach ;
-kg:manages res:team/Cộng_hoà_Ireland .
-
-res:player/Séamus_Coleman a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 .
-
-res:player/Robbie_Keane a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 11 ;
-kg:mostCaps 146 ;
-kg:topScorer 68 .
-
-res:stadium/Sân_vận_động_Aviva a kg:Stadium ;
-kg:capacity 50000 ;
-kg:isHomeOf res:team/Cộng_hoà_Ireland .
-
-res:competition/Giải_vô_địch_thế_giới a kg:Competition ;
-kg:competitionName "Giải vô địch thế giới" .
-
-res:competition/Giải_vô_địch_châu Âu a kg:Competition ;
-kg:competitionName "Giải vô địch châu Âu" .
-
-res:season/1990 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_thế_giới ;
-kg:participatesIn res:team/Cộng_hoà_Ireland .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_châu Âu ;
-kg:participatesIn res:team/Cộng_hoà_Ireland .
-
-res:match/1990_World_Cup a kg:Match ;
-kg:homeTeam res:team/Cộng_hoà_Ireland ;
-kg:awayTeam res:team/Brazil ;
-kg:kickoffTime "1990-05-27T00:00:00Z"^^xsd:dateTime ;
-kg:inCompetition res:competition/Giải_vô_địch_thế_giới ;
-kg:inSeason res:season/1990 .
-
-res:match/2016_Euro a kg:Match ;
-kg:homeTeam res:team/Cộng_hoà_Ireland ;
-kg:awayTeam res:team/Italy ;
-kg:kickoffTime "2016-06-11T00:00:00Z"^^xsd:dateTime ;
-kg:inCompetition res:competition/Giải_vô_địch_châu Âu ;
-kg:inSeason res:season/2016 .
-
-res:club/Southampton_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Sân_vận_động_St_Mary's .
-
-res:club/Liverpool_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Anfield .
-
-res:club/Everton_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Goodison_Park .
-
-res:club/Wigan_Athletic_F.C. a kg:Club ;
-kg:homeStadium res:stadium/WD_Blackpool .
-
-res:club/Tottenham_Hotspur_F.C. a kg:Club ;
-kg:homeStadium res:stadium/White_Hart_Lane .
-
-res:club/Sheffield_United_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Bradford_Street .
-
-res:club/Wolverhampton_Wanderers_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Molineux .
-
-res:club/Preston_North_End_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Direct_Energy_Storm_Events_Center .
-
-res:club/Reading_F.C. a kg:Club ;
-kg:homeStadium res:stadium Madejski_Stan .
-
-res:club/Burnley_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Turf_Moor .
-
-res:club/West_Bromwich_Albon_F.C. a kg:Club ;
-kg:homeStadium res:stadium/The_Hillsborough_Stand .
-
-res:club/Cardiff_City a kg:Club ;
-kg:homeStadium res:stadium/Cardiff_League_Stand .
-
-res:club/Rotherham_United_F.C. a kg:Club ;
-kg:homeStadium res:stadium/New_Riverside_Stand .
-
-res:club/Swansea_City_A.F.C. a kg:Club ;
-kg:homeStadium res:stadium/Swansea_Commercial_Stand .
-
-res:club/Brighton_Hove_Albon_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Amex_Stand .
-
-res:club/Bristol_City_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Ashton_Grove_Stand .
-
-res:club/Queens_Park_Rangers_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Loftus_Road .
-
-res:club/Derby_Counties_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Pride_Park_Stand .
-
-res:club/Udinese_Calcio a kg:Club ;
-kg:homeStadium res:stadium/Stadio_Pinzolo .
-
-res:club/Aberdeen_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Malmo_Stand .
-
-res:club/Dundee_United_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Tannadice_Park .
-
-res:club/Birmingham_City_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Birmingham_Southeast_Stand .
-
-res:club/Blackpool_F.C. a kg:Club ;
-kg:homeStadium res:stadium/Blackpool_Southeast_Stand .
-
-res:player/Gavin_Bazunu a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 1 ;
-kg:birthDate "2002-02-20"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Caoimhin_Kelleher a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 16 ;
-kg:birthDate "1998-11-28"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Mark_Travers a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 23 ;
-kg:birthDate "1999-05-18"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/James_McClean a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 11 ;
-kg:birthDate "1989-04-22"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Séamus_Coleman a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 ;
-kg:birthDate "1988-10-11"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Robbie_Brady a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 10 ;
-kg:birthDate "1992-01-14"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Matt_Doherty a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 3 ;
-kg:birthDate "1992-01-16"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/John_Egan a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 5 ;
-kg:birthDate "1992-10-20"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Dara_O'Shea a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 4 ;
-kg:birthDate "1999-03-04"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Nathan_Collins a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 12 ;
-kg:birthDate "2001-04-30"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Darragh_Lenihan a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 22 ;
-kg:birthDate "1994-03-16"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Liam_Scales a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 21 ;
-kg:birthDate "1998-08-08"^^xsd:date ;
-kg:nationality res:country/Scotland .
-
-res:player/Jeff_Hendrick a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 13 ;
-kg:birthDate "1992-01-31"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Alan_Browne a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 8 ;
-kg:birthDate "1995-04-15"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Josh_Cullen a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 6 ;
-kg:birthDate "1996-04-07"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Jayson_Molumby a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 15 ;
-kg:birthDate "1999-08-06"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Jamie_McGrath a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 18 ;
-kg:birthDate "1996-09-26"^^xsd:date ;
-kg:nationality res:country/Scotland .
-
-res:player/Mark_Sykes a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 19 ;
-kg:birthDate "1997-08-04"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Will_Smallbone a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 14 ;
-kg:birthDate "2000-02-21"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Callum_Robinson a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 7 ;
-kg:birthDate "1995-02-02"^^xsd:date ;
-kg:nationality res:country/Wales .
-
-res:player/Callum_O'Dowda a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 17 ;
-kg:birthDate "1995-04-23"^^xsd:date ;
-kg:nationality res:country/Wales .
-
-res:player/Chiedozie_Ogbene a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 20 ;
-kg:birthDate "1997-05-01"^^xsd:date ;
-kg:nationality res:country/Cộng_hoà_Ireland .
-
-res:player/Michael_Obafemi a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 ;
-kg:birthDate "2000-07-06"^^xsd:date ;
-kg:nationality res:country/Wales .
-
-res:player/Evan_Ferguson a kg:Player ;
-kg:playsFor res:team/Cộng_hoà_Ireland ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 24 ;
-kg:birthDate "2004-10-19"^^xsd:date ;
-kg:nationality res:country/Cộng_hoả_Ireland .
+res:coach/Stephen_Kenny a kg:Coach
+; kg:manages res:team/Cộng_hoà_Ireland .
+res:player/Séamus_Coleman a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Robbie_Keane a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:stadium/Sân_vận_động_Aviva a kg:Stadium
+; kg:capacity 50000
+; kg:isHomeOf res:team/Cộng_hoà_Ireland .
+res:competition/Giải_vô_địch_thế_giới a kg:Competition
+; kg:competitionName "Giải vô địch thế giới" .
+res:competition/Giải_vô_địch_châu Âu a kg:Competition
+; kg:competitionName "Giải vô địch châu Âu" .
+res:season/1990 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_thế_giới
+; kg:participatesIn res:team/Cộng_hoà_Ireland .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_châu Âu
+; kg:participatesIn res:team/Cộng_hoà_Ireland .
+res:match/1990_World_Cup a kg:Match
+; kg:homeTeam res:team/Cộng_hoà_Ireland
+; kg:awayTeam res:team/Brazil
+; kg:kickoffTime "1990-05-27T00:00:00Z"^^xsd:dateTime
+; kg:inCompetition res:competition/Giải_vô_địch_thế_giới
+; kg:inSeason res:season/1990 .
+res:match/2016_Euro a kg:Match
+; kg:homeTeam res:team/Cộng_hoà_Ireland
+; kg:awayTeam res:team/Italy
+; kg:kickoffTime "2016-06-11T00:00:00Z"^^xsd:dateTime
+; kg:inCompetition res:competition/Giải_vô_địch_châu Âu
+; kg:inSeason res:season/2016 .
+res:club/Southampton_F.C. a kg:Club
+; kg:homeStadium res:stadium/Sân_vận_động_St_Mary's .
+res:club/Liverpool_F.C. a kg:Club
+; kg:homeStadium res:stadium/Anfield .
+res:club/Everton_F.C. a kg:Club
+; kg:homeStadium res:stadium/Goodison_Park .
+res:club/Wigan_Athletic_F.C. a kg:Club
+; kg:homeStadium res:stadium/WD_Blackpool .
+res:club/Tottenham_Hotspur_F.C. a kg:Club
+; kg:homeStadium res:stadium/White_Hart_Lane .
+res:club/Sheffield_United_F.C. a kg:Club
+; kg:homeStadium res:stadium/Bradford_Street .
+res:club/Wolverhampton_Wanderers_F.C. a kg:Club
+; kg:homeStadium res:stadium/Molineux .
+res:club/Preston_North_End_F.C. a kg:Club
+; kg:homeStadium res:stadium/Direct_Energy_Storm_Events_Center .
+res:club/Reading_F.C. a kg:Club
+; kg:homeStadium res:stadium Madejski_Stan .
+res:club/Burnley_F.C. a kg:Club
+; kg:homeStadium res:stadium/Turf_Moor .
+res:club/West_Bromwich_Albon_F.C. a kg:Club
+; kg:homeStadium res:stadium/The_Hillsborough_Stand .
+res:club/Cardiff_City a kg:Club
+; kg:homeStadium res:stadium/Cardiff_League_Stand .
+res:club/Rotherham_United_F.C. a kg:Club
+; kg:homeStadium res:stadium/New_Riverside_Stand .
+res:club/Swansea_City_A.F.C. a kg:Club
+; kg:homeStadium res:stadium/Swansea_Commercial_Stand .
+res:club/Brighton_Hove_Albon_F.C. a kg:Club
+; kg:homeStadium res:stadium/Amex_Stand .
+res:club/Bristol_City_F.C. a kg:Club
+; kg:homeStadium res:stadium/Ashton_Grove_Stand .
+res:club/Queens_Park_Rangers_F.C. a kg:Club
+; kg:homeStadium res:stadium/Loftus_Road .
+res:club/Derby_Counties_F.C. a kg:Club
+; kg:homeStadium res:stadium/Pride_Park_Stand .
+res:club/Udinese_Calcio a kg:Club
+; kg:homeStadium res:stadium/Stadio_Pinzolo .
+res:club/Aberdeen_F.C. a kg:Club
+; kg:homeStadium res:stadium/Malmo_Stand .
+res:club/Dundee_United_F.C. a kg:Club
+; kg:homeStadium res:stadium/Tannadice_Park .
+res:club/Birmingham_City_F.C. a kg:Club
+; kg:homeStadium res:stadium/Birmingham_Southeast_Stand .
+res:club/Blackpool_F.C. a kg:Club
+; kg:homeStadium res:stadium/Blackpool_Southeast_Stand .
+res:player/Gavin_Bazunu a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Caoimhin_Kelleher a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Mark_Travers a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/James_McClean a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Séamus_Coleman a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Robbie_Brady a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Matt_Doherty a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/John_Egan a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Dara_O'Shea a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Nathan_Collins a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Darragh_Lenihan a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Liam_Scales a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Jeff_Hendrick a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Alan_Browne a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Josh_Cullen a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Jayson_Molumby a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Jamie_McGrath a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Mark_Sykes a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Will_Smallbone a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Callum_Robinson a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Callum_O'Dowda a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Chiedozie_Ogbene a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Michael_Obafemi a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Evan_Ferguson a kg:Player
+; kg:playsFor res:team/Cộng_hoà_Ireland
+; kg:primaryPosition kg:Forward "UNKNOWN" .

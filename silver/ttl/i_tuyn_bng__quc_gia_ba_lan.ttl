@@ -1,180 +1,136 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/POLAND a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Ba Lan" ;
-kg:teamAbbreviation "POL" ;
-kg:hasCoach res:coach/MICHAŁ_PROBIERZ ;
-kg:hasCaptain res:player/ROBERT_LEWANDOWSKI ;
-kg:isCaptain res:player/ROBERT_LEWANDOWSKI ;
-kg:homeStadium res:stadium/NATIONAL_STADIUM_WARSZAWA .
-
-res:coach/MICHAŁ_PROBIERZ a kg:Coach ;
-kg:manages res:team/POLAND .
-
-res:player/ROBERT_LEWANDOWSKI a kg:Player, kg:Forward ;
-kg:playsFor res:team/POLAND ;
-kg:primaryPosition res:position/FORWARD ;
-kg:shirtNumber 9 ;
-kg:preferredFoot kg:LeftFooted ;
-kg:birthDate "1988-08-21"^^xsd:date ;
-kg:birthPlace res:city/WARSZAWA ;
-kg:nationality res:country/POLAND .
-
-res:stadium/NATIONAL_STADIUM_WARSZAWA a kg:Stadium ;
-kg:capacity 55000 ;
-kg:isHomeOf res:team/POLAND .
-
-res:country/POLAND a kg:Country ;
-kg:locatedIn res:country/POLAND .
-
-res:position/FORWARD a kg:Position, kg:Forward .
-
+res:team/POLAND a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Ba Lan"
+; kg:teamAbbreviation "POL"
+; kg:hasCoach res:coach/MICHAŁ_PROBIERZ
+; kg:hasCaptain res:player/ROBERT_LEWANDOWSKI
+; kg:isCaptain res:player/ROBERT_LEWANDOWSKI
+; kg:homeStadium res:stadium/NATIONAL_STADIUM_WARSZAWA .
+res:coach/MICHAŁ_PROBIERZ a kg:Coach
+; kg:manages res:team/POLAND .
+res:player/ROBERT_LEWANDOWSKI a kg:Player , kg:Forward
+; kg:playsFor res:team/POLAND
+; kg:primaryPosition res:position/FORWARD
+; kg:shirtNumber 9
+; kg:preferredFoot kg:LeftFooted "UNKNOWN" .
+res:stadium/NATIONAL_STADIUM_WARSZAWA a kg:Stadium
+; kg:capacity 55000
+; kg:isHomeOf res:team/POLAND .
+res:country/POLAND a kg:Country
+; kg:locatedIn res:country/POLAND .
+res:position/FORWARD a kg:Position , kg:Forward .
 res:team/POLAND kg:participatesIn res:season/2024_EURO_QUALIFIERS .
-
-res:season/2024_EURO_QUALIFIERS a kg:Season ;
-kg:seasonOf res:competition/EURO_2024 .
-
-res:competition/EURO_2024 a kg:Competition ;
-kg:competitionName "UEFA Euro 2024" ;
-kg:organizes res:organization/UEFA .
-
+res:season/2024_EURO_QUALIFIERS a kg:Season
+; kg:seasonOf res:competition/EURO_2024 .
+res:competition/EURO_2024 a kg:Competition
+; kg:competitionName "UEFA Euro 2024"
+; kg:organizes res:organization/UEFA .
 res:organization/UEFA a kg:Organization .
-
-res:match/POL_EST_2024_03_21 a kg:Match ;
-kg:homeTeam res:team/POLAND ;
-kg:awayTeam res:team/ESTONIA ;
-kg:venue res:stadium/NATIONAL_STADIUM_WARSZAWA ;
-kg:kickoffTime "2024-03-21T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/EURO_2024 ;
-kg:inSeason res:season/2024_EURO_QUALIFIERS ;
-kg:referee res:referee/SLAVKO_VINCIC .
-
+res:match/POL_EST_2024_03_21 a kg:Match
+; kg:homeTeam res:team/POLAND
+; kg:awayTeam res:team/ESTONIA
+; kg:venue res:stadium/NATIONAL_STADIUM_WARSZAWA
+; kg:kickoffTime "2024-03-21T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/EURO_2024
+; kg:inSeason res:season/2024_EURO_QUALIFIERS
+; kg:referee res:referee/SLAVKO_VINCIC .
 res:referee/SLAVKO_VINCIC a kg:Referee .
-
-res:match/POL_WAL_2024_03_26 a kg:Match ;
-kg:homeTeam res:team/WALES ;
-kg:awayTeam res:team/POLAND ;
-kg:venue res:stadium/CARDIFF_CITY_STADIUM ;
-kg:kickoffTime "2024-03-26T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/EURO_2024 ;
-kg:inSeason res:season/2024_EURO_QUALIFIERS ;
-kg:referee res:referee/DANIELE_ORSATO .
-
+res:match/POL_WAL_2024_03_26 a kg:Match
+; kg:homeTeam res:team/WALES
+; kg:awayTeam res:team/POLAND
+; kg:venue res:stadium/CARDIFF_CITY_STADIUM
+; kg:kickoffTime "2024-03-26T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/EURO_2024
+; kg:inSeason res:season/2024_EURO_QUALIFIERS
+; kg:referee res:referee/DANIELE_ORSATO .
 res:stadium/CARDIFF_CITY_STADIUM a kg:Stadium .
-
 res:referee/DANIELE_ORSATO a kg:Referee .
-
-res:match/POL_UKR_2024_06_07 a kg:Match ;
-kg:homeTeam res:team/POLAND ;
-kg:awayTeam res:team/UKRAINE ;
-kg:venue res:stadium/NATIONAL_STADIUM_WARSZAWA ;
-kg:kickoffTime "2024-06-07T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/FRIENDLY_MATCHES_2024 ;
-kg:referee res:referee/ANDREW_MADLEY .
-
-res:match/POL_TUR_2024_06_10 a kg:Match ;
-kg:homeTeam res:team/POLAND ;
-kg:awayTeam res:team/TURKEY ;
-kg:venue res:stadium/NATIONAL_STADIUM_WARSZAWA ;
-kg:kickoffTime "2024-06-10T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/FRIENDLY_MATCHES_2024 ;
-kg:referee res:referee/BALAZS_BERKE .
-
-res:match/POL_NED_2024_06_16 a kg:Match ;
-kg:homeTeam res:team/NETHERLANDS ;
-kg:awayTeam res:team/POLAND ;
-kg:venue res:stadium/VOLKSPARKSTADION_HAMBURG ;
-kg:kickoffTime "2024-06-16T15:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/EURO_2024 ;
-kg:referee res:referee/ARTUR_SOARES_DIAS .
-
+res:match/POL_UKR_2024_06_07 a kg:Match
+; kg:homeTeam res:team/POLAND
+; kg:awayTeam res:team/UKRAINE
+; kg:venue res:stadium/NATIONAL_STADIUM_WARSZAWA
+; kg:kickoffTime "2024-06-07T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/FRIENDLY_MATCHES_2024
+; kg:referee res:referee/ANDREW_MADLEY .
+res:match/POL_TUR_2024_06_10 a kg:Match
+; kg:homeTeam res:team/POLAND
+; kg:awayTeam res:team/TURKEY
+; kg:venue res:stadium/NATIONAL_STADIUM_WARSZAWA
+; kg:kickoffTime "2024-06-10T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/FRIENDLY_MATCHES_2024
+; kg:referee res:referee/BALAZS_BERKE .
+res:match/POL_NED_2024_06_16 a kg:Match
+; kg:homeTeam res:team/NETHERLANDS
+; kg:awayTeam res:team/POLAND
+; kg:venue res:stadium/VOLKSPARKSTADION_HAMBURG
+; kg:kickoffTime "2024-06-16T15:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/EURO_2024
+; kg:referee res:referee/ARTUR_SOARES_DIAS .
 res:stadium/VOLKSPARKSTADION_HAMBURG a kg:Stadium .
-
-res:match/POL_AUT_2024_06_21 a kg:Match ;
-kg:homeTeam res:team/AUSTRIA ;
-kg:awayTeam res:team/POLAND ;
-kg:venue res:stadium/OBERLORDENSTADION_BERLIN ;
-kg:kickoffTime "2024-06-21T18:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/EURO_2024 ;
-kg:referee res:referee/HALIL_UMUT_MELER .
-
+res:match/POL_AUT_2024_06_21 a kg:Match
+; kg:homeTeam res:team/AUSTRIA
+; kg:awayTeam res:team/POLAND
+; kg:venue res:stadium/OBERLORDENSTADION_BERLIN
+; kg:kickoffTime "2024-06-21T18:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/EURO_2024
+; kg:referee res:referee/HALIL_UMUT_MELER .
 res:stadium/OBERLORDENSTADION_BERLIN a kg:Stadium .
-
-res:match/POL_FRA_2024_06_25 a kg:Match ;
-kg:homeTeam res:team/France ;
-kg:awayTeam res:team/POLAND ;
-kg:venue res:stadium/WESTFALENSTADION_DORTMUND ;
-kg:kickoffTime "2024-06-25T18:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/EURO_2024 ;
-kg:referee res:referee/MARCO_GUIDA .
-
+res:match/POL_FRA_2024_06_25 a kg:Match
+; kg:homeTeam res:team/France
+; kg:awayTeam res:team/POLAND
+; kg:venue res:stadium/WESTFALENSTADION_DORTMUND
+; kg:kickoffTime "2024-06-25T18:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/EURO_2024
+; kg:referee res:referee/MARCO_GUIDA .
 res:stadium/WESTFALENSTADION_DORTMUND a kg:Stadium .
-
-res:match/SCO_POL_2024_09_05 a kg:Match ;
-kg:homeTeam res:team/SCOTLAND ;
-kg:awayTeam res:team/POLAND ;
-kg:venue res:stadium/HAMPTON_PARK_GLASGOW ;
-kg:kickoffTime "2024-09-05T19:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25 ;
-kg:referee res:referee/UNKNOWN_REF_1 .
-
+res:match/SCO_POL_2024_09_05 a kg:Match
+; kg:homeTeam res:team/SCOTLAND
+; kg:awayTeam res:team/POLAND
+; kg:venue res:stadium/HAMPTON_PARK_GLASGOW
+; kg:kickoffTime "2024-09-05T19:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25
+; kg:referee res:referee/UNKNOWN_REF_1 .
 res:stadium/HAMPTON_PARK_GLASGOW a kg:Stadium .
-
-res:match/CRO_POL_2024_09_08 a kg:Match ;
-kg:homeTeam res:team/CROATIA ;
-kg:awayTeam res:team/POLAND ;
-kg:venue res:stadium/OPUS_ARENA_OSIJEK ;
-kg:kickoffTime "2024-09-08T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25 ;
-kg:referee res:referee/UNKNOWN_REF_2 .
-
+res:match/CRO_POL_2024_09_08 a kg:Match
+; kg:homeTeam res:team/CROATIA
+; kg:awayTeam res:team/POLAND
+; kg:venue res:stadium/OPUS_ARENA_OSIJEK
+; kg:kickoffTime "2024-09-08T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25
+; kg:referee res:referee/UNKNOWN_REF_2 .
 res:stadium/OPUS_ARENA_OSIJEK a kg:Stadium .
-
-res:match/POL_POR_2024_10_12 a kg:Match ;
-kg:homeTeam res:team/POLAND ;
-kg:awayTeam res:team/PORTUGAL ;
-kg:venue res:stadium/NATIONAL_STADIUM_WARSZAWA ;
-kg:kickoffTime "2024-10-12T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25 ;
-kg:referee res:referee/UNKNOWN_REF_3 .
-
-res:match/POL_CRO_2024_10_15 a kg:Match ;
-kg:homeTeam res:team/POLAND ;
-kg:awayTeam res:team/CROATIA ;
-kg:venue res:stadium/NATIONAL_STADIUM_WARSZAWA ;
-kg:kickoffTime "2024-10-15T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25 ;
-kg:referee res:referee/UNKNOWN_REF_4 .
-
-res:match/PORTUGAL_POL_2024_11_15 a kg:Match ;
-kg:homeTeam res:team/PORTUGAL ;
-kg:awayTeam res:team/POLAND ;
-kg:venue res:stadium/DRAGÃO_PORTO ;
-kg:kickoffTime "2024-11-15T19:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25 ;
-kg:referee res:referee/UNKNOWN_REF_5 .
-
+res:match/POL_POR_2024_10_12 a kg:Match
+; kg:homeTeam res:team/POLAND
+; kg:awayTeam res:team/PORTUGAL
+; kg:venue res:stadium/NATIONAL_STADIUM_WARSZAWA
+; kg:kickoffTime "2024-10-12T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25
+; kg:referee res:referee/UNKNOWN_REF_3 .
+res:match/POL_CRO_2024_10_15 a kg:Match
+; kg:homeTeam res:team/POLAND
+; kg:awayTeam res:team/CROATIA
+; kg:venue res:stadium/NATIONAL_STADIUM_WARSZAWA
+; kg:kickoffTime "2024-10-15T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25
+; kg:referee res:referee/UNKNOWN_REF_4 .
+res:match/PORTUGAL_POL_2024_11_15 a kg:Match
+; kg:homeTeam res:team/PORTUGAL
+; kg:awayTeam res:team/POLAND
+; kg:venue res:stadium/DRAGÃO_PORTO
+; kg:kickoffTime "2024-11-15T19:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25
+; kg:referee res:referee/UNKNOWN_REF_5 .
 res:stadium/DRAGÃO_PORTO a kg:Stadium .
-
-res:match/POL_SCOTLAND_2024_11_18 a kg:Match ;
-kg:homeTeam res:team/POLAND ;
-kg:awayTeam res:team/SCOTLAND ;
-kg:venue res:stadium/ARMEE_STADIUM_WARSZAWA ;
-kg:kickoffTime "2024-11-18T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25 ;
-kg:referee res:referee/UNKNOWN_REF_6 .
-
+res:match/POL_SCOTLAND_2024_11_18 a kg:Match
+; kg:homeTeam res:team/POLAND
+; kg:awayTeam res:team/SCOTLAND
+; kg:venue res:stadium/ARMEE_STADIUM_WARSZAWA
+; kg:kickoffTime "2024-11-18T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/NATIONS_LEAGUE_2024_25
+; kg:referee res:referee/UNKNOWN_REF_6 .
 res:stadium/ARMEE_STADIUM_WARSZAWA a kg:Stadium .
-
-res:competition/NATIONS_LEAGUE_2024_25 a kg:Competition ;
-kg:competitionName "UEFA Nations League 2024–25" ;
-kg:organizes res:organization/UEFA .
-
-res:competition/FRIENDLY_MATCHES_2024 a kg:Competition ;
-kg:competitionName "Friendly Matches 2024" .
-
+res:competition/NATIONS_LEAGUE_2024_25 a kg:Competition
+; kg:competitionName "UEFA Nations League 2024–25"
+; kg:organizes res:organization/UEFA .
+res:competition/FRIENDLY_MATCHES_2024 a kg:Competition
+; kg:competitionName "Friendly Matches 2024" .
 res:organization/UEFA a kg:Organization .

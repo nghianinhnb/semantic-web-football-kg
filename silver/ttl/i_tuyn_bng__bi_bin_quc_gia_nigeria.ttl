@@ -1,163 +1,127 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Nigeria a kg:Team ;
-kg:teamName "Nigeria" ;
-kg:hasCoach res:coach/Audu%20Adamu ;
-kg:locatedIn res:country/Nigeria .
-
-res:country/Nigeria a kg:Country ;
-rdfs:label "Nigeria" .
-
-res:coach/Audu%20Adamu a kg:Coach ;
-kg:manages res:team/Nigeria .
-
-res:player/Godwin%20Tale a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1 ;
-kg:birthDate "2000-11-11"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:player/Emmanuel%20Owhoferia a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 2 ;
-kg:birthDate "1992-12-10"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:player/Ogbonnaya%20Okemmiri a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 3 ;
-kg:birthDate "1986-06-13"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:player/Lukman%20Ibrhim a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 4 ;
-kg:birthDate "1999-10-19"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:player/Godspower%20Igudia a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 5 ;
-kg:birthDate "1993-08-13"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:player/Victor%20Tale a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 6 ;
-kg:birthDate "1989-09-09"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:player/Isiaka%20Olawale a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 7 ;
-kg:birthDate "1983-11-11"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:player/Azeez%20Abu a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 8 ;
-kg:birthDate "1994-05-31"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:player/Fuwad%20Badmus a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 9 ;
-kg:birthDate "1993-08-20"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:player/Emeka%20Ogbonna a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 10 ;
-kg:birthDate "1992-01-11"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:player/Suleman%20Mohammed a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 11 ;
-kg:birthDate "1996-09-20"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:player/Godwin%20Ayalogu a kg:Player ;
-kg:playsFor res:team/Nigeria ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 12 ;
-kg:birthDate "1985-12-11"^^xsd:date ;
-kg:nationality res:country/Nigeria .
-
-res:position/Goalkeeper a kg:Goalkeeper ;
-rdfs:label "Goalkeeper" .
-
-res:position/Defender a kg:Defender ;
-rdfs:label "Defender" .
-
-res:position/Midfielder a kg:Midfielder ;
-rdfs:label "Midfielder" .
-
-res:position/Forward a kg:Forward ;
-rdfs:label "Forward" .
-
-res:team/Nigeria kg:participatesIn res:season/2006 ;
-kg:participatesIn res:season/2007 ;
-kg:participatesIn res:season/2009 ;
-kg:participatesIn res:season/2011 .
-
-res:season/2006 a kg:Season ;
-kg:seasonOf res:competition/African_Beach_Soccer_Championship ;
-kg:seasonOf res:competition/World_Beach_Soccer_Championship_2006 .
-
-res:season/2007 a kg:Season ;
-kg:seasonOf res:competition/African_Beach_Soccer_Championship ;
-kg:seasonOf res:competition/World_Beach_Soccer_Championship_2007 .
-
-res:season/2009 a kg:Season ;
-kg:seasonOf res:competition/African_Beach_Soccer_Championship ;
-kg:seasonOf res:competition/World_Beach_Soccer_Championship_2009 .
-
-res:season/2011 a kg:Season ;
-kg:seasonOf res:competition/African_Beach_Soccer_Championship ;
-kg:seasonOf res:competition/World_Beach_Soccer_Championship_2011 .
-
-res:competition/African_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "African Beach Soccer Championship" .
-
-res:competition/World_Beach_Soccer_Championship_2006 a kg:Competition ;
-kg:competitionName "World Beach Soccer Championship 2006" .
-
-res:competition/World_Beach_Soccer_Championship_2007 a kg:Competition ;
-kg:competitionName "World Beach Soccer Championship 2007" .
-
-res:competition/World_Beach_Soccer_Championship_2009 a kg:Competition ;
-kg:competitionName "World Beach Soccer Championship 2009" .
-
-res:competition/World_Beach_Soccer_Championship_2011 a kg:Competition ;
-kg:competitionName "World Beach Soccer Championship 2011" .
-
-res:team/Nigeria kg:inCompetition res:competition/African_Beach_Soccer_Championship ;
-kg:inCompetition res:competition/World_Beach_Soccer_Championship_2006 ;
-kg:inCompetition res:competition/World_Beach_Soccer_Championship_2007 ;
-kg:inCompetition res:competition/World_Beach_Soccer_Championship_2009 ;
-kg:inCompetition res:competition/World_Beach_Soccer_Championship_2011 .
-
-res:team/Nigeria kg:inSeason res:season/2006 ;
-kg:inSeason res:season/2007 ;
-kg:inSeason res:season/2009 ;
-kg:inSeason res:season/2011 .
-
-res:team/Nigeria kg:participatesIn res:season/2006 ;
-kg:participatesIn res:season/2007 ;
-kg:participatesIn res:season/2009 ;
-kg:participatesIn res:season/2011 .
+res:team/Nigeria a kg:Team
+; kg:teamName "Nigeria"
+; kg:hasCoach res:coach/Audu%20Adamu
+; kg:locatedIn res:country/Nigeria .
+res:country/Nigeria a kg:Country
+; rdfs:label "Nigeria" .
+res:coach/Audu%20Adamu a kg:Coach
+; kg:manages res:team/Nigeria .
+res:player/Godwin%20Tale a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1
+; kg:birthDate "2000-11-11"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:player/Emmanuel%20Owhoferia a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 2
+; kg:birthDate "1992-12-10"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:player/Ogbonnaya%20Okemmiri a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 3
+; kg:birthDate "1986-06-13"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:player/Lukman%20Ibrhim a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 4
+; kg:birthDate "1999-10-19"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:player/Godspower%20Igudia a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 5
+; kg:birthDate "1993-08-13"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:player/Victor%20Tale a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 6
+; kg:birthDate "1989-09-09"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:player/Isiaka%20Olawale a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 7
+; kg:birthDate "1983-11-11"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:player/Azeez%20Abu a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 8
+; kg:birthDate "1994-05-31"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:player/Fuwad%20Badmus a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 9
+; kg:birthDate "1993-08-20"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:player/Emeka%20Ogbonna a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 10
+; kg:birthDate "1992-01-11"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:player/Suleman%20Mohammed a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 11
+; kg:birthDate "1996-09-20"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:player/Godwin%20Ayalogu a kg:Player
+; kg:playsFor res:team/Nigeria
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 12
+; kg:birthDate "1985-12-11"^^xsd:date
+; kg:nationality res:country/Nigeria .
+res:position/Goalkeeper a kg:Goalkeeper
+; rdfs:label "Goalkeeper" .
+res:position/Defender a kg:Defender
+; rdfs:label "Defender" .
+res:position/Midfielder a kg:Midfielder
+; rdfs:label "Midfielder" .
+res:position/Forward a kg:Forward
+; rdfs:label "Forward" .
+res:team/Nigeria kg:participatesIn res:season/2006
+; kg:participatesIn res:season/2007
+; kg:participatesIn res:season/2009
+; kg:participatesIn res:season/2011 .
+res:season/2006 a kg:Season
+; kg:seasonOf res:competition/African_Beach_Soccer_Championship
+; kg:seasonOf res:competition/World_Beach_Soccer_Championship_2006 .
+res:season/2007 a kg:Season
+; kg:seasonOf res:competition/African_Beach_Soccer_Championship
+; kg:seasonOf res:competition/World_Beach_Soccer_Championship_2007 .
+res:season/2009 a kg:Season
+; kg:seasonOf res:competition/African_Beach_Soccer_Championship
+; kg:seasonOf res:competition/World_Beach_Soccer_Championship_2009 .
+res:season/2011 a kg:Season
+; kg:seasonOf res:competition/African_Beach_Soccer_Championship
+; kg:seasonOf res:competition/World_Beach_Soccer_Championship_2011 .
+res:competition/African_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "African Beach Soccer Championship" .
+res:competition/World_Beach_Soccer_Championship_2006 a kg:Competition
+; kg:competitionName "World Beach Soccer Championship 2006" .
+res:competition/World_Beach_Soccer_Championship_2007 a kg:Competition
+; kg:competitionName "World Beach Soccer Championship 2007" .
+res:competition/World_Beach_Soccer_Championship_2009 a kg:Competition
+; kg:competitionName "World Beach Soccer Championship 2009" .
+res:competition/World_Beach_Soccer_Championship_2011 a kg:Competition
+; kg:competitionName "World Beach Soccer Championship 2011" .
+res:team/Nigeria kg:inCompetition res:competition/African_Beach_Soccer_Championship
+; kg:inCompetition res:competition/World_Beach_Soccer_Championship_2006
+; kg:inCompetition res:competition/World_Beach_Soccer_Championship_2007
+; kg:inCompetition res:competition/World_Beach_Soccer_Championship_2009
+; kg:inCompetition res:competition/World_Beach_Soccer_Championship_2011 .
+res:team/Nigeria kg:inSeason res:season/2006
+; kg:inSeason res:season/2007
+; kg:inSeason res:season/2009
+; kg:inSeason res:season/2011 .
+res:team/Nigeria kg:participatesIn res:season/2006
+; kg:participatesIn res:season/2007
+; kg:participatesIn res:season/2009
+; kg:participatesIn res:season/2011 .

@@ -1,6 +1,2 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-
-res:team/Guiana thuộc Pháp a kg:Team ;
-kg:teamName "Guiana thuộc Pháp"^^xsd:string .
+res:team/Guiana thuộc Pháp a kg:Team
+; kg:teamName "Guiana thuộc Pháp"^^xsd:string .

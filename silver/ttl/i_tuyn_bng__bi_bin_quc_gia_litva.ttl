@@ -1,135 +1,100 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Litva a kg:Team ;
-kg:teamName "Litva" ;
-kg:hasCoach res:coach/Bronislovas_Mickiewicz ;
-kg:locatedIn res:country/Litva ;
-kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
-kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
-
-res:country/Litva a kg:Country ;
-rdfs:label "Litva" .
-
-res:coach/Bronislovas_Mickiewicz a kg:Coach ;
-kg:manages res:team/Litva .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" .
-
-res:player/Viktor_Bartaševič a kg:Player ;
-kg:playsFor res:team/Litva ;
-kg:shirtNumber 1 .
-
-res:player/Andrius_Rebždys a kg:Player ;
-kg:playsFor res:team/Litva ;
-kg:shirtNumber 2 ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Andžej_Vilkickij a kg:Player ;
-kg:playsFor res:team/Litva ;
-kg:shirtNumber 3 .
-
-res:player/Artiomas_Barinovas a kg:Player ;
-kg:playsFor res:team/Litva ;
-kg:shirtNumber 4 .
-
-res:player/Valentinas_Golubovskis a kg:Player ;
-kg:playsFor res:team/Litva ;
-kg:shirtNumber 5 ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Nerijus_Budraitis a kg:Player ;
-kg:playsFor res:team/Litva ;
-kg:shirtNumber 6 ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Denis_Orlov a kg:Player ;
-kg:playsFor res:team/Litva ;
-kg:shirtNumber 7 .
-
-res:player/Pavelas_Smolkovas a kg:Player ;
-kg:playsFor res:team/Litva ;
-kg:shirtNumber 8 ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Domantas_Savičius a kg:Player ;
-kg:playsFor res:team/Litva ;
-kg:shirtNumber 9 .
-
-res:player/Mindaugas_Ragauskas a kg:Player ;
-kg:playsFor res:team/Litva ;
-kg:shirtNumber 10 .
-
+res:team/Litva a kg:Team
+; kg:teamName "Litva"
+; kg:hasCoach res:coach/Bronislovas_Mickiewicz
+; kg:locatedIn res:country/Litva
+; kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới
+; kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
+res:country/Litva a kg:Country
+; rdfs:label "Litva" .
+res:coach/Bronislovas_Mickiewicz a kg:Coach
+; kg:manages res:team/Litva .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" .
+res:player/Viktor_Bartaševič a kg:Player
+; kg:playsFor res:team/Litva
+; kg:shirtNumber 1 .
+res:player/Andrius_Rebždys a kg:Player
+; kg:playsFor res:team/Litva
+; kg:shirtNumber 2
+; kg:primaryPosition res:position/Defender .
+res:player/Andžej_Vilkickij a kg:Player
+; kg:playsFor res:team/Litva
+; kg:shirtNumber 3 .
+res:player/Artiomas_Barinovas a kg:Player
+; kg:playsFor res:team/Litva
+; kg:shirtNumber 4 .
+res:player/Valentinas_Golubovskis a kg:Player
+; kg:playsFor res:team/Litva
+; kg:shirtNumber 5
+; kg:primaryPosition res:position/Defender .
+res:player/Nerijus_Budraitis a kg:Player
+; kg:playsFor res:team/Litva
+; kg:shirtNumber 6
+; kg:primaryPosition res:position/Defender .
+res:player/Denis_Orlov a kg:Player
+; kg:playsFor res:team/Litva
+; kg:shirtNumber 7 .
+res:player/Pavelas_Smolkovas a kg:Player
+; kg:playsFor res:team/Litva
+; kg:shirtNumber 8
+; kg:primaryPosition res:position/Defender .
+res:player/Domantas_Savičius a kg:Player
+; kg:playsFor res:team/Litva
+; kg:shirtNumber 9 .
+res:player/Mindaugas_Ragauskas a kg:Player
+; kg:playsFor res:team/Litva
+; kg:shirtNumber 10 .
 res:position/Defender a kg:Defender .
-
-res:match/2016-09-03_Litva_vs_Switzerland a kg:Match ;
-kg:homeTeam res:team/Litva ;
-kg:awayTeam res:team/Switzerland ;
-kg:kickoffTime "2016-09-03T09:00:00Z"^^xsd:dateTime ;
-kg:venue res:stadium/Jesolo ;
-kg:referee res:referee/Manolo_Picchio ;
-kg:result "L" ;
-kg:inCompetition res:competition/2017_FIFA_BS_vòng_loại_Cúp_thế_giới .
-
-res:match/2016-09-05_Litva_vs_Greece a kg:Match ;
-kg:homeTeam res:team/Litva ;
-kg:awayTeam res:team/Greece ;
-kg:kickoffTime "2016-09-05T10:15:00Z"^^xsd:dateTime ;
-kg:venue res:stadium/Jesolo ;
-kg:referee res:referee/Jude_Amin_Utulu ;
-kg:result "L" ;
-kg:inCompetition res:competition/2017_FIFA_BS_vòng_loại_Cúp_thế_giới .
-
-res:match/2016-09-06_Litva_vs_Netherlands a kg:Match ;
-kg:homeTeam res:team/Litva ;
-kg:awayTeam res:team/Netherlands ;
-kg:kickoffTime "2016-09-06T11:30:00Z"^^xsd:dateTime ;
-kg:venue res:stadium/Jesolo ;
-kg:referee res:referee/Sofien_Benchabane ;
-kg:result "L" ;
-kg:inCompetition res:competition/2017_FIFA_BS_vòng_loại_Cúp_thế_giới .
-
-res:stadium/Jesolo a kg:Stadium ;
-kg:locatedIn res:city/Jesolo ;
-kg:locatedIn res:country/Italy .
-
-res:city/Jesolo a kg:City ;
-kg:locatedIn res:country/Italy .
-
-res:country/Italy a kg:Country ;
-rdfs:label "Ý" .
-
-res:country/Switzerland a kg:Country ;
-rdfs:label "Thụy Sĩ" .
-
-res:country/Greece a kg:Country ;
-rdfs:label "Hy Lạp" .
-
-res:country/Netherlands a kg:Country ;
-rdfs:label "Hà Lan" .
-
-res:referee/Manolo_Picchio a kg:Referee ;
-kg:locatedIn res:country/Italy .
-
-res:referee/Jude_Amin_Utulu a kg:Referee ;
-kg:locatedIn res:country/Malta .
-
-res:country/Malta a kg:Country ;
-rdfs:label "Malta" .
-
-res:referee/Sofien_Benchabane a kg:Referee ;
-kg:locatedIn res:country/France .
-
-res:country/France a kg:Country ;
-rdfs:label "Pháp" .
-
-res:competition/2017_FIFA_BS_vòng_loại_Cúp_thế_giới a kg:Competition ;
-kg:competitionName "2017 FIFA BS vòng loại Cúp thế giới" ;
-kg:organizes res:team/Litva ;
-kg:heldIn res:country/Italy .
+res:match/2016-09-03_Litva_vs_Switzerland a kg:Match
+; kg:homeTeam res:team/Litva
+; kg:awayTeam res:team/Switzerland
+; kg:kickoffTime "2016-09-03T09:00:00Z"^^xsd:dateTime
+; kg:venue res:stadium/Jesolo
+; kg:referee res:referee/Manolo_Picchio
+; kg:result "L"
+; kg:inCompetition res:competition/2017_FIFA_BS_vòng_loại_Cúp_thế_giới .
+res:match/2016-09-05_Litva_vs_Greece a kg:Match
+; kg:homeTeam res:team/Litva
+; kg:awayTeam res:team/Greece
+; kg:kickoffTime "2016-09-05T10:15:00Z"^^xsd:dateTime
+; kg:venue res:stadium/Jesolo
+; kg:referee res:referee/Jude_Amin_Utulu
+; kg:result "L"
+; kg:inCompetition res:competition/2017_FIFA_BS_vòng_loại_Cúp_thế_giới .
+res:match/2016-09-06_Litva_vs_Netherlands a kg:Match
+; kg:homeTeam res:team/Litva
+; kg:awayTeam res:team/Netherlands
+; kg:kickoffTime "2016-09-06T11:30:00Z"^^xsd:dateTime
+; kg:venue res:stadium/Jesolo
+; kg:referee res:referee/Sofien_Benchabane
+; kg:result "L"
+; kg:inCompetition res:competition/2017_FIFA_BS_vòng_loại_Cúp_thế_giới .
+res:stadium/Jesolo a kg:Stadium
+; kg:locatedIn res:city/Jesolo
+; kg:locatedIn res:country/Italy .
+res:city/Jesolo a kg:City
+; kg:locatedIn res:country/Italy .
+res:country/Italy a kg:Country
+; rdfs:label "Ý" .
+res:country/Switzerland a kg:Country
+; rdfs:label "Thụy Sĩ" .
+res:country/Greece a kg:Country
+; rdfs:label "Hy Lạp" .
+res:country/Netherlands a kg:Country
+; rdfs:label "Hà Lan" .
+res:referee/Manolo_Picchio a kg:Referee
+; kg:locatedIn res:country/Italy .
+res:referee/Jude_Amin_Utulu a kg:Referee
+; kg:locatedIn res:country/Malta .
+res:country/Malta a kg:Country
+; rdfs:label "Malta" .
+res:referee/Sofien_Benchabane a kg:Referee
+; kg:locatedIn res:country/France .
+res:country/France a kg:Country
+; rdfs:label "Pháp" .
+res:competition/2017_FIFA_BS_vòng_loại_Cúp_thế_giới a kg:Competition
+; kg:competitionName "2017 FIFA BS vòng loại Cúp thế giới"
+; kg:organizes res:team/Litva
+; kg:heldIn res:country/Italy .

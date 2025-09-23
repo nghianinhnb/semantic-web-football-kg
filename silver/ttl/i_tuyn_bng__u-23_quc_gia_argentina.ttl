@@ -1,166 +1,41 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Olympic_Argentina a kg:Team ;
-kg:teamName "Olympic Argentina" ;
-kg:hasCoach res:coach/Javier_Mascherano ;
-kg:manages res:coach/Javier_Mascherano ;
-kg:teamAbbreviation "ARG" ;
-kg:locatedIn res:country/Argentina .
-
-res:coach/Javier_Mascherano a kg:Coach ;
-kg:manages res:team/Olympic_Argentina .
-
-res:player/Thiago_Alma a kg:Player ;
-kg:playsFor res:team/Olympic_Argentina .
-
-res:player/Javier_Mascherano a kg:Player ;
-kg:playsFor res:team/Olympic_Argentina ;
-kg:mostCaps 20 .
-
-res:player/Domingo_Tarasconi a kg:Player ;
-kg:playsFor res:team/Olympic_Argentina ;
-kg:topScorer 9 .
-
-res:player/Adolfo_Gaich a kg:Player ;
-kg:playsFor res:team/Olympic_Argentina ;
-kg:topScorer 9 .
-
-res:stadium/Estadio_Monumental a kg:Stadium ;
-kg:capacity 100000 ;
-kg:isHomeOf res:team/Olympic_Argentina .
-
+res:team/Olympic_Argentina a kg:Team
+; kg:teamName "Olympic Argentina"
+; kg:hasCoach res:coach/Javier_Mascherano
+; kg:manages res:coach/Javier_Mascherano
+; kg:teamAbbreviation "ARG"
+; kg:locatedIn res:country/Argentina .
+res:coach/Javier_Mascherano a kg:Coach
+; kg:manages res:team/Olympic_Argentina .
+res:player/Thiago_Alma a kg:Player
+; kg:playsFor res:team/Olympic_Argentina .
+res:player/Javier_Mascherano a kg:Player
+; kg:playsFor res:team/Olympic_Argentina .
+res:player/Domingo_Tarasconi a kg:Player
+; kg:playsFor res:team/Olympic_Argentina .
+res:player/Adolfo_Gaich a kg:Player
+; kg:playsFor res:team/Olympic_Argentina .
+res:stadium/Estadio_Monumental a kg:Stadium
+; kg:capacity 100000
+; kg:isHomeOf res:team/Olympic_Argentina .
 res:country/Argentina a kg:Country .
-
-res:competition/Olympic_Argentina a kg:Competition ;
-kg:competitionName "Thế vận hội Olympic" .
-
-res:competition/Pan_American_Games a kg:Competition ;
-kg:competitionName "Đại hội Thể thao Liên châu Mỹ" .
-
-res:match/Argentina_vs_United_States a kg:Match ;
-kg:homeTeam res:team/Olympic_Argentina ;
-kg:awayTeam res:team/United_States ;
-kg:kickoffTime "1928-05-29"^^xsd:date ;
-kg:result "11–2" .
-
-res:match/Argentina_vs_Uruguay a kg:Match ;
-kg:homeTeam res:team/Ukraine ;
-kg:awayTeam res:team/Uruguay ;
-kg:kickoffTime "1928-08-12"^^xsd:date ;
-kg:result "1–1" .
-
-res:match/Argentina_vs_Uruguay_2 a kg:Match ;
-kg:homeTeam res:team/Ukraine ;
-kg:awayTeam res:team/Uruguay ;
-kg:kickoffTime "1928-08-15"^^xsd:date ;
-kg:result "2–1" .
-
-res:medal/Gold_Olympic_2004 a kg:Medal ;
-kg:competition res:competition/Olympic_Argentina ;
-kg:year "2004"^^xsd:gYear .
-
-res:medal/Gold_Olympic_2008 a kg:Medal ;
-kg:competition res:competition/Olympic_Argentina ;
-kg:year "2008"^^xsd:gYear .
-
-res:medal/Silver_Olympic_1996 a kg:Medal ;
-kg:competition res:competition/Olympic_Argentina ;
-kg:year "1996"^^xsd:gYear .
-
-res:medal/Gold_Pan_American_1951 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "1951"^^xsd:gYear .
-
-res:medal/Gold_Pan_American_1955 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "1955"^^xsd:gYear .
-
-res:medal/Gold_Pan_American_1959 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "1959"^^xsd:gYear .
-
-res:medal/Gold_Pan_American_1971 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "1971"^^xsd:gYear .
-
-res:medal/Gold_Pan_American_1995 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "1995"^^xsd:gYear .
-
-res:medal/Gold_Pan_American_2003 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "2003"^^xsd:gYear .
-
-res:medal/Gold_Pan_American_2019 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "2019"^^xsd:gYear .
-
-res:medal/Silver_Pan_American_1963 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "1963"^^xsd:gYear .
-
-res:medal/Silver_Pan_American_2011 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "2011"^^xsd:gYear .
-
-res:medal/Bronze_Pan_American_1975 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "1975"^^xsd:gYear .
-
-res:medal/Bronze_Pan_American_1979 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "1979"^^xsd:gYear .
-
-res:medal/Bronze_Pan_American_1987 a kg:Medal ;
-kg:competition res:competition/Pan_American_Games ;
-kg:year "1987"^^xsd:gYear .
-
-res:competition/CONMEBOL_Pre_Olympic_Tournament a kg:Competition ;
-kg:competitionName "CONMEBOL Pre-Olympic Tournament" .
-
-res:medal/Gold_CONMEBOL_Pre_Olympic_1960 a kg:Medal ;
-kg:competition res:competition/CONMEBOL_Pre_Olympic_Tournament ;
-kg:year "1960"^^xsd:gYear .
-
-res:medal/Gold_CONMEBOL_Pre_Olympic_1964 a kg:Medal ;
-kg:competition res:competition/CONMEBOL_Pre_Olympic_Tournament ;
-kg:year "1964"^^xsd:gYear .
-
-res:medal/Gold_CONMEBOL_Pre_Olympic_1980 a kg:Medal ;
-kg:competition res:competition/CONMEBOL_Pre_Olympic_Tournament ;
-kg:year "1980"^^xsd:gYear .
-
-res:medal/Gold_CONMEBOL_Pre_Olympic_2004 a kg:Medal ;
-kg:competition res:competition/CONMEBOL_Pre_Olympic_Tournament ;
-kg:year "2004"^^xsd:gYear .
-
-res:medal/Gold_CONMEBOL_Pre_Olympic_2020 a kg:Medal ;
-kg:competition res:competition/CONMEBOL_Pre_Olympic_Tournament ;
-kg:year "2020"^^xsd:gYear .
-
-res:medal/Silver_CONMEBOL_Pre_Olympic_1987 a kg:Medal ;
-kg:competition res:competition/CONMEBOL_Pre_Olympic_Tournament ;
-kg:year "1987"^^xsd:gYear .
-
-res:medal/Silver_CONMEBOL_Pre_Olympic_1996 a kg:Medal ;
-kg:competition res:competition/CONMEBOL_Pre_Olympic_Tournament ;
-kg:year "1996"^^xsd:gYear .
-
-res:medal/Silver_CONMEBOL_Pre_Olympic_2024 a kg:Medal ;
-kg:competition res:competition/CONMEBOL_Pre_Olympic_Tournament ;
-kg:year "2024"^^xsd:gYear .
-
-res:medal/Bronze_CONMEBOL_Pre_Olympic_1971 a kg:Medal ;
-kg:competition res:competition/CONMEBOL_Pre_Olympic_Tournament ;
-kg:year "1971"^^xsd:gYear .
-
-res:medal/Bronze_CONMEBOL_Pre_Olympic_1976 a kg:Medal ;
-kg:competition res:competition/CONMEBOL_Pre_Olympic_Tournament ;
-kg:year "1976"^^xsd:gYear .
-
-res:medal/Bronze_CONMEBOL_Pre_Olympic_2000 a kg:Medal ;
-kg:competition res:competition/CONMEBOL_Pre_Olympic_Tournament ;
-kg:year "2000"^^xsd:gYear .
+res:competition/Olympic_Argentina a kg:Competition
+; kg:competitionName "Thế vận hội Olympic" .
+res:competition/Pan_American_Games a kg:Competition
+; kg:competitionName "Đại hội Thể thao Liên châu Mỹ" .
+res:match/Argentina_vs_United_States a kg:Match
+; kg:homeTeam res:team/Olympic_Argentina
+; kg:awayTeam res:team/United_States
+; kg:kickoffTime "1928-05-29"^^xsd:date
+; kg:result "11–2" .
+res:match/Argentina_vs_Uruguay a kg:Match
+; kg:homeTeam res:team/Ukraine
+; kg:awayTeam res:team/Uruguay
+; kg:kickoffTime "1928-08-12"^^xsd:date
+; kg:result "1–1" .
+res:match/Argentina_vs_Uruguay_2 a kg:Match
+; kg:homeTeam res:team/Ukraine
+; kg:awayTeam res:team/Uruguay
+; kg:kickoffTime "1928-08-15"^^xsd:date
+; kg:result "2–1" .
+res:competition/CONMEBOL_Pre_Olympic_Tournament a kg:Competition
+; kg:competitionName "CONMEBOL Pre-Olympic Tournament" .

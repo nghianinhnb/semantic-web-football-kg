@@ -1,194 +1,117 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Antigua%20và%20Barbuda a rdf:type kg:Team ;
-kg:teamName "Antigua và Barbuda" ;
-kg:hasCoach res:coach/Tom%20Curtis, res:coach/Mikele%20Leigertwood ;
-kg:hasCaptain res:player/Quinton%20Griffith ;
-kg:teamAbbreviation "ATG" ;
-kg:locatedIn res:country/Antigua%20và%20Barbuda .
-
-res:coach/Tom%20Curtis a kg:Coach ;
-kg:manages res:team/Antigua%20và%20Barbuda .
-
-res:coach/Mikele%20Leigertwood a kg:Coach ;
-kg:manages res:team/Antigua%20và%20Barbuda .
-
-res:player/Quinton%20Griffith a kg:Player, kg:Forward ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:isCaptain res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 11 .
-
-res:country/Antigua%20và%20Barbuda a kg:Country ;
-kg:locatedIn res:region/North%20America%20and%20Caribbean .
-
+res:team/Antigua%20và%20Barbuda a rdf:type kg:Team
+; kg:teamName "Antigua và Barbuda"
+; kg:hasCoach res:coach/Tom%20Curtis , res:coach/Mikele%20Leigertwood
+; kg:hasCaptain res:player/Quinton%20Griffith
+; kg:teamAbbreviation "ATG"
+; kg:locatedIn res:country/Antigua%20và%20Barbuda .
+res:coach/Tom%20Curtis a kg:Coach
+; kg:manages res:team/Antigua%20và%20Barbuda .
+res:coach/Mikele%20Leigertwood a kg:Coach
+; kg:manages res:team/Antigua%20và%20Barbuda .
+res:player/Quinton%20Griffith a kg:Player , kg:Forward
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:isCaptain res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 11 .
+res:country/Antigua%20và%20Barbuda a kg:Country
+; kg:locatedIn res:region/North%20America%20and%20Caribbean .
 res:organization/Haiti%20Football%20Association a kg:Organization .
-
-res:stadium/S%C3%A2n%20v%E1%BA%ADn%20đ%E1%BB%99ng%20Sir%20Vivian%20Richards a kg:Stadium ;
-kg:locatedIn res:city/St.%20Johns .
-
-res:stadium/Antigua%20Recreation%20Ground a kg:Stadium ;
-kg:locatedIn res:city/St.%20Johns .
-
+res:stadium/S%C3%A2n%20v%E1%BA%ADn%20đ%E1%BB%99ng%20Sir%20Vivian%20Richards a kg:Stadium
+; kg:locatedIn res:city/St.%20Johns .
+res:stadium/Antigua%20Recreation%20Ground a kg:Stadium
+; kg:locatedIn res:city/St.%20Johns .
 res:competition/FIFA%20World%20Cup a kg:Competition .
-
 res:competition/Copa%20Am%C3%A9rica a kg:Competition .
-
 res:competition/CONCACAF%20Gold%20Cup a kg:Competition .
-
 res:competition/CONCACAF%20Nations%20League a kg:Competition .
-
-res:match/1972-11-10%20Trinidad%20and%20Tobago%20vs%20Antigua%20and%20Barbuda a kg:Match ;
-kg:homeTeam res:team/Trinidad%20and%20Tobago ;
-kg:awayTeam res:team/Antigua%20và%20Barbuda ;
-kg:venue res:stadium/S%C3%A2n%20v%E1%BA%ADn%20đ%E1%BB%99ng%20Sir%20Vivian%20Richards ;
-kg:kickoffTime "1972-11-10"^^xsd:date .
-
-res:match/2005-12-17%20Hungary%20vs%20Antigua%20and%20Barbuda a kg:Match ;
-kg:homeTeam res:team/Hungary ;
-kg:awayTeam res:team/Antigua%20và%20Barbuda ;
-kg:venue res:stadium/Lockhart%20Stadium ;
-kg:kickoffTime "2005-12-17"^^xsd:date .
-
-res:match/2016-11-02%20Estonia%20vs%20Antigua%20and%20Barbuda a kg:Match ;
-kg:homeTeam res:team/Estonia ;
-kg:awayTeam res:team/Antigua%20và%20Barbuda ;
-kg:venue res:stadium/Lockhart%20Stadium ;
-kg:kickoffTime "2016-11-02"^^xsd:date .
-
-res:match/2018-03-22%20Jamaica%20vs%20Antigua%20and%20Barbuda a kg:Match ;
-kg:homeTeam res:team/Jamaica ;
-kg:awayTeam res:team/Antigua%20và%20Barbuda ;
-kg:venue res:stadium/Sabina%20Park ;
-kg:kickoffTime "2018-03-22"^^xsd:date .
-
-res:player/Peter%20Byers a kg:Player, kg:Forward ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 9 ;
-kg:mostCaps 90 ;
-kg:topScorer 43 .
-
-res:player/Zaieem%20Scott a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 21 ;
-kg:mostCaps 9 .
-
-res:player/Zafique%20Drew a kg:Player, kg:Defender ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 2 ;
-kg:mostCaps 11 .
-
-res:player/Luther%20James-Wildin a kg:Player, kg:Defender ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 5 ;
-kg:mostCaps 4 .
-
-res:player/Jahzinho%20O'Garro a kg:Player, kg:Defender ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 14 ;
-kg:mostCaps 3 .
-
-res:player/Roneba%20Cordice a kg:Player, kg:Defender ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 16 ;
-kg:mostCaps 4 .
-
-res:player/Antonio%20Morgan a kg:Player, kg:Defender ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 20 ;
-kg:mostCaps 6 .
-
-res:player/Vashami%20Allen a kg:Player, kg:Defender ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 20 ;
-kg:mostCaps 15 .
-
-res:player/Zaire%20Scott a kg:Player, kg:Defender ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 20 ;
-kg:mostCaps 1 .
-
-res:player/Tyrik%20Hughes a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 6 ;
-kg:mostCaps 7 .
-
-res:player/Sean%20Tomlinson a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 8 ;
-kg:mostCaps 2 .
-
-res:player/TJ%20Bramble a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 10 ;
-kg:mostCaps 17 ;
-kg:topScorer 2 .
-
-res:player/Dannen%20Francis a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 10 ;
-kg:mostCaps 2 .
-
-res:player/Daryl%20Massicot a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 10 ;
-kg:mostCaps 6 ;
-kg:topScorer 1 .
-
-res:player/Dion%20Pereira a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 10 ;
-kg:mostCaps 9 ;
-kg:topScorer 1 .
-
-res:player/Kendukar%20Challenger a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 10 ;
-kg:mostCaps 22 .
-
-res:player/Quinton%20Griffith a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 10 ;
-kg:mostCaps 87 ;
-kg:topScorer 10 .
-
-res:player/Zahiem%20Green a kg:Player, kg:Midfielder ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 10 ;
-kg:mostCaps 1 .
-
-res:player/Raheem%20Deterville a kg:Player, kg:Forward ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 7 ;
-kg:mostCaps 20 ;
-kg:topScorer 2 .
-
-res:player/Shalon%20Knight a kg:Player, kg:Forward ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 11 ;
-kg:mostCaps 6 .
-
-res:player/Keon%20Greene a kg:Player, kg:Forward ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 12 ;
-kg:mostCaps 5 .
-
-res:player/D'Andre%20Bishop a kg:Player, kg:Forward ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 19 ;
-kg:mostCaps 27 ;
-kg:topScorer 3 .
-
-res:player/Eroy%20Gonsalves a kg:Player, kg:Forward ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 19 ;
-kg:mostCaps 2 .
-
-res:player/Javorn%20Stevens a kg:Player, kg:Forward ;
-kg:playsFor res:team/Antigua%20và%20Barbuda ;
-kg:shirtNumber 19 ;
-kg:mostCaps 36 ;
-kg:topScorer 4 .
+res:match/1972-11-10%20Trinidad%20and%20Tobago%20vs%20Antigua%20and%20Barbuda a kg:Match
+; kg:homeTeam res:team/Trinidad%20and%20Tobago
+; kg:awayTeam res:team/Antigua%20và%20Barbuda
+; kg:venue res:stadium/S%C3%A2n%20v%E1%BA%ADn%20đ%E1%BB%99ng%20Sir%20Vivian%20Richards
+; kg:kickoffTime "1972-11-10"^^xsd:date .
+res:match/2005-12-17%20Hungary%20vs%20Antigua%20and%20Barbuda a kg:Match
+; kg:homeTeam res:team/Hungary
+; kg:awayTeam res:team/Antigua%20và%20Barbuda
+; kg:venue res:stadium/Lockhart%20Stadium
+; kg:kickoffTime "2005-12-17"^^xsd:date .
+res:match/2016-11-02%20Estonia%20vs%20Antigua%20and%20Barbuda a kg:Match
+; kg:homeTeam res:team/Estonia
+; kg:awayTeam res:team/Antigua%20và%20Barbuda
+; kg:venue res:stadium/Lockhart%20Stadium
+; kg:kickoffTime "2016-11-02"^^xsd:date .
+res:match/2018-03-22%20Jamaica%20vs%20Antigua%20and%20Barbuda a kg:Match
+; kg:homeTeam res:team/Jamaica
+; kg:awayTeam res:team/Antigua%20và%20Barbuda
+; kg:venue res:stadium/Sabina%20Park
+; kg:kickoffTime "2018-03-22"^^xsd:date .
+res:player/Peter%20Byers a kg:Player , kg:Forward
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 9 .
+res:player/Zaieem%20Scott a kg:Player , kg:Goalkeeper
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 21 .
+res:player/Zafique%20Drew a kg:Player , kg:Defender
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 2 .
+res:player/Luther%20James-Wildin a kg:Player , kg:Defender
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 5 .
+res:player/Jahzinho%20O'Garro a kg:Player , kg:Defender
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 14 .
+res:player/Roneba%20Cordice a kg:Player , kg:Defender
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 16 .
+res:player/Antonio%20Morgan a kg:Player , kg:Defender
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 20 .
+res:player/Vashami%20Allen a kg:Player , kg:Defender
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 20 .
+res:player/Zaire%20Scott a kg:Player , kg:Defender
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 20 .
+res:player/Tyrik%20Hughes a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 6 .
+res:player/Sean%20Tomlinson a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 8 .
+res:player/TJ%20Bramble a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 10 .
+res:player/Dannen%20Francis a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 10 .
+res:player/Daryl%20Massicot a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 10 .
+res:player/Dion%20Pereira a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 10 .
+res:player/Kendukar%20Challenger a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 10 .
+res:player/Quinton%20Griffith a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 10 .
+res:player/Zahiem%20Green a kg:Player , kg:Midfielder
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 10 .
+res:player/Raheem%20Deterville a kg:Player , kg:Forward
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 7 .
+res:player/Shalon%20Knight a kg:Player , kg:Forward
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 11 .
+res:player/Keon%20Greene a kg:Player , kg:Forward
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 12 .
+res:player/D'Andre%20Bishop a kg:Player , kg:Forward
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 19 .
+res:player/Eroy%20Gonsalves a kg:Player , kg:Forward
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 19 .
+res:player/Javorn%20Stevens a kg:Player , kg:Forward
+; kg:playsFor res:team/Antigua%20và%20Barbuda
+; kg:shirtNumber 19 .

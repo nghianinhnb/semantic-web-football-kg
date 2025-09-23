@@ -1,309 +1,202 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Andorra a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Andorra" ;
-kg:hasCoach res:coach/Koldo_Alvarez ;
-kg:hasCaptain res:player/Marcio_Vieira ;
-kg:homeStadium res:stadium/San_van_dong_Quoc_gia_Andorra .
-
-res:coach/Koldo_Alvarez a kg:Coach ;
-kg:manages res:team/Andorra .
-
-res:player/Marcio_Vieira a kg:Player ;
-kg:playsFor res:team/Andorra ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber "11"^^xsd:positiveInteger ;
-kg:birthDate "1984-10-10"^^xsd:date ;
-kg:birthPlace res:city/Andorra_la_Vella ;
-kg:nationality res:country/Andorra .
-
-res:stadium/San_van_dong_Quoc_gia_Andorra a kg:Stadium ;
-kg:isHomeOf res:team/Andorra .
-
-res:country/Andorra a kg:Country ;
-rdfs:label "Andorra" .
-
-res:country/Spain a kg:Country ;
-rdfs:label "Tây Ban Nha" .
-
-res:country/Porugal a kg:Country ;
-rdfs:label "Bồ Đào Nha" .
-
-res:country/Bosnia_and_Herzegovina a kg:Country ;
-rdfs:label "Bosnia và Herzegovina" .
-
-res:country/Malta a kg:Country ;
-rdfs:label "Malta" .
-
-res:country/Latvia a kg:Country ;
-rdfs:label "Latvia" .
-
-res:country/Germany a kg:Country ;
-rdfs:label "Đức" .
-
-res:country/Croatia a kg:Country ;
-rdfs:label "Croatia" .
-
-res:country/Portugal a kg:Country ;
-rdfs:label "Bồ Đào Nha" .
-
-res:country/Slovenia a kg:Country ;
-rdfs:label "Slovenia" .
-
-res:country/San_Marino a kg:Country ;
-rdfs:label "San Marino" .
-
-res:country/Slovakia a kg:Country ;
-rdfs:label "Slovakia" .
-
-res:country/Macedonia a kg:Country ;
-rdfs:label "Macedonia" .
-
-res:country/Czech_Republic a kg:Country ;
-rdfs:label "Cộng hòa Séc" .
-
-res:country/Switzerland a kg:Country ;
-rdfs:label "Thụy Sĩ" .
-
-res:country/France a kg:Country ;
-rdfs:label "Pháp" .
-
-res:country/Netherlands a kg:Country ;
-rdfs:label "Hà Lan" .
-
-res:country/Italy a kg:Country ;
-rdfs:label "Ý" .
-
-res:country/Ukraine a kg:Country ;
-rdfs:label "Ukraine" .
-
-res:country/Austria a kg:Country ;
-rdfs:label "Áo" .
-
-res:country/Gibraltar a kg:Country ;
-rdfs:label "Gibraltar" .
-
-res:country/Lithuania a kg:Country ;
-rdfs:label "Lithuania" .
-
-res:country/Albania a kg:Country ;
-rdfs:label "Albania" .
-
-res:country/Serbia a kg:Country ;
-rdfs:label "Serbia" .
-
-res:country/Georgia a kg:Country ;
-rdfs:label "Georgie" .
-
-res:country/Moldova a kg:Country ;
-rdfs:label "Moldova" .
-
-res:country/Israel a kg:Country ;
-rdfs:label "Israel" .
-
-res:country/Luxembourg a kg:Country ;
-rdfs:label "Luxembourg" .
-
-res:country/Cyprus a kg:Country ;
-rdfs:label "Chypre" .
-
-res:country/Malta a kg:Country ;
-rdfs:label "Malta" .
-
-res:country/Finland a kg:Country ;
-rdfs:label "Phần Lan" .
-
-res:country/Sweden a kg:Country ;
-rdfs:label "Thụy Điển" .
-
-res:country/Denmark a kg:Country ;
-rdfs:label "Đan Mạch" .
-
-res:country/Norway a kg:Country ;
-rdfs:label "Na Uy" .
-
-res:country/Iceland a kg:Country ;
-rdfs:label "Iceland" .
-
-res:country/Belgium a kg:Country ;
-rdfs:label "Bỉ" .
-
-res:country/England a kg:Country ;
-rdfs:label "Anh" .
-
-res:country/Wales a kg:Country ;
-rdfs:label "Xuwê" .
-
-res:country/Scotland a kg:Country ;
-rdfs:label "Scotland" .
-
-res:country/North_Ireland a kg:Country ;
-rdfs:label "Bắc Ai-len" .
-
-res:country/Russia a kg:Country ;
-rdfs:label "Nga" .
-
-res:country/Poland a kg:Country ;
-rdfs:label "Ba Lan" .
-
-res:country/Hungary a kg:Country ;
-rdfs:label "Hungary" .
-
-res:country/Croatia a kg:Country ;
-rdfs:label "Croatia" .
-
-res:country/South_Korea a kg:Country ;
-rdfs:label "Hàn Quốc" .
-
-res:country/Japan a kg:Country ;
-rdfs:label "Nhật Bản" .
-
-res:country/China a kg:Country ;
-rdfs:label "Trung Quốc" .
-
-res:country/India a kg:Country ;
-rdfs:label "Ấn Độ" .
-
-res:country/Brazil a kg:Country ;
-rdfs:label "Brazil" .
-
-res:country/Argentina a kg:Country ;
-rdfs:label "Argentina" .
-
-res:country/Colombia a kg:Country ;
-rdfs:label "Columbia" .
-
-res:country/Ecuador a kg:Country ;
-rdfs:label "Ecuador" .
-
-res:country/Peru a kg:Country ;
-rdfs:label "Peru" .
-
-res:country/Uruguay a kg:Country ;
-rdfs:label "Uruguay" .
-
-res:country/Paraguay a kg:Country ;
-rdfs:label "Paraguay" .
-
-res:country/Bolivia a kg:Country ;
-rdfs:label "Bolivia" .
-
-res:country/Chile a kg:Country ;
-rdfs:label "Chile" .
-
-res:country/Canada a kg:Country ;
-rdfs:label "Canada" .
-
-res:country/Mexico a kg:Country ;
-rdfs:label "Mexico" .
-
-res:country/USA a kg:Country ;
-rdfs:label "Mỹ" .
-
-res:country/Greece a kg:Country ;
-rdfs:label "Hy Lạp" .
-
-res:country/Turkey a kg:Country ;
-rdfs:label "Thổ Nhĩ Kỳ" .
-
-res:country/Italy a kg:Country ;
-rdfs:label "Ý" .
-
-res:country/Spain a kg:Country ;
-rdfs:label "Tây Ban Nha" .
-
-res:country/France a kg:Country ;
-rdfs:label "Pháp" .
-
-res:country/Germany a kg:Country ;
-rdfs:label "Đức" .
-
-res:country/Portugal a kg:Country ;
-rdfs:label "Bồ Đào Nha" .
-
-res:country/Netherlands a kg:Country ;
-rdfs:label "Hà Lan" .
-
-res:country/Belgium a kg:Country ;
-rdfs:label "Bỉ" .
-
-res:country/England a kg:Country ;
-rdfs:label "Anh" .
-
-res:country/Wales a kg:Country ;
-rdfs:label "Xuwê" .
-
-res:country/Scotland a kg:Country ;
-rdfs:label "Scotland" .
-
-res:country/North_Ireland a kg:Country ;
-rdfs:label "Bắc Ai-len" .
-
-res:country/Russia a kg:Country ;
-rdfs:label "Nga" .
-
-res:country/Poland a kg:Country ;
-rdfs:label "Ba Lan" .
-
-res:country/Hungary a kg:Country ;
-rdfs:label "Hungary" .
-
-res:country/Croatia a kg:Country ;
-rdfs:label "Croatia" .
-
-res:country/South_Korea a kg:Country ;
-rdfs:label "Hàn Quốc" .
-
-res:country/Japan a kg:Country ;
-rdfs:label "Nhật Bản" .
-
-res:country/China a kg:Country ;
-rdfs:label "Trung Quốc" .
-
-res:country/India a kg:Country ;
-rdfs:label "Ấn Độ" .
-
-res:country/Brazil a kg:Country ;
-rdfs:label "Brazil" .
-
-res:country/Argentina a kg:Country ;
-rdfs:label "Argentina" .
-
-res:country/Colombia a kg:Country ;
-rdfs:label "Columbia" .
-
-res:country/Ecuador a kg:Country ;
-rdfs:label "Ecuador" .
-
-res:country/Peru a kg:Country ;
-rdfs:label "Peru" .
-
-res:country/Uruguay a kg:Country ;
-rdfs:label "Uruguay" .
-
-res:country/Paraguay a kg:Country ;
-rdfs:label "Paraguay" .
-
-res:country/Bolivia a kg:Country ;
-rdfs:label "Bolivia" .
-
-res:country/Chile a kg:Country ;
-rdfs:label "Chile" .
-
-res:country/Canada a kg:Country ;
-rdfs:label "Canada" .
-
-res:country/Mexico a kg:Country ;
-rdfs:label "Mexico" .
-
-res:country/USA a kg:Country ;
-rdfs:label "Mỹ" .
-
-res:country/Greece a kg:Country ;
-rdfs:label "Hy Lạp" .
-
-res:country/Turkey a kg:Country ;
-rdfs:label "Thổ Nhĩ Kỳ" .
+res:team/Andorra a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Andorra"
+; kg:hasCoach res:coach/Koldo_Alvarez
+; kg:hasCaptain res:player/Marcio_Vieira
+; kg:homeStadium res:stadium/San_van_dong_Quoc_gia_Andorra .
+res:coach/Koldo_Alvarez a kg:Coach
+; kg:manages res:team/Andorra .
+res:player/Marcio_Vieira a kg:Player
+; kg:playsFor res:team/Andorra
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:stadium/San_van_dong_Quoc_gia_Andorra a kg:Stadium
+; kg:isHomeOf res:team/Andorra .
+res:country/Andorra a kg:Country
+; rdfs:label "Andorra" .
+res:country/Spain a kg:Country
+; rdfs:label "Tây Ban Nha" .
+res:country/Porugal a kg:Country
+; rdfs:label "Bồ Đào Nha" .
+res:country/Bosnia_and_Herzegovina a kg:Country
+; rdfs:label "Bosnia và Herzegovina" .
+res:country/Malta a kg:Country
+; rdfs:label "Malta" .
+res:country/Latvia a kg:Country
+; rdfs:label "Latvia" .
+res:country/Germany a kg:Country
+; rdfs:label "Đức" .
+res:country/Croatia a kg:Country
+; rdfs:label "Croatia" .
+res:country/Portugal a kg:Country
+; rdfs:label "Bồ Đào Nha" .
+res:country/Slovenia a kg:Country
+; rdfs:label "Slovenia" .
+res:country/San_Marino a kg:Country
+; rdfs:label "San Marino" .
+res:country/Slovakia a kg:Country
+; rdfs:label "Slovakia" .
+res:country/Macedonia a kg:Country
+; rdfs:label "Macedonia" .
+res:country/Czech_Republic a kg:Country
+; rdfs:label "Cộng hòa Séc" .
+res:country/Switzerland a kg:Country
+; rdfs:label "Thụy Sĩ" .
+res:country/France a kg:Country
+; rdfs:label "Pháp" .
+res:country/Netherlands a kg:Country
+; rdfs:label "Hà Lan" .
+res:country/Italy a kg:Country
+; rdfs:label "Ý" .
+res:country/Ukraine a kg:Country
+; rdfs:label "Ukraine" .
+res:country/Austria a kg:Country
+; rdfs:label "Áo" .
+res:country/Gibraltar a kg:Country
+; rdfs:label "Gibraltar" .
+res:country/Lithuania a kg:Country
+; rdfs:label "Lithuania" .
+res:country/Albania a kg:Country
+; rdfs:label "Albania" .
+res:country/Serbia a kg:Country
+; rdfs:label "Serbia" .
+res:country/Georgia a kg:Country
+; rdfs:label "Georgie" .
+res:country/Moldova a kg:Country
+; rdfs:label "Moldova" .
+res:country/Israel a kg:Country
+; rdfs:label "Israel" .
+res:country/Luxembourg a kg:Country
+; rdfs:label "Luxembourg" .
+res:country/Cyprus a kg:Country
+; rdfs:label "Chypre" .
+res:country/Malta a kg:Country
+; rdfs:label "Malta" .
+res:country/Finland a kg:Country
+; rdfs:label "Phần Lan" .
+res:country/Sweden a kg:Country
+; rdfs:label "Thụy Điển" .
+res:country/Denmark a kg:Country
+; rdfs:label "Đan Mạch" .
+res:country/Norway a kg:Country
+; rdfs:label "Na Uy" .
+res:country/Iceland a kg:Country
+; rdfs:label "Iceland" .
+res:country/Belgium a kg:Country
+; rdfs:label "Bỉ" .
+res:country/England a kg:Country
+; rdfs:label "Anh" .
+res:country/Wales a kg:Country
+; rdfs:label "Xuwê" .
+res:country/Scotland a kg:Country
+; rdfs:label "Scotland" .
+res:country/North_Ireland a kg:Country
+; rdfs:label "Bắc Ai-len" .
+res:country/Russia a kg:Country
+; rdfs:label "Nga" .
+res:country/Poland a kg:Country
+; rdfs:label "Ba Lan" .
+res:country/Hungary a kg:Country
+; rdfs:label "Hungary" .
+res:country/Croatia a kg:Country
+; rdfs:label "Croatia" .
+res:country/South_Korea a kg:Country
+; rdfs:label "Hàn Quốc" .
+res:country/Japan a kg:Country
+; rdfs:label "Nhật Bản" .
+res:country/China a kg:Country
+; rdfs:label "Trung Quốc" .
+res:country/India a kg:Country
+; rdfs:label "Ấn Độ" .
+res:country/Brazil a kg:Country
+; rdfs:label "Brazil" .
+res:country/Argentina a kg:Country
+; rdfs:label "Argentina" .
+res:country/Colombia a kg:Country
+; rdfs:label "Columbia" .
+res:country/Ecuador a kg:Country
+; rdfs:label "Ecuador" .
+res:country/Peru a kg:Country
+; rdfs:label "Peru" .
+res:country/Uruguay a kg:Country
+; rdfs:label "Uruguay" .
+res:country/Paraguay a kg:Country
+; rdfs:label "Paraguay" .
+res:country/Bolivia a kg:Country
+; rdfs:label "Bolivia" .
+res:country/Chile a kg:Country
+; rdfs:label "Chile" .
+res:country/Canada a kg:Country
+; rdfs:label "Canada" .
+res:country/Mexico a kg:Country
+; rdfs:label "Mexico" .
+res:country/USA a kg:Country
+; rdfs:label "Mỹ" .
+res:country/Greece a kg:Country
+; rdfs:label "Hy Lạp" .
+res:country/Turkey a kg:Country
+; rdfs:label "Thổ Nhĩ Kỳ" .
+res:country/Italy a kg:Country
+; rdfs:label "Ý" .
+res:country/Spain a kg:Country
+; rdfs:label "Tây Ban Nha" .
+res:country/France a kg:Country
+; rdfs:label "Pháp" .
+res:country/Germany a kg:Country
+; rdfs:label "Đức" .
+res:country/Portugal a kg:Country
+; rdfs:label "Bồ Đào Nha" .
+res:country/Netherlands a kg:Country
+; rdfs:label "Hà Lan" .
+res:country/Belgium a kg:Country
+; rdfs:label "Bỉ" .
+res:country/England a kg:Country
+; rdfs:label "Anh" .
+res:country/Wales a kg:Country
+; rdfs:label "Xuwê" .
+res:country/Scotland a kg:Country
+; rdfs:label "Scotland" .
+res:country/North_Ireland a kg:Country
+; rdfs:label "Bắc Ai-len" .
+res:country/Russia a kg:Country
+; rdfs:label "Nga" .
+res:country/Poland a kg:Country
+; rdfs:label "Ba Lan" .
+res:country/Hungary a kg:Country
+; rdfs:label "Hungary" .
+res:country/Croatia a kg:Country
+; rdfs:label "Croatia" .
+res:country/South_Korea a kg:Country
+; rdfs:label "Hàn Quốc" .
+res:country/Japan a kg:Country
+; rdfs:label "Nhật Bản" .
+res:country/China a kg:Country
+; rdfs:label "Trung Quốc" .
+res:country/India a kg:Country
+; rdfs:label "Ấn Độ" .
+res:country/Brazil a kg:Country
+; rdfs:label "Brazil" .
+res:country/Argentina a kg:Country
+; rdfs:label "Argentina" .
+res:country/Colombia a kg:Country
+; rdfs:label "Columbia" .
+res:country/Ecuador a kg:Country
+; rdfs:label "Ecuador" .
+res:country/Peru a kg:Country
+; rdfs:label "Peru" .
+res:country/Uruguay a kg:Country
+; rdfs:label "Uruguay" .
+res:country/Paraguay a kg:Country
+; rdfs:label "Paraguay" .
+res:country/Bolivia a kg:Country
+; rdfs:label "Bolivia" .
+res:country/Chile a kg:Country
+; rdfs:label "Chile" .
+res:country/Canada a kg:Country
+; rdfs:label "Canada" .
+res:country/Mexico a kg:Country
+; rdfs:label "Mexico" .
+res:country/USA a kg:Country
+; rdfs:label "Mỹ" .
+res:country/Greece a kg:Country
+; rdfs:label "Hy Lạp" .
+res:country/Turkey a kg:Country
+; rdfs:label "Thổ Nhĩ Kỳ" .

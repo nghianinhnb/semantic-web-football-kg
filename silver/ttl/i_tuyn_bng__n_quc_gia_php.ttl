@@ -1,113 +1,90 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/FranceNationalWomenFootballTeam a kg:Team ;
-kg:teamName "Pháp" ;
-kg:teamAbbreviation "FRA" ;
-kg:hasCoach res:coach/HerveRenard ;
-kg:manages res:coach/HerveRenard ;
-kg:locatedIn res:country/France ;
-kg:participatesIn res:competition/FIFAWorldCupWomen ;
-kg:participatesIn res:competition/EuropeanWomenChampionship ;
-kg:participatesIn res:competition/OlympicGamesSummer .
-
-res:coach/HerveRenard a kg:Coach ;
-kg:manages res:team/FranceNationalWomenFootballTeam .
-
-res:country/France a kg:Country ;
-rdfs:label "Pháp" .
-
-res:competition/FIFAWorldCupWomen a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
-
-res:competition/EuropeanWomenChampionship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Âu" .
-
-res:competition/OlympicGamesSummer a kg:Competition ;
-kg:competitionName "Thế vận hội Mùa hè" .
-
-res:player/SandrineSoubeyrand a kg:Player ;
-kg:playsFor res:team/FranceNationalWomenFootballTeam ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1977-06-21"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 16 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/EugenieLeSommer a kg:Player ;
-kg:playsFor res:team/FranceNationalWomenFootballTeam ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1989-05-18"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 9 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/WendieRenard a kg:Player ;
-kg:playsFor res:team/FranceNationalWomenFootballTeam ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1990-07-20"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 3 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/AmandineHenry a kg:Player ;
-kg:playsFor res:team/FranceNationalWomenFootballTeam ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1989-09-28"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 6 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/GraceGeyoro a kg:Player ;
-kg:playsFor res:team/FranceNationalWomenFootballTeam ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1997-07-02"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 8 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/MarieAntoinetteKatoto a kg:Player ;
-kg:playsFor res:team/FranceNationalWomenFootballTeam ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1998-11-01"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 12 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/KadidiatouDiani a kg:Player ;
-kg:playsFor res:team/FranceNationalWomenFootballTeam ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1995-04-01"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 11 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/SandyBaltimore a kg:Player ;
-kg:playsFor res:team/FranceNationalWomenFootballTeam ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "2000-02-19"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 17 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/VickiBecho a kg:Player ;
-kg:playsFor res:team/FranceNationalWomenFootballTeam ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "2003-10-03"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 20 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:position/Goalkeeper a kg:Position ;
-rdfs:subClassOf kg:Position .
-
-res:position/Defender a kg:Position ;
-rdfs:subClassOf kg:Position .
-
-res:position/Midfielder a kg:Position ;
-rdfs:subClassOf kg:Position .
-
-res:position/Forward a kg:Position ;
-rdfs:subClassOf kg:Position .
+res:team/FranceNationalWomenFootballTeam a kg:Team
+; kg:teamName "Pháp"
+; kg:teamAbbreviation "FRA"
+; kg:hasCoach res:coach/HerveRenard
+; kg:manages res:coach/HerveRenard
+; kg:locatedIn res:country/France
+; kg:participatesIn res:competition/FIFAWorldCupWomen
+; kg:participatesIn res:competition/EuropeanWomenChampionship
+; kg:participatesIn res:competition/OlympicGamesSummer .
+res:coach/HerveRenard a kg:Coach
+; kg:manages res:team/FranceNationalWomenFootballTeam .
+res:country/France a kg:Country
+; rdfs:label "Pháp" .
+res:competition/FIFAWorldCupWomen a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
+res:competition/EuropeanWomenChampionship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Âu" .
+res:competition/OlympicGamesSummer a kg:Competition
+; kg:competitionName "Thế vận hội Mùa hè" .
+res:player/SandrineSoubeyrand a kg:Player
+; kg:playsFor res:team/FranceNationalWomenFootballTeam
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1977-06-21"^^xsd:date
+; kg:nationality res:country/France
+; kg:shirtNumber 16
+; kg:preferredFoot kg:LeftFooted .
+res:player/EugenieLeSommer a kg:Player
+; kg:playsFor res:team/FranceNationalWomenFootballTeam
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1989-05-18"^^xsd:date
+; kg:nationality res:country/France
+; kg:shirtNumber 9
+; kg:preferredFoot kg:LeftFooted .
+res:player/WendieRenard a kg:Player
+; kg:playsFor res:team/FranceNationalWomenFootballTeam
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1990-07-20"^^xsd:date
+; kg:nationality res:country/France
+; kg:shirtNumber 3
+; kg:preferredFoot kg:LeftFooted .
+res:player/AmandineHenry a kg:Player
+; kg:playsFor res:team/FranceNationalWomenFootballTeam
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1989-09-28"^^xsd:date
+; kg:nationality res:country/France
+; kg:shirtNumber 6
+; kg:preferredFoot kg:LeftFooted .
+res:player/GraceGeyoro a kg:Player
+; kg:playsFor res:team/FranceNationalWomenFootballTeam
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1997-07-02"^^xsd:date
+; kg:nationality res:country/France
+; kg:shirtNumber 8
+; kg:preferredFoot kg:LeftFooted .
+res:player/MarieAntoinetteKatoto a kg:Player
+; kg:playsFor res:team/FranceNationalWomenFootballTeam
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1998-11-01"^^xsd:date
+; kg:nationality res:country/France
+; kg:shirtNumber 12
+; kg:preferredFoot kg:RightFooted .
+res:player/KadidiatouDiani a kg:Player
+; kg:playsFor res:team/FranceNationalWomenFootballTeam
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1995-04-01"^^xsd:date
+; kg:nationality res:country/France
+; kg:shirtNumber 11
+; kg:preferredFoot kg:RightFooted .
+res:player/SandyBaltimore a kg:Player
+; kg:playsFor res:team/FranceNationalWomenFootballTeam
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "2000-02-19"^^xsd:date
+; kg:nationality res:country/France
+; kg:shirtNumber 17
+; kg:preferredFoot kg:LeftFooted .
+res:player/VickiBecho a kg:Player
+; kg:playsFor res:team/FranceNationalWomenFootballTeam
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "2003-10-03"^^xsd:date
+; kg:nationality res:country/France
+; kg:shirtNumber 20
+; kg:preferredFoot kg:LeftFooted .
+res:position/Goalkeeper a kg:Position
+; rdfs:subClassOf kg:Position .
+res:position/Defender a kg:Position
+; rdfs:subClassOf kg:Position .
+res:position/Midfielder a kg:Position
+; rdfs:subClassOf kg:Position .
+res:position/Forward a kg:Position
+; rdfs:subClassOf kg:Position .

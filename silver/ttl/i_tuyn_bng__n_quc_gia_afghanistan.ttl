@@ -1,80 +1,53 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/AfghanistanWomenNationalFootballTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá nữ quốc gia Afghanistan" ;
-kg:hasCoach res:coach/KellyLindsey ;
-kg:manages res:coach/KellyLindsey ;
-kg:homeStadium res:stadium/GhaziStadium ;
-kg:locatedIn res:country/Afghanistan .
-
-res:coach/KellyLindsey a kg:Coach ;
-kg:manages res:team/AfghanistanWomenNationalFootballTeam .
-
-res:stadium/GhaziStadium a kg:Stadium ;
-kg:isHomeOf res:team/AfghanistanWomenNationalFootballTeam .
-
+res:team/AfghanistanWomenNationalFootballTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá nữ quốc gia Afghanistan"
+; kg:hasCoach res:coach/KellyLindsey
+; kg:manages res:coach/KellyLindsey
+; kg:homeStadium res:stadium/GhaziStadium
+; kg:locatedIn res:country/Afghanistan .
+res:coach/KellyLindsey a kg:Coach
+; kg:manages res:team/AfghanistanWomenNationalFootballTeam .
+res:stadium/GhaziStadium a kg:Stadium
+; kg:isHomeOf res:team/AfghanistanWomenNationalFootballTeam .
 res:country/Afghanistan a kg:Country .
-
-res:team/AfghanistanWomenNationalFootballTeam kg:participatesIn res:season/AsianWomenFootballChampionship2010 ;
-kg:participatesIn res:season/AsianWomenFootballChampionship2012 ;
-kg:participatesIn res:season/AsianWomenFootballChampionship2014 ;
-kg:participatesIn res:season/AsianWomenFootballChampionship2016 .
-
-res:season/AsianWomenFootballChampionship2010 a kg:Season ;
-kg:seasonOf res:competition/AsianWomenFootballChampionship ;
-kg:participatesIn res:team/AfghanistanWomenNationalFootballTeam .
-
-res:season/AsianWomenFootballChampionship2012 a kg:Season ;
-kg:seasonOf res:competition/AsianWomenFootballChampionship ;
-kg:participatesIn res:team/AfghanistanWomenNationalFootballTeam .
-
-res:season/AsianWomenFootballChampionship2014 a kg:Season ;
-kg:seasonOf res:competition/AsianWomenFootballChampionship ;
-kg:participatesIn res:team/AfghanistanWomenNationalFootballTeam .
-
-res:season/AsianWomenFootballChampionship2016 a kg:Season ;
-kg:seasonOf res:competition/AsianWomenFootballChampionship ;
-kg:participatesIn res:team/AfghanistanWomenNationalFootballTeam .
-
-res:competition/AsianWomenFootballChampionship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ Nam Á" .
-
-res:team/AfghanistanWomenNationalFootballTeam kg:participatesIn res:season/AsianWomenFootballChampionship2010 ;
-kg:participatesIn res:season/AsianWomenFootballChampionship2012 ;
-kg:participatesIn res:season/AsianWomenFootballChampionship2014 ;
-kg:participatesIn res:season/AsianWomenFootballChampionship2016 .
-
-res:match/AfghanistanVsNepal2010 a kg:Match ;
-kg:homeTeam res:team/NepalWomenNationalFootballTeam ;
-kg:awayTeam res:team/AfghanistanWomenNationalFootballTeam ;
-kg:venue res:stadium/CoxsBazar ;
-kg:kickoffTime "2010-12-14"^^xsd:date ;
-kg:inCompetition res:competition/AsianWomenFootballChampionship2010 .
-
-res:match/AfghanistanVsQatar2012 a kg:Match ;
-kg:homeTeam res:team/QatarWomenNationalFootballTeam ;
-kg:awayTeam res:team/AfghanistanWomenNationalFootballTeam ;
-kg:venue res:stadium/Colombo ;
-kg:kickoffTime "2012-02-16"^^xsd:date ;
-kg:inCompetition res:competition/AsianWomenFootballChampionship2012 .
-
-res:match/AfghanistanVsNepal2010 a kg:Match ;
-kg:result "0–13"^^xsd:string .
-
-res:match/AfghanistanVsQatar2012 a kg:Match ;
-kg:result "2–0"^^xsd:string .
-
-res:team/AfghanistanWomenNationalFootballTeam kg:topScorer res:player/MarjanHaydaree ;
-kg:captain res:player/ShabnamMobarez .
-
-res:player/MarjanHaydaree a kg:Player ;
-kg:playsFor res:team/AfghanistanWomenNationalFootballTeam ;
-kg:goalsScored "5"^^xsd:positiveInteger .
-
-res:player/ShabnamMobarez a kg:Player ;
-kg:playsFor res:team/AfghanistanWomenNationalFootballTeam ;
-kg:captainOf res:team/AfghanistanWomenNationalFootballTeam .
+res:team/AfghanistanWomenNationalFootballTeam kg:participatesIn res:season/AsianWomenFootballChampionship2010
+; kg:participatesIn res:season/AsianWomenFootballChampionship2012
+; kg:participatesIn res:season/AsianWomenFootballChampionship2014
+; kg:participatesIn res:season/AsianWomenFootballChampionship2016 .
+res:season/AsianWomenFootballChampionship2010 a kg:Season
+; kg:seasonOf res:competition/AsianWomenFootballChampionship
+; kg:participatesIn res:team/AfghanistanWomenNationalFootballTeam .
+res:season/AsianWomenFootballChampionship2012 a kg:Season
+; kg:seasonOf res:competition/AsianWomenFootballChampionship
+; kg:participatesIn res:team/AfghanistanWomenNationalFootballTeam .
+res:season/AsianWomenFootballChampionship2014 a kg:Season
+; kg:seasonOf res:competition/AsianWomenFootballChampionship
+; kg:participatesIn res:team/AfghanistanWomenNationalFootballTeam .
+res:season/AsianWomenFootballChampionship2016 a kg:Season
+; kg:seasonOf res:competition/AsianWomenFootballChampionship
+; kg:participatesIn res:team/AfghanistanWomenNationalFootballTeam .
+res:competition/AsianWomenFootballChampionship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ Nam Á" .
+res:team/AfghanistanWomenNationalFootballTeam kg:participatesIn res:season/AsianWomenFootballChampionship2010
+; kg:participatesIn res:season/AsianWomenFootballChampionship2012
+; kg:participatesIn res:season/AsianWomenFootballChampionship2014
+; kg:participatesIn res:season/AsianWomenFootballChampionship2016 .
+res:match/AfghanistanVsNepal2010 a kg:Match
+; kg:homeTeam res:team/NepalWomenNationalFootballTeam
+; kg:awayTeam res:team/AfghanistanWomenNationalFootballTeam
+; kg:venue res:stadium/CoxsBazar
+; kg:kickoffTime "2010-12-14"^^xsd:date
+; kg:inCompetition res:competition/AsianWomenFootballChampionship2010 .
+res:match/AfghanistanVsQatar2012 a kg:Match
+; kg:homeTeam res:team/QatarWomenNationalFootballTeam
+; kg:awayTeam res:team/AfghanistanWomenNationalFootballTeam
+; kg:venue res:stadium/Colombo
+; kg:kickoffTime "2012-02-16"^^xsd:date
+; kg:inCompetition res:competition/AsianWomenFootballChampionship2012 .
+res:match/AfghanistanVsNepal2010 a kg:Match
+; kg:result "0–13"^^xsd:string .
+res:match/AfghanistanVsQatar2012 a kg:Match
+; kg:result "2–0"^^xsd:string .
+res:player/MarjanHaydaree a kg:Player
+; kg:playsFor res:team/AfghanistanWomenNationalFootballTeam .
+res:player/ShabnamMobarez a kg:Player
+; kg:playsFor res:team/AfghanistanWomenNationalFootballTeam .

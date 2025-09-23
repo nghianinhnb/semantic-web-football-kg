@@ -1,6 +1,2 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-
-res:team/Đội_tuyển_Úc a kg:Team ;
-kg:teamName "Đội tuyển Úc"^^xsd:string .
+res:team/Đội_tuyển_Úc a kg:Team
+; kg:teamName "Đội tuyển Úc"^^xsd:string .

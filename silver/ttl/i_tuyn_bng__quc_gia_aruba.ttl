@@ -1,65 +1,17 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Aruba a kg:Team ;
-kg:teamName "Aruba" ;
-kg:hasCoach res:coach/Marvic_Bermudez ;
-kg:hasCaptain res:player/Raymond_Baten ;
-kg:homeStadium res:stadium/San_Van_Dong_Trinidad ;
-kg:FIFATrigramme "ARU" ;
-kg:FIFARank "112" ;
-kg:FIFAMax "112" ;
-kg:FIFAMaxDate "11.2015"^^xsd:date ;
-kg:FIFAMin "202" ;
-kg:FIFAMinDate "2008-04-02"^^xsd:date ;
-kg:ELORank "50" ;
-kg:ELOMax "50" ;
-kg:ELOMaxDate "1924-01-01"^^xsd:date ;
-kg:ELOMin "203" ;
-kg:ELOMinDate "2020-04-01"^^xsd:date ;
-kg:firstGame "1924-04-06"^^xsd:date ;
-kg:largestWin "2014-06-01"^^xsd:date ;
-kg:largestLoss "1989-06-04"^^xsd:date .
-
-res:coach/Marvic_Bermudez a kg:Coach ;
-kg:manages res:team/Aruba .
-
-res:player/Raymond_Baten a kg:Player ;
-kg:isCaptain res:team/Aruba .
-
+res:team/Aruba a kg:Team
+; kg:teamName "Aruba"
+; kg:hasCoach res:coach/Marvic_Bermudez
+; kg:hasCaptain res:player/Raymond_Baten
+; kg:homeStadium res:stadium/San_Van_Dong_Trinidad .
+res:coach/Marvic_Bermudez a kg:Coach
+; kg:manages res:team/Aruba .
+res:player/Raymond_Baten a kg:Player
+; kg:isCaptain res:team/Aruba .
 res:stadium/San_Van_Dong_Trinidad a kg:Stadium .
-
-res:team/Aruba kg:association res:organization/Lien_Bo_Dao_Bong_Da_Aruba .
-
 res:organization/Lien_Bo_Dao_Bong_Da_Aruba a kg:Organization .
-
-res:team/Aruba kg:confederation res:organization/CONCACAF .
-
 res:organization/CONCACAF a kg:Organization .
-
-res:team/Aruba kg:mostCaps res:player/Theric_Ruiz .
-
 res:player/Theric_Ruiz a kg:Player .
-
-res:team/Aruba kg:topScorer res:player/Ronald_Gomez .
-
 res:player/Ronald_Gomez a kg:Player .
-
 res:team/Aruba kg:homeStadium res:stadium/San_Van_Dong_Trinidad .
-
 res:stadium/San_Van_Dong_Trinidad kg:isHomeOf res:team/Aruba .
-
-res:team/Aruba kg:memberOf res:organization/FIFA .
-
 res:organization/FIFA a kg:Organization .
-
-res:team/Aruba kg:established "1932"^^xsd:gYear .
-
-res:team/Aruba kg:memberSinceFIFA "1988"^^xsd:gYear .
-
-res:team/Aruba kg:neverQualifiedForWorldCup true .
-
-res:team/Aruba kg:neverQualifiedForGoldCup true .

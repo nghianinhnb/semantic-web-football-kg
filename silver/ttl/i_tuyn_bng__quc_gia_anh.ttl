@@ -1,279 +1,191 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/England a kg:Team ;
-kg:teamName "England" ;
-kg:teamAbbreviation "ENG" ;
-kg:hasCoach res:coach/Thomas_Tuchel ;
-kg:hasCaptain res:player/Harry_Kane ;
-kg:homeStadium res:stadium/Wembley_ Stadium ;
-kg:isCaptain res:player/Harry_Kane ;
-kg:playsFor res:player/Peter_Shilton ;
-kg:playsFor res:player/Harry_Kane .
-
-res:player/Peter_Shilton a kg:Player ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1949-10-18"^^xsd:date ;
-kg:birthPlace res:city/London ;
-kg:nationality res:country/England ;
-kg:height "1.88"^^xsd:decimal ;
-kg:weight "83"^^xsd:decimal ;
-kg:shirtNumber 1 ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/Harry_Kane a kg:Player ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1993-07-28"^^xsd:date ;
-kg:birthPlace res:city/London ;
-kg:nationality res:country/England ;
-kg:height "1.88"^^xsd:decimal ;
-kg:weight "83"^^xsd:decimal ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:RightFooted .
-
-res:stadium/Wembley_ Stadium a kg:Stadium ;
-kg:capacity "90,000"^^xsd:positiveInteger ;
-kg:homeStadium res:team/England .
-
-res:coach/Thomas_Tuchel a kg:Coach ;
-kg:manages res:team/England .
-
-res:country/England a kg:Country ;
-kg:locatedIn res:city/London .
-
-res:city/London a kg:City ;
-kg:locatedIn res:country/England .
-
-res:competition/FIFA_World_Cup a kg:Competition ;
-kg:competitionName "FIFA World Cup" .
-
-res:season/1966 a kg:Season ;
-kg:hasSeason res:competition/FIFA_World_Cup .
-
-res:match/England_versus_Scotland_1872 a kg:Match ;
-kg:homeTeam res:team/England ;
-kg:awayTeam res:team/Scotland ;
-kg:venue res:stadium/Wembley_ Stadium ;
-kg:kickoffTime "1872-11-30T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/FIFA_World_Cup ;
-kg:inSeason res:season/1966 ;
-kg:referee res:referee/Daniele_Orsato .
-
+res:team/England a kg:Team
+; kg:teamName "England"
+; kg:teamAbbreviation "ENG"
+; kg:hasCoach res:coach/Thomas_Tuchel
+; kg:hasCaptain res:player/Harry_Kane
+; kg:homeStadium res:stadium/Wembley_ Stadium
+; kg:isCaptain res:player/Harry_Kane
+; kg:playsFor res:player/Peter_Shilton
+; kg:playsFor res:player/Harry_Kane .
+res:player/Peter_Shilton a kg:Player
+; kg:playsFor res:team/England
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Harry_Kane a kg:Player
+; kg:playsFor res:team/England
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:stadium/Wembley_ Stadium a kg:Stadium
+; kg:capacity "90,000"^^xsd:positiveInteger
+; kg:homeStadium res:team/England .
+res:coach/Thomas_Tuchel a kg:Coach
+; kg:manages res:team/England .
+res:country/England a kg:Country
+; kg:locatedIn res:city/London .
+res:city/London a kg:City
+; kg:locatedIn res:country/England .
+res:competition/FIFA_World_Cup a kg:Competition
+; kg:competitionName "FIFA World Cup" .
+res:season/1966 a kg:Season
+; kg:hasSeason res:competition/FIFA_World_Cup .
+res:match/England_versus_Scotland_1872 a kg:Match
+; kg:homeTeam res:team/England
+; kg:awayTeam res:team/Scotland
+; kg:venue res:stadium/Wembley_ Stadium
+; kg:kickoffTime "1872-11-30T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/FIFA_World_Cup
+; kg:inSeason res:season/1966
+; kg:referee res:referee/Daniele_Orsato .
 res:referee/Daniele_Orsato a kg:Referee .
-
-res:competition/Euro a kg:Competition ;
-kg:competitionName "UEFA European Championship" .
-
-res:season/2020 a kg:Season ;
-kg:hasSeason res:competition/Euro .
-
-res:match/England_versus_Ireland_2024 a kg:Match ;
-kg:homeTeam res:team/England ;
-kg:awayTeam res:team/Ireland ;
-kg:venue res:stadium/Wembley_ Stadium ;
-kg:kickoffTime "2024-09-07T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro ;
-kg:inSeason res:season/2020 ;
-kg:referee res:referee/Stéphanie_Frappart .
-
+res:competition/Euro a kg:Competition
+; kg:competitionName "UEFA European Championship" .
+res:season/2020 a kg:Season
+; kg:hasSeason res:competition/Euro .
+res:match/England_versus_Ireland_2024 a kg:Match
+; kg:homeTeam res:team/England
+; kg:awayTeam res:team/Ireland
+; kg:venue res:stadium/Wembley_ Stadium
+; kg:kickoffTime "2024-09-07T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Euro
+; kg:inSeason res:season/2020
+; kg:referee res:referee/Stéphanie_Frappart .
 res:referee/Stéphanie_Frappart a kg:Referee .
-
-res:club/Arsenal_FC a kg:Club ;
-kg:foundedDate "1886-12-29"^^xsd:date ;
-kg:homeStadium res:stadium/Emirates_Stadium .
-
-res:stadium/Emirates_Stadium a kg:Stadium ;
-kg:capacity "60,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Arsenal_FC .
-
-res:player/Jude_Bellingham a kg:Player ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "2003-06-29"^^xsd:date ;
-kg:birthPlace res:city/Birmingham ;
-kg:nationality res:country/England ;
-kg:height "1.89"^^xsd:decimal ;
-kg:weight "75"^^xsd:decimal ;
-kg:shirtNumber 10 ;
-kg:preferredFoot kg:RightFooted .
-
-res:club/Real_Madrid_CF a kg:Club ;
-kg:foundedDate "1902-03-06"^^xsd:date ;
-kg:homeStadium res:stadium/Santiago_Bernabeu .
-
-res:stadium/Santiago_Bernabeu a kg:Stadium ;
-kg:capacity "81,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Real_Madrid_CF .
-
-res:club/Manchester_City_FC a kg:Club ;
-kg:foundedDate "1880-11-04"^^xsd:date ;
-kg:homeStadium res:stadium/Etihad_Stadium .
-
-res:stadium/Etihad_Stadium a kg:Stadium ;
-kg:capacity "55,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Manchester_City_FC .
-
-res:club/Chelsea_FC a kg:Club ;
-kg:foundedDate "1905-10-10"^^xsd:date ;
-kg:homeStadium res:stadium/Stamford_Bridge .
-
-res:stadium/Stamford_Bridge a kg:Stadium ;
-kg:capacity "40,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Chelsea_FC .
-
-res:club/Liverpool_FC a kg:Club ;
-kg:foundedDate "1892-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Anfield .
-
-res:stadium/Anfield a kg:Stadium ;
-kg:capacity "54,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Liverpool_FC .
-
-res:club/Manchester_United_FC a kg:Club ;
-kg:foundedDate "1878-11-22"^^xsd:date ;
-kg:homeStadium res:stadium/Old Trafford .
-
-res:stadium/Old Trafford a kg:Stadium ;
-kg:capacity "76,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Manchester_United_FC .
-
-res:club/Newcastle_United_FC a kg:Club ;
-kg:foundedDate "1892-10-12"^^xsd:date ;
-kg:homeStadium res:stadium/Saint_James_Park .
-
-res:stadium/Saint_James_Park a kg:Stadium ;
-kg:capacity "54,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Newcastle_United_FC .
-
-res:club/Aston_Villa_FC a kg:Club ;
-kg:foundedDate "1874-08-08"^^xsd:date ;
-kg:homeStadium res:stadium/Villa_Park .
-
-res:stadium/Villa_Park a kg:Stadium ;
-kg:capacity "42,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Aston_Villa_FC .
-
-res:club/Leeds_United_FC a kg:Club ;
-kg:foundedDate "1904-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Elm_Park .
-
-res:stadium/Elm_Park a kg:Stadium ;
-kg:capacity "25,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Leeds_United_FC .
-
-res:club/Blackburn_Rovers_FC a kg:Club ;
-kg:foundedDate "1875-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Ewood_Park .
-
-res:stadium/Ewood_Park a kg:Stadium ;
-kg:capacity "26,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Blackburn_Rovers_FC .
-
-res:club/Burnley_FC a kg:Club ;
-kg:foundedDate "1878-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Turf_Moor .
-
-res:stadium/Turf_Moor a kg:Stadium ;
-kg:capacity "22,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Burnley_FC .
-
-res:club/Crystal_Palace_FC a kg:Club ;
-kg:foundedDate "1905-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Selhurst_Park .
-
-res:stadium/Selhurst_Park a kg:Stadium ;
-kg:capacity "26,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Crystal_Palace_FC .
-
-res:club/Arsenal_FC a kg:Club ;
-kg:foundedDate "1886-12-29"^^xsd:date ;
-kg:homeStadium res:stadium/Emirates_Stadium .
-
-res:stadium/Emirates_Stadium a kg:Stadium ;
-kg:capacity "60,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Arsenal_FC .
-
-res:club/Manchester_City_FC a kg:Club ;
-kg:foundedDate "1880-11-04"^^xsd:date ;
-kg:homeStadium res:stadium/ Etihad_Stadium .
-
-res:stadium/Etihad_Stadium a kg:Stadium ;
-kg:capacity "55,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Manchester_City_FC .
-
-res:club/Chelsea_FC a kg:Club ;
-kg:foundedDate "1905-10-10"^^xsd:date ;
-kg:homeStadium res:stadium/Stamford_Bridge .
-
-res:stadium/Stamford_Bridge a kg:Stadium ;
-kg:capacity "40,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Chelsea_FC .
-
-res:club/Liverpool_FC a kg:Club ;
-kg:foundedDate "1892-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Anfield .
-
-res:stadium/Anfield a kg:Stadium ;
-kg:capacity "54,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Liverpool_FC .
-
-res:club/Manchester_United_FC a kg:Club ;
-kg:foundedDate "1878-11-22"^^xsd:date ;
-kg:homeStadium res:stadium/Old Trafford .
-
-res:stadium/Old Trafford a kg:Stadium ;
-kg:capacity "76,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Manchester_United_FC .
-
-res:club/Newcastle_United_FC a kg:Club ;
-kg:foundedDate "1892-10-12"^^xsd:date ;
-kg:homeStadium res:stadium/Saint_James_Park .
-
-res:stadium/Saint_James_Park a kg:Stadium ;
-kg:capacity "54,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Newcastle_United_FC .
-
-res:club/Aston_Villa_FC a kg:Club ;
-kg:foundedDate "1874-08-08"^^xsd:date ;
-kg:homeStadium res:stadium/Villa_Park .
-
-res:stadium/Villa_Park a kg:Stadium ;
-kg:capacity "42,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Aston_Villa_FC .
-
-res:club/Leeds_United_FC a kg:Club ;
-kg:foundedDate "1904-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Elm_Park .
-
-res:stadium/Elm_Park a kg:Stadium ;
-kg:capacity "25,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Leeds_United_FC .
-
-res:club/Blackburn_Rovers_FC a kg:Club ;
-kg:foundedDate "1875-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Ewood_Park .
-
-res:stadium/Ewood_Park a kg:Stadium ;
-kg:capacity "26,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Blackburn_Rovers_FC .
-
-res:club/Burnley_FC a kg:Club ;
-kg:foundedDate "1878-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Turf_Moor .
-
-res:stadium/Turf_Moor a kg:Stadium ;
-kg:capacity "22,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Burnley_FC .
-
-res:club/Crystal_Palace_FC a kg:Club ;
-kg:foundedDate "1905-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Selhurst_Park .
-
-res:stadium/Selhurst_Park a kg:Stadium ;
-kg:capacity "26,000"^^xsd:positiveInteger ;
-kg:homeStadium res:club/Crystal_Palace_FC .
+res:club/Arsenal_FC a kg:Club
+; kg:foundedDate "1886-12-29"^^xsd:date
+; kg:homeStadium res:stadium/Emirates_Stadium .
+res:stadium/Emirates_Stadium a kg:Stadium
+; kg:capacity "60,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Arsenal_FC .
+res:player/Jude_Bellingham a kg:Player
+; kg:playsFor res:team/England
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:club/Real_Madrid_CF a kg:Club
+; kg:foundedDate "1902-03-06"^^xsd:date
+; kg:homeStadium res:stadium/Santiago_Bernabeu .
+res:stadium/Santiago_Bernabeu a kg:Stadium
+; kg:capacity "81,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Real_Madrid_CF .
+res:club/Manchester_City_FC a kg:Club
+; kg:foundedDate "1880-11-04"^^xsd:date
+; kg:homeStadium res:stadium/Etihad_Stadium .
+res:stadium/Etihad_Stadium a kg:Stadium
+; kg:capacity "55,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Manchester_City_FC .
+res:club/Chelsea_FC a kg:Club
+; kg:foundedDate "1905-10-10"^^xsd:date
+; kg:homeStadium res:stadium/Stamford_Bridge .
+res:stadium/Stamford_Bridge a kg:Stadium
+; kg:capacity "40,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Chelsea_FC .
+res:club/Liverpool_FC a kg:Club
+; kg:foundedDate "1892-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Anfield .
+res:stadium/Anfield a kg:Stadium
+; kg:capacity "54,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Liverpool_FC .
+res:club/Manchester_United_FC a kg:Club
+; kg:foundedDate "1878-11-22"^^xsd:date
+; kg:homeStadium res:stadium/Old Trafford .
+res:stadium/Old Trafford a kg:Stadium
+; kg:capacity "76,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Manchester_United_FC .
+res:club/Newcastle_United_FC a kg:Club
+; kg:foundedDate "1892-10-12"^^xsd:date
+; kg:homeStadium res:stadium/Saint_James_Park .
+res:stadium/Saint_James_Park a kg:Stadium
+; kg:capacity "54,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Newcastle_United_FC .
+res:club/Aston_Villa_FC a kg:Club
+; kg:foundedDate "1874-08-08"^^xsd:date
+; kg:homeStadium res:stadium/Villa_Park .
+res:stadium/Villa_Park a kg:Stadium
+; kg:capacity "42,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Aston_Villa_FC .
+res:club/Leeds_United_FC a kg:Club
+; kg:foundedDate "1904-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Elm_Park .
+res:stadium/Elm_Park a kg:Stadium
+; kg:capacity "25,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Leeds_United_FC .
+res:club/Blackburn_Rovers_FC a kg:Club
+; kg:foundedDate "1875-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Ewood_Park .
+res:stadium/Ewood_Park a kg:Stadium
+; kg:capacity "26,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Blackburn_Rovers_FC .
+res:club/Burnley_FC a kg:Club
+; kg:foundedDate "1878-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Turf_Moor .
+res:stadium/Turf_Moor a kg:Stadium
+; kg:capacity "22,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Burnley_FC .
+res:club/Crystal_Palace_FC a kg:Club
+; kg:foundedDate "1905-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Selhurst_Park .
+res:stadium/Selhurst_Park a kg:Stadium
+; kg:capacity "26,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Crystal_Palace_FC .
+res:club/Arsenal_FC a kg:Club
+; kg:foundedDate "1886-12-29"^^xsd:date
+; kg:homeStadium res:stadium/Emirates_Stadium .
+res:stadium/Emirates_Stadium a kg:Stadium
+; kg:capacity "60,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Arsenal_FC .
+res:club/Manchester_City_FC a kg:Club
+; kg:foundedDate "1880-11-04"^^xsd:date
+; kg:homeStadium res:stadium/ Etihad_Stadium .
+res:stadium/Etihad_Stadium a kg:Stadium
+; kg:capacity "55,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Manchester_City_FC .
+res:club/Chelsea_FC a kg:Club
+; kg:foundedDate "1905-10-10"^^xsd:date
+; kg:homeStadium res:stadium/Stamford_Bridge .
+res:stadium/Stamford_Bridge a kg:Stadium
+; kg:capacity "40,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Chelsea_FC .
+res:club/Liverpool_FC a kg:Club
+; kg:foundedDate "1892-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Anfield .
+res:stadium/Anfield a kg:Stadium
+; kg:capacity "54,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Liverpool_FC .
+res:club/Manchester_United_FC a kg:Club
+; kg:foundedDate "1878-11-22"^^xsd:date
+; kg:homeStadium res:stadium/Old Trafford .
+res:stadium/Old Trafford a kg:Stadium
+; kg:capacity "76,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Manchester_United_FC .
+res:club/Newcastle_United_FC a kg:Club
+; kg:foundedDate "1892-10-12"^^xsd:date
+; kg:homeStadium res:stadium/Saint_James_Park .
+res:stadium/Saint_James_Park a kg:Stadium
+; kg:capacity "54,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Newcastle_United_FC .
+res:club/Aston_Villa_FC a kg:Club
+; kg:foundedDate "1874-08-08"^^xsd:date
+; kg:homeStadium res:stadium/Villa_Park .
+res:stadium/Villa_Park a kg:Stadium
+; kg:capacity "42,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Aston_Villa_FC .
+res:club/Leeds_United_FC a kg:Club
+; kg:foundedDate "1904-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Elm_Park .
+res:stadium/Elm_Park a kg:Stadium
+; kg:capacity "25,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Leeds_United_FC .
+res:club/Blackburn_Rovers_FC a kg:Club
+; kg:foundedDate "1875-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Ewood_Park .
+res:stadium/Ewood_Park a kg:Stadium
+; kg:capacity "26,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Blackburn_Rovers_FC .
+res:club/Burnley_FC a kg:Club
+; kg:foundedDate "1878-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Turf_Moor .
+res:stadium/Turf_Moor a kg:Stadium
+; kg:capacity "22,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Burnley_FC .
+res:club/Crystal_Palace_FC a kg:Club
+; kg:foundedDate "1905-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Selhurst_Park .
+res:stadium/Selhurst_Park a kg:Stadium
+; kg:capacity "26,000"^^xsd:positiveInteger
+; kg:homeStadium res:club/Crystal_Palace_FC .

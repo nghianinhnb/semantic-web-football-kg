@@ -1,96 +1,67 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Nouvelle-Calédonie a kg:Team ;
-kg:teamName "Nouvelle-Calédonie" ;
-kg:hasCoach res:coach/Felix_Tagawa .
-
-res:coach/Felix_Tagawa a kg:Coach ;
-kg:manages res:team/Nouvelle-Calédonie .
-
-res:team/Nouvelle-Calédonie kg:teamAbbreviation "NCL" ;
-kg:locatedIn res:country/Nouvelle-Calédonie ;
-kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Nouvelle-Calédonie .
-
+res:team/Nouvelle-Calédonie a kg:Team
+; kg:teamName "Nouvelle-Calédonie"
+; kg:hasCoach res:coach/Felix_Tagawa .
+res:coach/Felix_Tagawa a kg:Coach
+; kg:manages res:team/Nouvelle-Calédonie .
+res:team/Nouvelle-Calédonie kg:teamAbbreviation "NCL"
+; kg:locatedIn res:country/Nouvelle-Calédonie
+; kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Nouvelle-Calédonie .
 res:organization/Liên_đoàn_bóng_đá_Nouvelle-Calédonie a kg:Organization .
-
 res:country/Nouvelle-Calédonie a kg:Country .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Đại_Âu a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Đại Dương" .
-
-res:team/Nouvelle-Calédonie kg:participatesIn res:season/2013 ;
-kg:participantCount 2 .
-
-res:season/2013 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Đại_Âu .
-
-res:team/Nouvelle-Calédonie kg:bestResultInCompetition "Á quân" ;
-kg:bestResultInCompetitionYear "2013"^^xsd:gYear .
-
-res:player/Loic_Wakanumune a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "2"^^xsd:positiveInteger .
-
-res:player/Steevens_Longue a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "3"^^xsd:positiveInteger .
-
-res:player/Ludovic_Wakanumune a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "4"^^xsd:positiveInteger .
-
-res:player/Georges_Wadenges a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "5"^^xsd:positiveInteger .
-
-res:player/Augustin_Truijij a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "6"^^xsd:positiveInteger .
-
-res:player/Patrick_Diaike a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "7"^^xsd:positiveInteger .
-
-res:player/Olivier_Dokunengo a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "8"^^xsd:positiveInteger .
-
-res:player/Ramon_Djamali a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "9"^^xsd:positiveInteger .
-
-res:player/Kouriane_Dokunengo a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "10"^^xsd:positiveInteger .
-
-res:player/Jean-Pierre_Ayawa a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "11"^^xsd:positiveInteger .
-
-res:player/Benjamin_Foawy a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber "12"^^xsd:positiveInteger .
-
-res:player/Jean-Xavier_Wakanumune a kg:Player ;
-kg:playsFor res:team/Nouvelle-Calédonie ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber "13"^^xsd:positiveInteger .
-
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Đại_Âu a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Đại Dương" .
+res:team/Nouvelle-Calédonie kg:participatesIn res:season/2013
+; kg:participantCount 2 .
+res:season/2013 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Đại_Âu .
+res:player/Loic_Wakanumune a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "2"^^xsd:positiveInteger .
+res:player/Steevens_Longue a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "3"^^xsd:positiveInteger .
+res:player/Ludovic_Wakanumune a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "4"^^xsd:positiveInteger .
+res:player/Georges_Wadenges a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "5"^^xsd:positiveInteger .
+res:player/Augustin_Truijij a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "6"^^xsd:positiveInteger .
+res:player/Patrick_Diaike a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "7"^^xsd:positiveInteger .
+res:player/Olivier_Dokunengo a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "8"^^xsd:positiveInteger .
+res:player/Ramon_Djamali a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "9"^^xsd:positiveInteger .
+res:player/Kouriane_Dokunengo a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "10"^^xsd:positiveInteger .
+res:player/Jean-Pierre_Ayawa a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "11"^^xsd:positiveInteger .
+res:player/Benjamin_Foawy a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber "12"^^xsd:positiveInteger .
+res:player/Jean-Xavier_Wakanumune a kg:Player
+; kg:playsFor res:team/Nouvelle-Calédonie
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber "13"^^xsd:positiveInteger .
 res:position/Defender a kg:Defender .
 res:position/Midfielder a kg:Midfielder .
 res:position/Forward a kg:Forward .

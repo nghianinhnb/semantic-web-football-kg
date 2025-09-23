@@ -1,128 +1,82 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:club/Công_an_Thành_phố_Hồ_Chí_Minh a kg:Club ;
-kg:teamName "Đội bóng đá Công an Thành phố Hồ Chí Minh" ;
-kg:teamAbbreviation "CATPHCM" ;
-kg:foundedDate "1979-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Thống_Nhất ;
-kg:hasOwner res:organization/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:isHomeOf res:stadium/Thống_Nhất ;
-kg:participatesIn res:competition/Vô_địch_Quốc_gia ;
-kg:dissolvedDate "2002-01-01"^^xsd:date .
-
-res:stadium/Thống_Nhất a kg:Stadium ;
-kg:capacity 40000 .
-
+res:club/Công_an_Thành_phố_Hồ_Chí_Minh a kg:Club
+; kg:teamName "Đội bóng đá Công an Thành phố Hồ Chí Minh"
+; kg:teamAbbreviation "CATPHCM"
+; kg:foundedDate "1979-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Thống_Nhất
+; kg:hasOwner res:organization/Công_an_Thành_phố_Hồ_Chí_Minh
+; kg:isHomeOf res:stadium/Thống_Nhất
+; kg:participatesIn res:competition/Vô_địch_Quốc_gia .
+res:stadium/Thống_Nhất a kg:Stadium
+; kg:capacity 40000 .
 res:organization/Công_an_Thành_phố_Hồ_Chí_Minh a kg:Owner .
-
-res:competition/Vô_địch_Quốc_gia a kg:Competition ;
-kg:competitionName "Giải bóng đá Vô địch Quốc gia Việt Nam" .
-
+res:competition/Vô_địch_Quốc_gia a kg:Competition
+; kg:competitionName "Giải bóng đá Vô địch Quốc gia Việt Nam" .
 res:club/Công_an_Thành_phố_Hồ_Chí_Minh a kg:Team .
-
-res:player/Lê_Huỳnh_Đức a kg:Player ;
-kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
-
-res:player/Trần_Minh_Chíến a kg:Player ;
-kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
-
-res:player/Bùi_Sỹ_Thành a kg:Player ;
-kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
-
-res:player/Nguyễn_Liem_Thanh a kg:Player ;
-kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
-
-res:player/Phùng_Thanh_Phương a kg:Player ;
-kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
-
-res:player/Nguyễn_Việt_Thắng a kg:Player ;
-kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
-
-res:club/Công_an_Thành_phố_Hồ_Chí_Minh kg:hasSeason res:season/1986 ;
-kg:hasSeason res:season/1987 ;
-kg:hasSeason res:season/1989 ;
-kg:hasSeason res:season/1990 ;
-kg:hasSeason res:season/1991 ;
-kg:hasSeason res:season/1992 ;
-kg:hasSeason res:season/1993–94 ;
-kg:hasSeason res:season/1995 ;
-kg:hasSeason res:season/1996 ;
-kg:hasSeason res:season/1997 ;
-kg:hasSeason res:season/1998 ;
-kg:hasSeason res:season/1999–2000 ;
-kg:hasSeason res:season/2000–01 ;
-kg:hasSeason res:season/2001–02 ;
-
-res:season/1986 a kg:Season ;
-kg:seasonOf res:competition/Vô_địch_Quốc_gia ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Thứ 6" .
-
-res:season/1987 a kg:Season ;
-kg:seasonOf res:competition/Vô_địch_Quốc_gia ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Thứ 4 bảng C Giai đoạn 2" .
-
-res:season/1989 a kg:Season ;
-kg:seasonOf res:competition/Vô_địch_Quốc_gia ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Thứ 7 bảng A Giai đoạn 2" .
-
-res:season/1990 a kg:Season ;
-kg:seasonOf res:competition/Vô_địch_Quốc_gia ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Thứ 7 bảng A Giai đoạn 2" .
-
-res:season/1991 a kg:Season ;
-kg:seasonOf res:competition/Các_đội_mạnh_Toàn_quốc ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Đồng thứ 5" .
-
-res:season/1992 a kg:Season ;
-kg:seasonOf res:competition/Các_đội_mạnh_Toàn_quốc ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Đồng thứ 5" .
-
-res:season/1993–94 a kg:Season ;
-kg:seasonOf res:competition/Các_đội_mạnh_Toàn_quốc ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Á quân" .
-
-res:season/1995 a kg:Season ;
-kg:seasonOf res:competition/Các_đội_mạnh_Toàn_quốc ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Vô địch" .
-
-res:season/1996 a kg:Season ;
-kg:seasonOf res:competition/Các_đội_mạnh_Toàn_quốc ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Á quân" .
-
-res:season/1997 a kg:Season ;
-kg:seasonOf res:competition/Hạng_Nhất_quốc_gia ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Thứ 4" .
-
-res:season/1998 a kg:Season ;
-kg:seasonOf res:competition/Hạng_Nhất_quốc_gia ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Thứ 3" .
-
-res:season/1999–2000 a kg:Season ;
-kg:seasonOf res:competition/Hạng_Nhất_quốc_gia ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Á quân" .
-
-res:season/2000–01 a kg:Season ;
-kg:seasonOf res:competition/Vô_địch_Quốc_gia ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Thứ 5" .
-
-res:season/2001–02 a kg:Season ;
-kg:seasonOf res:competition/Vô_địch_Quốc_gia ;
-kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh ;
-kg:rank "Thứ 3" .
+res:player/Lê_Huỳnh_Đức a kg:Player
+; kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:player/Trần_Minh_Chíến a kg:Player
+; kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:player/Bùi_Sỹ_Thành a kg:Player
+; kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:player/Nguyễn_Liem_Thanh a kg:Player
+; kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:player/Phùng_Thanh_Phương a kg:Player
+; kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:player/Nguyễn_Việt_Thắng a kg:Player
+; kg:playsFor res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:club/Công_an_Thành_phố_Hồ_Chí_Minh kg:hasSeason res:season/1986
+; kg:hasSeason res:season/1987
+; kg:hasSeason res:season/1989
+; kg:hasSeason res:season/1990
+; kg:hasSeason res:season/1991
+; kg:hasSeason res:season/1992
+; kg:hasSeason res:season/1993–94
+; kg:hasSeason res:season/1995
+; kg:hasSeason res:season/1996
+; kg:hasSeason res:season/1997
+; kg:hasSeason res:season/1998
+; kg:hasSeason res:season/1999–2000
+; kg:hasSeason res:season/2000–01
+; kg:hasSeason res:season/2001–02
+; res:season/1986 a kg:Season
+; kg:seasonOf res:competition/Vô_địch_Quốc_gia
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/1987 a kg:Season
+; kg:seasonOf res:competition/Vô_địch_Quốc_gia
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/1989 a kg:Season
+; kg:seasonOf res:competition/Vô_địch_Quốc_gia
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/1990 a kg:Season
+; kg:seasonOf res:competition/Vô_địch_Quốc_gia
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/1991 a kg:Season
+; kg:seasonOf res:competition/Các_đội_mạnh_Toàn_quốc
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/1992 a kg:Season
+; kg:seasonOf res:competition/Các_đội_mạnh_Toàn_quốc
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/1993–94 a kg:Season
+; kg:seasonOf res:competition/Các_đội_mạnh_Toàn_quốc
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/1995 a kg:Season
+; kg:seasonOf res:competition/Các_đội_mạnh_Toàn_quốc
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/1996 a kg:Season
+; kg:seasonOf res:competition/Các_đội_mạnh_Toàn_quốc
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/1997 a kg:Season
+; kg:seasonOf res:competition/Hạng_Nhất_quốc_gia
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/1998 a kg:Season
+; kg:seasonOf res:competition/Hạng_Nhất_quốc_gia
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/1999–2000 a kg:Season
+; kg:seasonOf res:competition/Hạng_Nhất_quốc_gia
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/2000–01 a kg:Season
+; kg:seasonOf res:competition/Vô_địch_Quốc_gia
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .
+res:season/2001–02 a kg:Season
+; kg:seasonOf res:competition/Vô_địch_Quốc_gia
+; kg:participatesIn res:club/Công_an_Thành_phố_Hồ_Chí_Minh .

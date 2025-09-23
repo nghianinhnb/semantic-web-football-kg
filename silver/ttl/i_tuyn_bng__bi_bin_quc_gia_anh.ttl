@@ -1,169 +1,131 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Anh" ;
-kg:locatedIn res:country/Anh ;
-kg:hasCoach res:coach/Terry_Bowes ;
-kg:manages res:coach/Terry_Bowes ;
-kg:hasAssistantCoach res:coach/Carl_Dixon ;
-kg:hasAssistantCoach res:coach/Angel_Lopez_Torres ;
-kg:hasPhysiotherapist res:person/Abi_Lunn ;
-kg:homeVenue res:city/Poole_Dorset ;
-kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
-kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu ;
-kg:participatesIn res:season/1995 ;
-kg:participatesIn res:season/2001 ;
-kg:participatesIn res:season/2002 ;
-kg:participatesIn res:season/2004 ;
-kg:participatesIn res:season/2008 ;
-kg:participatesIn res:season/2017 ;
-kg:participatesIn res:season/2018 .
-
-res:country/Anh a kg:Country ;
-rdfs:label "Anh" .
-
-res:coach/Terry_Bowes a kg:Coach ;
-kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:birthDate "1979-09-13"^^xsd:date ;
-kg:birthPlace res:city/England ;
-kg:nationality res:country/Anh .
-
-res:coach/Carl_Dixon a kg:Coach ;
-kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh .
-
-res:coach/Angel_Lopez_Torres a kg:Coach ;
-kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh .
-
-res:person/Abi_Lunn a kg:Physiotherapist ;
-kg:worksFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh .
-
-res:city/Poole_Dorset a kg:City ;
-kg:locatedIn res:country/Anh .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" .
-
-res:season/1995 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới .
-
-res:season/2001 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
-
-res:season/2002 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
-
-res:season/2004 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
-
-res:season/2008 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
-
-res:season/2017 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
-
-res:season/2018 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
-
-res:match/Trận_đấu_1995 a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Argentina ;
-kg:kickoffTime "1995-02-16T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
-kg:inSeason res:season/1995 ;
-kg:referee res:person/Unknown_Referee ;
-kg:venue res:city/Rio_de_Janeiro .
-
-res:match/Trận_đấu_2002 a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Ireland ;
-kg:kickoffTime "2002-02-16T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu ;
-kg:inSeason res:season/2002 ;
-kg:referee res:person/Unknown_Referee ;
-kg:venue res:city/Barcelona .
-
-res:match/Trận_đấu_2009 a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Bồ_Đào_Nha ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:kickoffTime "2009-11-01T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu ;
-kg:inSeason res:season/2009 ;
-kg:referee res:person/Unknown_Referee ;
-kg:venue res:city/Porto .
-
-res:match/Trận_đấu_2017_07_01 a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển Đức ;
-kg:kickoffTime "2017-07-01T16:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu ;
-kg:inSeason res:season/2017 ;
-kg:referee res:person/Unknown_Referee ;
-kg:venue res:city/London .
-
-res:match/Trận_đấu_2017_07_02 a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển Đức ;
-kg:kickoffTime "2017-07-02T12:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu ;
-kg:inSeason res:season/2017 ;
-kg:referee res:person/Unknown_Referee ;
-kg:venue res:city/London .
-
-res:match/Trận_đấu_2017_07_14 a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Spain ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:kickoffTime "2017-07-14T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Morocco_Beach_Soccer_Cup ;
-kg:inSeason res:season/2017 ;
-kg:referee res:person/Unknown_Referee ;
-kg:venue res:city/Casablanca .
-
-res:match/Trận_đấu_2017_07_15 a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Morocco ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:kickoffTime "2017-07-15T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Morocco_Beach_Soccer_Cup ;
-kg:inSeason res:season/2017 ;
-kg:referee res:person/Unknown_Referee ;
-kg:venue res:city/Casablanca .
-
-res:match/Trận_đấu_2017_07_16 a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Holland ;
-kg:kickoffTime "2017-07-16T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Morocco_Beach_Soccer_Cup ;
-kg:inSeason res:season/2017 ;
-kg:referee res:person/Unknown_Referee ;
-kg:venue res:city/Casablanca .
-
-res:match/Trận_đấu_2017_08_25 a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Lithuania ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:kickoffTime "2017-08-25T18:30:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/2017_EBSL_Division_B ;
-kg:inSeason res:season/2017 ;
-kg:referee res:person/Torsten_Günther ;
-kg:venue res:city/Warnemunde .
-
-res:match/Trận_đấu_2017_08_26 a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Holland ;
-kg:kickoffTime "2017-08-26T14:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/2017_EBSL_Division_B ;
-kg:inSeason res:season/2017 ;
-kg:referee res:person/Jurijs_Ivunsis ;
-kg:venue res:city/Warnemunde .
-
-res:match/Trận_đấu_2017_08_27 a kg:Match ;
-kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh ;
-kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Romania ;
-kg:kickoffTime "2017-08-27T12:15:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/2017_EBSL_Division_B ;
-kg:inSeason res:season/2
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Anh"
+; kg:locatedIn res:country/Anh
+; kg:hasCoach res:coach/Terry_Bowes
+; kg:manages res:coach/Terry_Bowes
+; kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới
+; kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu
+; kg:participatesIn res:season/1995
+; kg:participatesIn res:season/2001
+; kg:participatesIn res:season/2002
+; kg:participatesIn res:season/2004
+; kg:participatesIn res:season/2008
+; kg:participatesIn res:season/2017
+; kg:participatesIn res:season/2018 .
+res:country/Anh a kg:Country
+; rdfs:label "Anh" .
+res:coach/Terry_Bowes a kg:Coach
+; kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:birthDate "1979-09-13"^^xsd:date
+; kg:birthPlace res:city/England
+; kg:nationality res:country/Anh .
+res:coach/Carl_Dixon a kg:Coach
+; kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh .
+res:coach/Angel_Lopez_Torres a kg:Coach
+; kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh .
+res:city/Poole_Dorset a kg:City
+; kg:locatedIn res:country/Anh .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" .
+res:season/1995 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới .
+res:season/2001 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
+res:season/2002 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
+res:season/2004 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
+res:season/2008 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
+res:season/2017 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
+res:season/2018 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
+res:match/Trận_đấu_1995 a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Argentina
+; kg:kickoffTime "1995-02-16T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới
+; kg:inSeason res:season/1995
+; kg:referee res:person/Unknown_Referee
+; kg:venue res:city/Rio_de_Janeiro .
+res:match/Trận_đấu_2002 a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Ireland
+; kg:kickoffTime "2002-02-16T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu
+; kg:inSeason res:season/2002
+; kg:referee res:person/Unknown_Referee
+; kg:venue res:city/Barcelona .
+res:match/Trận_đấu_2009 a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Bồ_Đào_Nha
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:kickoffTime "2009-11-01T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu
+; kg:inSeason res:season/2009
+; kg:referee res:person/Unknown_Referee
+; kg:venue res:city/Porto .
+res:match/Trận_đấu_2017_07_01 a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển Đức
+; kg:kickoffTime "2017-07-01T16:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu
+; kg:inSeason res:season/2017
+; kg:referee res:person/Unknown_Referee
+; kg:venue res:city/London .
+res:match/Trận_đấu_2017_07_02 a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển Đức
+; kg:kickoffTime "2017-07-02T12:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu
+; kg:inSeason res:season/2017
+; kg:referee res:person/Unknown_Referee
+; kg:venue res:city/London .
+res:match/Trận_đấu_2017_07_14 a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Spain
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:kickoffTime "2017-07-14T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Morocco_Beach_Soccer_Cup
+; kg:inSeason res:season/2017
+; kg:referee res:person/Unknown_Referee
+; kg:venue res:city/Casablanca .
+res:match/Trận_đấu_2017_07_15 a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Morocco
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:kickoffTime "2017-07-15T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Morocco_Beach_Soccer_Cup
+; kg:inSeason res:season/2017
+; kg:referee res:person/Unknown_Referee
+; kg:venue res:city/Casablanca .
+res:match/Trận_đấu_2017_07_16 a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Holland
+; kg:kickoffTime "2017-07-16T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Morocco_Beach_Soccer_Cup
+; kg:inSeason res:season/2017
+; kg:referee res:person/Unknown_Referee
+; kg:venue res:city/Casablanca .
+res:match/Trận_đấu_2017_08_25 a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Lithuania
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:kickoffTime "2017-08-25T18:30:00"^^xsd:dateTime
+; kg:inCompetition res:competition/2017_EBSL_Division_B
+; kg:inSeason res:season/2017
+; kg:referee res:person/Torsten_Günther
+; kg:venue res:city/Warnemunde .
+res:match/Trận_đấu_2017_08_26 a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Holland
+; kg:kickoffTime "2017-08-26T14:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/2017_EBSL_Division_B
+; kg:inSeason res:season/2017
+; kg:referee res:person/Jurijs_Ivunsis
+; kg:venue res:city/Warnemunde .
+res:match/Trận_đấu_2017_08_27 a kg:Match
+; kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Anh
+; kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_Romania
+; kg:kickoffTime "2017-08-27T12:15:00"^^xsd:dateTime
+; kg:inCompetition res:competition/2017_EBSL_Division_B
+; kg:inSeason res:season/2 .

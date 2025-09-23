@@ -1,251 +1,159 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/GermanyNationalWomenFootballTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá nữ quốc gia Đức" ;
-kg:teamAbbreviation "GER" ;
-kg:hasCoach res:coach/HorstHrubesch ;
-kg:hasCoach res:coach/SilviaNeid ;
-kg:hasCoach res:coach/SteffiJones ;
-kg:hasCoach res:coach/TinaTheuneMeyer ;
-kg:hasCoach res:coach/GeroBisanz ;
-kg:hasCoach res:coach/MartinaVossTecklenburg ;
-kg:hasCoach res:coach/HorstHrubesch2 .
-
-res:coach/HorstHrubesch a kg:Coach ;
-kg:manages res:team/GermanyNationalWomenFootballTeam .
-
-res:coach/SilviaNeid a kg:Coach ;
-kg:manages res:team/GermanyNationalWomenFootballTeam .
-
-res:coach/SteffiJones a kg:Coach ;
-kg:manages res:team/GermanyNationalWomenFootballTeam .
-
-res:coach/TinaTheuneMeyer a kg:Coach ;
-kg:manages res:team/GermanyNationalWomenFootballTeam .
-
-res:coach/GeroBisanz a kg:Coach ;
-kg:manages res:team/GermanyNationalWomenFootballTeam .
-
-res:coach/MartinaVossTecklenburg a kg:Coach ;
-kg:manages res:team/GermanyNationalWomenFootballTeam .
-
-res:coach/HorstHrubesch2 a kg:Coach ;
-kg:manages res:team/GermanyNationalWomenFootballTeam .
-
-res:player/BirgitPrinz a kg:Player ;
-kg:playsFor res:team/GermanyNationalWomenFootballTeam ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1970-08-18"^^xsd:date ;
-kg:birthPlace res:city/Frankfurt ;
-kg:nationality res:country/Germany ;
-kg:height "170"^^xsd:decimal ;
-kg:weight "65"^^xsd:decimal ;
-kg:shirtNumber "11"^^xsd:positiveInteger ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/AlexandraPopp a kg:Player ;
-kg:playsFor res:team/GermanyNationalWomenFootballTeam ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1989-04-06"^^xsd:date ;
-kg:birthPlace res:city/Wolfsburg ;
-kg:nationality res:country/Germany ;
-kg:height "178"^^xsd:decimal ;
-kg:weight "68"^^xsd:decimal ;
-kg:shirtNumber "11"^^xsd:positiveInteger ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/NadineAngerer a kg:Player ;
-kg:playsFor res:team/GermanyNationalWomenFootballTeam ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1986-07-16"^^xsd:date ;
-kg:birthPlace res:city/Leverkusen ;
-kg:nationality res:country/Germany ;
-kg:height "185"^^xsd:decimal ;
-kg:weight "78"^^xsd:decimal ;
-kg:shirtNumber "1"^^xsd:positiveInteger ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/SilviaNeid a kg:Player ;
-kg:playsFor res:team/GermanyNationalWomenFootballTeam ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1964-05-02"^^xsd:date ;
-kg:birthPlace res:city/Kassel ;
-kg:nationality res:country/Germany ;
-kg:height "175"^^xsd:decimal ;
-kg:weight "63"^^xsd:decimal ;
-kg:shirtNumber "10"^^xsd:positiveInteger ;
-kg:preferredFoot kg:RightFooted .
-
-res:player/SteffiJones a kg:Player ;
-kg:playsFor res:team/GermanyNationalWomenFootballTeam ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1972-12-22"^^xsd:date ;
-kg:birthPlace res:city/Berlin ;
-kg:nationality res:country/Germany ;
-kg:height "173"^^xsd:decimal ;
-kg:weight "67"^^xsd:decimal ;
-kg:shirtNumber "14"^^xsd:positiveInteger ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/GeroBisanz a kg:Coach ;
-kg:manages res:team/GermanyNationalWomenFootballTeam .
-
-res:player/TinaTheuneMeyer a kg:Coach ;
-kg:manages res:team/GermanyNationalWomenFootballTeam .
-
-res:player/MartinaVossTecklenburg a kg:Coach ;
-kg:manages res:team/GermanyNationalWomenFootballTeam .
-
-res:player/HorstHrubesch a kg:Coach ;
-kg:manages res:team/GermanyNationalWomenFootballTeam .
-
-res:country/Germany a kg:Country ;
-kg:locatedIn res:country/Germany .
-
-res:city/Frankfurt a kg:City ;
-kg:locatedIn res:country/Germany .
-
-res:city/Wolfsburg a kg:City ;
-kg:locatedIn res:country/Germany .
-
-res:city/Leverkusen a kg:City ;
-kg:locatedIn res:country/Germany .
-
-res:city/Kassel a kg:City ;
-kg:locatedIn res:country/Germany .
-
-res:city/Berlin a kg:City ;
-kg:locatedIn res:country/Germany .
-
-res:stadium/ParcOlympiqueLyonnais a kg:Stadium ;
-kg:capacity "50000"^^xsd:positiveInteger .
-
-res:stadium/AbeLenstraStadion a kg:Stadium ;
-kg:capacity "20000"^^xsd:positiveInteger .
-
-res:stadium/RaiffeisenArena a kg:Stadium ;
-kg:capacity "15000"^^xsd:positiveInteger .
-
-res:stadium/Ostseestadion a kg:Stadium ;
-kg:capacity "30000"^^xsd:positiveInteger .
-
-res:stadium/StadionMiejskiGdynia a kg:Stadium ;
-kg:capacity "15000"^^xsd:positiveInteger .
-
-res:stadium/Laugardalsvollur a kg:Stadium ;
-kg:capacity "10000"^^xsd:positiveInteger .
-
-res:stadium/Niedersachsenstadion a kg:Stadium ;
-kg:capacity "50000"^^xsd:positiveInteger .
-
-res:stadium/StadeVeloDrome a kg:Stadium ;
-kg:capacity "60000"^^xsd:positiveInteger .
-
-res:stadium/StadeDeLyon a kg:Stadium ;
-kg:capacity "50000"^^xsd:positiveInteger .
-
-res:stadium/WembleyStadium a kg:Stadium ;
-kg:capacity "90000"^^xsd:positiveInteger .
-
-res:stadium/MSVArena a kg:Stadium ;
-kg:capacity "30000"^^xsd:positiveInteger .
-
-res:stadium/Letziground a kg:Stadium ;
-kg:capacity "15000"^^xsd:positiveInteger .
-
-res:stadium/Ruhrstadion a kg:Stadium ;
-kg:capacity "50000"^^xsd:positiveInteger .
-
-res:stadium/StadeGeoffroyGuichard a kg:Stadium ;
-kg:capacity "40000"^^xsd:positiveInteger .
-
-res:competition/UEFAWomenEuro a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ châu Âu" ;
-kg:organizes res:organization/UEFA .
-
-res:competition/FIFAWomenWorldCup a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới" ;
-kg:organizes res:organization/FIFA .
-
-res:competition/OlympicGames a kg:Competition ;
-kg:competitionName "Thế vận hội Mùa hè" ;
-kg:organizes res:organization/IOC .
-
-res:organization/UEFA a kg:Organization ;
-kg:locatedIn res:country/Europe .
-
-res:organization/FIFA a kg:Organization ;
-kg:locatedIn res:country/International .
-
-res:organization/IOC a kg:Organization ;
-kg:locatedIn res:country/International .
-
-res:season/2023 a kg:Season ;
-kg:hasSeason res:competition/FIFAWomenWorldCup ;
-kg:participatesIn res:team/GermanyNationalWomenFootballTeam .
-
-res:season/2024 a kg:Season ;
-kg:hasSeason res:competition/UEFAWomenEuro ;
-kg:participatesIn res:team/GermanyNationalWomenFootballTeam .
-
-res:season/2024 a kg:Season ;
-kg:hasSeason res:competition/OlympicGames ;
-kg:participatesIn res:team/GermanyNationalWomenFootballTeam .
-
-res:match/20240223 a kg:Match ;
-kg:homeTeam res:team/France ;
-kg:awayTeam res:team/Germany ;
-kg:venue res:stadium/ParcOlympiqueLyonnais ;
-kg:kickoffTime "2024-02-23T21:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/UEFAWomenEuro ;
-kg:inSeason res:season/2024 ;
-kg:referee res:referee/EstherStaubli .
-
-res:match/20240228 a kg:Match ;
-kg:homeTeam res:team/Netherlands ;
-kg:awayTeam res:team/Germany ;
-kg:venue res:stadium/AbeLenstraStadion ;
-kg:kickoffTime "2024-02-28T20:45:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/UEFAWomenEuro ;
-kg:inSeason res:season/2024 ;
-kg:referee res:referee/StefanieFrappart .
-
-res:match/20240405 a kg:Match ;
-kg:homeTeam res:team/Austria ;
-kg:awayTeam res:team/Germany ;
-kg:venue res:stadium/RaiffeisenArena ;
-kg:kickoffTime "2024-04-05T20:30:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/UEFAWomenEuro ;
-kg:inSeason res:season/2024 ;
-kg:referee res:referee/TessOlofsson .
-
-res:match/20240409 a kg:Match ;
-kg:homeTeam res:team/Germany ;
-kg:awayTeam res:team/Iceland ;
-kg:venue res:stadium/RaiffeisenArena ;
-kg:kickoffTime "2024-04-09T18:10:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/UEFAWomenEuro ;
-kg:inSeason res:season/2024 ;
-kg:referee res:referee/JanaAdamkova .
-
-res:match/20240531 a kg:Match ;
-kg:homeTeam res:team/Germany ;
-kg:awayTeam res:team/Poland ;
-kg:venue res:stadium/Ostseestadion ;
-kg:kickoffTime "2024-05-31T20:30:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/UEFAWomenEuro ;
-kg:inSeason res:season/2024 ;
-kg:referee res:referee/JelenaCetkovac .
-
-res:match/20240604 a kg:Match ;
-kg:homeTeam res:team/Poland ;
-kg:awayTeam res:team/Germany ;
-kg:venue res:stadium/StadionMiejskiGdynia ;
-kg:kickoffTime "2024-06-04T18:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/UEFAWomenEuro ;
-kg:inSeason res:season/2024 ;
-kg:referee res:referee/OlatzRiveraOlmed
+res:team/GermanyNationalWomenFootballTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá nữ quốc gia Đức"
+; kg:teamAbbreviation "GER"
+; kg:hasCoach res:coach/HorstHrubesch
+; kg:hasCoach res:coach/SilviaNeid
+; kg:hasCoach res:coach/SteffiJones
+; kg:hasCoach res:coach/TinaTheuneMeyer
+; kg:hasCoach res:coach/GeroBisanz
+; kg:hasCoach res:coach/MartinaVossTecklenburg
+; kg:hasCoach res:coach/HorstHrubesch2 .
+res:coach/HorstHrubesch a kg:Coach
+; kg:manages res:team/GermanyNationalWomenFootballTeam .
+res:coach/SilviaNeid a kg:Coach
+; kg:manages res:team/GermanyNationalWomenFootballTeam .
+res:coach/SteffiJones a kg:Coach
+; kg:manages res:team/GermanyNationalWomenFootballTeam .
+res:coach/TinaTheuneMeyer a kg:Coach
+; kg:manages res:team/GermanyNationalWomenFootballTeam .
+res:coach/GeroBisanz a kg:Coach
+; kg:manages res:team/GermanyNationalWomenFootballTeam .
+res:coach/MartinaVossTecklenburg a kg:Coach
+; kg:manages res:team/GermanyNationalWomenFootballTeam .
+res:coach/HorstHrubesch2 a kg:Coach
+; kg:manages res:team/GermanyNationalWomenFootballTeam .
+res:player/BirgitPrinz a kg:Player
+; kg:playsFor res:team/GermanyNationalWomenFootballTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/AlexandraPopp a kg:Player
+; kg:playsFor res:team/GermanyNationalWomenFootballTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/NadineAngerer a kg:Player
+; kg:playsFor res:team/GermanyNationalWomenFootballTeam
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/SilviaNeid a kg:Player
+; kg:playsFor res:team/GermanyNationalWomenFootballTeam
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/SteffiJones a kg:Player
+; kg:playsFor res:team/GermanyNationalWomenFootballTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/GeroBisanz a kg:Coach
+; kg:manages res:team/GermanyNationalWomenFootballTeam .
+res:player/TinaTheuneMeyer a kg:Coach
+; kg:manages res:team/GermanyNationalWomenFootballTeam .
+res:player/MartinaVossTecklenburg a kg:Coach
+; kg:manages res:team/GermanyNationalWomenFootballTeam .
+res:player/HorstHrubesch a kg:Coach
+; kg:manages res:team/GermanyNationalWomenFootballTeam .
+res:country/Germany a kg:Country
+; kg:locatedIn res:country/Germany .
+res:city/Frankfurt a kg:City
+; kg:locatedIn res:country/Germany .
+res:city/Wolfsburg a kg:City
+; kg:locatedIn res:country/Germany .
+res:city/Leverkusen a kg:City
+; kg:locatedIn res:country/Germany .
+res:city/Kassel a kg:City
+; kg:locatedIn res:country/Germany .
+res:city/Berlin a kg:City
+; kg:locatedIn res:country/Germany .
+res:stadium/ParcOlympiqueLyonnais a kg:Stadium
+; kg:capacity "50000"^^xsd:positiveInteger .
+res:stadium/AbeLenstraStadion a kg:Stadium
+; kg:capacity "20000"^^xsd:positiveInteger .
+res:stadium/RaiffeisenArena a kg:Stadium
+; kg:capacity "15000"^^xsd:positiveInteger .
+res:stadium/Ostseestadion a kg:Stadium
+; kg:capacity "30000"^^xsd:positiveInteger .
+res:stadium/StadionMiejskiGdynia a kg:Stadium
+; kg:capacity "15000"^^xsd:positiveInteger .
+res:stadium/Laugardalsvollur a kg:Stadium
+; kg:capacity "10000"^^xsd:positiveInteger .
+res:stadium/Niedersachsenstadion a kg:Stadium
+; kg:capacity "50000"^^xsd:positiveInteger .
+res:stadium/StadeVeloDrome a kg:Stadium
+; kg:capacity "60000"^^xsd:positiveInteger .
+res:stadium/StadeDeLyon a kg:Stadium
+; kg:capacity "50000"^^xsd:positiveInteger .
+res:stadium/WembleyStadium a kg:Stadium
+; kg:capacity "90000"^^xsd:positiveInteger .
+res:stadium/MSVArena a kg:Stadium
+; kg:capacity "30000"^^xsd:positiveInteger .
+res:stadium/Letziground a kg:Stadium
+; kg:capacity "15000"^^xsd:positiveInteger .
+res:stadium/Ruhrstadion a kg:Stadium
+; kg:capacity "50000"^^xsd:positiveInteger .
+res:stadium/StadeGeoffroyGuichard a kg:Stadium
+; kg:capacity "40000"^^xsd:positiveInteger .
+res:competition/UEFAWomenEuro a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ châu Âu"
+; kg:organizes res:organization/UEFA .
+res:competition/FIFAWomenWorldCup a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới"
+; kg:organizes res:organization/FIFA .
+res:competition/OlympicGames a kg:Competition
+; kg:competitionName "Thế vận hội Mùa hè"
+; kg:organizes res:organization/IOC .
+res:organization/UEFA a kg:Organization
+; kg:locatedIn res:country/Europe .
+res:organization/FIFA a kg:Organization
+; kg:locatedIn res:country/International .
+res:organization/IOC a kg:Organization
+; kg:locatedIn res:country/International .
+res:season/2023 a kg:Season
+; kg:hasSeason res:competition/FIFAWomenWorldCup
+; kg:participatesIn res:team/GermanyNationalWomenFootballTeam .
+res:season/2024 a kg:Season
+; kg:hasSeason res:competition/UEFAWomenEuro
+; kg:participatesIn res:team/GermanyNationalWomenFootballTeam .
+res:season/2024 a kg:Season
+; kg:hasSeason res:competition/OlympicGames
+; kg:participatesIn res:team/GermanyNationalWomenFootballTeam .
+res:match/20240223 a kg:Match
+; kg:homeTeam res:team/France
+; kg:awayTeam res:team/Germany
+; kg:venue res:stadium/ParcOlympiqueLyonnais
+; kg:kickoffTime "2024-02-23T21:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/UEFAWomenEuro
+; kg:inSeason res:season/2024
+; kg:referee res:referee/EstherStaubli .
+res:match/20240228 a kg:Match
+; kg:homeTeam res:team/Netherlands
+; kg:awayTeam res:team/Germany
+; kg:venue res:stadium/AbeLenstraStadion
+; kg:kickoffTime "2024-02-28T20:45:00"^^xsd:dateTime
+; kg:inCompetition res:competition/UEFAWomenEuro
+; kg:inSeason res:season/2024
+; kg:referee res:referee/StefanieFrappart .
+res:match/20240405 a kg:Match
+; kg:homeTeam res:team/Austria
+; kg:awayTeam res:team/Germany
+; kg:venue res:stadium/RaiffeisenArena
+; kg:kickoffTime "2024-04-05T20:30:00"^^xsd:dateTime
+; kg:inCompetition res:competition/UEFAWomenEuro
+; kg:inSeason res:season/2024
+; kg:referee res:referee/TessOlofsson .
+res:match/20240409 a kg:Match
+; kg:homeTeam res:team/Germany
+; kg:awayTeam res:team/Iceland
+; kg:venue res:stadium/RaiffeisenArena
+; kg:kickoffTime "2024-04-09T18:10:00"^^xsd:dateTime
+; kg:inCompetition res:competition/UEFAWomenEuro
+; kg:inSeason res:season/2024
+; kg:referee res:referee/JanaAdamkova .
+res:match/20240531 a kg:Match
+; kg:homeTeam res:team/Germany
+; kg:awayTeam res:team/Poland
+; kg:venue res:stadium/Ostseestadion
+; kg:kickoffTime "2024-05-31T20:30:00"^^xsd:dateTime
+; kg:inCompetition res:competition/UEFAWomenEuro
+; kg:inSeason res:season/2024
+; kg:referee res:referee/JelenaCetkovac .
+res:match/20240604 a kg:Match
+; kg:homeTeam res:team/Poland
+; kg:awayTeam res:team/Germany
+; kg:venue res:stadium/StadionMiejskiGdynia
+; kg:kickoffTime "2024-06-04T18:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/UEFAWomenEuro
+; kg:inSeason res:season/2024
+; kg:referee res:referee/OlatzRiveraOlmed .

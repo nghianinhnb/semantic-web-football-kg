@@ -1,82 +1,54 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Iraq_National_Beach_Soccer_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Iraq" ;
-kg:hasCoach res:coach/Fallah_Zaboon .
-
-res:coach/Fallah_Zaboon a kg:Coach ;
-kg:manages res:team/Iraq_National_Beach_Soccer_Team .
-
-res:player/Husham_Jaaz a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1 .
-
-res:player/Hussein_Hussein a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Karrar_Taeem a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Raed_Abdulnabi a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Dheyauldeen_Dheyab a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Morteza_Jasim a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Sadeq_Shhet a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Ahmad_Hamad a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Muthanna_Abdullah a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Mushtaq_Mohammed a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Karrar_Saber a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Ali_Tawfeeq a kg:Player ;
-kg:playsFor res:team/Iraq_National_Beach_Soccer_Team ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 2 .
-
-res:position/Goalkeeper a kg:Goalkeeper ;
-rdfs:subClassOf kg:Position .
-
-res:position/Defender a kg:Defender ;
-rdfs:subClassOf kg:Position .
-
-res:position/Forward a kg:Forward ;
-rdfs:subClassOf kg:Position .
-
-res:team/Iraq_National_Beach_Soccer_Team kg:teamAbbreviation "IRQ" ;
-kg:locatedIn res:country/Iraq .
-
-res:country/Iraq a kg:Country ;
-rdfs:label "Iraq" .
-
+res:team/Iraq_National_Beach_Soccer_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Iraq"
+; kg:hasCoach res:coach/Fallah_Zaboon .
+res:coach/Fallah_Zaboon a kg:Coach
+; kg:manages res:team/Iraq_National_Beach_Soccer_Team .
+res:player/Husham_Jaaz a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1 .
+res:player/Hussein_Hussein a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender .
+res:player/Karrar_Taeem a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender .
+res:player/Raed_Abdulnabi a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward .
+res:player/Dheyauldeen_Dheyab a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender .
+res:player/Morteza_Jasim a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward .
+res:player/Sadeq_Shhet a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward .
+res:player/Ahmad_Hamad a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward .
+res:player/Muthanna_Abdullah a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender .
+res:player/Mushtaq_Mohammed a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Defender .
+res:player/Karrar_Saber a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Forward .
+res:player/Ali_Tawfeeq a kg:Player
+; kg:playsFor res:team/Iraq_National_Beach_Soccer_Team
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 2 .
+res:position/Goalkeeper a kg:Goalkeeper
+; rdfs:subClassOf kg:Position .
+res:position/Defender a kg:Defender
+; rdfs:subClassOf kg:Position .
+res:position/Forward a kg:Forward
+; rdfs:subClassOf kg:Position .
+res:team/Iraq_National_Beach_Soccer_Team kg:teamAbbreviation "IRQ"
+; kg:locatedIn res:country/Iraq .
+res:country/Iraq a kg:Country
+; rdfs:label "Iraq" .
 res:coach/Fallah_Zaboon rdfs:label "Fallah Zaboon" .
-
-res:team/Iraq_National_Beach_Soccer_Team kg:competitionResult "Vòng loại giải vô địch bóng đá bãi biển thế giới khu vực châu Á Ninth place" ;
-kg:competitionYear "2011"^^xsd:gYear .

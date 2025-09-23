@@ -1,111 +1,66 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/BahamasNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Bahamas National Beach Soccer Team" ;
-kg:teamAbbreviation "BAH" ;
-kg:hasCoach res:coach/JasonMcDowall ;
-kg:hasCoach res:coach/StephenBellot ;
-kg:locatedIn res:country/Bahamas ;
-kg:homeStadium res:stadium/BFA_Beach_Soccer_Stadium ;
-kg:organizedBy res:organization/Bahamas_Football_Association ;
-kg:participatesIn res:competition/CONCACAF_North_Central_American_and_Caribbean_Beach_Soccer_Championship ;
-kg:participatesIn res:competition/FIFA_World_Beach_Soccer_Cup ;
-kg:bestResultInCompetition res:competition/CONCACAF_North_Central_American_and_Caribbean_Beach_Soccer_Championship, "6th place" ;
-kg:bestResultInCompetition res:competition/FIFA_World_Beach_Soccer_Cup, "10th place" ;
-kg:participatedInCompetition res:competition/CONCACAF_North_Central_American_and_Caribbean_Beach_Soccer_Championship, 5 ;
-kg:participatedInCompetition res:competition/FIFA_World_Beach_Soccer_Cup, 1 .
-
-res:organization/Bahamas_Football_Association a kg:Organization ;
-kg:locatedIn res:country/Bahamas .
-
+res:team/BahamasNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Bahamas National Beach Soccer Team"
+; kg:teamAbbreviation "BAH"
+; kg:hasCoach res:coach/JasonMcDowall
+; kg:hasCoach res:coach/StephenBellot
+; kg:locatedIn res:country/Bahamas
+; kg:homeStadium res:stadium/BFA_Beach_Soccer_Stadium
+; kg:organizedBy res:organization/Bahamas_Football_Association
+; kg:participatesIn res:competition/CONCACAF_North_Central_American_and_Caribbean_Beach_Soccer_Championship
+; kg:participatesIn res:competition/FIFA_World_Beach_Soccer_Cup .
+res:organization/Bahamas_Football_Association a kg:Organization
+; kg:locatedIn res:country/Bahamas .
 res:stadium/BFA_Beach_Soccer_Stadium a kg:Stadium .
-
 res:country/Bahamas a kg:Country .
-
-res:competition/CONCACAF_North_Central_American_and_Caribbean_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "CONCACAF North, Central American and Caribbean Beach Soccer Championship" .
-
-res:competition/FIFA_World_Beach_Soccer_Cup a kg:Competition ;
-kg:competitionName "FIFA World Beach Soccer Cup" .
-
-res:coach/JasonMcDowall a kg:Coach ;
-kg:manages res:team/BahamasNationalBeachSoccerTeam .
-
-res:coach/StephenBellot a kg:Coach ;
-kg:manages res:team/BahamasNationalBeachSoccerTeam .
-
-res:coach/JulianSmith a kg:AssistantCoach ;
-kg:manages res:team/BahamasNationalBeachSoccerTeam .
-
-res:player/JulioJameson a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 1 .
-
-res:player/JeanFrancois a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 .
-
-res:player/MarkDaniels a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 3 .
-
-res:player/RenardoMcCallum a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 4 .
-
-res:player/KyleWilliams a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 5 .
-
-res:player/GaryJoeseph a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 6 .
-
-res:player/NesleyJean a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 7 .
-
-res:player/DwayneForbes a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 8 .
-
-res:player/DaronBeneby a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 .
-
-res:player/LeslyStFleur a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 10 .
-
-res:player/GavinChristie a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 11 .
-
-res:player/IvanRolle a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 12 .
-
-res:player/ValinBodie a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 13 .
-
-res:player/TorinFerguson a kg:Player ;
-kg:playsFor res:team/BahamasNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 14 .
+res:competition/CONCACAF_North_Central_American_and_Caribbean_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "CONCACAF North, Central American and Caribbean Beach Soccer Championship" .
+res:competition/FIFA_World_Beach_Soccer_Cup a kg:Competition
+; kg:competitionName "FIFA World Beach Soccer Cup" .
+res:coach/JasonMcDowall a kg:Coach
+; kg:manages res:team/BahamasNationalBeachSoccerTeam .
+res:coach/StephenBellot a kg:Coach
+; kg:manages res:team/BahamasNationalBeachSoccerTeam .
+res:coach/JulianSmith a kg:AssistantCoach
+; kg:manages res:team/BahamasNationalBeachSoccerTeam .
+res:player/JulioJameson a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/JeanFrancois a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/MarkDaniels a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/RenardoMcCallum a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/KyleWilliams a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/GaryJoeseph a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/NesleyJean a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/DwayneForbes a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/DaronBeneby a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/LeslyStFleur a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/GavinChristie a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/IvanRolle a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/ValinBodie a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/TorinFerguson a kg:Player
+; kg:playsFor res:team/BahamasNationalBeachSoccerTeam
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .

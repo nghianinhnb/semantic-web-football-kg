@@ -1,65 +1,43 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
 res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Ấn_Độ kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Ấn Độ" .
 res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Ấn_Độ kg:teamAbbreviation "IND" .
 res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Ấn_Độ kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Toàn_Ấn .
 res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Ấn_Độ kg:heldIn res:country/Ấn_Độ .
 res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Ấn_Độ kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2007 .
 res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Ấn_Độ kg:participatesIn res:competition/Đại_hội_thể_thao_bãi_biển_châu_Á_2008 .
-
 res:organization/Liên_đoàn_bóng_đá_Toàn_Ấn kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2007 .
 res:organization/Liên_đoàn_bóng_đá_Toàn_Ấn kg:organizes res:competition/Đại_hội_thể_thao_bãi_biển_châu_Á_2008 .
-
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2007 kg:competitionName "Giải vô địch bóng đá bãi biển châu Á 2007" .
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2007 kg:heldIn res:country/Ấn_Độ .
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2007 kg:participantCount 4 .
-
 res:competition/Đại_hội_thể_thao_bãi_biển_châu_Á_2008 kg:competitionName "Đại hội thể thao bãi biển châu Á 2008" .
 res:competition/Đại_hội_thể_thao_bãi_biển_châu_Á_2008 kg:heldIn res:country/Ấn_Độ .
 res:competition/Đại_hội_thể_thao_bãi_biển_châu_Á_2008 kg:participantCount 4 .
-
 res:match/Trận_đấu_Ấn_Độ_với_China_2008 kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Ấn_Độ .
 res:match/Trận_đấu_Ấn_Độ_với_China_2008 kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc .
 res:match/Trận_đấu_Ấn_Độ_với_China_2008 kg:venue res:stadium/Mertasari_Beach .
 res:match/Trận_đấu_Ấn_Độ_với_China_2008 kg:kickoffTime "2008-10-19T14:30:00"^^xsd:dateTime .
 res:match/Trận_đấu_Ấn_Độ_với_China_2008 kg:referee res:referee/Waleed_Ali_Yousef .
 res:match/Trận_đấu_Ấn_Độ_với_China_2008 kg:inCompetition res:competition/Đại_hội_thể_thao_bãi_biển_châu_Á_2008 .
-
 res:match/Trận_đấu_Ấn_Độ_với_Iran_2008 kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Ấn_Độ .
 res:match/Trận_đấu_Ấn_Độ_với_Iran_2008 kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Iran .
 res:match/Trận_đấu_Ấn_Độ_với_Iran_2008 kg:venue res:stadium/Mertasari_Beach .
 res:match/Trận_đấu_Ấn_Độ_với_Iran_2008 kg:kickoffTime "2008-10-20T15:45:00"^^xsd:dateTime .
 res:match/Trận_đấu_Ấn_Độ_với_Iran_2008 kg:referee res:referee/Faisal_Ahmed .
 res:match/Trận_đấu_Ấn_Độ_với_Iran_2008 kg:inCompetition res:competition/Đại_hội_thể_thao_bãi_biển_châu_Á_2008 .
-res:match/Trận_đấu_Ấn_Độ_với_Iran_2008 kg:score "7–4" .
-
 res:match/Trận_đấu_Ấn_Độ_với_Malaysia_2008 kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Ấn_Độ .
 res:match/Trận_đấu_Ấn_Độ_với_Malaysia_2008 kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Malaysia .
 res:match/Trận_đấu_Ấn_Độ_với_Malaysia_2008 kg:venue res:stadium/Mertasari_Beach .
 res:match/Trận_đấu_Ấn_Độ_với_Malaysia_2008 kg:kickoffTime "2008-10-22T15:45:00"^^xsd:dateTime .
 res:match/Trận_đấu_Ấn_Độ_với_Malaysia_2008 kg:referee res:referee/Li_Ke .
 res:match/Trận_đấu_Ấn_Độ_với_Malaysia_2008 kg:inCompetition res:competition/Đại_hội_thể_thao_bãi_biển_châu_Á_2008 .
-
 res:stadium/Mertasari_Beach kg:locatedIn res:city/Bali .
 res:stadium/Mertasari_Beach kg:locatedIn res:country/Indonesia .
-
 res:country/Ấn_Độ kg:locatedIn res:country/Ấn_Độ .
-
 res:country/Trung_Quốc kg:locatedIn res:country/Trung_Quốc .
-
 res:country/Iran kg:locatedIn res:country/Iran .
-
 res:country/Malaysia kg:locatedIn res:country/Malaysia .
-
 res:country/Indonesia kg:locatedIn res:country/Indonesia .
-
 res:country/Bali kg:locatedIn res:country/Indonesia .
-
 res:referee/Waleed_Ali_Yousef kg:locatedIn res:country/Các_Tiểu_Vương_quốc_Ả_Rập_Thống_đốc .
-
 res:referee/Faisal_Ahmed kg:locatedIn res:country/Các_Tiểu_Vương_quốc_Ả_Rập_Thống_đốc .
-
 res:referee/Li_Ke kg:locatedIn res:country/Trung_Quốc .

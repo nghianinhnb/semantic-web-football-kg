@@ -1,259 +1,120 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Maroc a kg:Team ;
-kg:teamName "Maroc" ;
-kg:hasCoach res:coach/Reynald_Pedros ;
-kg:teamAbbreviation "MAR" ;
-kg:participatesIn res:competition/Cu_p_bo_c_da_nu_chau_Aphi_2022 ;
-kg:participatesIn res:competition/Giai_vo_dich_bo_c_da_nu_the_gioi_2023 ;
-kg:locatedIn res:country/Maroc .
-
-res:coach/Reynald_Pedros a kg:Coach ;
-kg:manages res:team/Maroc .
-
-res:country/Maroc a kg:Country ;
-rdfs:label "Maroc" .
-
-res:competition/Cu_p_bo_c_da_nu_chau_Aphi_2022 a kg:Competition ;
-kg:competitionName "Cúp bóng đá nữ châu Phi 2022" ;
-kg:heldIn res:country/Maroc ;
-kg:participantCount 12 .
-
-res:competition/Giai_vo_dich_bo_c_da_nu_the_gioi_2023 a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá nữ thế giới 2023" ;
-kg:heldIn res:country/Maroc .
-
-res:player/Khadija_Er_Rmichi a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1989-09-16"^^xsd:date ;
-kg:birthPlace res:city/Rabat ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 1 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Hind_Hesnaoui a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1996-09-13"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 22 ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Assia_Zouhair a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1991-04-30"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 12 .
-
-res:player/Imane_Abdelahad a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1994-07-21"^^xsd:date ;
-kg:nationality res:country/Maroc .
-
-res:player/Zineb_Redouani a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "2000-06-12"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 2 .
-
-res:player/Siham_Boukhami a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1992-02-01"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 4 .
-
-res:player/Nesryne_El_Chad a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "2003-03-13"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 5 .
-
-res:player/Ghizlane_Chhiri a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1994-09-11"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 15 .
-
-res:player/Sabah_Seghir a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "2000-09-27"^^xsd:date ;
-kg:nationality res:country/Italy ;
-kg:shirtNumber 13 .
-
-res:player/Aziza_Rabbah a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1986-07-04"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 14 .
-
-res:player/Éva_Allice a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "2002-01-02"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 17 .
-
-res:player/Yasmin_Mrabet a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1999-08-08"^^xsd:date ;
-kg:nationality res:country/Spain ;
-kg:shirtNumber 21 .
-
-res:player/Fatima_Zahra_Dahmos a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1992-08-05"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 3 .
-
-res:player/Élodie_Nakkach a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1995-01-20"^^xsd:date ;
-kg:nationality res:country/Switzerland ;
-kg:shirtNumber 6 .
-
-res:player/Sofia_Bouftini a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "2002-01-25"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 24 .
-
-res:player/Imane_Saoud a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "2002-06-06"^^xsd:date ;
-kg:nationality res:country/Switzerland ;
-kg:shirtNumber 20 .
-
-res:player/Najat_Badri a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1988-05-19"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 10 .
-
-res:player/Salma_Amani a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1989-11-28"^^xsd:date ;
-kg:nationality res:country/France ;
-kg:shirtNumber 8 .
-
-res:player/Ghizlane_Chebbak a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1991-02-19"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 7 ;
-kg:topScorer true .
-
-res:player/Samya_Hassani a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "2000-01-03"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 16 .
-
-res:player/Sanaâ_Mssoudy a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1999-12-30"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 18 .
-
-res:player/Ibtissam_Jraïdi a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1992-12-09"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 9 .
-
-res:player/Hanane_Aït_El_Haj a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1994-11-02"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 17 .
-
-res:player/Fatima_Tagnaout a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1999-01-20"^^xsd:date ;
-kg:nationality res:country/Maroc ;
-kg:shirtNumber 11 .
-
-res:player/Rosella_Ayane a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1996-03-16"^^xsd:date ;
-kg:nationality res:country/England ;
-kg:shirtNumber 23 .
-
-res:player/Chaymaa_Mourtaji a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1995-12-08"^^xsd:date ;
-kg:nationality res:country/Maroc .
-
-res:player/Samia_Fikri a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1999-08-02"^^xsd:date ;
-kg:nationality res:country/France .
-
-res:player/Nouhaïla_Benzina a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1998-05-11"^^xsd:date ;
-kg:nationality res:country/Maroc .
-
-res:player/Rania_Salmi a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1998-10-14"^^xsd:date ;
-kg:nationality res:country/Maroc .
-
-res:player/Marwa_Hassani a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "2002-09-05"^^xsd:date ;
-kg:nationality res:country/France .
-
-res:player/Nour_Imane_Addi a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1997-06-10"^^xsd:date ;
-kg:nationality res:country/USA .
-
-res:player/Douha_Ahmamou a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "2000-11-20"^^xsd:date ;
-kg:nationality res:country/Maroc .
-
-res:player/Imène_El_Ghazouani a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "2000-06-09"^^xsd:date ;
-kg:nationality res:country/France .
-
-res:player/Ranya_Senhaji a kg:Player ;
-kg:playsFor res:team/Maroc ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "2002-0
+res:team/Maroc a kg:Team
+; kg:teamName "Maroc"
+; kg:hasCoach res:coach/Reynald_Pedros
+; kg:teamAbbreviation "MAR"
+; kg:participatesIn res:competition/Cu_p_bo_c_da_nu_chau_Aphi_2022
+; kg:participatesIn res:competition/Giai_vo_dich_bo_c_da_nu_the_gioi_2023
+; kg:locatedIn res:country/Maroc .
+res:coach/Reynald_Pedros a kg:Coach
+; kg:manages res:team/Maroc .
+res:country/Maroc a kg:Country
+; rdfs:label "Maroc" .
+res:competition/Cu_p_bo_c_da_nu_chau_Aphi_2022 a kg:Competition
+; kg:competitionName "Cúp bóng đá nữ châu Phi 2022"
+; kg:heldIn res:country/Maroc
+; kg:participantCount 12 .
+res:competition/Giai_vo_dich_bo_c_da_nu_the_gioi_2023 a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá nữ thế giới 2023"
+; kg:heldIn res:country/Maroc .
+res:player/Khadija_Er_Rmichi a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Hind_Hesnaoui a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Assia_Zouhair a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Imane_Abdelahad a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Zineb_Redouani a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Siham_Boukhami a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Nesryne_El_Chad a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Ghizlane_Chhiri a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Sabah_Seghir a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Aziza_Rabbah a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Éva_Allice a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Yasmin_Mrabet a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Fatima_Zahra_Dahmos a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Élodie_Nakkach a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Sofia_Bouftini a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Imane_Saoud a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Najat_Badri a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Salma_Amani a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Ghizlane_Chebbak a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Samya_Hassani a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Sanaâ_Mssoudy a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Ibtissam_Jraïdi a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Hanane_Aït_El_Haj a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Fatima_Tagnaout a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Rosella_Ayane a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Chaymaa_Mourtaji a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Samia_Fikri a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Nouhaïla_Benzina a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Rania_Salmi a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Marwa_Hassani a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Nour_Imane_Addi a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Douha_Ahmamou a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Imène_El_Ghazouani a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Ranya_Senhaji a kg:Player
+; kg:playsFor res:team/Maroc
+; kg:primaryPosition kg:Forward "UNKNOWN" .

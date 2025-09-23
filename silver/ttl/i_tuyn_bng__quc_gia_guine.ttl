@@ -1,58 +1,15 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Guinée a kg:teamName "Đội tuyển bóng đá quốc gia Guinée" ;
-a kg:Team ;
-kg:hasCoach res:coach/Didier_Six ;
-kg:hasCaptain res:player/Naby_Keïta ;
-kg:mostCaps res:player/Pascal_Feindouno ;
-kg:topScorer res:player/Ibrahima_Kandia_Diallo ;
-kg:FIFAtrigramme "GUI" ;
-kg:homeStadium res:stadium/Sân_vận_động_Tướng_Lansana_Conté, res:stadium/Sân_vận_động_28_tháng_9 ;
-kg:FIFARank "???"^^xsd:integer ;
-kg:FIFAMax 22 ;
-kg:FIFAMaxDate "2006-08-01"^^xsd:date ;
-kg:FIFAMin 123 ;
-kg:FIFAMinDate "2003-05-01"^^xsd:date ;
-kg:ELORank "???"^^xsd:integer ;
-kg:ELOMax 23 ;
-kg:ELOMaxDate "1977-01-01"^^xsd:date ;
-kg:ELOMin 125 ;
-kg:ELOMinDate "1996-06-01"^^xsd:date ;
-kg:firstGame "TOG 2 - 1 GUI" ;
-kg:firstGameDate "1962-05-09"^^xsd:date ;
-kg:largestWin "GUI 14 - 0 MTN" ;
-kg:largestWinDate "1972-05-20"^^xsd:date ;
-kg:largestLoss "Zaire 6 - 0 GUI" ;
-kg:largestLossDate "1972-07-02"^^xsd:date ;
-kg:worldCupApps 0 ;
-kg:worldCupFirst "-" ;
-kg:worldCupBest "-" ;
-kg:regionalCupApps 14 ;
-kg:regionalCupFirst "1970" ;
-kg:regionalCupBest "Á quân, 1976" ;
-kg:region "Africa" ;
-kg:confederation res:organization/Congregation_of_African_Football_Association .
-
-res:coach/Didier_Six a kg:Coach ;
-kg:manages res:team/Guinée .
-
-res:player/Naby_Keïta a kg:Player, kg:Midfielder ;
-kg:isCaptain res:team/Guinée .
-
-res:player/Pascal_Feindouno a kg:Player ;
-kg:mostCaps res:team/Guinée .
-
-res:player/Ibrahima_Kandia_Diallo a kg:Player ;
-kg:topScorer res:team/Guinée .
-
+res:team/Guinée a kg:teamName "Đội tuyển bóng đá quốc gia Guinée"
+; a kg:Team
+; kg:hasCoach res:coach/Didier_Six
+; kg:hasCaptain res:player/Naby_Keïta
+; kg:homeStadium res:stadium/Sân_vận_động_Tướng_Lansana_Conté , res:stadium/Sân_vận_động_28_tháng_9 .
+res:coach/Didier_Six a kg:Coach
+; kg:manages res:team/Guinée .
+res:player/Naby_Keïta a kg:Player , kg:Midfielder
+; kg:isCaptain res:team/Guinée .
+res:player/Pascal_Feindouno a kg:Player .
+res:player/Ibrahima_Kandia_Diallo a kg:Player .
 res:stadium/Sân_vận_động_Tướng_Lansana_Conté a kg:Stadium .
-
 res:stadium/Sân_vận_động_28_tháng_9 a kg:Stadium .
-
 res:organization/Congregation_of_African_Football_Association a kg:Organization .
-
 res:team/Guinée kg:participatesIn res:competition/Africa_Cup_of_Nations .

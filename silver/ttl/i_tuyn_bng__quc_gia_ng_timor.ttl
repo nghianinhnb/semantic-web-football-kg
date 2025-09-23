@@ -1,189 +1,38 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/EastTimorNationalFootballTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Đông Timor" ;
-kg:hasCoach res:coach/MilanPetkovic ;
-kg:hasCaptain res:player/ArmindoDeAlmeida ;
-kg:homeStadium res:stadium/NationalStadiumDili ;
-kg:teamAbbreviation "TLS" ;
-kg:FIFA_rank 146 ;
-kg:FIFA_max 146 ;
-kg:FIFA_max_date "2015-06-01"^^xsd:date ;
-kg:FIFA_min 206 ;
-kg:FIFA_min_date "2012-10-01"^^xsd:date ;
-kg:Elo_rank 215 ;
-kg:Elo_max 215 ;
-kg:Elo_max_date "2015-06-01"^^xsd:date ;
-kg:Elo_min 228 ;
-kg:Elo_min_date "2010-10-24"^^xsd:date .
-
-res:stadium/NationalStadiumDili a kg:Stadium ;
-kg:name "Sân vận động Quốc gia Dili" .
-
-res:coach/MilanPetkovic a kg:Coach ;
-kg:manages res:team/EastTimorNationalFootballTeam .
-
-res:player/ArmindoDeAlmeida a kg:Player ;
-kg:isCaptain res:team/EastTimorNationalFootballTeam .
-
-res:player/AnggisuBarbosa a kg:Player ;
-kg:mostCaps 30 .
-
-res:player/RufinoGama a kg:Player ;
-kg:topScorer 7 .
-
-res:team/EastTimorNationalFootballTeam kg:firstGame "SRI 3–2 TLS" ;
-kg:firstGameLocation res:city/Colombo, res:country/SriLanka ;
-kg:firstGameDate "2003-03-21"^^xsd:date .
-
-res:team/EastTimorNationalFootballTeam kg:largestWin "TLS 5-1 CAM" ;
-kg:largestWinLocation res:city/Yangon, res:country/Myanmar ;
-kg:largestWinDate "2012-10-05"^^xsd:date .
-
-res:team/EastTimorNationalFootballTeam kg:largestLoss "TLS 0-10 KSA" ;
-kg:largestLossLocation res:city/Dili, res:country/EastTimor ;
-kg:largestLossDate "2015-11-17"^^xsd:date .
-
-res:team/EastTimorNationalFootballTeam kg:largestLoss "TLS 0-10 THA" ;
-kg:largestLossLocation res:city/Hanoi, res:country/Vietnam ;
-kg:largestLossDate "2024-12-08"^^xsd:date .
-
-res:team/EastTimorNationalFootballTeam kg:affiliation res:organization/FootballFederationOfEastTimor .
-
-res:organization/FootballFederationOfEastTimor a kg:Organization ;
-kg:name "Liên đoàn bóng đá Đông Timor" ;
-kg:memberOf res:organization/AsianFootballConfederation .
-
-res:organization/AsianFootballConfederation a kg:Organization ;
-kg:name "Liên đoàn bóng đá châu Á (AFC)" .
-
-res:organization/ASEANFootballFederation a kg:Organization ;
-kg:name "Liên đoàn bóng đá ASEAN (AFF)" ;
-kg:memberOf res:organization/AsianFootballConfederation .
-
-res:team/EastTimorNationalFootballTeam kg:joinedFIFA "2005-09-12"^^xsd:date .
-
-res:team/EastTimorNationalFootballTeam kg:uniformColor "red" ;
-kg:uniformSecondaryColor "black" ;
-kg:uniformAccentColor "yellow" .
-
-res:team/EastTimorNationalFootballTeam kg:nickname "O Sol Nascente" ;
-kg:nickname "Lafaek" .
-
-res:team/EastTimorNationalFootballTeam kg:history "Đội tuyển bóng đá quốc gia Đông Timor đại diện cho Đông Timor trong bóng đá nam cấp độ quốc tế. Đội được tổ chức bởi Liên đoàn bóng đá Đông Timor (Federação de Futebol de Timor-Leste – FFTL), trực thuộc Liên đoàn Bóng đá châu Á (AFC) và Liên đoàn Bóng đá Đông Nam Á (AFF). Họ chính thức trở thành thành viên của FIFA vào ngày 12 tháng 9 năm 2005." .
-
-res:team/EastTimorNationalFootballTeam kg:initialPeriod "2003–2017" .
-
-res:team/EastTimorNationalFootballTeam kg:historyDetail "Bóng đá được du nhập vào Đông Timor trong thời kỳ thuộc địa Bồ Đào Nha... Đông Timor cuối cùng giành được độc lập khỏi Indonesia vào năm 2002." .
-
-res:team/EastTimorNationalFootballTeam kg:firstInternationalMatch "2003-03-21"^^xsd:date .
-
-res:team/EastTimorNationalFootballTeam kg:firstVictory "2012-10-05"^^xsd:date ;
-kg:firstVictoryScore "5-1" ;
-kg:firstVictoryOpponent res:team/Cambodia .
-
-res:team/EastTimorNationalFootballTeam kg:worldCupQualificationResult [
-kg:year "2010"^^xsd:gYear ;
-kg:result "Không vượt qua vòng loại" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:afcAsianCupQualificationResult [
-kg:year "2004"^^xsd:gYear ;
-kg:result "Không vượt qua vòng loại" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:aseanCupQualificationResult [
-kg:year "2018"^^xsd:gYear ;
-kg:result "Vòng bảng" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:worldCupQualificationResult [
-kg:year "2018"^^xsd:gYear ;
-kg:result "Vòng hai khu vực AFC" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:worldCupQualificationResult [
-kg:year "2022"^^xsd:gYear ;
-kg:result "Không vượt qua vòng loại" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:worldCupQualificationResult [
-kg:year "2026"^^xsd:gYear ;
-kg:result "Không vượt qua vòng loại" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:worldCupQualificationResult [
-kg:year "2030"^^xsd:gYear ;
-kg:result "Chưa xác định" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:worldCupQualificationResult [
-kg:year "2034"^^xsd:gYear ;
-kg:result "Chưa xác định" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:afcAsianCupQualificationResult [
-kg:year "2019"^^xsd:gYear ;
-kg:result "Không vượt qua vòng loại" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:afcAsianCupQualificationResult [
-kg:year "2023"^^xsd:gYear ;
-kg:result "Bị tước quyền thi đấu" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:afcAsianCupQualificationResult [
-kg:year "2027"^^xsd:gYear ;
-kg:result "Chưa xác định" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:aseanCupQualificationResult [
-kg:year "2024"^^xsd:gYear ;
-kg:result "Toàn thua cả 4 trận" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:topScorer res:player/JoaoPedro .
-
-res:player/JoaoPedro a kg:Player ;
-kg:topGoals 8 ;
-kg:hatTrick true ;
-kg:matchDate "2024-09-05"^^xsd:date ;
-kg:opponent res:team/Mongolia .
-
-res:team/EastTimorNationalFootballTeam kg:recentMatch [
-kg:opponent res:team/Brunei ;
-kg:date "2024-10-01"^^xsd:date ;
-kg:result "1–0" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:recentMatch [
-kg:opponent res:team/Thailand ;
-kg:date "2024-12-08"^^xsd:date ;
-kg:result "0–10" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:recentMatch [
-kg:opponent res:team/Malaysia ;
-kg:date "2024-12-11"^^xsd:date ;
-kg:result "2–3" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:recentMatch [
-kg:opponent res:team/Singapore ;
-kg:date "2024-12-14"^^xsd:date ;
-kg:result "0–3" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:recentMatch [
-kg:opponent res:team/Cambodia ;
-kg:date "2024-12-17"^^xsd:date ;
-kg:result "1–2" ;
-] .
-
-res:team/EastTimorNationalFootballTeam kg:totalGoals 2 ;
-kg:totalGoalsConceded 18 ;
-kg:goalDifference -16 .
+res:team/EastTimorNationalFootballTeam a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Đông Timor"
+; kg:hasCoach res:coach/MilanPetkovic
+; kg:hasCaptain res:player/ArmindoDeAlmeida
+; kg:homeStadium res:stadium/NationalStadiumDili
+; kg:teamAbbreviation "TLS" .
+res:stadium/NationalStadiumDili a kg:Stadium
+; kg:name "Sân vận động Quốc gia Dili" .
+res:coach/MilanPetkovic a kg:Coach
+; kg:manages res:team/EastTimorNationalFootballTeam .
+res:player/ArmindoDeAlmeida a kg:Player
+; kg:isCaptain res:team/EastTimorNationalFootballTeam .
+res:player/AnggisuBarbosa a kg:Player .
+res:player/RufinoGama a kg:Player .
+res:organization/FootballFederationOfEastTimor a kg:Organization
+; kg:name "Liên đoàn bóng đá Đông Timor" .
+res:organization/AsianFootballConfederation a kg:Organization
+; kg:name "Liên đoàn bóng đá châu Á (AFC)" .
+res:organization/ASEANFootballFederation a kg:Organization
+; kg:name "Liên đoàn bóng đá ASEAN (AFF)" .
+res:team/EastTimorNationalFootballTeam kg:result "Không vượt qua vòng loại" .
+res:team/EastTimorNationalFootballTeam kg:result "Không vượt qua vòng loại" .
+res:team/EastTimorNationalFootballTeam kg:result "Vòng bảng" .
+res:team/EastTimorNationalFootballTeam kg:result "Vòng hai khu vực AFC" .
+res:team/EastTimorNationalFootballTeam kg:result "Không vượt qua vòng loại" .
+res:team/EastTimorNationalFootballTeam kg:result "Không vượt qua vòng loại" .
+res:team/EastTimorNationalFootballTeam kg:result "Chưa xác định" .
+res:team/EastTimorNationalFootballTeam kg:result "Chưa xác định" .
+res:team/EastTimorNationalFootballTeam kg:result "Không vượt qua vòng loại" .
+res:team/EastTimorNationalFootballTeam kg:result "Bị tước quyền thi đấu" .
+res:team/EastTimorNationalFootballTeam kg:result "Chưa xác định" .
+res:team/EastTimorNationalFootballTeam kg:result "Toàn thua cả 4 trận" .
+res:player/JoaoPedro a kg:Player .
+res:team/EastTimorNationalFootballTeam kg:result "1–0" .
+res:team/EastTimorNationalFootballTeam kg:result "0–10" .
+res:team/EastTimorNationalFootballTeam kg:result "2–3" .
+res:team/EastTimorNationalFootballTeam kg:result "0–3" .
+res:team/EastTimorNationalFootballTeam kg:result "1–2" .

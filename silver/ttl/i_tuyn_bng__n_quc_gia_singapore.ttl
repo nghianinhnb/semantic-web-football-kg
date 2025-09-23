@@ -1,61 +1,19 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Singapore女足国家队 a kg:Team ;
-kg:teamName "Singapore" ;
-kg:hasCoach res:coach/Yeong_Sheau_Shyan ;
-kg:manages res:coach/Yeong_Sheau_Shyan ;
-kg:locatedIn res:country/Singapore ;
-kg:homeStadium res:stadium/Jalan_Besar_Stadium ;
-kg:associatedWith res:organization/Singapore_Football_Association .
-
-res:coach/Yeong_Sheau_Shyan a kg:Coach ;
-kg:name "Yeong Sheau Shyan" .
-
-res:stadium/Jalan_Besar_Stadium a kg:Stadium ;
-kg:locatedIn res:city/Singapore ;
-kg:capacity 5000 .
-
-res:organization/Singapore_Football_Association a kg:Organization ;
-kg:name "Singapore Football Association" ;
-kg:locatedIn res:country/Singapore .
-
-res:country/Singapore a kg:Country ;
-rdfs:label "Singapore" .
-
-res:team/Singapore女足国家队 kg:FIFA_Rank "82"^^xsd:positiveInteger ;
-kg:FIFA_Trigramme "SIN" ;
-kg:FIFA_Max_Rank "82"^^xsd:positiveInteger ;
-kg:FIFA_Max_Date "2009-12"^^xsd:date ;
-kg:FIFA_Min_Rank "148"^^xsd:positiveInteger ;
-kg:FIFA_Min_Date "2015-09"^^xsd:date ;
-kg:FIFA_First_Ranking_Date "2003-07"^^xsd:date .
-
-res:team/Singapore女足国家队 kg:Largest_Win "6-0"^^xsd:string ;
-kg:Largest_Win_Against res:team/Maldives ;
-kg:Largest_Win_Event "Thailand 2007-02-19"^^xsd:date .
-
-res:team/Singapore女足国家队 kg:Largest_Loss "24-0"^^xsd:string ;
-kg:Largest_Loss_Against res:team/North_Korea ;
-kg:Largest_Loss_Event "Thailand 2001-12-06"^^xsd:date .
-
-res:team/Singapore女足国家队 kg:Nickname "The Lionesses" ;
-kg:captain res:player/Kusumawati_Rosman .
-
-res:player/Kusumawati_Rosman a kg:Player ;
-kg:name "Kusumawati Rosman" ;
-kg:playsFor res:team/Singapore女足国家队 .
-
-res:team/Singapore女足国家队 kg:Participation_in_Asian_Championship "7/20"^^xsd:string ;
-kg:Asian_Championship_Highest_Position "Hạng Ba" ;
-kg:Asian_Championship_Highest_Year "1977"^^xsd:gYear .
-
-res:team/Singapore女足国家队 kg:Participation_in_Asian_Games "1/13"^^xsd:string ;
-kg:Asian_Games_Highest_Position "Á Quân" ;
-kg:Asian_Games_Highest_Year "1985"^^xsd:gYear .
-
-res:team/Singapore女足国家队 kg:Participation_in_SEAGames "6/13"^^xsd:string ;
-kg:SEAGames_Highest_Position "Á Quân" ;
-kg:SEAGames_Highest_Year "1985"^^xsd:gYear .
+res:team/Singapore女足国家队 a kg:Team
+; kg:teamName "Singapore"
+; kg:hasCoach res:coach/Yeong_Sheau_Shyan
+; kg:manages res:coach/Yeong_Sheau_Shyan
+; kg:locatedIn res:country/Singapore
+; kg:homeStadium res:stadium/Jalan_Besar_Stadium .
+res:coach/Yeong_Sheau_Shyan a kg:Coach
+; kg:name "Yeong Sheau Shyan" .
+res:stadium/Jalan_Besar_Stadium a kg:Stadium
+; kg:locatedIn res:city/Singapore
+; kg:capacity 5000 .
+res:organization/Singapore_Football_Association a kg:Organization
+; kg:name "Singapore Football Association"
+; kg:locatedIn res:country/Singapore .
+res:country/Singapore a kg:Country
+; rdfs:label "Singapore" .
+res:player/Kusumawati_Rosman a kg:Player
+; kg:name "Kusumawati Rosman"
+; kg:playsFor res:team/Singapore女足国家队 .

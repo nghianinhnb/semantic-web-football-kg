@@ -1,74 +1,53 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Norway_Beach_Soccer_National_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Na Uy" ;
-kg:hasCoach res:coach/Rune_Kandal .
-
-res:coach/Rune_Kandal a kg:Coach ;
-kg:manages res:team/Norway_Beach_Soccer_National_Team .
-
-res:team/Norway_Beach_Soccer_National_Team kg:teamAbbreviation "NOR" ;
-kg:locatedIn res:country/Na_Uy .
-
-res:country/Na_Uy a kg:Country ;
-rdfs:label "Na Uy" .
-
-res:player/Karl_Fredrik_Kalle_Røsland a kg:Player ;
-kg:playsFor res:team/Norway_Beach_Soccer_National_Team ;
-kg:shirtNumber 1 ;
-kg:primaryPosition res:position/Goalkeeper .
-
-res:player/Bjorn_Totland a kg:Player ;
-kg:playsFor res:team/Norway_Beach_Soccer_National_Team ;
-kg:shirtNumber 3 ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Tom_Rune_Sorensen a kg:Player ;
-kg:playsFor res:team/Norway_Beach_Soccer_National_Team ;
-kg:shirtNumber 6 ;
-kg:primaryPosition res:position/Defender .
-
-res:player/Pak_Ling_Li a kg:Player ;
-kg:playsFor res:team/Norway_Beach_Soccer_National_Team ;
-kg:shirtNumber 7 ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Henrik_Salveson a kg:Player ;
-kg:playsFor res:team/Norway_Beach_Soccer_National_Team ;
-kg:shirtNumber 9 ;
-kg:primaryPosition res:position/Midfielder .
-
-res:player/Endre_Hansen a kg:Player ;
-kg:playsFor res:team/Norway_Beach_Soccer_National_Team ;
-kg:shirtNumber 10 ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Jorn_Jacobsen a kg:Player ;
-kg:playsFor res:team/Norway_Beach_Soccer_National_Team ;
-kg:shirtNumber 14 ;
-kg:primaryPosition res:position/Forward .
-
-res:player/Arnfinn_Rekdal a kg:Player ;
-kg:playsFor res:team/Norway_Beach_Soccer_National_Team ;
-kg:shirtNumber 16 ;
-kg:primaryPosition res:position/Goalkeeper .
-
-res:player/Khalid_Hulk_Hacham a kg:Player ;
-kg:playsFor res:team/Norway_Beach_Soccer_National_Team ;
-kg:shirtNumber 12 ;
-kg:primaryPosition res:position/Goalkeeper .
-
-res:position/Goalkeeper a kg:Goalkeeper ;
-rdfs:label "Goalkeeper" .
-
-res:position/Defender a kg:Defender ;
-rdfs:label "Defender" .
-
-res:position/Midfielder a kg:Midfielder ;
-rdfs:label "Midfielder" .
-
-res:position/Forward a kg:Forward ;
-rdfs:label "Forward" .
+res:team/Norway_Beach_Soccer_National_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Na Uy"
+; kg:hasCoach res:coach/Rune_Kandal .
+res:coach/Rune_Kandal a kg:Coach
+; kg:manages res:team/Norway_Beach_Soccer_National_Team .
+res:team/Norway_Beach_Soccer_National_Team kg:teamAbbreviation "NOR"
+; kg:locatedIn res:country/Na_Uy .
+res:country/Na_Uy a kg:Country
+; rdfs:label "Na Uy" .
+res:player/Karl_Fredrik_Kalle_Røsland a kg:Player
+; kg:playsFor res:team/Norway_Beach_Soccer_National_Team
+; kg:shirtNumber 1
+; kg:primaryPosition res:position/Goalkeeper .
+res:player/Bjorn_Totland a kg:Player
+; kg:playsFor res:team/Norway_Beach_Soccer_National_Team
+; kg:shirtNumber 3
+; kg:primaryPosition res:position/Forward .
+res:player/Tom_Rune_Sorensen a kg:Player
+; kg:playsFor res:team/Norway_Beach_Soccer_National_Team
+; kg:shirtNumber 6
+; kg:primaryPosition res:position/Defender .
+res:player/Pak_Ling_Li a kg:Player
+; kg:playsFor res:team/Norway_Beach_Soccer_National_Team
+; kg:shirtNumber 7
+; kg:primaryPosition res:position/Midfielder .
+res:player/Henrik_Salveson a kg:Player
+; kg:playsFor res:team/Norway_Beach_Soccer_National_Team
+; kg:shirtNumber 9
+; kg:primaryPosition res:position/Midfielder .
+res:player/Endre_Hansen a kg:Player
+; kg:playsFor res:team/Norway_Beach_Soccer_National_Team
+; kg:shirtNumber 10
+; kg:primaryPosition res:position/Forward .
+res:player/Jorn_Jacobsen a kg:Player
+; kg:playsFor res:team/Norway_Beach_Soccer_National_Team
+; kg:shirtNumber 14
+; kg:primaryPosition res:position/Forward .
+res:player/Arnfinn_Rekdal a kg:Player
+; kg:playsFor res:team/Norway_Beach_Soccer_National_Team
+; kg:shirtNumber 16
+; kg:primaryPosition res:position/Goalkeeper .
+res:player/Khalid_Hulk_Hacham a kg:Player
+; kg:playsFor res:team/Norway_Beach_Soccer_National_Team
+; kg:shirtNumber 12
+; kg:primaryPosition res:position/Goalkeeper .
+res:position/Goalkeeper a kg:Goalkeeper
+; rdfs:label "Goalkeeper" .
+res:position/Defender a kg:Defender
+; rdfs:label "Defender" .
+res:position/Midfielder a kg:Midfielder
+; rdfs:label "Midfielder" .
+res:position/Forward a kg:Forward
+; rdfs:label "Forward" .

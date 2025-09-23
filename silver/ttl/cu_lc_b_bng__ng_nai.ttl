@@ -1,305 +1,93 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai a kg:Club ;
-kg:teamName "Câu lạc bộ bóng đá Đồng Nai" ;
-kg:teamAbbreviation "Đồng Nai" ;
-kg:foundedDate "1976-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Sân_vận_động_Đồng_Nai ;
-kg:hasOwner res:person/Nguyễn_Văn_Minh ;
-kg:hasCoach res:coach/Bùi_Hữu_Thái_Sơn ;
-kg:participatesIn res:season/2024–25 ;
-kg:isHomeOf res:stadium/Sân_vận_động_Đồng_Nai ;
-kg:inCompetition res:competition/Giải_bóng_đá_Hạng_Nhất_Quec_gia_Viet_Nam .
-
-res:stadium/Sân_vận_động_Đồng_Nai a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Đồng_Nai .
-
-res:person/Nguyễn_Văn_Minh a kg:Owner ;
-kg:owns res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai .
-
-res:coach/Bùi_Hữu_Thái_Sơn a kg:Coach ;
-kg:manages res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai .
-
-res:season/2024–25 a kg:Season ;
-kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Quec_gia_Viet_Nam .
-
-res:competition/Giải_bóng_đá_Hạng_Nhất_Quec_gia_Viet_Nam a kg:Competition ;
-kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia Việt Nam" .
-
-res:city/Đồng_Nai a kg:City ;
-kg:locatedIn res:country/Việt_Nam .
-
+res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai a kg:Club
+; kg:teamName "Câu lạc bộ bóng đá Đồng Nai"
+; kg:teamAbbreviation "Đồng Nai"
+; kg:foundedDate "1976-01-01"^^xsd:date
+; kg:homeStadium res:stadium/Sân_vận_động_Đồng_Nai
+; kg:hasOwner res:person/Nguyễn_Văn_Minh
+; kg:hasCoach res:coach/Bùi_Hữu_Thái_Sơn
+; kg:participatesIn res:season/2024–25
+; kg:isHomeOf res:stadium/Sân_vận_động_Đồng_Nai
+; kg:inCompetition res:competition/Giải_bóng_đá_Hạng_Nhất_Quec_gia_Viet_Nam .
+res:stadium/Sân_vận_động_Đồng_Nai a kg:Stadium
+; kg:capacity 30000
+; kg:locatedIn res:city/Đồng_Nai .
+res:person/Nguyễn_Văn_Minh a kg:Owner
+; kg:owns res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai .
+res:coach/Bùi_Hữu_Thái_Sơn a kg:Coach
+; kg:manages res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai .
+res:season/2024–25 a kg:Season
+; kg:seasonOf res:competition/Giải_bóng_đá_Hạng_Nhất_Quec_gia_Viet_Nam .
+res:competition/Giải_bóng_đá_Hạng_Nhất_Quec_gia_Viet_Nam a kg:Competition
+; kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia Việt Nam" .
+res:city/Đồng_Nai a kg:City
+; kg:locatedIn res:country/Việt_Nam .
 res:country/Việt_Nam a kg:Country .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:disbandedDate "2025-08-01"^^xsd:date .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:currentLeague res:competition/Giải_bóng_đá_Hạng_Nhất_Quec_gia_Viet_Nam .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:currentRanking "9thu" .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:currentSeason res:season/2024–25 .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:currentStadium res:stadium/Sân_vận_động_Đồng_Nai .
-
-res:stadium/Sân_vận_động_Đồng_Nai kg:stadiumLocation "đường Phạm Văn Khoai, phường Tam Hiệp, tỉnh Đồng Nai" .
-
-res:stadium/Sân_vận_động_Đồng_Nai kg:stadiumSections (
-res:section/Khán_đài_A ,
-res:section/Khán_đài_B ,
-res:section/Khán_đài_C ,
-res:section/Khán_đài_D
-) .
-
 res:section/Khán_đài_A kg:capacity 3000 .
-
 res:section/Khán_đài_B kg:capacity 15000 .
-
 res:section/Khán_đài_C kg:capacity 7000 .
-
 res:section/Khán_đài_D kg:capacity 7000 .
-
-res:stadium/Sân_vận_động_Đồng_Nai kg:lightingSystem "dàn đèn hiện đại (độ sáng 1200 lux)" .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:sponsor res:organization/Demenino_Sport .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:formerSponsors (
-res:organization/Strata ,
-res:organization/Berjaya
-) .
-
-res:organization/Strata kg:sponsored res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai .
-
-res:organization/Berjaya kg:sponsored res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai .
-
-res:organization/Demenino_Sport kg:sponsored res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:formerNames "Câu lạc bộ bóng đá Strata Đồng Nai" .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:formerNames "Câu lạc bộ bóng đá Đồng Nai Berjaya" .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:currentName "Câu lạc bộ bóng đá Đồng Nai" .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:alias "Đội bóng Cù Lao Phố" .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:location res:city/Đồng_Nai .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:establishedDate "1976-01-01"^^xsd:date .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:disbandedDate "2025-08-01"^^xsd:date .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:currentLeague res:competition/Giải_bóng_đá_Hạng_Nhất_Quec_gia_Viet_Nam .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:currentSeason res:season/2024–25 .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:currentRanking "9thu" .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:currentStadium res:stadium/Sân_vận_động_Đồng_Nai .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:manager res:person/Nguyễn_Văn_Long .
-
-res:person/Nguyễn_Văn_Long a kg:Manager ;
-kg:manages res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:president res:person/Nguyễn_Văn_Minh .
-
-res:person/Nguyễn_Văn_Minh a kg:President ;
-kg:leads res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:currentKitColors (
-"FF0000" ,
-"000000" ,
-"FF0000"
-) .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:currentKitColorsSecondary (
-"FFFFFF" ,
-"FF0000"
-) .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:hasAchievements (
-res:achievement/Vô_địch_2023 ,
-res:achievement/Á_quân_2004 ,
-res:achievement/Hạng_ba_2012 ,
-res:achievement/Á_quân_2019 ,
-res:achievement/Vô_địch_Cúp_truyền_hình_Tây_Ninh_2009 ,
-res:achievement/Vô_địch_Cúp_truyền_hình_Tây_Ninh_2010 ,
-res:achievement/Á_quân_Cúp_truyền_hình_Tây_Ninh_2007 ,
-res:achievement/Vô_địch_U21_2010 ,
-res:achievement/Vô_địch_U19_2007 ,
-res:achievement/Vô_địch_U15_2004
-) .
-
-res:achievement/Vô_địch_2023 a kg:Achievement ;
-kg:name "Vô địch Giải bóng đá Hạng Nhì Quốc gia 2023" .
-
-res:achievement/Á_quân_2004 a kg:Achievement ;
-kg:name "Á quân Giải bóng đá Hạng Nhì Quốc gia 2004" .
-
-res:achievement/Hạng_ba_2012 a kg:Achievement ;
-kg:name "Hạng ba Giải bóng đá Hạng Nhất Quốc gia 2012" .
-
-res:achievement/Á_quân_2019 a kg:Achievement ;
-kg:name "Á quân Giải bóng đá Hạng Ba Quốc gia 2019" .
-
-res:achievement/Vô_địch_Cúp_truyền_hình_Tây_Ninh_2009 a kg:Achievement ;
-kg:name "Vô địch Cúp truyền hình Tây Ninh 2009" .
-
-res:achievement/Vô_địch_Cúp_truyền_hình_Tây_Ninh_2010 a kg:Achievement ;
-kg:name "Vô địch Cúp truyền hình Tây Ninh 2010" .
-
-res:achievement/Á_quân_Cúp_truyền_hình_Tây_Ninh_2007 a kg:Achievement ;
-kg:name "Á quân Cúp truyền hình Tây Ninh 2007" .
-
-res:achievement/Vô_địch_U21_2010 a kg:Achievement ;
-kg:name "Vô địch Giải vô địch bóng đá U21 Việt Nam 2010" .
-
-res:achievement/Vô_địch_U19_2007 a kg:Achievement ;
-kg:name "Vô địch Giải vô địch bóng đá U19 Việt Nam 2007" .
-
-res:achievement/Vô_địch_U15_2004 a kg:Achievement ;
-kg:name "Vô địch Giải vô địch bóng đá U15 Việt Nam 2004" .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:hasPlayers (
-res:player/Nguyễn_Lê_Nhật_Quang ,
-res:player/Đặng_Minh_Hiếu ,
-res:player/Nguyễn_Hữu_Trung ,
-res:player/Bùi_Ngọc_Thịnh ,
-res:player/Quan_Huỳnh_Thanh_Quý ,
-res:player/Hồ_Minh_Quyền ,
-res:player/Hồ_Văn_An ,
-res:player/Nguyễn_Văn_Sơn ,
-res:player/Cao_Quốc_Khánh ,
-res:player/Cao_Hoàng_Tú ,
-res:player/Nguyễn_Hoàng_Huy ,
-res:player/Phạm_Văn_Soạn ,
-res:player/Nguyễn_Đình_Đức ,
-res:player/TRần_Đàm_Phúc_Thịnh ,
-res:player/Nguyễn_Công_TIến ,
-res:player/Đoàn_Văn_Quý ,
-res:player/Hà_Ngọc_Vũ ,
-res:player/Đinh_Thế_Nhuận ,
-res:player/Đỗ_Văn_Chí ,
-res:player/Nguyễn_Bá_Dương ,
-res:player/Võ_Văn_Sơn ,
-res:player/Nguyễn_Kim_Nhật ,
-res:player/Vũ_Bá_Hải_Dương ,
-res:player/Trương_Thái_Hiếu
-) .
-
-res:player/Nguyễn_Lê_Nhật_Quang a kg:Player ;
-kg:shirtNumber 1 ;
-kg:position res:position/GK .
-
-res:player/Đặng_Minh_Hiếu a kg:Player ;
-kg:shirtNumber 3 ;
-kg:position res:position/MF .
-
-res:player/Nguyễn_Hữu_Trung a kg:Player ;
-kg:shirtNumber 4 ;
-kg:position res:position/DF .
-
-res:player/Bùi_Ngọc_Thịnh a kg:Player ;
-kg:shirtNumber 5 ;
-kg:position res:position/DF .
-
-res:player/Quan_Huỳnh_Thanh_Quý a kg:Player ;
-kg:shirtNumber 6 ;
-kg:position res:position/DF .
-
-res:player/Hồ_Minh_Quyền a kg:Player ;
-kg:shirtNumber 7 ;
-kg:position res:position/MF .
-
-res:player/Hồ_Văn_An a kg:Player ;
-kg:shirtNumber 8 ;
-kg:position res:position/MF .
-
-res:player/Nguyễn_Văn_Sơn a kg:Player ;
-kg:shirtNumber 9 ;
-kg:position res:position/FW .
-
-res:player/Cao_Quốc_Khánh a kg:Player ;
-kg:shirtNumber 10 ;
-kg:position res:position/FW .
-
-res:player/Cao_Hoàng_Tú a kg:Player ;
-kg:shirtNumber 11 ;
-kg:position res:position/FW .
-
-res:player/Nguyễn_Hoàng_Huy a kg:Player ;
-kg:shirtNumber 12 ;
-kg:position res:position/FW .
-
-res:player/Phạm_Văn_Soạn a kg:Player ;
-kg:shirtNumber 13 ;
-kg:position res:position/MF .
-
-res:player/Nguyễn_Đình_Đức a kg:Player ;
-kg:shirtNumber 15 ;
-kg:position res:position/DF .
-
-res:player/TRần_Đàm_Phúc_Thịnh a kg:Player ;
-kg:shirtNumber 16 ;
-kg:position res:position/DF .
-
-res:player/Nguyễn_Công_TIến a kg:Player ;
-kg:shirtNumber 20 ;
-kg:position res:position/MF .
-
-res:player/Đoàn_Văn_Quý a kg:Player ;
-kg:shirtNumber 21 ;
-kg:position res:position/DF .
-
-res:player/Hà_Ngọc_Vũ a kg:Player ;
-kg:shirtNumber 26 ;
-kg:position res:position/MF .
-
-res:player/Đinh_Thế_Nhuận a kg:Player ;
-kg:shirtNumber 28 ;
-kg:position res:position/MF .
-
-res:player/Đỗ_Văn_Chí a kg:Player ;
-kg:shirtNumber 29 ;
-kg:position res:position/MF .
-
-res:player/Nguyễn_Bá_Dương a kg:Player ;
-kg:shirtNumber 34 ;
-kg:position res:position/FW .
-
-res:player/Võ_Văn_Sơn a kg:Player ;
-kg:shirtNumber 37 ;
-kg:position res:position/GK .
-
-res:player/Nguyễn_Kim_Nhật a kg:Player ;
-kg:shirtNumber 47 ;
-kg:position res:position/FW .
-
-res:player/Vũ_Bá_Hải_Dương a kg:Player ;
-kg:shirtNumber 86 ;
-kg:position res:position/FW .
-
-res:player/Trương_Thái_Hiếu a kg:Player ;
-kg:shirtNumber 89 ;
-kg:position res:position/GK .
-
+res:person/Nguyễn_Văn_Long kg:manages res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai .
+res:achievement/Vô_địch_2023 kg:name "Vô địch Giải bóng đá Hạng Nhì Quốc gia 2023" .
+res:achievement/Á_quân_2004 kg:name "Á quân Giải bóng đá Hạng Nhì Quốc gia 2004" .
+res:achievement/Hạng_ba_2012 kg:name "Hạng ba Giải bóng đá Hạng Nhất Quốc gia 2012" .
+res:achievement/Á_quân_2019 kg:name "Á quân Giải bóng đá Hạng Ba Quốc gia 2019" .
+res:achievement/Vô_địch_Cúp_truyền_hình_Tây_Ninh_2009 kg:name "Vô địch Cúp truyền hình Tây Ninh 2009" .
+res:achievement/Vô_địch_Cúp_truyền_hình_Tây_Ninh_2010 kg:name "Vô địch Cúp truyền hình Tây Ninh 2010" .
+res:achievement/Á_quân_Cúp_truyền_hình_Tây_Ninh_2007 kg:name "Á quân Cúp truyền hình Tây Ninh 2007" .
+res:achievement/Vô_địch_U21_2010 kg:name "Vô địch Giải vô địch bóng đá U21 Việt Nam 2010" .
+res:achievement/Vô_địch_U19_2007 kg:name "Vô địch Giải vô địch bóng đá U19 Việt Nam 2007" .
+res:achievement/Vô_địch_U15_2004 kg:name "Vô địch Giải vô địch bóng đá U15 Việt Nam 2004" .
+res:player/Nguyễn_Lê_Nhật_Quang a kg:Player
+; kg:shirtNumber 1 .
+res:player/Đặng_Minh_Hiếu a kg:Player
+; kg:shirtNumber 3 .
+res:player/Nguyễn_Hữu_Trung a kg:Player
+; kg:shirtNumber 4 .
+res:player/Bùi_Ngọc_Thịnh a kg:Player
+; kg:shirtNumber 5 .
+res:player/Quan_Huỳnh_Thanh_Quý a kg:Player
+; kg:shirtNumber 6 .
+res:player/Hồ_Minh_Quyền a kg:Player
+; kg:shirtNumber 7 .
+res:player/Hồ_Văn_An a kg:Player
+; kg:shirtNumber 8 .
+res:player/Nguyễn_Văn_Sơn a kg:Player
+; kg:shirtNumber 9 .
+res:player/Cao_Quốc_Khánh a kg:Player
+; kg:shirtNumber 10 .
+res:player/Cao_Hoàng_Tú a kg:Player
+; kg:shirtNumber 11 .
+res:player/Nguyễn_Hoàng_Huy a kg:Player
+; kg:shirtNumber 12 .
+res:player/Phạm_Văn_Soạn a kg:Player
+; kg:shirtNumber 13 .
+res:player/Nguyễn_Đình_Đức a kg:Player
+; kg:shirtNumber 15 .
+res:player/TRần_Đàm_Phúc_Thịnh a kg:Player
+; kg:shirtNumber 16 .
+res:player/Nguyễn_Công_TIến a kg:Player
+; kg:shirtNumber 20 .
+res:player/Đoàn_Văn_Quý a kg:Player
+; kg:shirtNumber 21 .
+res:player/Hà_Ngọc_Vũ a kg:Player
+; kg:shirtNumber 26 .
+res:player/Đinh_Thế_Nhuận a kg:Player
+; kg:shirtNumber 28 .
+res:player/Đỗ_Văn_Chí a kg:Player
+; kg:shirtNumber 29 .
+res:player/Nguyễn_Bá_Dương a kg:Player
+; kg:shirtNumber 34 .
+res:player/Võ_Văn_Sơn a kg:Player
+; kg:shirtNumber 37 .
+res:player/Nguyễn_Kim_Nhật a kg:Player
+; kg:shirtNumber 47 .
+res:player/Vũ_Bá_Hải_Dương a kg:Player
+; kg:shirtNumber 86 .
+res:player/Trương_Thái_Hiếu a kg:Player
+; kg:shirtNumber 89 .
 res:position/GK a kg:Position .
-
 res:position/DF a kg:Position .
-
 res:position/MF a kg:Position .
-
 res:position/FW a kg:Position .
-
-res:club/Câu_lạc_bộ_bóng_đá_Đồng_Nai kg:hasCoaches (
-res:coach/Bùi_Hữu_Thái_Sơn ,
-res:coach/Phan_Thế_Hiếu
-) .
-
 res:coach/Bùi_Hữu_Thái_Sơn a kg:Coach .
-
 res:coach/Phan_Thế_Hiếu a kg:Coach .

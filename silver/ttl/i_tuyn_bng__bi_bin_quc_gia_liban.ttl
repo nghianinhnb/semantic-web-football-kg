@@ -1,177 +1,105 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Liban a kg:Team ;
-kg:teamName "Liban" ;
-kg:hasCoach res:coach/Leo_Braga ;
-kg:manages res:coach/Khaled_Berjaui ;
-kg:teamAbbreviation "LIB" ;
-kg:locatedIn res:country/Liban .
-
-res:country/Liban a kg:Country ;
-rdfs:label "Liban" .
-
-res:coach/Leo_Braga a kg:Coach ;
-kg:manages res:team/Liban .
-
-res:coach/Khaled_Berjaui a kg:Coach ;
-kg:manages res:team/Liban .
-
-res:player/Mohamed_Choker a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 1 .
-
-res:player/Mohamad_Halawi a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 ;
-kg:isCaptain true .
-
-res:player/Mahmoud_Hawila a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 3 .
-
-res:player/Hussein_Al_Salehi a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 4 .
-
-res:player/Hassan_Al_Jaafil a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 5 .
-
-res:player/Mohamad_Mechleb_Matar a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 6 .
-
-res:player/Moustafa_El_Zein a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Midfielder .
-
-res:player/Mohamad_Merhi a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 7 .
-
-res:player/Karim_Mokdak a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 8 .
-
-res:player/Hussein_Abdullah a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 9 .
-
-res:player/Haitham_Fattal a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 10 .
-
-res:player/Hussein_Salame a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 11 .
-
-res:player/Chafik_Elmir a kg:Player ;
-kg:playsFor res:team/Liban ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 12 .
-
-res:competition/AFC_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Á" ;
-kg:organizedBy res:organization/AFC .
-
-res:organization/AFC a kg:Organization ;
-kg:organizes res:competition/AFC_Beach_Soccer_Championship .
-
-res:competition/WAFF_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển Tây Á" ;
-kg:organizedBy res:organization/WAFF .
-
-res:organization/WAFF a kg:Organization ;
-kg:organizes res:competition/WAFF_Beach_Soccer_Championship .
-
-res:team/Liban kg:participatesIn res:season/2013 ;
-kg:participatesIn res:season/2015 ;
-kg:participatesIn res:season/2017 .
-
-res:season/2013 a kg:Season ;
-kg:seasonOf res:competition/AFC_Beach_Soccer_Championship .
-
-res:season/2015 a kg:Season ;
-kg:seasonOf res:competition/AFC_Beach_Soccer_Championship .
-
-res:season/2017 a kg:Season ;
-kg:seasonOf res:competition/AFC_Beach_Soccer_Championship .
-
-res:match/Doha_Qatar_2013 a kg:Match ;
-kg:inCompetition res:competition/AFC_Beach_Soccer_Championship ;
-kg:inSeason res:season/2013 ;
-kg:homeTeam res:team/Liban ;
-kg:venue res:stadium/Doha_Qatar .
-
-res:stadium/Doha_Qatar a kg:Stadium ;
-kg:locatedIn res:city/Doha .
-
-res:city/Doha a kg:City ;
-kg:locatedIn res:country/Qatar .
-
-res:country/Qatar a kg:Country ;
-rdfs:label "Qatar" .
-
-res:match/Doha_Qatar_2015 a kg:Match ;
-kg:inCompetition res:competition/AFC_Beach_Soccer_Championship ;
-kg:inSeason res:season/2015 ;
-kg:homeTeam res:team/Liban ;
-kg:venue res:stadium/Doha_Qatar .
-
-res:match/Dubai_UAE_2017 a kg:Match ;
-kg:inCompetition res:competition/AFC_Beach_Soccer_Championship ;
-kg:inSeason res:season/2017 ;
-kg:homeTeam res:team/Liban ;
-kg:venue res:stadium/Dubai_UAE .
-
-res:stadium/Dubai_UAE a kg:Stadium ;
-kg:locatedIn res:city/Dubai .
-
-res:city/Dubai a kg:City ;
-kg:locatedIn res:country/UAE .
-
-res:country/UAE a kg:Country ;
-rdfs:label "UAE" .
-
+res:team/Liban a kg:Team
+; kg:teamName "Liban"
+; kg:hasCoach res:coach/Leo_Braga
+; kg:manages res:coach/Khaled_Berjaui
+; kg:teamAbbreviation "LIB"
+; kg:locatedIn res:country/Liban .
+res:country/Liban a kg:Country
+; rdfs:label "Liban" .
+res:coach/Leo_Braga a kg:Coach
+; kg:manages res:team/Liban .
+res:coach/Khaled_Berjaui a kg:Coach
+; kg:manages res:team/Liban .
+res:player/Mohamed_Choker a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Mohamad_Halawi a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Mahmoud_Hawila a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Hussein_Al_Salehi a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Hassan_Al_Jaafil a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Mohamad_Mechleb_Matar a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Moustafa_El_Zein a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Midfielder .
+res:player/Mohamad_Merhi a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Karim_Mokdak a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Hussein_Abdullah a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Haitham_Fattal a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Hussein_Salame a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Chafik_Elmir a kg:Player
+; kg:playsFor res:team/Liban
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:competition/AFC_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Á"
+; kg:organizedBy res:organization/AFC .
+res:organization/AFC a kg:Organization
+; kg:organizes res:competition/AFC_Beach_Soccer_Championship .
+res:competition/WAFF_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển Tây Á"
+; kg:organizedBy res:organization/WAFF .
+res:organization/WAFF a kg:Organization
+; kg:organizes res:competition/WAFF_Beach_Soccer_Championship .
+res:team/Liban kg:participatesIn res:season/2013
+; kg:participatesIn res:season/2015
+; kg:participatesIn res:season/2017 .
+res:season/2013 a kg:Season
+; kg:seasonOf res:competition/AFC_Beach_Soccer_Championship .
+res:season/2015 a kg:Season
+; kg:seasonOf res:competition/AFC_Beach_Soccer_Championship .
+res:season/2017 a kg:Season
+; kg:seasonOf res:competition/AFC_Beach_Soccer_Championship .
+res:match/Doha_Qatar_2013 a kg:Match
+; kg:inCompetition res:competition/AFC_Beach_Soccer_Championship
+; kg:inSeason res:season/2013
+; kg:homeTeam res:team/Liban
+; kg:venue res:stadium/Doha_Qatar .
+res:stadium/Doha_Qatar a kg:Stadium
+; kg:locatedIn res:city/Doha .
+res:city/Doha a kg:City
+; kg:locatedIn res:country/Qatar .
+res:country/Qatar a kg:Country
+; rdfs:label "Qatar" .
+res:match/Doha_Qatar_2015 a kg:Match
+; kg:inCompetition res:competition/AFC_Beach_Soccer_Championship
+; kg:inSeason res:season/2015
+; kg:homeTeam res:team/Liban
+; kg:venue res:stadium/Doha_Qatar .
+res:match/Dubai_UAE_2017 a kg:Match
+; kg:inCompetition res:competition/AFC_Beach_Soccer_Championship
+; kg:inSeason res:season/2017
+; kg:homeTeam res:team/Liban
+; kg:venue res:stadium/Dubai_UAE .
+res:stadium/Dubai_UAE a kg:Stadium
+; kg:locatedIn res:city/Dubai .
+res:city/Dubai a kg:City
+; kg:locatedIn res:country/UAE .
+res:country/UAE a kg:Country
+; rdfs:label "UAE" .
 res:competition/AFC_Beach_Soccer_Championship kg:participantCount 24 .
-
 res:competition/WAFF_Beach_Soccer_Championship kg:participantCount 12 .
-
-res:team/Liban kg:BSWWRank 20 ;
-kg:BSWWRankDate "2017-05-09"^^xsd:date .
-
-res:team/Liban kg:confederation res:organization/AFC ;
-kg:subConfederation res:organization/WAFF .
-
-res:organization/AFC a kg:Organization ;
-kg:name "Liên đoàn bóng đá châu Á" .
-
-res:organization/WAFF a kg:Organization ;
-kg:name "Liên đoàn bóng đá Tây Á" .
-
-res:team/Liban kg:managedBy res:coach/Leo_Braga ;
-kg:assistantCoach res:coach/Khaled_Berjaui .
-
-res:team/Liban kg:nickname "Les Cèdres" ;
-kg:nickname "The Cedars" .
-
-res:team/Liban kg:association res:organization/Liban_Football_Association .
-
-res:organization/Liban_Football_Association a kg:Organization ;
-kg:name "Hiệp hội bóng đá Liban" .
-
-res:team/Liban kg:badgeSize "200px"^^xsd:string .
+res:organization/AFC a kg:Organization
+; kg:name "Liên đoàn bóng đá châu Á" .
+res:organization/WAFF a kg:Organization
+; kg:name "Liên đoàn bóng đá Tây Á" .
+res:organization/Liban_Football_Association a kg:Organization
+; kg:name "Hiệp hội bóng đá Liban" .

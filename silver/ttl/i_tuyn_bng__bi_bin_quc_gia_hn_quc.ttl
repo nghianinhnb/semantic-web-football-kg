@@ -1,125 +1,74 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Han_Quoc a kg:Team ;
-kg:teamName "Hàn Quốc" ;
-kg:hasCoach res:coach/Park_Mal_Bong ;
-kg:locatedIn res:country/Han_Quoc ;
-kg:organizes res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_A ;
-kg:organizes res:competition/Dai_Hoi_The_Thao_Bai_Bien_Chau_A .
-
-res:coach/Park_Mal_Bong a kg:Coach ;
-kg:name "Park Mal-Bong" .
-
-res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_A a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Á" ;
-kg:heldIn res:country/Han_Quoc .
-
-res:competition/Dai_Hoi_The_Thao_Bai_Bien_Chau_A a kg:Competition ;
-kg:competitionName "Đại hội thể thao bãi biển châu Á" ;
-kg:heldIn res:country/Han_Quoc .
-
-res:team/Han_Quoc kg:participatesIn res:season/2008_Dai_Hoi_The_Thao_Bai_Bien_Chau_A ;
-kg:participatesIn res:season/2008_Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_A .
-
-res:season/2008_Dai_Hoi_The_Thao_Bai_Bien_Chau_A a kg:Season ;
-kg:seasonOf res:competition/Dai_Hoi_The_Thao_Bai_Bien_Chau_A .
-
-res:season/2008_Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_A a kg:Season ;
-kg:seasonOf res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_A .
-
-res:team/Han_Quoc kg:resultInMatch res:match/KOR_3_11_BRA_1995 ;
-
-res:match/KOR_3_11_BRA_1995 a kg:Match ;
-kg:homeTeam res:team/Han_Quoc ;
-kg:awayTeam res:team/Brazil ;
-kg:kickoffTime "1995-07-01"^^xsd:date .
-
-res:team/Brazil a kg:Team ;
-kg:teamName "Brazil" ;
-kg:locatedIn res:country/Brazil .
-
-res:team/Han_Quoc kg:resultInMatch res:match/KOR_3_11_BRA_1995 ;
-kg:inCompetition res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_The_Gioi .
-
-res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_The_Gioi a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
-
-res:player/Park_Jun_Hyuk a kg:Player ;
-kg:name "Park Jun-Hyuk" ;
-kg:nationality res:country/Han_Quoc ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 1 ;
-kg:playsFor res:team/Han_Quoc .
-
-res:player/Lee_Ho_Chang a kg:Player ;
-kg:name "Lee Ho-Chang" ;
-kg:nationality res:country/Han_Quoc ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 ;
-kg:playsFor res:team/Han_Quoc .
-
-res:player/Yoo_Sung_Ryong a kg:Player ;
-kg:name "Yoo Sung-Ryong" ;
-kg:nationality res:country/Han_Quoc ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 3 ;
-kg:playsFor res:team/Han_Quoc .
-
-res:player/Lim_Jung_Ha a kg:Player ;
-kg:name "Lim Jung-Ha" ;
-kg:nationality res:country/Han_Quoc ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 5 ;
-kg:playsFor res:team/Han_Quoc .
-
-res:player/Yoon_Sin_Young a kg:Player ;
-kg:name "Yoon Sin-Young" ;
-kg:nationality res:country/Han_Quoc ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 6 ;
-kg:playsFor res:team/Han_Quoc .
-
-res:player/Kang_Eun_Seok a kg:Player ;
-kg:name "Kang Eun-Seok" ;
-kg:nationality res:country/Han_Quoc ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 7 ;
-kg:playsFor res:team/Han_Quoc ;
-kg:otherRole "đội trưởng" .
-
-res:player/Lee_Han_Soo a kg:Player ;
-kg:name "Lee Han-Soo" ;
-kg:nationality res:country/Han_Quoc ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 8 ;
-kg:playsFor res:team/Han_Quoc .
-
-res:player/Sin_Han_Kook a kg:Player ;
-kg:name "Sin Han-Kook" ;
-kg:nationality res:country/Han_Quoc ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 9 ;
-kg:playsFor res:team/Han_Quoc .
-
-res:player/Choi_Kyung_Jin a kg:Player ;
-kg:name "Choi Kyung-Jin" ;
-kg:nationality res:country/Han_Quoc ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 10 ;
-kg:playsFor res:team/Han_Quoc .
-
-res:player/Shim_Jong_Bo a kg:Player ;
-kg:name "Shim Jong-Bo" ;
-kg:nationality res:country/Han_Quoc ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 11 ;
-kg:playsFor res:team/Han_Quoc .
-
-res:country/Han_Quoc a kg:Country ;
-rdfs:label "Hàn Quốc" .
-
-res:country/Brazil a kg:Country ;
-rdfs:label "Brazil" .
+res:team/Han_Quoc a kg:Team
+; kg:teamName "Hàn Quốc"
+; kg:hasCoach res:coach/Park_Mal_Bong
+; kg:locatedIn res:country/Han_Quoc
+; kg:organizes res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_A
+; kg:organizes res:competition/Dai_Hoi_The_Thao_Bai_Bien_Chau_A .
+res:coach/Park_Mal_Bong a kg:Coach
+; kg:name "Park Mal-Bong" .
+res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_A a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Á"
+; kg:heldIn res:country/Han_Quoc .
+res:competition/Dai_Hoi_The_Thao_Bai_Bien_Chau_A a kg:Competition
+; kg:competitionName "Đại hội thể thao bãi biển châu Á"
+; kg:heldIn res:country/Han_Quoc .
+res:team/Han_Quoc kg:participatesIn res:season/2008_Dai_Hoi_The_Thao_Bai_Bien_Chau_A
+; kg:participatesIn res:season/2008_Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_A .
+res:season/2008_Dai_Hoi_The_Thao_Bai_Bien_Chau_A a kg:Season
+; kg:seasonOf res:competition/Dai_Hoi_The_Thao_Bai_Bien_Chau_A .
+res:season/2008_Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_A a kg:Season
+; kg:seasonOf res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_Chau_A .
+res:team/Han_Quoc res:match/KOR_3_11_BRA_1995 a kg:Match
+; kg:homeTeam res:team/Han_Quoc
+; kg:awayTeam res:team/Brazil
+; kg:kickoffTime "1995-07-01"^^xsd:date .
+res:team/Brazil a kg:Team
+; kg:teamName "Brazil"
+; kg:locatedIn res:country/Brazil .
+res:team/Han_Quoc kg:inCompetition res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_The_Gioi .
+res:competition/Giai_Vo_Dich_Bong_Da_Bai_Bien_The_Gioi a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+res:player/Park_Jun_Hyuk a kg:Player
+; kg:name "Park Jun-Hyuk"
+; kg:nationality res:country/Han_Quoc
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Lee_Ho_Chang a kg:Player
+; kg:name "Lee Ho-Chang"
+; kg:nationality res:country/Han_Quoc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Yoo_Sung_Ryong a kg:Player
+; kg:name "Yoo Sung-Ryong"
+; kg:nationality res:country/Han_Quoc
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Lim_Jung_Ha a kg:Player
+; kg:name "Lim Jung-Ha"
+; kg:nationality res:country/Han_Quoc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Yoon_Sin_Young a kg:Player
+; kg:name "Yoon Sin-Young"
+; kg:nationality res:country/Han_Quoc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Kang_Eun_Seok a kg:Player
+; kg:name "Kang Eun-Seok"
+; kg:nationality res:country/Han_Quoc
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Lee_Han_Soo a kg:Player
+; kg:name "Lee Han-Soo"
+; kg:nationality res:country/Han_Quoc
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Sin_Han_Kook a kg:Player
+; kg:name "Sin Han-Kook"
+; kg:nationality res:country/Han_Quoc
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Choi_Kyung_Jin a kg:Player
+; kg:name "Choi Kyung-Jin"
+; kg:nationality res:country/Han_Quoc
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Shim_Jong_Bo a kg:Player
+; kg:name "Shim Jong-Bo"
+; kg:nationality res:country/Han_Quoc
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:country/Han_Quoc a kg:Country
+; rdfs:label "Hàn Quốc" .
+res:country/Brazil a kg:Country
+; rdfs:label "Brazil" .

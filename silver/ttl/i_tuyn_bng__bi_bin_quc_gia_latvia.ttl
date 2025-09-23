@@ -1,51 +1,35 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Latvia a kg:Team ;
-kg:teamName "Latvia" ;
-kg:teamAbbreviation "LVA" ;
-kg:hasCoach res:coach/Valts_Bumanis .
-
-res:coach/Valts_Bumanis a kg:Coach ;
-kg:manages res:team/Latvia .
-
-res:player/Aigars_Bondars a kg:Player ;
-kg:playsFor res:team/Latvia ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber "1"^^xsd:positiveInteger .
-
-res:player/Girts_Paulis a kg:Player ;
-kg:playsFor res:team/Latvia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "2"^^xsd:positiveInteger .
-
-res:player/Valdis_Veinbergs a kg:Player ;
-kg:playsFor res:team/Latvia ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "5"^^xsd:positiveInteger .
-
-res:player/Gatis_Rozkalns a kg:Player ;
-kg:playsFor res:team/Latvia ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber "7"^^xsd:positiveInteger .
-
-res:player/Davids_Vecaukums a kg:Player ;
-kg:playsFor res:team/Latvia ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber "10"^^xsd:positiveInteger .
-
-res:position/Goalkeeper a kg:Goalkeeper ;
-rdfs:subClassOf kg:Position .
-
-res:position/Defender a kg:Defender ;
-rdfs:subClassOf kg:Position .
-
-res:position/Forward a kg:Forward ;
-rdfs:subClassOf kg:Position .
-
+res:team/Latvia a kg:Team
+; kg:teamName "Latvia"
+; kg:teamAbbreviation "LVA"
+; kg:hasCoach res:coach/Valts_Bumanis .
+res:coach/Valts_Bumanis a kg:Coach
+; kg:manages res:team/Latvia .
+res:player/Aigars_Bondars a kg:Player
+; kg:playsFor res:team/Latvia
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber "1"^^xsd:positiveInteger .
+res:player/Girts_Paulis a kg:Player
+; kg:playsFor res:team/Latvia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "2"^^xsd:positiveInteger .
+res:player/Valdis_Veinbergs a kg:Player
+; kg:playsFor res:team/Latvia
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "5"^^xsd:positiveInteger .
+res:player/Gatis_Rozkalns a kg:Player
+; kg:playsFor res:team/Latvia
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber "7"^^xsd:positiveInteger .
+res:player/Davids_Vecaukums a kg:Player
+; kg:playsFor res:team/Latvia
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber "10"^^xsd:positiveInteger .
+res:position/Goalkeeper a kg:Goalkeeper
+; rdfs:subClassOf kg:Position .
+res:position/Defender a kg:Defender
+; rdfs:subClassOf kg:Position .
+res:position/Forward a kg:Forward
+; rdfs:subClassOf kg:Position .
 res:team/Latvia kg:locatedIn res:country/Latvia .
-
-res:country/Latvia a kg:Country ;
-rdfs:label "Latvia" .
+res:country/Latvia a kg:Country
+; rdfs:label "Latvia" .

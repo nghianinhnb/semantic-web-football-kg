@@ -1,135 +1,91 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Macau a kg:Team ;
-kg:teamName "Macau" ;
-kg:teamAbbreviation "MAC" ;
-kg:hasCoach res:coach/Lazaro_Oliveira ;
-kg:manages res:coach/Lazaro_Oliveira ;
-kg:captain res:player/La_Ka_Seng ;
-kg:mostCaps res:player/Cheang_Chang_Ieong ;
-kg:topScorer res:player/Chan_Kin_Seng ;
-kg:homeStadium res:stadium/San_Van_Dong_Campo_Desportivo ;
-kg:confederation res:country/Asia ;
-kg:subConfederation res:country/East_Asia ;
-kg:fifaRank "204"^^xsd:integer ;
-kg:fifaMaxRank "156"^^xsd:integer ;
-kg:fifaMaxRankDate "1997-09"^^xsd:gYearMonth ;
-kg:fifaMinRank "204"^^xsd:integer ;
-kg:fifaMinRankDate "2014-07"^^xsd:gYearMonth ;
-kg:eloRank "229"^^xsd:integer ;
-kg:eloMaxRank "182"^^xsd:integer ;
-kg:eloMaxRankDate "2000-02-13"^^xsd:date ;
-kg:eloMinRank "229"^^xsd:integer ;
-kg:eloMinRankDate "2015-03"^^xsd:gYearMonth ;
-kg:firstGame "1949-01-25"^^xsd:date ;
-kg:largestWin "2009-02-20"^^xsd:date ;
-kg:largestLoss "1997-03-25"^^xsd:date ;
-kg:largestLoss2 "1997-06-22"^^xsd:date .
-
-res:stadium/San_Van_Dong_Campo_Desportivo a kg:Stadium ;
-kg:name "Campo Desportivo" .
-
+res:team/Macau a kg:Team
+; kg:teamName "Macau"
+; kg:teamAbbreviation "MAC"
+; kg:hasCoach res:coach/Lazaro_Oliveira
+; kg:manages res:coach/Lazaro_Oliveira
+; kg:homeStadium res:stadium/San_Van_Dong_Campo_Desportivo .
+res:stadium/San_Van_Dong_Campo_Desportivo a kg:Stadium
+; kg:name "Campo Desportivo" .
 res:coach/Lazaro_Oliveira a kg:Coach .
-
-res:player/La_Ka_Seng a kg:Player ;
-kg:playsFor res:team/Macau .
-
-res:player/Cheang_Chang_Ieong a kg:Player ;
-kg:playsFor res:team/Macau ;
-kg:mostCaps "58"^^xsd:integer .
-
-res:player/Chan_Kin_Seng a kg:Player ;
-kg:playsFor res:team/Macau ;
-kg:topScorer "17"^^xsd:integer .
-
+res:player/La_Ka_Seng a kg:Player
+; kg:playsFor res:team/Macau .
+res:player/Cheang_Chang_Ieong a kg:Player
+; kg:playsFor res:team/Macau .
+res:player/Chan_Kin_Seng a kg:Player
+; kg:playsFor res:team/Macau .
 res:country/Asia a kg:Country .
-
 res:country/East_Asia a kg:Country .
-
-res:team/Macau kg:participatesIn res:competition/AFC_Challenge_Cup_2006 ;
-kg:participatesIn res:competition/AFC_Solidarity_Cup_2016 .
-
-res:competition/AFC_Challenge_Cup_2006 a kg:Competition ;
-kg:competitionName "AFC Challenge Cup 2006" .
-
-res:competition/AFC_Solidarity_Cup_2016 a kg:Competition ;
-kg:competitionName "AFC Solidarity Cup 2016" ;
-kg:result "Runner-Up" .
-
-res:match/Macau_vs_Korea_1949 a kg:Match ;
-kg:homeTeam res:team/Macau ;
-kg:awayTeam res:team/Korea ;
-kg:kickoffTime "1949-01-25"^^xsd:date .
-
-res:match/Macau_vs_NMI_2009 a kg:Match ;
-kg:homeTeam res:team/Macau ;
-kg:awayTeam res:team/North_Marianas_Islands ;
-kg:kickoffTime "2009-02-20"^^xsd:date .
-
-res:match/Macau_vs_Japan_1997 a kg:Match ;
-kg:homeTeam res:team/Macau ;
-kg:awayTeam res:team/Japan ;
-kg:kickoffTime "1997-03-25"^^xsd:date .
-
-res:match/Japan_vs_Macau_1997 a kg:Match ;
-kg:homeTeam res:team/Japan ;
-kg:awayTeam res:team/Macau ;
-kg:kickoffTime "1997-06-22"^^xsd:date .
-
-res:team/Macau kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1930 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1934 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1938 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1950 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1954 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1958 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1962 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1966 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1970 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1974 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1978 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1982 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1986 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1990 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1994 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1998 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2002 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2006 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2010 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2014 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2018 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2022 ;
-kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2026 .
-
-res:team/Macau kg:participatesIn res:competition/Asian_Cup_1956 ;
-kg:participatesIn res:competition/Asian_Cup_1960 ;
-kg:participatesIn res:competition/Asian_Cup_1964 ;
-kg:participatesIn res:competition/Asian_Cup_1968 ;
-kg:participatesIn res:competition/Asian_Cup_1972 ;
-kg:participatesIn res:competition/Asian_Cup_1976 ;
-kg:participatesIn res:competition/Asian_Cup_1980 ;
-kg:participatesIn res:competition/Asian_Cup_1984 ;
-kg:participatesIn res:competition/Asian_Cup_1988 ;
-kg:participatesIn res:competition/Asian_Cup_1992 ;
-kg:participatesIn res:competition/Asian_Cup_1996 ;
-kg:participatesIn res:competition/Asian_Cup_2000 ;
-kg:participatesIn res:competition/Asian_Cup_2004 ;
-kg:participatesIn res:competition/Asian_Cup_2007 ;
-kg:participatesIn res:competition/Asian_Cup_2011 ;
-kg:participatesIn res:competition/Asian_Cup_2015 ;
-kg:participatesIn res:competition/Asian_Cup_2019 ;
-kg:participatesIn res:competition/Asian_Cup_2023 .
-
-res:team/Macau kg:participatesIn res:competition/EAFF_East_Asian_Cup_2003 ;
-kg:participatesIn res:competition/EAFF_East_Asian_Cup_2005 ;
-kg:participatesIn res:competition/EAFF_East_Asian_Cup_2008 ;
-kg:participatesIn res:competition/EAFF_East_Asian_Cup_2010 ;
-kg:participatesIn res:competition/EAFF_East_Asian_Cup_2013 ;
-kg:participatesIn res:competition/EAFF_East_Asian_Cup_2015 ;
-kg:participatesIn res:competition/EAFF_East_Asian_Cup_2017 ;
-kg:participatesIn res:competition/EAFF_East_Asian_Cup_2019 ;
-kg:participatesIn res:competition/EAFF_East_Asian_Cup_2022 ;
-kg:participatesIn res:competition/EAFF_East_Asian_Cup_2025 .
+res:team/Macau kg:participatesIn res:competition/AFC_Challenge_Cup_2006
+; kg:participatesIn res:competition/AFC_Solidarity_Cup_2016 .
+res:competition/AFC_Challenge_Cup_2006 a kg:Competition
+; kg:competitionName "AFC Challenge Cup 2006" .
+res:competition/AFC_Solidarity_Cup_2016 a kg:Competition
+; kg:competitionName "AFC Solidarity Cup 2016"
+; kg:result "Runner-Up" .
+res:match/Macau_vs_Korea_1949 a kg:Match
+; kg:homeTeam res:team/Macau
+; kg:awayTeam res:team/Korea
+; kg:kickoffTime "1949-01-25"^^xsd:date .
+res:match/Macau_vs_NMI_2009 a kg:Match
+; kg:homeTeam res:team/Macau
+; kg:awayTeam res:team/North_Marianas_Islands
+; kg:kickoffTime "2009-02-20"^^xsd:date .
+res:match/Macau_vs_Japan_1997 a kg:Match
+; kg:homeTeam res:team/Macau
+; kg:awayTeam res:team/Japan
+; kg:kickoffTime "1997-03-25"^^xsd:date .
+res:match/Japan_vs_Macau_1997 a kg:Match
+; kg:homeTeam res:team/Japan
+; kg:awayTeam res:team/Macau
+; kg:kickoffTime "1997-06-22"^^xsd:date .
+res:team/Macau kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1930
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1934
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1938
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1950
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1954
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1958
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1962
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1966
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1970
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1974
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1978
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1982
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1986
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1990
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1994
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_1998
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2002
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2006
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2010
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2014
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2018
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2022
+; kg:participatesIn res:competition/FIFA_World_Cup_Qualification_2026 .
+res:team/Macau kg:participatesIn res:competition/Asian_Cup_1956
+; kg:participatesIn res:competition/Asian_Cup_1960
+; kg:participatesIn res:competition/Asian_Cup_1964
+; kg:participatesIn res:competition/Asian_Cup_1968
+; kg:participatesIn res:competition/Asian_Cup_1972
+; kg:participatesIn res:competition/Asian_Cup_1976
+; kg:participatesIn res:competition/Asian_Cup_1980
+; kg:participatesIn res:competition/Asian_Cup_1984
+; kg:participatesIn res:competition/Asian_Cup_1988
+; kg:participatesIn res:competition/Asian_Cup_1992
+; kg:participatesIn res:competition/Asian_Cup_1996
+; kg:participatesIn res:competition/Asian_Cup_2000
+; kg:participatesIn res:competition/Asian_Cup_2004
+; kg:participatesIn res:competition/Asian_Cup_2007
+; kg:participatesIn res:competition/Asian_Cup_2011
+; kg:participatesIn res:competition/Asian_Cup_2015
+; kg:participatesIn res:competition/Asian_Cup_2019
+; kg:participatesIn res:competition/Asian_Cup_2023 .
+res:team/Macau kg:participatesIn res:competition/EAFF_East_Asian_Cup_2003
+; kg:participatesIn res:competition/EAFF_East_Asian_Cup_2005
+; kg:participatesIn res:competition/EAFF_East_Asian_Cup_2008
+; kg:participatesIn res:competition/EAFF_East_Asian_Cup_2010
+; kg:participatesIn res:competition/EAFF_East_Asian_Cup_2013
+; kg:participatesIn res:competition/EAFF_East_Asian_Cup_2015
+; kg:participatesIn res:competition/EAFF_East_Asian_Cup_2017
+; kg:participatesIn res:competition/EAFF_East_Asian_Cup_2019
+; kg:participatesIn res:competition/EAFF_East_Asian_Cup_2022
+; kg:participatesIn res:competition/EAFF_East_Asian_Cup_2025 .

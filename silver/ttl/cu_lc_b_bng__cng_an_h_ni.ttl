@@ -1,293 +1,183 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:club/CongAnHaNoi a kg:Club ;
-kg:teamName "Câu lạc bộ bóng đá Công an Hà Nội" ;
-kg:teamAbbreviation "CAHN" ;
-kg:foundedDate "1956-10-10"^^xsd:date ;
-kg:homeStadium res:stadium/HangDay ;
-kg:hasOwner res:owner/UyBanNDTPHaNoi, res:owner/CongAnTPHaNoi ;
-kg:hasCoach res:coach/AlexandrePoelking ;
-kg:isPartOf res:competition/VLeague1 ;
-kg:participatesIn res:season/2025-26 .
-
-res:stadium/HangDay a kg:Stadium ;
-kg:capacity 22500 ;
-kg:isHomeOf res:club/CongAnHaNoi .
-
-res:owner/UyBanNDTPHaNoi a kg:Owner ;
-kg:owns res:club/CongAnHaNoi .
-
-res:owner/CongAnTPHaNoi a kg:Owner ;
-kg:owns res:club/CongAnHaNoi .
-
-res:coach/AlexandrePoelking a kg:Coach ;
-kg:manages res:club/CongAnHaNoi .
-
-res:competition/VLeague1 a kg:Competition ;
-kg:competitionName "V.League 1" .
-
-res:season/2025-26 a kg:Season ;
-kg:seasonOf res:competition/VLeague1 .
-
-res:club/CongAnHaNoi kg:restartedDate "2022-11-24"^^xsd:date ;
-kg:transferredFrom res:club/CongAnNhanDan .
-
-res:club/CongAnNhanDan a kg:Club ;
-kg:teamName "Câu lạc bộ bóng đá Công an Nhân dân" .
-
-res:club/CongAnHaNoi kg:currentSeason res:season/2025-26 .
-
-res:club/CongAnHaNoi kg:captain res:player/NguyenQuangHai .
-
-res:player/NguyenQuangHai a kg:Player, kg:Midfielder ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 19 ;
-kg:nationality res:country/Vietnam .
-
-res:player/NguyenFilip a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 1 ;
-kg:nationality res:country/Vietnam .
-
-res:player/HugoGomes a kg:Player, kg:Defender ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 3 ;
-kg:nationality res:country/Brazil .
-
-res:player/DouVanHau a kg:Player, kg:Defender ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 5 ;
-kg:nationality res:country/Vietnam .
-
-res:player/CaoPendantQuangVinh a kg:Player, kg:Defender ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 7 ;
-kg:nationality res:country/Brazil .
-
-res:player/VitorHugoRosaNascimento a kg:Player, kg:Midfielder ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 8 ;
-kg:nationality res:country/Brazil .
-
-res:player/ThaleonDeSantanaSantos a kg:Player, kg:Forward ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 9 ;
-kg:nationality res:country/Brazil .
-
-res:player/LeoArtur a kg:Player, kg:Midfielder ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 10 ;
-kg:nationality res:country/Brazil .
-
-res:player/LePhamThanhLong a kg:Player, kg:Midfielder ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 11 ;
-kg:nationality res:country/Vietnam .
-
-res:player/HoangVanToan a kg:Player, kg:Midfielder ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 12 ;
-kg:nationality res:country/Vietnam .
-
-res:player/BuiXuanThinhd a kg:Player, kg:Defender ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 15 ;
-kg:nationality res:country/Vietnam .
-
-res:player/NguyenDinhBac a kg:Player, kg:Forward ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 16 ;
-kg:nationality res:country/Vietnam .
-
-res:player/VuVanThanh a kg:Player, kg:Defender ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 17 ;
-kg:nationality res:country/Vietnam .
-
-res:player/HoNgocThang a kg:Player, kg:Forward ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 18 ;
-kg:nationality res:country/Vietnam .
-
-res:player/NguyenQuangHai a kg:Player, kg:Midfielder ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 19 ;
-kg:nationality res:country/Vietnam ;
-kg:isCaptainOf res:club/CongAnHaNoi .
-
-res:player/PhanVanDuc a kg:Player, kg:Forward ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 20 ;
-kg:nationality res:country/Vietnam .
-
-res:player/PhamVanLuuan a kg:Player, kg:Midfielder ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 21 ;
-kg:nationality res:country/Vietnam .
-
-res:player/PhamMinhPhuc a kg:Player, kg:Midfielder ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 22 ;
-kg:nationality res:country/Vietnam .
-
-res:player/HaVanPhuong a kg:Player, kg:Defender ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 26 ;
-kg:nationality res:country/Vietnam .
-
-res:player/NguyenVanDuc a kg:Player, kg:Defender ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 28 ;
-kg:nationality res:country/Vietnam .
-
-res:player/TranDinhTrong a kg:Player, kg:Defender ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 31 ;
-kg:nationality res:country/Vietnam .
-
-res:player/DoSyHuy a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 33 ;
-kg:nationality res:country/Vietnam .
-
-res:player/ChuVanTan a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 34 ;
-kg:nationality res:country/Vietnam ;
-kg:loanedFrom res:club/SongLamNgheAn .
-
-res:player/HaManhTruong a kg:Player, kg:Goalkeeper ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 60 ;
-kg:nationality res:country/Vietnam .
-
-res:player/BuiHoangVietAnh a kg:Player, kg:Defender ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 68 ;
-kg:nationality res:country/Vietnam .
-
-res:player/AlanGrafite a kg:Player, kg:Forward ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 72 ;
-kg:nationality res:country/Brazil .
-
-res:player/LeVanDo a kg:Player, kg:Midfielder ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 88 ;
-kg:nationality res:country/Vietnam ;
-kg:loanedFrom res:club/PVF_CAND .
-
-res:player/GiapTuAnDuong a kg:Player, kg:Defender ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 98 ;
-kg:nationality res:country/Vietnam .
-
-res:player/NguyenVanVinh a kg:Player, kg:Forward ;
-kg:playsFor res:club/CongAnHaNoi ;
-kg:shirtNumber 99 ;
-kg:nationality res:country/Vietnam .
-
-res:player/NguyenXuanNam a kg:Player, kg:Forward ;
-kg:loanedTo res:club/PVF_CAND .
-
-res:player/BuiAnhThong a kg:Player, kg:Forward ;
-kg:loanedTo res:club/ThueTPHCM .
-
-res:player/NguyenChinhDang a kg:Player, kg:Midfielder ;
-kg:loanedTo res:club/ThueTPHCM .
-
-res:player/NguyenHuuThuc a kg:Player, kg:Defender ;
-kg:notRegistered res:club/CongAnHaNoi .
-
-res:player/PhungVietTruong a kg:Player, kg:Defender ;
-kg:notRegistered res:club/CongAnHaNoi .
-
-res:person/DuongDucHai a kg:Owner ;
-kg:owns res:club/CongAnHaNoi .
-
-res:person/TranVanHung a kg:Owner ;
-kg:owns res:club/CongAnHaNoi .
-
-res:person/NguyenChiCong a kg:Owner ;
-kg:owns res:club/CongAnHaNoi .
-
-res:person/PhamVanLe a kg:Manager ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/TranTienDai a kg:TechnicalDirector ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/LeHongThai a kg:TeamLeader ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/LeXuanHai a kg:AssistantLeader ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/AlexandrePoelking a kg:Coach ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/PhamThanhLuong a kg:AssistantCoach ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/ĐinhXuanViet a kg:AssistantCoach ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/LuisViegas a kg:AssistantCoach ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/TranHungCuong a kg:Interpreter ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/PauloOliveira a kg:PhysicalCoach ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/ValdirBardi a kg:GoalkeeperCoach ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/TranHungCuong a kg:GoalkeeperCoach ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/NguyenVanBon a kg:Doctor ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/LePhungHieu a kg:Physiotherapist ;
-kg:manages res:club/CongAnHaNoi .
-
-res:person/HoVanLoc a kg:StaffMember ;
-kg:manages res:club/CongAnHaNoi .
-
-res:player/NguyenVanNha a kg:Coach ;
-kg:coached res:club/CongAnHaNoi .
-
-res:player/PauloFoiani a kg:Coach ;
-kg:coached res:club/CongAnHaNoi .
-
-res:player/FlavioCruz a kg:Coach ;
-kg:coached res:club/CongAnHaNoi .
-
-res:player/TranTienDai a kg:Coach ;
-kg:coached res:club/CongAnHaNoi .
-
-res:player/GongOhkyun a kg:Coach ;
-kg:coached res:club/CongAnHaNoi .
-
-res:player/KiatisukSenamuang a kg:Coach ;
-kg:coached res:club/CongAnHaNoi .
-
-res:city/HaNoi a kg:City ;
-kg:locatedIn res:country/Vietnam .
-
+res:club/CongAnHaNoi a kg:Club
+; kg:teamName "Câu lạc bộ bóng đá Công an Hà Nội"
+; kg:teamAbbreviation "CAHN"
+; kg:foundedDate "1956-10-10"^^xsd:date
+; kg:homeStadium res:stadium/HangDay
+; kg:hasOwner res:owner/UyBanNDTPHaNoi , res:owner/CongAnTPHaNoi
+; kg:hasCoach res:coach/AlexandrePoelking
+; kg:participatesIn res:season/2025-26 .
+res:stadium/HangDay a kg:Stadium
+; kg:capacity 22500
+; kg:isHomeOf res:club/CongAnHaNoi .
+res:owner/UyBanNDTPHaNoi a kg:Owner
+; kg:owns res:club/CongAnHaNoi .
+res:owner/CongAnTPHaNoi a kg:Owner
+; kg:owns res:club/CongAnHaNoi .
+res:coach/AlexandrePoelking a kg:Coach
+; kg:manages res:club/CongAnHaNoi .
+res:competition/VLeague1 a kg:Competition
+; kg:competitionName "V.League 1" .
+res:season/2025-26 a kg:Season
+; kg:seasonOf res:competition/VLeague1 .
+res:club/CongAnNhanDan a kg:Club
+; kg:teamName "Câu lạc bộ bóng đá Công an Nhân dân" .
+res:player/NguyenQuangHai a kg:Player , kg:Midfielder
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 19
+; kg:nationality res:country/Vietnam .
+res:player/NguyenFilip a kg:Player , kg:Goalkeeper
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 1
+; kg:nationality res:country/Vietnam .
+res:player/HugoGomes a kg:Player , kg:Defender
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 3
+; kg:nationality res:country/Brazil .
+res:player/DouVanHau a kg:Player , kg:Defender
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 5
+; kg:nationality res:country/Vietnam .
+res:player/CaoPendantQuangVinh a kg:Player , kg:Defender
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 7
+; kg:nationality res:country/Brazil .
+res:player/VitorHugoRosaNascimento a kg:Player , kg:Midfielder
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 8
+; kg:nationality res:country/Brazil .
+res:player/ThaleonDeSantanaSantos a kg:Player , kg:Forward
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 9
+; kg:nationality res:country/Brazil .
+res:player/LeoArtur a kg:Player , kg:Midfielder
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 10
+; kg:nationality res:country/Brazil .
+res:player/LePhamThanhLong a kg:Player , kg:Midfielder
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 11
+; kg:nationality res:country/Vietnam .
+res:player/HoangVanToan a kg:Player , kg:Midfielder
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 12
+; kg:nationality res:country/Vietnam .
+res:player/BuiXuanThinhd a kg:Player , kg:Defender
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 15
+; kg:nationality res:country/Vietnam .
+res:player/NguyenDinhBac a kg:Player , kg:Forward
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 16
+; kg:nationality res:country/Vietnam .
+res:player/VuVanThanh a kg:Player , kg:Defender
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 17
+; kg:nationality res:country/Vietnam .
+res:player/HoNgocThang a kg:Player , kg:Forward
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 18
+; kg:nationality res:country/Vietnam .
+res:player/NguyenQuangHai a kg:Player , kg:Midfielder
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 19
+; kg:nationality res:country/Vietnam .
+res:player/PhanVanDuc a kg:Player , kg:Forward
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 20
+; kg:nationality res:country/Vietnam .
+res:player/PhamVanLuuan a kg:Player , kg:Midfielder
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 21
+; kg:nationality res:country/Vietnam .
+res:player/PhamMinhPhuc a kg:Player , kg:Midfielder
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 22
+; kg:nationality res:country/Vietnam .
+res:player/HaVanPhuong a kg:Player , kg:Defender
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 26
+; kg:nationality res:country/Vietnam .
+res:player/NguyenVanDuc a kg:Player , kg:Defender
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 28
+; kg:nationality res:country/Vietnam .
+res:player/TranDinhTrong a kg:Player , kg:Defender
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 31
+; kg:nationality res:country/Vietnam .
+res:player/DoSyHuy a kg:Player , kg:Goalkeeper
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 33
+; kg:nationality res:country/Vietnam .
+res:player/ChuVanTan a kg:Player , kg:Goalkeeper
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 34
+; kg:nationality res:country/Vietnam .
+res:player/HaManhTruong a kg:Player , kg:Goalkeeper
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 60
+; kg:nationality res:country/Vietnam .
+res:player/BuiHoangVietAnh a kg:Player , kg:Defender
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 68
+; kg:nationality res:country/Vietnam .
+res:player/AlanGrafite a kg:Player , kg:Forward
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 72
+; kg:nationality res:country/Brazil .
+res:player/LeVanDo a kg:Player , kg:Midfielder
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 88
+; kg:nationality res:country/Vietnam .
+res:player/GiapTuAnDuong a kg:Player , kg:Defender
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 98
+; kg:nationality res:country/Vietnam .
+res:player/NguyenVanVinh a kg:Player , kg:Forward
+; kg:playsFor res:club/CongAnHaNoi
+; kg:shirtNumber 99
+; kg:nationality res:country/Vietnam .
+res:player/NguyenXuanNam a kg:Player , kg:Forward .
+res:player/BuiAnhThong a kg:Player , kg:Forward .
+res:player/NguyenChinhDang a kg:Player , kg:Midfielder .
+res:player/NguyenHuuThuc a kg:Player , kg:Defender .
+res:player/PhungVietTruong a kg:Player , kg:Defender .
+res:person/DuongDucHai a kg:Owner
+; kg:owns res:club/CongAnHaNoi .
+res:person/TranVanHung a kg:Owner
+; kg:owns res:club/CongAnHaNoi .
+res:person/NguyenChiCong a kg:Owner
+; kg:owns res:club/CongAnHaNoi .
+res:person/PhamVanLe kg:manages res:club/CongAnHaNoi .
+res:person/TranTienDai kg:manages res:club/CongAnHaNoi .
+res:person/LeHongThai kg:manages res:club/CongAnHaNoi .
+res:person/LeXuanHai kg:manages res:club/CongAnHaNoi .
+res:person/AlexandrePoelking a kg:Coach
+; kg:manages res:club/CongAnHaNoi .
+res:person/PhamThanhLuong a kg:AssistantCoach
+; kg:manages res:club/CongAnHaNoi .
+res:person/ĐinhXuanViet a kg:AssistantCoach
+; kg:manages res:club/CongAnHaNoi .
+res:person/LuisViegas a kg:AssistantCoach
+; kg:manages res:club/CongAnHaNoi .
+res:person/TranHungCuong kg:manages res:club/CongAnHaNoi .
+res:person/PauloOliveira kg:manages res:club/CongAnHaNoi .
+res:person/ValdirBardi kg:manages res:club/CongAnHaNoi .
+res:person/TranHungCuong kg:manages res:club/CongAnHaNoi .
+res:person/NguyenVanBon kg:manages res:club/CongAnHaNoi .
+res:person/LePhungHieu kg:manages res:club/CongAnHaNoi .
+res:person/HoVanLoc kg:manages res:club/CongAnHaNoi .
+res:player/NguyenVanNha a kg:Coach .
+res:player/PauloFoiani a kg:Coach .
+res:player/FlavioCruz a kg:Coach .
+res:player/TranTienDai a kg:Coach .
+res:player/GongOhkyun a kg:Coach .
+res:player/KiatisukSenamuang a kg:Coach .
+res:city/HaNoi a kg:City
+; kg:locatedIn res:country/Vietnam .
 res:country/Vietnam a kg:Country .
-
 res:country/Brazil a kg:Country .
-
 res:country/Germany a kg:Country .
-
 res:country/Britain a kg:Country .
-
 res:country/Thailand a kg:Country .
-
 res:country/Japan a kg:Country .

@@ -1,150 +1,81 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/TahitiNationalBeachSoccerTeam a kg:Team ;
-kg:teamName "Tahiti" ;
-kg:hasCoach res:coach/Tehina_Rota ;
-kg:locatedIn res:country/Tahiti ;
-kg:organizes res:competition/OFC_Beach_Soccer_Championship ;
-kg:organizes res:competition/FIBA_World_Beach_Soccer_Cup ;
-kg:organizes res:competition/Intercontinental_Cup .
-
-res:country/Tahiti a kg:Country ;
-rdfs:label "Tahiti" .
-
-res:coach/Tehina_Rota a kg:Coach ;
-kg:manages res:team/TahitiNationalBeachSoccerTeam .
-
-res:competition/OFC_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển châu Đại Dương" ;
-kg:heldIn res:country/Tahiti .
-
-res:competition/FIBA_World_Beach_Soccer_Cup a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
-
-res:competition/Intercontinental_Cup a kg:Competition ;
-kg:competitionName "Cúp bóng đá bãi biển liên châu lục" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2011_OFC_Qualifiers ;
-kg:participatesIn res:season/2013_FIBA_World_Beach_Soccer_Cup ;
-kg:participatesIn res:season/2015_FIBA_World_Beach_Soccer_Cup ;
-kg:participatesIn res:season/2017_FIBA_World_Beach_Soccer_Cup .
-
-res:season/2011_OFC_Qualifiers a kg:Season ;
-kg:seasonOf res:competition/OFC_Beach_Soccer_Championship ;
-kg:participantCount 5 .
-
-res:season/2013_FIBA_World_Beach_Soccer_Cup a kg:Season ;
-kg:seasonOf res:competition/FIBA_World_Beach_Soccer_Cup .
-
-res:season/2015_FIBA_World_Beach_Soccer_Cup a kg:Season ;
-kg:seasonOf res:competition/FIBA_World_Beach_Soccer_Cup .
-
-res:season/2017_FIBA_World_Beach_Soccer_Cup a kg:Season ;
-kg:seasonOf res:competition/FIBA_World_Beach_Soccer_Cup .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2011_OFC_Qualifiers ;
-kg:resultInCompetition "Vô địch" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2013_FIBA_World_Beach_Soccer_Cup ;
-kg:resultInCompetition "Hạng tư" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2015_FIBA_World_Beach_Soccer_Cup ;
-kg:resultInCompetition "Á quân" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2017_FIBA_World_Beach_Soccer_Cup ;
-kg:resultInCompetition "Á quân" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2006_OFC_Championship ;
-kg:resultInCompetition "Hạng ba" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2009_OFC_Championship ;
-kg:resultInCompetition "Hạng ba" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2018_OFC_Championship ;
-kg:resultInCompetition "TBD" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2011_Intercontinental_Cup ;
-kg:resultInCompetition "Vòng bảng" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2012_Intercontinental_Cup ;
-kg:resultInCompetition "Vòng bảng" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2013_Intercontinental_Cup ;
-kg:resultInCompetition "Không tham dự" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2014_Intercontinental_Cup ;
-kg:resultInCompetition "Không tham dự" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2015_Intercontinental_Cup ;
-kg:resultInCompetition "Á quân" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2016_Intercontinental_Cup ;
-kg:resultInCompetition "Semi-finals" .
-
-res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2017_Intercontinental_Cup ;
-kg:resultInCompetition "Không tham dự" .
-
-res:player/Jonathan_Rotui_Torohia a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 1 .
-
-res:player/Angelo_Tchen a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 .
-
-res:player/Ariihau_Teriitau a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 3 .
-
-res:player/Heimanu_Philippe_Taiarui a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 4 .
-
-res:player/Raimoana_Bennett a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 5 .
-
-res:player/Patrick_Tepa a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 6 .
-
-res:player/Raimana_Li_Fung_Kuee a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 7 ;
-kg:captain true .
-
-res:player/Heiarii_Tavanae a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 8 .
-
-res:player/Naea_Bennett a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 .
-
-res:player/Tearii_Labaste a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 10 .
-
-res:player/Teva_Zaveroni a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 11 .
-
-res:player/Franck_Revel a kg:Player ;
-kg:playsFor res:team/TahitiNationalBeachSoccerTeam ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 12 .
+res:team/TahitiNationalBeachSoccerTeam a kg:Team
+; kg:teamName "Tahiti"
+; kg:hasCoach res:coach/Tehina_Rota
+; kg:locatedIn res:country/Tahiti
+; kg:organizes res:competition/OFC_Beach_Soccer_Championship
+; kg:organizes res:competition/FIBA_World_Beach_Soccer_Cup
+; kg:organizes res:competition/Intercontinental_Cup .
+res:country/Tahiti a kg:Country
+; rdfs:label "Tahiti" .
+res:coach/Tehina_Rota a kg:Coach
+; kg:manages res:team/TahitiNationalBeachSoccerTeam .
+res:competition/OFC_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển châu Đại Dương"
+; kg:heldIn res:country/Tahiti .
+res:competition/FIBA_World_Beach_Soccer_Cup a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+res:competition/Intercontinental_Cup a kg:Competition
+; kg:competitionName "Cúp bóng đá bãi biển liên châu lục" .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2011_OFC_Qualifiers
+; kg:participatesIn res:season/2013_FIBA_World_Beach_Soccer_Cup
+; kg:participatesIn res:season/2015_FIBA_World_Beach_Soccer_Cup
+; kg:participatesIn res:season/2017_FIBA_World_Beach_Soccer_Cup .
+res:season/2011_OFC_Qualifiers a kg:Season
+; kg:seasonOf res:competition/OFC_Beach_Soccer_Championship
+; kg:participantCount 5 .
+res:season/2013_FIBA_World_Beach_Soccer_Cup a kg:Season
+; kg:seasonOf res:competition/FIBA_World_Beach_Soccer_Cup .
+res:season/2015_FIBA_World_Beach_Soccer_Cup a kg:Season
+; kg:seasonOf res:competition/FIBA_World_Beach_Soccer_Cup .
+res:season/2017_FIBA_World_Beach_Soccer_Cup a kg:Season
+; kg:seasonOf res:competition/FIBA_World_Beach_Soccer_Cup .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2011_OFC_Qualifiers .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2013_FIBA_World_Beach_Soccer_Cup .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2015_FIBA_World_Beach_Soccer_Cup .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2017_FIBA_World_Beach_Soccer_Cup .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2006_OFC_Championship .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2009_OFC_Championship .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2018_OFC_Championship .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2011_Intercontinental_Cup .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2012_Intercontinental_Cup .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2013_Intercontinental_Cup .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2014_Intercontinental_Cup .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2015_Intercontinental_Cup .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2016_Intercontinental_Cup .
+res:team/TahitiNationalBeachSoccerTeam kg:participatesIn res:season/2017_Intercontinental_Cup .
+res:player/Jonathan_Rotui_Torohia a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Angelo_Tchen a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Ariihau_Teriitau a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Heimanu_Philippe_Taiarui a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Raimoana_Bennett a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Patrick_Tepa a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Raimana_Li_Fung_Kuee a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Heiarii_Tavanae a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Naea_Bennett a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Tearii_Labaste a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Teva_Zaveroni a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Franck_Revel a kg:Player
+; kg:playsFor res:team/TahitiNationalBeachSoccerTeam
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .

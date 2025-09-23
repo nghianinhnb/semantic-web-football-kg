@@ -1,54 +1,24 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/México a kg:Team ;
-kg:teamName "México" ;
-kg:hasCoach res:coach/Ramón_Raya ;
-kg:locatedIn res:country/México ;
-kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
-kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe .
-
-res:coach/Ramón_Raya a kg:Coach ;
-kg:manages res:team/México .
-
+res:team/México a kg:Team
+; kg:teamName "México"
+; kg:hasCoach res:coach/Ramón_Raya
+; kg:locatedIn res:country/México
+; kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới
+; kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe .
+res:coach/Ramón_Raya a kg:Coach
+; kg:manages res:team/México .
 res:country/México a kg:Country .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
-
-res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" .
-
-res:match/BRA_2005 a kg:Match ;
-kg:homeTeam res:team/Brazil ;
-kg:awayTeam res:team/México ;
-kg:venue res:city/Rio_de_Janeiro ;
-kg:kickoffTime "2005-03-02"^^xsd:date ;
-kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới .
-
-res:player/Morgan_Plata a kg:Player ;
-kg:playsFor res:team/México ;
-kg:nationality res:country/México .
-
-res:team/México kg:worldCupApps "4"^^xsd:positiveInteger ;
-kg:worldCupBest "Á quân"^^xsd:string ;
-kg:worldCupBestYear "2007"^^xsd:gYear ;
-kg:regionalCupApps "6"^^xsd:positiveInteger ;
-kg:regionalCupBest "Vô địch"^^xsd:string ;
-kg:regionalCupBestYears (
-"2008"^^xsd:gYear,
-"2011"^^xsd:gYear,
-"2015"^^xsd:gYear
-) .
-
-res:team/México kg:largestLoss res:match/BRA_2005 ;
-kg:bswwRank "13"^^xsd:positiveInteger .
-
-res:team/México kg:association res:organization/Liên_đoàn_bóng_đá_México ;
-kg:confederation res:organization/CONCACAF .
-
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" .
+res:match/BRA_2005 a kg:Match
+; kg:homeTeam res:team/Brazil
+; kg:awayTeam res:team/México
+; kg:venue res:city/Rio_de_Janeiro
+; kg:kickoffTime "2005-03-02"^^xsd:date
+; kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới .
+res:player/Morgan_Plata a kg:Player
+; kg:playsFor res:team/México
+; kg:nationality res:country/México .
 res:organization/Liên_đoàn_bóng_đá_México a kg:Organization .
-
 res:organization/CONCACAF a kg:Organization .

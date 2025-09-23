@@ -1,22 +1,6 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/North_Mariana_Islands_women's_national_football_team a kg:Team ;
-kg:teamName "Quần đảo Bắc Mariana" ;
-kg:managedBy res:organization/Northern_Mariana_Islands_Football_Association .
-
-res:organization/Northern_Mariana_Islands_Football_Association a kg:Organization ;
-rdfs:label "Hiệp hội bóng đá Quần đảo Bắc Mariana" ;
-kg:memberOf res:confederation/Asian_Football_Confederation ;
-kg:memberOf res:sub_confederation/East_Asian_Football_Union .
-
-res:confederation/Asian_Football_Confederation a kg:Confederation ;
-rdfs:label "Liên đoàn bóng đá châu Á" .
-
-res:sub_confederation/East_Asian_Football_Union a kg:SubConfederation ;
-rdfs:label "Liên đoàn bóng đá Đông Á" ;
-kg:region "Đông Á" .
-
-res:team/North_Mariana_Islands_women's_national_football_team kg:FIFA_Trigramme "NMI" .
+res:team/North_Mariana_Islands_women's_national_football_team a kg:Team
+; kg:teamName "Quần đảo Bắc Mariana" .
+res:organization/Northern_Mariana_Islands_Football_Association a kg:Organization
+; rdfs:label "Hiệp hội bóng đá Quần đảo Bắc Mariana" .
+res:confederation/Asian_Football_Confederation rdfs:label "Liên đoàn bóng đá châu Á" .
+res:sub_confederation/East_Asian_Football_Union rdfs:label "Liên đoàn bóng đá Đông Á" .

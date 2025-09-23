@@ -1,48 +1,18 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
 res:team/Cộng_hòa_Séc a kg:teamName "Cộng hòa Séc"^^xsd:string .
-res:team/Cộng_hòa_Séc a kg:FIFA_trigramme "CZE"^^xsd:string .
-res:team/Cộng_hòa_Séc a kg:nickname "Nároďák"^^xsd:string .
-res:team/Cộng_hòa_Séc a kg:association res:organization/Fotbalová_asociace_České_republiky .
-res:team/Cộng_hòa_Séc a kg:confederation res:organization/UEFA .
-res:team/Cộng_hòa_Séc a kg:officialWeb "http//www.plazovakopana.cz"^^xsd:string .
-res:team/Cộng_hòa_Séc a kg:coach res:person/Michael_Lukič .
-res:team/Cộng_hào_Séc a kg:captain res:player/Martin_Chalupa .
-res:team/Cộng_hòa_Séc a kg:mostCaps res:player/Jaroslav_Kovařík .
-res:team/Cộng_hòa_Séc a kg:topScorer res:player/Radek_Mikan .
-res:team/Cộng_hòa_Séc a kg:largestWin "Cộng hòa Séc 7 – 0 NOR"^^xsd:string .
-res:team/Cộng_hòa_Séc a kg:largestLoss "Cộng hòa Séc 2 – 12 TUR"^^xsd:string .
-res:team/Cộng_hòa_Séc a kg:bestAchievement "Tứ kết Vòng loại giải vô địch bóng đá bãi biển thế giới khu vực châu Âu"^^xsd:string .
-res:team/Cộng_hòa_Séc a kg:bestAchievementYear "2008"^^xsd:gYear .
-
 res:player/Jaroslav_Kovařík a kg:Player .
 res:player/Jaroslav_Kovařík a kg:Defender .
-res:player/Jaroslav_Kovařík a kg:MostCapsHolder .
 res:player/Jaroslav_Kovařík a kg:playsFor res:team/Cộng_hòa_Séc .
 res:player/Jaroslav_Kovařík a kg:shirtNumber "47"^^xsd:positiveInteger .
-
 res:player/Martin_Chalupa a kg:Player .
 res:player/Martin_Chalupa a kg:Forward .
-res:player/Martin_Chalupa a kg:Captain .
 res:player/Martin_Chalupa a kg:playsFor res:team/Cộng_hòa_Séc .
 res:player/Martin_Chalupa a kg:shirtNumber "10"^^xsd:positiveInteger .
-
 res:player/Radek_Mikan a kg:Player .
 res:player/Radek_Mikan a kg:Forward .
-res:player/Radek_Mikan a kg:TopScorer .
 res:player/Radek_Mikan a kg:playsFor res:team/Cộng_hòa_Séc .
 res:player/Radek_Mikan a kg:shirtNumber "33"^^xsd:positiveInteger .
-
 res:person/Michael_Lukič a kg:Coach .
 res:person/Michael_Lukič a kg:manages res:team/Cộng_hòa_Séc .
-
-res:organization/Fotbalová_asociace_České_republiky a kg:Association .
 res:organization/Fotbalová_asociace_České_republiky a kg:organizes res:team/Cộng_hòa_Séc .
-
-res:organization/UEFA a kg:Confederation .
 res:organization/UEFA a kg:organizes res:team/Cộng_hòa_Séc .
-
 res:team/Cộng_hào_Séc a kg:teamName "Cộng hòa Séc"^^xsd:string .

@@ -1,166 +1,101 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:club/Tây_Ninh_FC a kg:Club ;
-kg:teamName "Câu lạc bộ bóng đá Tây Ninh" ;
-kg:foundedDate "1976-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/TRUNG_TAM_HUAN_LUAN_VA_THI_DO_DAT_THE_DUC_THE_THAO_TAY_NINH ;
-kg:hasCoach res:coach/Le_Thanh_Quang ;
-kg:participatesIn res:season/2025 ;
-kg:participatesIn res:season/2023 .
-
-res:stadium/TRUNG_TAM_HUAN_LUAN_VA_THI_DO_DAT_THE_DUC_THE_THAO_TAY_NINH a kg:Stadium ;
-kg:capacity 500 ;
-kg:isHomeOf res:club/Tây_Ninh_FC .
-
-res:coach/Le_Thanh_Quang a kg:Coach ;
-kg:manages res:club/Tây_Ninh_FC .
-
-res:season/2025 a kg:Season ;
-kg:seasonOf res:competition/GIAI_BONG_DA_HANG_NHI_QUOC_GIA .
-
-res:season/2023 a kg:Season ;
-kg:seasonOf res:competition/GIAI_BONG_DA_HANG_BA_QUOC_GIA .
-
-res:competition/GIAI_BONG_DA_HANG_NHI_QUOC_GIA a kg:Competition ;
-kg:competitionName "Giải bóng đá hạng Nhì Quốc gia" .
-
-res:competition/GIAI_BONG_DA_HANG_BA_QUOC_GIA a kg:Competition ;
-kg:competitionName "Giải bóng đá hạng Ba Quốc gia" .
-
-res:player/Tran_Thi_Minh_Phuong a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 1 .
-
-res:player/Dang_Van_Tuong a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 .
-
-res:player/Phan_Nguyen_Duy_Giang a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 3 .
-
-res:player/Cao_Hoa_Ky a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 4 .
-
-res:player/Bui_Van_Dong a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 5 .
-
-res:player/Bui_Dinh_Chau a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 6 .
-
-res:player/Pham_Ngoc_Quoc a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 7 .
-
-res:player/Tran_Van_Luan a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 8 .
-
-res:player/Nguyen_Thang_Bao a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 9 .
-
-res:player/Le_Duc_Tai a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 10 .
-
-res:player/Nguyen_Viet_Binh a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 11 .
-
-res:player/Tran_Anh_Thai a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 12 .
-
-res:player/Nguyen_Vuong_Vu a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 13 .
-
-res:player/Le_Van_Sau a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 14 .
-
-res:player/Lam_Van_Ngoan a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 15 .
-
-res:player/Tran_Anh_Thai a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 16 .
-
-res:player/Ngo_Duong_Thai a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 17 .
-
-res:player/Nguyen_Thanh_Lam a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 18 .
-
-res:player/Tran_Duc_Trung a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 19 .
-
-res:player/Tran_Phu_ Nguyen a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 20 .
-
-res:player/Tran_Anh_Tuan a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 21 .
-
-res:player/Hoang_Ngoc_Hung a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 22 .
-
-res:player/Pham_Van_Quoc a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 23 .
-
-res:player/Nguyen_Le_Nhat_Quang a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 30 .
-
-res:player/Nguyen_Ba_Duong a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 31 .
-
-res:player/Nguyen_Duc_Kiet a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 39 .
-
-res:player/Truong_Dinh_Luat a kg:Player ;
-kg:playsFor res:club/Tây_Ninh_FC ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 40 .
+res:club/Tây_Ninh_FC a kg:Club
+; kg:teamName "Câu lạc bộ bóng đá Tây Ninh"
+; kg:foundedDate "1976-01-01"^^xsd:date
+; kg:homeStadium res:stadium/TRUNG_TAM_HUAN_LUAN_VA_THI_DO_DAT_THE_DUC_THE_THAO_TAY_NINH
+; kg:hasCoach res:coach/Le_Thanh_Quang
+; kg:participatesIn res:season/2025
+; kg:participatesIn res:season/2023 .
+res:stadium/TRUNG_TAM_HUAN_LUAN_VA_THI_DO_DAT_THE_DUC_THE_THAO_TAY_NINH a kg:Stadium
+; kg:capacity 500
+; kg:isHomeOf res:club/Tây_Ninh_FC .
+res:coach/Le_Thanh_Quang a kg:Coach
+; kg:manages res:club/Tây_Ninh_FC .
+res:season/2025 a kg:Season
+; kg:seasonOf res:competition/GIAI_BONG_DA_HANG_NHI_QUOC_GIA .
+res:season/2023 a kg:Season
+; kg:seasonOf res:competition/GIAI_BONG_DA_HANG_BA_QUOC_GIA .
+res:competition/GIAI_BONG_DA_HANG_NHI_QUOC_GIA a kg:Competition
+; kg:competitionName "Giải bóng đá hạng Nhì Quốc gia" .
+res:competition/GIAI_BONG_DA_HANG_BA_QUOC_GIA a kg:Competition
+; kg:competitionName "Giải bóng đá hạng Ba Quốc gia" .
+res:player/Tran_Thi_Minh_Phuong a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Dang_Van_Tuong a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Phan_Nguyen_Duy_Giang a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Cao_Hoa_Ky a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Bui_Van_Dong a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Bui_Dinh_Chau a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Pham_Ngoc_Quoc a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Tran_Van_Luan a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Nguyen_Thang_Bao a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Le_Duc_Tai a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Nguyen_Viet_Binh a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Tran_Anh_Thai a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Nguyen_Vuong_Vu a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Le_Van_Sau a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Lam_Van_Ngoan a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Tran_Anh_Thai a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Ngo_Duong_Thai a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Nguyen_Thanh_Lam a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Tran_Duc_Trung a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Tran_Phu_ Nguyen a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Tran_Anh_Tuan a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Hoang_Ngoc_Hung a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Pham_Van_Quoc a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Nguyen_Le_Nhat_Quang a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+res:player/Nguyen_Ba_Duong a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Nguyen_Duc_Kiet a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Truong_Dinh_Luat a kg:Player
+; kg:playsFor res:club/Tây_Ninh_FC
+; kg:primaryPosition kg:Defender "UNKNOWN" .

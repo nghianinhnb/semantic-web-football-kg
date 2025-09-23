@@ -1,317 +1,261 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Cộng_hòa_Séc a kg:teamName "Cộng hòa Séc" ;
-a kg:Team ;
-kg:hasCoach res:coach/Jaroslav_Silhavy ;
-kg:hasCaptain res:player/Tomas_Soucek ;
-kg:teamAbbreviation "CZE" ;
-kg:locatedIn res:country/Cộng_hòa_Séc .
-
-res:coach/Jaroslav_Silhavy a kg:Coach ;
-kg:manages res:team/Cộng_hòa_Séc .
-
-res:player/Tomas_Soucek a kg:Player ;
-kg:isCaptain res:team/Cộng_hòa_Séc .
-
-res:country/Cộng_hòa_Séc a kg:Country ;
-kg:locatedIn res:region/Châu_Âu .
-
+res:team/Cộng_hòa_Séc a kg:teamName "Cộng hòa Séc"
+; a kg:Team
+; kg:hasCoach res:coach/Jaroslav_Silhavy
+; kg:hasCaptain res:player/Tomas_Soucek
+; kg:teamAbbreviation "CZE"
+; kg:locatedIn res:country/Cộng_hòa_Séc .
+res:coach/Jaroslav_Silhavy a kg:Coach
+; kg:manages res:team/Cộng_hòa_Séc .
+res:player/Tomas_Soucek a kg:Player
+; kg:isCaptain res:team/Cộng_hòa_Séc .
+res:country/Cộng_hòa_Séc a kg:Country
+; kg:locatedIn res:region/Châu_Âu .
 res:team/Cộng_hòa_Séc kg:participatesIn res:season/Giải_vô_địch_bóng_đá_thế_giới_2006 .
-
-res:season/Giải_vô_địch_bóng_đá_thế_giới_2006 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_thế_giới ;
-kg:participatesIn res:team/Cộng_hòa_Séc .
-
-res:competition/Giải_vô_địch_bóng_đá_thế_giới a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá thế giới" .
-
+res:season/Giải_vô_địch_bóng_đá_thế_giới_2006 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_thế_giới
+; kg:participatesIn res:team/Cộng_hòa_Séc .
+res:competition/Giải_vô_địch_bóng_đá_thế_giới a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá thế giới" .
 res:team/Cộng_hòa_Séc kg:participatesIn res:season/Giải_vô_địch_bóng_đá_châu_Âu_1996 .
-
-res:season/Giải_vô_địch_bóng_đá_châu_Âu_1996 a kg:Season ;
-kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_châu_Âu ;
-kg:participatesIn res:team/Cộng_hòa_Séc .
-
-res:competition/Giải_vô_địch_bóng_đá_châu_Âu a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá châu Âu" .
-
+res:season/Giải_vô_địch_bóng_đá_châu_Âu_1996 a kg:Season
+; kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_châu_Âu
+; kg:participatesIn res:team/Cộng_hòa_Séc .
+res:competition/Giải_vô_địch_bóng_đá_châu_Âu a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá châu Âu" .
 res:team/Cộng_hòa_Séc kg:participatesIn res:season/Cúp_Liên_đoàn_các_châu_lục_1997 .
-
-res:season/Cúp_Liên_đoàn_các_châu_lục_1997 a kg:Season ;
-kg:seasonOf res:competition/Cúp_Liên_đoàn_các_châu_lục ;
-kg:participatesIn res:team/Cộng_hòa_Séc .
-
-res:competition/Cúp_Liên_đoàn_các_châu_lục a kg:Competition ;
-kg:competitionName "Cúp Liên đoàn các châu lục" .
-
-res:player/Petr_Cech a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:birthDate "1982-05-19"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 1 .
-
-res:position/Goalkeeper a kg:Goalkeeper ;
-rdfs:subClassOf kg:Position .
-
-res:city/Praha a kg:City ;
-kg:locatedIn res:country/Cộng_hòa_Séc .
-
-res:player/Jan_Koller a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1975-06-06"^^xsd:date ;
-kg:birthPlace res:city/Olomouc ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 9 .
-
-res:position/Forward a kg:Forward ;
-rdfs:subClassOf kg:Position .
-
-res:city/Olomouc a kg:City ;
-kg:locatedIn res:country/Cộng_hòa_Séc .
-
-res:player/Tomas_Soucek a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1995-02-27"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 14 .
-
-res:position/Midfielder a kg:Midfielder ;
-rdfs:subClassOf kg:Position .
-
-res:player/Patrik_Schick a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1996-01-24"^^xsd:date ;
-kg:birthPlace res:city/Olomouc ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 10 .
-
-res:player/Michael_Krmenčík a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1993-03-15"^^xsd:date ;
-kg:birthPlace res:city/Plzen ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 11 .
-
-res:city/Plzen a kg:City ;
-kg:locatedIn res:country/Cộng_hòa_Séc .
-
-res:player/Matěj_Vydra a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1992-05-01"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 20 .
-
-res:player/Aleš_Mandous a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:birthDate "1992-04-21"^^xsd:date ;
-kg:birthPlace res:city/Olomouc ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 16 .
-
-res:player/Tomáš_Koubek a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:birthDate "1992-08-14"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 23 .
-
-res:player/Pavel_Kaderabek a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1992-04-25"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 2 .
-
-res:position/Defender a kg:Defender ;
-rdfs:subClassOf kg:Position .
-
-res:player/Ondrej_Celustka a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1989-06-18"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 3 .
-
-res:player/Jakub_Brabec a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1992-08-06"^^xsd:date ;
-kg:birthPlace res:city/Plzen ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 4 .
-
-res:player/Vladimir_Coufal a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1992-08-22"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 5 .
-
-res:player/Tomas_Kalas a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1993-05-15"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 6 .
-
-res:player/Tomas_Holes a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1993-03-31"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 9 .
-
-res:player/David_Zima a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "2000-11-08"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 17 .
-
-res:player/Jan_Boril a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1991-01-11"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 18 .
-
-res:player/Ales_Mateju a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1996-06-03"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 22 .
-
-res:player/Antonin_Barak a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1994-12-03"^^xsd:date ;
-kg:birthPlace res:city/Olomouc ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 7 .
-
-res:player/Vladimir_Darida a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1990-08-08"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 8 .
-
-res:player/Lukas_Masopust a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1993-02-12"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 12 .
-
-res:player/Petr_Sevcik a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1994-05-04"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 13 .
-
-res:player/Jakub_Jankto a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1996-01-19"^^xsd:date ;
-kg:birthPlace res:city/Plzen ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 14 .
-
-res:player/Tomas_Soucek a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1995-02-27"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 14 .
-
-res:player/Alex_Kral a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1998-05-19"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 21 .
-
-res:player/Jakub_Pesek a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1993-06-24"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 25 .
-
-res:player/Michal_Sadilek a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Midfielder ;
-kg:birthDate "1999-05-31"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 26 .
-
-res:player/Patrik_Schick a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1996-01-24"^^xsd:date ;
-kg:birthPlace res:city/Olomouc ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 10 .
-
-res:player/Michael_Krmenčík a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1993-03-15"^^xsd:date ;
-kg:birthPlace res:city/Plzen ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 11 .
-
-res:player/Adam_Hlozek a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "2002-07-25"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 19 .
-
-res:player/Matej_Vydra a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1992-05-01"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 20 .
-
-res:player/Tomas_Pekhart a kg:Player ;
-kg:playsFor res:team/Cộng_hòa_Séc ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1989-05-26"^^xsd:date ;
-kg:birthPlace res:city/Praha ;
-kg:nationality res:country/Cộng_hòa_Séc ;
-kg:shirtNumber 24 .
+res:season/Cúp_Liên_đoàn_các_châu_lục_1997 a kg:Season
+; kg:seasonOf res:competition/Cúp_Liên_đoàn_các_châu_lục
+; kg:participatesIn res:team/Cộng_hòa_Séc .
+res:competition/Cúp_Liên_đoàn_các_châu_lục a kg:Competition
+; kg:competitionName "Cúp Liên đoàn các châu lục" .
+res:player/Petr_Cech a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Goalkeeper
+; kg:birthDate "1982-05-19"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 1 .
+res:position/Goalkeeper a kg:Goalkeeper
+; rdfs:subClassOf kg:Position .
+res:city/Praha a kg:City
+; kg:locatedIn res:country/Cộng_hòa_Séc .
+res:player/Jan_Koller a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1975-06-06"^^xsd:date
+; kg:birthPlace res:city/Olomouc
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 9 .
+res:position/Forward a kg:Forward
+; rdfs:subClassOf kg:Position .
+res:city/Olomouc a kg:City
+; kg:locatedIn res:country/Cộng_hòa_Séc .
+res:player/Tomas_Soucek a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1995-02-27"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 14 .
+res:position/Midfielder a kg:Midfielder
+; rdfs:subClassOf kg:Position .
+res:player/Patrik_Schick a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1996-01-24"^^xsd:date
+; kg:birthPlace res:city/Olomouc
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 10 .
+res:player/Michael_Krmenčík a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1993-03-15"^^xsd:date
+; kg:birthPlace res:city/Plzen
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 11 .
+res:city/Plzen a kg:City
+; kg:locatedIn res:country/Cộng_hòa_Séc .
+res:player/Matěj_Vydra a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1992-05-01"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 20 .
+res:player/Aleš_Mandous a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Goalkeeper
+; kg:birthDate "1992-04-21"^^xsd:date
+; kg:birthPlace res:city/Olomouc
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 16 .
+res:player/Tomáš_Koubek a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Goalkeeper
+; kg:birthDate "1992-08-14"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 23 .
+res:player/Pavel_Kaderabek a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1992-04-25"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 2 .
+res:position/Defender a kg:Defender
+; rdfs:subClassOf kg:Position .
+res:player/Ondrej_Celustka a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1989-06-18"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 3 .
+res:player/Jakub_Brabec a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1992-08-06"^^xsd:date
+; kg:birthPlace res:city/Plzen
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 4 .
+res:player/Vladimir_Coufal a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1992-08-22"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 5 .
+res:player/Tomas_Kalas a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1993-05-15"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 6 .
+res:player/Tomas_Holes a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1993-03-31"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 9 .
+res:player/David_Zima a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "2000-11-08"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 17 .
+res:player/Jan_Boril a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1991-01-11"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 18 .
+res:player/Ales_Mateju a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Defender
+; kg:birthDate "1996-06-03"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 22 .
+res:player/Antonin_Barak a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1994-12-03"^^xsd:date
+; kg:birthPlace res:city/Olomouc
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 7 .
+res:player/Vladimir_Darida a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1990-08-08"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 8 .
+res:player/Lukas_Masopust a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1993-02-12"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 12 .
+res:player/Petr_Sevcik a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1994-05-04"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 13 .
+res:player/Jakub_Jankto a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1996-01-19"^^xsd:date
+; kg:birthPlace res:city/Plzen
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 14 .
+res:player/Tomas_Soucek a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1995-02-27"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 14 .
+res:player/Alex_Kral a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1998-05-19"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 21 .
+res:player/Jakub_Pesek a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1993-06-24"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 25 .
+res:player/Michal_Sadilek a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Midfielder
+; kg:birthDate "1999-05-31"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 26 .
+res:player/Patrik_Schick a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1996-01-24"^^xsd:date
+; kg:birthPlace res:city/Olomouc
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 10 .
+res:player/Michael_Krmenčík a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1993-03-15"^^xsd:date
+; kg:birthPlace res:city/Plzen
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 11 .
+res:player/Adam_Hlozek a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "2002-07-25"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 19 .
+res:player/Matej_Vydra a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1992-05-01"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 20 .
+res:player/Tomas_Pekhart a kg:Player
+; kg:playsFor res:team/Cộng_hòa_Séc
+; kg:primaryPosition res:position/Forward
+; kg:birthDate "1989-05-26"^^xsd:date
+; kg:birthPlace res:city/Praha
+; kg:nationality res:country/Cộng_hòa_Séc
+; kg:shirtNumber 24 .

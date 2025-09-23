@@ -1,8 +1,3 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
 res:team/Guyane_thuoc_Phat <kg:teamName> "Guyane thuộc Pháp" .
 res:team/Guyane_thuoc_Phat <kg:teamAbbreviation> "GYF" .
 res:team/Guyane_thuoc_Phat <kg:hasCoach> res:coach/Jaïr_Karam .
@@ -10,180 +5,130 @@ res:team/Guyane_thuoc_Phat <kg:hasCoach> res:coach/Marie-Rose_Carême .
 res:team/Guyane_thuoc_Phat <kg:homeStadium> res:stadium/Baduel .
 res:team/Guyane_thuoc_Phat <kg:locatedIn> res:country/Guyane_thuoc_Phat .
 res:team/Guyane_thuoc_Phat <kg:organizes> res:competition/Cup_Vang_CONCACAF .
-
 res:country/Guyane_thuoc_Phat <rdfs:label> "Guyane thuộc Pháp" .
 res:country/Guyane_thuoc_Phat <kg:locatedIn> res:region/North_America .
-
 res:competition/Cup_Vang_CONCACAF <kg:competitionName> "Cúp Vàng CONCACAF" .
 res:competition/Cup_Vang_CONCACAF <kg:heldIn> res:country/Guyane_thuoc_Phat .
 res:competition/Cup_Vang_CONCACAF <kg:participantCount> "1"^^xsd:positiveInteger .
-
-res:stadium/Baduel <kg:stadiumName> "Baduel" .
 res:stadium/Baduel <kg:isHomeOf> res:team/Guyane_thuoc_Phat .
-
 res:coach/Jaïr_Karam <kg:manages> res:team/Guyane_thuoc_Phat .
 res:coach/Marie-Rose_Carême <kg:manages> res:team/Guyane_thuoc_Phat .
-
 res:player/Noha_Pulcherie <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Noha_Pulcherie <kg:primaryPosition> res:position/Goalkeeper .
 res:player/Noha_Pulcherie <kg:birthDate> "2001-06-19"^^xsd:date .
 res:player/Noha_Pulcherie <kg:birthPlace> res:city/Bastia .
 res:player/Noha_Pulcherie <kg:nationality> res:country/Guyane_thuoc_Phat .
 res:player/Noha_Pulcherie <kg:shirtNumber> "1"^^xsd:positiveInteger .
-
 res:player/Jean-Banuel_Petit-Homme <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Jean-Banuel_Petit-Homme <kg:primaryPosition> res:position/Goalkeeper .
 res:player/Jean-Banuel_Petit-Homme <kg:birthDate> "1990-08-10"^^xsd:date .
 res:player/Jean-Banuel_Petit-Homme <kg:birthPlace> res:city/Le_Geldar .
 res:player/Jean-Banuel_Petit-Homme <kg:nationality> res:country/Guyane_thuoc_Phat .
 res:player/Jean-Banuel_Petit-Homme <kg:shirtNumber> "22"^^xsd:positiveInteger .
-res:player/Jean-Banuel_Petit-Homme <kg:caps> "7"^^xsd:positiveInteger .
-
 res:player/Simon_Lugier <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Simon_Lugier <kg:primaryPosition> res:position/Goalkeeper .
 res:player/Simon_Lugier <kg:birthDate> "1989-08-02"^^xsd:date .
 res:player/Simon_Lugier <kg:birthPlace> res:city/Boulogne .
 res:player/Simon_Lugier <kg:nationality> res:country/Guyane_thuoc_Phat .
 res:player/Simon_Lugier <kg:shirtNumber> "23"^^xsd:positiveInteger .
-res:player/Simon_Lugier <kg:caps> "3"^^xsd:positiveInteger .
-
 res:player/Gregory_Lescot <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Gregory_Lescot <kg:primaryPosition> res:position/Defender .
 res:player/Gregory_Lescot <kg:birthDate> "1989-05-10"^^xsd:date .
 res:player/Gregory_Lescot <kg:birthPlace> res:city/Vannes .
 res:player/Gregory_Lescot <kg:nationality> res:country/France .
 res:player/Gregory_Lescot <kg:shirtNumber> "14"^^xsd:positiveInteger .
-res:player/Gregory_Lescot <kg:caps> "20"^^xsd:positiveInteger .
-
 res:player/Marvin_Torvic <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Marvin_Torvic <kg:primaryPosition> res:position/Defender .
 res:player/Marvin_Torvic <kg:birthDate> "1988-01-05"^^xsd:date .
 res:player/Marvin_Torvic <kg:birthPlace> res:city/Matoury .
 res:player/Marvin_Torvic <kg:nationality> res:country/Guyane_thuoc_Phat .
 res:player/Marvin_Torvic <kg:shirtNumber> "3"^^xsd:positiveInteger .
-res:player/Marvin_Torvic <kg:caps> "30"^^xsd:positiveInteger .
-res:player/Marvin_Torvic <kg:goals> "1"^^xsd:positiveInteger .
-
 res:player/Marc_Rifort <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Marc_Rifort <kg:primaryPosition> res:position/Defender .
 res:player/Marc_Rifort <kg:birthDate> "1985-08-25"^^xsd:date .
 res:player/Marc_Rifort <kg:birthPlace> res:city/Matoury .
 res:player/Marc_Rifort <kg:nationality> res:country/Guyane_thuoc_Phat .
 res:player/Marc_Rifort <kg:shirtNumber> "13"^^xsd:positiveInteger .
-res:player/Marc_Rifort <kg:caps> "0"^^xsd:positiveInteger .
-
 res:player/Jean-David_Legrand <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Jean-David_Legrand <kg:primaryPosition> res:position/Defender .
 res:player/Jean-David_Legrand <kg:birthDate> "1991-02-23"^^xsd:date .
 res:player/Jean-David_Legrand <kg:birthPlace> res:city/Lege-Cap-Ferret .
 res:player/Jean-David_Legrand <kg:nationality> res:country/France .
 res:player/Jean-David_Legrand <kg:shirtNumber> "18"^^xsd:positiveInteger .
-res:player/Jean-David_Legrand <kg:caps> "21"^^xsd:positiveInteger .
-res:player/Jean-David_Legrand <kg:goals> "1"^^xsd:positiveInteger .
-
 res:player/Josue_Albert <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Josue_Albert <kg:primaryPosition> res:position/Defender .
 res:player/Josue_Albert <kg:birthDate> "1992-01-21"^^xsd:date .
 res:player/Josue_Albert <kg:birthPlace> res:city/Clermont_Foot .
 res:player/Josue_Albert <kg:nationality> res:country/France .
 res:player/Josue_Albert <kg:shirtNumber> "13"^^xsd:positiveInteger .
-res:player/Josue_Albert <kg:caps> "2"^^xsd:positiveInteger .
-
 res:player/Gary_Marigard <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Gary_Marigard <kg:primaryPosition> res:position/Defender .
 res:player/Gary_Marigard <kg:birthDate> "1988-01-06"^^xsd:date .
 res:player/Gary_Marigard <kg:birthPlace> res:city/Iris_Club_de_Croix .
 res:player/Gary_Marigard <kg:nationality> res:country/France .
 res:player/Gary_Marigard <kg:shirtNumber> "21"^^xsd:positiveInteger .
-res:player/Gary_Marigard <kg:caps> "18"^^xsd:positiveInteger .
-
 res:player/Dylan_Adam <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Dylan_Adam <kg:primaryPosition> res:position/Defender .
 res:player/Dylan_Adam <kg:birthDate> "1998-11-07"^^xsd:date .
 res:player/Dylan_Adam <kg:birthPlace> res:city/Matoury .
 res:player/Dylan_Adam <kg:nationality> res:country/Guyane_thuoc_Phat .
 res:player/Dylan_Adam <kg:shirtNumber> "5"^^xsd:positiveInteger .
-res:player/Dylan_Adam <kg:caps> "7"^^xsd:positiveInteger .
-
 res:player/Regis_Leveille <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Regis_Leveille <kg:primaryPosition> res:position/Midfielder .
 res:player/Regis_Leveille <kg:birthDate> "1994-08-10"^^xsd:date .
 res:player/Regis_Leveille <kg:birthPlace> res:city/Tulle .
 res:player/Regis_Leveille <kg:nationality> res:country/France .
 res:player/Regis_Leveille <kg:shirtNumber> "16"^^xsd:positiveInteger .
-res:player/Regis_Leveille <kg:caps> "2"^^xsd:positiveInteger .
-
 res:player/Rhudy_Evens <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Rhudy_Evens <kg:primaryPosition> res:position/Midfielder .
 res:player/Rhudy_Evens <kg:birthDate> "1988-02-13"^^xsd:date .
 res:player/Rhudy_Evens <kg:birthPlace> res:city/Matoury .
 res:player/Rhudy_Evens <kg:nationality> res:country/Guyane_thuoc_Phat .
 res:player/Rhudy_Evens <kg:shirtNumber> "4"^^xsd:positiveInteger .
-res:player/Rhudy_Evens <kg:caps> "47"^^xsd:positiveInteger .
-res:player/Rhudy_Evens <kg:goals> "7"^^xsd:positiveInteger .
-
 res:player/Marvin_Desmangles <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Marvin_Desmangles <kg:primaryPosition> res:position/Midfielder .
 res:player/Marvin_Desmangles <kg:birthDate> "1987-11-07"^^xsd:date .
 res:player/Marvin_Desmangles <kg:birthPlace> res:city/Cayenne .
 res:player/Marvin_Desmangles <kg:nationality> res:country/Guyane_thuoc_Phat .
 res:player/Marvin_Desmangles <kg:shirtNumber> "20"^^xsd:positiveInteger .
-res:player/Marvin_Desmangles <kg:caps> "0"^^xsd:positiveInteger .
-
 res:player/Thomas_Vancaeyezeele <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Thomas_Vancaeyezeele <kg:primaryPosition> res:position/Midfielder .
 res:player/Thomas_Vancaeyezeele <kg:birthDate> "1994-07-27"^^xsd:date .
 res:player/Thomas_Vancaeyezeele <kg:birthPlace> res:city/Pittsburgh .
 res:player/Thomas_Vancaeyezeele <kg:nationality> res:country/USA .
 res:player/Thomas_Vancaeyezeele <kg:shirtNumber> "7"^^xsd:positiveInteger .
-res:player/Thomas_Vancaeyezeele <kg:caps> "3"^^xsd:positiveInteger .
-
 res:player/Frantz_Atokou <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Frantz_Atokou <kg:primaryPosition> res:position/Forward .
 res:player/Frantz_Atokou <kg:birthDate> "1995-07-20"^^xsd:date .
 res:player/Frantz_Atokou <kg:birthPlace> res:city/La_Roche_Vendee .
 res:player/Frantz_Atokou <kg:nationality> res:country/France .
 res:player/Frantz_Atokou <kg:shirtNumber> "14"^^xsd:positiveInteger .
-res:player/Frantz_Atokou <kg:caps> "0"^^xsd:positiveInteger .
-
 res:player/Loic_Roman <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Loic_Roman <kg:primaryPosition> res:position/Forward .
 res:player/Loic_Roman <kg:birthDate> "1988-09-22"^^xsd:date .
 res:player/Loic_Roman <kg:birthPlace> res:city/Aguado .
 res:player/Loic_Roman <kg:nationality> res:country/Guyane_thuoc_Phat .
 res:player/Loic_Roman <kg:shirtNumber> "17"^^xsd:positiveInteger .
-res:player/Loic_Roman <kg:caps> "1"^^xsd:positiveInteger .
-
 res:player/Joffrey_Torvic <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Joffrey_Torvic <kg:primaryPosition> res:position/Forward .
 res:player/Joffrey_Torvic <kg:birthDate> "1990-11-13"^^xsd:date .
 res:player/Joffrey_Torvic <kg:birthPlace> res:city/Beauvais .
 res:player/Joffrey_Torvic <kg:nationality> res:country/France .
 res:player/Joffrey_Torvic <kg:shirtNumber> "10"^^xsd:positiveInteger .
-res:player/Joffrey_Torvic <kg:caps> "7"^^xsd:positiveInteger .
-res:player/Joffrey_Torvic <kg:goals> "2"^^xsd:positiveInteger .
-
 res:player/Arnold_Abelinti <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Arnold_Abelinti <kg:primaryPosition> res:position/Forward .
 res:player/Arnold_Abelinti <kg:birthDate> "1991-09-09"^^xsd:date .
 res:player/Arnold_Abelinti <kg:birthPlace> res:city/Moulins_Yzeure .
 res:player/Arnold_Abelinti <kg:nationality> res:country/France .
 res:player/Arnold_Abelinti <kg:shirtNumber> "11"^^xsd:positiveInteger .
-res:player/Arnold_Abelinti <kg:caps> "11"^^xsd:positiveInteger .
-res:player/Arnold_Abelinti <kg:goals> "3"^^xsd:positiveInteger .
-
 res:player/Thomas_Issorat <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Thomas_Issorat <kg:primaryPosition> res:position/Forward .
 res:player/Thomas_Issorat <kg:birthDate> "1993-09-03"^^xsd:date .
 res:player/Thomas_Issorat <kg:birthPlace> res:city/Remire .
 res:player/Thomas_Issorat <kg:nationality> res:country/Guyane_thuoc_Phat .
 res:player/Thomas_Issorat <kg:shirtNumber> "19"^^xsd:positiveInteger .
-res:player/Thomas_Issorat <kg:caps> "3"^^xsd:positiveInteger .
-res:player/Thomas_Issorat <kg:goals> "1"^^xsd:positiveInteger .
-
 res:player/Alex_Eric <kg:playsFor> res:team/Guyane_thuoc_Phat .
 res:player/Alex_Eric <kg:primaryPosition> res:position/Forward .
 res:player/Alex_Eric <kg:birthDate> "1990-09-21"^^xsd:date .
 res:player/Alex_Eric <kg:birthPlace> res:city/Matoury .
 res:player/Alex_Eric <kg:nationality> res:country/Guyane_thuoc_Phat .
-res:player/Alex_Eric <kg

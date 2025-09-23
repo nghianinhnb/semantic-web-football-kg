@@ -1,349 +1,147 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Gabon a kg:Team ;
-kg:teamName "Gabon" ;
-kg:teamAbbreviation "GAB" ;
-kg:hasCoach res:coach/Patrice_Neveu ;
-kg:hasCaptain res:player/Pierre_Emerick_Aubameyang ;
-kg:isCaptain res:player/Pierre_Emerick_Aubameyang ;
-kg:locatedIn res:country/Gabon .
-
-res:coach/Patrice_Neveu a kg:Coach ;
-kg:manages res:team/Gabon .
-
-res:player/Pierre_Emerick_Aubameyang a kg:Forward ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 11 ;
-kg:birthDate "1988-06-18"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:country/Gabon a kg:Country ;
-rdfs:label "Gabon" .
-
-res:city/Libreville a kg:City ;
-rdfs:label "Libreville" ;
-kg:locatedIn res:country/Gabon .
-
-res:stadium/San_Vien_Dong_Angondje a kg:Stadium ;
-rdfs:label "Sân vận động Angondjé" ;
-kg:isHomeOf res:team/Gabon .
-
-res:stadium/San_Vien_Dong_Omar_Bongo a kg:Stadium ;
-rdfs:label "Sân vận động Omar Bongo" ;
-kg:isHomeOf res:team/Gabon .
-
-res:competition/Cup_of_Africa a kg:Competition ;
-kg:competitionName "Cúp bóng đá châu Phi" .
-
-res:competition/FIFA_World_Cup a kg:Competition ;
-kg:competitionName "Giải bóng đá vô địch thế giới" .
-
-res:season/1994 a kg:Season ;
-kg:seasonOf res:competition/Cup_of_Africa .
-
-res:season/1996 a kg:Season ;
-kg:seasonOf res:competition/Cup_of_Africa .
-
-res:season/2012 a kg:Season ;
-kg:seasonOf res:competition/Cup_of_Africa .
-
-res:season/2010 a kg:Season ;
-kg:seasonOf res:competition/Cup_of_Africa .
-
-res:match/1960-04-13 a kg:Match ;
-kg:homeTeam res:team/Gabon ;
-kg:awayTeam res:team/Upper_Volta ;
-kg:venue res:stadium/San_Vien_Dong_Angondje ;
-kg:kickoffTime "1960-04-13T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Cup_of_Africa .
-
-res:match/1995-04-02 a kg:Match ;
-kg:homeTeam res:team/Gabon ;
-kg:awayTeam res:team/Benin ;
-kg:venue res:stadium/San_Vien_Dong_Omar_Bongo ;
-kg:kickoffTime "1995-04-02T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Cup_of_Africa .
-
-res:match/1961-12-26 a kg:Match ;
-kg:homeTeam res:team/Cameroon ;
-kg:awayTeam res:team/Gabon ;
-kg:venue res:stadium/San_Vien_Dong_Omar_Bongo ;
-kg:kickoffTime "1961-12-26T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Cup_of_Africa .
-
-res:match/2006-11-15 a kg:Match ;
-kg:homeTeam res:team/Morocco ;
-kg:awayTeam res:team/Gabon ;
-kg:venue res:stadium/San_Vien_Dong_Omar_Bongo ;
-kg:kickoffTime "2006-11-15T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Cup_of_Africa .
-
-res:player/Didier_Ovono a kg:Forward ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 11 ;
-kg:birthDate "1982-05-24"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Denis_Bouanga a kg:Forward ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 20 ;
-kg:birthDate "1994-11-11"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Jim_Allevinah a kg:Forward ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 17 ;
-kg:birthDate "1995-02-27"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Andre_Biyogo_Poko a kg:Midfielder ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 17 ;
-kg:birthDate "1993-03-07"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Stevy_Nzambe a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 5 ;
-kg:birthDate "1991-09-04"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Bruno_Ecuele_Manga a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 5 ;
-kg:birthDate "1988-07-16"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Aaron_Appindangoye a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 2 ;
-kg:birthDate "1992-02-20"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Yannis_MBemba a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 18 ;
-kg:birthDate "2001-07-01"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Jeremy_Oyono a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 21 ;
-kg:birthDate "2001-04-12"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Johann_Obiang a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 6 ;
-kg:birthDate "1993-07-05"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Anthony_Oyono a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 3 ;
-kg:birthDate "2001-04-12"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Mick_Onfia a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 13 ;
-kg:birthDate "2000-12-10"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Jacques_Ekomié a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 19 ;
-kg:birthDate "2003-08-19"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Larry_Jonathan_Ekwa a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 17 ;
-kg:birthDate "2006-02-03"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Mathéo_Moussa a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 17 ;
-kg:birthDate "2005-11-14"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Oumar_Bagnama a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 17 ;
-kg:birthDate "2001-05-19"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Urie_Michel_Mboula a kg:Defender ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Defender ;
-kg:shirtNumber 17 ;
-kg:birthDate "2003-04-30"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Guelor_Kanga a kg:Midfielder ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 12 ;
-kg:birthDate "1990-08-01"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Eric_Bocoum a kg:Midfielder ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 14 ;
-kg:birthDate "1996-03-10"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/André_Biyogo_Poko a kg:Midfielder ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 17 ;
-kg:birthDate "1993-03-07"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Didier_Ndong a kg:Midfielder ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 22 ;
-kg:birthDate "1994-06-17"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Clench_Loufilou a kg:Midfielder ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 17 ;
-kg:birthDate "1999-04-12"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Mario_Lemina a kg:Midfielder ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 17 ;
-kg:birthDate "1993-09-01"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Meshak_Babanzila a kg:Midfielder ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 17 ;
-kg:birthDate "2001-06-11"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Serge_Junior_Martinsson_Ngouali a kg:Midfielder ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 17 ;
-kg:birthDate "1992-01-23"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Shorla_Aboghe a kg:Midfielder ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Midfielder ;
-kg:shirtNumber 17 ;
-kg:birthDate "2005-05-20"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/David_Sambissa a kg:Forward ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 7 ;
-kg:birthDate "1996-01-11"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Noha_Lemina a kg:Forward ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 8 ;
-kg:birthDate "2005-06-17"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Teddy_Averlant a kg:Forward ;
-kg:playsFor res:team/Gabon ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 11 ;
-kg:birthDate "1999-10-02"^^xsd:date ;
-kg:birthPlace res:city/Libreville ;
-kg:nationality res:country/Gabon ;
-kg:preferredFoot kg:LeftFooted .
-
-res:player/Bryan_Meyo a kg
+res:team/Gabon a kg:Team
+; kg:teamName "Gabon"
+; kg:teamAbbreviation "GAB"
+; kg:hasCoach res:coach/Patrice_Neveu
+; kg:hasCaptain res:player/Pierre_Emerick_Aubameyang
+; kg:isCaptain res:player/Pierre_Emerick_Aubameyang
+; kg:locatedIn res:country/Gabon .
+res:coach/Patrice_Neveu a kg:Coach
+; kg:manages res:team/Gabon .
+res:player/Pierre_Emerick_Aubameyang a kg:Forward
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:country/Gabon a kg:Country
+; rdfs:label "Gabon" .
+res:city/Libreville a kg:City
+; rdfs:label "Libreville"
+; kg:locatedIn res:country/Gabon .
+res:stadium/San_Vien_Dong_Angondje a kg:Stadium
+; rdfs:label "Sân vận động Angondjé"
+; kg:isHomeOf res:team/Gabon .
+res:stadium/San_Vien_Dong_Omar_Bongo a kg:Stadium
+; rdfs:label "Sân vận động Omar Bongo"
+; kg:isHomeOf res:team/Gabon .
+res:competition/Cup_of_Africa a kg:Competition
+; kg:competitionName "Cúp bóng đá châu Phi" .
+res:competition/FIFA_World_Cup a kg:Competition
+; kg:competitionName "Giải bóng đá vô địch thế giới" .
+res:season/1994 a kg:Season
+; kg:seasonOf res:competition/Cup_of_Africa .
+res:season/1996 a kg:Season
+; kg:seasonOf res:competition/Cup_of_Africa .
+res:season/2012 a kg:Season
+; kg:seasonOf res:competition/Cup_of_Africa .
+res:season/2010 a kg:Season
+; kg:seasonOf res:competition/Cup_of_Africa .
+res:match/1960-04-13 a kg:Match
+; kg:homeTeam res:team/Gabon
+; kg:awayTeam res:team/Upper_Volta
+; kg:venue res:stadium/San_Vien_Dong_Angondje
+; kg:kickoffTime "1960-04-13T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Cup_of_Africa .
+res:match/1995-04-02 a kg:Match
+; kg:homeTeam res:team/Gabon
+; kg:awayTeam res:team/Benin
+; kg:venue res:stadium/San_Vien_Dong_Omar_Bongo
+; kg:kickoffTime "1995-04-02T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Cup_of_Africa .
+res:match/1961-12-26 a kg:Match
+; kg:homeTeam res:team/Cameroon
+; kg:awayTeam res:team/Gabon
+; kg:venue res:stadium/San_Vien_Dong_Omar_Bongo
+; kg:kickoffTime "1961-12-26T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Cup_of_Africa .
+res:match/2006-11-15 a kg:Match
+; kg:homeTeam res:team/Morocco
+; kg:awayTeam res:team/Gabon
+; kg:venue res:stadium/San_Vien_Dong_Omar_Bongo
+; kg:kickoffTime "2006-11-15T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Cup_of_Africa .
+res:player/Didier_Ovono a kg:Forward
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Denis_Bouanga a kg:Forward
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Jim_Allevinah a kg:Forward
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Andre_Biyogo_Poko a kg:Midfielder
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Stevy_Nzambe a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Bruno_Ecuele_Manga a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Aaron_Appindangoye a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Yannis_MBemba a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Jeremy_Oyono a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Johann_Obiang a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Anthony_Oyono a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Mick_Onfia a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Jacques_Ekomié a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Larry_Jonathan_Ekwa a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Mathéo_Moussa a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Oumar_Bagnama a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Urie_Michel_Mboula a kg:Defender
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Defender "UNKNOWN" .
+res:player/Guelor_Kanga a kg:Midfielder
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Eric_Bocoum a kg:Midfielder
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/André_Biyogo_Poko a kg:Midfielder
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Didier_Ndong a kg:Midfielder
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Clench_Loufilou a kg:Midfielder
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Mario_Lemina a kg:Midfielder
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Meshak_Babanzila a kg:Midfielder
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Serge_Junior_Martinsson_Ngouali a kg:Midfielder
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/Shorla_Aboghe a kg:Midfielder
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+res:player/David_Sambissa a kg:Forward
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Noha_Lemina a kg:Forward
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Teddy_Averlant a kg:Forward
+; kg:playsFor res:team/Gabon
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:player/Bryan_Meyo a kg .

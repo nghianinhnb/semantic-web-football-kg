@@ -1,27 +1,3 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/San_Marino_Female_National_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá nữ quốc gia San Marino" ;
-kg:locatedIn res:country/San_Marino ;
-kg:association res:organization/Liên_hoan_bóng_đá_San_Marino ;
-kg:confederation res:organization/UEFA ;
-kg:fifaTrigramme "SMR" ;
-kg:unrecognizedByFIFA true ;
-kg:noOfficialMatches true ;
-kg:establishmentIssue true ;
-kg:soccerNotMostPopularSport true ;
-kg:femaleFootballNotSupported true ;
-kg:budgetAllocationForWomenUnder5Percent true ;
-kg:femalePlayersRegisteredIn2006 "65"^^xsd:integer ;
-kg:femalePlayersOver17In2006 "48"^^xsd:integer ;
-kg:maleClubsIn2006 "16"^^xsd:integer ;
-kg:femaleAllowedInMaleClubsIn2006 true ;
-kg:femaleFootballDevelopmentChallenge true .
-**Giải thích ngắn gọn:**
-
-- `res:team/San_Marino_Female_National_Team` là URI đại diện cho đội tuyển bóng đá nữ quốc gia San Marino.
-- Các thuộc tính như `kg:unrecognizedByFIFA`, `kg:noOfficialMatches`, v.v., được biểu diễn dưới dạng boolean (`true`) hoặc giá trị số (`xsd:integer`).
-- Thông tin lịch sử và tình hình phát triển bóng đá nữ tại San Marino được trích xuất thành các triples tương ứng.
+res:team/San_Marino_Female_National_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá nữ quốc gia San Marino"
+; kg:locatedIn res:country/San_Marino .

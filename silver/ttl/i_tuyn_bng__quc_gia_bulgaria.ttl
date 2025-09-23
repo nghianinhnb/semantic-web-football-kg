@@ -1,197 +1,113 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Bulgaria a kg:Team ;
-kg:teamName "Bulgaria" ;
-kg:hasCoach res:coach/Ivaylo_Petev ;
-kg:hasCaptain res:player/Svetoslav_Dyakov ;
-kg:mostCaps res:player/Stiliyan_Petrov ;
-kg:topScorer res:player/Dimitar_Berbatov ;
-kg:homeStadium res:stadium/National_Stadium_Vasil_Levski ;
-kg:fifaRank "BUL" ;
-kg:fifaMax 3 ;
-kg:fifaMaxDate "1995-06-01"^^xsd:date ;
-kg:fifaMin 96 ;
-kg:fifaMinDate "2012-04-01"^^xsd:date ;
-kg:eloRank "BUL" ;
-kg:eloMax 8 ;
-kg:eloMaxDate "1969-08-01"^^xsd:date ;
-kg:eloMin 65 ;
-kg:eloMinDate "2015-10-10"^^xsd:date ;
-kg:firstGame "1924-05-21"^^xsd:date ;
-kg:largestWin "1968-10-14"^^xsd:date ;
-kg:largestLoss "1933-05-21"^^xsd:date ;
-kg:worldCupApps 7 ;
-kg:worldCupFirst 1962 ;
-kg:worldCupBest "Hạng tư" ;
-kg:worldCupBestYear 1994 ;
-kg:regionalCupApps 2 ;
-kg:regionalCupFirst 1996 ;
-kg:regionalCupBest "Vòng 1" ;
-kg:regionalCupBestYears ("1996" "2004") .
-
-res:stadium/National_Stadium_Vasil_Levski a kg:Stadium ;
-kg:capacity 44000 ;
-kg:locatedIn res:city/Sofia .
-
-res:coach/Ivaylo_Petev a kg:Coach ;
-kg:manages res:team/Bulgaria .
-
-res:player/Svetoslav_Dyakov a kg:Player ;
-kg:isCaptain res:team/Bulgaria .
-
-res:player/Stiliyan_Petrov a kg:Player ;
-kg:playsFor res:team/Bulgaria ;
-kg:mostCaps res:team/Bulgaria .
-
-res:player/Dimitar_Berbatov a kg:Player ;
-kg:playsFor res:team/Bulgaria ;
-kg:topScorer res:team/Bulgaria .
-
-res:player/Hristo_Stoichkov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Kiril_Despodov a kg:Player ;
-kg:playsFor res:team/Bulgaria ;
-kg:isCaptain res:team/Bulgaria .
-
-res:player/Spas_Delev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Radoslav_Kirilov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Marin_Petkov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Georgi_Rusev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Nikolay_Mihaylov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Viktor_Popov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Andrea_Hristov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Bozhidar_Chorbadzhiyski a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Edisson_Jordanov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Vasil_Bozhikov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Kristian_Dimitrov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Miki_Orachev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Ivan_Yordanov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Dominik_Yankov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Iliyan_Stefanov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Georgi_Milanov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Todor_Nedelev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Georgi_Kostadinov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Ivaylo_Chochev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Kristiyan_Malinov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Andrian_Kraev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Borislav_Tsonev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Martin_Minchev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Atanas_Iliev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Georgi_Yomov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Georgi_Minchev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Daniel_Naumov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Svetoslav_Vutsov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Ivan_Dyulgerov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Anton_Nedyalkov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Petko_Hristov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Ivan_Turitsov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Valentin_Antov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Dimitar_Velkovski a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Plamen_Galabov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Aleks_Petkov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Dimo_Krastev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Hristiyan_Petrov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Mateo_Stamatov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Yanis_Karabelyov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Ilian_Iliev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Filip_Krastev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Ilia_Gruev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Yoni_Stoyanov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Nikola_Iliev a kg:Player ;
-kg:playsFor res:team/Bulgaria .
-
-res:player/Stanislav_Shopov a kg:Player ;
-kg:playsFor res:team/Bulgaria .
+res:team/Bulgaria a kg:Team
+; kg:teamName "Bulgaria"
+; kg:hasCoach res:coach/Ivaylo_Petev
+; kg:hasCaptain res:player/Svetoslav_Dyakov
+; kg:homeStadium res:stadium/National_Stadium_Vasil_Levski .
+res:stadium/National_Stadium_Vasil_Levski a kg:Stadium
+; kg:capacity 44000
+; kg:locatedIn res:city/Sofia .
+res:coach/Ivaylo_Petev a kg:Coach
+; kg:manages res:team/Bulgaria .
+res:player/Svetoslav_Dyakov a kg:Player
+; kg:isCaptain res:team/Bulgaria .
+res:player/Stiliyan_Petrov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Dimitar_Berbatov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Hristo_Stoichkov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Kiril_Despodov a kg:Player
+; kg:playsFor res:team/Bulgaria
+; kg:isCaptain res:team/Bulgaria .
+res:player/Spas_Delev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Radoslav_Kirilov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Marin_Petkov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Georgi_Rusev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Nikolay_Mihaylov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Viktor_Popov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Andrea_Hristov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Bozhidar_Chorbadzhiyski a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Edisson_Jordanov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Vasil_Bozhikov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Kristian_Dimitrov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Miki_Orachev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Ivan_Yordanov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Dominik_Yankov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Iliyan_Stefanov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Georgi_Milanov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Todor_Nedelev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Georgi_Kostadinov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Ivaylo_Chochev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Kristiyan_Malinov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Andrian_Kraev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Borislav_Tsonev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Martin_Minchev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Atanas_Iliev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Georgi_Yomov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Georgi_Minchev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Daniel_Naumov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Svetoslav_Vutsov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Ivan_Dyulgerov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Anton_Nedyalkov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Petko_Hristov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Ivan_Turitsov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Valentin_Antov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Dimitar_Velkovski a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Plamen_Galabov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Aleks_Petkov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Dimo_Krastev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Hristiyan_Petrov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Mateo_Stamatov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Yanis_Karabelyov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Ilian_Iliev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Filip_Krastev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Ilia_Gruev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Yoni_Stoyanov a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Nikola_Iliev a kg:Player
+; kg:playsFor res:team/Bulgaria .
+res:player/Stanislav_Shopov a kg:Player
+; kg:playsFor res:team/Bulgaria .

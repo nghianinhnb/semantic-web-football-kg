@@ -1,243 +1,136 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Belize a kg:Team ;
-kg:teamName "Belize national football team" ;
-kg:teamAbbreviation "BLZ" ;
-kg:hasCoach res:coach/Dale_Pelayo_Sr. ;
-kg:locatedIn res:country/Belize ;
-kg:managedBy res:coach/Dale_Pelayo_Sr. .
-
-res:country/Belize a kg:Country ;
-rdfs:label "Belize" .
-
-res:coach/Dale_Pelayo_Sr. a kg:Coach ;
-rdfs:label "Dale Pelayo Sr." .
-
+res:team/Belize a kg:Team
+; kg:teamName "Belize national football team"
+; kg:teamAbbreviation "BLZ"
+; kg:hasCoach res:coach/Dale_Pelayo_Sr .
+res:country/Belize a kg:Country
+; rdfs:label "Belize" .
+res:coach/Dale_Pelayo_Sr. a kg:Coach
+; rdfs:label "Dale Pelayo Sr." .
 res:team/Belize kg:hasCaptain res:player/Elroy_Smith .
-
-res:player/Elroy_Smith a kg:Player ;
-rdfs:label "Elroy Smith" ;
-kg:playsFor res:team/Belize ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 57 .
-
-res:player/Deon_McCaulay a kg:Player ;
-rdfs:label "Deon McCaulay" ;
-kg:playsFor res:team/Belize ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 26 .
-
-res:stadium/San_Van_Dong_FFB a kg:Stadium ;
-rdfs:label "Sân vận động FFB" .
-
-res:stadium/San_Van_Dong_Isidoro_Beaton a kg:Stadium ;
-rdfs:label "Sân vận động Isidoro Beaton" .
-
-res:team/Belize kg:homeStadium res:stadium/San_Van_Dong_FFB, res:stadium/San_Van_Dong_Isidoro_Beaton .
-
+res:player/Elroy_Smith a kg:Player
+; rdfs:label "Elroy Smith"
+; kg:playsFor res:team/Belize
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 57 .
+res:player/Deon_McCaulay a kg:Player
+; rdfs:label "Deon McCaulay"
+; kg:playsFor res:team/Belize
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 26 .
+res:stadium/San_Van_Dong_FFB a kg:Stadium
+; rdfs:label "Sân vận động FFB" .
+res:stadium/San_Van_Dong_Isidoro_Beaton a kg:Stadium
+; rdfs:label "Sân vận động Isidoro Beaton" .
+res:team/Belize kg:homeStadium res:stadium/San_Van_Dong_FFB , res:stadium/San_Van_Dong_Isidoro_Beaton .
 res:team/Belize kg:participatesIn res:competition/FIFA_World_Cup_Qualification .
-
-res:competition/FIFA_World_Cup_Qualification a kg:Competition ;
-kg:competitionName "FIFA World Cup Qualification" .
-
+res:competition/FIFA_World_Cup_Qualification a kg:Competition
+; kg:competitionName "FIFA World Cup Qualification" .
 res:team/Belize kg:participatesIn res:competition/Copa_Centroamericana .
-
-res:competition/Copa_Centroamericana a kg:Competition ;
-kg:competitionName "Copa Centroamericana" .
-
+res:competition/Copa_Centroamericana a kg:Competition
+; kg:competitionName "Copa Centroamericana" .
 res:competition/Copa_Centroamericana kg:organizedBy res:organization/CONCACAF .
-
-res:organization/CONCACAF a kg:Organization ;
-rdfs:label "CONCACAF" .
-
+res:organization/CONCACAF a kg:Organization
+; rdfs:label "CONCACAF" .
 res:team/Belize kg:participatesIn res:competition/CONCACAF_Nations_League .
-
-res:competition/CONCACAF_Nations_League a kg:Competition ;
-kg:competitionName "CONCACAF Nations League" .
-
+res:competition/CONCACAF_Nations_League a kg:Competition
+; kg:competitionName "CONCACAF Nations League" .
 res:team/Belize kg:participatesIn res:competition/Copa_Continental_CONCACAF .
-
-res:competition/Copa_Continental_CONCACAF a kg:Competition ;
-kg:competitionName "Cúp Vàng CONCACAF" .
-
-res:team/Belize kg:bestResultInCompetition "Vòng bảng" ;
-kg:bestResultInCompetitionOf res:competition/Copa_Continental_CONCACAF .
-
-res:team/Belize kg:firstInternationalMatch res:match/First_International_Match ;
-kg:firstInternationalMatchDate "1995-11-29"^^xsd:date .
-
-res:match/First_International_Match a kg:Match ;
-kg:homeTeam res:team/El_Salvador ;
-kg:awayTeam res:team/Belize ;
-kg:result "3–0" ;
-kg:venue res:stadium/San_Salvador .
-
-res:team/El_Salvador a kg:Team ;
-kg:teamName "El Salvador" ;
-kg:locatedIn res:country/El_Salvador .
-
-res:country/El_Salvador a kg:Country ;
-rdfs:label "El Salvador" .
-
-res:match/Largest_Win a kg:Match ;
-kg:homeTeam res:team/Belize ;
-kg:awayTeam res:team/Nicaragua ;
-kg:result "7–1" ;
-kg:venue res:stadium/Belize_City ;
-kg:date "2002-04-17"^^xsd:date .
-
-res:team/Nicaragua a kg:Team ;
-kg:teamName "Nicaragua" ;
-kg:locatedIn res:country/Nicaragua .
-
-res:country/Nicaragua a kg:Country ;
-rdfs:label "Nicaragua" .
-
-res:match/Largest_Loss a kg:Match ;
-kg:homeTeam res:team/Costa_Rica ;
-kg:awayTeam res:team/Belize ;
-kg:result "7–0" ;
-kg:venue res:stadium/San_Jose ;
-kg:date "1999-03-17"^^xsd:date .
-
-res:team/Costa_Rica a kg:Team ;
-kg:teamName "Costa Rica" ;
-kg:locatedIn res:country/Costa_Rica .
-
-res:country/Costa_Rica a kg:Country ;
-rdfs:label "Costa Rica" .
-
-res:match/Largest_Loss_2 a kg:Match ;
-kg:homeTeam res:team/Mexico ;
-kg:awayTeam res:team/Belize ;
-kg:result "7–0" ;
-kg:venue res:stadium/Monterrey ;
-kg:date "2008-06-21"^^xsd:date .
-
-res:team/Mexico a kg:Team ;
-kg:teamName "Mexico" ;
-kg:locatedIn res:country/Mexico .
-
-res:country/Mexico a kg:Country ;
-rdfs:label "Mexico" .
-
+res:competition/Copa_Continental_CONCACAF a kg:Competition
+; kg:competitionName "Cúp Vàng CONCACAF" .
+res:match/First_International_Match a kg:Match
+; kg:homeTeam res:team/El_Salvador
+; kg:awayTeam res:team/Belize
+; kg:result "3–0"
+; kg:venue res:stadium/San_Salvador .
+res:team/El_Salvador a kg:Team
+; kg:teamName "El Salvador"
+; kg:locatedIn res:country/El_Salvador .
+res:country/El_Salvador a kg:Country
+; rdfs:label "El Salvador" .
+res:match/Largest_Win a kg:Match
+; kg:homeTeam res:team/Belize
+; kg:awayTeam res:team/Nicaragua
+; kg:result "7–1"
+; kg:venue res:stadium/Belize_City .
+res:team/Nicaragua a kg:Team
+; kg:teamName "Nicaragua"
+; kg:locatedIn res:country/Nicaragua .
+res:country/Nicaragua a kg:Country
+; rdfs:label "Nicaragua" .
+res:match/Largest_Loss a kg:Match
+; kg:homeTeam res:team/Costa_Rica
+; kg:awayTeam res:team/Belize
+; kg:result "7–0"
+; kg:venue res:stadium/San_Jose .
+res:team/Costa_Rica a kg:Team
+; kg:teamName "Costa Rica"
+; kg:locatedIn res:country/Costa_Rica .
+res:country/Costa_Rica a kg:Country
+; rdfs:label "Costa Rica" .
+res:match/Largest_Loss_2 a kg:Match
+; kg:homeTeam res:team/Mexico
+; kg:awayTeam res:team/Belize
+; kg:result "7–0"
+; kg:venue res:stadium/Monterrey .
+res:team/Mexico a kg:Team
+; kg:teamName "Mexico"
+; kg:locatedIn res:country/Mexico .
+res:country/Mexico a kg:Country
+; rdfs:label "Mexico" .
 res:team/Belize kg:participatesIn res:season/Copa_Centroamericana_2013 .
-
-res:season/Copa_Centroamericana_2013 a kg:Season ;
-kg:seasonOf res:competition/Copa_Centroamericana ;
-kg:date "2013-01-01"^^xsd:date .
-
-res:team/Belize kg:bestResultInCompetition "Hạng 4" ;
-kg:bestResultInCompetitionOf res:season/Copa_Centroamericana_2013 .
-
-res:team/Belize kg:participatesIn res:season/CONCACAF_Nations_League_2019_20 ;
-
-res:season/CONCACAF_Nations_League_2019_20 a kg:Season ;
-kg:seasonOf res:competition/CONCACAF_Nations_League ;
-kg:date "2019-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/CONCACAF_Nations_League_2022_23 ;
-
-res:season/CONCACAF_Nations_League_2022_23 a kg:Season ;
-kg:seasonOf res:competition/CONCACAF_Nations_League ;
-kg:date "2022-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/CONCACAF_Nations_League_2023_24 ;
-
-res:season/CONCACAF_Nations_League_2023_24 a kg:Season ;
-kg:seasonOf res:competition/CONCACAF_Nations_League ;
-kg:date "2023-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/CONCACAF_Nations_League_2024_25 ;
-
-res:season/CONCACAF_Nations_League_2024_25 a kg:Season ;
-kg:seasonOf res:competition/CONCACAF_Nations_League ;
-kg:date "2024-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/CONCACAF_Nations_League_2026_27 ;
-
-res:season/CONCACAF_Nations_League_2026_27 a kg:Season ;
-kg:seasonOf res:competition/CONCACAF_Nations_League ;
-kg:date "2026-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_1930_1978 ;
-
-res:season/FIFA_World_Cup_Qualification_1930_1978 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "1930-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_1982_1986 ;
-
-res:season/FIFA_World_Cup_Qualification_1982_1986 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "1982-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_1990_1994 ;
-
-res:season/FIFA_World_Cup_Qualification_1990_1994 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "1990-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_1998 ;
-
-res:season/FIFA_World_Cup_Qualification_1998 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "1998-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2002 ;
-
-res:season/FIFA_World_Cup_Qualification_2002 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "2002-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2006 ;
-
-res:season/FIFA_World_Cup_Qualification_2006 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "2006-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2010 ;
-
-res:season/FIFA_World_Cup_Qualification_2010 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "2010-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2014 ;
-
-res:season/FIFA_World_Cup_Qualification_2014 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "2014-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2018 ;
-
-res:season/FIFA_World_Cup_Qualification_2018 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "2018-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2022 ;
-
-res:season/FIFA_World_Cup_Qualification_2022 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "2022-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2026 ;
-
-res:season/FIFA_World_Cup_Qualification_2026 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "2026-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2030 ;
-
-res:season/FIFA_World_Cup_Qualification_2030 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "2030-01-01"^^xsd:date .
-
-res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2034 ;
-
-res:season/FIFA_World_Cup_Qualification_2034 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
-kg:date "2034-01-01"^^xsd:date .
+res:season/Copa_Centroamericana_2013 a kg:Season
+; kg:seasonOf res:competition/Copa_Centroamericana .
+res:team/Belize kg:participatesIn res:season/CONCACAF_Nations_League_2019_20
+; res:season/CONCACAF_Nations_League_2019_20 a kg:Season
+; kg:seasonOf res:competition/CONCACAF_Nations_League .
+res:team/Belize kg:participatesIn res:season/CONCACAF_Nations_League_2022_23
+; res:season/CONCACAF_Nations_League_2022_23 a kg:Season
+; kg:seasonOf res:competition/CONCACAF_Nations_League .
+res:team/Belize kg:participatesIn res:season/CONCACAF_Nations_League_2023_24
+; res:season/CONCACAF_Nations_League_2023_24 a kg:Season
+; kg:seasonOf res:competition/CONCACAF_Nations_League .
+res:team/Belize kg:participatesIn res:season/CONCACAF_Nations_League_2024_25
+; res:season/CONCACAF_Nations_League_2024_25 a kg:Season
+; kg:seasonOf res:competition/CONCACAF_Nations_League .
+res:team/Belize kg:participatesIn res:season/CONCACAF_Nations_League_2026_27
+; res:season/CONCACAF_Nations_League_2026_27 a kg:Season
+; kg:seasonOf res:competition/CONCACAF_Nations_League .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_1930_1978
+; res:season/FIFA_World_Cup_Qualification_1930_1978 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_1982_1986
+; res:season/FIFA_World_Cup_Qualification_1982_1986 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_1990_1994
+; res:season/FIFA_World_Cup_Qualification_1990_1994 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_1998
+; res:season/FIFA_World_Cup_Qualification_1998 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2002
+; res:season/FIFA_World_Cup_Qualification_2002 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2006
+; res:season/FIFA_World_Cup_Qualification_2006 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2010
+; res:season/FIFA_World_Cup_Qualification_2010 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2014
+; res:season/FIFA_World_Cup_Qualification_2014 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2018
+; res:season/FIFA_World_Cup_Qualification_2018 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2022
+; res:season/FIFA_World_Cup_Qualification_2022 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2026
+; res:season/FIFA_World_Cup_Qualification_2026 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2030
+; res:season/FIFA_World_Cup_Qualification_2030 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .
+res:team/Belize kg:participatesIn res:season/FIFA_World_Cup_Qualification_2034
+; res:season/FIFA_World_Cup_Qualification_2034 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup_Qualification .

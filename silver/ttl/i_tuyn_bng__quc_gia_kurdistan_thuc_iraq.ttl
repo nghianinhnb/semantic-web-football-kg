@@ -1,273 +1,199 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Kurdistan thuộc Iraq a kg:teamName "Kurdistan thuộc Iraq"^^xsd:string ;
-a kg:Team ;
-kg:hasCoach res:person/Khasraw Groon ;
-kg:locatedIn res:country/Iraq .
-
-res:person/Khasraw Groon a kg:Coach ;
-kg:manages res:team/Kurdistan thuộc Iraq .
-
-res:stadium/Sân vận động Franso Hariri a kg:Stadium ;
-kg:capacity 22000^^xsd:positiveInteger ;
-kg:isHomeOf res:team/Kurdistan thuộc Iraq .
-
-res:stadium/Sân vận động Quốc tế Zakho a kg:Stadium ;
-kg:capacity ? ;
-
-res:country/Iraq a kg:Country .
-
-res:competition/VIVA World Cup a kg:Competition ;
-kg:competitionName "VIVA World Cup"^^xsd:string .
-
-res:season/2008 a kg:Season ;
-kg:seasonOf res:competition/VIVA World Cup .
-
-res:match/2008-07-07-Sápmi-vs-Kurdistan a kg:Match ;
-kg:homeTeam res:team/Sápmi ;
-kg:awayTeam res:team/Kurdistan thuộc Iraq ;
-kg:kickoffTime "2008-07-07T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/VIVA World Cup ;
-kg:inSeason res:season/2008 .
-
-res:match/2012-06-01-Tamil_Eelam-vs-Kurdistan a kg:Match ;
-kg:homeTeam res:team/Tamil Eelam ;
-kg:awayTeam res:team/Kurdistan thuộc Iraq ;
-kg:kickoffTime "2012-06-01T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/VIVA World Cup ;
-kg:inSeason res:season/2012 .
-
-res:match/2008-07-13-Sápmi-vs-Kurdistan a kg:Match ;
-kg:homeTeam res:team/Sápmi ;
-kg:awayTeam res:team/Kurdistan thuộc Iraq ;
-kg:kickoffTime "2008-07-13T00:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/VIVA World Cup ;
-kg:inSeason res:season/2008 .
-
-res:player/Sarhang Muhsin a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1^^xsd:positiveInteger ;
-kg:age 29^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Al-Shorta .
-
-res:player/Znar Faizi a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 12^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Duhok .
-
-res:player/Rebaz Abdulla a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 22^^xsd:positiveInteger ;
-kg:age 21^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Erbil .
-
-res:player/Bayar Abubakir a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 2^^xsd:positiveInteger ;
-kg:age ? ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Duhok .
-
-res:player/Herdi Siamand a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 3^^xsd:positiveInteger ;
-kg:age 33^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Erbil .
-
-res:player/Jassim Mohammed Haji a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 20^^xsd:positiveInteger ;
-kg:age 32^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Zakho .
-
-res:player/Aras Mustafa a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 13^^xsd:positiveInteger ;
-kg:age 28^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Zeravani .
-
-res:player/Hawkar Latif a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 4^^xsd:positiveInteger ;
-kg:age 26^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Nawroz .
-
-res:player/Khalid Mushir a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 8^^xsd:positiveInteger ;
-kg:age 35^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Zakho .
-
-res:player/Kamaran Ali a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 5^^xsd:positiveInteger ;
-kg:age 27^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Zakho .
-
-res:player/Niaz Muhamad a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 21^^xsd:positiveInteger ;
-kg:age 26^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Erbil .
-
-res:player/Hawre Jalal a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 14^^xsd:positiveInteger ;
-kg:age 26^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Peshmargay Hawler .
-
-res:player/Muhamad Sabir a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 15^^xsd:positiveInteger ;
-kg:age ? ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Erbil .
-
-res:player/Diyar Rahman a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 19^^xsd:positiveInteger ;
-kg:age 30^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Erbil .
-
-res:player/Ali Aziz a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 10^^xsd:positiveInteger ;
-kg:age 27^^xsd:positiveInteger ;
-kg:nationality res:country/Armenia ;
-kg:club res:club/Ararat Yerevan .
-
-res:player/Ahmet Isik a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 16^^xsd:positiveInteger ;
-kg:age 19^^xsd:positiveInteger ;
-kg:nationality res:country/Germany ;
-kg:club res:club/Arminia Tegel .
-
-res:player/Abdulla Kaifi a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 6^^xsd:positiveInteger ;
-kg:age 24^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Kirkuk .
-
-res:player/Kosrat Baiz a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 11^^xsd:positiveInteger ;
-kg:age 25^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Erbil .
-
-res:player/Rekar Hashim a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 9^^xsd:positiveInteger ;
-kg:age 23^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Erbil .
-
-res:player/Hunar Ahmad a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 17^^xsd:positiveInteger ;
-kg:age ? ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Zeravani .
-
-res:player/Ayub Ayad a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 18^^xsd:positiveInteger ;
-kg:age 31^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Zeravani .
-
-res:player/Farhang Wriya a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 7^^xsd:positiveInteger ;
-kg:age ? ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Peshmargay Hawler .
-
-res:player/Farhan Shakor a kg:Player ;
-kg:playsFor res:team/Kurdistan thuộc Iraq ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 23^^xsd:positiveInteger ;
-kg:age 21^^xsd:positiveInteger ;
-kg:nationality res:country/Iraq ;
-kg:club res:club/Erbil .
-
-res:position/Goalkeeper a kg:Goalkeeper ;
-rdfs:label "Goalkeeper"^^xsd:string .
-
-res:position/Defender a kg:Defender ;
-rdfs:label "Defender"^^xsd:string .
-
-res:position/Midfielder a kg:Midfielder ;
-rdfs:label "Midfielder"^^xsd:string .
-
-res:position/Forward a kg:Forward ;
-rdfs:label "Forward"^^xsd:string .
-
-res:country/Iraq a kg:Country ;
-rdfs:label "Iraq"^^xsd:string .
-
-res:country/Armenia a kg:Country ;
-rdfs:label "Armenia"^^xsd:string .
-
-res:country/Germany a kg:Country ;
-rdfs:label "Germany"^^xsd:string .
-
-res:club/Al-Shorta a kg:Club ;
-kg:locatedIn res:city/Erbil .
-
-res:club/Duhok a kg:Club ;
-kg:locatedIn res:city/Zakho .
-
-res:club/Erbil a kg:Club ;
-kg:locatedIn res:city/Erbil .
-
-res:club/Zakho a kg:Club ;
-kg:locatedIn res:city/Zakho .
-
-res:club/Zeravani a kg:Club ;
-kg:locatedIn res:city/Erbil .
-
-res:club/Peshmargay Hawler a kg:Club ;
-kg:locatedIn res:city/Hawler .
-
-res:club/Ararat Yerevan a
+res:team/Kurdistan thuộc Iraq a kg:teamName "Kurdistan thuộc Iraq"^^xsd:string
+; a kg:Team
+; kg:hasCoach res:person/Khasraw Groon
+; kg:locatedIn res:country/Iraq .
+res:person/Khasraw Groon a kg:Coach
+; kg:manages res:team/Kurdistan thuộc Iraq .
+res:stadium/Sân vận động Franso Hariri a kg:Stadium
+; kg:capacity 22000^^xsd:positiveInteger
+; kg:isHomeOf res:team/Kurdistan thuộc Iraq .
+res:stadium/Sân vận động Quốc tế Zakho a kg:Stadium
+; kg:capacity ?
+; res:country/Iraq a kg:Country .
+res:competition/VIVA World Cup a kg:Competition
+; kg:competitionName "VIVA World Cup"^^xsd:string .
+res:season/2008 a kg:Season
+; kg:seasonOf res:competition/VIVA World Cup .
+res:match/2008-07-07-Sápmi-vs-Kurdistan a kg:Match
+; kg:homeTeam res:team/Sápmi
+; kg:awayTeam res:team/Kurdistan thuộc Iraq
+; kg:kickoffTime "2008-07-07T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/VIVA World Cup
+; kg:inSeason res:season/2008 .
+res:match/2012-06-01-Tamil_Eelam-vs-Kurdistan a kg:Match
+; kg:homeTeam res:team/Tamil Eelam
+; kg:awayTeam res:team/Kurdistan thuộc Iraq
+; kg:kickoffTime "2012-06-01T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/VIVA World Cup
+; kg:inSeason res:season/2012 .
+res:match/2008-07-13-Sápmi-vs-Kurdistan a kg:Match
+; kg:homeTeam res:team/Sápmi
+; kg:awayTeam res:team/Kurdistan thuộc Iraq
+; kg:kickoffTime "2008-07-13T00:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/VIVA World Cup
+; kg:inSeason res:season/2008 .
+res:player/Sarhang Muhsin a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Al-Shorta .
+res:player/Znar Faizi a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 12^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Duhok .
+res:player/Rebaz Abdulla a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 22^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Erbil .
+res:player/Bayar Abubakir a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 2^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Duhok .
+res:player/Herdi Siamand a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 3^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Erbil .
+res:player/Jassim Mohammed Haji a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 20^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Zakho .
+res:player/Aras Mustafa a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 13^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Zeravani .
+res:player/Hawkar Latif a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 4^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Nawroz .
+res:player/Khalid Mushir a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 8^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Zakho .
+res:player/Kamaran Ali a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 5^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Zakho .
+res:player/Niaz Muhamad a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 21^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Erbil .
+res:player/Hawre Jalal a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 14^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Peshmargay Hawler .
+res:player/Muhamad Sabir a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 15^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Erbil .
+res:player/Diyar Rahman a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 19^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Erbil .
+res:player/Ali Aziz a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 10^^xsd:positiveInteger
+; kg:nationality res:country/Armenia
+; kg:club res:club/Ararat Yerevan .
+res:player/Ahmet Isik a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 16^^xsd:positiveInteger
+; kg:nationality res:country/Germany
+; kg:club res:club/Arminia Tegel .
+res:player/Abdulla Kaifi a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 6^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Kirkuk .
+res:player/Kosrat Baiz a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 11^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Erbil .
+res:player/Rekar Hashim a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 9^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Erbil .
+res:player/Hunar Ahmad a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 17^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Zeravani .
+res:player/Ayub Ayad a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 18^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Zeravani .
+res:player/Farhang Wriya a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 7^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Peshmargay Hawler .
+res:player/Farhan Shakor a kg:Player
+; kg:playsFor res:team/Kurdistan thuộc Iraq
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 23^^xsd:positiveInteger
+; kg:nationality res:country/Iraq
+; kg:club res:club/Erbil .
+res:position/Goalkeeper a kg:Goalkeeper
+; rdfs:label "Goalkeeper"^^xsd:string .
+res:position/Defender a kg:Defender
+; rdfs:label "Defender"^^xsd:string .
+res:position/Midfielder a kg:Midfielder
+; rdfs:label "Midfielder"^^xsd:string .
+res:position/Forward a kg:Forward
+; rdfs:label "Forward"^^xsd:string .
+res:country/Iraq a kg:Country
+; rdfs:label "Iraq"^^xsd:string .
+res:country/Armenia a kg:Country
+; rdfs:label "Armenia"^^xsd:string .
+res:country/Germany a kg:Country
+; rdfs:label "Germany"^^xsd:string .
+res:club/Al-Shorta a kg:Club
+; kg:locatedIn res:city/Erbil .
+res:club/Duhok a kg:Club
+; kg:locatedIn res:city/Zakho .
+res:club/Erbil a kg:Club
+; kg:locatedIn res:city/Erbil .
+res:club/Zakho a kg:Club
+; kg:locatedIn res:city/Zakho .
+res:club/Zeravani a kg:Club
+; kg:locatedIn res:city/Erbil .
+res:club/Peshmargay Hawler a kg:Club
+; kg:locatedIn res:city/Hawler .
+res:club/Ararat Yerevan a .

@@ -1,252 +1,181 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Haiti a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Haiti" ;
-kg:teamAbbreviation "HAI" ;
-kg:hasCoach res:coach/Marc_Collat ;
-kg:hasCaptain res:player/Johnny_Placide ;
-kg:homeStadium res:stadium/Sylvio_Cator ;
-kg:locatedIn res:country/Haiti .
-
+res:team/Haiti a kg:Team
+; kg:teamName "Đội tuyển bóng đá quốc gia Haiti"
+; kg:teamAbbreviation "HAI"
+; kg:hasCoach res:coach/Marc_Collat
+; kg:hasCaptain res:player/Johnny_Placide
+; kg:homeStadium res:stadium/Sylvio_Cator
+; kg:locatedIn res:country/Haiti .
 res:country/Haiti a kg:Country .
-
-res:stadium/Sylvio_Cator a kg:Stadium ;
-kg:capacity 25000 .
-
-res:coach/Marc_Collat a kg:Coach ;
-kg:manages res:team/Haiti .
-
-res:player/Johnny_Placide a kg:Player ;
-kg:playsFor res:team/Haiti ;
-kg:isCaptain res:team/Haiti .
-
-res:player/Emmanuel_Sanon a kg:Player ;
-kg:playsFor res:team/Haiti ;
-kg:primaryPosition kg:Forward ;
-kg:shirtNumber 10 ;
-kg:mostCaps 100 ;
-kg:topScorer 47 .
-
-res:competition/FIFA_World_Cup a kg:Competition ;
-kg:competitionName "Giải bóng đá vô địch thế giới" .
-
-res:competition/COPA_AMERICA_CENTENARIO a kg:Competition ;
-kg:competitionName "Copa América Centenario" .
-
-res:competition/CONCACAF_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá CONCACAF" .
-
-res:competition/CFU_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá vùng Caribe" .
-
-res:competition/CARIBBEAN_CUP a kg:Competition ;
-kg:competitionName "Caribbean Cup" .
-
-res:competition/COPA_AMERICA a kg:Competition ;
-kg:competitionName "Cúp bóng đá Nam Mỹ" .
-
-res:competition/CONCACAF_NATIONS_LEAGUE a kg:Competition ;
-kg:competitionName "CONCACAF Nations League" .
-
-res:competition/CANAMERICA a kg:Competition ;
-kg:competitionName "Cúp Vàng CONCACAF" .
-
-res:season/1973 a kg:Season ;
-kg:seasonOf res:competition/CONCACAF_Championship ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1974 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/COPA_AMERICA_CENTENARIO ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1973 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2000 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2002 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2019 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2021 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2023 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2025 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1991 a kg:Season ;
-kg:seasonOf res:competition/COPA_AMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/COPA_AMERICA_CENTENARIO ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1973 a kg:Season ;
-kg:seasonOf res:competition/CONCACAF_Championship ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1974 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1973 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2000 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2002 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2019 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2021 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2023 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2025 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1991 a kg:Season ;
-kg:seasonOf res:competition/COPA_AMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/COPA_AMERICA_CENTENARIO ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1973 a kg:Season ;
-kg:seasonOf res:competition/CONCACAF_Championship ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1974 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1973 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2000 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2002 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2019 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2021 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2023 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2025 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1991 a kg:Season ;
-kg:seasonOf res:competition/COPA_AMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/COPA_AMERICA_CENTENARIO ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1973 a kg:Season ;
-kg:seasonOf res:competition/CONCACAF_Championship ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1974 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1973 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2000 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2002 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2019 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2021 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2023 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2025 a kg:Season ;
-kg:seasonOf res:competition/CANAMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/1991 a kg:Season ;
-kg:seasonOf res:competition/COPA_AMERICA ;
-kg:hasSeason res:team/Haiti .
-
-res:season/2016 a kg:Season ;
-kg:seasonOf res:competition/COPA_AMERICA_CENTENARIO ;
-kg:hasSeason res:team/Haiti .
+res:stadium/Sylvio_Cator a kg:Stadium
+; kg:capacity 25000 .
+res:coach/Marc_Collat a kg:Coach
+; kg:manages res:team/Haiti .
+res:player/Johnny_Placide a kg:Player
+; kg:playsFor res:team/Haiti
+; kg:isCaptain res:team/Haiti .
+res:player/Emmanuel_Sanon a kg:Player
+; kg:playsFor res:team/Haiti
+; kg:primaryPosition kg:Forward "UNKNOWN" .
+res:competition/FIFA_World_Cup a kg:Competition
+; kg:competitionName "Giải bóng đá vô địch thế giới" .
+res:competition/COPA_AMERICA_CENTENARIO a kg:Competition
+; kg:competitionName "Copa América Centenario" .
+res:competition/CONCACAF_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá CONCACAF" .
+res:competition/CFU_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá vùng Caribe" .
+res:competition/CARIBBEAN_CUP a kg:Competition
+; kg:competitionName "Caribbean Cup" .
+res:competition/COPA_AMERICA a kg:Competition
+; kg:competitionName "Cúp bóng đá Nam Mỹ" .
+res:competition/CONCACAF_NATIONS_LEAGUE a kg:Competition
+; kg:competitionName "CONCACAF Nations League" .
+res:competition/CANAMERICA a kg:Competition
+; kg:competitionName "Cúp Vàng CONCACAF" .
+res:season/1973 a kg:Season
+; kg:seasonOf res:competition/CONCACAF_Championship
+; kg:hasSeason res:team/Haiti .
+res:season/1974 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup
+; kg:hasSeason res:team/Haiti .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/COPA_AMERICA_CENTENARIO
+; kg:hasSeason res:team/Haiti .
+res:season/1973 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2000 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2002 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2019 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2021 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2023 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2025 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/1991 a kg:Season
+; kg:seasonOf res:competition/COPA_AMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/COPA_AMERICA_CENTENARIO
+; kg:hasSeason res:team/Haiti .
+res:season/1973 a kg:Season
+; kg:seasonOf res:competition/CONCACAF_Championship
+; kg:hasSeason res:team/Haiti .
+res:season/1974 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup
+; kg:hasSeason res:team/Haiti .
+res:season/1973 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2000 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2002 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2019 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2021 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2023 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2025 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/1991 a kg:Season
+; kg:seasonOf res:competition/COPA_AMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/COPA_AMERICA_CENTENARIO
+; kg:hasSeason res:team/Haiti .
+res:season/1973 a kg:Season
+; kg:seasonOf res:competition/CONCACAF_Championship
+; kg:hasSeason res:team/Haiti .
+res:season/1974 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup
+; kg:hasSeason res:team/Haiti .
+res:season/1973 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2000 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2002 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2019 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2021 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2023 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2025 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/1991 a kg:Season
+; kg:seasonOf res:competition/COPA_AMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/COPA_AMERICA_CENTENARIO
+; kg:hasSeason res:team/Haiti .
+res:season/1973 a kg:Season
+; kg:seasonOf res:competition/CONCACAF_Championship
+; kg:hasSeason res:team/Haiti .
+res:season/1974 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup
+; kg:hasSeason res:team/Haiti .
+res:season/1973 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2000 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2002 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2019 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2021 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2023 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2025 a kg:Season
+; kg:seasonOf res:competition/CANAMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/1991 a kg:Season
+; kg:seasonOf res:competition/COPA_AMERICA
+; kg:hasSeason res:team/Haiti .
+res:season/2016 a kg:Season
+; kg:seasonOf res:competition/COPA_AMERICA_CENTENARIO
+; kg:hasSeason res:team/Haiti .

@@ -1,259 +1,165 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Đế_quốc_Nga a kg:Team ;
-kg:teamName "Đế quốc Nga" ;
-kg:hasCoach res:coach/Georges_Duperron ;
-kg:hasCoach res:coach/Robert_Fulda ;
-kg:hasCaptain res:player/Vasily_Zhitarev ;
-kg:mostCaps 8 ;
-kg:topScorer res:player/Vasily_Zhitarev ;
-kg:firstGame "1910-10-16"^^xsd:date ;
-kg:lastGame "1914-07-12"^^xsd:date ;
-kg:largestWin "1910-10-16"^^xsd:date ;
-kg:largestLoss "1912-07-01"^^xsd:date ;
-kg:worldCupBest "" ;
-kg:regionalCupApps 1 ;
-kg:regionalCupFirst "1912"^^xsd:gYear ;
-kg:regionalCupBest "thứ 8" ;
-kg:activeFrom "1910"^^xsd:gYear ;
-kg:activeTo "1914"^^xsd:gYear .
-
-res:team/Đế_quốc_Nga kg:isSuccessorOf res:team/Liên_Xô .
-
-res:coach/Georges_Duperron a kg:Coach ;
-kg:manages res:team/Đế_quốc_Nga ;
-kg:startDate "1910"^^xsd:gYear ;
-kg:endDate "1913"^^xsd:gYear .
-
-res:coach/Robert_Fulda a kg:Coach ;
-kg:manages res:team/Đế_quốc_Nga ;
-kg:startDate "1914"^^xsd:gYear .
-
-res:player/Vasily_Zhitarev a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 8 ;
-kg:topScorer 4 .
-
-res:player/Nikita_Khromov a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 6 .
-
-res:player/Vasily_Butusov a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 5 ;
-kg:goals 1 .
-
-res:player/Andrei_Akimov a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 4 ;
-kg:goals 1 .
-
-res:player/Pyotr_Sokolov a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 4 .
-
-res:player/Nikolai_Denisov a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 3 .
-
-res:player/Lev_Favorsky a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 3 .
-
-res:player/Dmitri_Matrin a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 3 .
-
-res:player/Aleksandr_Filippov a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 3 .
-
-res:player/Fyodor_Rimsha a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 3 .
-
-res:player/Sergei_Romanov a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 3 .
-
-res:player/Mikhail_Smirnov a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 3 .
-
-res:player/Ivan_Vorontsov a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 3 .
-
-res:player/Mikhail_Yakovlev a kg:Player ;
-kg:playsFor res:team/Đế_quốc_Nga ;
-kg:mostCaps 3 .
-
-res:match/Trận_Đấu_1910-10-16 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Bohemia ;
-kg:kickoffTime "1910-10-16"^^xsd:date ;
-kg:venue res:place/Sankt-Peterburg ;
-kg:result "5–4" .
-
-res:match/Trận_Đấu_1910-10-23 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Bohemia ;
-kg:kickoffTime "1910-10-23"^^xsd:date ;
-kg:venue res:place/Moskva ;
-kg:result "1–0" .
-
-res:match/Trận_Đấu_1911-09-02 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Anh ;
-kg:kickoffTime "1911-09-02"^^xsd:date ;
-kg:venue res:place/Sankt-Peterburg ;
-kg:result "0–14" .
-
-res:match/Trận_Đấu_1911-09-03 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Anh ;
-kg:kickoffTime "1911-09-03"^^xsd:date ;
-kg:venue res:place/Sankt-Peterburg ;
-kg:result "0–7" .
-
-res:match/Trận_Đấu_1911-09-04 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Anh ;
-kg:kickoffTime "1911-09-04"^^xsd:date ;
-kg:venue res:place/Sankt-Peterburg ;
-kg:result "0–11" .
-
-res:match/Trận_Đấu_1912-05-06 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Phần_Lan ;
-kg:kickoffTime "1912-05-06"^^xsd:date ;
-kg:venue res:place/Moskva ;
-kg:result "1–1" .
-
-res:match/Trận_Đấu_1912-06-30 a kg:Match ;
-kg:homeTeam res:team/Phần_Lan ;
-kg:awayTeam res:team/Đế_quốc_Nga ;
-kg:kickoffTime "1912-06-30"^^xsd:date ;
-kg:venue res:place/Stockholm ;
-kg:result "2–1" .
-
-res:match/Trận_Đấu_1912-07-01 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Đức ;
-kg:kickoffTime "1912-07-01"^^xsd:date ;
-kg:venue res:place/Stockholm ;
-kg:result "0–16" .
-
-res:match/Trận_Đấu_1912-07-03 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Na_Uy ;
-kg:kickoffTime "1912-07-03"^^xsd:date ;
-kg:venue res:place/Stockholm ;
-kg:result "1–2" .
-
-res:match/Trận_Đấu_1912-07-12 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Hungary ;
-kg:kickoffTime "1912-07-12"^^xsd:date ;
-kg:venue res:place/Moskva ;
-kg:result "0–9" .
-
-res:match/Trận_Đấu_1912-07-14 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Hungary ;
-kg:kickoffTime "1912-07-14"^^xsd:date ;
-kg:venue res:place/Moskva ;
-kg:result "0–12" .
-
-res:match/Trận_Đấu_1913-04-29 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Thụy_Điển ;
-kg:kickoffTime "1913-04-29"^^xsd:date ;
-kg:venue res:place/Sankt-Peterburg ;
-kg:result "1–5" .
-
-res:match/Trận_Đấu_1913-05-04 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Thụy_Điển ;
-kg:kickoffTime "1913-05-04"^^xsd:date ;
-kg:venue res:place/Moskva ;
-kg:result "1–4" .
-
-res:match/Trận_Đấu_1913-09-14 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Norway ;
-kg:kickoffTime "1913-09-14"^^xsd:date ;
-kg:venue res:place/Moskva ;
-kg:result "1–1" .
-
-res:match/Trận_Đấu_1914-07-05 a kg:Match ;
-kg:homeTeam res:team/Đế_quốc_Nga ;
-kg:awayTeam res:team/Thụy_Điển ;
-kg:kickoffTime "1914-07-05"^^xsd:date ;
-kg:venue res:place/Stockholm ;
-kg:result "2–2" .
-
-res:match/Trận_Đấu_1914-07-12 a kg:Match ;
-kg:homeTeam res:team/Norway ;
-kg:awayTeam res:team/Đế_quốc_Nga ;
-kg:kickoffTime "1914-07-12"^^xsd:date ;
-kg:venue res:place/Oslo ;
-kg:result "1–1" .
-
-res:team/Bohemia a kg:Team ;
-kg:teamName "Bohemia" .
-
-res:team/Phần_Lan a kg:Team ;
-kg:teamName "Phần Lan" .
-
-res:team/Đức a kg:Team ;
-kg:teamName "Đức" .
-
-res:team/Anh a kg:Team ;
-kg:teamName "Anh" .
-
-res:team/Hungary a kg:Team ;
-kg:teamName "Hungary" .
-
-res:team/Thụy_Điển a kg:Team ;
-kg:teamName "Thụy Điển" .
-
-res:team/Norway a kg:Team ;
-kg:teamName "Na Uy" .
-
-res:place/Sankt-Peterburg a kg:City ;
-kg:locatedIn res:country/Nga .
-
-res:place/Moskva a kg:City ;
-kg:locatedIn res:country/Nga .
-
-res:place/Stockholm a kg:City ;
-kg:locatedIn res:country/Thụy_Điển .
-
-res:place/Oslo a kg:City ;
-kg:locatedIn res:country/Na_Uy .
-
-res:country/Nga a kg:Country ;
-kg:team res:team/Đế_quốc_Nga .
-
+res:team/Đế_quốc_Nga a kg:Team
+; kg:teamName "Đế quốc Nga"
+; kg:hasCoach res:coach/Georges_Duperron
+; kg:hasCoach res:coach/Robert_Fulda
+; kg:hasCaptain res:player/Vasily_Zhitarev .
+res:coach/Georges_Duperron a kg:Coach
+; kg:manages res:team/Đế_quốc_Nga .
+res:coach/Robert_Fulda a kg:Coach
+; kg:manages res:team/Đế_quốc_Nga .
+res:player/Vasily_Zhitarev a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Nikita_Khromov a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Vasily_Butusov a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Andrei_Akimov a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Pyotr_Sokolov a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Nikolai_Denisov a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Lev_Favorsky a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Dmitri_Matrin a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Aleksandr_Filippov a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Fyodor_Rimsha a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Sergei_Romanov a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Mikhail_Smirnov a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Ivan_Vorontsov a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:player/Mikhail_Yakovlev a kg:Player
+; kg:playsFor res:team/Đế_quốc_Nga .
+res:match/Trận_Đấu_1910-10-16 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Bohemia
+; kg:kickoffTime "1910-10-16"^^xsd:date
+; kg:venue res:place/Sankt-Peterburg
+; kg:result "5–4" .
+res:match/Trận_Đấu_1910-10-23 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Bohemia
+; kg:kickoffTime "1910-10-23"^^xsd:date
+; kg:venue res:place/Moskva
+; kg:result "1–0" .
+res:match/Trận_Đấu_1911-09-02 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Anh
+; kg:kickoffTime "1911-09-02"^^xsd:date
+; kg:venue res:place/Sankt-Peterburg
+; kg:result "0–14" .
+res:match/Trận_Đấu_1911-09-03 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Anh
+; kg:kickoffTime "1911-09-03"^^xsd:date
+; kg:venue res:place/Sankt-Peterburg
+; kg:result "0–7" .
+res:match/Trận_Đấu_1911-09-04 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Anh
+; kg:kickoffTime "1911-09-04"^^xsd:date
+; kg:venue res:place/Sankt-Peterburg
+; kg:result "0–11" .
+res:match/Trận_Đấu_1912-05-06 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Phần_Lan
+; kg:kickoffTime "1912-05-06"^^xsd:date
+; kg:venue res:place/Moskva
+; kg:result "1–1" .
+res:match/Trận_Đấu_1912-06-30 a kg:Match
+; kg:homeTeam res:team/Phần_Lan
+; kg:awayTeam res:team/Đế_quốc_Nga
+; kg:kickoffTime "1912-06-30"^^xsd:date
+; kg:venue res:place/Stockholm
+; kg:result "2–1" .
+res:match/Trận_Đấu_1912-07-01 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Đức
+; kg:kickoffTime "1912-07-01"^^xsd:date
+; kg:venue res:place/Stockholm
+; kg:result "0–16" .
+res:match/Trận_Đấu_1912-07-03 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Na_Uy
+; kg:kickoffTime "1912-07-03"^^xsd:date
+; kg:venue res:place/Stockholm
+; kg:result "1–2" .
+res:match/Trận_Đấu_1912-07-12 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Hungary
+; kg:kickoffTime "1912-07-12"^^xsd:date
+; kg:venue res:place/Moskva
+; kg:result "0–9" .
+res:match/Trận_Đấu_1912-07-14 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Hungary
+; kg:kickoffTime "1912-07-14"^^xsd:date
+; kg:venue res:place/Moskva
+; kg:result "0–12" .
+res:match/Trận_Đấu_1913-04-29 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Thụy_Điển
+; kg:kickoffTime "1913-04-29"^^xsd:date
+; kg:venue res:place/Sankt-Peterburg
+; kg:result "1–5" .
+res:match/Trận_Đấu_1913-05-04 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Thụy_Điển
+; kg:kickoffTime "1913-05-04"^^xsd:date
+; kg:venue res:place/Moskva
+; kg:result "1–4" .
+res:match/Trận_Đấu_1913-09-14 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Norway
+; kg:kickoffTime "1913-09-14"^^xsd:date
+; kg:venue res:place/Moskva
+; kg:result "1–1" .
+res:match/Trận_Đấu_1914-07-05 a kg:Match
+; kg:homeTeam res:team/Đế_quốc_Nga
+; kg:awayTeam res:team/Thụy_Điển
+; kg:kickoffTime "1914-07-05"^^xsd:date
+; kg:venue res:place/Stockholm
+; kg:result "2–2" .
+res:match/Trận_Đấu_1914-07-12 a kg:Match
+; kg:homeTeam res:team/Norway
+; kg:awayTeam res:team/Đế_quốc_Nga
+; kg:kickoffTime "1914-07-12"^^xsd:date
+; kg:venue res:place/Oslo
+; kg:result "1–1" .
+res:team/Bohemia a kg:Team
+; kg:teamName "Bohemia" .
+res:team/Phần_Lan a kg:Team
+; kg:teamName "Phần Lan" .
+res:team/Đức a kg:Team
+; kg:teamName "Đức" .
+res:team/Anh a kg:Team
+; kg:teamName "Anh" .
+res:team/Hungary a kg:Team
+; kg:teamName "Hungary" .
+res:team/Thụy_Điển a kg:Team
+; kg:teamName "Thụy Điển" .
+res:team/Norway a kg:Team
+; kg:teamName "Na Uy" .
+res:place/Sankt-Peterburg a kg:City
+; kg:locatedIn res:country/Nga .
+res:place/Moskva a kg:City
+; kg:locatedIn res:country/Nga .
+res:place/Stockholm a kg:City
+; kg:locatedIn res:country/Thụy_Điển .
+res:place/Oslo a kg:City
+; kg:locatedIn res:country/Na_Uy .
+res:country/Nga a kg:Country .
 res:country/Thụy_Điển a kg:Country .
-
 res:country/Na_Uy a kg:Country .
-
 res:country/Bohemia a kg:Country .
-
 res:country/Phần_Lan a kg:Country .
-
 res:country/Anh a kg:Country .
-
 res:country/Hungary a kg:Country .
-
 res:country/Đức a kg:Country .
-
-res:team/Liên_Xô a kg:Team ;
-kg:teamName "Liên Xô" ;
-kg:isSuccessorOf res:team/Đế_quốc_Nga .
+res:team/Liên_Xô a kg:Team
+; kg:teamName "Liên Xô" .

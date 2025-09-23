@@ -1,343 +1,251 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-res:team/Han_Quoc a kg:Team ;
-kg:teamName "Hàn Quốc" ;
-kg:hasCoach res:coach/Hong_Myung_bo ;
-kg:hasCaptain res:player/Son_Heung_min ;
-kg:homeStadium res:stadium/San_Van_Dong_World_Cup_Seoul ;
-kg:teamAbbreviation "KOR" ;
-kg:isPartOf kg:Region/East_Asia ;
-kg:isPartOf kg:Region/Asia .
-
-res:stadium/San_Van_Dong_World_Cup_Seoul a kg:Stadium ;
-kg:capacity 80000 ;
-kg:locatedIn res:city/Seoul .
-
-res:coach/Hong_Myung_bo a kg:Coach ;
-kg:name "Hong Myung-bo" .
-
-res:player/Son_Heung_min a kg:Player, kg:Forward ;
-kg:name "Son Heung-min" ;
-kg:birthDate "1992-07-08"^^xsd:date ;
-kg:birthPlace res:city/Kyunggi_Do ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 178.0 ;
-kg:weight 73.0 ;
-kg:shirtNumber 7 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Forward .
-
-res:player/Ca_Bum_kun a kg:Player, kg:Forward ;
-kg:name "Cha Bum-kun" ;
-kg:birthDate "1953-06-27"^^xsd:date ;
-kg:birthPlace res:city/Busan ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 178.0 ;
-kg:weight 70.0 ;
-kg:shirtNumber 11 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Forward .
-
-res:competition/FIFA_World_Cup a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá thế giới" ;
-kg:organizes res:season/2002 ;
-kg:organizes res:season/2010 ;
-kg:organizes res:season/2014 ;
-kg:organizes res:season/2018 ;
-kg:organizes res:season/2022 .
-
-res:season/2002 a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup ;
-kg:participatesIn res:team/Han_Quoc .
-
-res:match/2002_World_Cup_Final a kg:Match ;
-kg:homeTeam res:team/Han_Quoc ;
-kg:awayTeam res:team/Japan ;
-kg:venue res:stadium/San_Van_Dong_World_Cup_Seoul ;
-kg:kickoffTime "2002-06-30T19:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/FIFA_World_Cup ;
-kg:inSeason res:season/2002 ;
-kg:referee res:referee/Ma_Ninh ;
-
-res:referee/Ma_Ninh a kg:Referee ;
-kg:name "Mã Ninh" ;
-kg:nationality res:country/Trung_Quoc .
-
-res:competition/Asian_Cup a kg:Competition ;
-kg:competitionName "Cúp bóng đá châu Á" ;
-kg:organizes res:season/1956 ;
-kg:organizes res:season/1960 ;
-kg:organizes res:season/1964 ;
-kg:organizes res:season/1972 ;
-kg:organizes res:season/1980 ;
-kg:organizes res:season/1984 ;
-kg:organizes res:season/1988 ;
-kg:organizes res:season/1996 ;
-kg:organizes res:season/2000 ;
-kg:organizes res:season/2004 ;
-kg:organizes res:season/2007 ;
-kg:organizes res:season/2011 ;
-kg:organizes res:season/2015 ;
-kg:organizes res:season/2019 .
-
-res:season/1956 a kg:Season ;
-kg:seasonOf res:competition/Asian_Cup ;
-kg:participatesIn res:team/Han_Quoc .
-
-res:match/1956_Asian_Cup_Final a kg:Match ;
-kg:homeTeam res:team/Han_Quoc ;
-kg:awayTeam res:team/Hong_Kong ;
-kg:venue res:stadium/San_Van_Dong_World_Cup_Seoul ;
-kg:kickoffTime "1956-06-30T19:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Asian_Cup ;
-kg:inSeason res:season/1956 ;
-kg:referee res:referee/Unknown_Referee .
-
-res:team/Japan a kg:Team ;
-kg:teamName "Nhật Bản" ;
-kg:hasCoach res:coach/Guus_Hiddink ;
-kg:homeStadium res:stadium/Nihon_Jingu_Stadium ;
-kg:teamAbbreviation "JPN" ;
-kg:isPartOf kg:Region/East_Asia ;
-kg:isPartOf kg:Region/Asia .
-
-res:coach/Guus_Hiddink a kg:Coach ;
-kg:name "Guus Hiddink" .
-
-res:stadium/Nihon_Jingu_Stadium a kg:Stadium ;
-kg:capacity 50000 ;
-kg:locatedIn res:city/Tokyo .
-
-res:competition/East_Asia_Championship a kg:Competition ;
-kg:competitionName "Cúp bóng đá Đông Á" ;
-kg:organizes res:season/2003 ;
-kg:organizes res:season/2008 ;
-kg:organizes res:season/2015 ;
-kg:organizes res:season/2017 ;
-kg:organizes res:season/2019 .
-
-res:season/2003 a kg:Season ;
-kg:seasonOf res:competition/East_Asia_Championship ;
-kg:participatesIn res:team/Han_Quoc .
-
-res:match/2003_East_Asia_Championship_Final a kg:Match ;
-kg:homeTeam res:team/Han_Quoc ;
-kg:awayTeam res:team/Japan ;
-kg:venue res:stadium/San_Van_Dong_World_Cup_Seoul ;
-kg:kickoffTime "2003-09-29T19:00:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/East_Asia_Championship ;
-kg:inSeason res:season/2003 ;
-kg:referee res:referee/Unknown_Referee .
-
-res:region/East_Asia a kg:Region ;
-kg:regionName "Đông Á" .
-
-res:region/Asia a kg:Region ;
-kg:regionName "Châu Á" .
-
-res:country/Han_Quoc a kg:Country ;
-kg:countryName "Hàn Quốc" .
-
-res:city/Seoul a kg:City ;
-kg:cityName "Seoul" ;
-kg:locatedIn res:country/Han_Quoc .
-
-res:city/Busan a kg:City ;
-kg:cityName "Busan" ;
-kg:locatedIn res:country/Han_Quoc .
-
-res:city/Tokyo a kg:City ;
-kg:cityName "Tokyo" ;
-kg:locatedIn res:country/Japan .
-
-res:country/Japan a kg:Country ;
-kg:countryName "Nhật Bản" .
-
-res:stadium/San_Van_Dong_World_Cup_Seoul a kg:Stadium ;
-kg:capacity 80000 ;
-kg:locatedIn res:city/Seoul .
-
-res:stadium/Nihon_Jingu_Stadium a kg:Stadium ;
-kg:capacity 50000 ;
-kg:locatedIn res:city/Tokyo .
-
-res:player/Lee_Kang_in a kg:Player, kg:Midfielder ;
-kg:name "Lee Kang-in" ;
-kg:birthDate "2001-02-19"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 176.0 ;
-kg:weight 67.0 ;
-kg:shirtNumber 18 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Midfielder .
-
-res:player/Hwang_In_beom a kg:Player, kg:Defender ;
-kg:name "Hwang In-beom" ;
-kg:birthDate "1996-09-20"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 188.0 ;
-kg:weight 83.0 ;
-kg:shirtNumber 6 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Defender .
-
-res:player/Park_Jin_seop a kg:Player, kg:Midfielder ;
-kg:name "Park Jin-seop" ;
-kg:birthDate "1995-10-23"^^xsd:date ;
-kg:birthPlace res:city/Ulsan ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 179.0 ;
-kg:weight 72.0 ;
-kg:shirtNumber 17 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Midfielder .
-
-res:player/Joo_Min_kyu a kg:Player, kg:Forward ;
-kg:name "Joo Min-kyu" ;
-kg:birthDate "1990-04-13"^^xsd:date ;
-kg:birthPlace res:city/Daejeon ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 175.0 ;
-kg:weight 68.0 ;
-kg:shirtNumber 9 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Forward .
-
-res:player/OH_Sehun a kg:Player, kg:Forward ;
-kg:name "Oh Se-hun" ;
-kg:birthDate "1999-01-15"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 178.0 ;
-kg:weight 70.0 ;
-kg:shirtNumber 23 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Forward .
-
-res:player/OH_Hyeon_gyu a kg:Player, kg:Forward ;
-kg:name "Oh Hyeon-gyu" ;
-kg:birthDate "2001-04-12"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 172.0 ;
-kg:weight 65.0 ;
-kg:shirtNumber 23 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Forward .
-
-res:player/Jung_Woo_yeong a kg:Player, kg:Midfielder ;
-kg:name "Jung Woo-yeong" ;
-kg:birthDate "1999-09-20"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 175.0 ;
-kg:weight 67.0 ;
-kg:shirtNumber 11 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Midfielder .
-
-res:player/Lee_Jae_sung a kg:Player, kg:Midfielder ;
-kg:name "Lee Jae-sung" ;
-kg:birthDate "1992-08-10"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 172.0 ;
-kg:weight 64.0 ;
-kg:shirtNumber 7 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Midfielder .
-
-res:player/Hwang_Hee_chan a kg:Player, kg:Forward ;
-kg:name "Hwang Hee-chan" ;
-kg:birthDate "1996-01-26"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 183.0 ;
-kg:weight 75.0 ;
-kg:shirtNumber 15 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Forward .
-
-res:player/Cho_Gue_sung a kg:Player, kg:Midfielder ;
-kg:name "Cho Gue-sung" ;
-kg:birthDate "1998-01-25"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 178.0 ;
-kg:weight 68.0 ;
-kg:shirtNumber 14 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Midfielder .
-
-res:player/Bae_Jun_ho a kg:Player, kg:Midfielder ;
-kg:name "Bae Jun-ho" ;
-kg:birthDate "2003-08-21"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 176.0 ;
-kg:weight 66.0 ;
-kg:shirtNumber 17 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Midfielder .
-
-res:player/Lee_Kang_in a kg:Player, kg:Midfielder ;
-kg:name "Lee Kang-in" ;
-kg:birthDate "2001-02-19"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 176.0 ;
-kg:weight 67.0 ;
-kg:shirtNumber 18 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Midfielder .
-
-res:player/Lee_Jae_sung a kg:Player, kg:Midfielder ;
-kg:name "Lee Jae-sung" ;
-kg:birthDate "1992-08-10"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 172.0 ;
-kg:weight 64.0 ;
-kg:shirtNumber 7 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Midfielder .
-
-res:player/Jeong_Woo_yeong a kg:Player, kg:Midfielder ;
-kg:name "Jeong Woo-yeong" ;
-kg:birthDate "1999-09-20"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 175.0 ;
-kg:weight 67.0 ;
-kg:shirtNumber 11 ;
-kg:preferredFoot kg:RightFooted ;
-kg:playsFor res:team/Han_Quoc ;
-kg:primaryPosition kg:Midfielder .
-
-res:player/Oh_Hyeon_gyu a kg:Player, kg:Forward ;
-kg:name "Oh Hyeon-gyu" ;
-kg:birthDate "2001-04-12"^^xsd:date ;
-kg:birthPlace res:city/Seoul ;
-kg:nationality res:country/Han_Quoc ;
-kg:height 172
+res:team/Han_Quoc a kg:Team
+; kg:teamName "Hàn Quốc"
+; kg:hasCoach res:coach/Hong_Myung_bo
+; kg:hasCaptain res:player/Son_Heung_min
+; kg:homeStadium res:stadium/San_Van_Dong_World_Cup_Seoul
+; kg:teamAbbreviation "KOR" .
+res:stadium/San_Van_Dong_World_Cup_Seoul a kg:Stadium
+; kg:capacity 80000
+; kg:locatedIn res:city/Seoul .
+res:coach/Hong_Myung_bo a kg:Coach
+; kg:name "Hong Myung-bo" .
+res:player/Son_Heung_min a kg:Player , kg:Forward
+; kg:name "Son Heung-min"
+; kg:birthDate "1992-07-08"^^xsd:date
+; kg:birthPlace res:city/Kyunggi_Do
+; kg:nationality res:country/Han_Quoc
+; kg:height 178.0
+; kg:weight 73.0
+; kg:shirtNumber 7
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Ca_Bum_kun a kg:Player , kg:Forward
+; kg:name "Cha Bum-kun"
+; kg:birthDate "1953-06-27"^^xsd:date
+; kg:birthPlace res:city/Busan
+; kg:nationality res:country/Han_Quoc
+; kg:height 178.0
+; kg:weight 70.0
+; kg:shirtNumber 11
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:competition/FIFA_World_Cup a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá thế giới"
+; kg:organizes res:season/2002
+; kg:organizes res:season/2010
+; kg:organizes res:season/2014
+; kg:organizes res:season/2018
+; kg:organizes res:season/2022 .
+res:season/2002 a kg:Season
+; kg:seasonOf res:competition/FIFA_World_Cup
+; kg:participatesIn res:team/Han_Quoc .
+res:match/2002_World_Cup_Final a kg:Match
+; kg:homeTeam res:team/Han_Quoc
+; kg:awayTeam res:team/Japan
+; kg:venue res:stadium/San_Van_Dong_World_Cup_Seoul
+; kg:kickoffTime "2002-06-30T19:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/FIFA_World_Cup
+; kg:inSeason res:season/2002
+; kg:referee res:referee/Ma_Ninh
+; res:referee/Ma_Ninh a kg:Referee
+; kg:name "Mã Ninh"
+; kg:nationality res:country/Trung_Quoc .
+res:competition/Asian_Cup a kg:Competition
+; kg:competitionName "Cúp bóng đá châu Á"
+; kg:organizes res:season/1956
+; kg:organizes res:season/1960
+; kg:organizes res:season/1964
+; kg:organizes res:season/1972
+; kg:organizes res:season/1980
+; kg:organizes res:season/1984
+; kg:organizes res:season/1988
+; kg:organizes res:season/1996
+; kg:organizes res:season/2000
+; kg:organizes res:season/2004
+; kg:organizes res:season/2007
+; kg:organizes res:season/2011
+; kg:organizes res:season/2015
+; kg:organizes res:season/2019 .
+res:season/1956 a kg:Season
+; kg:seasonOf res:competition/Asian_Cup
+; kg:participatesIn res:team/Han_Quoc .
+res:match/1956_Asian_Cup_Final a kg:Match
+; kg:homeTeam res:team/Han_Quoc
+; kg:awayTeam res:team/Hong_Kong
+; kg:venue res:stadium/San_Van_Dong_World_Cup_Seoul
+; kg:kickoffTime "1956-06-30T19:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/Asian_Cup
+; kg:inSeason res:season/1956
+; kg:referee res:referee/Unknown_Referee .
+res:team/Japan a kg:Team
+; kg:teamName "Nhật Bản"
+; kg:hasCoach res:coach/Guus_Hiddink
+; kg:homeStadium res:stadium/Nihon_Jingu_Stadium
+; kg:teamAbbreviation "JPN" .
+res:coach/Guus_Hiddink a kg:Coach
+; kg:name "Guus Hiddink" .
+res:stadium/Nihon_Jingu_Stadium a kg:Stadium
+; kg:capacity 50000
+; kg:locatedIn res:city/Tokyo .
+res:competition/East_Asia_Championship a kg:Competition
+; kg:competitionName "Cúp bóng đá Đông Á"
+; kg:organizes res:season/2003
+; kg:organizes res:season/2008
+; kg:organizes res:season/2015
+; kg:organizes res:season/2017
+; kg:organizes res:season/2019 .
+res:season/2003 a kg:Season
+; kg:seasonOf res:competition/East_Asia_Championship
+; kg:participatesIn res:team/Han_Quoc .
+res:match/2003_East_Asia_Championship_Final a kg:Match
+; kg:homeTeam res:team/Han_Quoc
+; kg:awayTeam res:team/Japan
+; kg:venue res:stadium/San_Van_Dong_World_Cup_Seoul
+; kg:kickoffTime "2003-09-29T19:00:00"^^xsd:dateTime
+; kg:inCompetition res:competition/East_Asia_Championship
+; kg:inSeason res:season/2003
+; kg:referee res:referee/Unknown_Referee .
+res:country/Han_Quoc a kg:Country .
+res:city/Seoul a kg:City
+; kg:locatedIn res:country/Han_Quoc .
+res:city/Busan a kg:City
+; kg:locatedIn res:country/Han_Quoc .
+res:city/Tokyo a kg:City
+; kg:locatedIn res:country/Japan .
+res:country/Japan a kg:Country .
+res:stadium/San_Van_Dong_World_Cup_Seoul a kg:Stadium
+; kg:capacity 80000
+; kg:locatedIn res:city/Seoul .
+res:stadium/Nihon_Jingu_Stadium a kg:Stadium
+; kg:capacity 50000
+; kg:locatedIn res:city/Tokyo .
+res:player/Lee_Kang_in a kg:Player , kg:Midfielder
+; kg:name "Lee Kang-in"
+; kg:birthDate "2001-02-19"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 176.0
+; kg:weight 67.0
+; kg:shirtNumber 18
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Hwang_In_beom a kg:Player , kg:Defender
+; kg:name "Hwang In-beom"
+; kg:birthDate "1996-09-20"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 188.0
+; kg:weight 83.0
+; kg:shirtNumber 6
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Park_Jin_seop a kg:Player , kg:Midfielder
+; kg:name "Park Jin-seop"
+; kg:birthDate "1995-10-23"^^xsd:date
+; kg:birthPlace res:city/Ulsan
+; kg:nationality res:country/Han_Quoc
+; kg:height 179.0
+; kg:weight 72.0
+; kg:shirtNumber 17
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Joo_Min_kyu a kg:Player , kg:Forward
+; kg:name "Joo Min-kyu"
+; kg:birthDate "1990-04-13"^^xsd:date
+; kg:birthPlace res:city/Daejeon
+; kg:nationality res:country/Han_Quoc
+; kg:height 175.0
+; kg:weight 68.0
+; kg:shirtNumber 9
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/OH_Sehun a kg:Player , kg:Forward
+; kg:name "Oh Se-hun"
+; kg:birthDate "1999-01-15"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 178.0
+; kg:weight 70.0
+; kg:shirtNumber 23
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/OH_Hyeon_gyu a kg:Player , kg:Forward
+; kg:name "Oh Hyeon-gyu"
+; kg:birthDate "2001-04-12"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 172.0
+; kg:weight 65.0
+; kg:shirtNumber 23
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Jung_Woo_yeong a kg:Player , kg:Midfielder
+; kg:name "Jung Woo-yeong"
+; kg:birthDate "1999-09-20"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 175.0
+; kg:weight 67.0
+; kg:shirtNumber 11
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Lee_Jae_sung a kg:Player , kg:Midfielder
+; kg:name "Lee Jae-sung"
+; kg:birthDate "1992-08-10"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 172.0
+; kg:weight 64.0
+; kg:shirtNumber 7
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Hwang_Hee_chan a kg:Player , kg:Forward
+; kg:name "Hwang Hee-chan"
+; kg:birthDate "1996-01-26"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 183.0
+; kg:weight 75.0
+; kg:shirtNumber 15
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Cho_Gue_sung a kg:Player , kg:Midfielder
+; kg:name "Cho Gue-sung"
+; kg:birthDate "1998-01-25"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 178.0
+; kg:weight 68.0
+; kg:shirtNumber 14
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Bae_Jun_ho a kg:Player , kg:Midfielder
+; kg:name "Bae Jun-ho"
+; kg:birthDate "2003-08-21"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 176.0
+; kg:weight 66.0
+; kg:shirtNumber 17
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Lee_Kang_in a kg:Player , kg:Midfielder
+; kg:name "Lee Kang-in"
+; kg:birthDate "2001-02-19"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 176.0
+; kg:weight 67.0
+; kg:shirtNumber 18
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Lee_Jae_sung a kg:Player , kg:Midfielder
+; kg:name "Lee Jae-sung"
+; kg:birthDate "1992-08-10"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 172.0
+; kg:weight 64.0
+; kg:shirtNumber 7
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Jeong_Woo_yeong a kg:Player , kg:Midfielder
+; kg:name "Jeong Woo-yeong"
+; kg:birthDate "1999-09-20"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 175.0
+; kg:weight 67.0
+; kg:shirtNumber 11
+; kg:preferredFoot kg:RightFooted "UNKNOWN" .
+res:player/Oh_Hyeon_gyu a kg:Player , kg:Forward
+; kg:name "Oh Hyeon-gyu"
+; kg:birthDate "2001-04-12"^^xsd:date
+; kg:birthPlace res:city/Seoul
+; kg:nationality res:country/Han_Quoc
+; kg:height 172 .

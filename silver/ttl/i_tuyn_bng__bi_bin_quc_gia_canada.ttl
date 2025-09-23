@@ -1,165 +1,125 @@
-@prefix kg: <https://kg-football.vn/ontology#> .
-@prefix res: <https://kg-football.vn/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-res:team/Canada_National_Beach_Soccer_Team a kg:Team ;
-kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Canada" ;
-kg:hasCoach res:coach/Kyriakos_Selaidopoulos ;
-kg:locatedIn res:country/Canada ;
-kg:organizes res:competition/World_Cup_Beach_Soccer ;
-kg:organizes res:competition/North_American_Beach_Soccer_Championship ;
-kg:organizes res:competition/Copa_Latina .
-
-res:organization/Canadian_Soccer_Association a kg:Organization ;
-kg:locatedIn res:country/Canada ;
-kg:managedTeam res:team/Canada_National_Beach_Soccer_Team .
-
-res:coach/Kyriakos_Selaidopoulos a kg:Coach ;
-kg:name "Kyriakos Selaidopoulos" ;
-kg:manages res:team/Canada_National_Beach_Soccer_Team .
-
-res:competition/World_Cup_Beach_Soccer a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
-kg:heldIn res:country/Canada ;
-kg:participantCount 3 .
-
-res:competition/North_American_Beach_Soccer_Championship a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" ;
-kg:heldIn res:country/Canada ;
-kg:participantCount 4 .
-
-res:competition/Copa_Latina a kg:Competition ;
-kg:competitionName "Copa Latina" ;
-kg:heldIn res:country/Canada ;
-kg:participantCount 1 .
-
-res:player/Vincent_Cournoyer a kg:Player ;
-kg:name "Vincent Cournoyer" ;
-kg:birthDate "1987-02-28"^^xsd:date ;
-kg:nationality res:country/Canada ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 1 ;
-kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
-
-res:player/Anthony_Alves a kg:Player ;
-kg:name "Anthony Alves" ;
-kg:birthDate "1984-06-10"^^xsd:date ;
-kg:nationality res:country/Canada ;
-kg:primaryPosition res:position/Goalkeeper ;
-kg:shirtNumber 18 ;
-kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
-
-res:player/Daniel_Chamale a kg:Player ;
-kg:name "Daniel Chamale" ;
-kg:birthDate "1993-03-16"^^xsd:date ;
-kg:nationality res:country/USA ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 3 ;
-kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
-
-res:player/Adrian_Cann a kg:Player ;
-kg:name "Adrian Cann" ;
-kg:birthDate "1980-09-19"^^xsd:date ;
-kg:nationality res:country/Canada ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 4 ;
-kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
-
-res:player/Ian_Bennett a kg:Player ;
-kg:name "Ian Bennett" ;
-kg:birthDate "1985-08-27"^^xsd:date ;
-kg:nationality res:country/USA ;
-kg:primaryPosition res:position/Defender ;
-kg:shirtNumber 6 ;
-kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
-
-res:player/Jacob_Orellana a kg:Player ;
-kg:name "Jacob Orellana" ;
-kg:birthDate "1995-02-09"^^xsd:date ;
-kg:nationality res:country/Canada ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 3 ;
-kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
-
-res:player/Milos_Scepanovic a kg:Player ;
-kg:name "Milos Scepanovic" ;
-kg:birthDate "1989-06-28"^^xsd:date ;
-kg:nationality res:country/Canada ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 7 ;
-kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
-
-res:player/Nazim_Belguendouz a kg:Player ;
-kg:name "Nazim Belguendouz" ;
-kg:birthDate "1991-04-29"^^xsd:date ;
-kg:nationality res:country/Canada ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 8 ;
-kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
-
-res:player/Marc_Jankovic a kg:Player ;
-kg:name "Marc Jankovic" ;
-kg:birthDate "1980-10-27"^^xsd:date ;
-kg:nationality res:country/Canada ;
-kg:primaryPosition res:position/Midfielder ;
-kg:shirtNumber 13 ;
-kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
-
-res:player/Danilo_Pessoa a kg:Player ;
-kg:name "Danilo Pessoa" ;
-kg:birthDate "1990-03-02"^^xsd:date ;
-kg:nationality res:country/Canada ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 9 ;
-kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
-
-res:player/Robert_Renaud a kg:Player ;
-kg:name "Robert Renaud" ;
-kg:birthDate "1993-03-14"^^xsd:date ;
-kg:nationality res:country/USA ;
-kg:primaryPosition res:position/Forward ;
-kg:shirtNumber 14 ;
-kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
-
-res:country/Canada a kg:Country ;
-kg:name "Canada" .
-
-res:country/USA a kg:Country ;
-kg:name "Hoa Kỳ" .
-
-res:position/Goalkeeper a kg:Position ;
-kg:name "GK" .
-
-res:position/Defender a kg:Position ;
-kg:name "DF" .
-
-res:position/Midfielder a kg:Position ;
-kg:name "MF" .
-
-res:position/Forward a kg:Position ;
-kg:name "FW" .
-
-res:competition/World_Cup_Beach_Soccer a kg:Competition ;
-kg:bestResult "Tứ kết" ;
-kg:yearParticipated "1999" ;
-kg:yearParticipated "2006" .
-
-res:competition/North_American_Beach_Soccer_Championship a kg:Competition ;
-kg:bestResult "Á quân" ;
-kg:yearParticipated "2006" .
-
-res:competition/Copa_Latina a kg:Competition ;
-kg:bestResult "Hạng tư" ;
-kg:yearParticipated "2003" .
-
-res:match/Brazil_vs_Canada_1996 a kg:Match ;
-kg:homeTeam res:team/Brazil_National_Beach_Soccer_Team ;
-kg:awayTeam res:team/Canada_National_Beach_Soccer_Team ;
-kg:result "12-1" ;
-kg:venue res:place/Rio_de_Janeiro ;
-kg:kickoffTime "1996-01-30"^^xsd:date .
-
-res:place/Rio_de_Janeiro a kg:Place ;
-kg:name "Rio de Janeiro" ;
-kg:locatedIn res:country/Brazil .
+res:team/Canada_National_Beach_Soccer_Team a kg:Team
+; kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Canada"
+; kg:hasCoach res:coach/Kyriakos_Selaidopoulos
+; kg:locatedIn res:country/Canada
+; kg:organizes res:competition/World_Cup_Beach_Soccer
+; kg:organizes res:competition/North_American_Beach_Soccer_Championship
+; kg:organizes res:competition/Copa_Latina .
+res:organization/Canadian_Soccer_Association a kg:Organization
+; kg:locatedIn res:country/Canada .
+res:coach/Kyriakos_Selaidopoulos a kg:Coach
+; kg:name "Kyriakos Selaidopoulos"
+; kg:manages res:team/Canada_National_Beach_Soccer_Team .
+res:competition/World_Cup_Beach_Soccer a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển thế giới"
+; kg:heldIn res:country/Canada
+; kg:participantCount 3 .
+res:competition/North_American_Beach_Soccer_Championship a kg:Competition
+; kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe"
+; kg:heldIn res:country/Canada
+; kg:participantCount 4 .
+res:competition/Copa_Latina a kg:Competition
+; kg:competitionName "Copa Latina"
+; kg:heldIn res:country/Canada
+; kg:participantCount 1 .
+res:player/Vincent_Cournoyer a kg:Player
+; kg:name "Vincent Cournoyer"
+; kg:birthDate "1987-02-28"^^xsd:date
+; kg:nationality res:country/Canada
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 1
+; kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
+res:player/Anthony_Alves a kg:Player
+; kg:name "Anthony Alves"
+; kg:birthDate "1984-06-10"^^xsd:date
+; kg:nationality res:country/Canada
+; kg:primaryPosition res:position/Goalkeeper
+; kg:shirtNumber 18
+; kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
+res:player/Daniel_Chamale a kg:Player
+; kg:name "Daniel Chamale"
+; kg:birthDate "1993-03-16"^^xsd:date
+; kg:nationality res:country/USA
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 3
+; kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
+res:player/Adrian_Cann a kg:Player
+; kg:name "Adrian Cann"
+; kg:birthDate "1980-09-19"^^xsd:date
+; kg:nationality res:country/Canada
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 4
+; kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
+res:player/Ian_Bennett a kg:Player
+; kg:name "Ian Bennett"
+; kg:birthDate "1985-08-27"^^xsd:date
+; kg:nationality res:country/USA
+; kg:primaryPosition res:position/Defender
+; kg:shirtNumber 6
+; kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
+res:player/Jacob_Orellana a kg:Player
+; kg:name "Jacob Orellana"
+; kg:birthDate "1995-02-09"^^xsd:date
+; kg:nationality res:country/Canada
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 3
+; kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
+res:player/Milos_Scepanovic a kg:Player
+; kg:name "Milos Scepanovic"
+; kg:birthDate "1989-06-28"^^xsd:date
+; kg:nationality res:country/Canada
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 7
+; kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
+res:player/Nazim_Belguendouz a kg:Player
+; kg:name "Nazim Belguendouz"
+; kg:birthDate "1991-04-29"^^xsd:date
+; kg:nationality res:country/Canada
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 8
+; kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
+res:player/Marc_Jankovic a kg:Player
+; kg:name "Marc Jankovic"
+; kg:birthDate "1980-10-27"^^xsd:date
+; kg:nationality res:country/Canada
+; kg:primaryPosition res:position/Midfielder
+; kg:shirtNumber 13
+; kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
+res:player/Danilo_Pessoa a kg:Player
+; kg:name "Danilo Pessoa"
+; kg:birthDate "1990-03-02"^^xsd:date
+; kg:nationality res:country/Canada
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 9
+; kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
+res:player/Robert_Renaud a kg:Player
+; kg:name "Robert Renaud"
+; kg:birthDate "1993-03-14"^^xsd:date
+; kg:nationality res:country/USA
+; kg:primaryPosition res:position/Forward
+; kg:shirtNumber 14
+; kg:playsFor res:team/Canada_National_Beach_Soccer_Team .
+res:country/Canada a kg:Country
+; kg:name "Canada" .
+res:country/USA a kg:Country
+; kg:name "Hoa Kỳ" .
+res:position/Goalkeeper a kg:Position
+; kg:name "GK" .
+res:position/Defender a kg:Position
+; kg:name "DF" .
+res:position/Midfielder a kg:Position
+; kg:name "MF" .
+res:position/Forward a kg:Position
+; kg:name "FW" .
+res:competition/World_Cup_Beach_Soccer a kg:Competition .
+res:competition/North_American_Beach_Soccer_Championship a kg:Competition .
+res:competition/Copa_Latina a kg:Competition .
+res:match/Brazil_vs_Canada_1996 a kg:Match
+; kg:homeTeam res:team/Brazil_National_Beach_Soccer_Team
+; kg:awayTeam res:team/Canada_National_Beach_Soccer_Team
+; kg:result "12-1"
+; kg:venue res:place/Rio_de_Janeiro
+; kg:kickoffTime "1996-01-30"^^xsd:date .
+res:place/Rio_de_Janeiro a kg:Place
+; kg:name "Rio de Janeiro"
+; kg:locatedIn res:country/Brazil .
