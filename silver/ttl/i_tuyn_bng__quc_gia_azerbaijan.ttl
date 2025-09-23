@@ -1,0 +1,299 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/AzerbaijanNationalFootballTeam a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Azerbaijan" ;
+kg:teamAbbreviation "AZE" ;
+kg:hasCoach res:coach/GianniDeBiasi ;
+kg:hasCaptain res:player/MaksimMedvedev ;
+kg:homeStadium res:stadium/SanVanDongOlympicBaku .
+
+res:coach/GianniDeBiasi a kg:Coach ;
+kg:manages res:team/AzerbaijanNationalFootballTeam .
+
+res:player/MaksimMedvedev a kg:Player ;
+kg:isCaptain res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 2 ;
+kg:birthDate "1989-09-29"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:stadium/SanVanDongOlympicBaku a kg:Stadium ;
+kg:capacity 63700 ;
+kg:isHomeOf res:team/AzerbaijanNationalFootballTeam .
+
+res:country/Azerbaijan a kg:Country ;
+rdfs:label "Azerbaijan" .
+
+res:player/RashadSadygov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:mostCaps 111 .
+
+res:player/GurbanGurbanov a kg:Player ;
+kg:topScorer 14 .
+
+res:player/ŞahruddinMahammadaliyev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 12 ;
+kg:birthDate "1994-06-12"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/SalahatAghayev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 23 ;
+kg:birthDate "1991-01-04"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/EmilBalayev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 1 ;
+kg:birthDate "1994-04-17"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/AntonKrivotsyuk a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 18 ;
+kg:birthDate "1998-08-20"^^xsd:date ;
+kg:nationality res:country/Poland .
+
+res:player/AzərSalahlı a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 3 ;
+kg:birthDate "1994-04-11"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/BahlulMustafazade a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 4 ;
+kg:birthDate "1997-02-27"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/HojjatHaghverdi a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 6 ;
+kg:birthDate "1993-02-03"^^xsd:date ;
+kg:nationality res:country/Iran .
+
+res:player/ToralBayramov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 17 ;
+kg:birthDate "2001-02-23"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/AminSeydiyev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 2 ;
+kg:birthDate "1998-11-15"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/ElvinJafarguliyev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 19 ;
+kg:birthDate "2000-10-26"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/JalalHuseynov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 5 ;
+kg:birthDate "2003-01-02"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/BakhtiyarHasanalizade a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 15 ;
+kg:birthDate "1992-12-29"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/NamikAlaskarov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 7 ;
+kg:birthDate "1995-02-03"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/EminMahmudov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 8 ;
+kg:birthDate "1992-04-27"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/RichardAlmeida a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 20 ;
+kg:birthDate "1989-03-20"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/AnatoliyNuriyev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 14 ;
+kg:birthDate "1996-05-20"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/AlekseyIsayev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 22 ;
+kg:birthDate "1995-11-09"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/ElvinJamalov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 16 ;
+kg:birthDate "1995-02-04"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/OzanKökçü a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 21 ;
+kg:birthDate "1998-08-08"^^xsd:date ;
+kg:nationality res:country/Netherlands .
+
+res:player/GismatAliyev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 26 ;
+kg:birthDate "1996-10-24"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/JeyhunNuriyev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 13 ;
+kg:birthDate "2001-03-30"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/RovlanMuradov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 25 ;
+kg:birthDate "1998-03-28"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/RamilSheydayev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 11 ;
+kg:birthDate "1996-03-15"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/MahirEmreli a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 10 ;
+kg:birthDate "1997-07-01"^^xsd:date ;
+kg:nationality res:country/Croatia .
+
+res:player/RenatDadashov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 9 ;
+kg:birthDate "1999-05-17"^^xsd:date ;
+kg:nationality res:country/Switzerland .
+
+res:player/MusaGurbanli a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 24 ;
+kg:birthDate "2002-04-13"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/MehdiJannatov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1992-01-26"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/NijatMehbaliyev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "2000-09-11"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/BadaviHuseynov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 3 ;
+kg:birthDate "1991-07-11"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/AbbasHuseynov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 3 ;
+kg:birthDate "1995-06-13"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/TamkinKhalilzade a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 3 ;
+kg:birthDate "1993-08-06"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/EddyIsrafilov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 3 ;
+kg:birthDate "1992-08-02"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/FilipOzobić a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 3 ;
+kg:birthDate "1991-04-08"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/GaraGarayev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 3 ;
+kg:birthDate "1992-10-12"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/DimitrijNazarov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 3 ;
+kg:birthDate "1990-04-04"^^xsd:date ;
+kg:nationality res:country/Germany .
+
+res:player/CoşqunDiniyev a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 3 ;
+kg:birthDate "1995-09-13"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/RustamAkhmedzade a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 3 ;
+kg:birthDate "2000-12-25"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/AghabalaRamazanov a kg:Player ;
+kg:playsFor res:team/AzerbaijanNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 3 ;
+kg:birthDate "1993-01-20"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .

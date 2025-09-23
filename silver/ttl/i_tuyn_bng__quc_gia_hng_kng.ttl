@@ -1,0 +1,674 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Hong_Kong
+a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Hồng Kông" ;
+kg:hasCoach res:coach/Jorn_Andersen ;
+kg:hasCaptain res:player/Hoang_Duong ;
+kg:teamAbbreviation "HKG" ;
+kg:locatedIn res:country/Hong_Kong .
+
+res:coach/Jorn_Andersen
+a kg:Coach ;
+kg:manages res:team/Hong_Kong .
+
+res:player/Hoang_Duong
+a kg:Player ;
+kg:isCaptain res:team/Hong_Kong ;
+kg:shirtNumber 18 ;
+kg:birthDate "1983-10-19"^^xsd:date ;
+kg:nationality res:country/Hong_Kong .
+
+res:player/Diep_Hung_Huy
+a kg:Player ;
+kg:playsFor res:team/Hong_Kong ;
+kg:shirtNumber 1 ;
+kg:birthDate "1990-03-21"^^xsd:date ;
+kg:nationality res:country/Hong_Kong .
+
+res:player/Tran_Trieu_Ky
+a kg:Player ;
+kg:playsFor res:team/Hong_Kong ;
+kg:shirtNumber 14 ;
+kg:birthDate "1992-08-01"^^xsd:date ;
+kg:nationality res:country/Hong_Kong .
+
+res:stadium/Hong_Kong_Stadium
+a kg:Stadium ;
+kg:isHomeOf res:team/Hong_Kong .
+
+res:stadium/Wang_Jia_Stadium
+a kg:Stadium ;
+kg:isHomeOf res:team/Hong_Kong .
+
+res:country/Hong_Kong
+a kg:Country .
+
+res:competition/AFC_Asian_Cup
+a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Á" .
+
+res:season/1956_AFC_Asian_Cup
+a kg:Season ;
+kg:hasSeason res:competition/AFC_Asian_Cup ;
+kg:seasonOf res:competition/AFC_Asian_Cup .
+
+res:team/Hong_Kong
+kg:participatesIn res:season/1956_AFC_Asian_Cup ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Hong_Kong_vs_MAL_1954
+a kg:Match ;
+kg:homeTeam res:team/Hong_Kong ;
+kg:awayTeam res:team/Malaysia ;
+kg:venue res:stadium/Hong_Kong_Stadium ;
+kg:kickoffTime "1954-05-02T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Hong_Kong_vs_CHN_2004
+a kg:Match ;
+kg:homeTeam res:team/China ;
+kg:awayTeam res:team/Hong_Kong ;
+kg:venue res:stadium/Hong_Kong_Stadium ;
+kg:kickoffTime "2004-11-17T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Hong_Kong_vs_PAR_2010
+a kg:Match ;
+kg:homeTeam res:team/Paraguay ;
+kg:awayTeam res:team/Hong_Kong ;
+kg:venue res:stadium/Hong_Kong_Stadium ;
+kg:kickoffTime "2010-11-17T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Hong_Kong_vs_ARG_2014
+a kg:Match ;
+kg:homeTeam res:team/Argentina ;
+kg:awayTeam res:team/Hong_Kong ;
+kg:venue res:stadium/Hong_Kong_Stadium ;
+kg:kickoffTime "2014-10-14T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:competition/FIFA_World_Cup
+a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá thế giới" .
+
+res:season/1930_FIFA_World_Cup
+a kg:Season ;
+kg:hasSeason res:competition/FIFA_World_Cup ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:team/Hong_Kong
+kg:participatesIn res:season/1930_FIFA_World_Cup ;
+kg:inCompetition res:competition/FIFA_World_Cup .
+
+res:club/Eastern_Sports_Club
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Kitchee_SC
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Southern_District_FC
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Lee_Man_FC
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Rangers_FC
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Tai_Po_FC
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Zhejiang_Professional_FC
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Guangxi_Pingguo_Haliao_FC
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/FC_Inglstadt_04_II
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Heilongjiang_Ice_City
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/HK_U23_Football_Team
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Hong_Kong_FC
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Dalian_Professional_FC
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Sham_Shui_Po_SA
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:club/Meizhou_Hakka_FC
+a kg:Club ;
+kg:homeStadium res:stadium/Hong_Kong_Stadium ;
+kg:isHomeOf res:stadium/Hong_Kong_Stadium .
+
+res:city/Hong_Kong
+a kg:City ;
+kg:locatedIn res:country/Hong_Kong .
+
+res:country/Hong_Kong
+a kg:Country .
+
+res:country/China
+a kg:Country .
+
+res:country/Philippines
+a kg:Country .
+
+res:country/Argentina
+a kg:Country .
+
+res:country/Pakistan
+a kg:Country .
+
+res:country/Bhutan
+a kg:Country .
+
+res:country/South_Vietnam
+a kg:Country .
+
+res:country/India
+a kg:Country .
+
+res:country/Qatar
+a kg:Country .
+
+res:country/Saudi_Arabia
+a kg:Country .
+
+res:country/Japan
+a kg:Country .
+
+res:country/Thailand
+a kg:Country .
+
+res:country/Indonesia
+a kg:Country .
+
+res:country/Malaysia
+a kg:Country .
+
+res:country/Korea
+a kg:Country .
+
+res:country/Germany
+a kg:Country .
+
+res:country/Cambodia
+a kg:Country .
+
+res:country/Myanmar
+a kg:Country .
+
+res:country/Nepal
+a kg:Country .
+
+res:country/Brunei
+a kg:Country .
+
+res:country/Macau
+a kg:Country .
+
+res:country/Singapore
+a kg:Country .
+
+res:country/Malta
+a kg:Country .
+
+res:country/Israel
+a kg:Country .
+
+res:country/Iran
+a kg:Country .
+
+res:country/United_Arab_Emirates
+a kg:Country .
+
+res:country/Oman
+a kg:Country .
+
+res:country/Bahrain
+a kg:Country .
+
+res:country/Yemen
+a kg:Country .
+
+res:country/Lebanon
+a kg:Country .
+
+res:country/Syria
+a kg:Country .
+
+res:country/Algeria
+a kg:Country .
+
+res:country/Tunisia
+a kg:Country .
+
+res:country/Morocco
+a kg:Country .
+
+res:country/Ghana
+a kg:Country .
+
+res:country/Nigeria
+a kg:Country .
+
+res:country/Costa_Rica
+a kg:Country .
+
+res:country/Panama
+a kg:Country .
+
+res:country/Colombia
+a kg:Country .
+
+res:country/Peru
+a kg:Country .
+
+res:country/Uruguay
+a kg:Country .
+
+res:country/Chile
+a kg:Country .
+
+res:country/Argentina
+a kg:Country .
+
+res:country/Brazil
+a kg:Country .
+
+res:country/USA
+a kg:Country .
+
+res:country/Mexico
+a kg:Country .
+
+res:country/Canada
+a kg:Country .
+
+res:country/Greece
+a kg:Country .
+
+res:country/Turkey
+a kg:Country .
+
+res:country/Italy
+a kg:Country .
+
+res:country/France
+a kg:Country .
+
+res:country/Germany
+a kg:Country .
+
+res:country/Spain
+a kg:Country .
+
+res:country/Portugal
+a kg:Country .
+
+res:country/Netherlands
+a kg:Country .
+
+res:country/Belgium
+a kg:Country .
+
+res:country/Switzerland
+a kg:Country .
+
+res:country/Austria
+a kg:Country .
+
+res:country/Sweden
+a kg:Country .
+
+res:country/Norway
+a kg:Country .
+
+res:country/Denmark
+a kg:Country .
+
+res:country/Finland
+a kg:Country .
+
+res:country/Slovenia
+a kg:Country .
+
+res:country/Croatia
+a kg:Country .
+
+res:country/Slovakia
+a kg:Country .
+
+res:country/Czech_Republic
+a kg:Country .
+
+res:country/Hungary
+a kg:Country .
+
+res:country/Poland
+a kg:Country .
+
+res:country/Ukraine
+a kg:Country .
+
+res:country/Russia
+a kg:Country .
+
+res:country/Georgia
+a kg:Country .
+
+res:country/Azerbaijan
+a kg:Country .
+
+res:country/Kazakhstan
+a kg:Country .
+
+res:country/Uzbekistan
+a kg:Country .
+
+res:country/Tajikistan
+a kg:Country .
+
+res:country/Kyrgyzstan
+a kg:Country .
+
+res:country/Armenia
+a kg:Country .
+
+res:country/Abkhazia
+a kg:Country .
+
+res:country/North_Korea
+a kg:Country .
+
+res:country/South_Korea
+a kg:Country .
+
+res:country/Jordan
+a kg:Country .
+
+res:country/United_Arab_Emirates
+a kg:Country .
+
+res:country/Israel
+a kg:Country .
+
+res:country/Lebanon
+a kg:Country .
+
+res:country/Syria
+a kg:Country .
+
+res:country/Algeria
+a kg:Country .
+
+res:country/Tunisia
+a kg:Country .
+
+res:country/Morocco
+a kg:Country .
+
+res:country/Ghana
+a kg:Country .
+
+res:country/Nigeria
+a kg:Country .
+
+res:country/Costa_Rica
+a kg:Country .
+
+res:country/Panama
+a kg:Country .
+
+res:country/Colombia
+a kg:Country .
+
+res:country/Peru
+a kg:Country .
+
+res:country/Uruguay
+a kg:Country .
+
+res:country/Chile
+a kg:Country .
+
+res:country/Argentina
+a kg:Country .
+
+res:country/Brazil
+a kg:Country .
+
+res:country/USA
+a kg:Country .
+
+res:country/Mexico
+a kg:Country .
+
+res:country/Canada
+a kg:Country .
+
+res:country/Greece
+a kg:Country .
+
+res:country/Turkey
+a kg:Country .
+
+res:country/Italy
+a kg:Country .
+
+res:country/France
+a kg:Country .
+
+res:country/Germany
+a kg:Country .
+
+res:country/Spain
+a kg:Country .
+
+res:country/Portugal
+a kg:Country .
+
+res:country/Netherlands
+a kg:Country .
+
+res:country/Belgium
+a kg:Country .
+
+res:country/Switzerland
+a kg:Country .
+
+res:country/Austria
+a kg:Country .
+
+res:country/Sweden
+a kg:Country .
+
+res:country/Norway
+a kg:Country .
+
+res:country/Denmark
+a kg:Country .
+
+res:country/Finland
+a kg:Country .
+
+res:country/Slovenia
+a kg:Country .
+
+res:country/Croatia
+a kg:Country .
+
+res:country/Slovakia
+a kg:Country .
+
+res:country/Czech_Republic
+a kg:Country .
+
+res:country/Hungary
+a kg:Country .
+
+res:country/Poland
+a kg:Country .
+
+res:country/Ukraine
+a kg:Country .
+
+res:country/Russia
+a kg:Country .
+
+res:country/Georgia
+a kg:Country .
+
+res:country/Azerbaijan
+a kg:Country .
+
+res:country/Kazakhstan
+a kg:Country .
+
+res:country/Uzbekistan
+a kg:Country .
+
+res:country/Tajikistan
+a kg:Country .
+
+res:country/Kyrgyzstan
+a kg:Country .
+
+res:country/Armenia
+a kg:Country .
+
+res:country/Abkhazia
+a kg:Country .
+
+res:country/North_Korea
+a kg:Country .
+
+res:country/South_Korea
+a kg:Country .
+
+res:country/Jordan
+a kg:Country .
+
+res:country/United_Arab_Emirates
+a kg:Country .
+
+res:country/Israel
+a kg:Country .
+
+res:country/Lebanon
+a kg:Country .
+
+res:country/Syria
+a kg:Country .
+
+res:country/Algeria
+a kg:Country .
+
+res:country/Tunisia
+a kg:Country .
+
+res:country/Morocco
+a kg:Country .
+
+res:country/Ghana
+a kg:Country .
+
+res:country/Nigeria
+a kg:Country .
+
+res:country/Costa_Rica
+a kg:Country .
+
+res:country/Panama
+a kg:Country .
+
+res:country/Colombia
+a kg:Country .
+
+res:country/Peru
+a kg:Country .
+
+res:country/Uruguay
+a kg:Country .
+
+res:country/Chile
+a kg:Country .
+
+res:country/Argentina
+a kg:Country .
+
+res:country/Brazil
+a kg:Country .
+
+res:country/USA
+a kg:Country .
+
+res:country/Mexico
+a kg:Country .
+
+res:country/Canada
+a kg:Country .
+
+res:country/Greece
+a kg:Country .
+
+res:country/Turkey
+a kg:Country .
+
+res:country/Italy
+a kg:Country .
+
+res:country/France
+a kg:Country .
+
+res:country/Germany
+a kg:Country .
+
+res:country/Spain
+a kg:Country .
+
+res:country/Portugal
+a kg:Country .
+
+res

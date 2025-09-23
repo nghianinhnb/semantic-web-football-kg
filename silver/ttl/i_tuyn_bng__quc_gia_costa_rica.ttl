@@ -1,0 +1,280 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Costa_Rica a kg:Team ;
+kg:teamName "Costa Rica" ;
+kg:hasCoach res:coach/Gustavo_Alfaro ;
+kg:hasCaptain res:player/Francisco_Calvo ;
+kg:teamAbbreviation "CRC" ;
+kg:locatedIn res:country/Costa_Rica .
+
+res:coach/Gustavo_Alfaro a kg:Coach ;
+kg:manages res:team/Costa_Rica .
+
+res:player/Francisco_Calvo a kg:Player ;
+kg:isCaptain res:team/Costa_Rica ;
+kg:playsFor res:team/Costa_Rica ;
+kg:primaryPosition kg:Defender .
+
+res:country/Costa_Rica a kg:Country ;
+rdfs:label "Costa Rica" .
+
+res:team/Costa_Rica kg:participatesIn res:season/World_Cup_2014 .
+
+res:season/World_Cup_2014 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:competition/World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_1963 .
+
+res:season/CONCACAF_Championship_1963 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:competition/CONCACAF_Championship a kg:Competition ;
+kg:competitionName "CONCACAF Championship" .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2001 .
+
+res:season/Copa_America_2001 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:competition/Copa_America a kg:Competition ;
+kg:competitionName "Copa America" .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_1969 .
+
+res:season/CONCACAF_Championship_1969 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_1989 .
+
+res:season/CONCACAF_Championship_1989 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2002 .
+
+res:season/CONCACAF_Championship_2002 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2001 .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2004 .
+
+res:season/Copa_America_2004 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Americas_Games_1951 .
+
+res:season/Americas_Games_1951 a kg:Season ;
+kg:seasonOf res:competition/Americas_Games ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:competition/Americas_Games a kg:Competition ;
+kg:competitionName "Americas Games" .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_1965 .
+
+res:season/CONCACAF_Championship_1965 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_1971 .
+
+res:season/CONCACAF_Championship_1971 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_1985 .
+
+res:season/CONCACAF_Championship_1985 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_1993 .
+
+res:season/CONCACAF_Championship_1993 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2000 .
+
+res:season/CONCACAF_Championship_2000 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2003 .
+
+res:season/CONCACAF_Championship_2003 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2005 .
+
+res:season/CONCACAF_Championship_2005 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2007 .
+
+res:season/CONCACAF_Championship_2007 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2009 .
+
+res:season/CONCACAF_Championship_2009 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2011 .
+
+res:season/CONCACAF_Championship_2011 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2013 .
+
+res:season/CONCACAF_Championship_2013 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2015 .
+
+res:season/CONCACAF_Championship_2015 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2017 .
+
+res:season/CONCACAF_Championship_2017 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2019 .
+
+res:season/CONCACAF_Championship_2019 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2021 .
+
+res:season/CONCACAF_Championship_2021 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/CONCACAF_Championship_2023 .
+
+res:season/CONCACAF_Championship_2023 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_1997 .
+
+res:season/Copa_America_1997 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_1999 .
+
+res:season/Copa_America_1999 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2003 .
+
+res:season/Copa_America_2003 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2005 .
+
+res:season/Copa_America_2005 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2007 .
+
+res:season/Copa_America_2007 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2013 .
+
+res:season/Copa_America_2013 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2014 .
+
+res:season/Copa_America_2014 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2015 .
+
+res:season/Copa_America_2015 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2016 .
+
+res:season/Copa_America_2016 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2019 .
+
+res:season/Copa_America_2019 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2021 .
+
+res:season/Copa_America_2021 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2023 .
+
+res:season/Copa_America_2023 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Copa_America_2024 .
+
+res:season/Copa_America_2024 a kg:Season ;
+kg:seasonOf res:competition/Copa_America ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Olympic_Games_1984 .
+
+res:season/Olympic_Games_1984 a kg:Season ;
+kg:seasonOf res:competition/Olympic_Games ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:competition/Olympic_Games a kg:Competition ;
+kg:competitionName "Olympic Games" .
+
+res:team/Costa_Rica kg:participatesIn res:season/Olympic_Games_1980 .
+
+res:season/Olympic_Games_1980 a kg:Season ;
+kg:seasonOf res:competition/Olympic_Games ;
+kg:participatesIn res:team/Costa_Rica .
+
+res:team/Costa_Rica kg:participatesIn res:season/Olympic_Games_1988 .
+
+res:season/Olympic_Games_1988 a kg:Season ;
+kg:seasonOf res:competition/Olympic_Games ;
+kg:participatesIn res:team/Costa_Rica .

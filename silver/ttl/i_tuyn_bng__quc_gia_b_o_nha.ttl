@@ -1,0 +1,292 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/PortugalNationalTeam a kg:Team ;
+kg:teamName "Bồ Đào Nha" ;
+kg:teamAbbreviation "POR" ;
+kg:hasCoach res:coach/RobertoMartinez ;
+kg:hasCaptain res:player/CristianoRonaldo ;
+kg:isCaptain res:player/CristianoRonaldo .
+
+res:player/CristianoRonaldo a kg:Player, kg:Forward ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1985-02-05"^^xsd:date ;
+kg:birthPlace res:city/Funchal ;
+kg:nationality res:country/Portugal ;
+kg:height "187"^^xsd:decimal ;
+kg:weight "79"^^xsd:decimal ;
+kg:shirtNumber "7"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:coach/RobertoMartinez a kg:Coach ;
+kg:manages res:team/PortugalNationalTeam .
+
+res:team/PortugalNationalTeam kg:playsFor res:competition/FIFAWorldCup ;
+kg:playsFor res:competition/EuroCup ;
+kg:playsFor res:competition/UEFANationsLeague .
+
+res:team/PortugalNationalTeam kg:hasStadium res:stadium/Nacional ;
+
+res:stadium/Nacional a kg:Stadium ;
+kg:capacity "55000"^^xsd:positiveInteger ;
+kg:isHomeOf res:team/PortugalNationalTeam .
+
+res:team/PortugalNationalTeam kg:hasMember res:player/CristianoRonaldo ;
+kg:hasMember res:player/RubenDias ;
+kg:hasMember res:player/BrunoFernandes ;
+kg:hasMember res:player/BernardoSilva ;
+kg:hasMember res:player/JuanFerrando ;
+kg:hasMember res:player/DiogoCosta ;
+kg:hasMember res:player/NelsonSemedo ;
+kg:hasMember res:player/DiogoDalot ;
+kg:hasMember res:player/GoncaloInacio ;
+kg:hasMember res:player/NunoMendes ;
+kg:hasMember res:player/JoaoPalhinha ;
+kg:hasMember res:player/JoaoFelix ;
+kg:hasMember res:player/RafaelLeao ;
+kg:hasMember res:player/GoncaloRamos ;
+kg:hasMember res:player/PedroGoncalves ;
+kg:hasMember res:player/PedroNeto ;
+kg:hasMember res:player/DiogoJota ;
+kg:hasMember res:player/Vitinha ;
+kg:hasMember res:player/FranciscoTrincão .
+
+res:player/RubenDias a kg:Player, kg:Defender ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1997-05-14"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "190"^^xsd:decimal ;
+kg:weight "76"^^xsd:decimal ;
+kg:shirtNumber "3"^^xsd:positiveInteger ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/BrunoFernandes a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1994-09-08"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "183"^^xsd:decimal ;
+kg:weight "72"^^xsd:decimal ;
+kg:shirtNumber "8"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/BernardoSilva a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1994-08-10"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "175"^^xsd:decimal ;
+kg:weight "68"^^xsd:decimal ;
+kg:shirtNumber "10"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/JuanFerrando a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1999-09-19"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "193"^^xsd:decimal ;
+kg:weight "82"^^xsd:decimal ;
+kg:shirtNumber "1"^^xsd:positiveInteger ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/DiogoCosta a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1999-09-19"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "193"^^xsd:decimal ;
+kg:weight "82"^^xsd:decimal ;
+kg:shirtNumber "1"^^xsd:positiveInteger ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/NelsonSemedo a kg:Player, kg:Defender ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1993-11-16"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "185"^^xsd:decimal ;
+kg:weight "75"^^xsd:decimal ;
+kg:shirtNumber "2"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/DiogoDalot a kg:Player, kg:Defender ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1999-03-18"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "188"^^xsd:decimal ;
+kg:weight "74"^^xsd:decimal ;
+kg:shirtNumber "5"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/GoncaloInacio a kg:Player, kg:Defender ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2001-08-25"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "183"^^xsd:decimal ;
+kg:weight "72"^^xsd:decimal ;
+kg:shirtNumber "14"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/NunoMendes a kg:Player, kg:Defender ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2002-06-19"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "188"^^xsd:decimal ;
+kg:weight "73"^^xsd:decimal ;
+kg:shirtNumber "25"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/JoaoPalhinha a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1995-07-09"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "185"^^xsd:decimal ;
+kg:weight "77"^^xsd:decimal ;
+kg:shirtNumber "6"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/JoaoFelix a kg:Player, kg:Forward ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1999-11-10"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "178"^^xsd:decimal ;
+kg:weight "68"^^xsd:decimal ;
+kg:shirtNumber "11"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/RafaelLeao a kg:Player, kg:Forward ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1999-06-10"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "186"^^xsd:decimal ;
+kg:weight "73"^^xsd:decimal ;
+kg:shirtNumber "7"^^xsd:positiveInteger ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/GoncaloRamos a kg:Player, kg:Forward ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2001-06-20"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "188"^^xsd:decimal ;
+kg:weight "76"^^xsd:decimal ;
+kg:shirtNumber "9"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/PedroGoncalves a kg:Player, kg:Forward ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1998-06-28"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "183"^^xsd:decimal ;
+kg:weight "75"^^xsd:decimal ;
+kg:shirtNumber "19"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/PedroNeto a kg:Player, kg:Forward ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2000-03-09"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "182"^^xsd:decimal ;
+kg:weight "73"^^xsd:decimal ;
+kg:shirtNumber "20"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/DiogoJota a kg:Player, kg:Forward ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1996-12-04"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "183"^^xsd:decimal ;
+kg:weight "75"^^xsd:decimal ;
+kg:shirtNumber "17"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Vitinha a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2000-02-13"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "175"^^xsd:decimal ;
+kg:weight "68"^^xsd:decimal ;
+kg:shirtNumber "23"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/FranciscoTrincão a kg:Player, kg:Forward ;
+kg:playsFor res:team/PortugalNationalTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1999-12-29"^^xsd:date ;
+kg:birthPlace res:city/Lisbon ;
+kg:nationality res:country/Portugal ;
+kg:height "183"^^xsd:decimal ;
+kg:weight "74"^^xsd:decimal ;
+kg:shirtNumber "16"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted .
+
+res:city/Lisbon a kg:City ;
+kg:locatedIn res:country/Portugal .
+
+res:country/Portugal a kg:Country .
+
+res:competition/FIFAWorldCup a kg:Competition .
+
+res:competition/EuroCup a kg:Competition .
+
+res:competition/UEFANationsLeague a kg:Competition .
+
+res:stadium/Nacional a kg:Stadium ;
+kg:capacity "55000"^^xsd:positiveInteger ;
+kg:isHomeOf res:team/PortugalNationalTeam .
+
+res:coach/RobertoMartinez a kg:Coach ;
+kg:manages res:team/PortugalNationalTeam .
+
+res:team/PortugalNationalTeam kg:hasMember res:player/CristianoRonaldo ;
+kg:hasMember res:player/RubenDias ;
+kg:hasMember res:player/BrunoFernandes ;
+kg:hasMember res:player/BernardoSilva ;
+kg:hasMember res:player/JuanFerrando ;
+kg:hasMember res:player/DiogoCosta ;
+kg:hasMember res:player/NelsonSemedo ;
+kg:hasMember res:player/DiogoDalot ;
+kg:hasMember res:player/GoncaloInacio ;
+kg:hasMember res:player/NunoMendes ;
+kg:hasMember res:player/JoaoPalhinha ;
+kg:hasMember res:player/JoaoFelix ;
+kg:hasMember res:player/RafaelLeao ;
+kg:hasMember res:player/GoncaloRamos ;
+kg:hasMember res:player/PedroGoncalves ;
+kg:hasMember res:player/PedroNeto ;
+kg:hasMember res:player/DiogoJota ;
+kg:hasMember res:player/Vitinha ;
+kg:hasMember res:player/FranciscoTrincão .

@@ -2,228 +2,374 @@
 @prefix res: <https://kg-football.vn/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-res:team/GermanyNationalFootballTeam a kg:Team ;
-kg:teamName "Đội tuyển bóng đá quốc gia Đức" ;
-kg:teamAbbreviation "GER" ;
-kg:hasCoach res:coach/JulianNagelsmann ;
-kg:manages res:coach/JulianNagelsmann .
+res:team/Australia a kg:Team ;
+kg:teamName "Australia" ;
+kg:hasCoach res:coach/Tony_Popovic ;
+kg:hasCaptain res:player/Mathew_Ryan ;
+kg:teamAbbreviation "AUS" ;
+kg:FIFA_rank 23 ;
+kg:FIFA_max 14 ;
+kg:FIFA_max_date "2009-09-01"^^xsd:date ;
+kg:FIFA_min 102 ;
+kg:FIFA_min_date "2014-11-01"^^xsd:date ;
+kg:confederation res:organization/AFC ;
+kg:association res:organization/Australian_Football_Federation ;
+kg:most_caps res:player/Mark_Schwarzer ;
+kg:top_scorer res:player/Tim_Cahill .
 
-res:coach/JulianNagelsmann a kg:Coach ;
-kg:manages res:team/GermanyNationalFootballTeam .
+res:coach/Tony_Popovic a kg:Coach ;
+kg:manages res:team/Australia .
 
-res:player/LotharMatthaus a kg:Player ;
-kg:playsFor res:team/GermanyNationalFootballTeam ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1961-06-19"^^xsd:date ;
-kg:birthPlace res:city/Kassel ;
-kg:nationality res:country/Germany ;
-kg:height "183"^^xsd:decimal ;
-kg:weight "78"^^xsd:decimal ;
-kg:shirtNumber "10"^^xsd:positiveInteger ;
-kg:preferredFoot res:footedness/RightFooted .
+res:player/Mathew_Ryan a kg:Player, kg:Goalkeeper ;
+kg:isCaptain res:team/Australia .
 
-res:player/MiroslavKlose a kg:Player ;
-kg:playsFor res:team/GermanyNationalFootballTeam ;
-kg:primaryPosition res:position/Forward ;
-kg:birthDate "1978-06-19"^^xsd:date ;
-kg:birthPlace res:city/Schwerin ;
-kg:nationality res:country/Germany ;
-kg:height "188"^^xsd:decimal ;
-kg:weight "82"^^xsd:decimal ;
-kg:shirtNumber "11"^^xsd:positiveInteger ;
-kg:preferredFoot res:footedness/LeftFooted .
+res:player/Mark_Schwarzer a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:team/Australia ;
+kg:most_capped true .
 
-res:player/JoshuaKimmich a kg:Player ;
-kg:playsFor res:team/GermanyNationalFootballTeam ;
-kg:primaryPosition res:position/Defender ;
-kg:birthDate "1995-02-08"^^xsd:date ;
-kg:birthPlace res:city/Berlin ;
-kg:nationality res:country/Germany ;
-kg:height "183"^^xsd:decimal ;
-kg:weight "74"^^xsd:decimal ;
-kg:shirtNumber "6"^^xsd:positiveInteger ;
-kg:preferredFoot res:footedness/RightFooted .
+res:player/Tim_Cahill a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia ;
+kg:top_scorer true .
 
-res:country/Germany a kg:Country ;
-rdfs:label "Đức" .
+res:organization/AFC a kg:Confederation ;
+kg:name "AFC" ;
+kg:region "Asia" .
 
-res:city/Berlin a kg:City ;
-kg:locatedIn res:country/Germany .
+res:organization/Australian_Football_Federation a kg:Association ;
+kg:name "Australian Football Federation" .
 
-res:city/Kassel a kg:City ;
-kg:locatedIn res:country/Germany .
+res:competition/FIFA_World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" .
 
-res:city/Stuttgart a kg:City ;
-kg:locatedIn res:country/Germany .
+res:competition/Asian_Cup a kg:Competition ;
+kg:competitionName "Asian Cup" .
 
-res:stadium/AllianzArena a kg:Stadium ;
-kg:capacity "60000"^^xsd:positiveInteger ;
-kg:locatedIn res:city/Munich .
+res:competition/OFC_Nations_Cup a kg:Competition ;
+kg:competitionName "OFC Nations Cup" .
 
-res:stadium/Westfalenstadion a kg:Stadium ;
-kg:capacity "81360"^^xsd:positiveInteger ;
-kg:locatedIn res:city/Dortmund .
+res:competition/Confederations_Cup a kg:Competition ;
+kg:competitionName "Confederations Cup" .
 
-res:stadium/MHPArena a kg:Stadium ;
-kg:capacity "55000"^^xsd:positiveInteger ;
-kg:locatedIn res:city/Stuttgart .
+res:team/Australia kg:participatesIn res:season/2006_World_Cup ;
+kg:result "Round of 16" .
 
-res:position/Defender a kg:Defender .
+res:team/Australia kg:participatesIn res:season/2015_Asian_Cup ;
+kg:result "Champions" .
 
-res:position/Midfielder a kg:Midfielder .
+res:team/Australia kg:participatesIn res:season/1997_Confederations_Cup ;
+kg:result "Runners-up" .
 
-res:position/Forward a kg:Forward .
+res:team/Australia kg:participatesIn res:season/2015_Asian_Cup ;
+kg:result "Champions" .
 
-res:competition/FIFAWorldCup a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá thế giới" ;
-kg:heldIn res:country/Germany .
+res:team/Australia kg:participatesIn res:season/2022_World_Cup ;
+kg:result "Round of 16" .
 
-res:competition/Euro a kg:Competition ;
-kg:competitionName "Giải vô địch bóng đá châu Âu" ;
-kg:heldIn res:country/Germany .
+res:team/Australia kg:participatesIn res:season/2026_World_Cup_Qualification ;
+kg:result "Qualified" .
 
-res:season/2024 a kg:Season ;
-kg:hasSeason res:competition/Euro .
+res:team/Australia kg:participatesIn res:season/2026_World_Cup_Qualification ;
+kg:matches res:match/Australia_vs_Bangladesh_2024-06-06 ;
+kg:matches res:match/Australia_vs_PLE_2024-06-11 ;
+kg:matches res:match/Australia_vs_BHR_2024-09-05 ;
+kg:matches res:match/Australia_vs_Indonesia_2024-09-10 ;
+kg:matches res:match/Australia_vs_China_2024-10-10 ;
+kg:matches res:match/Australia_vs_Japan_2024-10-15 ;
+kg:matches res:match/Australia_vs_Saudi_Arabia_2024-11-14 .
 
-res:season/2025 a kg:Season ;
-kg:hasSeason res:competition/Euro .
+res:match/Australia_vs_Bangladesh_2024-06-06 a kg:Match ;
+kg:homeTeam res:team/Australia ;
+kg:awayTeam res:team/Bangladesh ;
+kg:venue res:stadium/Bashundhara_Kings_Arena ;
+kg:kickoffTime "2024-06-06T16:45:00"^^xsd:dateTime ;
+kg:result "Win" ;
+kg:referee res:person/Mooud_Bonyadifard .
 
-res:match/Euro2024GroupStageGermanyVsScotland a kg:Match ;
-kg:homeTeam res:team/GermanyNationalFootballTeam ;
-kg:awayTeam res:team/Scotland ;
-kg:venue res:stadium/AllianzArena ;
-kg:kickoffTime "2024-06-14T21:00:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro ;
-kg:inSeason res:season/2024 ;
-kg:result "Win" .
+res:match/Australia_vs_PLE_2024-06-11 a kg:Match ;
+kg:homeTeam res:team/Australia ;
+kg:awayTeam res:team/Palestine ;
+kg:venue res:stadium/Perth_Rectangular_Stadium ;
+kg:kickoffTime "2024-06-11T20:05:00"^^xsd:dateTime ;
+kg:result "Win" ;
+kg:referee res:person/Jansen_Foo .
 
-res:match/Euro2024GroupStageGermanyVsHungary a kg:Match ;
-kg:homeTeam res:team/GermanyNationalFootballTeam ;
-kg:awayTeam res:team/Hungary ;
-kg:venue res:stadium/MHPArena ;
-kg:kickoffTime "2024-06-19T18:00:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro ;
-kg:inSeason res:season/2024 ;
-kg:result "Win" .
+res:match/Australia_vs_BHR_2024-09-05 a kg:Match ;
+kg:homeTeam res:team/Bahrain ;
+kg:awayTeam res:team/Australia ;
+kg:venue res:stadium/Robina_Stadium ;
+kg:kickoffTime "2024-09-05T20:00:00"^^xsd:dateTime ;
+kg:result "Loss" ;
+kg:referee res:person/Omar_Al-Ali .
 
-res:match/Euro2024GroupStageSwitzerlandVsGermany a kg:Match ;
-kg:homeTeam res:team/Switzerland ;
-kg:awayTeam res:team/GermanyNationalFootballTeam ;
-kg:venue res:stadium/Waldstadion ;
-kg:kickoffTime "2024-06-23T21:00:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro ;
-kg:inSeason res:season/2024 ;
-kg:result "Draw" .
+res:match/Australia_vs_Indonesia_2024-09-10 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Australia ;
+kg:venue res:stadium/Gelora_Bung_Karno ;
+kg:kickoffTime "2024-09-10T19:00:00"^^xsd:dateTime ;
+kg:result "Draw" ;
+kg:referee res:person/Salman_Ahmad_Falahi .
 
-res:match/Euro2024RoundOf16GermanyVsDenmark a kg:Match ;
-kg:homeTeam res:team/GermanyNationalFootballTeam ;
-kg:awayTeam res:team/Denmark ;
-kg:venue res:stadium/Westfalenstadion ;
-kg:kickoffTime "2024-06-29T21:00:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro ;
-kg:inSeason res:season/2024 ;
-kg:result "Win" .
+res:match/Australia_vs_China_2024-10-10 a kg:Match ;
+kg:homeTeam res:team/Australia ;
+kg:awayTeam res:team/China ;
+kg:venue res:stadium/Adelaide_Oval ;
+kg:kickoffTime "2024-10-10T19:40:00"^^xsd:dateTime ;
+kg:result "Win" ;
+kg:referee res:person/Nazmi_Nasaruddin .
 
-res:match/Euro2024QuarterFinalSpainVsGermany a kg:Match ;
-kg:homeTeam res:team/Spain ;
-kg:awayTeam res:team/GermanyNationalFootballTeam ;
-kg:venue res:stadium/MHPArena ;
-kg:kickoffTime "2024-07-05T18:00:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/Euro ;
-kg:inSeason res:season/2024 ;
-kg:result "Loss" .
+res:match/Australia_vs_Japan_2024-10-15 a kg:Match ;
+kg:homeTeam res:team/Japan ;
+kg:awayTeam res:team/Australia ;
+kg:venue res:stadium/Saitama_2002 ;
+kg:kickoffTime "2024-10-15T19:35:00"^^xsd:dateTime ;
+kg:result "Draw" ;
+kg:referee res:person/Ahmed_Al-Ali .
 
-res:match/NationsLeague2024GermanyVsHungary a kg:Match ;
-kg:homeTeam res:team/GermanyNationalFootballTeam ;
-kg:awayTeam res:team/Hungary ;
-kg:venue res:stadium/MerkurSpielArena ;
-kg:kickoffTime "2024-09-07T20:45:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NationsLeague ;
-kg:inSeason res:season/2024 ;
-kg:result "Win" .
+res:match/Australia_vs_Saudi_Arabia_2024-11-14 a kg:Match ;
+kg:homeTeam res:team/Australia ;
+kg:awayTeam res:team/Saudi_Arabia ;
+kg:venue res:stadium/Melbourne_Rectangular_Stadium ;
+kg:kickoffTime "2024-11-14T20:10:00"^^xsd:dateTime ;
+kg:result "Draw" ;
+kg:referee res:person/Adel_Al-Naqbi .
 
-res:match/NationsLeague2024NetherlandsVsGermany a kg:Match ;
-kg:homeTeam res:team/Netherlands ;
-kg:awayTeam res:team/GermanyNationalFootballTeam ;
-kg:venue res:stadium/JohanCruyffArena ;
-kg:kickoffTime "2024-09-10T20:45:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NationsLeague ;
-kg:inSeason res:season/2024 ;
-kg:result "Draw" .
+res:stadium/Bashundhara_Kings_Arena a kg:Stadium ;
+kg:capacity 5227 .
 
-res:match/NationsLeague2024GermanyVsBosnia a kg:Match ;
-kg:homeTeam res:team/GermanyNationalFootballTeam ;
-kg:awayTeam res:team/Bosnia ;
-kg:venue res:stadium/BilinoPolje ;
-kg:kickoffTime "2024-10-11T20:45:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NationsLeague ;
-kg:inSeason res:season/2024 ;
-kg:result "Win" .
+res:stadium/Perth_Rectangular_Stadium a kg:Stadium ;
+kg:capacity 25000 .
 
-res:match/NationsLeague2024GermanyVsNetherlands a kg:Match ;
-kg:homeTeam res:team/GermanyNationalFootballTeam ;
-kg:awayTeam res:team/Netherlands ;
-kg:venue res:stadium/AllianzArena ;
-kg:kickoffTime "2024-10-14T20:45:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NationsLeague ;
-kg:inSeason res:season/2024 ;
-kg:result "Win" .
+res:stadium/Robina_Stadium a kg:Stadium ;
+kg:capacity 24644 .
 
-res:match/NationsLeague2024GermanyVsBosnia a kg:Match ;
-kg:homeTeam res:team/GermanyNationalFootballTeam ;
-kg:awayTeam res:team/Bosnia ;
-kg:venue res:stadium/EuropaPark ;
-kg:kickoffTime "2024-11-16T20:45:00+01:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NationsLeague ;
-kg:inSeason res:season/2024 ;
-kg:result "Win" .
+res:stadium/Gelora_Bung_Karno a kg:Stadium ;
+kg:capacity 70059 .
 
-res:match/NationsLeague2024GermanyVsHungary a kg:Match ;
-kg:homeTeam res:team/GermanyNationalFootballTeam ;
-kg:awayTeam res:team/Hungary ;
-kg:venue res:stadium/PuskasArena ;
-kg:kickoffTime "2024-11-19T20:45:00+01:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NationsLeague ;
-kg:inSeason res:season/2024 ;
-kg:result "Draw" .
+res:stadium/Adelaide_Oval a kg:Stadium ;
+kg:capacity 46291 .
 
-res:match/NationsLeague2024ItalyVsGermany a kg:Match ;
-kg:homeTeam res:team/Italy ;
-kg:awayTeam res:team/GermanyNationalFootballTeam ;
-kg:venue res:stadium/SanSiro ;
-kg:kickoffTime "2025-03-20T20:45:00+01:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NationsLeague ;
-kg:inSeason res:season/2025 ;
-kg:result "Win" .
+res:stadium/Saitama_2002 a kg:Stadium ;
+kg:capacity 58730 .
 
-res:match/NationsLeague2024GermanyVsItaly a kg:Match ;
-kg:homeTeam res:team/GermanyNationalFootballTeam ;
-kg:awayTeam res:team/Italy ;
-kg:venue res:stadium/Westfalenstadion ;
-kg:kickoffTime "2025-03-23T20:45:00+01:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NationsLeague ;
-kg:inSeason res:season/2025 ;
-kg:result "Draw" .
+res:stadium/Melbourne_Rectangular_Stadium a kg:Stadium ;
+kg:capacity 27491 .
 
-res:match/NationsLeague2024PortugalVsGermany a kg:Match ;
-kg:homeTeam res:team/Portugal ;
-kg:awayTeam res:team/GermanyNationalFootballTeam ;
-kg:venue res:stadium/AllianzArena ;
-kg:kickoffTime "2025-06-04T21:00:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NationsLeague ;
-kg:inSeason res:season/2025 ;
-kg:result "Loss" .
+res:stadium/National_Stadium_Bahrain a kg:Stadium ;
+kg:capacity 6873 .
 
-res:match/NationsLeague2024FranceVsGermany a kg:Match ;
-kg:homeTeam res:team/France ;
-kg:awayTeam res:team/GermanyNationalFootballTeam ;
-kg:venue res:stadium/MHPArena ;
-kg:kickoffTime "2025-06-08T15:00:00+02:00"^^xsd:dateTime ;
-kg:inCompetition res:competition/NationsLeague ;
-kg:inSeason res:season/2025 ;
-kg:result "Loss" .
+res:player/Kusini_Yengi a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
 
-res:competition/NationsLeague a kg:Competition ;
-kg:
+res:player/Ajdin_Hrustic a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Craig_Goodwin a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Adam_Taggart a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Lewis_Miller a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Harry_Souttar a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Mathew_Leckie a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Nestory_Irankunda a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Daniel_Arzani a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Mitch_Duke a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Connor_Metcalfe a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Ajdin_Hrustic a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Cameron_Devlin a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Keanu_Baccus a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Jackson_Irvine a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia ;
+kg:isCaptain res:team/Australia .
+
+res:player/Josh_Nisbet a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Apostolos_Stamatelopoulos a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Martin_Boyle a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Adam_Taggart a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Kusini_Yengi a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Nestory_Irankunda a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Daniel_Arzani a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Mitch_Duke a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Mathew_Leckie a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Kye_Rowles a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Gethin_Jones a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Ryan_Strain a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Jordan_Bos a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Alessandro_Circati a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Aziz_Behich a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Harry_Souttar a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Cameron_Burgess a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Kye_Rowles a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Gareth_McCarthy a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Connor_Metcalfe a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Ajdin_Hrustic a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Cameron_Devlin a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Keanu_Baccus a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Jackson_Irvine a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia ;
+kg:isCaptain res:team/Australia .
+
+res:player/Josh_Nisbet a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Apostolos_Stamatelopoulos a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Martin_Boyle a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Adam_Taggart a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Kusini_Yengi a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Nestory_Irankunda a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Daniel_Arzani a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Mitch_Duke a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Mathew_Leckie a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Kye_Rowles a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Gethin_Jones a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Ryan_Strain a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Jordan_Bos a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Alessandro_Circati a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Aziz_Behich a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Harry_Souttar a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Cameron_Burgess a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Kye_Rowles a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Gareth_McCarthy a kg:Player, kg:Defender ;
+kg:playsFor res:team/Australia .
+
+res:player/Connor_Metcalfe a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Ajdin_Hrustic a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Cameron_Devlin a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Keanu_Baccus a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Jackson_Irvine a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia ;
+kg:isCaptain res:team/Australia .
+
+res:player/Josh_Nisbet a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Australia .
+
+res:player/Apostolos_Stamatelopoulos a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Martin_Boyle a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Adam_Taggart a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Kusini_Yengi a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Nestory_Irankunda a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Daniel_Arzani a kg:Player, kg:Forward ;
+kg:playsFor res:team/Australia .
+
+res:player/Mitch_Duke a kg:Player, kg:Forward ;
+kg:plays

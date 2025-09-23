@@ -1,0 +1,243 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Albania a kg:Team ;
+kg:teamName "Albania" ;
+kg:hasCoach res:coach/Sylvinho ;
+kg:hasCaptain res:player/Etrit_Berisha ;
+kg:teamAbbreviation "ALB" ;
+kg:manages kg:Coach ;
+kg:isCaptain kg:Player .
+
+res:coach/Sylvinho a kg:Coach ;
+kg:manages res:team/Albania .
+
+res:player/Etrit_Berisha a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 1 ;
+kg:isCaptain res:team/Albania .
+
+res:player/Lorik_Cana a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:mostCaps 93 .
+
+res:player/Erjon_Bogdani a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:topScorer 18 .
+
+res:stadium/Arena_Kombëtare a kg:Stadium ;
+kg:capacity 25000 ;
+kg:homeStadium res:team/Albania .
+
+res:club/Albania_Football_Association a kg:Club ;
+kg:foundedDate "1930-06-06"^^xsd:date .
+
+res:country/Albania a kg:Country ;
+kg:locatedIn res:country/Albania .
+
+res:competition/FIFA_World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" .
+
+res:competition/UEFA_Euro a kg:Competition ;
+kg:competitionName "UEFA Euro" .
+
+res:competition/UEFA_Nations_League a kg:Competition ;
+kg:competitionName "UEFA Nations League" .
+
+res:match/Albania_vs_Yugoslavia a kg:Match ;
+kg:homeTeam res:team/Albania ;
+kg:awayTeam res:team/Yugoslavia ;
+kg:kickoffTime "1946-10-07"^^xsd:date .
+
+res:match/Albania_vs_Cyprus a kg:Match ;
+kg:homeTeam res:team/Albania ;
+kg:awayTeam res:team/Cyprus ;
+kg:kickoffTime "2009-08-12"^^xsd:date .
+
+res:match/Albania_vs_Vietnam a kg:Match ;
+kg:homeTeam res:team/Albania ;
+kg:awayTeam res:team/Vietnam ;
+kg:kickoffTime "2003-02-12"^^xsd:date .
+
+res:match/Hungary_vs_Albania a kg:Match ;
+kg:homeTeam res:team/Hungary ;
+kg:awayTeam res:team/Albania ;
+kg:kickoffTime "1950-09-24"^^xsd:date .
+
+res:season/2016 a kg:Season ;
+kg:hasSeason res:competition/UEFA_Euro .
+
+res:season/2024 a kg:Season ;
+kg:hasSeason res:competition/UEFA_Euro .
+
+res:season/2018-19 a kg:Season ;
+kg:hasSeason res:competition/UEFA_Nations_League .
+
+res:season/2020-21 a kg:Season ;
+kg:hasSeason res:competition/UEFA_Nations_League .
+
+res:season/2022-23 a kg:Season ;
+kg:hasSeason res:competition/UEFA_Nations_League .
+
+res:player/Ivan_Balliu a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 2 .
+
+res:player/Mario_Mitaj a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 3 .
+
+res:player/Elseid_Hysaj a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 4 .
+
+res:player/Arlind_Ajeti a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 5 .
+
+res:player/Berat_Djimsiti a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 6 .
+
+res:player/Enea_Mihaj a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 13 .
+
+res:player/Ardian_Ismajli a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 18 .
+
+res:player/Marash_Kumbulla a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 24 .
+
+res:player/Naser_Aliji a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 25 .
+
+res:player/Klaus_Gjasula a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 8 .
+
+res:player/Nedim_Bajrami a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 10 .
+
+res:player/Qazim_Laci a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 14 .
+
+res:player/Meden_Berisha a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 16 .
+
+res:player/Ernest_Muci a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 17 .
+
+res:player/Ylber_Ramadani a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 20 .
+
+res:player/Kristjan_Asllani a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 21 .
+
+res:player/Amir_Abrashi a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 22 .
+
+res:player/Rey_Manaj a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 7 .
+
+res:player/Jasir_Asani a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 9 .
+
+res:player/Armando_Broja a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 11 .
+
+res:player/Taulant_Seferi a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 15 .
+
+res:player/Mirlind_Daku a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 19 .
+
+res:player/Arbër_Hoxha a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 26 .
+
+res:player/Simon_Simoni a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Goalkeeper .
+
+res:player/Alen_Sherri a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Goalkeeper .
+
+res:player/Frédéric_Veseli a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Defender .
+
+res:player/Jon_Mersinaj a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Defender .
+
+res:player/Keidi_Bare a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Odise_Roshi a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Sokol_Cikalleshi a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Forward .
+
+res:player/Arbnor_Muçolli a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Forward .
+
+res:player/Myrto_Uzuni a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Forward .
+
+res:player/Arbnor_Muja a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Forward .
+
+res:player/Marvin_Çuni a kg:Player ;
+kg:playsFor res:team/Albania ;
+kg:primaryPosition kg:Forward .

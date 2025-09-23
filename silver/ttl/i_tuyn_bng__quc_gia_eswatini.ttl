@@ -1,0 +1,200 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Eswatini a kg:Team ;
+kg:teamName "Eswatini" ;
+kg:teamAbbreviation "SWZ" ;
+kg:hasCoach res:person/Dominic_Kunene ;
+kg:hasCaptain res:player/Siyabonga_Mdluli ;
+kg:locatedIn res:country/Eswatini .
+
+res:player/Siyabonga_Mdluli a kg:Player ;
+kg:isCaptain res:team/Eswatini .
+
+res:person/Dominic_Kunene a kg:Coach ;
+kg:manages res:team/Eswatini .
+
+res:team/Eswatini kg:playsFor res:club/Hoạt_động_của_Hiệp_hội_bóng_đá_Eswatini .
+
+res:country/Eswatini a kg:Country .
+
+res:club/Hoạt_động_của_Hiệp_hội_bóng_đá_Eswatini a kg:Club ;
+kg:locatedIn res:country/Eswatini .
+
+res:stadium/Somhlolo_National_Stadium a kg:Stadium ;
+kg:isHomeOf res:club/Hoạt_động_của_Hiệp_hội_bóng_đá_Eswatini .
+
+res:stadium/Mavuso_Sports_Center a kg:Stadium ;
+kg:isHomeOf res:club/Hoạt_động_của_Hiệp_hội_bóng_đá_Eswatini .
+
+res:player/Tony_Tsabedze a kg:Player ;
+kg:mostCaps res:team/Eswatini ;
+kg:totalCaps 71 .
+
+res:player/Felix_Badenhorst a kg:Player ;
+kg:topScorer res:team/Eswatini ;
+kg:totalGoals 14 .
+
+res:player/Ncamiso_Dlamini a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:club/Royal_Leopards_F.C. ;
+kg:birthDate "1989-10-19"^^xsd:date ;
+kg:totalCaps 2 .
+
+res:player/Mathabela_Sandanezwe a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:club/Mbabane_Swallows_F.C. ;
+kg:birthDate "1989-09-09"^^xsd:date ;
+kg:totalCaps 19 .
+
+res:player/Khanyakwezwe_Shabalala a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:club/Mbabane_Highlanders_F.C. ;
+kg:birthDate "1993-09-23"^^xsd:date ;
+kg:totalCaps 1 .
+
+res:player/Siboniso_Mamba a kg:Player, kg:Defender ;
+kg:playsFor res:club/Young_Buffaloes_F.C. ;
+kg:birthDate "1991-02-24"^^xsd:date ;
+kg:totalCaps 19 ;
+kg:totalGoals 2 .
+
+res:player/Lindo_Mkhonta a kg:Player, kg:Defender ;
+kg:playsFor res:club/Young_Buffaloes_F.C. ;
+kg:birthDate "1991-04-10"^^xsd:date ;
+kg:totalCaps 21 .
+
+res:player/Sihlangu_Mkhwanazi a kg:Player, kg:Defender ;
+kg:playsFor res:club/Young_Buffaloes_F.C. ;
+kg:birthDate "1989-09-28"^^xsd:date ;
+kg:totalCaps 2 .
+
+res:player/Mlamuli_Msibi a kg:Player, kg:Defender ;
+kg:playsFor res:club/Royal_Leopards_F.C. ;
+kg:birthDate "1997-08-19"^^xsd:date ;
+kg:totalCaps 1 .
+
+res:player/Sanele_Tshawuka a kg:Player, kg:Defender ;
+kg:playsFor res:club/Green_Mamba_F.C. ;
+kg:birthDate "1990-02-11"^^xsd:date ;
+kg:totalCaps 4 .
+
+res:player/Sandile_Gamedze a kg:Player, kg:Midfielder ;
+kg:playsFor res:club/Young_Buffaloes_F.C. ;
+kg:birthDate "1994-12-03"^^xsd:date ;
+kg:totalCaps 15 ;
+kg:totalGoals 2 .
+
+res:player/Mzwandile_Mabelesa a kg:Player, kg:Midfielder ;
+kg:playsFor res:club/Royal_Leopards_F.C. ;
+kg:birthDate "1993-04-21"^^xsd:date ;
+kg:totalCaps 5 .
+
+res:player/Sifiso_Matse a kg:Player, kg:Midfielder ;
+kg:playsFor res:club/Royal_Leopards_F.C. ;
+kg:birthDate "1993-05-14"^^xsd:date ;
+kg:totalCaps 16 ;
+kg:totalGoals 1 .
+
+res:player/Siboniso_Ngwenya a kg:Player, kg:Midfielder ;
+kg:playsFor res:club/Young_Buffaloes_F.C. ;
+kg:birthDate "1994-05-03"^^xsd:date ;
+kg:totalCaps 14 .
+
+res:player/Wandile_Shabangu a kg:Player, kg:Midfielder ;
+kg:playsFor res:club/Young_Buffaloes_F.C. ;
+kg:birthDate "1991-11-18"^^xsd:date ;
+kg:totalCaps 9 .
+
+res:player/Njabulo_Thwala a kg:Player, kg:Midfielder ;
+kg:playsFor res:club/Green_Mamba_F.C. ;
+kg:birthDate "1990-02-02"^^xsd:date ;
+kg:totalCaps 1 .
+
+res:player/Phiwayinkhosi_Dlamini a kg:Player, kg:Forward ;
+kg:playsFor res:club/Young_Buffaloes_F.C. ;
+kg:birthDate "1990-01-20"^^xsd:date ;
+kg:totalCaps 10 .
+
+res:player/Sidumo_Dlamini a kg:Player, kg:Forward ;
+kg:playsFor res:club/Royal_Leopards_F.C. ;
+kg:totalCaps 2 .
+
+res:player/Fanelo_Mamba a kg:Player, kg:Forward ;
+kg:playsFor res:club/Young_Buffaloes_F.C. ;
+kg:birthDate "2001-10-29"^^xsd:date ;
+kg:totalCaps 13 ;
+kg:totalGoals 1 .
+
+res:player/Sabelo_Ndzinisa a kg:Player, kg:Forward ;
+kg:playsFor res:club/Mbabane_Highlanders_F.C. ;
+kg:birthDate "1991-07-31"^^xsd:date ;
+kg:totalCaps 36 ;
+kg:totalGoals 7 .
+
+res:player/Nhlanhla_Ngwenya a kg:Player, kg:Forward ;
+kg:playsFor res:club/Mbabane_Swallows_F.C. ;
+kg:totalCaps 0 .
+
+res:player/Muzi_Tsabedze a kg:Player, kg:Forward ;
+kg:playsFor res:club/Manzini_Sea_Birds_F.C. ;
+kg:birthDate "1998-09-23"^^xsd:date ;
+kg:totalCaps 1 .
+
+res:player/Nhlanhla_Gwebu a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:club/Young_Buffaloes_F.C. ;
+kg:birthDate "1986-11-11"^^xsd:date ;
+kg:totalCaps 30 .
+
+res:player/Sikhumbuzo_Ntimane a kg:Player, kg:Defender ;
+kg:playsFor res:club/Royal_Leopards_F.C. ;
+kg:birthDate "1989-02-18"^^xsd:date ;
+kg:totalCaps 11 .
+
+res:player/Wandile_Maseko a kg:Player, kg:Defender ;
+kg:playsFor res:club/Young_Buffaloes_F.C. ;
+kg:birthDate "1991-02-24"^^xsd:date ;
+kg:totalCaps 5 .
+
+res:player/Felix_Badenhorst a kg:Player, kg:Midfielder ;
+kg:playsFor res:club/TS_Galaxy_Kameelrivier ;
+kg:birthDate "1989-06-12"^^xsd:date ;
+kg:totalCaps 35 ;
+kg:totalGoals 13 .
+
+res:player/Sibonginkhosi_Gamedze a kg:Player, kg:Midfielder ;
+kg:playsFor res:club/Mbabane_Highlanders_F.C. ;
+kg:birthDate "1993-12-26"^^xsd:date ;
+kg:totalCaps 22 ;
+kg:totalGoals 1 .
+
+res:player/Lindo_Mkhonta a kg:Player, kg:Defender, kg:Captain ;
+kg:playsFor res:club/Young_Buffaloes_F.C. ;
+kg:birthDate "1991-04-10"^^xsd:date ;
+kg:totalCaps 21 .
+
+res:player/Bonginkosi_Dlamini a kg:Player, kg:Forward ;
+kg:playsFor res:club/Royal_Leopards_F.C. ;
+kg:birthDate "1990-11-20"^^xsd:date ;
+kg:totalCaps 10 ;
+kg:totalGoals 1 .
+
+res:club/Royal_Leopards_F.C. a kg:Club ;
+kg:locatedIn res:country/Eswatini .
+
+res:club/Mbabane_Swallows_F.C. a kg:Club ;
+kg:locatedIn res:country/Eswatini .
+
+res:club/Mbabane_Highlanders_F.C. a kg:Club ;
+kg:locatedIn res:country/Eswatini .
+
+res:club/Young_Buffaloes_F.C. a kg:Club ;
+kg:locatedIn res:country/Eswatini .
+
+res:club/Green_Mamba_F.C. a kg:Club ;
+kg:locatedIn res:country/Eswatini .
+
+res:club/Manzini_Sea_Birds_F.C. a kg:Club ;
+kg:locatedIn res:country/Eswatini .
+
+res:club/TS_Galaxy_Kameelrivier a kg:Club ;
+kg:locatedIn res:country/South_Africa .

@@ -1,0 +1,354 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Comoros a kg:Team ;
+kg:teamName "Comoros" ;
+kg:hasCoach res:person/Stefano_Cusin ;
+kg:hasCaptain res:player/Mohamed_Youssouf ;
+kg:homeStadium res:stadium/San_Van_Dong_The_Thao_Malouzini ;
+kg:teamAbbreviation "COM" ;
+kg:participatesIn res:season/CAN_2021 ;
+kg:participatesIn res:season/CAN_2023 ;
+kg:participatesIn res:season/CAN_2025 ;
+kg:participatesIn res:season/CAN_2027 .
+
+res:person/Stefano_Cusin a kg:Coach ;
+kg:manages res:team/Comoros .
+
+res:player/Mohamed_Youssouf a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:isCaptain res:team/Comoros ;
+kg:shirtNumber 19 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1988-03-26"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:stadium/San_Van_Dong_The_Thao_Malouzini a kg:Stadium ;
+kg:isHomeOf res:team/Comoros .
+
+res:season/CAN_2021 a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations ;
+kg:participantCount 24 .
+
+res:competition/Africa_Cup_of_Nations a kg:Competition ;
+kg:competitionName "Africa Cup of Nations" .
+
+res:season/CAN_2023 a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations .
+
+res:season/CAN_2025 a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations .
+
+res:season/CAN_2027 a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations .
+
+res:player/Youssouf_M'Changama a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 10 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1990-08-29"^^xsd:date ;
+kg:nationality res:country/Comoros ;
+kg:topScorerInTeam true .
+
+res:player/El_Fardou_Ben_Nabouhane a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 21 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1989-06-10"^^xsd:date ;
+kg:nationality res:country/Comoros ;
+kg:topScorerInTeam true .
+
+res:player/Kassim_Abdallah a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 2 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1987-04-09"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Chaker_Alhadhur a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 3 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1991-12-04"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Younn_Zahary a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 4 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1998-10-20"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Abdallah_Ali_Mohamed a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 5 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1999-04-11"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Nadjim_Abdou a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 6 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1984-07-13"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Kassim_MDahoma a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 12 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1997-01-26"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Benjaloud_Youssouf a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 15 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1994-02-11"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Mohamed_Youssouf a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 19 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1988-03-26"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Kassim_Ahamada a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 27 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1992-04-18"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Alexis_Souahy a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 28 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1995-01-13"^^xsd:date ;
+kg:nationality res:country/United_States .
+
+res:player/Fouad_Bachirou a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 8 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1990-04-15"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Youssouf_M'Changama a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 10 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1990-08-29"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Nakibou_Aboubakari a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 11 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1993-03-10"^^xsd:date ;
+kg:nationality res:country/Comoros .
+
+res:player/Rafidine_Abdullah a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 13 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1994-01-15"^^xsd:date ;
+kg:nationality res:country/Switzerland .
+
+res:player/Yacine_Bourhane a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 18 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1998-09-30"^^xsd:date ;
+kg:nationality res:country/Netherlands .
+
+res:player/Iyad_Mohamed a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 26 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2001-03-05"^^xsd:date ;
+kg:nationality res:country/France .
+
+res:player/Faïz_Selemani a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 7 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1993-11-14"^^xsd:date ;
+kg:nationality res:country/Belgium .
+
+res:player/Mohamed_M'Changama a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 9 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1997-08-05"^^xsd:date ;
+kg:nationality res:country/France .
+
+res:player/Ali_M'Madi a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 14 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1990-04-21"^^xsd:date ;
+kg:nationality res:country/France .
+
+res:player/Ibroihim_Djoudja a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 17 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1994-05-06"^^xsd:date ;
+kg:nationality res:country/Namibia .
+
+res:player/Ahmed_Mogni a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 20 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1991-10-10"^^xsd:date ;
+kg:nationality res:country/France .
+
+res:player/El_Fardou_Ben_Nabouhane a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 21 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1989-06-10"^^xsd:date ;
+kg:nationality res:country/France .
+
+res:player/Saïd_Bakari a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 22 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1994-09-22"^^xsd:date ;
+kg:nationality res:country/Netherlands .
+
+res:player/Faiz_Mattoir a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 24 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2000-07-12"^^xsd:date ;
+kg:nationality res:country/France .
+
+res:player/Moussa_Djoumoi a kg:Player ;
+kg:playsFor res:team/Comoros ;
+kg:shirtNumber 25 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1999-07-16"^^xsd:date ;
+kg:nationality res:country/France .
+
+res:country/Comoros a kg:Country ;
+kg:locatedIn res:region/Africa .
+
+res:region/Africa a kg:Region .
+
+res:match/First_International_Game a kg:Match ;
+kg:homeTeam res:team/Comoros ;
+kg:awayTeam res:team/Mauritius ;
+kg:kickoffTime "1978-08-26"^^xsd:date .
+
+res:match/Largest_Win a kg:Match ;
+kg:homeTeam res:team/Comoros ;
+kg:awayTeam res:team/Djibouti ;
+kg:kickoffTime "2006-12-17"^^xsd:date .
+
+res:match/Largest_Loss a kg:Match ;
+kg:homeTeam res:team/Madagascar ;
+kg:awayTeam res:team/Comoros ;
+kg:kickoffTime "1978-08-31"^^xsd:date .
+
+res:match/Largest_Loss_2 a kg:Match ;
+kg:homeTeam res:team/Madagascar ;
+kg:awayTeam res:team/Comoros ;
+kg:kickoffTime "1992-08-20"^^xsd:date .
+
+res:match/Largest_Loss_3 a kg:Match ;
+kg:homeTeam res:team/Mauritius ;
+kg:awayTeam res:team/Comoros ;
+kg:kickoffTime "2003-09-04"^^xsd:date .
+
+res:competition/Africa_Cup_of_Nations a kg:Competition ;
+kg:competitionName "Africa Cup of Nations" ;
+kg:heldIn res:country/Comoros ;
+kg:organizes res:season/CAN_2021 ;
+kg:organizes res:season/CAN_2023 ;
+kg:organizes res:season/CAN_2025 ;
+kg:organizes res:season/CAN_2027 .
+
+res:season/CAN_2021 a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations ;
+kg:participantCount 24 .
+
+res:season/CAN_2023 a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations .
+
+res:season/CAN_2025 a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations .
+
+res:season/CAN_2027 a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations .
+
+res:club/FC_Martigues a kg:Club ;
+kg:homeStadium res:stadium/San_Van_Dong_The_Thao_Malouzini ;
+kg:isHomeOf res:stadium/San_Van_Dong_The_Thao_Malouzini .
+
+res:club/Ajaccio a kg:Club ;
+kg:isHomeOf res:stadium/Ajaccio_Stadium .
+
+res:club/Stade_Lausanne_Ouchy a kg:Club ;
+kg:isHomeOf res:stadium/Stade_Lausanne_Ouchy .
+
+res:club/FC_Stade_Lausanne_Ouchy a kg:Club ;
+kg:isHomeOf res:stadium/Stade_Lausanne_Ouchy .
+
+res:club/Le_Mans_FC a kg:Club ;
+kg:isHomeOf res:stadium/Le_Mans_Stadium .
+
+res:club/Guingamp a kg:Club ;
+kg:isHomeOf res:stadium/Guingamp_Stadium .
+
+res:club/Omonia a kg:Club ;
+kg:isHomeOf res:stadium/Omonia_Stadium .
+
+res:club/Antwerp a kg:Club ;
+kg:isHomeOf res:stadium/Antwerp_Stadium .
+
+res:club/FC_Nouadhibou a kg:Club ;
+kg:isHomeOf res:stadium/FC_Nouadhibou_Stadium .
+
+res:club/AS_Saint-Priest a kg:Club ;
+kg:isHomeOf res:stadium/AS_Saint-Priest_Stadium .
+
+res:club/Go_Ahead_Eagles a kg:Club ;
+kg:isHomeOf res:stadium/Go_Ahead_Eagles_Stadium .
+
+res:club/Ancoub_Mze_Ali a kg:Club ;
+kg:isHomeOf res:stadium/Villefranche_Saint-Jean_Beaulieu_FC_Stadium .
+
+res:club/Marseille a kg:Club ;
+kg:isHomeOf res:stadium/Marseille_Stadium .
+
+res:club/AS_Gémenosienne a kg:Club ;
+kg:isHomeOf res:stadium/AS_Gémenosienne_Stadium .
+
+res:club/Gaz_Metan_Mediaș a kg:Club ;
+kg:isHomeOf res:stadium/Gaz_Metan_Mediaș_Stadium .
+
+res:club/Red_Star_Belgrade a kg:Club ;
+kg:isHomeOf res:stadium/Red_Star_Belgrade_Stadium .
+
+res:club/Annecy_FC a kg:Club ;
+kg:isHomeOf res:stadium/Annecy_FC_Stadium .
+
+res:club/RKC_Waalwijk a kg:Club ;
+kg:isHomeOf res:stadium/RKC_Waalwijk_Stadium .
+
+res:club/K.V._Kortrijk a kg:Club ;
+kg:isHomeOf res:stadium/K.V._Kortrijk_Stadium .
+
+res:club/African_Stars_F.C. a kg:Club ;
+kg:isHomeOf res:stadium/African_Stars_F.C._Stadium .
+
+res:club/FC_Marignane_Gignac a kg:Club ;
+kg:isHomeOf res:stadium/FC_Marignane_Gignac_Stadium .
+
+res:club/US_Zil

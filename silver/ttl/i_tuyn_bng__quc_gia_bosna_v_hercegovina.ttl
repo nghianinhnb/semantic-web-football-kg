@@ -1,0 +1,337 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Bosnia%20v%C3%A0%20Hercegovina a kg:teamName "Bosnia và Hercegovina" ;
+a kg:Team ;
+kg:hasCoach res:coach/Mehmed%20Ba%E1%BA%ADzdar%E1%BB%87vi%C4%87 ;
+kg:hasCaptain res:player/Edin%20D%C3%B6zo ;
+kg:homeStadium res:stadium/S%C3%A2n%20v%E1%BA%A5n%20đ%E1%BB%99ng%20Grbavica , res:stadium/S%C3%A2n%20v%E1%BA%A5n%20đ%E1%BB%99ng%20Bilino%20Polje ;
+kg:teamAbbreviation "BIH" ;
+kg:locatedIn res:country/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:country/Bosnia%20v%C3%A0%20Hercegovina a kg:Country ;
+rdfs:label "Bosnia và Hercegovina" .
+
+res:coach/Mehmed%20Ba%E1%BA%ADzdar%E1%BB%87vi%C4%87 a kg:Coach ;
+kg:manages res:team/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:player/Edin%20D%C3%B6zo a kg:Player ;
+kg:playsFor res:team/Bosnia%20v%C3%A0%20Hercegovina ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 11 ;
+kg:birthDate "1986-03-17"^^xsd:date ;
+kg:birthPlace res:city/Sarajevo ;
+kg:nationality res:country/Bosnia%20v%C3%A0%20Hercegovina ;
+kg:height "188"^^xsd:decimal ;
+kg:weight "78"^^xsd:decimal ;
+kg:preferredFoot kg:RightFooted ;
+kg:hasTeam res:team/Bosnia%20v%C3%A0%20Hercegovina ;
+kg:isCaptain res:team/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:stadium/S%C3%A2n%20v%E1%BA%A5n%20đ%E1%BB%99ng%20Grbavica a kg:Stadium ;
+kg:capacity "33000"^^xsd:positiveInteger ;
+kg:isHomeOf res:team/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:stadium/S%C3%A2n%20v%E1%BA%A5n%20đ%E1%BB%99ng%20Bilino%20Polje a kg:Stadium ;
+kg:capacity "30000"^^xsd:positiveInteger ;
+kg:isHomeOf res:team/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:position/Forward a kg:Forward ;
+rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Defender ;
+rdfs:subClassOf kg:Position .
+
+res:position/Midfielder a kg:Midfielder ;
+rdfs:subClassOf kg:Position .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+rdfs:subClassOf kg:Position .
+
+res:team/Bosnia%20v%C3%A0%20Hercegovina kg:participatesIn res:season/UEFA%20Nations%20League%202018-19 , res:season/UEFA%20Nations%20League%202020-21 , res:season/UEFA%20Nations%20League%202022-23 .
+
+res:season/UEFA%20Nations%20League%202018-19 a kg:Season ;
+kg:seasonOf res:competition/UEFA%20Nations%20League .
+
+res:competition/UEFA%20Nations%20League a kg:Competition ;
+kg:competitionName "UEFA Nations League" ;
+kg:organizes res:organization/UEFA .
+
+res:organization/UEFA a kg:Organization ;
+kg:locatedIn res:country/Europe .
+
+res:match/First%20International%20Game a kg:Match ;
+kg:homeTeam res:team/Bosnia%20v%C3%A0%20Hercegovina ;
+kg:awayTeam res:team/Iran ;
+kg:kickoffTime "1993-06-06T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/FIFA%20World%20Cup ;
+kg:inSeason res:season/1993 .
+
+res:match/First%20FIFA%20Game a kg:Match ;
+kg:homeTeam res:team/Albania ;
+kg:awayTeam res:team/Bosnia%20v%C3%A0%20Hercegovina ;
+kg:kickoffTime "1995-11-30T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/FIFA%20World%20Cup ;
+kg:inSeason res:season/1995 .
+
+res:match/Largest%20Win a kg:Match ;
+kg:homeTeam res:team/Bosnia%20v%C3%A0%20Hercegovina ;
+kg:awayTeam res:team/Estonia ;
+kg:kickoffTime "2008-09-10T00:00:00"^^xsd:dateTime ;
+kg:score "7-0" ;
+kg:inCompetition res:competition/FIFA%20World%20Cup .
+
+res:match/Largest%20Loss a kg:Match ;
+kg:homeTeam res:team/Germany ;
+kg:awayTeam res:team/Bosnia%20v%C3%A0%20Hercegovina ;
+kg:kickoffTime "2024-11-16T00:00:00"^^xsd:dateTime ;
+kg:score "7-0" ;
+kg:inCompetition res:competition/FIFA%20World%20Cup .
+
+res:competition/FIFA%20World%20Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" ;
+kg:organizes res:organization/FIFA .
+
+res:organization/FIFA a kg:Organization ;
+kg:locatedIn res:country/Switzerland .
+
+res:season/1993 a kg:Season ;
+kg:hasSeason res:competition/FIFA%20World%20Cup .
+
+res:season/1995 a kg:Season ;
+kg:hasSeason res:competition/FIFA%20World%20Cup .
+
+res:season/2008 a kg:Season ;
+kg:hasSeason res:competition/FIFA%20World%20Cup .
+
+res:season/2024 a kg:Season ;
+kg:hasSeason res:competition/FIFA%20World%20Cup .
+
+res:club/Kelme a kg:Club ;
+kg:foundedDate "2023-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/S%C3%A2n%20v%E1%BA%A5n%20đ%E1%BB%99ng%20Grbavica .
+
+res:club/AEK%20Larnaca a kg:Club ;
+kg:locatedIn res:country/Cyprus .
+
+res:club/FC%20St.%20Pauli a kg:Club ;
+kg:locatedIn res:country/Germany .
+
+res:club/Olympique%20de%20Marseille a kg:Club ;
+kg:locatedIn res:country/France .
+
+res:club/Ferencv%C3%A1rosi%20TC a kg:Club ;
+kg:locatedIn res:country/Hungary .
+
+res:club/APOEL%20FC a kg:Club ;
+kg:locatedIn res:country/Cyprus .
+
+res:club/FC%20Red%20Bull%20Salzburg a kg:Club ;
+kg:locatedIn res:country/Austria .
+
+res:club/Aalesunds%20FK a kg:Club ;
+kg:locatedIn res:country/Norway .
+
+res:club/Standard%20Li%C3%A8ge a kg:Club ;
+kg:locatedIn res:country/Belgium .
+
+res:club/Hansa%20Rostock a kg:Club ;
+kg:locatedIn res:country/Germany .
+
+res:club/Servette%20FC a kg:Club ;
+kg:locatedIn res:country/Switzerland .
+
+res:club/Konyaspor a kg:Club ;
+kg:locatedIn res:country/Turkey .
+
+res:club/Inter%20Milan a kg:Club ;
+kg:locatedIn res:country/Italy .
+
+res:club/K.A.S.%20Eupen a kg:Club ;
+kg:locatedIn res:country/Belgium .
+
+res:club/FC%20Augsburg a kg:Club ;
+kg:locatedIn res:country/Germany .
+
+res:club/Feh%C3%A9rv%C3%A1r%20FC a kg:Club ;
+kg:locatedIn res:country/Hungary .
+
+res:club/Palermo%20FC a kg:Club ;
+kg:locatedIn res:country/Italy .
+
+res:club/Rak%C3%B3w%20C%C5%82estochowa a kg:Club ;
+kg:locatedIn res:country/Poland .
+
+res:club/FK%20Sarajevo a kg:Club ;
+kg:locatedIn res:country/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:club/H%C5%8Dsko%20Zrinjski%20Mostar a kg:Club ;
+kg:locatedIn res:country/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:club/FK%20Tuzla%20City a kg:Club ;
+kg:locatedIn res:country/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:club/St.%20Louis%20City%20SC a kg:Club ;
+kg:locatedIn res:country/United%20States .
+
+res:club/RWDM47 a kg:Club ;
+kg:locatedIn res:country/Belgium .
+
+res:club/NK%20Radomlje a kg:Club ;
+kg:locatedIn res:country/Slovenia .
+
+res:club/NK%20Lokomotiva a kg:Club ;
+kg:locatedIn res:country/Croatia .
+
+res:club/HNK%20Gorica a kg:Club ;
+kg:locatedIn res:country/Croatia .
+
+res:club/SV%20Sandhausen a kg:Club ;
+kg:locatedIn res:country/Germany .
+
+res:club/GNK%20Dinamo%20Zagreb a kg:Club ;
+kg:locatedIn res:country/Croatia .
+
+res:club/Malmoe%20FF a kg:Club ;
+kg:locatedIn res:country/Sweden .
+
+res:club/PFC%20Krylia%20Sovetov%20Samara a kg:Club ;
+kg:locatedIn res:country/Russia .
+
+res:club/NK%20%C5%A0iroki%20Brijeg a kg:Club ;
+kg:locatedIn res:country/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:club/NK%20Olimpija%20Ljubljana a kg:Club ;
+kg:locatedIn res:country/Slovenia .
+
+res:club/FK%20Velez%20Mostar a kg:Club ;
+kg:locatedIn res:country/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:club/FK%20Sloboda%20Tuzla a kg:Club ;
+kg:locatedIn res:country/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:club/FK%20Borac%20Banja%20Luka a kg:Club ;
+kg:locatedIn res:country/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:club/FC%20Torpedo%20Moscow a kg:Club ;
+kg:locatedIn res:country/Russia .
+
+res:club/Suwon%20Samsung%20Bluewings a kg:Club ;
+kg:locatedIn res:country/South%20Korea .
+
+res:club/K.V.%20Kortrijk a kg:Club ;
+kg:locatedIn res:country/Belgium .
+
+res:club/HNK%20Rijeka a kg:Club ;
+kg:locatedIn res:country/Croatia .
+
+res:club/Western%20Sydney%20Wanderers a kg:Club ;
+kg:locatedIn res:country/Australia .
+
+res:city/Sarajevo a kg:City ;
+kg:locatedIn res:country/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:city/Zenica a kg:City ;
+kg:locatedIn res:country/Bosnia%20v%C3%A0%20Hercegovina .
+
+res:city/Vaduz a kg:City ;
+kg:locatedIn res:country/Liechtenstein .
+
+res:country/Iran a kg:Country ;
+rdfs:label "Iran" .
+
+res:country/Albania a kg:Country ;
+rdfs:label "Albania" .
+
+res:country/Estonia a kg:Country ;
+rdfs:label "Estonia" .
+
+res:country/Germany a kg:Country ;
+rdfs:label "Germany" .
+
+res:country/Liechtenstein a kg:Country ;
+rdfs:label "Liechtenstein" .
+
+res:country/Finland a kg:Country ;
+rdfs:label "Finland" .
+
+res:country/USA a kg:Country ;
+rdfs:label "United States" .
+
+res:country/Ukraine a kg:Country ;
+rdfs:label "Ukraine" .
+
+res:country/Luxembourg a kg:Country ;
+rdfs:label "Luxembourg" .
+
+res:country/Kazakhstan a kg:Country ;
+rdfs:label "Kazakhstan" .
+
+res:country/Russia a kg:Country ;
+rdfs:label "Russia" .
+
+res:country/Slovenia a kg:Country ;
+rdfs:label "Slovenia" .
+
+res:country/Croatia a kg:Country ;
+rdfs:label "Croatia" .
+
+res:country/Belgium a kg:Country ;
+rdfs:label "Belgium" .
+
+res:country/Hungary a kg:Country ;
+rdfs:label "Hungary" .
+
+res:country/Austria a kg:Country ;
+rdfs:label "Austria" .
+
+res:country/Italy a kg:Country ;
+rdfs:label "Italy" .
+
+res:country/Turkey a kg:Country ;
+rdfs:label "Turkey" .
+
+res:country/Switzerland a kg:Country ;
+rdfs:label "Switzerland" .
+
+res:country/France a kg:Country ;
+rdfs:label "France" .
+
+res:country/Sweden a kg:Country ;
+rdfs:label "Sweden" .
+
+res:country/Spain a kg:Country ;
+rdfs:label "Spain" .
+
+res:country/Portugal a kg:Country ;
+rdfs:label "Portugal" .
+
+res:country/Brazil a kg:Country ;
+rdfs:label "Brazil" .
+
+res:country/Mexico a kg:Country ;
+rdfs:label "Mexico" .
+
+res:country/Canada a kg:Country ;
+rdfs:label "Canada" .
+
+res:country/Qatar a kg:Country ;
+rdfs:label "Qatar" .
+
+res:country/Morocco a kg:Country ;
+rdfs:label "Morocco" .
+
+res:country/Portugal a kg:Country ;
+rdfs:label "Portugal" .
+
+res:country/Spain a kg:Country ;
+rdfs:label "Spain" .
+
+res:country/Argentina a kg:Country ;
+rdfs:label "Argentina" .
+
+res:country/Nigeria a kg:Country ;
+rdfs:label "Nigeria" .

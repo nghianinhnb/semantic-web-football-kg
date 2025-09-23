@@ -75,6 +75,13 @@ CÁC CLASS CHÍNH:
 - kg:Referee
 - kg:Owner
 
+# Other
+- kg:Footedness - rdfs:subClassOf schema:Enumeration
+- kg:LeftFooted - rdfs:subClassOf kg:Footedness
+- kg:RightFooted - rdfs:subClassOf kg:Footedness
+- kg:BothFooted - rdfs:subClassOf kg:Footedness
+- kg:AgeGroup - rdfs:subClassOf schema:Enumeration
+
 # Geographic
 - kg:Place - rdfs:subClassOf schema:Place
 - kg:City - rdfs:subClassOf kg:Place
@@ -98,12 +105,15 @@ CÁC PROPERTY CHÍNH:
 - kg:height - domain: kg:Player, range: xsd:decimal
 - kg:weight - domain: kg:Player, range: xsd:decimal
 - kg:shirtNumber - domain: kg:Player, range: xsd:positiveInteger
+- kg:preferredFoot - domain: kg:Player, range: kg:Footedness
 
 # Team Properties
 - kg:teamName - domain: kg:Team, range: xsd:string
 - kg:teamAbbreviation - domain: kg:Team, range: xsd:string
 - kg:hasCoach - domain: kg:Team, range: kg:Coach
 - kg:manages - domain: kg:Coach, range: kg:Team
+- kg:hasCaptain - domain: kg:Team, range: kg:Player
+- kg:isCaptain - domain: kg:Player, range: kg:Team
 
 # Club Properties
 - kg:foundedDate - domain: kg:Club, range: xsd:date
@@ -114,6 +124,10 @@ CÁC PROPERTY CHÍNH:
 
 # Stadium Properties
 - kg:capacity - domain: kg:Stadium, range: xsd:positiveInteger
+- kg:homeStadium - domain: kg:Club, range: kg:Stadium
+- kg:isHomeOf - domain: kg:Stadium, range: kg:Club
+- kg:owns - domain: kg:Owner, range: kg:Club
+- kg:hasOwner - domain: kg:Club, range: kg:Owner
 
 # Match Properties
 - kg:homeTeam - domain: kg:Match, range: kg:Team
@@ -153,7 +167,7 @@ QUY TẮC TRÍCH XUẤT:
    - res:season/Mua_Giai
    - res:match/Trận_Đấu
 
-1. Sử dụng đúng class và property từ ontology trên
+1. Chỉ sử dụng class và property từ ontology trên, không bịa ra thêm.
 2. Giá trị ngày tháng dùng format xsd:date
 3. Giá trị số dùng xsd:decimal hoặc xsd:positiveInteger
 4. Giá trị chuỗi dùng xsd:string

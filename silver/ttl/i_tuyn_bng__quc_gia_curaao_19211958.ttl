@@ -1,0 +1,7 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Cura%C3%A7ao (1921%E2%80%931958) a kg:Team ;
+kg:teamName "Curaçao (1921–1958)"^^xsd:string .

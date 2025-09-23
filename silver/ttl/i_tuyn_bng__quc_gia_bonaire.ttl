@@ -1,0 +1,55 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Bonaire a kg:Team ;
+kg:teamName "Bonaire" ;
+kg:hasCoach res:coach/Ferdinand_Bernabela .
+
+res:coach/Ferdinand_Bernabela a kg:Coach ;
+kg:manages res:team/Bonaire .
+
+res:team/Bonaire kg:teamAbbreviation "BOE" .
+
+res:team/Bonaire kg:homeStadium res:stadium/Sân_vận_động_Municipal .
+
+res:stadium/Sân_vận_động_Municipal a kg:Stadium ;
+kg:isHomeOf res:team/Bonaire .
+
+res:team/Bonaire kg:FIFARank ?FIFARank ;  # Placeholder for dynamic value
+kg:EloRank ?EloRank ;                  # Placeholder for dynamic value
+kg:EloMax "190"^^xsd:positiveInteger ;
+kg:EloMin "201"^^xsd:positiveInteger ;
+kg:EloMinDate "2012-07-07"^^xsd:date .
+
+res:team/Bonaire kg:MostCaps "3"^^xsd:positiveInteger ;
+kg:TopScorer res:player/Suehendley_Barzey , res:player/Yurick_Seinpaal .
+
+res:player/Suehendley_Barzey a kg:Player ;
+kg:topScorerFor res:team/Bonaire .
+
+res:player/Yurick_Seinpaal a kg:Player ;
+kg:topScorerFor res:team/Bonaire .
+
+res:team/Bonaire kg:LargestWin res:match/Bonaire_3_1_Curaçao ;
+kg:LargestLoss res:match/Suriname_8_0_Bonaire ;
+kg:FirstGame res:match/Curaçao_4_0_Bonaire .
+
+res:match/Curaçao_4_0_Bonaire a kg:Match ;
+kg:homeTeam res:team/Curaçao ;
+kg:awayTeam res:team/Bonaire ;
+kg:kickoffTime "2010-02-28"^^xsd:date ;
+kg:venue res:stadium/Willemstad .
+
+res:match/Bonaire_3_1_Curaçao a kg:Match ;
+kg:homeTeam res:team/Bonaire ;
+kg:awayTeam res:team/Curaçao ;
+kg:kickoffTime "2011-12-02"^^xsd:date ;
+kg:venue res:stadium/Paramaribo .
+
+res:match/Suriname_8_0_Bonaire a kg:Match ;
+kg:homeTeam res:team/Suriname ;
+kg:awayTeam res:team/Bonaire ;
+kg:kickoffTime "2012-07-13"^^xsd:date ;
+kg:venue res:stadium/Oranjestad_Aruba .

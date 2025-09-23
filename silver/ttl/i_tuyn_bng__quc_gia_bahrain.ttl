@@ -1,0 +1,442 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Bahrain a kg:Team ;
+kg:teamName "Bahrain" ;
+kg:hasCoach res:coach/Dragan_Talajić ;
+kg:hasCaptain res:player/Abdulwahab_Al-Safi ;
+kg:homeStadium res:stadium/Sân_vận_động_Qốc_gia_Bahrain ;
+kg:FIFA_Trigramme "BHR" ;
+kg:FIFA_Rank ?FIFA_World_Rankings_BHR ;
+kg:FIFA_max 44 ;
+kg:FIFA_max_date "2004-09"^^xsd:date ;
+kg:FIFA_min 139 ;
+kg:FIFA_min_date "2000-03"^^xsd:date ;
+kg:Elo_Rank ?World_Football_Elo_Ratings_BHR ;
+kg:Elo_max 49 ;
+kg:Elo_max_date "2000-09"^^xsd:date ;
+kg:Elo_min 138 ;
+kg:Elo_min_date "1979-03"^^xsd:date ;
+kg:first_game ?First_game_BHR_1932 ;
+kg:largest_win ?Largest_win_BHR_2012 ;
+kg:largest_loss ?Largest_loss_BHR_1966 ;
+kg:regional_cup_apps 8 ;
+kg:regional_cup_first res:competition/Cúp_bóng_đá_châu_Á_1988 ;
+kg:regional_cup_best "Hạng_tư" ;
+kg:regional_cup_name res:competition/Cúp_bóng_đá_châu_Á .
+
+res:competition/Cúp_bóng_đá_châu_Á a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Á" .
+
+res:competition/Vô_địch_Tây_Á a kg:Competition ;
+kg:competitionName "Vô địch Tây Á" .
+
+res:competition/Vô_địch_cúp_vùng_Vịnh a kg:Competition ;
+kg:competitionName "Vô địch cúp vùng Vịnh" .
+
+res:competition/Vô_địch_cúp_Ả_Rập a kg:Competition ;
+kg:competitionName "Vô địch cúp Ả Rập" .
+
+res:competition/Giải_vô_địch_thế_giới a kg:Competition ;
+kg:competitionName "Giải vô địch thế giới" .
+
+res:stadium/Sân_vận_động_Qốc_gia_Bahrain a kg:Stadium .
+
+res:coach/Dragan_Talajić a kg:Coach .
+
+res:player/Abdulwahab_Al-Safi a kg:Player ;
+kg:isCaptain res:team/Bahrain .
+
+res:player/Salman_Isa a kg:Player ;
+kg:most_caps 156 .
+
+res:player/Ismail_Abdul-Latif a kg:Player ;
+kg:top_scorer 41 .
+
+res:player/Ammar_Mohamed a kg:Player ;
+kg:shirtNumber 1 ;
+kg:position res:position/GK .
+
+res:Sayed_Mohammed_Jaffer a kg:Player ;
+kg:shirtNumber 21 ;
+kg:position res:position/GK .
+
+res:Ebrahim_Lutfalla a kg:Player ;
+kg:shirtNumber 22 ;
+kg:position res:position/GK .
+
+res:Sayed_Dhiya_Saeed a kg:Player ;
+kg:shirtNumber 17 ;
+kg:position res:position/DF .
+
+res:Amine_Benaddi a kg:Player ;
+kg:shirtNumber 2 ;
+kg:position res:position/DF .
+
+res:Sayed_Baqer a kg:Player ;
+kg:shirtNumber 17 ;
+kg:position res:position/DF .
+
+res:Waleed_Al_Hayam a kg:Player ;
+kg:shirtNumber 3 ;
+kg:position res:position/DF .
+
+res:Hamad_Al-Shamsan a kg:Player ;
+kg:shirtNumber 5 ;
+kg:position res:position/DF .
+
+res:Abdulla_Al-Khulasi a kg:Player ;
+kg:shirtNumber 23 ;
+kg:position res:position/DF .
+
+res:Ahmed_Nabeel a kg:Player ;
+kg:shirtNumber 6 ;
+kg:position res:position/DF .
+
+res:Hzza_Ali a kg:Player ;
+kg:shirtNumber 18 ;
+kg:position res:position/DF .
+
+res:Vincent_Emmanuel a kg:Player ;
+kg:shirtNumber 17 ;
+kg:position res:position/DF .
+
+res:Ali_Haram a kg:Player ;
+kg:shirtNumber 14 ;
+kg:position res:position/MF .
+
+res:Moses_Atede a kg:Player ;
+kg:shirtNumber 13 ;
+kg:position res:position/MF .
+
+res:Ebrahim_Al-Khattal a kg:Player ;
+kg:shirtNumber 11 ;
+kg:position res:position/MF .
+
+res:Moamed_Marhoon a kg:Player ;
+kg:shirtNumber 8 ;
+kg:position res:position/MF .
+
+res:Kamil_Al-Aswad a kg:Player ;
+kg:shirtNumber 19 ;
+kg:position res:position/MF ;
+kg:isCaptain res:team/Bahrain .
+
+res:Abdulwahab_Al-Malood a kg:Player ;
+kg:shirtNumber 10 ;
+kg:position res:position/MF .
+
+res:Ali_Madan a kg:Player ;
+kg:shirtNumber 7 ;
+kg:position res:position/MF .
+
+res:Abbas_Al-Asfoor a kg:Player ;
+kg:shirtNumber 4 ;
+kg:position res:position/MF .
+
+res:Sayed_Shara a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/MF .
+
+res:Mahdi_Al-Humaidan a kg:Player ;
+kg:shirtNumber 20 ;
+kg:position res:position/FW .
+
+res:Mahdi_Abduljabbar a kg:Player ;
+kg:shirtNumber 12 ;
+kg:position res:position/FW .
+
+res:Jasim_Al-Shaikh a kg:Player ;
+kg:shirtNumber 15 ;
+kg:position res:position/FW .
+
+res:Hashim_Sayed_Isa a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/FW .
+
+res:Husain_Abdulkarim a kg:Player ;
+kg:shirtNumber 9 ;
+kg:position res:position/FW .
+
+res:Sayed_Al-Wadaei a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/FW .
+
+res:Abdulkarim_Fardan a kg:Player ;
+kg:shirtNumber 1 ;
+kg:position res:position/GK .
+
+res:Ammar_Ahmed a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/GK .
+
+res:Omar_Salem a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/GK .
+
+res:Muhammad_Adel a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/DF .
+
+res:Moheamed_Al-Banna a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/DF .
+
+res:Ahmed_Bughammar a kg:Player ;
+kg:shirtNumber 17 ;
+kg:position res:position/DF .
+
+res:Hussain_Al-Eker a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/DF .
+
+res:Sayed_Redha_Isa a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/DF .
+
+res:Ahmed_Al-Sherooqi a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/MF .
+
+res:Moheamed_Abdulwahab a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/MF .
+
+res:Moheamed_Al-Hardan a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/MF .
+
+res:Ibrahim_Al-Wali a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/MF .
+
+res:Muhammad_Abdul_Qayoom a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/MF .
+
+res:Ali_Hassan_Isa a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/MF .
+
+res:Jasim_Khelaif a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/MF .
+
+res:Mahdi_Abdullatif a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/MF .
+
+res:Husain_Al-Qassab a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/MF .
+
+res:Ismail_Abdullatif a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/FW .
+
+res:Abdulla_Yusuf_Helal a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/FW .
+
+res:Abdullah_Al-Hashsash a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/FW .
+
+res:Hamza_Al-Juban a kg:Player ;
+kg:shirtNumber ? ;
+kg:position res:position/FW .
+
+res:position/GK a kg:Goalkeeper .
+
+res:position/DF a kg:Defender .
+
+res:position/MF a kg:Midfielder .
+
+res:position/FW a kg:Forward .
+
+res:club/Al-Muharraq_SC a kg:Club .
+
+res:club/Al-Ahli_Club_Manama a kg:Club .
+
+res:club/Al-Khaldiya_SC a kg:Club .
+
+res:club/Al-Riffa_SC a kg:Club .
+
+res:club/Manama_Club a kg:Club .
+
+res:club/Kuwait_SC a kg:Club .
+
+res:club/Sitra_Club a kg:Club .
+
+res:club/Ajman_Club a kg:Club .
+
+res:club/Al-Najma_SC_Bahrain a kg:Club .
+
+res:club/Bohemians_1905 a kg:Club .
+
+res:club/Al-Shabab_Club_Manama a kg:Club .
+
+res:stadium/Sân_vận_động_Qốc_gia_Bahrain a kg:Stadium .
+
+res:competition/Cúp_bóng_đá_châu_Á_1988 a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Á 1988" .
+
+res:competition/Cúp_bóng_đá_châu_Á_2004 a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Á 2004" .
+
+res:competition/Cúp_bóng_đá_châu_Á_2015 a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Á 2015" .
+
+res:competition/Cúp_bóng_đá_châu_Á_2019 a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Á 2019" .
+
+res:competition/Cúp_bóng_đá_châu_Á_2023 a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Á 2023" .
+
+res:competition/Cúp_bóng_đá_châu_Á_2027 a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Á 2027" .
+
+res:competition/Cúp_bóng_đá_Tây_Á_2019 a kg:Competition ;
+kg:competitionName "Cúp bóng đá Tây Á 2019" .
+
+res:competition/Cúp_bóng_đá_vùng_Vịnh_1970 a kg:Competition ;
+kg:competitionName "Cúp bóng đá vùng Vịnh 1970" .
+
+res:competition/Cúp_bóng_đá_vùng_Vịnh_1982 a kg:Competition ;
+kg:competitionName "Cúp bóng đá vùng Vịnh 1982" .
+
+res:competition/Cúp_bóng_đá_vùng_Vịnh_2019 a kg:Competition ;
+kg:competitionName "Cúp bóng đá vùng Vịnh 2019" .
+
+res:competition/Cúp_bóng_đá_Ả_Rập_1985 a kg:Competition ;
+kg:competitionName "Cúp bóng đá Ả Rập 1985" .
+
+res:competition/Cúp_bóng_đá_Ả_Rập_2002 a kg:Competition ;
+kg:competitionName "Cúp bóng đá Ả Rập 2002" .
+
+res:competition/Cúp_bóng_đá_Ả_Rập_2021 a kg:Competition ;
+kg:competitionName "Cúp bóng đá Ả Rập 2021" .
+
+res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á_1974 a kg:Competition ;
+kg:competitionName "Bóng đá tại Đại hội Thể thao châu Á 1974" .
+
+res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á_1978 a kg:Competition ;
+kg:competitionName "Bóng đá tại Đại hội Thể thao châu Á 1978" .
+
+res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á_1986 a kg:Competition ;
+kg:competitionName "Bóng đá tại Đại hội Thể thao châu Á 1986" .
+
+res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á_1994 a kg:Competition ;
+kg:competitionName "Bóng đá tại Đại hội Thể thao châu Á 1994" .
+
+res:competition/Giải_vô_địch_thế_giới_1930 a kg:Competition ;
+kg:competitionName "Giải vô địch thế giới 1930" .
+
+res:competition/Giải_vô_địch_thế_giới_1978 a kg:Competition ;
+kg:competitionName "Giải vô địch thế giới 1978" .
+
+res:competition/Giải_vô_địch_thế_giới_1990 a kg:Competition ;
+kg:competitionName "Giải vô địch thế giới 1990" .
+
+res:competition/Giải_vô_địch_thế_giới_1994 a kg:Competition ;
+kg:competitionName "Giải vô địch thế giới 1994" .
+
+res:competition/Giải_vô_địch_thế_giới_2022 a kg:Competition ;
+kg:competitionName "Giải vô địch thế giới 2022" .
+
+res:country/Bahrain a kg:Country .
+
+res:city/Riffa a kg:City .
+
+res:city/Baghdad a kg:City .
+
+res:city/Manama a kg:City .
+
+res:city/Beirut a kg:City .
+
+res:city/Hanoi a kg:City .
+
+res:city/Phnom_Penh a kg:City .
+
+res:city/Kuala_Lumpur a kg:City .
+
+res:city/Kathmandu a kg:City .
+
+res:city/Doha a kg:City .
+
+res:city/Jeddah a kg:City .
+
+res:city/Muscat a kg:City .
+
+res:city/Abu_Dhabi a kg:City .
+
+res:city/Sana'a a kg:City .
+
+res:city/Amman a kg:City .
+
+res:city/Semnan a kg:City .
+
+res:city/Sharjah a kg:City .
+
+res:city/Tabriz a kg:City .
+
+res:city/Isfahan a kg:City .
+
+res:city/Thessaloniki a kg:City .
+
+res:city/Lagos a kg:City .
+
+res:city/Banjul a kg:City .
+
+res:city/Nairobi a kg:City .
+
+res:city/Maputo a kg:City .
+
+res:city/Yangon a kg:City .
+
+res:city/Brunei a kg:City .
+
+res:city/Kuwait_City a kg:City .
+
+res:city/Qatar_City a kg:City .
+
+res:city/Aden a kg:City .
+
+res:city/Sanaa a kg:City .
+
+res:city/Asmara a kg:City .
+
+res:city/Mogadishu a kg:City .
+
+res:city/Addis_Ababa a kg:City .
+
+res:city/Khartoum a kg:City .
+
+res:city/Bujumbura a kg:City .
+
+res:city/Port_of_Spain a kg:City .
+
+res:city/Caracas a kg:City .
+
+res:city/Lome a kg:City .
+
+res:city/Ouagadougou a kg:City .
+
+res:city/Lome a kg:City .
+
+res:city/Dakar a kg:City .
+
+res:city/Bissau a kg:City .
+
+res:city/Malabo a kg:City .
+
+res:city/Brazzaville a kg:City .
+
+res:city/Libreville a kg:City .
+
+res:city/Bangui a kg:City .
+
+res:city

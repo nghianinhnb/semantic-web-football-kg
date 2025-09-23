@@ -4,5 +4,5 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 res:team/Olympic_România a kg:Team ;
-kg:teamName "Olympic România" ;
+kg:teamName "Đội tuyển bóng đá Olympic România" ;
 kg:teamAbbreviation "ROM" .

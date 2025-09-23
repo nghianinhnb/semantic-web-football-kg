@@ -1,0 +1,276 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Gambia a kg:Team ;
+kg:teamName "Gambia" ;
+kg:hasCoach res:coach/TomSaintfiet ;
+kg:hasCaptain res:player/PaModouJagne ;
+kg:homeStadium res:stadium/SanVanDongDocLap ;
+kg:isPartOfCompetition res:competition/AfricaCupOfNations ;
+kg:participatesIn res:season/CAN2021 ;
+kg:participatesIn res:season/CAN2023 .
+
+res:coach/TomSaintfiet a kg:Coach ;
+kg:manages res:team/Gambia .
+
+res:player/PaModouJagne a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 14 ;
+kg:mostCaps 32 .
+
+res:player/AssanCeesay a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 9 ;
+kg:topScorer 6 .
+
+res:player/MomodouCeesay a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 13 ;
+kg:topScorer 6 .
+
+res:stadium/SanVanDongDocLap a kg:Stadium ;
+kg:isHomeOf res:team/Gambia .
+
+res:competition/AfricaCupOfNations a kg:Competition ;
+kg:competitionName "Africa Cup of Nations" .
+
+res:season/CAN2021 a kg:Season ;
+kg:seasonOf res:competition/AfricaCupOfNations ;
+kg:participatesIn res:team/Gambia .
+
+res:season/CAN2023 a kg:Season ;
+kg:seasonOf res:competition/AfricaCupOfNations ;
+kg:participatesIn res:team/Gambia .
+
+res:match/GambiaVsSenegal a kg:Match ;
+kg:homeTeam res:team/Gambia ;
+kg:awayTeam res:team/Senegal ;
+kg:kickoffTime "1962-12-05"^^xsd:date .
+
+res:match/GambiaVsLesotho a kg:Match ;
+kg:homeTeam res:team/Gambia ;
+kg:awayTeam res:team/Lesotho ;
+kg:kickoffTime "2002-10-12"^^xsd:date .
+
+res:match/GuineaVsGambia a kg:Match ;
+kg:homeTeam res:team/Guinea ;
+kg:awayTeam res:team/Gambia ;
+kg:kickoffTime "1972-05-14"^^xsd:date .
+
+res:player/ModouJobe a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 1 ;
+kg:birthDate "1988-10-27"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/BaboucarrGaye a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 18 ;
+kg:birthDate "1998-02-24"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/LaminSarr a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 22 ;
+kg:birthDate "2001-03-11"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/DawdaNgum a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 4 ;
+kg:birthDate "1990-09-02"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/OmarColley a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 5 ;
+kg:birthDate "1992-10-24"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/JamesGomez a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 12 ;
+kg:birthDate "2001-11-14"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/IbouTouray a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 13 ;
+kg:birthDate "1994-12-24"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/NoahSonkoSundberg a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 14 ;
+kg:birthDate "1996-06-06"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/JacobMendy a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 15 ;
+kg:birthDate "1996-12-27"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/SaidyJanko a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 17 ;
+kg:birthDate "1995-10-22"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/MuhammedSanneh a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 21 ;
+kg:birthDate "2000-02-19"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/BubacarrSanneh a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 25 ;
+kg:birthDate "1994-11-14"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/HamzaBarry a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 2 ;
+kg:birthDate "1994-05-03"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/SulaymanMarreh a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 6 ;
+kg:birthDate "1996-01-15"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/EbouAdams a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 8 ;
+kg:birthDate "1996-01-15"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/AlasanaManneh a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 16 ;
+kg:birthDate "1998-04-08"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/EbrimaDarboe a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 24 ;
+kg:birthDate "2001-06-06"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/YusuphaBobb a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 27 ;
+kg:birthDate "1996-06-22"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/AblieJallow a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 3 ;
+kg:birthDate "1998-11-14"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/AlieuFadera a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 7 ;
+kg:birthDate "2001-11-03"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/AssanCeesay a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 9 ;
+kg:birthDate "1994-03-17"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/MusaBarrow a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 10 ;
+kg:birthDate "1998-11-14"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/AbdoulieSanyang a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 11 ;
+kg:birthDate "1999-05-08"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/EbrimaColley a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 19 ;
+kg:birthDate "2000-02-01"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/YankubaMinteh a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 20 ;
+kg:birthDate "2004-07-22"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/MuhammedBadamosi a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 23 ;
+kg:birthDate "1998-12-27"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:player/AliSowe a kg:Player ;
+kg:playsFor res:team/Gambia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 26 ;
+kg:birthDate "1994-06-14"^^xsd:date ;
+kg:nationality res:country/Gambia .
+
+res:country/Gambia a kg:Country ;
+kg:locatedIn res:country/Gambia .
+
+res:team/Gambia kg:participatesIn res:season/CAN2021 ;
+kg:participatesIn res:season/CAN2023 .
+
+res:season/CAN2021 kg:hasResult "Tứ kết" ;
+kg:rank 6th ;
+kg:matchesPlayed 5 ;
+kg:matchesWon 3 ;
+kg:matchesDrawn 1 ;
+kg:matchesLost 1 ;
+kg:goalsScored 4 ;
+kg:goalsConceded 3 .
+
+res:season/CAN2023 kg:hasResult "Vòng 1" ;
+kg:rank 24th ;
+kg:matchesPlayed 3 ;
+kg:matchesWon 0 ;
+kg:matchesDrawn 0 ;
+kg:matchesLost 3 ;
+kg:goalsScored 2 ;
+kg:goalsConceded 7 .

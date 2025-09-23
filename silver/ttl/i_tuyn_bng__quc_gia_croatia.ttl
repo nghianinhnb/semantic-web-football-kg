@@ -1,0 +1,276 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Croatia a kg:Team ;
+kg:teamName "Croatia" ;
+kg:teamAbbreviation "CRO" ;
+kg:hasCoach res:coach/Zlatko_Dalić ;
+kg:hasCaptain res:player/Luka_Modrić ;
+kg:isCaptain res:player/Luka_Modrić .
+
+res:coach/Zlatko_Dalić a kg:Coach ;
+kg:manages res:team/Croatia .
+
+res:player/Luka_Modrić a kg:Player ;
+kg:playsFor res:team/Croatia ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1985-09-09"^^xsd:date ;
+kg:birthPlace res:city/Zagreb ;
+kg:nationality res:country/Croatia ;
+kg:height "183"^^xsd:decimal ;
+kg:weight "73"^^xsd:decimal ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:city/Zagreb a kg:City ;
+kg:locatedIn res:country/Croatia .
+
+res:country/Croatia a kg:Country .
+
+res:player/Davor_Šuker a kg:Player ;
+kg:playsFor res:team/Croatia ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1968-06-19"^^xsd:date ;
+kg:birthPlace res:city/Zagreb ;
+kg:nationality res:country/Croatia ;
+kg:height "183"^^xsd:decimal ;
+kg:weight "76"^^xsd:decimal ;
+kg:shirtNumber 9 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Luka_Modrić a kg:Player ;
+kg:playsFor res:team/Croatia ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1985-09-09"^^xsd:date ;
+kg:birthPlace res:city/Zagreb ;
+kg:nationality res:country/Croatia ;
+kg:height "183"^^xsd:decimal ;
+kg:weight "73"^^xsd:decimal ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Ivica_Moda a kg:Player ;
+kg:playsFor res:team/Croatia ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1978-08-16"^^xsd:date ;
+kg:birthPlace res:city/Split ;
+kg:nationality res:country/Croatia ;
+kg:height "184"^^xsd:decimal ;
+kg:weight "78"^^xsd:decimal ;
+kg:shirtNumber 11 ;
+kg:preferredFoot kg:RightFooted .
+
+res:stadium/San_Van_Dong_Maksimir a kg:Stadium ;
+kg:capacity "45000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Zagreb .
+
+res:stadium/San_Van_Dong_Poljud a kg:Stadium ;
+kg:capacity "25000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Split .
+
+res:stadium/San_Van_Dong_Kantrida a kg:Stadium ;
+kg:capacity "15000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Rijeka .
+
+res:stadium/San_Van_Dong_Gradski_vrt a kg:Stadium ;
+kg:capacity "12000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Osijek .
+
+res:stadium/San_Van_Dong_A_Herjavec a kg:Stadium ;
+kg:capacity "6000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Varaždin .
+
+res:stadium/San_Van_Dong_Aldo_Drosina a kg:Stadium ;
+kg:capacity "5000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Pula .
+
+res:stadium/San_Van_Dong_Rujevica a kg:Stadium ;
+kg:capacity "10000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Rijeka .
+
+res:stadium/San_Van_Dong_Cibalia a kg:Stadium ;
+kg:capacity "7000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Vinkovci .
+
+res:stadium/San_Van_Dong_Kranjčevićeva a kg:Stadium ;
+kg:capacity "5000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Zagreb .
+
+res:stadium/San_Van_Dong_Šubićevac a kg:Stadium ;
+kg:capacity "3000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Šibenik .
+
+res:stadium/San_Van_Dong_Koprivnica a kg:Stadium ;
+kg:capacity "2000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Koprivnica .
+
+res:competition/FIFA_World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" .
+
+res:competition/European_Championship a kg:Competition ;
+kg:competitionName "European Championship" .
+
+res:competition/UEFA_Nations_League a kg:Competition ;
+kg:competitionName "UEFA Nations League" .
+
+res:season/1998 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/2022 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/1996 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:season/2000 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:season/2004 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:season/2008 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:season/2012 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:season/2016 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:season/2020 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:season/2024 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:season/2018_19 a kg:Season ;
+kg:seasonOf res:competition/UEFA_Nations_League .
+
+res:season/2020_21 a kg:Season ;
+kg:seasonOf res:competition/UEFA_Nations_League .
+
+res:season/2022_23 a kg:Season ;
+kg:seasonOf res:competition/UEFA_Nations_League .
+
+res:match/Croatia_vs_Egypt_2024 a kg:Match ;
+kg:homeTeam res:team/Croatia ;
+kg:awayTeam res:team/Egypt ;
+kg:venue res:stadium/San_Van_Dong_Maksimir ;
+kg:kickoffTime "2024-03-23T21:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/FIFA_Series_2024 ;
+kg:inSeason res:season/2024 ;
+kg:referee res:referee/Mohamed_Maarouf .
+
+res:match/Croatia_vs_Tunisia_2024 a kg:Match ;
+kg:homeTeam res:team/Croatia ;
+kg:awayTeam res:team/Tunisia ;
+kg:venue res:stadium/San_Van_Dong_Maksimir ;
+kg:kickoffTime "2024-03-23T21:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/FIFA_Series_2024 ;
+kg:inSeason res:season/2024 ;
+kg:referee res:referee/Mohamed_Maarouf .
+
+res:match/Croatia_vs_Macedonia_2024 a kg:Match ;
+kg:homeTeam res:team/Croatia ;
+kg:awayTeam res:team/North_Macedonia ;
+kg:venue res:stadium/San_Van_Dong_Rujevica ;
+kg:kickoffTime "2024-06-03T19:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Friendly ;
+kg:inSeason res:season/2024 ;
+kg:referee res:referee/Matej_Jug .
+
+res:match/Croatia_vs_Portugal_2024 a kg:Match ;
+kg:homeTeam res:team/Croatia ;
+kg:awayTeam res:team/Portugal ;
+kg:venue res:stadium/San_Van_Dong_Qualification ;
+kg:kickoffTime "2024-06-08T18:45:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Friendly ;
+kg:inSeason res:season/2024 ;
+kg:referee res:referee/Harm_Osmers .
+
+res:match/Croatia_vs_Spain_2024 a kg:Match ;
+kg:homeTeam res:team/Croatia ;
+kg:awayTeam res:team/Spain ;
+kg:venue res:stadium/Olympiastadion_Berlin ;
+kg:kickoffTime "2024-06-15T18:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/European_Championship ;
+kg:inSeason res:season/2024 ;
+kg:referee res:referee/Michael_Oliver .
+
+res:match/Croatia_vs_Albania_2024 a kg:Match ;
+kg:homeTeam res:team/Croatia ;
+kg:awayTeam res:team/Albania ;
+kg:venue res:stadium/Volksparkstadion_Hamburg ;
+kg:kickoffTime "2024-06-19T15:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/European_Championship ;
+kg:inSeason res:season/2024 ;
+kg:referee res:referee/François_Letexier .
+
+res:match/Croatia_vs_Italy_2024 a kg:Match ;
+kg:homeTeam res:team/Croatia ;
+kg:awayTeam res:team/Italy ;
+kg:venue res:stadium/Red_Bull_Arena_Leipzig ;
+kg:kickoffTime "2024-06-24T21:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/European_Championship ;
+kg:inSeason res:season/2024 ;
+kg:referee res:referee/Danny_Makkelie .
+
+res:match/Croatia_vs_Portugal_2024_UEFA a kg:Match ;
+kg:homeTeam res:team/Croatia ;
+kg:awayTeam res:team/Portugal ;
+kg:venue res:stadium/San_Van_Dong_Lisbon ;
+kg:kickoffTime "2024-09-05T20:45:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/UEFA_Nations_League ;
+kg:inSeason res:season/2024_25 ;
+kg:referee res:referee/Halil_Umut_Meler .
+
+res:match/Croatia_vs_Poland_2024 a kg:Match ;
+kg:homeTeam res:team/Croatia ;
+kg:awayTeam res:team/Poland ;
+kg:venue res:stadium/Opus_Arena_Osijek ;
+kg:kickoffTime "2024-09-08T20:45:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/UEFA_Nations_League ;
+kg:inSeason res:season/2024_25 ;
+kg:referee res:referee/François_Letexier .
+
+res:match/Croatia_vs_Scotland_2024 a kg:Match ;
+kg:homeTeam res:team/Croatia ;
+kg:awayTeam res:team/Scotland ;
+kg:venue res:stadium/San_Van_Dong_Maksimir ;
+kg:kickoffTime "2024-10-12T18:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/UEFA_Nations_League ;
+kg:inSeason res:season/2024_25 ;
+kg:referee res:referee/István_Kovács .
+
+res:match/Poland_vs_Croatia_2024 a kg:Match ;
+kg:homeTeam res:team/Poland ;
+kg:awayTeam res:team/Croatia ;
+kg:venue res:stadium/San_Van_Dong_Warsaw ;
+kg:kickoffTime "2024-10-15T20:45:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/UEFA_Nations_League ;
+kg:inSeason res:season/2024_25 ;
+kg:referee res:referee/Alejandro_Hernández_Hernández .
+
+res:match/Scotland_vs_Croatia_2024 a kg:Match ;
+kg:homeTeam res:team/Scotland ;
+kg:awayTeam res:team/Croatia ;
+kg:venue res:stadium/Hampden_Park_Glasgow ;
+kg:kickoffTime "2024-11-15T20:45:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/UEFA_Nations_League ;
+kg:inSeason res:season/2024_25 ;
+kg:referee res:referee/Unknown_Referee .
+
+res:match/Croatia_vs_Portugal_2024_UEFA a kg:Match ;
+kg:homeTeam res:team/Croatia ;
+kg:awayTeam res:team/Portugal ;
+kg:venue res:stadium/San_Van_Dong_Poljud ;
+kg:kickoffTime "2024-11-18T20:45:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/UEFA_Nations_League ;
+kg:inSeason res:season/2024_25 ;
+kg:referee res:referee/Unknown_Referee .

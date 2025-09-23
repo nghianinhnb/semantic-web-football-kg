@@ -8,6 +8,12 @@
 @prefix res: <https://kg-football.vn/resource/> .
 
 # Extended Player attributes using standard vocabularies
+kg:preferredFoot a owl:DatatypeProperty ;
+  rdfs:label "preferred foot"@en , "chân thuận"@vi ;
+  rdfs:comment "Player's preferred foot"@en ;
+  rdfs:domain kg:Player ;
+  rdfs:range xsd:string .
+
 kg:birthPlace a owl:ObjectProperty ;
   rdfs:label "birth place"@en , "quê quán"@vi ;
   rdfs:comment "Place where the player was born"@en ;
@@ -35,6 +41,27 @@ kg:weight a owl:DatatypeProperty ;
   rdfs:domain kg:Player ;
   rdfs:range xsd:decimal ;
   rdfs:subPropertyOf schema:weight .
+
+# Footedness
+kg:Footedness a owl:Class ;
+  rdfs:label "Footedness"@en , "Chân thuận"@vi ;
+  rdfs:comment "Preferred foot for playing"@en ;
+  rdfs:subClassOf schema:Enumeration .
+
+kg:preferredFoot a owl:ObjectProperty ;
+  rdfs:label "preferred foot"@en , "chân thuận"@vi ;
+  rdfs:comment "Player's preferred foot"@en ;
+  rdfs:domain kg:Player ;
+  rdfs:range kg:Footedness .
+
+kg:LeftFooted a kg:Footedness ;
+  rdfs:label "Left footed"@en , "Chân trái"@vi .
+
+kg:RightFooted a kg:Footedness ;
+  rdfs:label "Right footed"@en , "Chân phải"@vi .
+
+kg:BothFooted a kg:Footedness ;
+  rdfs:label "Both footed"@en , "Cả hai chân"@vi .
 
 # Coach and Staff
 kg:Coach a owl:Class ;
@@ -76,3 +103,16 @@ kg:referee a owl:ObjectProperty ;
   rdfs:domain kg:Match ;
   rdfs:range kg:Referee ;
   rdfs:subPropertyOf schema:performer .
+
+kg:hasCaptain a owl:ObjectProperty ;
+  rdfs:label "has captain"@en , "có đội trưởng"@vi ;
+  rdfs:comment "Team has a captain (a player)"@en ;
+  rdfs:domain kg:Team ;
+  rdfs:range kg:Player .
+
+kg:isCaptain a owl:ObjectProperty ;
+  rdfs:label "is captain"@en , "là đội trưởng"@vi ;
+  rdfs:comment "Player is captain of a team (inverse)"@en ;
+  rdfs:domain kg:Player ;
+  rdfs:range kg:Team ;
+  owl:inverseOf kg:hasCaptain .

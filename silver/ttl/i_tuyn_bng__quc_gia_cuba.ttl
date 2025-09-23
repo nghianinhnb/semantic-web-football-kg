@@ -1,0 +1,92 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Cuba a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Cuba" ;
+kg:hasCoach res:coach/Pablo_Elier_Sánchez ;
+kg:hasCaptain res:player/Arichel_Hernández ;
+kg:locatedIn res:country/Cuba ;
+kg:homeStadium res:stadium/Estadio_Pedro_Marrero ;
+kg:FIFATrigramme "CUB" ;
+kg:FIFARank ?FIFARank ;
+kg:FIFAMax 46 ;
+kg:FIFAMaxDate "2006-11-01"^^xsd:date ;
+kg:FIFAMin 182 ;
+kg:FIFAMinDate "2017-08-01"^^xsd:date ;
+kg:ELORank ?ELORank ;
+kg:ELOMax 52 ;
+kg:ELOMaxDate "2005-02-01"^^xsd:date ;
+kg:ELOMin 147 ;
+kg:ELOMinDate "2019-09-01"^^xsd:date ;
+kg:mostCaps res:player/Yénier_Márquez ;
+kg:topScorer res:player/Lester_Moré ;
+kg:confederation res:organization/CONCACAF ;
+kg:subConfederation res:organization/CFU ;
+kg:association res:organization/Hội_Bóng_Đá_Cuba ;
+kg:firstGame res:match/1930-03-16_Cuba_vs_Jamaica ;
+kg:largestWin res:match/2018-09-08_Cuba_vs_TCA ;
+kg:largestLoss res:match/1938-06-12_Cuba_vs_SWE ;
+kg:worldCupApps 1 ;
+kg:worldCupFirst 1938 ;
+kg:worldCupBest "Tứ kết" ;
+kg:regionalCupApps 12 ;
+kg:regionalCupFirst 1971 ;
+kg:regionalCupBest "Hạng tư" .
+
+res:coach/Pablo_Elier_Sánchez a kg:Coach ;
+kg:manages res:team/Cuba .
+
+res:player/Arichel_Hernández a kg:Player ;
+kg:playsFor res:team/Cuba ;
+kg:isCaptain res:team/Cuba .
+
+res:stadium/Estadio_Pedro_Marrero a kg:Stadium ;
+kg:locatedIn res:city/La_Habana ;
+kg:isHomeOf res:team/Cuba .
+
+res:player/Yénier_Márquez a kg:Player ;
+kg:playsFor res:team/Cuba ;
+kg:mostCaps 126 .
+
+res:player/Lester_Moré a kg:Player ;
+kg:playsFor res:team/Cuba ;
+kg:topScorer 30 .
+
+res:organization/Hội_Bóng_Đá_Cuba a kg:Organization ;
+kg:locatedIn res:country/Cuba .
+
+res:organization/CONCACAF a kg:Organization .
+
+res:organization/CFU a kg:Organization .
+
+res:match/1930-03-16_Cuba_vs_Jamaica a kg:Match ;
+kg:homeTeam res:team/Cuba ;
+kg:awayTeam res:team/Jamaica ;
+kg:kickoffTime "1930-03-16"^^xsd:date ;
+kg:result "3–1" .
+
+res:match/2018-09-08_Cuba_vs_TCA a kg:Match ;
+kg:homeTeam res:team/Cuba ;
+kg:awayTeam res:team/TCA ;
+kg:kickoffTime "2018-09-08"^^xsd:date ;
+kg:result "11–0" .
+
+res:match/1938-06-12_Cuba_vs_SWE a kg:Match ;
+kg:homeTeam res:team/SWE ;
+kg:awayTeam res:team/Cuba ;
+kg:kickoffTime "1938-06-12"^^xsd:date ;
+kg:result "8–0" .
+
+res:country/Cuba a kg:Country .
+
+res:city/La_Habana a kg:City ;
+kg:locatedIn res:country/Cuba .
+
+res:team/Jamaica a kg:Team .
+
+res:team/TCA a kg:Team .
+
+res:team/SWE a kg:Team .

@@ -1,0 +1,306 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Bhutan a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Bhutan" ;
+kg:hasCoach res:player/Pema_Dorji ;
+kg:hasCaptain res:player/Karma_Shedrup_Tshering ;
+kg:teamAbbreviation "BHU" ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:player/Pema_Dorji a kg:Coach ;
+kg:manages res:team/Bhutan .
+
+res:player/Karma_Shedrup_Tshering a kg:Player ;
+kg:isCaptain res:team/Bhutan .
+
+res:stadium/San_van_dong_Changlimithang a kg:Stadium ;
+kg:isHomeOf res:team/Bhutan .
+
+res:player/Chencho_Gyeltshen a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 7 ;
+kg:mostCaps 36 ;
+kg:topScorer 10 .
+
+res:player/Kinzang_Gyeltshen a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 19 .
+
+res:player/Tshering_Dendup a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 21 .
+
+res:player/Tshering_Samdup a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 2 .
+
+res:player/Choki_Wangchuk a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 3 .
+
+res:player/Mipham_Jigme a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 4 .
+
+res:player/Tenzin_Dorji a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 9 .
+
+res:player/Phuntsho_Jigme a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 12 .
+
+res:player/Rinchen_Dorji a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 22 .
+
+res:player/Galey_Zangpo a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 6 .
+
+res:player/Karma_Shedrup_Tshering a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 8 ;
+kg:isCaptain res:team/Bhutan .
+
+res:player/Kencho_Tobgay a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 13 .
+
+res:player/Nima_Wangdi a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 15 .
+
+res:player/Tshering_Dorji a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 16 .
+
+res:player/Chimi_Dorji a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 18 .
+
+res:player/Chencho_Gyeltshen a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 7 .
+
+res:player/Kabi_Raj_Rai a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 10 .
+
+res:player/Tsenda_Dorji a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 17 .
+
+res:player/Phurba_Wangchuk a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 20 .
+
+res:player/Kuenga_Rabgay a kg:Player ;
+kg:playsFor res:team/Bhutan ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 23 .
+
+res:team/Bhutan kg:participatesIn res:season/2019 ;
+
+res:match/First_game a kg:Match ;
+kg:homeTeam res:team/Nepal ;
+kg:awayTeam res:team/Bhutan ;
+kg:kickoffTime "1982-04-01T00:00:00Z"^^xsd:dateTime .
+
+res:match/Largest_win a kg:Match ;
+kg:homeTeam res:team/Bhutan ;
+kg:awayTeam res:team/Gum ;
+kg:kickoffTime "2003-04-23T00:00:00Z"^^xsd:dateTime .
+
+res:match/Largest_loss a kg:Match ;
+kg:homeTeam res:team/Kuw ;
+kg:awayTeam res:team/Bhutan ;
+kg:kickoffTime "2000-02-14T00:00:00Z"^^xsd:dateTime .
+
+res:team/Bhutan kg:participatesIn res:competition/SAFF_Cup_2008 ;
+kg:reachedStage "Bán kết"^^xsd:string .
+
+res:team/Bhutan kg:participatesIn res:competition/AFC_Challenge_Cup_2006 ;
+kg:reachedStage "Vòng bảng"^^xsd:string .
+
+res:team/Bhutan kg:participatesIn res:competition/Asian_Cup_Qualification ;
+kg:didNotQualify true .
+
+res:team/Bhutan kg:participatesIn res:competition/FIFA_World_Cup_Qualification ;
+kg:didNotQualify true .
+
+res:team/Bhutan kg:participatesIn res:competition/South_Asian_Football_Federation_Championship ;
+kg:reachedStage "Vòng bảng"^^xsd:string .
+
+res:country/Bhutan a kg:Country ;
+kg:locatedIn res:country/Bhutan .
+
+res:stadium/San_van_dong_Changlimithang a kg:Stadium ;
+kg:locatedIn res:city/Thimphu .
+
+res:city/Thimphu a kg:City ;
+kg:locatedIn res:country/Bhutan .
+
+res:club/Thimphu_City a kg:Club ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:club/Thimphu_FC a kg:Club ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:club/Transport_United a kg:Club ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:club/Druk_Star a kg:Club ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:club/ARA_FC a kg:Club ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:club/South_United a kg:Club ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:club/NEROCA a kg:Club ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:club/Paro_United a kg:Club ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:club/Terton a kg:Club ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:club/Tertons a kg:Club ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:club/Druk_United a kg:Club ;
+kg:homeStadium res:stadium/San_van_dong_Changlimithang .
+
+res:position/Goalkeeper a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Midfielder a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:competition/SAFF_Cup_2008 a kg:Competition ;
+kg:competitionName "SAFF Cup 2008" ;
+kg:heldIn res:country/Bhutan .
+
+res:competition/AFC_Challenge_Cup_2006 a kg:Competition ;
+kg:competitionName "AFC Challenge Cup 2006" ;
+kg:heldIn res:country/Bhutan .
+
+res:competition/Asian_Cup_Qualification a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Á" ;
+kg:heldIn res:country/Bhutan .
+
+res:competition/FIFA_World_Cup_Qualification a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá thế giới" ;
+kg:heldIn res:country/Bhutan .
+
+res:competition/South_Asian_Football_Federation_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá Nam Á" ;
+kg:heldIn res:country/Bhutan .
+
+res:season/2019 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup_Qualification ;
+kg:hasSeason res:competition/FIFA_World_Cup_Qualification .
+
+res:season/2008 a kg:Season ;
+kg:seasonOf res:competition/SAFF_Cup_2008 .
+
+res:season/2006 a kg:Season ;
+kg:seasonOf res:competition/AFC_Challenge_Cup_2006 .
+
+res:season/2003 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2005 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2008 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2009 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2011 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2013 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2015 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2006 a kg:Season ;
+kg:seasonOf res:competition/AFC_Challenge_Cup_2006 .
+
+res:season/2008 a kg:Season ;
+kg:seasonOf res:competition/AFC_Challenge_Cup_2006 .
+
+res:season/2012 a kg:Season ;
+kg:seasonOf res:competition/AFC_Challenge_Cup_2006 .
+
+res:season/2014 a kg:Season ;
+kg:seasonOf res:competition/AFC_Challenge_Cup_2006 .
+
+res:season/1993 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/1999 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2003 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2005 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2008 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2009 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2011 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2013 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2015 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/South_Asian_Football_Federation_Championship .

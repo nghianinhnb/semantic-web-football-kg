@@ -7,6 +7,12 @@
 @prefix res: <https://kg-football.vn/resource/> .
 
 # Match properties using standard vocabularies
+kg:result a owl:DatatypeProperty ;
+  rdfs:label "result"@en , "kết quả"@vi ;
+  rdfs:comment "Match full-time result in a compact string (e.g., 2-1)"@en ;
+  rdfs:domain kg:Match ;
+  rdfs:range xsd:string .
+
 kg:inCompetition a owl:ObjectProperty ;
   rdfs:label "in competition"@en , "thuộc giải"@vi ;
   rdfs:comment "Match is part of a competition"@en ;

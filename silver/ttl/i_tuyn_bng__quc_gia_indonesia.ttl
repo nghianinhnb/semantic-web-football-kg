@@ -8,214 +8,375 @@ res:team/Indonesia a kg:Team ;
 kg:teamName "Indonesia" ;
 kg:teamAbbreviation "IDN" ;
 kg:hasCoach res:coach/Patrick_Kluivert ;
-kg:participatesIn res:competition/AFC_Asian_Cup ;
-kg:participatesIn res:competition/FIFA_World_Cup_qualification ;
-kg:participatesIn res:competition/ASEAN_Championship .
+kg:hasCaptain res:player/Jay_Idzes .
 
 res:coach/Patrick_Kluivert a kg:Coach ;
 kg:name "Patrick Kluivert" ;
 kg:nationality res:country/Netherlands ;
 kg:manages res:team/Indonesia .
 
-res:team/Indonesia kg:participatesIn res:season/2025 ;
+res:player/Jay_Idzes a kg:Player ;
+kg:name "Jay Idzes" ;
+kg:birthDate "1999-06-02"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "3"^^xsd:positiveInteger .
 
-res:competition/AFC_Asian_Cup a kg:Competition ;
-kg:competitionName "AFC Asian Cup" ;
-kg:organizedBy res:organization/AFC ;
+res:city/Jakarta a kg:City ;
+kg:locatedIn res:country/Indonesia .
 
-res:competition/FIFA_World_Cup_qualification a kg:Competition ;
-kg:competitionName "FIFA World Cup Qualification" ;
-kg:organizedBy res:organization/FIFA ;
+res:country/Indonesia a kg:Country ;
+kg:name "Indonesia" .
 
-res:competition/ASEAN_Championship a kg:Competition ;
-kg:competitionName "ASEAN Championship" ;
-kg:organizedBy res:organization/ASEAN ;
+res:coach/Patrick_Kluivert kg:manages res:team/Indonesia .
 
-res:season/2025 a kg:Season ;
-kg:seasonOf res:competition/AFC_Asian_Cup ;
-kg:seasonOf res:competition/FIFA_World_Cup_qualification ;
-kg:seasonOf res:competition/ASEAN_Championship .
+res:team/Indonesia kg:hasCoach res:coach/Patrick_Kluivert .
+
+res:team/Indonesia kg:hasCaptain res:player/Jay_Idzes .
 
 res:player/Abdul_Kadir a kg:Player ;
 kg:name "Abdul Kadir" ;
+kg:birthDate "1943-01-01"^^xsd:date ;
+kg:birthPlace res:city/Batavia ;
 kg:nationality res:country/Indonesia ;
-kg:birthDate "1944-01-01"^^xsd:date ;
-kg:birthPlace res:city/Jakarta ;
-kg:primaryPosition kg:Midfielder ;
-kg:playsFor res:team/Indonesia .
-
-res:player/Jay_Idzes a kg:Player ;
-kg:name "Jay Idzes" ;
-kg:nationality res:country/Indonesia ;
-kg:birthDate "1998-06-02"^^xsd:date ;
-kg:birthPlace res:city/Jakarta ;
-kg:primaryPosition kg:Defender ;
-kg:playsFor res:team/Indonesia .
-
-res:player/Marselino_Ferdinan a kg:Player ;
-kg:name "Marselino Ferdinan" ;
-kg:nationality res:country/Indonesia ;
-kg:birthDate "2004-09-09"^^xsd:date ;
-kg:birthPlace res:city/Jakarta ;
 kg:primaryPosition kg:Forward ;
-kg:playsFor res:team/Indonesia .
+kg:shirtNumber "11"^^xsd:positiveInteger .
 
-res:stadium/Semeni_Bung_Karno a kg:Stadium ;
-kg:name "Semeni Bung Karno" ;
+res:city/Batavia a kg:City ;
+kg:locatedIn res:country/Indonesia .
+
+res:player/Abdul_Kadir kg:playsFor res:team/Indonesia .
+
+res:team/Indonesia kg:hasPlayer res:player/Abdul_Kadir .
+
+res:match/Indonesia_vs_Japan_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Japan ;
+kg:venue res:stadium/Gelora_Bung_Karno ;
+kg:kickoffTime "2025-06-10T19:00:00"^^xsd:dateTime ;
+kg:referee res:referee/Salman_Falahi .
+
+res:stadium/Gelora_Bung_Karno a kg:Stadium ;
 kg:capacity "100000"^^xsd:positiveInteger ;
 kg:locatedIn res:city/Jakarta .
 
-res:stadium/Semeni_Internasional_Jakarta a kg:Stadium ;
-kg:name "Semeni Internasional Jakarta" ;
-kg:capacity "50000"^^xsd:positiveInteger ;
-kg:locatedIn res:city/Jakarta .
+res:referee/Salman_Falahi a kg:Referee ;
+kg:name "Salman Falahi" ;
+kg:nationality res:country/Qatar .
 
-res:club/Persija_Jakarta a kg:Club ;
-kg:name "Persija Jakarta" ;
-kg:foundedDate "1927-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Semeni_Bung_Karno .
+res:competition/FIFA_World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" .
 
-res:club/Borneo_FC a kg:Club ;
-kg:name "Borneo FC" ;
-kg:foundedDate "2014-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Semeni_Internasional_Jakarta .
+res:match/Indonesia_vs_Japan_2025 kg:inCompetition res:competition/FIFA_World_Cup .
 
-res:club/Dewa_United a kg:Club ;
-kg:name "Dewa United" ;
-kg:foundedDate "2010-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Semeni_Bung_Karno .
+res:season/2026 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
 
-res:club/Persib_Bandung a kg:Club ;
-kg:name "Persib Bandung" ;
-kg:foundedDate "1978-01-01"^^xsd:date ;
-kg:homeStadium res:stadium/Semeni_Bung_Karno .
+res:team/Indonesia kg:participatesIn res:season/2026 .
 
-res:match/Indonesia_vs_Japan_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Japan ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-06-10T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Shaun_Evans ;
-kg:result "0-4" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:player/Egy_Maulana_Vikri a kg:Player ;
+kg:name "Egy Maulana Vikri" ;
+kg:birthDate "1999-07-07"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber "10"^^xsd:positiveInteger .
 
-res:match/Indonesia_vs_Vietnam_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Vietnam ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-06-15T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Muhammad_Taqi ;
-kg:result "2-0" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:team/Indonesia kg:hasPlayer res:player/Egy_Maulana_Vikri .
 
-res:match/Indonesia_vs_Australia_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Australia ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-06-20T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Salman_Falahi ;
-kg:result "0-4" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:player/Rizky_Ridho a kg:Player ;
+kg:name "Rizky Ridho" ;
+kg:birthDate "2001-11-21"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "5"^^xsd:positiveInteger .
 
-res:match/Indonesia_vs_Iran_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Iran ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-06-25T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Mohammed_Braheh ;
-kg:result "0-5" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:team/Indonesia kg:hasPlayer res:player/Rizky_Ridho .
 
-res:match/Indonesia_vs_Qatar_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Qatar ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-07-01T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Muhammad_Taqi ;
-kg:result "0-2" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:player/Marselino_Ferdinan a kg:Player ;
+kg:name "Marselino Ferdinan" ;
+kg:birthDate "2004-09-09"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
 
-res:match/Indonesia_vs_Bahrain_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Bahrain ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-07-06T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Adham_Makhadmeh ;
-kg:result "2-2" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:team/Indonesia kg:hasPlayer res:player/Marselino_Ferdinan .
 
-res:match/Indonesia_vs_China_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/China ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-07-11T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Omar_Al_Ali ;
-kg:result "1-2" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:player/Thom_Haye a kg:Player ;
+kg:name "Thom Haye" ;
+kg:birthDate "1995-02-09"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber "19"^^xsd:positiveInteger .
 
-res:match/Indonesia_vs_Japan_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Japan ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-07-16T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Mooud_Bonyadifard ;
-kg:result "0-4" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:team/Indonesia kg:hasPlayer res:player/Thom_Haye .
 
-res:match/Indonesia_vs_Saudi_Arabia_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Saudi_Arabia ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-07-21T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Rustam_Lutfullin ;
-kg:result "2-0" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:player/Ramadhan_Sananta a kg:Player ;
+kg:name "Ramadhan Sananta" ;
+kg:birthDate "2002-11-27"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "9"^^xsd:positiveInteger .
 
-res:match/Indonesia_vs_Thailand_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Thailand ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-07-26T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Muhammad_Taqi ;
-kg:result "1-1" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:team/Indonesia kg:hasPlayer res:player/Ramadhan_Sananta .
 
-res:match/Indonesia_vs_Vietnam_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Vietnam ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-08-01T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Shaun_Evans ;
-kg:result "2-0" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:player/Yakob_Sayuri a kg:Player ;
+kg:name "Yakob Sayuri" ;
+kg:birthDate "1997-09-22"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber "20"^^xsd:positiveInteger .
 
-res:match/Indonesia_vs_Philippines_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Philippines ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-08-06T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Rustam_Lutfullin ;
-kg:result "2-0" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:team/Indonesia kg:hasPlayer res:player/Yakob_Sayuri .
 
-res:match/Indonesia_vs_Malaysia_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/Malaysia ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-08-11T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Muhammad_Taqi ;
-kg:result "1-1" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:player/Sandy_Walsh a kg:Player ;
+kg:name "Sandy Walsh" ;
+kg:birthDate "1995-03-14"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "6"^^xsd:positiveInteger .
 
-res:match/Indonesia_vs_South_Korea_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam res:team/South_Korea ;
-kg:venue res:stadium/Semeni_Bung_Karno ;
-kg:kickoffTime "2025-08-16T19:00:00"^^xsd:dateTime ;
-kg:referee res:person/Omar_Al_Ali ;
-kg:result "0-4" ;
-kg:inCompetition res:competition/AFC_Asian_Cup .
+res:team/Indonesia kg:hasPlayer res:player/Sandy_Walsh .
 
-res:match/Indonesia_vs_Japan_2025 a kg:Match ;
-kg:homeTeam res:team/Indonesia ;
-kg:awayTeam
+res:player/Asnawi_Mangkualam a kg:Player ;
+kg:name "Asnawi Mangkualam" ;
+kg:birthDate "1999-10-04"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "4"^^xsd:positiveInteger .
+
+res:team/Indonesia kg:hasPlayer res:player/Asnawi_Mangkualam .
+
+res:player/Kevin_Diks a kg:Player ;
+kg:name "Kevin Diks" ;
+kg:birthDate "1996-10-06"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "2"^^xsd:positiveInteger .
+
+res:team/Indonesia kg:hasPlayer res:player/Kevin_Diks .
+
+res:player/Justin_Hubner a kg:Player ;
+kg:name "Justin Hubner" ;
+kg:birthDate "2003-09-14"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Netherlands ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "17"^^xsd:positiveInteger .
+
+res:team/Indonesia kg:hasPlayer res:player/Justin_Hubner .
+
+res:player/Ricky_Kambuaya a kg:Player ;
+kg:name "Ricky Kambuaya" ;
+kg:birthDate "1996-05-05"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber "15"^^xsd:positiveInteger .
+
+res:team/Indonesia kg:hasPlayer res:player/Ricky_Kambuaya .
+
+res:player/Marc_Klok a kg:Player ;
+kg:name "Marc Klok" ;
+kg:birthDate "1993-04-20"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber "18"^^xsd:positiveInteger .
+
+res:team/Indonesia kg:hasPlayer res:player/Marc_Klok .
+
+res:player/Stefano_Lilipaly a kg:Player ;
+kg:name "Stefano Lilipaly" ;
+kg:birthDate "1990-01-10"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "8"^^xsd:positiveInteger .
+
+res:team/Indonesia kg:hasPlayer res:player/Stefano_Lilipaly .
+
+res:player/Adrian_Wibowo a kg:Player ;
+kg:name "Adrian Wibowo" ;
+kg:birthDate "2006-01-17"^^xsd:date ;
+kg:birthPlace res:city/Los_Angeles ;
+kg:nationality res:country/United_States ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "22"^^xsd:positiveInteger .
+
+res:team/Indonesia kg:hasPlayer res:player/Adrian_Wibowo .
+
+res:player/Miliano_Jonathans a kg:Player ;
+kg:name "Miliano Jonathans" ;
+kg:birthDate "2004-04-05"^^xsd:date ;
+kg:birthPlace res:city/Utrecht ;
+kg:nationality res:country/Netherlands ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "26"^^xsd:positiveInteger .
+
+res:team/Indonesia kg:hasPlayer res:player/Miliano_Jonathans .
+
+res:player/Mauro_Zijlstra a kg:Player ;
+kg:name "Mauro Zijlstra" ;
+kg:birthDate "2004-11-09"^^xsd:date ;
+kg:birthPlace res:city/Volendam ;
+kg:nationality res:country/Netherlands ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "13"^^xsd:positiveInteger .
+
+res:team/Indonesia kg:hasPlayer res:player/Mauro_Zijlstra .
+
+res:player/Ramadhan_Sananta a kg:Player ;
+kg:name "Ramadhan Sananta" ;
+kg:birthDate "2002-11-27"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "9"^^xsd:positiveInteger .
+
+res:team/Indonesia kg:hasPlayer res:player/Ramadhan_Sananta .
+
+res:player/Ivan_Kolev a kg:Coach ;
+kg:name "Ivan Kolev" ;
+kg:nationality res:country/Bulgaria ;
+
+res:team/Indonesia kg:hasCoach res:coach/Ivan_Kolev .
+
+res:player/Peter_Withe a kg:Coach ;
+kg:name "Peter Withe" ;
+kg:nationality res:country/England ;
+
+res:team/Indonesia kg:hasCoach res:coach/Peter_Withe .
+
+res:player/Shin_Tae-yong a kg:Coach ;
+kg:name "Shin Tae-yong" ;
+kg:nationality res:country/South_Korea ;
+
+res:team/Indonesia kg:hasCoach res:coach/Shin_Tae_yong .
+
+res:player/Patrick_Kluivert a kg:Coach ;
+kg:name "Patrick Kluivert" ;
+kg:nationality res:country/Netherlands ;
+
+res:team/Indonesia kg:hasCoach res:coach/Patrick_Kluivert .
+
+res:player/Alex_Pastoor a kg:AssistantCoach ;
+kg:name "Alex Pastoor" ;
+kg:nationality res:country/Netherlands ;
+
+res:team/Indonesia kg:hasAssistantCoach res:assistant_coach/Alex_Pastoor .
+
+res:player/Denny_Landzaat a kg:AssistantCoach ;
+kg:name "Denny Landzaat" ;
+kg:nationality res:country/Netherlands ;
+
+res:team/Indonesia kg:hasAssistantCoach res:assistant_coach/Denny_Landzaat .
+
+res:player/Gerald_Vanenburg a kg:AssistantCoach ;
+kg:name "Gerald Vanenburg" ;
+kg:nationality res:country/Netherlands ;
+
+res:team/Indonesia kg:hasAssistantCoach res:assistant_coach/Gerald_Vanenburg .
+
+res:player/Raphael_Maitimo a kg:AssistantCoach ;
+kg:name "Raphael Maitimo" ;
+kg:nationality res:country/Indonesia ;
+
+res:team/Indonesia kg:hasAssistantCoach res:assistant_coach/Raphael_Maitimo .
+
+res:player/Irfan_Bachdim a kg:AssistantCoach ;
+kg:name "Irfan Bachdim" ;
+kg:nationality res:country/Indonesia ;
+
+res:team/Indonesia kg:hasAssistantCoach res:assistant_coach/Irfan_Bachdim .
+
+res:player/Maarten_Stekelenburg a kg:Goalkeeper ;
+kg:name "Maarten Stekelenburg" ;
+kg:nationality res:country/Netherlands ;
+
+res:team/Indonesia kg:hasGoalkeeper res:goalkeeper/Maarten_Stekelenburg .
+
+res:player/Quentin_Jakoba a kg:AssistantCoach ;
+kg:name "Quentin Jakoba" ;
+kg:nationality res:country/Curacao ;
+
+res:team/Indonesia kg:hasAssistantCoach res:assistant_coach/Quentin_Jakoba .
+
+res:player/Gerald_Vanenburg a kg:AssistantCoach ;
+kg:name "Gerald Vanenburg" ;
+kg:nationality res:country/Netherlands ;
+
+res:team/Indonesia kg:hasAssistantCoach res:assistant_coach/Gerald_Vanenburg .
+
+res:player/Raphael_Maitimo a kg:AssistantCoach ;
+kg:name "Raphael Maitimo" ;
+kg:nationality res:country/Indonesia ;
+
+res:team/Indonesia kg:hasAssistantCoach res:assistant_coach/Raphael_Maitimo .
+
+res:player/Irfan_Bachdim a kg:AssistantCoach ;
+kg:name "Irfan Bachdim" ;
+kg:nationality res:country/Indonesia ;
+
+res:team/Indonesia kg:hasAssistantCoach res:assistant_coach/Irfan_Bachdim .
+
+res:player/Quentin_Jakoba a kg:AssistantCoach ;
+kg:name "Quentin Jakoba" ;
+kg:nationality res:country/Curacao ;
+
+res:team/Indonesia kg:hasAssistantCoach res:assistant_coach/Quentin_Jakoba .
+
+res:player/Sumardji a kg:Manager ;
+kg:name "Sumardji" ;
+kg:nationality res:country/Indonesia ;
+
+res:team/Indonesia kg:hasManager res:manager/Sumardji .
+
+res:player/Endang_Witarsa a kg:Coach ;
+kg:name "Endang Witarsa" ;
+kg:nationality res:country/Indonesia ;
+
+res:team/Indonesia kg:hasCoach res:coach/Endang_Witarsa .
+
+res:player/Bambang_Nurdiansyah a kg:Coach ;
+kg:name "Bambang Nurdiansyah" ;
+kg:nationality res:country/Indonesia ;
+
+res:team/Indonesia kg:hasCoach res:coach/Bambang_Nurdiansyah .
+
+res:player/Benny_Dollo a kg:Coach ;
+kg:name "Benny Dollo" ;
+kg:nationality res:country/Indonesia ;
+
+res:team/Indonesia kg:hasCoach res:coach/Benny_Dollo .
+
+res:player/Ali_andi a kg:Coach ;
+kg:name "Ali andi" ;
+kg:nationality res:country/Indonesia ;
+
+res:team/Indonesia kg:hasCoach res:coach/Ali_andi .
+
+res:player/Bima_Sakti a kg:Coach ;
+kg:name "Bima Sakti" ;
+kg:nationality res:country/Indonesia ;
+
+res:team/Indonesia kg:hasCoach res:coach/Bima_Sakti .
+
+res:player/Simon_McMenemy a kg:Coach ;
+kg:name "Simon McMenemy" ;
+kg:nationality res:country/Scotland ;
+
+res:team/Indonesia kg:hasCoach res:coach/Simon_McMenemy .
+
+res:player/Nil_Maizar a kg:Coach ;
+kg:name "Nil Maizar" ;
+

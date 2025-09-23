@@ -1,0 +1,293 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/North_Macedonia_National_Football_Team a kg:Team ;
+kg:teamName "Bắc Macedonia" ;
+kg:hasCoach res:person/Blagoja_Milevski ;
+kg:hasCaptain res:player/Goran_Pandev ;
+kg:homeStadium res:stadium/Tose_Proeski_Arena ;
+kg:teamAbbreviation "MKD" ;
+kg:FIFA_Rank ?FIFA_Rank ;
+kg:FIFA_max 46 ;
+kg:FIFA_max_date "2008-10"^^xsd:date ;
+kg:FIFA_min 166 ;
+kg:FIFA_min_date "2017-03"^^xsd:date ;
+kg:Elo_Rank ?Elo_Rank ;
+kg:Elo_max 41 ;
+kg:Elo_max_date "2018-12-04"^^xsd:date ;
+kg:Elo_min 113 ;
+kg:Elo_min_date "2017-01"^^xsd:date .
+
+res:person/Blagoja_Milevski a kg:Coach ;
+kg:manages res:team/North_Macedonia_National_Football_Team .
+
+res:player/Goran_Pandev a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+kg:mostCaps 122 ;
+kg:topScorer 38 .
+
+res:stadium/Tose_Proeski_Arena a kg:Stadium ;
+kg:location res:city/Skopje .
+
+res:city/Skopje a kg:City ;
+kg:locatedIn res:country/North_Macedonia .
+
+res:country/North_Macedonia a kg:Country .
+
+res:competition/FIFA_World_Cup a kg:Competition ;
+kg:competitionName "World Cup" .
+
+res:competition/Euro a kg:Competition ;
+kg:competitionName "UEFA Euro" .
+
+res:season/2020_Euro a kg:Season ;
+kg:seasonOf res:competition/Euro ;
+kg:participatesIn res:team/North_Macedonia_National_Football_Team .
+
+res:match/2023_England_vs_Macedonia a kg:Match ;
+kg:homeTeam res:team/England ;
+kg:awayTeam res:team/North_Macedonia_National_Football_Team ;
+kg:venue res:stadium/Manchester_Stadium ;
+kg:kickoffTime "2023-06-19"^^xsd:date .
+
+res:match/1993_Slovenia_vs_Macedonia a kg:Match ;
+kg:homeTeam res:team/Slovenia ;
+kg:awayTeam res:team/North_Macedonia_National_Football_Team ;
+kg:venue res:city/Kranj ;
+kg:kickoffTime "1993-10-13"^^xsd:date .
+
+res:match/1996_Liechtenstein_vs_Macedonia a kg:Match ;
+kg:homeTeam res:team/Liechtenstein ;
+kg:awayTeam res:team/North_Macedonia_National_Football_Team ;
+kg:venue res:city/Eschen-Mauren ;
+kg:kickoffTime "1996-11-09"^^xsd:date .
+
+res:player/Kristijan_Naumovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 ;
+kg:birthDate "1988-09-17"^^xsd:date ;
+kg:nationality res:country/North_Macedonia ;
+kg:club res:club/KF_Shkupi .
+
+res:player/Damjan_Shishkovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 22 ;
+kg:birthDate "1995-03-18"^^xsd:date ;
+kg:nationality res:country/Cyprus ;
+kg:club res:club/Doxa_Katokopias_FC .
+
+res:player/Igor_Aleksovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 26 ;
+kg:birthDate "1995-02-24"^^xsd:date ;
+kg:nationality res:country/North_Macedonia ;
+kg:club res:club/Rabotnicki .
+
+res:player/Stole_Dimitrievski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber ?number ;
+kg:birthDate "1993-12-25"^^xsd:date ;
+kg:nationality res:country/Spain ;
+kg:club res:club/Rayo_Vallecano .
+
+res:player/Egzon_Bejtulai a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 ;
+kg:birthDate "1994-01-07"^^xsd:date ;
+kg:nationality res:country/North_Macedonia ;
+kg:club res:club/KF_Shkendija .
+
+res:player/Stefan_Ashkovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 ;
+kg:birthDate "1992-02-24"^^xsd:date ;
+kg:nationality res:country/Greece ;
+kg:club res:club/PAS_Lamia_1964 .
+
+res:player/Kire_Ristevski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 ;
+kg:birthDate "1990-10-22"^^xsd:date ;
+kg:nationality res:country/Armenia ;
+kg:club res:club/FC_Pyunik .
+
+res:player/Vladica_Brdarovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 ;
+kg:birthDate "1990-02-07"^^xsd:date ;
+kg:nationality res:country/North_Macedonia ;
+kg:club res:club/KF_Shkupi .
+
+res:player/Bojan_Dimoski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 ;
+kg:birthDate "2001-11-23"^^xsd:date ;
+kg:nationality res:country/North_Macedonia ;
+kg:club res:club/Akademija_Pandev .
+
+res:player/Ezgjan_Alioski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 8 ;
+kg:birthDate "1992-02-12"^^xsd:date ;
+kg:nationality res:country/Turkey ;
+kg:club res:club/Fenerbahce_SK .
+
+res:player/Stefan_Ristovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 13 ;
+kg:birthDate "1992-02-12"^^xsd:date ;
+kg:nationality res:country/Croatia ;
+kg:club res:club/GNK_Dinamo_Zagreb ;
+kg:isCaptain true .
+
+res:player/Darko_Velkovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 14 ;
+kg:birthDate "1995-06-21"^^xsd:date ;
+kg:nationality res:country/Saudi_Arabia ;
+kg:club res:club/Al_Ettifaq_FC .
+
+res:player/Jovan_Manev a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 15 ;
+kg:birthDate "2001-01-25"^^xsd:date ;
+kg:nationality res:country/Turkey ;
+kg:club res:club/Adana_Demirspor .
+
+res:player/Visar_Musliu a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber ?number ;
+kg:birthDate "1994-11-13"^^xsd:date ;
+kg:nationality res:country/Germany ;
+kg:club res:club/FC_In golstadt_04 .
+
+res:player/Gjoko_Zajkov a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber ?number ;
+kg:birthDate "1995-02-10"^^xsd:date ;
+kg:nationality res:country/Romania ;
+kg:club res:club/CS_Universitatea_Craiova .
+
+res:player/Elif_Elmas a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 ;
+kg:birthDate "1999-09-24"^^xsd:date ;
+kg:nationality res:country/Italy ;
+kg:club res:club/SSC_Napoli .
+
+res:player/Enis_Bardhi a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 10 ;
+kg:birthDate "1995-07-02"^^xsd:date ;
+kg:nationality res:country/Turkey ;
+kg:club res:club/Trabzonspor .
+
+res:player/Darko_Churlinov a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 11 ;
+kg:birthDate "2000-07-11"^^xsd:date ;
+kg:nationality res:country/England ;
+kg:club res:club/Burnley_FC .
+
+res:player/David_Babunski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 16 ;
+kg:birthDate "1994-03-01"^^xsd:date ;
+kg:nationality res:country/Hungary ;
+kg:club res:club/Mezokovesdi_SE .
+
+res:player/Valon_Ethemi a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 17 ;
+kg:birthDate "1997-10-03"^^xsd:date ;
+kg:nationality res:country/Turkey ;
+kg:club res:club/Is tanbulspor .
+
+res:player/Agon_Elezi a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 18 ;
+kg:birthDate "2001-03-01"^^xsd:date ;
+kg:nationality res:country/Croatia ;
+kg:club res:club/NK_Varazdin .
+
+res:player/Jani_Atanasov a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 21 ;
+kg:birthDate "1999-10-31"^^xsd:date ;
+kg:nationality res:country/Poland ;
+kg:club res:club/MKS_Cracovia .
+
+res:player/Davor_Zdravkovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber ?number ;
+kg:birthDate "1998-03-29"^^xsd:date ;
+kg:nationality res:country/Cyprus ;
+kg:club res:club/AEL_Limassol .
+
+res:player/Arijan_Ademi a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber ?number ;
+kg:birthDate "1991-05-29"^^xsd:date ;
+kg:nationality res:country/China ;
+kg:club res:club/Beijing_Quo_An_FC .
+
+res:player/Aleksandar_Trajkovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 9 ;
+kg:birthDate "1992-09-05"^^xsd:date ;
+kg:nationality res:country/Saudi_Arabia ;
+kg:club res:club/Al_Fayha_FC .
+
+res:player/Milan_Ristovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 19 ;
+kg:birthDate "1998-04-08"^^xsd:date ;
+kg:nationality res:country/Slovakia ;
+kg:club res:club/FC_Spartak_Trnava .
+
+res:player/Bojan_Miovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 20 ;
+kg:birthDate "1999-06-24"^^xsd:date ;
+kg:nationality res:country/Scotland ;
+kg:club res:club/Aberdeen_FC .
+
+res:player/Ilija_Nestorovski a kg:Player ;
+kg:playsFor res:team/North_Macedonia_National_Football_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 23 ;
+kg:birthDate "1990-03-12"^^xsd:date ;
+kg:nationality res:country/Italy ;
+kg:club res:club/Udinese_Calcio .

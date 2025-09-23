@@ -1,0 +1,238 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Angola a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Angola" ;
+kg:teamAbbreviation "ANG" ;
+kg:hasCoach res:coach/Pedro_Gonçalves ;
+kg:hasCaptain res:player/Djalma_Campos ;
+kg:homeStadium res:stadium/Sân_vận_động_11_tháng_11 ;
+kg:participatesIn res:season/2006_World_Cup ;
+kg:participatesIn res:season/1996_Africa_Cup_of_Nations ;
+kg:participatesIn res:season/2008_Africa_Cup_of_Nations ;
+kg:participatesIn res:season/2010_Africa_Cup_of_Nations ;
+kg:participatesIn res:season/2023_Africa_Cup_of_Nations .
+
+res:coach/Pedro_Gonçalves a kg:Coach ;
+kg:manages res:team/Angola .
+
+res:player/Djalma_Campos a kg:Player ;
+kg:isCaptain res:team/Angola .
+
+res:stadium/Sân_vận_động_11_tháng_11 a kg:Stadium ;
+kg:isHomeOf res:team/Angola .
+
+res:season/2006_World_Cup a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup_2006 ;
+kg:participantCount 22 .
+
+res:season/1996_Africa_Cup_of_Nations a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations_1996 ;
+kg:participantCount 15 .
+
+res:season/2008_Africa_Cup_of_Nations a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations_2008 ;
+kg:participantCount 16 .
+
+res:season/2010_Africa_Cup_of_Nations a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations_2010 ;
+kg:participantCount 15 .
+
+res:season/2023_Africa_Cup_of_Nations a kg:Season ;
+kg:seasonOf res:competition/Africa_Cup_of_Nations_2023 ;
+kg:participantCount 24 .
+
+res:competition/FIFA_World_Cup_2006 a kg:Competition ;
+kg:competitionName "Giải bóng đá vô địch thế giới 2006" ;
+kg:organizes res:organization/FIFA .
+
+res:competition/Africa_Cup_of_Nations_1996 a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Phi 1996" ;
+kg:organizes res:organization/CAM .
+
+res:competition/Africa_Cup_of_Nations_2008 a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Phi 2008" ;
+kg:organizes res:organization/CAM .
+
+res:competition/Africa_Cup_of_Nations_2010 a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Phi 2010" ;
+kg:organizes res:organization/CAM .
+
+res:competition/Africa_Cup_of_Nations_2023 a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Phi 2023" ;
+kg:organizes res:organization/CAM .
+
+res:organization/FIFA a kg:Organization ;
+kg:organizes res:competition/FIFA_World_Cup_2006 .
+
+res:organization/CAM a kg:Organization ;
+kg:organizes res:competition/Africa_Cup_of_Nations_1996 ;
+kg:organizes res:competition/Africa_Cup_of_Nations_2008 ;
+kg:organizes res:competition/Africa_Cup_of_Nations_2010 ;
+kg:organizes res:competition/Africa_Cup_of_Nations_2023 .
+
+res:player/Antonio_Dominique a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1994-07-25"^^xsd:date ;
+kg:nationality res:country/Angola .
+
+res:player/Kadú a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1994-11-30"^^xsd:date ;
+kg:nationality res:country/Portugal .
+
+res:player/Neblú a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1993-12-16"^^xsd:date ;
+kg:nationality res:country/Angola .
+
+res:player/Gelson a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1999-07-08"^^xsd:date ;
+kg:nationality res:country/Angola .
+
+res:player/Núrio_Fortuna a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1995-03-24"^^xsd:date ;
+kg:nationality res:country/Belgium .
+
+res:player/Jonathan_Buatu a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1993-09-27"^^xsd:date ;
+kg:nationality res:country/France .
+
+res:player/Joaquim_Balanga a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1998-03-13"^^xsd:date ;
+kg:nationality res:country/Angola .
+
+res:player/Kialonda_Gaspar a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1997-09-27"^^xsd:date ;
+kg:nationality res:country/Portugal .
+
+res:player/Augusto_Carneiro a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1995-11-05"^^xsd:date ;
+kg:nationality res:country/Angola .
+
+res:player/Loide_Augusto a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2000-02-26"^^xsd:date ;
+kg:nationality res:country/Turkey .
+
+res:player/Eddie_Afonso a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1994-03-07"^^xsd:date ;
+kg:nationality res:country/Angola .
+
+res:player/Inácio_Miguel a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1995-12-12"^^xsd:date ;
+kg:nationality res:country/Angola .
+
+res:player/Manuel_Keliano a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2003-01-06"^^xsd:date ;
+kg:nationality res:country/Portugal .
+
+res:player/Beni_Mukendi a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2002-05-21"^^xsd:date ;
+kg:nationality res:country/Portugal .
+
+res:player/Alfredo_Kulembe_Ribeiro a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1990-03-27"^^xsd:date ;
+kg:nationality res:country/Turkey ;
+kg:isCaptain res:team/Angola .
+
+res:player/Bruno_Paz a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1998-04-23"^^xsd:date ;
+kg:nationality res:country/Turkey .
+
+res:player/Valdomiro_Tualungo_Paulo_Lameira a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1995-09-22"^^xsd:date ;
+kg:nationality res:country/Turkey .
+
+res:player/Manuel_Cafumana a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1999-03-06"^^xsd:date ;
+kg:nationality res:country/Israel .
+
+res:player/Deivi_Miguel_Vieira a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2001-03-10"^^xsd:date ;
+kg:nationality res:country/Angola .
+
+res:player/Ambrosini_António_Cabaça_Salvador a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2002-07-03"^^xsd:date ;
+kg:nationality res:country/Greece .
+
+res:player/Gelson_Dala a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1996-07-13"^^xsd:date ;
+kg:nationality res:country/Qatar .
+
+res:player/Felício_Milson a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1999-10-12"^^xsd:date ;
+kg:nationality res:country/Israel .
+
+res:player/Zito_Luvumbo a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2002-03-09"^^xsd:date ;
+kg:nationality res:country/Italy .
+
+res:player/Jérémie_Bela a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1993-04-08"^^xsd:date ;
+kg:nationality res:country/France .
+
+res:player/Mabululu a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1992-06-01"^^xsd:date ;
+kg:nationality res:country/Egypt .
+
+res:player/Depú a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2000-01-08"^^xsd:date ;
+kg:nationality res:country/Portugal .
+
+res:player/Chico_Banza a kg:Player ;
+kg:playsFor res:team/Angola ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1998-12-17"^^xsd:date ;
+kg:nationality res:country/Cyprus .

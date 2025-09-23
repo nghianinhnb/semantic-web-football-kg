@@ -1,0 +1,354 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Ecuador a kg:Team ;
+kg:teamName "Ecuador" ;
+kg:hasCoach res:coach/Sebastián_Beccacece ;
+kg:hasCaptain res:player/Enner_Valencia ;
+kg:teamAbbreviation "ECU" ;
+kg:locatedIn res:country/Ecuador ;
+kg:participatesIn res:competition/FIFA_World_Cup_2006 ;
+kg:participatesIn res:competition/Copa_America_1939 ;
+kg:participatesIn res:competition/Copa_America_1959 ;
+kg:participatesIn res:competition/Copa_America_1993 ;
+kg:participatesIn res:competition/Copa_America_2024 ;
+kg:homeStadium res:stadium/Sân_vận_động_Rodrigo_Paz_Delgado .
+
+res:stadium/Sân_vận_động_Rodrigo_Paz_Delgado a kg:Stadium ;
+kg:locatedIn res:city/Quito ;
+kg:isHomeOf res:team/Ecuador .
+
+res:coach/Sebastián_Beccacece a kg:Coach ;
+kg:manages res:team/Ecuador .
+
+res:player/Enner_Valencia a kg:Player, kg:Forward ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1989-11-04"^^xsd:date ;
+kg:birthPlace res:city/Lima ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 13 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 41 ;
+kg:totalCaps 89 .
+
+res:player/Iván_Hurtado a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1982-05-12"^^xsd:date ;
+kg:birthPlace res:city/Quito ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 4 ;
+kg:totalCaps 168 .
+
+res:player/Moisés_Caicedo a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "2001-11-02"^^xsd:date ;
+kg:birthPlace res:city/Lima ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 23 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 3 ;
+kg:totalCaps 46 .
+
+res:player/Kevin_Rodríguez a kg:Player, kg:Forward ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "2000-03-04"^^xsd:date ;
+kg:birthPlace res:city/Ghent ;
+kg:nationality res:country/Belgium ;
+kg:shirtNumber 11 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 2 ;
+kg:totalCaps 17 .
+
+res:player/Pervis_Estupiñán a kg:Player, kg:Defender ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1998-01-21"^^xsd:date ;
+kg:birthPlace res:city/Quito ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 3 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 4 ;
+kg:totalCaps 38 .
+
+res:player/José_Cifuentes a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1999-03-12"^^xsd:date ;
+kg:birthPlace res:city/São_Paulo ;
+kg:nationality res:country/Brazil ;
+kg:shirtNumber 5 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 21 .
+
+res:player/Angel_Mena a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1988-01-21"^^xsd:date ;
+kg:birthPlace res:city/Mexico_City ;
+kg:nationality res:country/Mexico ;
+kg:shirtNumber 15 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 8 ;
+kg:totalCaps 61 .
+
+res:player/Ángelo_Preciado a kg:Player, kg:Defender ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1998-02-18"^^xsd:date ;
+kg:birthPlace res:city/Quito ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 17 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 43 .
+
+res:player/Hernán_Galíndez a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "1987-03-30"^^xsd:date ;
+kg:birthPlace res:city/Buenos_Aires ;
+kg:nationality res:country/Argentina ;
+kg:shirtNumber 1 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 19 .
+
+res:player/Moisés_Ramírez a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "2000-09-09"^^xsd:date ;
+kg:birthPlace res:city/Quito ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 12 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 6 .
+
+res:player/Alexander_Domínguez a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "1987-06-05"^^xsd:date ;
+kg:birthPlace res:city/Quito ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 22 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 78 .
+
+res:player/Félix_Torres a kg:Player, kg:Defender ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1997-01-11"^^xsd:date ;
+kg:birthPlace res:city/São_Paulo ;
+kg:nationality res:country/Brazil ;
+kg:shirtNumber 2 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 5 ;
+kg:totalCaps 37 .
+
+res:player/Piero_Hincapié a kg:Player, kg:Defender ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "2002-01-09"^^xsd:date ;
+kg:birthPlace res:city/Neuburg ;
+kg:nationality res:country/Germany ;
+kg:shirtNumber 3 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 2 ;
+kg:totalCaps 37 .
+
+res:player/Joel_Ordóñez a kg:Player, kg:Defender ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "2004-04-21"^^xsd:date ;
+kg:birthPlace res:city/Bruges ;
+kg:nationality res:country/Belgium ;
+kg:shirtNumber 4 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 2 .
+
+res:player/Willian_Pacho a kg:Player, kg:Defender ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "2001-10-16"^^xsd:date ;
+kg:birthPlace res:city/Frankfurt ;
+kg:nationality res:country/Germany ;
+kg:shirtNumber 6 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 2 ;
+kg:totalCaps 16 .
+
+res:player/Layan_Loor a kg:Player, kg:Defender ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "2001-05-23"^^xsd:date ;
+kg:birthPlace res:city/Quito ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 7 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 1 .
+
+res:player/Carlos_Gruezo a kg:Player, kg:Defender ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1995-04-19"^^xsd:date ;
+kg:birthPlace res:city/California ;
+kg:nationality res:country/United_States ;
+kg:shirtNumber 8 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 1 ;
+kg:totalCaps 63 .
+
+res:player/José_Hurtado a kg:Player, kg:Defender ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1998-02-18"^^xsd:date ;
+kg:birthPlace res:city/Quito ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 24 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 9 .
+
+res:player/Jackson_Porozo a kg:Player, kg:Defender ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "2000-08-04"^^xsd:date ;
+kg:birthPlace res:city/Istanbul ;
+kg:nationality res:country/Turkey ;
+kg:shirtNumber 25 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 8 .
+
+res:player/Andrés_Micolta a kg:Player, kg:Defender ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1999-06-06"^^xsd:date ;
+kg:birthPlace res:city/Mexico_City ;
+kg:nationality res:country/Mexico ;
+kg:shirtNumber 26 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 1 .
+
+res:player/José_Cifuentes a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1999-03-12"^^xsd:date ;
+kg:birthPlace res:city/São_Paulo ;
+kg:nationality res:country/Brazil ;
+kg:shirtNumber 5 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 21 .
+
+res:player/John_Yeboah a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "2000-06-23"^^xsd:date ;
+kg:birthPlace res:city/Częstochowa ;
+kg:nationality res:country/Poland ;
+kg:shirtNumber 9 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 2 ;
+kg:totalCaps 6 .
+
+res:player/Kendry_Páez a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "2007-05-04"^^xsd:date ;
+kg:birthPlace res:city/Quito ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 2 ;
+kg:totalCap 13 .
+
+res:player/Alan_Minda a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "2003-05-14"^^xsd:date ;
+kg:birthPlace res:city/Bruges ;
+kg:nationality res:country/Belgium ;
+kg:shirtNumber 14 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 1 ;
+kg:totalCaps 8 .
+
+res:player/Jordy_Caicedo a kg:Player, kg:Forward ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1997-11-18"^^xsd:date ;
+kg:birthPlace res:city/Guadalajara ;
+kg:nationality res:country/Mexico ;
+kg:shirtNumber 19 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 3 ;
+kg:totalCaps 17 .
+
+res:player/Alan_Franco a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1998-08-21"^^xsd:date ;
+kg:birthPlace res:city/Belo_Horizonte ;
+kg:nationality res:country/Brazil ;
+kg:shirtNumber 21 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 1 ;
+kg:totalCaps 40 .
+
+res:player/Moisés_Caicedo a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "2001-11-02"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/England ;
+kg:shirtNumber 23 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 3 ;
+kg:totalCaps 46 .
+
+res:player/Johann_Ortiz a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1996-05-01"^^xsd:date ;
+kg:birthPlace res:city/Quito ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 18 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 0 ;
+kg:totalCaps 9 .
+
+res:player/Janner_Corozo a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1995-09-08"^^xsd:date ;
+kg:birthPlace res:city/Guayaquil ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 20 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals 1 ;
+kg:totalCaps 5 .
+
+res:player/José_Cevallos a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Ecuador ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1978-08-27"^^xsd:date ;
+kg:birthPlace res:city/Guayaquil ;
+kg:nationality res:country/Ecuador ;
+kg:shirtNumber 21 ;
+kg:preferredFoot kg:RightFooted ;
+kg:totalGoals

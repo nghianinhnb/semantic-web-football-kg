@@ -7,6 +7,11 @@
 @prefix res: <https://kg-football.vn/resource/> .
 
 # Stadium and Venue
+kg:Organization a owl:Class ;
+  rdfs:label "Organization"@en , "Tổ chức"@vi ;
+  rdfs:comment "Generic organization"@en ;
+  rdfs:subClassOf schema:Organization .
+
 kg:Stadium a owl:Class ;
   rdfs:label "Stadium"@en , "Sân vận động"@vi ;
   rdfs:comment "Football stadium"@en ;
@@ -35,6 +40,13 @@ kg:isHomeOf a owl:ObjectProperty ;
   rdfs:subPropertyOf schema:containedInPlace .
 
 # Club properties
+kg:hasMember a owl:ObjectProperty ;
+  rdfs:label "has member"@en , "có thành viên"@vi ;
+  rdfs:comment "Organization has a member"@en ;
+  rdfs:domain kg:Organization ;
+  rdfs:range kg:Team ;
+  rdfs:subPropertyOf schema:member .
+
 kg:foundedDate a owl:DatatypeProperty ;
   rdfs:label "founded date"@en , "ngày thành lập"@vi ;
   rdfs:comment "Date when the club was founded"@en ;

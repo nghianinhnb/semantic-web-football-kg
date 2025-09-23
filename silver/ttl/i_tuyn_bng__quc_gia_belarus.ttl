@@ -1,0 +1,322 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Belarus a kg:Team ;
+kg:teamName "Belarus" ;
+kg:hasCoach res:coach/Alyaksandr_Khatskevich ;
+kg:hasCaptain res:player/Alyaksandr_Martynovich ;
+kg:homeStadium res:stadium/Sân_vận_động_Dinamo_(Minsk) ;
+kg:locatedIn res:country/Belarus .
+
+res:country/Belarus a kg:Country ;
+rdfs:label "Belarus" .
+
+res:stadium/Sân_vận_động_Dinamo_(Minsk) a kg:Stadium ;
+kg:locatedIn res:city/Minsk ;
+kg:isHomeOf res:team/Belarus .
+
+res:city/Minsk a kg:City ;
+rdfs:label "Minsk" ;
+kg:locatedIn res:country/Belarus .
+
+res:coach/Alyaksandr_Khatskevich a kg:Coach ;
+kg:manages res:team/Belarus .
+
+res:player/Alyaksandr_Martynovich a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Captain .
+
+res:player/Alyaksandr_Kulchy a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:mostCaps 102 .
+
+res:player/Maksim_Romaschenko a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:topScorer 20 .
+
+res:player/Maksim_Plotnikov a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "1998-01-29"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:shirtNumber 1 ;
+kg:club res:club/FC_Shakhtyor_Soligorsk .
+
+res:player/Syarhey_Ignatovich a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "1992-06-29"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Isloch_Minsk_Raion .
+
+res:player/Andrey_Kudravets a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "2003-09-02"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_BATE_Borisov .
+
+res:player/Denis_Polyakov a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1991-04-17"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Astana .
+
+res:player/Sergey_Politevich a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1990-04-09"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Shakhtyor_Soligorsk .
+
+res:player/Kiryl_Pyachenin a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1997-03-18"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Orenburg .
+
+res:player/Gleb_Shevchenko a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1999-02-17"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Shakhtyor_Soligorsk .
+
+res:player/Maksim_Shvyatsow a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1998-04-02"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Dinamo_Minsk .
+
+res:player/Danila_Nechayev a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1999-10-30"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_BATE_Borisov .
+
+res:player/Zakhar_Volkov a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1997-08-12"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Khimki .
+
+res:player/Ilya_Lukashevich a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1998-08-01"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Energetik-BGU_Minsk .
+
+res:player/Vladislav_Klimovich a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1996-06-12"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/Nea_Salamis_Famagusta_FC .
+
+res:player/Yevgeny_Yablonsky a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1995-05-10"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/Aris_Limassol_FC .
+
+res:player/Max_Ebong a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1999-08-26"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Astana .
+
+res:player/Ivan_Bakhar a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1998-07-10"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Dinamo_Minsk .
+
+res:player/Valery_Gromyko a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1997-01-23"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_BATE_Borisov .
+
+res:player/Vladislav_Malkevich a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1999-12-04"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_BATE_Borisov .
+
+res:player/Valery_Bocherov a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "2000-08-10"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_BATE_Borisov .
+
+res:player/Denis_Grechikho a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1999-05-22"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Dinamo_Minsk .
+
+res:player/Kirill_Kaplenko a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1999-06-15"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Orenburg .
+
+res:player/Dmitry_Podsrelov a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1998-09-06"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Shakhtyor_Soligorsk .
+
+res:player/Uladzimir_Khvashchynski a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1990-05-10"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/FC_Minsk .
+
+res:player/Yegor_Bogomolsky a kg:Player ;
+kg:playsFor res:team/Belarus ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "2000-06-03"^^xsd:date ;
+kg:nationality res:country/Belarus ;
+kg:club res:club/Neftçi_PFK .
+
+res:club/FC_Shakhtyor_Soligorsk a kg:Club ;
+kg:locatedIn res:city/Soligorsk .
+
+res:club/FC_Isloch_Minsk_Raion a kg:Club ;
+kg:locatedIn res:city/Minsk .
+
+res:club/FC_BATE_Borisov a kg:Club ;
+kg:locatedIn res:city/Borisov .
+
+res:club/FC_Dinamo_Minsk a kg:Club ;
+kg:locatedIn res:city/Minsk .
+
+res:club/FC_Astana a kg:Club ;
+kg:locatedIn res:country/Kazakhstan .
+
+res:club/FC_Khimki a kg:Club ;
+kg:locatedIn res:city/Khimki .
+
+res:club/FC_Energetik-BGU_Minsk a kg:Club ;
+kg:locatedIn res:city/Minsk .
+
+res:club/Nea_Salamis_Famagusta_FC a kg:Club ;
+kg:locatedIn res:country/Cyprus .
+
+res:club/Aris_Limassol_FC a kg:Club ;
+kg:locatedIn res:country/Cyprus .
+
+res:club/FC_Neman_Grodno a kg:Club ;
+kg:locatedIn res:city/Grodno .
+
+res:club/FC_Gomel a kg:Club ;
+kg:locatedIn res:city/Gomel .
+
+res:club/FC_Rostov a kg:Club ;
+kg:locatedIn res:country/Russia .
+
+res:club/FC_Orenburg a kg:Club ;
+kg:locatedIn res:city/Orenburg .
+
+res:club/FC_Minsk a kg:Club ;
+kg:locatedIn res:city/Minsk .
+
+res:club/Neftçi_PFK a kg:Club ;
+kg:locatedIn res:country/Azerbaijan .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Defender ;
+rdfs:subClassOf kg:Position .
+
+res:position/Midfielder a kg:Midfielder ;
+rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Forward ;
+rdfs:subClassOf kg:Position .
+
+res:position/Captain a kg:Position .
+
+res:country/Kazakhstan a kg:Country ;
+rdfs:label "Kazakhstan" .
+
+res:country/Cyprus a kg:Country ;
+rdfs:label "Cyprus" .
+
+res:country/Russia a kg:Country ;
+rdfs:label "Russia" .
+
+res:country/Azerbaijan a kg:Country ;
+rdfs:label "Azerbaijan" .
+
+res:city/Soligorsk a kg:City ;
+rdfs:label "Soligorsk" ;
+kg:locatedIn res:country/Belarus .
+
+res:city/Borisov a kg:City ;
+rdfs:label "Borisov" ;
+kg:locatedIn res:country/Belarus .
+
+res:city/Khimki a kg:City ;
+rdfs:label "Khimki" ;
+kg:locatedIn res:country/Russia .
+
+res:city/Grodno a kg:City ;
+rdfs:label "Grodno" ;
+kg:locatedIn res:country/Belarus .
+
+res:city/Orenburg a kg:City ;
+rdfs:label "Orenburg" ;
+kg:locatedIn res:country/Russia .
+
+res:city/Gomel a kg:City ;
+rdfs:label "Gomel" ;
+kg:locatedIn res:country/Belarus .
+
+res:coach/Mihail_Verhejenka a kg:Coach ;
+kg:manages res:team/Belarus .
+
+res:coach/Siarhej_Barouski a kg:Coach ;
+kg:manages res:team/Belarus .
+
+res:coach/Eduard_Malofeev a kg:Coach ;
+kg:manages res:team/Belarus .
+
+res:coach/Valery_Stralcou a kg:Coach ;
+kg:manages res:team/Belarus .
+
+res:coach/Anatoly_Baidachny a kg:Coach ;
+kg:manages res:team/Belarus .
+
+res:coach/Yuri_Puntus a kg:Coach ;
+kg:manages res:team/Belarus .
+
+res:coach/Bernd_Stange a kg:Coach ;
+kg:manages res:team/Belarus .
+
+res:coach/Georgi_Kondratiev a kg:Coach ;
+kg:manages res:team/Belarus .
+
+res:coach/Andrei_Zygmantovich a kg:Coach ;
+kg:manages res:team/Belarus .

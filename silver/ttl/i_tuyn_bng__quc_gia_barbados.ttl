@@ -1,0 +1,197 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Barbados a kg:Team ;
+kg:teamName "Barbados" ;
+kg:teamAbbreviation "BRB" ;
+kg:hasCoach res:coach/Russell_Latapy ;
+kg:hasCaptain res:player/Rashad_Jules ;
+kg:isCaptain res:player/Rashad_Jules ;
+kg:homeStadium res:stadium/National_Stadium_of_Barbados ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2019-20 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2022-23 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2023-24 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2024-25 ;
+kg:participatesIn res:season/Caribbean_Cup_1978 ;
+kg:participatesIn res:season/Caribbean_Cup_1981 ;
+kg:participatesIn res:season/Caribbean_Cup_1983 ;
+kg:participatesIn res:season/Caribbean_Cup_1985 ;
+kg:participatesIn res:season/Caribbean_Cup_1988 ;
+kg:participatesIn res:season/Caribbean_Cup_1989 ;
+kg:participatesIn res:season/Caribbean_Cup_1990 ;
+kg:participatesIn res:season/Caribbean_Cup_1991 ;
+kg:participatesIn res:season/Caribbean_Cup_1992 ;
+kg:participatesIn res:season/Caribbean_Cup_1993 ;
+kg:participatesIn res:season/Caribbean_Cup_1994 ;
+kg:participatesIn res:season/Caribbean_Cup_1995 ;
+kg:participatesIn res:season/Caribbean_Cup_1996 ;
+kg:participatesIn res:season/Caribbean_Cup_1997 ;
+kg:participatesIn res:season/Caribbean_Cup_1998 ;
+kg:participatesIn res:season/Caribbean_Cup_1999 ;
+kg:participatesIn res:season/Caribbean_Cup_2001 ;
+kg:participatesIn res:season/Caribbean_Cup_2005 ;
+kg:participatesIn res:season/Caribbean_Cup_2007 ;
+kg:participatesIn res:season/Caribbean_Cup_2008 ;
+kg:participatesIn res:season/Caribbean_Cup_2010 ;
+kg:participatesIn res:season/Caribbean_Cup_2012 ;
+kg:participatesIn res:season/Caribbean_Cup_2014 ;
+kg:participatesIn res:season/Caribbean_Cup_2017 .
+
+res:team/Barbados kg:participatesIn res:season/FIFA_World_Cup_Qualification_1978 ;
+kg:participatesIn res:season/FIFA_World_Cup_Qualification_1994 ;
+kg:participatesIn res:season/FIFA_World_Cup_Qualification_1998 ;
+kg:participatesIn res:season/FIFA_World_Cup_Qualification_2002 ;
+kg:participatesIn res:season/FIFA_World_Cup_Qualification_2006 ;
+kg:participatesIn res:season/FIFA_World_Cup_Qualification_2010 ;
+kg:participatesIn res:season/FIFA_World_Cup_Qualification_2014 ;
+kg:participatesIn res:season/FIFA_World_Cup_Qualification_2018 ;
+kg:participatesIn res:season/FIFA_World_Cup_Qualification_2022 ;
+kg:participatesIn res:season/FIFA_World_Cup_Qualification_2026 .
+
+res:team/Barbados kg:participatesIn res:season/Copa_America_Centroamerica_1977 ;
+kg:participatesIn res:season/Olympic_Qualifiers_1972 ;
+kg:participatesIn res:season/Caribbean_Cup_1978 ;
+kg:participatesIn res:season/Caribbean_Cup_1981 ;
+kg:participatesIn res:season/Caribbean_Cup_1983 ;
+kg:participatesIn res:season/Caribbean_Cup_1985 ;
+kg:participatesIn res:season/Caribbean_Cup_1988 ;
+kg:participatesIn res:season/Caribbean_Cup_1989 ;
+kg:participatesIn res:season/Caribbean_Cup_1990 ;
+kg:participatesIn res:season/Caribbean_Cup_1991 ;
+kg:participatesIn res:season/Caribbean_Cup_1992 ;
+kg:participatesIn res:season/Caribbean_Cup_1993 ;
+kg:participatesIn res:season/Caribbean_Cup_1994 ;
+kg:participatesIn res:season/Caribbean_Cup_1995 ;
+kg:participatesIn res:season/Caribbean_Cup_1996 ;
+kg:participatesIn res:season/Caribbean_Cup_1997 ;
+kg:participatesIn res:season/Caribbean_Cup_1998 ;
+kg:participatesIn res:season/Caribbean_Cup_1999 ;
+kg:participatesIn res:season/Caribbean_Cup_2001 ;
+kg:participatesIn res:season/Caribbean_Cup_2005 ;
+kg:participatesIn res:season/Caribbean_Cup_2007 ;
+kg:participatesIn res:season/Caribbean_Cup_2008 ;
+kg:participatesIn res:season/Caribbean_Cup_2010 ;
+kg:participatesIn res:season/Caribbean_Cup_2012 ;
+kg:participatesIn res:season/Caribbean_Cup_2014 ;
+kg:participatesIn res:season/Caribbean_Cup_2017 .
+
+res:team/Barbados kg:participatesIn res:season/Central American_and_Caribbean_Games_1974 ;
+kg:participatesIn res:season/Central_American_and_Caribbean_Games_1986 .
+
+res:team/Barbados kg:participatesIn res:season/CONCACAF_Championship_1977 ;
+kg:participatesIn res:season/CONCACAF_Championship_1981 ;
+kg:participatesIn res:season/CONCACAF_Championship_1985 ;
+kg:participatesIn res:season/CONCACAF_Championship_1989 ;
+kg:participatesIn res:season/CONCACAF_Championship_1991 ;
+kg:participatesIn res:season/CONCACAF_Championship_1993 ;
+kg:participatesIn res:season/CONCACAF_Championship_1996 ;
+kg:participatesIn res:season/CONCACAF_Championship_1998 ;
+kg:participatesIn res:season/CONCACAF_Championship_2000 ;
+kg:participatesIn res:season/CONCACAF_Championship_2002 ;
+kg:participatesIn res:season/CONCACAF_Championship_2003 ;
+kg:participatesIn res:season/CONCACAF_Championship_2005 ;
+kg:participatesIn res:season/CONCACAF_Championship_2007 ;
+kg:participatesIn res:season/CONCACAF_Championship_2009 ;
+kg:participatesIn res:season/CONCACAF_Championship_2011 ;
+kg:participatesIn res:season/CONCACAF_Championship_2013 ;
+kg:participatesIn res:season/CONCACAF_Championship_2015 ;
+kg:participatesIn res:season/CONCACAF_Championship_2017 ;
+kg:participatesIn res:season/CONCACAF_Championship_2019 ;
+kg:participatesIn res:season/CONCACAF_Championship_2021 ;
+kg:participatesIn res:season/CONCACAF_Championship_2023 .
+
+res:team/Barbados kg:participatesIn res:season/CONCACAF_Nations_League_2019-20 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2022-23 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2023-24 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2024-25 .
+
+res:team/Barbados kg:participatesIn res:season/Copa_America_Centroamerica_1977 ;
+kg:participatesIn res:season/Olympic_Qualifiers_1972 .
+
+res:team/Barbados kg:participatesIn res:season/CONCACAF_Championship_1977 ;
+kg:participatesIn res:season/CONCACAF_Championship_1981 ;
+kg:participatesIn res:season/CONCACAF_Championship_1985 ;
+kg:participatesIn res:season/CONCACAF_Championship_1989 ;
+kg:participatesIn res:season/CONCACAF_Championship_1991 ;
+kg:participatesIn res:season/CONCACAF_Championship_1993 ;
+kg:participatesIn res:season/CONCACAF_Championship_1996 ;
+kg:participatesIn res:season/CONCACAF_Championship_1998 ;
+kg:participatesIn res:season/CONCACAF_Championship_2000 ;
+kg:participatesIn res:season/CONCACAF_Championship_2002 ;
+kg:participatesIn res:season/CONCACAF_Championship_2003 ;
+kg:participatesIn res:season/CONCACAF_Championship_2005 ;
+kg:participatesIn res:season/CONCACAF_Championship_2007 ;
+kg:participatesIn res:season/CONCACAF_Championship_2009 ;
+kg:participatesIn res:season/CONCACAF_Championship_2011 ;
+kg:participatesIn res:season/CONCACAF_Championship_2013 ;
+kg:participatesIn res:season/CONCACAF_Championship_2015 ;
+kg:participatesIn res:season/CONCACAF_Championship_2017 ;
+kg:participatesIn res:season/CONCACAF_Championship_2019 ;
+kg:participatesIn res:season/CONCACAF_Championship_2021 ;
+kg:participatesIn res:season/CONCACAF_Championship_2023 .
+
+res:team/Barbados kg:participatesIn res:season/CONCACAF_Nations_League_2019-20 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2022-23 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2023-24 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2024-25 .
+
+res:team/Barbados kg:participatesIn res:season/Central_American_and_Caribbean_Games_1974 ;
+kg:participatesIn res:season/Central_American_and_Caribbean_Games_1986 .
+
+res:team/Barbados kg:participatesIn res:season/Copa_America_Centroamerica_1977 ;
+kg:participatesIn res:season/Olympic_Qualifiers_1972 .
+
+res:team/Barbados kg:participatesIn res:season/CONCACAF_Championship_1977 ;
+kg:participatesIn res:season/CONCACAF_Championship_1981 ;
+kg:participatesIn res:season/CONCACAF_Championship_1985 ;
+kg:participatesIn res:season/CONCACAF_Championship_1989 ;
+kg:participatesIn res:season/CONCACAF_Championship_1991 ;
+kg:participatesIn res:season/CONCACAF_Championship_1993 ;
+kg:participatesIn res:season/CONCACAF_Championship_1996 ;
+kg:participatesIn res:season/CONCACAF_Championship_1998 ;
+kg:participatesIn res:season/CONCACAF_Championship_2000 ;
+kg:participatesIn res:season/CONCACAF_Championship_2002 ;
+kg:participatesIn res:season/CONCACAF_Championship_2003 ;
+kg:participatesIn res:season/CONCACAF_Championship_2005 ;
+kg:participatesIn res:season/CONCACAF_Championship_2007 ;
+kg:participatesIn res:season/CONCACAF_Championship_2009 ;
+kg:participatesIn res:season/CONCACAF_Championship_2011 ;
+kg:participatesIn res:season/CONCACAF_Championship_2013 ;
+kg:participatesIn res:season/CONCACAF_Championship_2015 ;
+kg:participatesIn res:season/CONCACAF_Championship_2017 ;
+kg:participatesIn res:season/CONCACAF_Championship_2019 ;
+kg:participatesIn res:season/CONCACAF_Championship_2021 ;
+kg:participatesIn res:season/CONCACAF_Championship_2023 .
+
+res:team/Barbados kg:participatesIn res:season/CONCACAF_Nations_League_2019-20 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2022-23 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2023-24 ;
+kg:participatesIn res:season/CONCACAF_Nations_League_2024-25 .
+
+res:team/Barbados kg:participatesIn res:season/Central_American_and_Caribbean_Games_1974 ;
+kg:participatesIn res:season/Central_American_and_Caribbean_Games_1986 .
+
+res:team/Barbados kg:participatesIn res:season/Copa_America_Centroamerica_1977 ;
+kg:participatesIn res:season/Olympic_Qualifiers_1972 .
+
+res:team/Barbados kg:participatesIn res:season/CONCACAF_Championship_1977 ;
+kg:participatesIn res:season/CONCACAF_Championship_1981 ;
+kg:participatesIn res:season/CONCACAF_Championship_1985 ;
+kg:participatesIn res:season/CONCACAF_Championship_1989 ;
+kg:participatesIn res:season/CONCACAF_Championship_1991 ;
+kg:participatesIn res:season/CONCACAF_Championship_1993 ;
+kg:participatesIn res:season/CONCACAF_Championship_1996 ;
+kg:participatesIn res:season/CONCACAF_Championship_1998 ;
+kg:participatesIn res:season/CONCACAF_Championship_2000 ;
+kg:participatesIn res:season/CONCACAF_Championship_2002 ;
+kg:participatesIn res:season/CONCACAF_Championship_2003 ;
+kg:participatesIn res:season/CONCACAF_Championship_2005 ;
+kg:participatesIn res:season/CONCACAF_Championship_2007 ;
+kg:participatesIn res:season/CONCACAF_Championship_2009 ;
+kg:participatesIn res:season/CONCACAF_Championship_2011 ;
+kg:participatesIn res:season/CONCACAF_Championship_2013 ;
+kg:participatesIn res:season/CONCACAF_Championship_2015 ;
+kg:participatesIn

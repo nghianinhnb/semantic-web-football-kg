@@ -1,0 +1,125 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Bờ_Biển_Ngà a kg:Team ;
+kg:teamName "Bờ Biển Ngà" ;
+kg:hasCoach res:coach/Patrice_Beaumelle ;
+kg:hasCaptain res:player/Serge_Aurier ;
+kg:teamAbbreviation "CIV" ;
+kg:locatedIn res:country/Bờ_Biển_Ngà .
+
+res:country/Bờ_Biển_Ngà a kg:Country ;
+rdfs:label "Bờ Biển Ngà" .
+
+res:coach/Patrice_Beaumelle a kg:Coach ;
+kg:manages res:team/Bờ_Biển_Ngà .
+
+res:player/Serge_Aurier a kg:Player ;
+kg:isCaptain res:team/Bờ_Biển_Ngà ;
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:primaryPosition kg:Defender .
+
+res:player/Didier_Zokora a kg:Player ;
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 123 .
+
+res:player/Didier_Drogba a kg:Player ;
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 65 .
+
+res:stadium/Sân_vận_động_Qốc_gia_Bờ_Biển_Ngà a kg:Stadium ;
+kg:capacity 50000 ;
+kg:isHomeOf res:team/Bờ_Biển_Ngà .
+
+res:stadium/Sân_vận_động_Félix_Houphouët-Boigny a kg:Stadium ;
+kg:capacity 60000 ;
+kg:isHomeOf res:team/Bờ_Biển_Ngà .
+
+res:competition/Cúp_bóng_đá_châu_phi a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Phi" .
+
+res:season/Cúp_bóng_đá_châu_phi_1992 a kg:Season ;
+kg:hasSeason res:competition/Cúp_bóng_đá_châu_phi ;
+kg:seasonOf res:team/Bờ_Biển_Ngà .
+
+res:season/Cúp_bóng_đá_châu_phi_2015 a kg:Season ;
+kg:hasSeason res:competition/Cúp_bóng_đá_châu_phi ;
+kg:seasonOf res:team/Bờ_Biển_Ngà .
+
+res:season/Cúp_bóng_đá_châu_phi_2023 a kg:Season ;
+kg:hasSeason res:competition/Cúp_bóng_đá_châu_phi ;
+kg:seasonOf res:team/Bờ_Biển_Ngà .
+
+res:match/CIV_vs_BEN_1960 a kg:Match ;
+kg:homeTeam res:team/Bờ_Biển_Ngà ;
+kg:awayTeam res:team/Benin ;
+kg:kickoffTime "1960-04-13T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_châu_phi .
+
+res:match/CIV_vs_CTA_1961 a kg:Match ;
+kg:homeTeam res:team/Bờ_Biển_Ngà ;
+kg:awayTeam res:team/Chad ;
+kg:kickoffTime "1961-12-27T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_châu_phi .
+
+res:match/CIV_vs_GHA_1971 a kg:Match ;
+kg:homeTeam res:team/Bờ_Biển_Ngà ;
+kg:awayTeam res:team/Ghana ;
+kg:kickoffTime "1971-05-02T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_châu_phi .
+
+res:match/CIV_vs_MWI_1974 a kg:Match ;
+kg:homeTeam res:team/Malawi ;
+kg:awayTeam res:team/Bờ_Biển_Ngà ;
+kg:kickoffTime "1974-07-06T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_châu_phi .
+
+res:match/CIV_vs_NGR_1977 a kg:Match ;
+kg:homeTeam res:team/Nigeria ;
+kg:awayTeam res:team/Bờ_Biển_Ngà ;
+kg:kickoffTime "1977-07-10T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_châu_phi .
+
+res:match/CIV_vs_ARG_1992 a kg:Match ;
+kg:homeTeam res:team/Ả_Rập_Xê_Út ;
+kg:awayTeam res:team/Bờ_Biển_Ngà ;
+kg:kickoffTime "1992-10-16T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_châu_phi .
+
+res:competition/Giải_bóng_đá_vô_địch_thế_giới a kg:Competition ;
+kg:competitionName "Giải bóng đá vô địch thế giới" .
+
+res:season/Giải_bóng_đá_vô_địch_thế_giới_2006 a kg:Season ;
+kg:hasSeason res:competition/Giải_bóng_đá_vô_địch_thế_giới ;
+kg:seasonOf res:team/Bờ_Biển_Ngà .
+
+res:season/Giải_bóng_đá_vô_địch_thế_giới_2010 a kg:Season ;
+kg:hasSeason res:competition/Giải_bóng_đá_vô_địch_thế_giới ;
+kg:seasonOf res:team/Bờ_Biển_Ngà .
+
+res:season/Giải_bóng_đá_vô_địch_thế_giới_2014 a kg:Season ;
+kg:hasSeason res:competition/Giải_bóng_đá_vô_địch_thế_giới ;
+kg:seasonOf res:team/Bờ_Biển_Ngà .
+
+res:match/CIV_vs_EGY_2006 a kg:Match ;
+kg:homeTeam res:team/Đức ;
+kg:awayTeam res:team/Bờ_Biển_Ngà ;
+kg:kickoffTime "2006-06-10T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Giải_bóng_đá_vô_địch_thế_giới .
+
+res:match/CIV_vs_RSA_2010 a kg:Match ;
+kg:homeTeam res:team/Nam_Phí ;
+kg:awayTeam res:team/Bờ_Biển_Ngà ;
+kg:kickoffTime "2010-06-11T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Giải_bóng_đá_vô_địch_thế_giới .
+
+res:match/CIV_vs_BRA_2014 a kg:Match ;
+kg:homeTeam res:team/Braxin ;
+kg:awayTeam res:team/Bờ_Biển_Ngà ;
+kg:kickoffTime "2014-06-12T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Giải_bóng_đá_vô_địch_thế_giới .

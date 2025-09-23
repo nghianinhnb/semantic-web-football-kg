@@ -1,0 +1,245 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Grenada a kg:Team ;
+kg:teamName "Grenada" ;
+kg:hasCoach res:coach/Shalrie_Joseph ;
+kg:hasCaptain res:player/Saydrel_Lewis ;
+kg:teamAbbreviation "GRN" ;
+kg:locatedIn res:country/Grenada .
+
+res:coach/Shalrie_Joseph a kg:Coach ;
+kg:manages res:team/Grenada .
+
+res:player/Saydrel_Lewis a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:isCaptain res:team/Grenada ;
+kg:primaryPosition kg:Forward .
+
+res:player/Cassim_Langaigne a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Ricky_Charles a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Forward .
+
+res:stadium/Kirani_James_Stadium a kg:Stadium ;
+kg:capacity 20000 ;
+kg:homeStadium res:team/Grenada ;
+kg:locatedIn res:country/Grenada .
+
+res:country/Grenada a kg:Country ;
+rdfs:label "Grenada" .
+
+res:competition/FIFA_World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" .
+
+res:competition/CONCACAF_Gold_Cup a kg:Competition ;
+kg:competitionName "CONCACAF Gold Cup" .
+
+res:competition/Caribbean_Cup a kg:Competition ;
+kg:competitionName "Caribbean Cup" .
+
+res:season/2009 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Gold_Cup .
+
+res:season/2011 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Gold_Cup .
+
+res:season/2021 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Gold_Cup .
+
+res:season/2023 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Gold_Cup .
+
+res:season/2025 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Gold_Cup .
+
+res:season/2010 a kg:Season ;
+kg:seasonOf res:competition/Caribbean_Cup .
+
+res:season/2008 a kg:Season ;
+kg:seasonOf res:competition/Caribbean_Cup .
+
+res:season/1934 a kg:Season ;
+kg:seasonOf res:competition/Caribbean_Cup .
+
+res:season/1998 a kg:Season ;
+kg:seasonOf res:competition/Caribbean_Cup .
+
+res:season/2012 a kg:Season ;
+kg:seasonOf res:competition/Caribbean_Cup .
+
+res:season/2017 a kg:Season ;
+kg:seasonOf res:competition/Caribbean_Cup .
+
+res:season/2014 a kg:Season ;
+kg:seasonOf res:competition/Caribbean_Cup .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/Caribbean_Cup .
+
+res:season/2022 a kg:Season ;
+kg:seasonOf res:competition/Caribbean_Cup .
+
+res:season/2026 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/1982 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/1986 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/1990 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/1994 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/1998 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/2002 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/2006 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/2010 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/2014 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/2022 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/2030 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/2034 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:match/1934-10-13 a kg:Match ;
+kg:homeTeam res:team/Grenada ;
+kg:awayTeam res:team/Guiana ;
+kg:kickoffTime "1934-10-13"^^xsd:date ;
+kg:inCompetition res:competition/Caribbean_Cup ;
+kg:inSeason res:season/1934 .
+
+res:match/1998-04-15 a kg:Match ;
+kg:homeTeam res:team/Grenada ;
+kg:awayTeam res:team/Anguilla ;
+kg:kickoffTime "1998-04-15"^^xsd:date ;
+kg:inCompetition res:competition/Caribbean_Cup ;
+kg:inSeason res:season/1998 .
+
+res:match/2018-09-10 a kg:Match ;
+kg:homeTeam res:team/Curaçao ;
+kg:awayTeam res:team/Grenada ;
+kg:kickoffTime "2018-09-10"^^xsd:date ;
+kg:inCompetition res:competition/CONCACAF_Nations_League ;
+kg:inSeason res:season/2018 .
+
+res:player/Jason_Belfon a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Goalkeeper .
+
+res:player/Chad_Phillip a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Goalkeeper .
+
+res:player/Trishawn_Thomas a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Goalkeeper .
+
+res:player/Kimron_Marshall a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Defender .
+
+res:player/Kayden_Harrack a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Defender .
+
+res:player/Aaron_Pierre a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Defender .
+
+res:player/Johnathan_Williams a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Defender .
+
+res:player/Roman_Charles-Cook a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Defender .
+
+res:player/Kane_Vincent-Young a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Defender .
+
+res:player/Parish_Muirhead a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Ethan_Telesford a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Brady_Charles a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Keishon_Clarke a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Myles_Hippolyte a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Zade_Douglas a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/E-Jay_George a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Darius_Johnson a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Forward .
+
+res:player/Joshua_Isaac a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Forward .
+
+res:player/Saydrel_Lewis a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Forward .
+
+res:player/Shavon_John-Brown a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Forward .
+
+res:player/Jermaine_Francis a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Forward .
+
+res:player/Keishean_Francois a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Forward .
+
+res:player/Regan_Charles-Cook a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Forward .
+
+res:player/Vijay_Valcin a kg:Player ;
+kg:playsFor res:team/Grenada ;
+kg:primaryPosition kg:Forward .

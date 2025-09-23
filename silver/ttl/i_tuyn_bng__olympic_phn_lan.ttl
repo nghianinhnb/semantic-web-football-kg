@@ -3,6 +3,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-res:team/Olympic_Finland rdf:type kg:Team ;
+res:team/Olympic_Finland a kg:Team ;
 kg:teamName "Đội tuyển bóng đá Olympic Phần Lan" ;
 kg:teamAbbreviation "FIN-O".

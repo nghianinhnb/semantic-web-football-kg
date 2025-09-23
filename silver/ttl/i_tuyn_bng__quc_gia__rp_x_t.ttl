@@ -3,14 +3,13 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
 
-res:team/Saudi_Arabia a kg:Team ;
-kg:teamName "Saudi Arabia" ;
+res:team/Saudi_Arabia_National_Football_Team kg:teamName "Đội tuyển bóng đá quốc gia Ả Rập Xê Út" ;
 kg:teamAbbreviation "KSA" ;
 kg:hasCoach res:coach/Hervé_Renard ;
-kg:hasAssistantCoach res:coach/Adrie_Koster ;
-kg:hasAssistantCoach res:coach/Mark_van_Bommel ;
-kg:hasAssistantCoach res:coach/Roel_Coumans ;
+kg:hasCaptain res:player/Salman_Al-Faraj ;
 kg:mostCaps res:player/Mohamed_Al-Deayea ;
 kg:topScorer res:player/Majed_Abdullah ;
 kg:FIFA_rank 56 ;
@@ -18,271 +17,231 @@ kg:FIFA_max 21 ;
 kg:FIFA_max_date "2004-07"^^xsd:gYearMonth ;
 kg:FIFA_min 126 ;
 kg:FIFA_min_date "2012-12"^^xsd:gYearMonth ;
-kg:Elo_rank 27 ;
+kg:Elo_rank 112 ;
 kg:Elo_max 27 ;
 kg:Elo_max_date "1998-11"^^xsd:gYearMonth ;
 kg:Elo_min 112 ;
 kg:Elo_min_date "1970-01"^^xsd:gYearMonth ;
-kg:confederation res:organization/AFC ;
-kg:association res:organization/SAFF ;
-kg:captain res:player/Salman_Al-Faraj ;
-kg:badge "Saudi_Arabia_SAFF.jpg" ;
-kg:badge_size 175 ;
-kg:nickname "The Green" ;
-kg:nickname "Green Eagles" .
+kg:confederation res:country/Asia ;
+kg:association res:organization/Saudi_Arabian_Football_Association ;
+kg:badge res:image/Saudi_Arabia_SAFF.jpg ;
+kg:badge_size "175px"^^xsd:string ;
+kg:nickname "Xanh lá" ;
+kg:nickname "Chim ưng xanh lá" ;
+kg:world_cup_apps 6 ;
+kg:world_cup_best "Vòng 2" ;
+kg:world_cup_first "1994" ;
+kg:asian_cup_apps 10 ;
+kg:asian_cup_best "Vô địch (1984, 1988, 1996)" ;
+kg:asian_cup_first "1984" ;
+kg:confederations_cup_best "Á quân (1992)" ;
+kg:confederations_cup_first "1992" ;
+kg:confederations_cup_apps 1 ;
+kg:largest_win "10-0" ;
+kg:largest_loss "0-13" ;
+kg:first_game "3–1" ;
+kg:first_game_date "1957-10-20"^^xsd:date ;
+kg:region "Asia" ;
+kg:pattern_la1 "_ksa24h" ;
+kg:pattern_b1 "_ksa24h" ;
+kg:pattern_ra1 "_ksa24h" ;
+kg:pattern_sh1 "_ksa24h" ;
+kg:pattern_so1 "_ksa24h" ;
+kg:leftarm1 "#43b88b" ;
+kg:body1 "#43b88b" ;
+kg:rightarm1 "#43b88b" ;
+kg:shorts1 "#43b88b" ;
+kg:socks1 "#43b88b" ;
+kg:pattern_la2 "_ksa24a" ;
+kg:pattern_b2 "_ksa24a" ;
+kg:pattern_ra2 "_ksa24a" ;
+kg:pattern_sh2 "_ksa24a" ;
+kg:pattern_so2 "" ;
+kg:leftarm2 "#fffbeb" ;
+kg:body2 "#fffbeb" ;
+kg:rightarm2 "#fffbeb" ;
+kg:shorts2 "#fffbeb" ;
+kg:socks2 "#fffbeb" .
 
-res:player/Mohamed_Al-Deayea a kg:Player ;
-kg:playsFor res:team/Saudi_Arabia ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1970-01-01"^^xsd:date ;
-kg:birthPlace res:city/Riyadh ;
+res:coach/Hervé_Renard kg:name "Hervé Renard" ;
+kg:nationality res:country/France ;
+kg:manages res:team/Saudi_Arabia_National_Football_Team .
+
+res:player/Salman_Al-Faraj kg:name "Salman Al-Faraj" ;
 kg:nationality res:country/Saudi_Arabia ;
-kg:height 180 ;
-kg:weight 75 ;
-kg:shirtNumber 1 ;
-kg:preferredFoot kg:RightFooted .
+kg:isCaptain res:team/Saudi_Arabia_National_Football_Team .
 
-res:player/Majed_Abdullah a kg:Player ;
-kg:playsFor res:team/Saudi_Arabia ;
-kg:primaryPosition kg:Forward ;
-kg:birthDate "1966-01-01"^^xsd:date ;
-kg:birthPlace res:city/Riyadh ;
+res:player/Mohamed_Al-Deayea kg:name "Mohamed Al-Deayea" ;
 kg:nationality res:country/Saudi_Arabia ;
-kg:height 185 ;
-kg:weight 78 ;
-kg:shirtNumber 9 ;
-kg:preferredFoot kg:RightFooted .
+kg:mostCaps res:team/Saudi_Arabia_National_Football_Team .
 
-res:coach/Hervé_Renard a kg:Coach ;
-kg:manages res:team/Saudi_Arabia ;
-kg:birthDate "1961-01-01"^^xsd:date ;
-kg:nationality res:country/France .
+res:player/Majed_Abdullah kg:name "Majed Abdullah" ;
+kg:nationality res:country/Saudi_Arabia ;
+kg:topScorer res:team/Saudi_Arabia_National_Football_Team .
 
-res:coach/Adrie_Koster a kg:AssistantCoach ;
-kg:manages res:team/Saudi_Arabia ;
-kg:birthDate "1970-01-01"^^xsd:date ;
-kg:nationality res:country/Netherlands .
+res:organization/Saudi_Arabian_Football_Association kg:name "Liên đoàn bóng đá Ả Rập Xê Út (SAFF)" .
 
-res:coach/Mark_van_Bommel a kg:AssistantCoach ;
-kg:manages res:team/Saudi_Arabia ;
-kg:birthDate "1981-01-01"^^xsd:date ;
-kg:nationality res:country/Netherlands .
+res:country/Asia kg:name "Châu Á" .
 
-res:coach/Roel_Coumans a kg:AssistantCoach ;
-kg:manages res:team/Saudi_Arabia ;
-kg:birthDate "1968-01-01"^^xsd:date ;
-kg:nationality res:country/Netherlands .
+res:country/Saudi_Arabia kg:name "Ả Rập Xê Út" .
 
-res:team/Saudi_Arabia kg:participatesIn res:season/2022_World_Cup ;
-kg:participatesIn res:season/2023_Asian_Cup ;
-kg:participatesIn res:season/2024_Confederations_Cup ;
+res:competition/Asian_Cup kg:name "Cúp bóng đá châu Á" ;
+kg:organizedBy res:organization/AFC .
 
-res:season/2022_World_Cup a kg:Season ;
-kg:seasonOf res:competition/FIFA_World_Cup .
+res:competition/World_Cup kg:name "Giải vô địch bóng đá thế giới" ;
+kg:organizedBy res:organization/FIFA .
 
-res:season/2023_Asian_Cup a kg:Season ;
-kg:seasonOf res:competition/Asian_Cup .
+res:competition/Confederations_Cup kg:name "Cúp Liên đoàn các châu lục" ;
+kg:organizedBy res:organization/FIFA .
 
-res:season/2024_Confederations_Cup a kg:Season ;
-kg:seasonOf res:competition/Confederations_Cup .
+res:competition/Gulf_Cup kg:name "Cúp bóng đá vùng Vịnh" .
 
-res:competition/FIFA_World_Cup a kg:Competition ;
-kg:competitionName "FIFA World Cup" .
+res:competition/Arab_Cup kg:name "Cúp bóng đá các quốc gia Ả Rập" .
 
-res:competition/Asian_Cup a kg:Competition ;
-kg:competitionName "AFC Asian Cup" .
+res:competition/Asian_Game kg:name "Đại hội Thể thao châu Á" .
 
-res:competition/Confederations_Cup a kg:Competition ;
-kg:competitionName "Confederations Cup" .
+res:competition/Sea_Games kg:name "SEA Games" .
 
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
+res:season/2022_World_Cup kg:name "2022 World Cup" ;
+kg:inCompetition res:competition/World_Cup .
+
+res:season/2023_Asian_Cup kg:name "2023 Asian Cup" ;
+kg:inCompetition res:competition/Asian_Cup .
+
+res:season/2024_Gulf_Cup kg:name "2024 Gulf Cup" ;
+kg:inCompetition res:competition/Gulf_Cup .
+
+res:match/2022_World_Cup_Group_B kg:name "2022 World Cup Group B" ;
+kg:homeTeam res:team/Saudi_Arabia_National_Football_Team ;
+kg:awayTeam res:team/Argentina_National_Football_Team ;
+kg:kickoffTime "2022-11-21T18:00:00"^^xsd:dateTime ;
+kg:venue res:stadium/Lusail_Iconic_Stadium ;
+kg:referee res:referee/Shaun_Evans ;
+kg:result "2-1" .
+
+res:stadium/Lusail_Iconic_Stadium kg:name "Sân vận động Lusail Iconic" ;
+kg:capacity 86000 ;
 kg:locatedIn res:city/Doha .
 
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
+res:referee/Shaun_Evans kg:name "Shaun Evans" ;
+kg:nationality res:country/Australia .
 
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
+res:team/Argentina_National_Football_Team kg:name "Đội tuyển bóng đá quốc gia Argentina" ;
+kg:teamAbbreviation "ARG" .
+
+res:stadium/Al_Janoub_Stadium kg:name "Sân vận động Al Janoub" ;
+kg:capacity 45000 ;
+kg:locatedIn res:city/Doha .
+
+res:match/2024_Friendly_vs_Liban kg:name "2024 Friendly vs Lebanon" ;
+kg:homeTeam res:team/Saudi_Arabia_National_Football_Team ;
+kg:awayTeam res:team/Liban_National_Football_Team ;
+kg:kickoffTime "2024-01-04T16:30:00"^^xsd:dateTime ;
+kg:venue res:stadium/Al_Janoub_Stadium ;
+kg:referee res:referee/Unknown_Referee ;
+kg:result "1-0" .
+
+res:team/Liban_National_Football_Team kg:name "Đội tuyển bóng đá quốc gia Liban" ;
+kg:teamAbbreviation "LBN" .
+
+res:match/2024_Friendly_vs_Palestine kg:name "2024 Friendly vs Palestine" ;
+kg:homeTeam res:team/Saudi_Arabia_National_Football_Team ;
+kg:awayTeam res:team/Palestine_National_Football_Team ;
+kg:kickoffTime "2024-01-09T18:30:00"^^xsd:dateTime ;
+kg:venue res:stadium/Al_Janoub_Stadium ;
+kg:referee res:referee/Unknown_Referee ;
+kg:result "0-0" .
+
+res:team/Palestine_National_Football_Team kg:name "Đội tuyển bóng đá quốc gia Palestine" ;
+kg:teamAbbreviation "PLE" .
+
+res:match/2024_Friendly_vs_Hong_Kong kg:name "2024 Friendly vs Hong Kong" ;
+kg:homeTeam res:team/Saudi_Arabia_National_Football_Team ;
+kg:awayTeam res:team/Hong_Kong_National_Football_Team ;
+kg:kickoffTime "2024-01-10T18:30:00"^^xsd:dateTime ;
+kg:venue res:stadium/Al_Janoub_Stadium ;
+kg:referee res:referee/Unknown_Referee ;
+kg:result "2-0" .
+
+res:team/Hong_Kong_National_Football_Team kg:name "Đội tuyển bóng đá quốc gia Hồng Kông" ;
+kg:teamAbbreviation "HKG" .
+
+res:match/2023_Asian_Cup_Group_F kg:name "2023 Asian Cup Group F" ;
+kg:homeTeam res:team/Saudi_Arabia_National_Football_Team ;
+kg:awayTeam res:team/Oman_National_Football_Team ;
+kg:kickoffTime "2023-01-16T20:30:00"^^xsd:dateTime ;
+kg:venue res:stadium/Khalifa_International_Stadium ;
+kg:referee res:referee/Shaun_Evans ;
+kg:result "2-1" .
+
+res:team/Oman_National_Football_Team kg:name "Đội tuyển bóng đá quốc gia Oman" ;
+kg:teamAbbreviation "OMA" .
+
+res:stadium/Khalifa_International_Stadium kg:name "Sân vận động Quốc tế Khalifa" ;
+kg:capacity 41987 ;
+kg:locatedIn res:city/Al_Rayan .
+
+res:match/2023_Asian_Cup_Group_F kg:name "2023 Asian Cup Group F" ;
+kg:homeTeam res:team/Saudi_Arabia_National_Football_Team ;
+kg:awayTeam res:team/Kyrgyzstan_National_Football_Team ;
+kg:kickoffTime "2023-01-21T20:30:00"^^xsd:dateTime ;
+kg:venue res:stadium/Al_Bayt_Stadium ;
+kg:referee res:referee/Iida_Jumpei ;
+kg:result "2-0" .
+
+res:team/Kyrgyzstan_National_Football_Team kg:name "Đội tuyển bóng đá quốc gia Kyrgyzstan" ;
+kg:teamAbbreviation "KGZ" .
+
+res:stadium/Al_Bayt_Stadium kg:name "Sân vận động Al Bayt" ;
+kg:capacity 39557 ;
 kg:locatedIn res:city/Al_Khor .
 
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
+res:match/2023_Asian_Cup_Group_F kg:name "2023 Asian Cup Group F" ;
+kg:homeTeam res:team/Saudi_Arabia_National_Football_Team ;
+kg:awayTeam res:team/Thailand_National_Football_Team ;
+kg:kickoffTime "2023-01-25T18:00:00"^^xsd:dateTime ;
+kg:venue res:stadium/Al_Thumama_Stadium ;
+kg:referee res:referee/Unknown_Referee ;
+kg:result "0-0" .
 
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
+res:team/Thailand_National_Football_Team kg:name "Đội tuyển bóng đá quốc gia Thái Lan" ;
+kg:teamAbbreviation "THA" .
+
+res:stadium/Al_Thumama_Stadium kg:name "Sân vận động Al Thumama" ;
+kg:capacity 12000 ;
 kg:locatedIn res:city/Doha .
 
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
+res:match/2023_Asian_Cup_Round_of_16 kg:name "2023 Asian Cup Round of 16" ;
+kg:homeTeam res:team/Saudi_Arabia_National_Football_Team ;
+kg:awayTeam res:team/South_Korea_National_Football_Team ;
+kg:kickoffTime "2023-01-30T19:00:00"^^xsd:dateTime ;
+kg:venue res:stadium/Educational_City_Stadium ;
+kg:referee res:referee/Unknown_Referee ;
+kg:result "1-1 (Penalties: 2-4)" .
 
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
+res:team/South_Korea_National_Football_Team kg:name "Đội tuyển bóng đá quốc gia Hàn Quốc" ;
+kg:teamAbbreviation "KOR" .
+
+res:stadium/Educational_City_Stadium kg:name "Sân vận động Thành phố Giáo dục" ;
+kg:capacity 40000 ;
+kg:locatedIn res:city/Al_Rayan .
+
+res:match/2026_World_Cup_Qualifier_Group_2 kg:name "2026 World Cup Qualifier Group 2" ;
+kg:homeTeam res:team/Saudi_Arabia_National_Football_Team ;
+kg:awayTeam res:team/Tajikistan_National_Football_Team ;
+kg:kickoffTime "2024-03-21T22:00:00"^^xsd:dateTime ;
+kg:venue res:stadium/Al_Awwal_Park ;
+kg:referee res:referee/Muhammad_Taqi ;
+kg:result "1-0" .
+
+res:team/Tajikistan_National_Football_Team kg:name "Đội tuyển bóng đá quốc gia Tajikistan" ;
+kg:teamAbbreviation "TJK" .
+
+res:stadium/Al_Awwal_Park kg:name "Sân vận động Al Awwal Park" ;
+kg:capacity 18755 ;
 kg:locatedIn res:city/Riyadh .
 
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Al_Khor .
-
-res:stadium/Al_Hazm a kg:Stadium ;
-kg:capacity 30000 ;
-kg:locatedIn res:city/Riyadh .
-
-res:stadium/Al_Janoub a kg:Stadium ;
-kg:capacity 60000 ;
-kg:locatedIn res:city/Doha .
-
-res:stadium/Al_Bayt a kg:Stadium ;
-kg:capacity 60000 ;
-kg:
+res:match/2026_World_Cup_Qualifier_Group_2 kg:name "2026 World Cup Qualifier Group 2" ;
+kg:homeTeam res:team/Tajikistan_National_Football_Team ;
+kg:awayTeam res:team/Saudi_Arabia_National_Football_Team ;
+kg:kickoffTime "2024-03-26T20:00:

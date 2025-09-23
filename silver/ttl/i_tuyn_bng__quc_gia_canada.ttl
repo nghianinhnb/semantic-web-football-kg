@@ -1,0 +1,344 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Canada a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Canada" ;
+kg:teamAbbreviation "CAN" ;
+kg:hasCoach res:coach/Jesse_Marsch ;
+kg:hasCaptain res:player/Alphonso_Davies ;
+kg:isCaptain res:player/Alphonso_Davies ;
+kg:locatedIn res:country/Canada ;
+kg:manages res:coach/Jesse_Marsch ;
+kg:participatesIn res:competition/FIFA_World_Cup_2026 ;
+kg:participatesIn res:competition/Copa_America_2024 .
+
+res:coach/Jesse_Marsch a kg:Coach ;
+kg:manages res:team/Canada .
+
+res:player/Alphonso_Davies a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 19 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:country/Canada a kg:Country ;
+kg:locatedIn res:place/Canada .
+
+res:competition/FIFA_World_Cup_2026 a kg:Competition ;
+kg:competitionName "FIFA World Cup 2026" ;
+kg:heldIn res:country/Canada .
+
+res:competition/Copa_America_2024 a kg:Competition ;
+kg:competitionName "Copa América 2024" ;
+kg:heldIn res:country/Brazil .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2024 .
+
+res:season/CONCACAF_Championship_2024 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:competition/CONCACAF_Championship a kg:Competition ;
+kg:competitionName "CONCACAF Championship" .
+
+res:team/Canada kg:participatesIn res:season/FIFA_World_Cup_2022 .
+
+res:season/FIFA_World_Cup_2022 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:competition/FIFA_World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" .
+
+res:team/Canada kg:participatesIn res:season/Copa_America_2024 .
+
+res:season/Copa_America_2024 a kg:Season ;
+kg:seasonOf res:competition/Copa_America .
+
+res:competition/Copa_America a kg:Competition ;
+kg:competitionName "Copa América" .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2023 .
+
+res:season/CONCACAF_Championship_2023 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2021 .
+
+res:season/CONCACAF_Championship_2021 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2019 .
+
+res:season/CONCACAF_Championship_2019 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2017 .
+
+res:season/CONCACAF_Championship_2017 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2015 .
+
+res:season/CONCACAF_Championship_2015 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2013 .
+
+res:season/CONCACAF_Championship_2013 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2011 .
+
+res:season/CONCACAF_Championship_2011 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2009 .
+
+res:season/CONCACAF_Championship_2009 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2007 .
+
+res:season/CONCACAF_Championship_2007 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2005 .
+
+res:season/CONCACAF_Championship_2005 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2003 .
+
+res:season/CONCACAF_Championship_2003 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_2001 .
+
+res:season/CONCACAF_Championship_2001 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1999 .
+
+res:season/CONCACAF_Championship_1999 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1997 .
+
+res:season/CONCACAF_Championship_1997 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1995 .
+
+res:season/CONCACAF_Championship_1995 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1993 .
+
+res:season/CONCACAF_Championship_1993 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1991 .
+
+res:season/CONCACAF_Championship_1991 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1989 .
+
+res:season/CONCACAF_Championship_1989 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1987 .
+
+res:season/CONCACAF_Championship_1987 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1985 .
+
+res:season/CONCACAF_Championship_1985 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1983 .
+
+res:season/CONCACAF_Championship_1983 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1981 .
+
+res:season/CONCACAF_Championship_1981 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1979 .
+
+res:season/CONCACAF_Championship_1979 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1977 .
+
+res:season/CONCACAF_Championship_1977 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1975 .
+
+res:season/CONCACAF_Championship_1975 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1973 .
+
+res:season/CONCACAF_Championship_1973 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1971 .
+
+res:season/CONCACAF_Championship_1971 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1969 .
+
+res:season/CONCACAF_Championship_1969 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1967 .
+
+res:season/CONCACAF_Championship_1967 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1965 .
+
+res:season/CONCACAF_Championship_1965 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1963 .
+
+res:season/CONCACAF_Championship_1963 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1961 .
+
+res:season/CONCACAF_Championship_1961 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1959 .
+
+res:season/CONCACAF_Championship_1959 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1957 .
+
+res:season/CONCACAF_Championship_1957 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1955 .
+
+res:season/CONCACAF_Championship_1955 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1953 .
+
+res:season/CONCACAF_Championship_1953 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1951 .
+
+res:season/CONCACAF_Championship_1951 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1949 .
+
+res:season/CONCACAF_Championship_1949 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1947 .
+
+res:season/CONCACAF_Championship_1947 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1945 .
+
+res:season/CONCACAF_Championship_1945 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1943 .
+
+res:season/CONCACAF_Championship_1943 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1941 .
+
+res:season/CONCACAF_Championship_1941 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1939 .
+
+res:season/CONCACAF_Championship_1939 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1937 .
+
+res:season/CONCACAF_Championship_1937 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1935 .
+
+res:season/CONCACAF_Championship_1935 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1933 .
+
+res:season/CONCACAF_Championship_1933 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1931 .
+
+res:season/CONCACAF_Championship_1931 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1929 .
+
+res:season/CONCACAF_Championship_1929 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1927 .
+
+res:season/CONCACAF_Championship_1927 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1925 .
+
+res:season/CONCACAF_Championship_1925 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1923 .
+
+res:season/CONCACAF_Championship_1923 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1921 .
+
+res:season/CONCACAF_Championship_1921 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1919 .
+
+res:season/CONCACAF_Championship_1919 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1917 .
+
+res:season/CONCACAF_Championship_1917 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1915 .
+
+res:season/CONCACAF_Championship_1915 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1913 .
+
+res:season/CONCACAF_Championship_1913 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Championship .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Championship_1911 .
+
+res:

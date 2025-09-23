@@ -1,0 +1,90 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Guadeloupe a kg:Team ;
+kg:teamName "Guadeloupe" ;
+kg:hasCoach res:coach/Steve_Bizacen ;
+kg:locatedIn res:country/Guadeloupe ;
+kg:confederation res:organization/CONCACAF ;
+kg:association res:organization/Lien_doi_bong_da_Guadeloupe ;
+kg:firstGame res:match/First_game_against_Martinique_1934 ;
+kg:largestWin res:match/Largest_win_against_Saint_Pierre_và_Miquelon_2001 ;
+kg:largestLoss res:match/Largest_loss_against_Martinique_1934 ;
+kg:worldCupApps 0 ;
+kg:worldCupBest "-" ;
+kg:regionalCupApps 5 ;
+kg:regionalCupFirst res:competition/Cup_Vang_CONCACAF_2007 ;
+kg:regionalCupBest res:competition/Cup_Vang_CONCACAF_2007 ;
+
+kg:topScorer res:player/Dominique_Mocka ;
+kg:mostCaps res:player/Jean-Luc_Lambourde ;
+kg:homeStadium res:stadium/Stade_Rene_Serge_Nabajoth .
+
+res:coach/Steve_Bizacen a kg:Coach ;
+kg:name "Steve Bizacen" .
+
+res:organization/Lien_doi_bong_da_Guadeloupe a kg:Organization ;
+kg:name "Liên đoàn bóng đá Guadeloupe" .
+
+res:organization/CONCACAF a kg:Organization ;
+kg:name "CONCACAF" .
+
+res:country/Guadeloupe a kg:Country ;
+kg:name "Guadeloupe" .
+
+res:match/First_game_against_Martinique_1934 a kg:Match ;
+kg:homeTeam res:team/Guadeloupe ;
+kg:awayTeam res:team/Martinique ;
+kg:kickoffTime "1934-04-12"^^xsd:date .
+
+res:match/Largest_win_against_Saint_Pierre_và_Miquelon_2001 a kg:Match ;
+kg:homeTeam res:team/Guadeloupe ;
+kg:awayTeam res:team/Saint_Pierre_và_Miquelon ;
+kg:kickoffTime "2001-04-12"^^xsd:date .
+
+res:match/Largest_loss_against_Martinique_1934 a kg:Match ;
+kg:homeTeam res:team/Martinique ;
+kg:awayTeam res:team/Guadeloupe ;
+kg:kickoffTime "1934-04-12"^^xsd:date .
+
+res:team/Martinique a kg:Team ;
+kg:teamName "Martinique" .
+
+res:team/Saint_Pierre_và_Miquelon a kg:Team ;
+kg:teamName "Saint Pierre và Miquelon" .
+
+res:competition/Cup_Vang_CONCACAF_2007 a kg:Competition ;
+kg:competitionName "Cúp Vàng CONCACAF 2007" ;
+kg:organizes res:season/Cup_Vang_CONCACAF_2007 ;
+kg:participantCount 5 ;
+kg:heldIn res:country/Guadeloupe .
+
+res:season/Cup_Vang_CONCACAF_2007 a kg:Season ;
+kg:seasonOf res:competition/Cup_Vang_CONCACAF_2007 .
+
+res:player/Dominique_Mocka a kg:Forward ;
+kg:name "Dominique Mocka" ;
+kg:birthDate "1985-01-01"^^xsd:date ;
+kg:birthPlace res:city/Guadeloupe ;
+kg:nationality res:country/Guadeloupe ;
+kg:goals 17 ;
+kg:playsFor res:team/Guadeloupe .
+
+res:player/Jean-Luc_Lambourde a kg:Player ;
+kg:name "Jean-Luc Lambourde" ;
+kg:birthDate "1980-01-01"^^xsd:date ;
+kg:birthPlace res:city/Guadeloupe ;
+kg:nationality res:country/Guadeloupe ;
+kg:caps 60 ;
+kg:playsFor res:team/Guadeloupe .
+
+res:stadium/Stade_Rene_Serge_Nabajoth a kg:Stadium ;
+kg:name "Stade René Serge Nabajoth" ;
+kg:locatedIn res:city/Guadeloupe .
+
+res:city/Guadeloupe a kg:City ;
+kg:name "Guadeloupe" ;
+kg:locatedIn res:country/Guadeloupe .

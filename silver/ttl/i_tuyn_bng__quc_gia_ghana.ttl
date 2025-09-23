@@ -1,0 +1,341 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Ghana a kg:Team ;
+kg:teamName "Ghana national football team" ;
+kg:teamAbbreviation "GHA" ;
+kg:hasCoach res:coach/Otto_Addo ;
+kg:hasCaptain res:player/Andre_Ayew ;
+kg:isCaptain res:player/Andre_Ayew ;
+kg:locatedIn res:country/Ghana .
+
+res:country/Ghana a kg:Country ;
+rdfs:label "Ghana" .
+
+res:coach/Otto_Addo a kg:Coach ;
+kg:manages res:team/Ghana .
+
+res:player/Andre_Ayew a kg:Player ;
+kg:playsFor res:team/Ghana ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1989-12-17"^^xsd:date ;
+kg:birthPlace res:city/Accra ;
+kg:nationality res:country/Ghana ;
+kg:shirtNumber 10 .
+
+res:city/Accra a kg:City ;
+rdfs:label "Accra" ;
+kg:locatedIn res:country/Ghana .
+
+res:position/Midfielder a kg:Position ;
+rdfs:label "Midfielder" .
+
+res:player/Asamoah_Gyan a kg:Player ;
+kg:playsFor res:team/Ghana ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1983-03-14"^^xsd:date ;
+kg:birthPlace res:city/Accra ;
+kg:nationality res:country/Ghana ;
+kg:shirtNumber 11 .
+
+res:position/Forward a kg:Position ;
+rdfs:label "Forward" .
+
+res:player/Jordan_Ayew a kg:Player ;
+kg:playsFor res:team/Ghana ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1991-09-11"^^xsd:date ;
+kg:birthPlace res:city/Accra ;
+kg:nationality res:country/Ghana ;
+kg:shirtNumber 7 .
+
+res:player/Daniel_Amarte a kg:Player ;
+kg:playsFor res:team/Ghana ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1994-12-21"^^xsd:date ;
+kg:birthPlace res:city/Accra ;
+kg:nationality res:country/Ghana ;
+kg:shirtNumber 4 .
+
+res:position/Defender a kg:Position ;
+rdfs:label "Defender" .
+
+res:player/Mohammed_Kudus a kg:Player ;
+kg:playsFor res:team/Ghana ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "2000-08-02"^^xsd:date ;
+kg:birthPlace res:city/Accra ;
+kg:nationality res:country/Ghana ;
+kg:shirtNumber 17 .
+
+res:player/Kwame_Aparent a kg:Player ;
+kg:playsFor res:team/Ghana ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "1993-11-01"^^xsd:date ;
+kg:birthPlace res:city/Accra ;
+kg:nationality res:country/Ghana ;
+kg:shirtNumber 1 .
+
+res:position/Goalkeeper a kg:Position ;
+rdfs:label "Goalkeeper" .
+
+res:club/Orlando_Pirates a kg:Club ;
+kg:foundedDate "1902-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Orlando_Pirates_Stadium .
+
+res:stadium/Orlando_Pirates_Stadium a kg:Stadium ;
+kg:capacity "40000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Orlando_Pirates .
+
+res:club/St_Gallen a kg:Club ;
+kg:foundedDate "1896-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/St_Gallen_Stadium .
+
+res:stadium/St_Gallen_Stadium a kg:Stadium ;
+kg:capacity "30000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/St_Gallen .
+
+res:club/Fenerbahce a kg:Club ;
+kg:foundedDate "1907-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Fenerbahce_Stadium .
+
+res:stadium/Fenerbahce_Stadium a kg:Stadium ;
+kg:capacity "50000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Fenerbahce .
+
+res:club/Beşiktaş_J.K. a kg:Club ;
+kg:foundedDate "1903-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Beşiktaş_J.K._Stadium .
+
+res:stadium/Beşiktaş_J.K._Stadium a kg:Stadium ;
+kg:capacity "53000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Beşiktaş_J.K. .
+
+res:club/Auxerre a kg:Club ;
+kg:foundedDate "1905-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Auxerre_Stadium .
+
+res:stadium/Auxerre_Stadium a kg:Stadium ;
+kg:capacity "20000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Auxerre .
+
+res:club/Club_Brugge a kg:Club ;
+kg:foundedDate "1891-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Club_Brugge_Stadium .
+
+res:stadium/Club_Brugge_Stadium a kg:Stadium ;
+kg:capacity "50000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Club_Brugge .
+
+res:club/Clermont_Foot a kg:Club ;
+kg:foundedDate "1905-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Clermont_Foot_Stadium .
+
+res:stadium/Clermont_Foot_Stadium a kg:Stadium ;
+kg:capacity "18000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Clermont_Foot .
+
+res:club/Monaco a kg:Club ;
+kg:foundedDate "1919-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Monaco_Stadium .
+
+res:stadium/Monaco_Stadium a kg:Stadium ;
+kg:capacity "19000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Monaco .
+
+res:club/Samsunspor a kg:Club ;
+kg:foundedDate "1954-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Samsunspor_Stadium .
+
+res:stadium/Samsunspor_Stadium a kg:Stadium ;
+kg:capacity "41000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Samsunspor .
+
+res:club/Medeama_S.C. a kg:Club ;
+kg:foundedDate "1957-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Medeama_S.C._Stadium .
+
+res:stadium/Medeama_S.C._Stadium a kg:Stadium ;
+kg:capacity "10000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Medeama_S.C. .
+
+res:club/Le_Havre_AC a kg:Club ;
+kg:foundedDate "1907-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Le_Havre_AC_Stadium .
+
+res:stadium/Le_Havre_AC_Stadium a kg:Stadium ;
+kg:capacity "30000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Le_Havre_AC .
+
+res:club/West_Ham_United a kg:Club ;
+kg:foundedDate "1895-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/West_Ham_United_Stadium .
+
+res:stadium/West_Ham_United_Stadium a kg:Stadium ;
+kg:capacity "59000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/West_Ham_United .
+
+res:club/Crystal_Palace a kg:Club ;
+kg:foundedDate "1905-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Crystal_Palace_Stadium .
+
+res:stadium/Crystal_Palace_Stadium a kg:Stadium ;
+kg:capacity "25000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Crystal_Palace .
+
+res:club/Bournemouth a kg:Club ;
+kg:foundedDate "1890-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Bournemouth_Stadium .
+
+res:stadium/Bournemouth_Stadium a kg:Stadium ;
+kg:capacity "21000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Bournemouth .
+
+res:club/Athletic_Bilbao a kg:Club ;
+kg:foundedDate "1898-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Athletic_Bilbao_Stadium .
+
+res:stadium/Athletic_Bilbao_Stadium a kg:Stadium ;
+kg:capacity "53357"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Athletic_Bilbao .
+
+res:club/Lyon a kg:Club ;
+kg:foundedDate "1899-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Lyon_Stadium .
+
+res:stadium/Lyon_Stadium a kg:Stadium ;
+kg:capacity "59186"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Lyon .
+
+res:club/PAOK_FC a kg:Club ;
+kg:foundedDate "1926-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/PAOK_FC_Stadium .
+
+res:stadium/PAOK_FC_Stadium a kg:Stadium ;
+kg:capacity "59967"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/PAOK_FC .
+
+res:club/Hoffenheim a kg:Club ;
+kg:foundedDate "1899-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Hoffenheim_Stadium .
+
+res:stadium/Hoffenheim_Stadium a kg:Stadium ;
+kg:capacity "60480"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Hoffenheim .
+
+res:club/Reading a kg:Club ;
+kg:foundedDate "1871-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Reading_Stadium .
+
+res:stadium/Reading_Stadium a kg:Stadium ;
+kg:capacity "24133"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Reading .
+
+res:club/Kayserispor a kg:Club ;
+kg:foundedDate "1966-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Kayserispor_Stadium .
+
+res:stadium/Kayserispor_Stadium a kg:Stadium ;
+kg:capacity "41000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Kayserispor .
+
+res:club/Brighton_Hove_Albin a kg:Club ;
+kg:foundedDate "1901-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Brighton_Hove_Albin_Stadium .
+
+res:stadium/Brighton_Hove_Albin_Stadium a kg:Stadium ;
+kg:capacity "22000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Brighton_Hove_Albin .
+
+res:club/İstanbul_Başakşehir a kg:Club ;
+kg:foundedDate "1997-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/İstanbul_Başakşehir_Stadium .
+
+res:stadium/İstanbul_Başakşehir_Stadium a kg:Stadium ;
+kg:capacity "52000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/İstanbul_Başakşehir .
+
+res:club/Baník_Ostrava a kg:Club ;
+kg:foundedDate "1911-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Baník_Ostrava_Stadium .
+
+res:stadium/Baník_Ostrava_Stadium a kg:Stadium ;
+kg:capacity "12000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Baník_Ostrava .
+
+res:club/Nations a kg:Club ;
+kg:foundedDate "1963-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Nations_Stadium .
+
+res:stadium/Nations_Stadium a kg:Stadium ;
+kg:capacity "10000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Nations .
+
+res:club/Celta_Vigo a kg:Club ;
+kg:foundedDate "1901-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Celta_Vigo_Stadium .
+
+res:stadium/Celta_Vigo_Stadium a kg:Stadium ;
+kg:capacity "35000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Celta_Vigo .
+
+res:club/Arsenal a kg:Club ;
+kg:foundedDate "1886-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Arsenal_Stadium .
+
+res:stadium/Arsenal_Stadium a kg:Stadium ;
+kg:capacity "60000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Arsenal .
+
+res:club/Radnički_Niš a kg:Club ;
+kg:foundedDate "1945-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Radnički_Niš_Stadium .
+
+res:stadium/Radnički_Niš_Stadium a kg:Stadium ;
+kg:capacity "12000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Radnički_Niš .
+
+res:club/Zurich a kg:Club ;
+kg:foundedDate "1896-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Zurich_Stadium .
+
+res:stadium/Zurich_Stadium a kg:Stadium ;
+kg:capacity "20000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Zurich .
+
+res:club/Columbus_Crew a kg:Club ;
+kg:foundedDate "1996-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Columbus_Crew_Stadium .
+
+res:stadium/Columbus_Crew_Stadium a kg:Stadium ;
+kg:capacity "20000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Columbus_Crew .
+
+res:club/Elfsborg a kg:Club ;
+kg:foundedDate "1923-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Elfsborg_Stadium .
+
+res:stadium/Elfsborg_Stadium a kg:Stadium ;
+kg:capacity "18000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Elfsborg .
+
+res:club/Red_Bull_Salzburg a kg:Club ;
+kg:foundedDate "1902-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Red_Bull_Salzburg_Stadium .
+
+res:stadium/Red_Bull_Salzburg_Stadium a kg:Stadium ;
+kg:capacity "28000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Red_Bull_Salzburg .
+
+res:club/Great_Oscillations a kg:Club ;
+kg:foundedDate "1948-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Great_Oscillations_Stadium .
+
+res:stadium/Great_Oscillations_Stadium a kg:Stadium ;
+kg:capacity "10000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Great_Oscillations .
+
+res:club/Dreams a kg:

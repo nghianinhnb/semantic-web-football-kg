@@ -1,0 +1,99 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/North_Cyprus a kg:Team ;
+kg:teamName "Bắc Síp" ;
+kg:homeStadium res:stadium/Nicosia_Atatürk_Stadium ;
+kg:hasCoach res:coach/Bulent_Aytac ;
+kg:isMemberOf kg:ConIFA ;
+kg:EloRank "89"^^xsd:integer ;
+kg:EloMax "88"^^xsd:integer ;
+kg:EloMaxDate "1962"^^xsd:gYear ;
+kg:EloMin "113"^^xsd:integer ;
+kg:EloMinDate "2008-06"^^xsd:gYearMonth ;
+kg:participatesIn res:competition/ConIFA_World_Football_Championship ;
+kg:regionalCupApps "2"^^xsd:positiveInteger ;
+kg:regionalCupFirst "2016"^^xsd:gYear ;
+kg:regionalCupBest "Á quân" ;
+kg:regionalCupBestIn res:competition/ConIFA_World_Football_Championship_2018 .
+
+res:stadium/Nicosia_Atatürk_Stadium a kg:Stadium ;
+kg:name "Sân vận động Nicosia Atatürk" .
+
+res:coach/Bulent_Aytac a kg:Coach ;
+kg:name "Bülent Aytaç" .
+
+res:competition/ConIFA_World_Football_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá thế giới ConIFA" .
+
+res:competition/ConIFA_World_Football_Championship_2018 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá thế giới ConIFA 2018" .
+
+res:player/Serkan_Onet a kg:Player ;
+kg:mostCaps "25"^^xsd:positiveInteger .
+
+res:player/Halil_Turan a kg:Player ;
+kg:topScorer "10"^^xsd:positiveInteger .
+
+res:match/First_Match_North_Cyprus_vs_Turkey a kg:Match ;
+kg:homeTeam res:team/North_Cyprus ;
+kg:awayTeam res:team/Turkey ;
+kg:result "0–5" ;
+kg:date "1962"^^xsd:gYear .
+
+res:match/Largest_Win_North_Cyprus_15_0_Darfur a kg:Match ;
+kg:homeTeam res:team/North_Cyprus ;
+kg:awayTeam res:team/Darfur ;
+kg:result "15–0" ;
+kg:date "2012-06-04"^^xsd:date .
+
+res:match/Largest_Loss_North_Cyprus_0_5_Turkey a kg:Match ;
+kg:homeTeam res:team/North_Cyprus ;
+kg:awayTeam res:team/Turkey ;
+kg:result "0–5" ;
+kg:date "1962"^^xsd:gYear .
+
+res:match/Turkey_5_0_North_Cyprus a kg:Match ;
+kg:homeTeam res:team/Turkey ;
+kg:awayTeam res:team/North_Cyprus ;
+kg:result "5–0" ;
+kg:date "1980-09-28"^^xsd:date .
+
+res:team/North_Cyprus kg:isChampionOf res:event/FIFI_Wild_Cup_2006 ;
+kg:championIn "Germany"^^xsd:string .
+
+res:team/North_Cyprus kg:isChampionOf res:event/ELF_Cup_2006 ;
+kg:championIn "North Cyprus"^^xsd:string .
+
+res:event/FIFI_Wild_Cup_2006 a kg:Event ;
+kg:name "FIFI Wild Cup 2006" ;
+kg:location "Germany"^^xsd:string .
+
+res:event/ELF_Cup_2006 a kg:Event ;
+kg:name "Cúp ELF 2006" ;
+kg:location "North Cyprus"^^xsd:string .
+
+res:country/North_Cyprus a kg:Country ;
+kg:name "Bắc Síp" .
+
+res:country/Turkey a kg:Country ;
+kg:name "Thổ Nhĩ Kỳ" .
+
+res:country/Darfur a kg:Country ;
+kg:name "Darfur" .
+
+res:country/Iraq a kg:Country ;
+kg:name "Iraq" .
+
+res:place/Nicosia a kg:City ;
+kg:name "Nicosia" ;
+kg:locatedIn res:country/North_Cyprus .
+
+res:stadium/Nicosia_Atatürk_Stadium kg:locatedIn res:place/Nicosia .
+
+res:team/North_Cyprus kg:memberOf kg:ConIFA .
+
+res:team/North_Cyprus kg:banFromFIFA true .

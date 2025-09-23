@@ -1,0 +1,276 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Guyana a kg:Team ;
+kg:teamName "Guyana" ;
+kg:hasCoach res:coach/Márcio_Máximo ;
+kg:homeStadium res:stadium/Sân_vận_động_Providence ;
+kg:locatedIn res:country/Guyana .
+
+res:country/Guyana a kg:Country ;
+rdfs:label "Guyana" .
+
+res:coach/Márcio_Máximo a kg:Coach ;
+kg:manages res:team/Guyana .
+
+res:stadium/Sân_vận_động_Providence a kg:Stadium ;
+kg:isHomeOf res:team/Guyana .
+
+res:player/Charles_Pollard a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 80 .
+
+res:player/Gregory_Richardson a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 18 .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Defender ;
+rdfs:subClassOf kg:Position .
+
+res:position/Midfielder a kg:Midfielder ;
+rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Forward ;
+rdfs:subClassOf kg:Position .
+
+res:player/Akel_Clarke a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 22 ;
+kg:birthDate "1988-10-25"^^xsd:date ;
+kg:nationality res:country/Guyana .
+
+res:player/Kai_McKenzie-Lyle a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 ;
+kg:birthDate "1997-11-30"^^xsd:date ;
+kg:nationality res:country/England .
+
+res:player/Shawn_Adonis a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 18 ;
+kg:birthDate "2002-05-14"^^xsd:date ;
+kg:nationality res:country/Guyana .
+
+res:player/Miquel_Scarlett a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 ;
+kg:birthDate "2000-09-27"^^xsd:date ;
+kg:nationality res:country/Guyana .
+
+res:player/Matthew_Briggs a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 ;
+kg:birthDate "1991-03-06"^^xsd:date ;
+kg:nationality res:country/Denmark .
+
+res:player/Liam_Gordon a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 ;
+kg:birthDate "1999-05-15"^^xsd:date ;
+kg:nationality res:country/England .
+
+res:player/Kevin_Layne a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 23 ;
+kg:birthDate "2000-01-01"^^xsd:date ;
+kg:nationality res:country/Guyana .
+
+res:player/Nicolai_Andrews a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 13 ;
+kg:nationality res:country/Guyana .
+
+res:player/Bayli_Spencer-Adams a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 ;
+kg:birthDate "2001-06-26"^^xsd:date ;
+kg:nationality res:country/England .
+
+res:player/Terence_Vancooten a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 15 ;
+kg:birthDate "1997-12-29"^^xsd:date ;
+kg:nationality res:country/England .
+
+res:player/Nathan_Moriah-Welsh a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 21 ;
+kg:birthDate "2002-03-18"^^xsd:date ;
+kg:nationality res:country/England .
+
+res:player/Marcus_Wilson a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 16 ;
+kg:nationality res:country/Guyana .
+
+res:player/Daniel_Wilson a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 14 ;
+kg:birthDate "1993-11-01"^^xsd:date ;
+kg:nationality res:country/Guyana .
+
+res:player/Jobe_Caesar a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 6 ;
+kg:birthDate "1999-01-01"^^xsd:date ;
+kg:nationality res:country/Guyana .
+
+res:player/Pernell_Schultz a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 12 ;
+kg:birthDate "1994-04-07"^^xsd:date ;
+kg:nationality res:country/Guyana .
+
+res:player/Stephen_Duke-McKenna a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 11 ;
+kg:birthDate "1994-03-04"^^xsd:date ;
+kg:nationality res:country/England .
+
+res:player/Keanu_Marsh-Brown a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 7 ;
+kg:birthDate "1992-08-10"^^xsd:date ;
+kg:nationality res:country/England .
+
+res:player/Omari_Glasgow a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 17 ;
+kg:birthDate "2003-11-22"^^xsd:date ;
+kg:nationality res:country/Guyana .
+
+res:player/Kelsey_Benjamin a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 9 ;
+kg:birthDate "1999-05-08"^^xsd:date ;
+kg:nationality res:country/Guyana .
+
+res:player/Osafa_Simpson a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 19 ;
+kg:nationality res:country/Guyana .
+
+res:player/Trayon_Bobb a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 20 ;
+kg:birthDate "1993-01-05"^^xsd:date ;
+kg:nationality res:country/Guyana .
+
+res:player/Emery_Welshman a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber - ;
+kg:birthDate "1991-11-09"^^xsd:date ;
+kg:nationality res:country/Israel .
+
+res:player/Sam_Cox a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1990-10-10"^^xsd:date ;
+kg:nationality res:country/England .
+
+res:player/Callum_Harriott a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1994-03-04"^^xsd:date ;
+kg:nationality res:country/England .
+
+res:player/Nicholas_McArthur a kg:Player ;
+kg:playsFor res:team/Guyana ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "2001-12-21"^^xsd:date ;
+kg:nationality res:country/Guyana .
+
+res:club/Walking_Boyz_Company a kg:Club ;
+kg:isHomeOf res:player/Akel_Clarke .
+
+res:club/Cambridge_United_F.C. a kg:Club ;
+kg:isHomeOf res:player/Kai_McKenzie-Lyle .
+
+res:club/Police_F.C._(Guyana) a kg:Club ;
+kg:isHomeOf res:player/Shawn_Adonis, res:player/Daniel_Wilson, res:player/Pernell_Schultz, res:player/Osafa_Simpson .
+
+res:club/Vejle_Boldklub a kg:Club ;
+kg:isHomeOf res:player/Matthew_Briggs .
+
+res:club/Bolton_Wanderers_F.C. a kg:Club ;
+kg:isHomeOf res:player/Liam_Gordon .
+
+res:club/Mount_Pleasant_Football_Academy a kg:Club ;
+kg:isHomeOf res:player/Kevin_Layne .
+
+res:club/Santos_FC_(Guyana) a kg:Club ;
+kg:isHomeOf res:player/Nicolai_Andrews, res:player/Marcus_Wilson .
+
+res:club/Queens_Park_Rangers_F.C. a kg:Club ;
+kg:isHomeOf res:player/Stephen_Duke-McKenna .
+
+res:club/Gloucester_City_A.F.C. a kg:Club ;
+kg:isHomeOf res:player/Keanu_Marsh-Brown .
+
+res:club/Fruta_Conquerors_FC a kg:Club ;
+kg:isHomeOf res:player/Nicholas_McArthur, res:player/Omari_Glasgow .
+
+res:club/Hampton_&_Richmond_Borough_F.C. a kg:Club ;
+kg:isHomeOf res:player/Sam_Cox .
+
+res:club/Colchester_United_F.C. a kg:Club ;
+kg:isHomeOf res:player/Callum_Harriott .
+
+res:club/Guyana_Defence_Force_FC a kg:Club ;
+kg:isHomeOf res:player/Kelsey_Benjamin, res:player/Trayon_Bobb .
+
+res:club/Hapoel_Ra'anana_A.F.C. a kg:Club ;
+kg:isHomeOf res:player/Emery_Welshman .
+
+res:competition/Cúp_Vàng_CONCACAF a kg:Competition ;
+kg:competitionName "Cúp Vàng CONCACAF" .
+
+res:season/2019 a kg:Season ;
+kg:hasSeason res:competition/Cúp_Vàng_CONCACAF .
+
+res:match/Trận_đầu_tiên a kg:Match ;
+kg:homeTeam res:team/Guyana ;
+kg:awayTeam res:team/Trinidad_và_Tobago ;
+kg:kickoffTime "1905-07-21"^^xsd:date .
+
+res:match/Trận_thắng_lớn a kg:Match ;
+kg:homeTeam res:team/Guyana ;
+kg:awayTeam res:team/Anguilla ;
+kg:kickoffTime "1998-04-16"^^xsd:date .
+
+res:match/Trận_thua_lớn a kg:Match ;
+kg:homeTeam res:team/MEX ;
+kg:awayTeam res:team/Guyana ;
+kg:kickoffTime "1987-12-02"^^xsd:date .
+
+res:team/Guyana kg:participatesIn res:season/2019 .

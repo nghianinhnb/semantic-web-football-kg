@@ -1,0 +1,199 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Congo a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Congo" ;
+kg:teamAbbreviation "CGO" ;
+kg:hasCoach res:coach/Paul_Put ;
+kg:hasCaptain res:player/Amour_Loussoukou ;
+kg:isMemberOf kg:FIFA ;
+kg:isMemberOf kg:CAF ;
+kg:mostCaps res:player/Jonas_Bahamboula ;
+kg:topScorer res:player/Thievy_Bifouma ;
+kg:homeStadium res:stadium/San_Vien_Dong_Kintele, res:stadium/San_Vien_Dong_Alphonse_Massemba_Debar ;
+kg:worldCupApps "0"^^xsd:integer ;
+kg:worldCupBest "-" ;
+kg:regionalCupApps "6"^^xsd:integer ;
+kg:regionalCupBest "Vô địch, 1972" ;
+kg:regionalCupFirst "1968" ;
+kg:fifaRank "42"^^xsd:integer ;
+kg:fifaMax "42"^^xsd:integer ;
+kg:fifaMaxDate "1995-09"^^xsd:gYearMonth ;
+kg:fifaMin "144"^^xsd:integer ;
+kg:fifaMinDate "2011-09"^^xsd:gYearMonth ;
+kg:eloRank "37"^^xsd:integer ;
+kg:eloMax "37"^^xsd:integer ;
+kg:eloMaxDate "1972-07"^^xsd:gYearMonth ;
+kg:eloMin "133"^^xsd:integer ;
+kg:eloMinDate "2011-04-09"^^xsd:date ;
+kg:firstGame "1960-02"^^xsd:gYearMonth ;
+kg:largestWin "11-0"^^xsd:string ;
+kg:largestLoss "8-1"^^xsd:string ;
+kg:worldCupFirst "-" ;
+kg:worldCupBest "-" ;
+kg:regionalCupName "Cúp bóng đá châu Phi" .
+
+res:coach/Paul_Put a kg:Coach ;
+kg:manages res:team/Congo .
+
+res:player/Amour_Loussoukou a kg:Player ;
+kg:isCaptain res:team/Congo .
+
+res:player/Jonas_Bahamboula a kg:Player ;
+kg:mostCaps res:team/Congo .
+
+res:player/Thievy_Bifouma a kg:Player ;
+kg:topScorer res:team/Congo .
+
+res:stadium/San_Vien_Dong_Kintele a kg:Stadium ;
+kg:isHomeOf res:team/Congo .
+
+res:stadium/San_Vien_Dong_Alphonse_Massemba_Debar a kg:Stadium ;
+kg:isHomeOf res:team/Congo .
+
+res:team/Congo kg:participatedInCompetition res:competition/Copa_Africa_Centroale .
+
+res:competition/Copa_Africa_Centroale a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Phi" ;
+kg:organizes res:season/1968, res:season/1972, res:season/1992, res:season/2000, res:season/2015, res:season/2025 .
+
+res:season/1968 a kg:Season ;
+kg:seasonOf res:competition/Copa_Africa_Centroale .
+
+res:season/1972 a kg:Season ;
+kg:seasonOf res:competition/Copa_Africa_Centroale .
+
+res:season/1992 a kg:Season ;
+kg:seasonOf res:competition/Copa_Africa_Centroale .
+
+res:season/2000 a kg:Season ;
+kg:seasonOf res:competition/Copa_Africa_Centroale .
+
+res:season/2015 a kg:Season ;
+kg:seasonOf res:competition/Copa_Africa_Centroale .
+
+res:season/2025 a kg:Season ;
+kg:seasonOf res:competition/Copa_Africa_Centroale .
+
+res:match/Congo_vs_Reunion_1960 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Reunion ;
+kg:kickoffTime "1960-04-13"^^xsd:date .
+
+res:match/Congo_vs_Ivory_Coast_1960 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Ivory_Coast ;
+kg:kickoffTime "1960-02"^^xsd:gYearMonth .
+
+res:match/Congo_vs_Madagascar_1960 a kg:Match ;
+kg:homeTeam res:team/Madagascar ;
+kg:awayTeam res:team/Congo ;
+kg:kickoffTime "1960-04-19"^^xsd:date .
+
+res:match/Congo_vs_Cameroon_1960 a kg:Match ;
+kg:homeTeam res:team/Cameroon ;
+kg:awayTeam res:team/Congo ;
+kg:kickoffTime "1960-04-17"^^xsd:date .
+
+res:match/Congo_vs_Tunisia_1963 a kg:Match ;
+kg:homeTeam res:team/Tunisia ;
+kg:awayTeam res:team/Congo ;
+kg:kickoffTime "1963-04-13"^^xsd:date .
+
+res:match/Congo_vs_Ivory_Coast_1963 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Ivory_Coast ;
+kg:kickoffTime "1963-04-14"^^xsd:date .
+
+res:match/Congo_vs_Congo_Kinshasa_1963 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Congo_Kinshasa ;
+kg:kickoffTime "1963-04-15"^^xsd:date .
+
+res:match/Congo_vs_Mauritania_1963 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Mauritania ;
+kg:kickoffTime "1963-04-17"^^xsd:date .
+
+res:match/Congo_vs_Mali_1965 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Mali ;
+kg:kickoffTime "1965-07-18"^^xsd:date .
+
+res:match/Congo_vs_Uganda_1965 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Uganda ;
+kg:kickoffTime "1965-07-19"^^xsd:date .
+
+res:match/Congo_vs_Togo_1965 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Togo ;
+kg:kickoffTime "1965-07-21"^^xsd:date .
+
+res:match/Congo_vs_Ivory_Coast_1965 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Ivory_Coast ;
+kg:kickoffTime "1965-07-23"^^xsd:date .
+
+res:match/Congo_vs_Mali_1965 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Mali ;
+kg:kickoffTime "1965-07-25"^^xsd:date .
+
+res:match/Congo_vs_Romania_1967 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Romania ;
+kg:kickoffTime "1967-01-11"^^xsd:date .
+
+res:match/Congo_vs_Tunisia_1967 a kg:Match ;
+kg:homeTeam res:team/Tunisia ;
+kg:awayTeam res:team/Congo ;
+kg:kickoffTime "1967-02-19"^^xsd:date .
+
+res:match/Congo_vs_Cameroon_1967 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Cameroon ;
+kg:kickoffTime "1967-08-02"^^xsd:date .
+
+res:match/Congo_vs_Ethiopia_1968 a kg:Match ;
+kg:homeTeam res:team/Ethiopia ;
+kg:awayTeam res:team/Congo ;
+kg:kickoffTime "1968-01-12"^^xsd:date .
+
+res:match/Congo_vs_Zaire_1968 a kg:Match ;
+kg:homeTeam res:team/Zaire ;
+kg:awayTeam res:team/Congo ;
+kg:kickoffTime "1968-01-14"^^xsd:date .
+
+res:match/Congo_vs_Senegal_1968 a kg:Match ;
+kg:homeTeam res:team/Senegal ;
+kg:awayTeam res:team/Congo ;
+kg:kickoffTime "1968-01-16"^^xsd:date .
+
+res:match/Congo_vs_Ghana_1968 a kg:Match ;
+kg:homeTeam res:team/Ghana ;
+kg:awayTeam res:team/Congo ;
+kg:kickoffTime "1968-01-16"^^xsd:date .
+
+res:match/Congo_vs_Romania_1968 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Romania ;
+kg:kickoffTime "1968-06-16"^^xsd:date .
+
+res:match/Congo_vs_Brazil_1968 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Brazil ;
+kg:kickoffTime "1968-07-30"^^xsd:date .
+
+res:match/Congo_vs_Cameroon_1972 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Cameroon ;
+kg:kickoffTime "1972-05-28"^^xsd:date .
+
+res:match/Congo_vs_Mali_1972 a kg:Match ;
+kg:homeTeam res:team/Congo ;
+kg:awayTeam res:team/Mali ;
+kg:kickoffTime "1972-05-30"^^xsd:date .

@@ -2,64 +2,71 @@
 @prefix res: <https://kg-football.vn/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:teamName "Đội tuyển bóng đá quốc gia Đài Bắc Trung Hoa" .
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:teamAbbreviation "TPE" .
 res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:hasCoach res:coach/Vom_Ca-nhum .
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:manages res:coach/Vom_Ca-nhum .
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:homeStadium res:stadium/Sân_vận_động_Qốc_gia_Cao_Hùng .
-res:stadium/Sân_vận_động_Qốc_gia_Cao_Hùng kg:isHomeOf res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa .
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:locatedIn res:country/Đài_Bắc_Trung_Hoa .
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:organizes res:competition/Cúp_bóng_đá_châu_Á .
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:organizes res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á .
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:organizes res:competition/Giải_vô_địch_bóng_đá_Đông_Á .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:hasCaptain res:player/Trần_Bá_Lương .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:homeStadium res:stadium/Sân_vận_động_Quốc_gia_Cao_Hùng .
 
 res:coach/Vom_Ca-nhum kg:manages res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa .
 
-res:stadium/Sân_vận_động_Qốc_gia_Cao_Hùng kg:capacity 40000 .
+res:player/Trần_Bá_Lương kg:playsFor res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa .
+res:player/Trần_Bá_Lương kg:primaryPosition kg:Midfielder .
+res:player/Trần_Bá_Lương kg:shirtNumber 11 .
+res:player/Trần_Bá_Lương kg:mostCaps 79 .
+res:player/Trần_Bá_Lương kg:topScorer 25 .
 
-res:competition/Cúp_bóng_đá_châu_Á kg:competitionName "Cúp bóng đá châu Á" .
-res:competition/Cúp_bóng_đá_châu_Á kg:heldIn res:country/Đài_Bắc_Trung_Hoa .
-res:competition/Cúp_bóng_đá_châu_Á kg:participantCount 18 .
+res:stadium/Sân_vận_động_Quốc_gia_Cao_Hùng kg:homeStadium res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa .
 
-res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á kg:competitionName "Bóng đá tại Đại hội Thể thao châu Á" .
-res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á kg:heldIn res:country/Đài_Bắc_Trung_Hoa .
-res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á kg:participantCount 13 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:FIFA_trigramme "TPE" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:FIFA_rank 121 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:FIFA_max_date "2018-05-04"^^xsd:date .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:FIFA_min 191 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:FIFA_min_date "2016-06"^^xsd:date .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:Elo_rank 60 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:Elo_max_date "1965-09"^^xsd:date .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:Elo_min 213 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:Elo_min_date "2015-12-03"^^xsd:date .
 
-res:competition/Giải_vô_địch_bóng_đá_Đông_Á kg:competitionName "Giải vô địch bóng đá Đông Á" .
-res:competition/Giải_vô_địch_bóng_đá_Đông_Á kg:heldIn res:country/Đài_Bắc_Trung_Hoa .
-res:competition/Giải_vô_địch_bóng_đá_Đông_Á kg:participantCount 9 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:association res:organization/Hiệp_hội_bóng_đá_Đài_Bắc_Trung_Hoa .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:subConfederation res:confederation/Liên_đoàn_bóng_đá_Đông_Á .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:confederation res:confederation/Liên_đoàn_bóng_đá_châu_Á .
 
-res:country/Đài_Bắc_Trung_Hoa kg:locatedIn res:region/Đông_Á .
+res:organization/Hiệp_hội_bóng_đá_Đài_Bắc_Trung_Hoa kg:name "Hiệp hội bóng đá Đài Bắc Trung Hoa" .
 
-res:region/Đông_Á kg:locatedIn res:continent/Châu_Á .
+res:confederation/Liên_đoàn_bóng_đá_Đông_Á kg:name "Liên đoàn bóng đá Đông Á" .
+res:confederation/Liên_đoàn_bóng_đá_châu_Á kg:name "Liên đoàn bóng đá châu Á" .
 
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:participatesIn res:season/1960 .
-res:season/1960 kg:seasonOf res:competition/Cúp_bóng_đá_châu_Á .
-res:season/1960 kg:participatesIn res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa .
-res:season/1960 kg:result "Hạng ba" .
-res:season/1960 kg:rank 3 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:firstGame "1913-02-01"^^xsd:date .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:largestWin "2007-06-17"^^xsd:date .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:largestLoss "2006-11-09"^^xsd:date .
 
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:participatesIn res:season/1968 .
-res:season/1968 kg:seasonOf res:competition/Cúp_bóng_đá_châu_Á .
-res:season/1968 kg:participatesIn res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa .
-res:season/1968 kg:result "Hạng tư" .
-res:season/1968 kg:rank 4 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:regionalCupApps 2 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:regionalCupFirst "1960" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:regionalCupBest "Hạng ba" .
 
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:participatesIn res:season/1954 .
-res:season/1954 kg:seasonOf res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á .
-res:season/1954 kg:participatesIn res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa .
-res:season/1954 kg:result "Vô địch" .
-res:season/1954 kg:rank 1 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:worldCupApps 0 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:worldCupBest "-" .
 
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:participatesIn res:season/1958 .
-res:season/1958 kg:seasonOf res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á .
-res:season/1958 kg:participatesIn res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa .
-res:season/1958 kg:result "Vô địch" .
-res:season/1958 kg:rank 1 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:patternLa1 "_ChineseTaipei_HOME_2023" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:patternB1 "_ChineseTaipei_HOME_2023" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:patternRa1 "_ChineseTaipei_HOME_2023" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:patternSh1 "" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:patternSo1 "" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:leftArm1 "#01007E" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:body1 "#01007E" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:rightArm1 "#01007E" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:shorts1 "#000038" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:socks1 "#000038" .
 
-res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:participatesIn res:season/2023 .
-res:season/2023 kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_Đông_Á .
-res:season/2023 kg:participatesIn res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa .
-res:season/2023 kg:result "Không vượt qua vòng loại" .
-res:season/2023 kg:rank 0 .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:patternLa2 "_ChineseTaipei_AWAY_2023" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:patternB2 "_ChineseTaipei_AWAY_2023" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:patternRa2 "_ChineseTaipei_AWAY_2023" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:patternSh2 "" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:patternSo2 "" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:leftArm2 "#FFFFFF" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:body2 "#FFFFFF" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:rightArm2 "#FFFFFF" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:shorts2 "#A4D2FF" .
+res:team/Đội_tuyển_bóng_đá_quốc_gia_Đài_Bắc_Trung_Hoa kg:socks2 "#FFFFFF" .

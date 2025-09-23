@@ -1,0 +1,275 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Abkhazia a kg:Team ;
+kg:teamName "Abkhazia" ;
+kg:hasCoach res:coach/Beslan_Gubliya ;
+kg:organizes res:competition/ConIFA_World_Football_Cup ;
+kg:organizes res:competition/ConIFA_European_Football_Championship .
+
+res:coach/Beslan_Gubliya a kg:Coach ;
+kg:manages res:team/Abkhazia .
+
+res:competition/ConIFA_World_Football_Cup a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá thế giới ConIFA" .
+
+res:competition/ConIFA_European_Football_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá châu Âu ConIFA" .
+
+res:team/Abkhazia kg:participatesIn res:season/ConIFA_World_Football_Cup_2014 ;
+kg:participatesIn res:season/ConIFA_World_Football_Cup_2016 ;
+kg:participatesIn res:season/ConIFA_World_Football_Cup_2018 ;
+kg:participatesIn res:season/ConIFA_World_Football_Cup_2020 ;
+kg:participatesIn res:season/ConIFA_European_Football_Championship_2015 ;
+kg:participatesIn res:season/ConIFA_European_Football_Championship_2017 ;
+kg:participatesIn res:season/ConIFA_European_Football_Championship_2019 ;
+kg:participatesIn res:season/ConIFA_European_Football_Championship_2021 .
+
+res:season/ConIFA_World_Football_Cup_2014 a kg:Season ;
+kg:seasonOf res:competition/ConIFA_World_Football_Cup ;
+kg:participatesIn res:team/Abkhazia ;
+kg:result "8th" ;
+kg:gamesPlayed 5 ;
+kg:wins 1 ;
+kg:draws 1 ;
+kg:losses 3 ;
+kg:goalsFor 1 ;
+kg:goalsAgainst 6 .
+
+res:season/ConIFA_World_Football_Cup_2016 a kg:Season ;
+kg:seasonOf res:competition/ConIFA_World_Football_Cup ;
+kg:participatesIn res:team/Abkhazia ;
+kg:result "1st" ;
+kg:gamesPlayed 5 ;
+kg:wins 4 ;
+kg:draws 1 ;
+kg:losses 0 ;
+kg:goalsFor 15 ;
+kg:goalsAgainst 1 .
+
+res:season/ConIFA_World_Football_Cup_2018 a kg:Season ;
+kg:seasonOf res:competition/ConIFA_World_Football_Cup ;
+kg:participatesIn res:team/Abkhazia ;
+kg:result "9th" ;
+kg:gamesPlayed 6 ;
+kg:wins 4 ;
+kg:draws 1 ;
+kg:losses 1 ;
+kg:goalsFor 15 ;
+kg:goalsAgainst 4 .
+
+res:season/ConIFA_World_Football_Cup_2020 a kg:Season ;
+kg:seasonOf res:competition/ConIFA_World_Football_Cup ;
+kg:participatesIn res:team/Abkhazia ;
+kg:result "Canceled" .
+
+res:season/ConIFA_European_Football_Championship_2015 a kg:Season ;
+kg:seasonOf res:competition/ConIFA_European_Football_Championship ;
+kg:participatesIn res:team/Abkhazia ;
+kg:result "Did not participate" .
+
+res:season/ConIFA_European_Football_Championship_2017 a kg:Season ;
+kg:seasonOf res:competition/ConIFA_European_Football_Championship ;
+kg:participatesIn res:team/Abkhazia ;
+kg:result "4th" ;
+kg:gamesPlayed 5 ;
+kg:wins 1 ;
+kg:draws 2 ;
+kg:losses 2 ;
+kg:goalsFor 1 ;
+kg:goalsAgainst 6 .
+
+res:season/ConIFA_European_Football_Championship_2019 a kg:Season ;
+kg:seasonOf res:competition/ConIFA_European_Football_Championship ;
+kg:participatesIn res:team/Abkhazia ;
+kg:result "3rd" ;
+kg:gamesPlayed 5 ;
+kg:wins 2 ;
+kg:draws 1 ;
+kg:losses 2 ;
+kg:goalsFor 0 ;
+kg:goalsAgainst 3 .
+
+res:season/ConIFA_European_Football_Championship_2021 a kg:Season ;
+kg:seasonOf res:competition/ConIFA_European_Football_Championship ;
+kg:participatesIn res:team/Abkhazia ;
+kg:result "Qualified" .
+
+res:team/Abkhazia kg:hasStadium res:stadium/Sukhumi_Republic_Stadium .
+
+res:stadium/Sukhumi_Republic_Stadium a kg:Stadium ;
+kg:name "Sân vận động Cộng hòa, Sukhumi" .
+
+res:team/Abkhazia kg:association res:organization/Aznavourian_Football_Association .
+
+res:organization/Aznavourian_Football_Association a kg:Organization ;
+kg:name "Liên đoàn bóng đá Abkhazia" .
+
+res:team/Abkhazia kg:confederation res:organization/ConIFA .
+
+res:organization/ConIFA a kg:Organization ;
+kg:name "ConIFA" .
+
+res:team/Abkhazia kg:topScorer res:player/Ruslan_Shoniya .
+
+res:player/Ruslan_Shoniya a kg:Player ;
+kg:goals 8 .
+
+res:player/Inal_Katsuba a kg:Player ;
+kg:shirtNumber 23 ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1995-09-21"^^xsd:date ;
+kg:club res:club/Nart_Sukhum .
+
+res:club/Nart_Sukhum a kg:Club ;
+kg:name "Football Club Nart Sukhum" .
+
+res:player/Ilia_Sherba a kg:Player ;
+kg:shirtNumber 1 ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1987-08-25"^^xsd:date ;
+kg:club res:club/Gagra .
+
+res:club/Gagra a kg:Club ;
+kg:name "FC Gagra" .
+
+res:player/Lev_Tarba a kg:Player ;
+kg:shirtNumber 99 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1999-12-02"^^xsd:date ;
+kg:club res:club/Nart_Sukhum .
+
+res:player/Georgi_Zhanaa a kg:Player ;
+kg:shirtNumber 2 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1995-01-28"^^xsd:date ;
+kg:club res:club/Nart_Sukhum .
+
+res:player/Lev_Baburin a kg:Player ;
+kg:shirtNumber 97 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1997-07-11"^^xsd:date ;
+kg:club res:club/Baltica_M .
+
+res:club/Baltica_M a kg:Club ;
+kg:name "Baltica-M" .
+
+res:player/Astamur_Tsishba a kg:Player ;
+kg:shirtNumber 3 ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1988-02-23"^^xsd:date ;
+kg:club res:club/Gagra .
+
+res:player/Timur_Agrba a kg:Player ;
+kg:shirtNumber 76 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1999-12-01"^^xsd:date ;
+kg:club res:club/Nart_Sukhum .
+
+res:player/Giga_Benidze a kg:Player ;
+kg:shirtNumber 65 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1998-09-18"^^xsd:date ;
+kg:club res:club/Dinamo_Sukhumi .
+
+res:club/Dinamo_Sukhumi a kg:Club ;
+kg:name "Dinamo Sukhumi" .
+
+res:player/Tarash_Khagba a kg:Player ;
+kg:shirtNumber 5 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1991-01-14"^^xsd:date ;
+kg:club res:club/Dinamo_Sukhumi .
+
+res:player/Daur_Chanba a kg:Player ;
+kg:shirtNumber 66 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2000-07-07"^^xsd:date ;
+kg:club res:club/OFK_Bacca .
+
+res:club/OFK_Bacca a kg:Club ;
+kg:name "OFK Bačka" .
+
+res:player/Viktor_Pimpiia a kg:Player ;
+kg:shirtNumber 45 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1998-12-15"^^xsd:date ;
+kg:club res:club/Ritsa .
+
+res:club/Ritsa a kg:Club ;
+kg:name "Ritsa Football Club" .
+
+res:player/Akaki_Zvanba a kg:Player ;
+kg:shirtNumber 6 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1992-10-28"^^xsd:date ;
+kg:club res:club/New_Athos .
+
+res:club/New_Athos a kg:Club ;
+kg:name "New Athos" .
+
+res:player/Alan_Khugaev a kg:Player ;
+kg:shirtNumber 7 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1991-08-31"^^xsd:date ;
+kg:club res:club/Spartak_Vladikavkaz .
+
+res:club/Spartak_Vladikavkaz a kg:Club ;
+kg:name "FC Spartak Vladikavkaz" .
+
+res:player/Danil_Chirikba a kg:Player ;
+kg:shirtNumber 34 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1998-05-12"^^xsd:date ;
+kg:club res:club/New_Athos .
+
+res:player/Shabat_Logua a kg:Player ;
+kg:shirtNumber 8 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1995-03-22"^^xsd:date ;
+kg:club res:club/OFK_Bacca .
+
+res:player/Gudisa_Smyr a kg:Player ;
+kg:shirtNumber 95 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2000-03-06"^^xsd:date ;
+kg:club res:club/FC_Druzhba_Maykop .
+
+res:club/FC_Druzhba_Maykop a kg:Club ;
+kg:name "FC Druzhba Maykop" .
+
+res:player/Roman_Zikrach a kg:Player ;
+kg:shirtNumber 33 ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1998-01-18"^^xsd:date ;
+kg:club res:club/Kairat .
+
+res:club/Kairat a kg:Club ;
+kg:name "FC Kairat" .
+
+res:player/Dmitri_Maskayev a kg:Player ;
+kg:shirtNumber 10 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1987-12-27"^^xsd:date ;
+kg:club res:club/Torpedo_Moscow .
+
+res:club/Torpedo_Moscow a kg:Club ;
+kg:name "FC Torpedo Moscow" .
+
+res:player/Ramin_Bartsits a kg:Player ;
+kg:shirtNumber 11 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1990-01-26"^^xsd:date ;
+kg:club res:club/Gagra .
+
+res:player/Danilo_Ardzinba a kg:Player ;
+kg:shirtNumber 72 ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1999-05-27"^^xsd:date ;
+kg:club res:club/FC_Strogino_Moscow .
+
+res:club/FC_Strogino_Moscow a kg:Club ;
+kg:name "FC Strogino Moscow" .

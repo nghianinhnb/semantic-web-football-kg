@@ -1,0 +1,36 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Antille thuộc Hà Lan a kg:teamName "Antille thuộc Hà Lan"^^xsd:string .
+res:team/Antille thuộc Hà Lan a kg:Team .
+res:team/Antille thuộc Hà Lan kg:teamAbbreviation "ANT"^^xsd:string .
+res:team/Antille thuộc Hà Lan kg:hasCoach ""^^xsd:string .
+res:team/Antille thuộc Hà Lan kg:homeStadium res:stadium/Sân vận động Ergilio Hato .
+res:stadium/Sân vận động Ergilio Hato a kg:Stadium .
+res:stadium/Sân vận động Ergilio Hato kg:isHomeOf res:team/Antille thuộc Hà Lan .
+res:team/Antille thuộc Hà Lan kg:locatedIn res:country/Hà Lan .
+res:team/Antille thuộc Hà Lan kg:organizes res:competition/Giải VĐBĐ CONCACAF và Cúp Vàng .
+res:competition/Giải VĐBĐ CONCACAF và Cúp Vàng a kg:Competition .
+res:competition/Giải VĐBĐ CONCACAF và Cúp Vàng kg:competitionName "Giải VĐBĐ CONCACAF và Cúp Vàng"^^xsd:string .
+res:team/Antille thuộc Hà Lan kg:participantCount "1"^^xsd:positiveInteger .
+res:team/Antille thuộc Hà Lan kg:participatesIn res:season/1963 .
+res:season/1963 a kg:Season .
+res:season/1963 kg:seasonOf res:competition/Giải VĐBĐ CONCACAF và Cúp Vàng .
+res:season/1963 kg:participatesIn res:team/Antille thuộc Hà Lan .
+res:team/Antille thuộc Hà Lan kg:participatesIn res:season/1969 .
+res:season/1969 a kg:Season .
+res:season/1969 kg:seasonOf res:competition/Giải VĐBĐ CONCACAF và Cúp Vàng .
+res:season/1969 kg:participatesIn res:team/Antille thuộc Hà Lan .
+res:team/Antille thuộc Hà Lan kg:regionalCupBest "Hạng ba 1963, 1969"^^xsd:string .
+res:team/Antille thuộc Hà Lan kg:firstGame "1948-03-04"^^xsd:date .
+res:team/Antille thuộc Hà Lan kg:lastGame "2010-10-31"^^xsd:date .
+res:team/Antille thuộc Hà Lan kg:largestWin "15–0"^^xsd:string .
+res:team/Antille thuộc Hà Lan kg:largestLoss "8–0"^^xsd:string .
+res:team/Antille thuộc Hà Lan kg:disbanded "2010-10"^^xsd:date .
+res:team/Antille thuộc Hà Lan kg:renamedTo res:team/Curaçao .
+res:team/Curaçao a kg:Team .
+res:team/Curaçao kg:teamName "Curaçao"^^xsd:string .
+res:team/Curaçao kg:foundedDate "2011-01"^^xsd:date .
+res:team/Curaçao kg:locatedIn res:country/Curaçao .

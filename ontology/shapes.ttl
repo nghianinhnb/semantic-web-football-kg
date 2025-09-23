@@ -197,50 +197,6 @@ kg:MatchShape a sh:NodeShape ;
     """ ;
   ] .
 
-# Appearance Shape
-kg:AppearanceShape a sh:NodeShape ;
-  sh:targetClass kg:Appearance ;
-  sh:property [
-    sh:path kg:appearanceOf ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:class kg:Player ;
-    sh:message "Appearance must reference exactly one player"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:appearanceInMatch ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:class kg:Match ;
-    sh:message "Appearance must reference exactly one match"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:appearanceForTeam ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:class kg:Team ;
-    sh:message "Appearance must reference exactly one team"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:minutesPlayed ;
-    sh:datatype xsd:nonNegativeInteger ;
-    sh:minInclusive 0 ;
-    sh:maxInclusive 120 ;
-    sh:message "Minutes played must be between 0 and 120"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:isStarter ;
-    sh:datatype xsd:boolean ;
-    sh:message "isStarter must be a boolean value"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:shirtNumberInMatch ;
-    sh:datatype xsd:positiveInteger ;
-    sh:minInclusive 1 ;
-    sh:maxInclusive 99 ;
-    sh:message "Shirt number in match must be between 1 and 99"@en ;
-  ] .
-
 # Goal Event Shape
 kg:GoalEventShape a sh:NodeShape ;
   sh:targetClass kg:GoalEvent ;
@@ -288,65 +244,6 @@ kg:GoalEventShape a sh:NodeShape ;
     sh:path kg:isPenalty ;
     sh:datatype xsd:boolean ;
     sh:message "isPenalty must be a boolean value"@en ;
-  ] .
-
-# Transfer Shape
-kg:TransferShape a sh:NodeShape ;
-  sh:targetClass kg:Transfer ;
-  sh:property [
-    sh:path kg:transferPlayer ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:class kg:Player ;
-    sh:message "Transfer must reference exactly one player"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:fromClub ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:class kg:Club ;
-    sh:message "Transfer must reference exactly one source club"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:toClub ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:class kg:Club ;
-    sh:message "Transfer must reference exactly one destination club"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:transferDate ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:datatype xsd:date ;
-    sh:message "Transfer must have exactly one transfer date"@en ;
-  ] ;
-  sh:property [
-    sh:path kg:transferFee ;
-    sh:datatype xsd:decimal ;
-    sh:minInclusive 0 ;
-    sh:message "Transfer fee must be non-negative"@en ;
-  ] ;
-  sh:sparql [
-    a sh:SPARQLConstraint ;
-    sh:message "Transfer date must be in the past"@en ;
-    sh:select """
-      SELECT $this WHERE {
-        $this kg:transferDate ?transferDate .
-        FILTER(?transferDate > NOW())
-      }
-    """ ;
-  ] ;
-  sh:sparql [
-    a sh:SPARQLConstraint ;
-    sh:message "Source and destination clubs must be different"@en ;
-    sh:select """
-      SELECT $this WHERE {
-        $this kg:fromClub ?fromClub ;
-               kg:toClub ?toClub .
-        FILTER(?fromClub = ?toClub)
-      }
-    """ ;
   ] .
 
 # Competition Shape

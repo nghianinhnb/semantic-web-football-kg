@@ -1,0 +1,300 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Bahamas a kg:Team ;
+kg:teamName "Bahamas" ;
+kg:hasCoach res:coach/Nesley_Jean ;
+kg:hasCaptain res:player/Lesly_St._Fleur ;
+kg:teamAbbreviation "BAH" ;
+kg:homeStadium res:stadium/San_Van_Dong_Thomas_Robinson .
+
+res:coach/Nesley_Jean a kg:Coach ;
+kg:manages res:team/Bahamas .
+
+res:player/Lesly_St._Fleur a kg:Player ;
+kg:playsFor res:team/Bahamas ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 9 ;
+kg:mostCaps 20 ;
+kg:topScorer 10 .
+
+res:stadium/San_Van_Dong_Thomas_Robinson a kg:Stadium ;
+kg:isHomeOf res:team/Bahamas .
+
+res:team/Bahamas kg:association res:organization/Hoan_Hoi_Bong_Da_Bahamas ;
+kg:confederation res:organization/CONCACAF .
+
+res:organization/Hoan_Hoi_Bong_Da_Bahamas a kg:Organization ;
+kg:locatedIn res:country/Bahamas .
+
+res:organization/CONCACAF a kg:Organization .
+
+res:country/Bahamas a kg:Country ;
+kg:locatedIn res:region/North_America_and_Caribbean .
+
+res:match/BAH_vs_ANT a kg:Match ;
+kg:homeTeam res:team/Bahamas ;
+kg:awayTeam res:team/Antilles ;
+kg:venue res:stadium/San_Van_Dong_Thomas_Robinson ;
+kg:kickoffTime "1970-03-03"^^xsd:date .
+
+res:match/BAH_vs_TCA a kg:Match ;
+kg:homeTeam res:team/Bahamas ;
+kg:awayTeam res:team/Turks_and_Caicos_Islands ;
+kg:venue res:stadium/San_Van_Dong_Thomas_Robinson ;
+kg:kickoffTime "2011-07-09"^^xsd:date .
+
+res:match/MEX_vs_BAH a kg:Match ;
+kg:homeTeam res:team/Mexico ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/San_Van_Dong_Thomas_Robinson ;
+kg:kickoffTime "1987-04-28"^^xsd:date .
+
+res:competition/FIFA_World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" .
+
+res:competition/Copa_America a kg:Competition ;
+kg:competitionName "Copa America" .
+
+res:season/2022 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:team/Bahamas kg:participatesIn res:season/2022 .
+
+res:team/Bahamas kg:participatesIn res:competition/Copa_America .
+
+res:team/Bahamas kg:participatesIn res:competition/CONCACAF_Nations_League .
+
+res:match/BAH_vs_BVI a kg:Match ;
+kg:homeTeam res:team/Bahamas ;
+kg:awayTeam res:team/British_Virgin_Islands ;
+kg:venue res:stadium/San_Van_Dong_Thomas_Robinson ;
+kg:kickoffTime "2019-10-10"^^xsd:date .
+
+res:match/PUR_vs_BAH a kg:Match ;
+kg:homeTeam res:team/Puerto_Rico ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/San_Van_Dong_Thomas_Robinson ;
+kg:kickoffTime "2023-09-09"^^xsd:date .
+
+res:match/PUR_vs_BAH_2 a kg:Match ;
+kg:homeTeam res:team/Puerto_Rico ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/Bayamon ;
+kg:kickoffTime "2023-11-21"^^xsd:date .
+
+res:team/Bahamas kg:hasCoach res:coach/Nesley_Jean .
+
+res:team/Bahamas kg:hasCaptain res:player/Lesly_St._Fleur .
+
+res:team/Bahamas kg:mostCaps res:player/Lesly_St._Fleur .
+
+res:team/Bahamas kg:topScorer res:player/Lesly_St._Fleur .
+
+res:team/Bahamas kg:FIFA_Rank "210"^^xsd:integer ;
+kg:FIFA_Max "138"^^xsd:integer ;
+kg:FIFA_Max_Date "2006-09"^^xsd:gYearMonth ;
+kg:FIFA_Min "210"^^xsd:integer ;
+kg:FIFA_Min_Date "2018-07"^^xsd:gYearMonth .
+
+res:team/Bahamas kg:Elo_Rank "207"^^xsd:integer ;
+kg:Elo_Max "191"^^xsd:integer ;
+kg:Elo_Max_Date "2011-10"^^xsd:gYearMonth ;
+kg:Elo_Min "207"^^xsd:integer ;
+kg:Elo_Min_Date "2001, 2004" .
+
+res:team/Bahamas kg:pattern_la1 "_bah1819h" ;
+kg:pattern_b1 "_bah1819h" ;
+kg:pattern_ra1 "_bah1819h" ;
+kg:pattern_sh1 "_bah1819h" ;
+kg:pattern_so1 "_bah1819h" ;
+kg:leftarm1 "#FFD700" ;
+kg:body1 "#FFD700" ;
+kg:rightarm1 "#FFD700" ;
+kg:shorts1 "#ffd700" ;
+kg:socks1 "#FFD700" ;
+kg:pattern_la2 "_bah1819a" ;
+kg:pattern_b2 "_bah1819a" ;
+kg:pattern_ra2 "_bah1819a" ;
+kg:pattern_sh2 "_bah1819a" ;
+kg:pattern_so2 "_bah1819a" ;
+kg:leftarm2 "#0080ff" ;
+kg:body2 "#0080ff" ;
+kg:rightarm2 "#0080ff" ;
+kg:shorts2 "#000" ;
+kg:socks2 "#000" .
+
+res:team/Bahamas kg:firstGame res:match/BAH_vs_ANT ;
+kg:largestWin res:match/BAH_vs_TCA ;
+kg:largestLoss res:match/MEX_vs_BAH .
+
+res:team/Bahamas kg:worldCupApps 0 ;
+kg:worldCupBest "-" ;
+kg:worldCupFirst "-" .
+
+res:team/Bahamas kg:regionalCupApps 0 ;
+kg:regionalCupBest "-" ;
+kg:regionalCupFirst "-" .
+
+res:team/Bahamas kg:regionalCupName "Cup of Gold CONCACAF" .
+
+res:team/Bahamas kg:joinedFIFA "1968"^^xsd:gYear ;
+kg:established "1967"^^xsd:gYear .
+
+res:team/Bahamas kg:contributionToCONCACAF "1967"^^xsd:gYear .
+
+res:team/Bahamas kg:history "Bahamas made its international debut at the 1970 Central American and Caribbean Games, losing 0–3 to Puerto Rico in their opening match, followed by a 1–8 defeat to Netherlands Antilles and a 0–5 loss to Venezuela. However, they managed their first draw with a 2–2 tie against Dominican Republic. One year later, Bahamas participated in the 1971 Pan American Games, securing their first win with a 4–2 victory over Dominican Republic, but failed to advance past the group stage. In 1974, they returned to the Central American and Caribbean Games, surprising everyone with a 1–0 win over Panama, but were eliminated after losses to Bermuda (0–3) and Dominica (0–2)." .
+
+res:team/Bahamas kg:history2 "Bahamas finished last in the 1982 Central American and Caribbean Games, and in the 1986 games, they qualified directly for the quarter-finals due to a team withdrawal but lost to Cuba and were eliminated. They also participated in the 1984 (eliminated by Mexico - amateur team) and 1988 (lost to Guyana) Olympics. On April 28, 1987, Bahamas suffered their heaviest ever defeat, losing 0–13 to Mexico in the 1987 Pan American Games qualifiers." .
+
+res:team/Bahamas kg:history3 "In the 1990s, Bahamas withdrew from the 1998 World Cup qualifiers, giving the spot to Saint Kitts and Nevis. In 1999, they advanced past the preliminary rounds of the Caribbean Cup but then lost heavily to Bermuda (0–6), Cuba (0–7), and Cayman Islands (1–4), finishing bottom of the group. Throughout the 2000s, the Bahamas national team participated in three consecutive World Cup qualifiers (2002, 2006, 2010) but were all eliminated early, respectively losing to Haiti (0–13 overall), Dominica (2–4), and Jamaica (0–13). In the 2007 Caribbean Cup, they advanced through the preliminary round but finished last in the second round behind Barbados, Saint Vincent, and Bermuda." .
+
+res:team/Bahamas kg:history4 "In the 2014 World Cup qualifiers, Bahamas defeated Turks and Caicos Islands 10–0 to qualify for the second round. However, they had to withdraw due to the incomplete upgrade of the Thomas Robinson Stadium and financial constraints for playing away matches. In the 2018 World Cup qualifiers, they faced Bermuda in the first round and lost 0–8. In the 2022 World Cup qualifiers, they did not score any goals, conceded 15 goals, and finished last in the group." .
+
+res:team/Bahamas kg:history5 "In the 2026 World Cup qualifiers, they faced Grenada and Costa Rica on June 5 and 8, 2025." .
+
+res:team/Bahamas kg:history6 "As of June 7, 2025, Bahamas have the following head-to-head records:" .
+
+res:team/Bahamas kg:headToHead res:match/AIA vs BAH ;
+res:match/ATG vs BAH ;
+res:match/BRB vs BAH ;
+res:match/BLZ vs BAH ;
+res:match/BER vs BAH ;
+res:match/Bonaire vs BAH ;
+res:match/BVI vs BAH ;
+res:match/CAY vs BAH ;
+res:match/CRC vs BAH ;
+res:match/CUB vs BAH ;
+res:match/CUW vs BAH ;
+res:match/DMA vs BAH ;
+res:match/DOM vs BAH ;
+res:match/GRN vs BAH ;
+res:match/GLP vs BAH ;
+res:match/GUY vs BAH ;
+res:match/HAI vs BAH ;
+res:match/JAM vs BAH ;
+res:match/MEX vs BAH ;
+res:match/NCA vs BAH ;
+res:match/PAN vs BAH ;
+res:match/PUR vs BAH ;
+res:match/SKN vs BAH ;
+res:match/VIN vs BAH ;
+res:match/TRI vs BAH ;
+res:match/TCA vs BAH ;
+res:match/VIR vs BAH .
+
+res:match/AIA vs BAH a kg:Match ;
+kg:homeTeam res:team/Antigua_and_Barbud ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/Unknown ;
+kg:kickoffTime "unknown"^^xsd:string ;
+kg:st "3"^^xsd:positiveInteger ;
+kg:t "2"^^xsd:positiveInteger ;
+kg:h "1"^^xsd:positiveInteger ;
+kg:b "0"^^xsd:positiveInteger ;
+kg:bt "6"^^xsd:positiveInteger ;
+kg:bb "3"^^xsd:positiveInteger ;
+kg:hs "+3"^^xsd:integer .
+
+res:match/ATG vs BAH a kg:Match ;
+kg:homeTeam res:team/Antigua_and_Barbud ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/Unknown ;
+kg:kickoffTime "unknown"^^xsd:string ;
+kg:st "3"^^xsd:positiveInteger ;
+kg:t "0"^^xsd:positiveInteger ;
+kg:h "1"^^xsd:positiveInteger ;
+kg:b "2"^^xsd:positiveInteger ;
+kg:bt "3"^^xsd:positiveInteger ;
+kg:bb "12"^^xsd:positiveInteger ;
+kg:hs "-9"^^xsd:integer .
+
+res:match/BRB vs BAH a kg:Match ;
+kg:homeTeam res:team/Barbados ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/Unknown ;
+kg:kickoffTime "unknown"^^xsd:string ;
+kg:st "3"^^xsd:positiveInteger ;
+kg:t "0"^^xsd:positiveInteger ;
+kg:h "0"^^xsd:positiveInteger ;
+kg:b "3"^^xsd:positiveInteger ;
+kg:bt "5"^^xsd:positiveInteger ;
+kg:bb "11"^^xsd:positiveInteger ;
+kg:hs "-6"^^xsd:integer .
+
+res:match/BLZ vs BAH a kg:Match ;
+kg:homeTeam res:team/Belize ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/Unknown ;
+kg:kickoffTime "unknown"^^xsd:string ;
+kg:st "1"^^xsd:positiveInteger ;
+kg:t "0"^^xsd:positiveInteger ;
+kg:h "0"^^xsd:positiveInteger ;
+kg:b "1"^^xsd:positiveInteger ;
+kg:bt "0"^^xsd:positiveInteger ;
+kg:bb "4"^^xsd:positiveInteger ;
+kg:hs "-4"^^xsd:integer .
+
+res:match/BER vs BAH a kg:Match ;
+kg:homeTeam res:team/Bermuda ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/Unknown ;
+kg:kickoffTime "unknown"^^xsd:string ;
+kg:st "6"^^xsd:positiveInteger ;
+kg:t "0"^^xsd:positiveInteger ;
+kg:h "0"^^xsd:positiveInteger ;
+kg:b "6"^^xsd:positiveInteger ;
+kg:bt "0"^^xsd:positiveInteger ;
+kg:bb "24"^^xsd:positiveInteger ;
+kg:hs "-24"^^xsd:integer .
+
+res:match/Bonaire vs BAH a kg:Match ;
+kg:homeTeam res:team/Bonaire ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/Unknown ;
+kg:kickoffTime "unknown"^^xsd:string ;
+kg:st "2"^^xsd:positiveInteger ;
+kg:t "1"^^xsd:positiveInteger ;
+kg:h "1"^^xsd:positiveInteger ;
+kg:b "0"^^xsd:positiveInteger ;
+kg:bt "3"^^xsd:positiveInteger ;
+kg:bb "2"^^xsd:positiveInteger ;
+kg:hs "+1"^^xsd:integer .
+
+res:match/BVI vs BAH a kg:Match ;
+kg:homeTeam res:team/British_Virgin_Islands ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/Unknown ;
+kg:kickoffTime "unknown"^^xsd:string ;
+kg:st "4"^^xsd:positiveInteger ;
+kg:t "2"^^xsd:positiveInteger ;
+kg:h "2"^^xsd:positiveInteger ;
+kg:b "0"^^xsd:positiveInteger ;
+kg:bt "10"^^xsd:positiveInteger ;
+kg:bb "3"^^xsd:positiveInteger ;
+kg:hs "+7"^^xsd:integer .
+
+res:match/CAY vs BAH a kg:Match ;
+kg:homeTeam res:team/Cayman_Islands ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/Unknown ;
+kg:kickoffTime "unknown"^^xsd:string ;
+kg:st "3"^^xsd:positiveInteger ;
+kg:t "1"^^xsd:positiveInteger ;
+kg:h "0"^^xsd:positiveInteger ;
+kg:b "2"^^xsd:positiveInteger ;
+kg:bt "4"^^xsd:positiveInteger ;
+kg:bb "9"^^xsd:positiveInteger ;
+kg:hs "-5"^^xsd:integer .
+
+res:match/CRC vs BAH a kg:Match ;
+kg:homeTeam res:team/Costa_Rica ;
+kg:awayTeam res:team/Bahamas ;
+kg:venue res:stadium/Unknown ;
+kg:kickoffTime "unknown"^^xsd:string ;
+kg:st "1"^^xsd:positiveInteger ;
+kg:t "0"^^xsd:positiveInteger ;
+kg:h "

@@ -8,274 +8,272 @@ res:team/England a kg:Team ;
 kg:teamName "England" ;
 kg:teamAbbreviation "ENG" ;
 kg:hasCoach res:coach/Thomas_Tuchel ;
-kg:manages res:coach/Thomas_Tuchel ;
-kg:hasCoach res:coach/Lee_Carsley ;
-kg:manages res:coach/Lee_Carsley ;
-kg:hasCoach res:coach/Gareth_Southgate ;
-kg:manages res:coach/Gareth_Southgate ;
-kg:hasCoach res:coach/Sam_Allardyce ;
-kg:manages res:coach/Sam_Allardyce ;
-kg:hasCoach res:coach/Roy_Hodgson ;
-kg:manages res:coach/Roy_Hodgson ;
-kg:hasCoach res:coach/Steve_McClaren ;
-kg:manages res:coach/Steve_McClaren ;
-kg:hasCoach res:coach/Fabio_Capello ;
-kg:manages res:coach/Fabio_Capello ;
-kg:hasCoach res:coach/Howard_Wilkinson ;
-kg:manages res:coach/Howard_Wilkinson ;
-kg:hasCoach res:coach/Glenn_Hoddle ;
-kg:manages res:coach/Glenn_Hoddle ;
-kg:hasCoach res:coach/Terry_Venables ;
-kg:manages res:coach/Terry_Venables ;
-kg:hasCoach res:coach/Kevin_Keegan ;
-kg:manages res:coach/Kevin_Keegan ;
-kg:hasCoach res:coach/Graham_Taylor ;
-kg:manages res:coach/Graham_Taylor ;
-kg:hasCoach res:coach/Bobby_Robson ;
-kg:manages res:coach/Bobby_Robson ;
-kg:hasCoach res:coach/Ron_Greenwood ;
-kg:manages res:coach/Ron_Greenwood ;
-kg:hasCoach res:coach/Don_Revie ;
-kg:manages res:coach/Don_Revie ;
-kg:hasCoach res:coach/Joe_Mercer ;
-kg:manages res:coach/Joe_Mercer ;
-kg:hasCoach res:coach/Sir_Alf_Ramsey ;
-kg:manages res:coach/Sir_Alf_Ramsey ;
-kg:hasCoach res:coach/Sir_Walter_Winterbottom ;
-kg:manages res:coach/Sir_Walter_Winterbottom ;
-kg:homeStadium res:stadium/Wembley_Stadium .
-
-res:stadium/Wembley_Stadium a kg:Stadium ;
-kg:capacity 90000 ;
-kg:isHomeOf res:team/England .
-
-res:coach/Thomas_Tuchel a kg:Coach ;
-kg:name "Thomas Tuchel" ;
-kg:manages res:team/England .
-
-res:coach/Lee_Carsley a kg:Coach ;
-kg:name "Lee Carsley" ;
-kg:manages res:team/England .
-
-res:coach/Gareth_Southgate a kg:Coach ;
-kg:name "Gareth Southgate" ;
-kg:manages res:team/England .
-
-res:coach/Sam_Allardyce a kg:Coach ;
-kg:name "Sam Allardyce" ;
-kg:manages res:team/England .
-
-res:coach/Roy_Hodgson a kg:Coach ;
-kg:name "Roy Hodgson" ;
-kg:manages res:team/England .
-
-res:coach/Steve_McClaren a kg:Coach ;
-kg:name "Steve McClaren" ;
-kg:manages res:team/England .
-
-res:coach/Fabio_Capello a kg:Coach ;
-kg:name "Fabio Capello" ;
-kg:manages res:team/England .
-
-res:coach/Howard_Wilkinson a kg:Coach ;
-kg:name "Howard Wilkinson" ;
-kg:manages res:team/England .
-
-res:coach/Glenn_Hoddle a kg:Coach ;
-kg:name "Glenn Hoddle" ;
-kg:manages res:team/England .
-
-res:coach/Terry_Venables a kg:Coach ;
-kg:name "Terry Venables" ;
-kg:manages res:team/England .
-
-res:coach/Kevin_Keegan a kg:Coach ;
-kg:name "Kevin Keegan" ;
-kg:manages res:team/England .
-
-res:coach/Graham_Taylor a kg:Coach ;
-kg:name "Graham Taylor" ;
-kg:manages res:team/England .
-
-res:coach/Bobby_Robson a kg:Coach ;
-kg:name "Bobby Robson" ;
-kg:manages res:team/England .
-
-res:coach/Ron_Greenwood a kg:Coach ;
-kg:name "Ron Greenwood" ;
-kg:manages res:team/England .
-
-res:coach/Don_Revie a kg:Coach ;
-kg:name "Don Revie" ;
-kg:manages res:team/England .
-
-res:coach/Joe_Mercer a kg:Coach ;
-kg:name "Joe Mercer" ;
-kg:manages res:team/England .
-
-res:coach/Sir_Alf_Ramsey a kg:Coach ;
-kg:name "Sir Alf Ramsey" ;
-kg:manages res:team/England .
-
-res:coach/Sir_Walter_Winterbottom a kg:Coach ;
-kg:name "Sir Walter Winterbottom" ;
-kg:manages res:team/England .
+kg:hasCaptain res:player/Harry_Kane ;
+kg:homeStadium res:stadium/Wembley_ Stadium ;
+kg:isCaptain res:player/Harry_Kane ;
+kg:playsFor res:player/Peter_Shilton ;
+kg:playsFor res:player/Harry_Kane .
 
 res:player/Peter_Shilton a kg:Player ;
-kg:name "Peter Shilton" ;
 kg:playsFor res:team/England ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1949-08-29"^^xsd:date ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1949-10-18"^^xsd:date ;
 kg:birthPlace res:city/London ;
 kg:nationality res:country/England ;
-kg:shirtNumber 1 .
+kg:height "1.88"^^xsd:decimal ;
+kg:weight "83"^^xsd:decimal ;
+kg:shirtNumber 1 ;
+kg:preferredFoot kg:RightFooted .
 
 res:player/Harry_Kane a kg:Player ;
-kg:name "Harry Kane" ;
 kg:playsFor res:team/England ;
 kg:primaryPosition kg:Forward ;
 kg:birthDate "1993-07-28"^^xsd:date ;
 kg:birthPlace res:city/London ;
 kg:nationality res:country/England ;
-kg:shirtNumber 10 .
+kg:height "1.88"^^xsd:decimal ;
+kg:weight "83"^^xsd:decimal ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:RightFooted .
+
+res:stadium/Wembley_ Stadium a kg:Stadium ;
+kg:capacity "90,000"^^xsd:positiveInteger ;
+kg:homeStadium res:team/England .
+
+res:coach/Thomas_Tuchel a kg:Coach ;
+kg:manages res:team/England .
+
+res:country/England a kg:Country ;
+kg:locatedIn res:city/London .
+
+res:city/London a kg:City ;
+kg:locatedIn res:country/England .
+
+res:competition/FIFA_World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" .
+
+res:season/1966 a kg:Season ;
+kg:hasSeason res:competition/FIFA_World_Cup .
+
+res:match/England_versus_Scotland_1872 a kg:Match ;
+kg:homeTeam res:team/England ;
+kg:awayTeam res:team/Scotland ;
+kg:venue res:stadium/Wembley_ Stadium ;
+kg:kickoffTime "1872-11-30T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/FIFA_World_Cup ;
+kg:inSeason res:season/1966 ;
+kg:referee res:referee/Daniele_Orsato .
+
+res:referee/Daniele_Orsato a kg:Referee .
+
+res:competition/Euro a kg:Competition ;
+kg:competitionName "UEFA European Championship" .
+
+res:season/2020 a kg:Season ;
+kg:hasSeason res:competition/Euro .
+
+res:match/England_versus_Ireland_2024 a kg:Match ;
+kg:homeTeam res:team/England ;
+kg:awayTeam res:team/Ireland ;
+kg:venue res:stadium/Wembley_ Stadium ;
+kg:kickoffTime "2024-09-07T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Euro ;
+kg:inSeason res:season/2020 ;
+kg:referee res:referee/Stéphanie_Frappart .
+
+res:referee/Stéphanie_Frappart a kg:Referee .
+
+res:club/Arsenal_FC a kg:Club ;
+kg:foundedDate "1886-12-29"^^xsd:date ;
+kg:homeStadium res:stadium/Emirates_Stadium .
+
+res:stadium/Emirates_Stadium a kg:Stadium ;
+kg:capacity "60,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Arsenal_FC .
 
 res:player/Jude_Bellingham a kg:Player ;
-kg:name "Jude Bellingham" ;
 kg:playsFor res:team/England ;
 kg:primaryPosition kg:Midfielder ;
 kg:birthDate "2003-06-29"^^xsd:date ;
-kg:birthPlace res:city/Manchester ;
+kg:birthPlace res:city/Birmingham ;
 kg:nationality res:country/England ;
-kg:shirtNumber 4 .
+kg:height "1.89"^^xsd:decimal ;
+kg:weight "75"^^xsd:decimal ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:RightFooted .
 
-res:player/Declan_Rice a kg:Player ;
-kg:name "Declan Rice" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1999-01-14"^^xsd:date ;
-kg:birthPlace res:city/London ;
-kg:nationality res:country/England ;
-kg:shirtNumber 4 .
+res:club/Real_Madrid_CF a kg:Club ;
+kg:foundedDate "1902-03-06"^^xsd:date ;
+kg:homeStadium res:stadium/Santiago_Bernabeu .
 
-res:player/Jordan_Pickford a kg:Player ;
-kg:name "Jordan Pickford" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:birthDate "1994-03-07"^^xsd:date ;
-kg:birthPlace res:city/Sunderland ;
-kg:nationality res:country/England ;
-kg:shirtNumber 1 .
+res:stadium/Santiago_Bernabeu a kg:Stadium ;
+kg:capacity "81,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Real_Madrid_CF .
 
-res:player/Trent_Alexander_Arnold a kg:Player ;
-kg:name "Trent Alexander-Arnold" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1998-10-07"^^xsd:date ;
-kg:birthPlace res:city/Liverpool ;
-kg:nationality res:country/England ;
-kg:shirtNumber 6 .
+res:club/Manchester_City_FC a kg:Club ;
+kg:foundedDate "1880-11-04"^^xsd:date ;
+kg:homeStadium res:stadium/Etihad_Stadium .
 
-res:player/Reece_James a kg:Player ;
-kg:name "Reece James" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1999-12-08"^^xsd:date ;
-kg:birthPlace res:city/London ;
-kg:nationality res:country/England ;
-kg:shirtNumber 3 .
+res:stadium/Etihad_Stadium a kg:Stadium ;
+kg:capacity "55,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Manchester_City_FC .
 
-res:player/Cole_Palmer a kg:Player ;
-kg:name "Cole Palmer" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "2002-05-06"^^xsd:date ;
-kg:birthPlace res:city/London ;
-kg:nationality res:country/England ;
-kg:shirtNumber 20 .
+res:club/Chelsea_FC a kg:Club ;
+kg:foundedDate "1905-10-10"^^xsd:date ;
+kg:homeStadium res:stadium/Stamford_Bridge .
 
-res:player/Kyle_Walker a kg:Player ;
-kg:name "Kyle Walker" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1990-05-28"^^xsd:date ;
-kg:birthPlace res:city/Surrey ;
-kg:nationality res:country/England ;
-kg:shirtNumber 2 .
+res:stadium/Stamford_Bridge a kg:Stadium ;
+kg:capacity "40,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Chelsea_FC .
 
-res:player/Dan_Burn a kg:Player ;
-kg:name "Dan Burn" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1992-05-09"^^xsd:date ;
-kg:birthPlace res:city/Newcastle ;
-kg:nationality res:country/England ;
-kg:shirtNumber 12 .
+res:club/Liverpool_FC a kg:Club ;
+kg:foundedDate "1892-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Anfield .
 
-res:player/Ezri_Konsa a kg:Player ;
-kg:name "Ezri Konsa" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1997-10-23"^^xsd:date ;
-kg:birthPlace res:city/London ;
-kg:nationality res:country/England ;
-kg:shirtNumber 5 .
+res:stadium/Anfield a kg:Stadium ;
+kg:capacity "54,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Liverpool_FC .
 
-res:player/Levi_Colwill a kg:Player ;
-kg:name "Levi Colwill" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "2003-02-26"^^xsd:date ;
-kg:birthPlace res:city/London ;
-kg:nationality res:country/England ;
-kg:shirtNumber 6 .
+res:club/Manchester_United_FC a kg:Club ;
+kg:foundedDate "1878-11-22"^^xsd:date ;
+kg:homeStadium res:stadium/Old Trafford .
 
-res:player/Myles_Lewis_Skelly a kg:Player ;
-kg:name "Myles Lewis-Skelly" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "2006-09-26"^^xsd:date ;
-kg:birthPlace res:city/London ;
-kg:nationality res:country/England ;
-kg:shirtNumber 21 .
+res:stadium/Old Trafford a kg:Stadium ;
+kg:capacity "76,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Manchester_United_FC .
 
-res:player/Trevoh_Chalobah a kg:Player ;
-kg:name "Trevoh Chalobah" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Defender ;
-kg:birthDate "1999-07-05"^^xsd:date ;
-kg:birthPlace res:city/London ;
-kg:nationality res:country/England ;
-kg:shirtNumber 23 .
+res:club/Newcastle_United_FC a kg:Club ;
+kg:foundedDate "1892-10-12"^^xsd:date ;
+kg:homeStadium res:stadium/Saint_James_Park .
 
-res:player/Declan_Rice a kg:Player ;
-kg:name "Declan Rice" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1999-01-14"^^xsd:date ;
-kg:birthPlace res:city/London ;
-kg:nationality res:country/England ;
-kg:shirtNumber 4 .
+res:stadium/Saint_James_Park a kg:Stadium ;
+kg:capacity "54,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Newcastle_United_FC .
 
-res:player/Morgan_Gibbs_White a kg:Player ;
-kg:name "Morgan Gibbs-White" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "2000-01-27"^^xsd:date ;
-kg:birthPlace res:city/Notts ;
-kg:nationality res:country/England ;
-kg:shirtNumber 7 .
+res:club/Aston_Villa_FC a kg:Club ;
+kg:foundedDate "1874-08-08"^^xsd:date ;
+kg:homeStadium res:stadium/Villa_Park .
 
-res:player/Jordan_Henderson a kg:Player ;
-kg:name "Jordan Henderson" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "1990-06-17"^^xsd:date ;
-kg:birthPlace res:city/Sunderland ;
-kg:nationality res:country/England ;
-kg:shirtNumber 8 .
+res:stadium/Villa_Park a kg:Stadium ;
+kg:capacity "42,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Aston_Villa_FC .
 
-res:player/Jude_Bellingham a kg:Player ;
-kg:name "Jude Bellingham" ;
-kg:playsFor res:team/England ;
-kg:primaryPosition kg:Midfielder ;
-kg:birthDate "20
+res:club/Leeds_United_FC a kg:Club ;
+kg:foundedDate "1904-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Elm_Park .
+
+res:stadium/Elm_Park a kg:Stadium ;
+kg:capacity "25,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Leeds_United_FC .
+
+res:club/Blackburn_Rovers_FC a kg:Club ;
+kg:foundedDate "1875-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Ewood_Park .
+
+res:stadium/Ewood_Park a kg:Stadium ;
+kg:capacity "26,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Blackburn_Rovers_FC .
+
+res:club/Burnley_FC a kg:Club ;
+kg:foundedDate "1878-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Turf_Moor .
+
+res:stadium/Turf_Moor a kg:Stadium ;
+kg:capacity "22,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Burnley_FC .
+
+res:club/Crystal_Palace_FC a kg:Club ;
+kg:foundedDate "1905-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Selhurst_Park .
+
+res:stadium/Selhurst_Park a kg:Stadium ;
+kg:capacity "26,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Crystal_Palace_FC .
+
+res:club/Arsenal_FC a kg:Club ;
+kg:foundedDate "1886-12-29"^^xsd:date ;
+kg:homeStadium res:stadium/Emirates_Stadium .
+
+res:stadium/Emirates_Stadium a kg:Stadium ;
+kg:capacity "60,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Arsenal_FC .
+
+res:club/Manchester_City_FC a kg:Club ;
+kg:foundedDate "1880-11-04"^^xsd:date ;
+kg:homeStadium res:stadium/ Etihad_Stadium .
+
+res:stadium/Etihad_Stadium a kg:Stadium ;
+kg:capacity "55,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Manchester_City_FC .
+
+res:club/Chelsea_FC a kg:Club ;
+kg:foundedDate "1905-10-10"^^xsd:date ;
+kg:homeStadium res:stadium/Stamford_Bridge .
+
+res:stadium/Stamford_Bridge a kg:Stadium ;
+kg:capacity "40,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Chelsea_FC .
+
+res:club/Liverpool_FC a kg:Club ;
+kg:foundedDate "1892-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Anfield .
+
+res:stadium/Anfield a kg:Stadium ;
+kg:capacity "54,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Liverpool_FC .
+
+res:club/Manchester_United_FC a kg:Club ;
+kg:foundedDate "1878-11-22"^^xsd:date ;
+kg:homeStadium res:stadium/Old Trafford .
+
+res:stadium/Old Trafford a kg:Stadium ;
+kg:capacity "76,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Manchester_United_FC .
+
+res:club/Newcastle_United_FC a kg:Club ;
+kg:foundedDate "1892-10-12"^^xsd:date ;
+kg:homeStadium res:stadium/Saint_James_Park .
+
+res:stadium/Saint_James_Park a kg:Stadium ;
+kg:capacity "54,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Newcastle_United_FC .
+
+res:club/Aston_Villa_FC a kg:Club ;
+kg:foundedDate "1874-08-08"^^xsd:date ;
+kg:homeStadium res:stadium/Villa_Park .
+
+res:stadium/Villa_Park a kg:Stadium ;
+kg:capacity "42,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Aston_Villa_FC .
+
+res:club/Leeds_United_FC a kg:Club ;
+kg:foundedDate "1904-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Elm_Park .
+
+res:stadium/Elm_Park a kg:Stadium ;
+kg:capacity "25,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Leeds_United_FC .
+
+res:club/Blackburn_Rovers_FC a kg:Club ;
+kg:foundedDate "1875-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Ewood_Park .
+
+res:stadium/Ewood_Park a kg:Stadium ;
+kg:capacity "26,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Blackburn_Rovers_FC .
+
+res:club/Burnley_FC a kg:Club ;
+kg:foundedDate "1878-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Turf_Moor .
+
+res:stadium/Turf_Moor a kg:Stadium ;
+kg:capacity "22,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Burnley_FC .
+
+res:club/Crystal_Palace_FC a kg:Club ;
+kg:foundedDate "1905-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Selhurst_Park .
+
+res:stadium/Selhurst_Park a kg:Stadium ;
+kg:capacity "26,000"^^xsd:positiveInteger ;
+kg:homeStadium res:club/Crystal_Palace_FC .

@@ -1,0 +1,760 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix kg: <https://kg-football.vn/ontology#> .
+
+# === CÁC TERMS ĐƯỢC TỰ ĐỘNG BỔ SUNG ===
+# Dựa trên phân tích dữ liệu TTL
+
+# Missing Terms (được sử dụng nhưng chưa định nghĩa)
+kg:position rdfs:label "position"@en , "position"@vi ;
+  rdfs:comment "Used 125 times in data"@en .
+
+kg:mostCaps rdfs:label "mostCaps"@en , "mostCaps"@vi ;
+  rdfs:comment "Used 122 times in data"@en .
+
+kg:topScorer rdfs:label "topScorer"@en , "topScorer"@vi ;
+  rdfs:comment "Used 107 times in data"@en .
+
+kg:totalGoals rdfs:label "totalGoals"@en , "totalGoals"@vi ;
+  rdfs:comment "Used 91 times in data"@en .
+
+kg:year rdfs:label "year"@en , "year"@vi ;
+  rdfs:comment "Used 84 times in data"@en .
+
+kg:goals rdfs:label "goals"@en , "goals"@vi ;
+  rdfs:comment "Used 66 times in data"@en .
+
+kg:totalCaps rdfs:label "totalCaps"@en , "totalCaps"@vi ;
+  rdfs:comment "Used 58 times in data"@en .
+
+kg:recordInCompetition rdfs:label "recordInCompetition"@en , "recordInCompetition"@vi ;
+  rdfs:comment "Used 55 times in data"@en .
+
+kg:date rdfs:label "date"@en , "date"@vi ;
+  rdfs:comment "Used 52 times in data"@en .
+
+kg:competition rdfs:label "competition"@en , "competition"@vi ;
+  rdfs:comment "Used 52 times in data"@en .
+
+kg:member rdfs:label "member"@en , "member"@vi ;
+  rdfs:comment "Used 50 times in data"@en .
+
+kg:matches rdfs:label "matches"@en , "matches"@vi ;
+  rdfs:comment "Used 45 times in data"@en .
+
+kg:largestLoss rdfs:label "largestLoss"@en , "largestLoss"@vi ;
+  rdfs:comment "Used 42 times in data"@en .
+
+kg:age rdfs:label "age"@en , "age"@vi ;
+  rdfs:comment "Used 41 times in data"@en .
+
+kg:largestWin rdfs:label "largestWin"@en , "largestWin"@vi ;
+  rdfs:comment "Used 40 times in data"@en .
+
+kg:hasTeam rdfs:label "hasTeam"@en , "hasTeam"@vi ;
+  rdfs:comment "Used 40 times in data"@en .
+
+kg:Achievement rdfs:label "Achievement"@en , "Achievement"@vi ;
+  rdfs:comment "Used 39 times in data"@en .
+
+kg:caps rdfs:label "caps"@en , "caps"@vi ;
+  rdfs:comment "Used 38 times in data"@en .
+
+kg:hasAchievement rdfs:label "hasAchievement"@en , "hasAchievement"@vi ;
+  rdfs:comment "Used 37 times in data"@en .
+
+kg:regionalCupBest rdfs:label "regionalCupBest"@en , "regionalCupBest"@vi ;
+  rdfs:comment "Used 36 times in data"@en .
+
+kg:confederation rdfs:label "confederation"@en , "confederation"@vi ;
+  rdfs:comment "Used 35 times in data"@en .
+
+kg:regionalCupApps rdfs:label "regionalCupApps"@en , "regionalCupApps"@vi ;
+  rdfs:comment "Used 34 times in data"@en .
+
+kg:type rdfs:label "type"@en , "type"@vi ;
+  rdfs:comment "Used 34 times in data"@en .
+
+kg:Medal rdfs:label "Medal"@en , "Medal"@vi ;
+  rdfs:comment "Used 33 times in data"@en .
+
+kg:stats rdfs:label "stats"@en , "stats"@vi ;
+  rdfs:comment "Used 32 times in data"@en .
+
+kg:worldCupApps rdfs:label "worldCupApps"@en , "worldCupApps"@vi ;
+  rdfs:comment "Used 31 times in data"@en .
+
+kg:firstGame rdfs:label "firstGame"@en , "firstGame"@vi ;
+  rdfs:comment "Used 31 times in data"@en .
+
+kg:captain rdfs:label "captain"@en , "captain"@vi ;
+  rdfs:comment "Used 30 times in data"@en .
+
+kg:positionInLeague rdfs:label "positionInLeague"@en , "positionInLeague"@vi ;
+  rdfs:comment "Used 30 times in data"@en .
+
+kg:season rdfs:label "season"@en , "season"@vi ;
+  rdfs:comment "Used 30 times in data"@en .
+
+kg:regionalCupFirst rdfs:label "regionalCupFirst"@en , "regionalCupFirst"@vi ;
+  rdfs:comment "Used 29 times in data"@en .
+
+kg:association rdfs:label "association"@en , "association"@vi ;
+  rdfs:comment "Used 28 times in data"@en .
+
+kg:careerStats rdfs:label "careerStats"@en , "careerStats"@vi ;
+  rdfs:comment "Used 26 times in data"@en .
+
+kg:worldCupBest rdfs:label "worldCupBest"@en , "worldCupBest"@vi ;
+  rdfs:comment "Used 25 times in data"@en .
+
+kg:hasHistoricalSeason rdfs:label "hasHistoricalSeason"@en , "hasHistoricalSeason"@vi ;
+  rdfs:comment "Used 25 times in data"@en .
+
+kg:bestResultInCompetition rdfs:label "bestResultInCompetition"@en , "bestResultInCompetition"@vi ;
+  rdfs:comment "Used 24 times in data"@en .
+
+kg:score rdfs:label "score"@en , "score"@vi ;
+  rdfs:comment "Used 24 times in data"@en .
+
+kg:resultInCompetition rdfs:label "resultInCompetition"@en , "resultInCompetition"@vi ;
+  rdfs:comment "Used 23 times in data"@en .
+
+kg:startDate rdfs:label "startDate"@en , "startDate"@vi ;
+  rdfs:comment "Used 22 times in data"@en .
+
+kg:FIFARank rdfs:label "FIFARank"@en , "FIFARank"@vi ;
+  rdfs:comment "Used 21 times in data"@en .
+
+kg:Event rdfs:label "Event"@en , "Event"@vi ;
+  rdfs:comment "Used 21 times in data"@en .
+
+kg:managedBy rdfs:label "managedBy"@en , "managedBy"@vi ;
+  rdfs:comment "Used 20 times in data"@en .
+
+kg:location rdfs:label "location"@en , "location"@vi ;
+  rdfs:comment "Used 20 times in data"@en .
+
+kg:endDate rdfs:label "endDate"@en , "endDate"@vi ;
+  rdfs:comment "Used 20 times in data"@en .
+
+kg:worldCupFirst rdfs:label "worldCupFirst"@en , "worldCupFirst"@vi ;
+  rdfs:comment "Used 19 times in data"@en .
+
+kg:memberOf rdfs:label "memberOf"@en , "memberOf"@vi ;
+  rdfs:comment "Used 18 times in data"@en .
+
+kg:PlayerStats rdfs:label "PlayerStats"@en , "PlayerStats"@vi ;
+  rdfs:comment "Used 18 times in data"@en .
+
+kg:bestResult rdfs:label "bestResult"@en , "bestResult"@vi ;
+  rdfs:comment "Used 17 times in data"@en .
+
+kg:rank rdfs:label "rank"@en , "rank"@vi ;
+  rdfs:comment "Used 17 times in data"@en .
+
+kg:sponsor rdfs:label "sponsor"@en , "sponsor"@vi ;
+  rdfs:comment "Used 17 times in data"@en .
+
+kg:wins rdfs:label "wins"@en , "wins"@vi ;
+  rdfs:comment "Used 16 times in data"@en .
+
+kg:hasAssistantCoach rdfs:label "hasAssistantCoach"@en , "hasAssistantCoach"@vi ;
+  rdfs:comment "Used 15 times in data"@en .
+
+kg:losses rdfs:label "losses"@en , "losses"@vi ;
+  rdfs:comment "Used 15 times in data"@en .
+
+kg:Region rdfs:label "Region"@en , "Region"@vi ;
+  rdfs:comment "Used 15 times in data"@en .
+
+kg:Sponsor rdfs:label "Sponsor"@en , "Sponsor"@vi ;
+  rdfs:comment "Used 15 times in data"@en .
+
+kg:nickname rdfs:label "nickname"@en , "nickname"@vi ;
+  rdfs:comment "Used 14 times in data"@en .
+
+kg:rankInCompetition rdfs:label "rankInCompetition"@en , "rankInCompetition"@vi ;
+  rdfs:comment "Used 13 times in data"@en .
+
+kg:FIFAMax rdfs:label "FIFAMax"@en , "FIFAMax"@vi ;
+  rdfs:comment "Used 13 times in data"@en .
+
+kg:FIFAMaxDate rdfs:label "FIFAMaxDate"@en , "FIFAMaxDate"@vi ;
+  rdfs:comment "Used 13 times in data"@en .
+
+kg:FIFAMin rdfs:label "FIFAMin"@en , "FIFAMin"@vi ;
+  rdfs:comment "Used 13 times in data"@en .
+
+kg:FIFAMinDate rdfs:label "FIFAMinDate"@en , "FIFAMinDate"@vi ;
+  rdfs:comment "Used 13 times in data"@en .
+
+kg:medalType rdfs:label "medalType"@en , "medalType"@vi ;
+  rdfs:comment "Used 13 times in data"@en .
+
+kg:hasHistoricalName rdfs:label "hasHistoricalName"@en , "hasHistoricalName"@vi ;
+  rdfs:comment "Used 13 times in data"@en .
+
+kg:participatedBy rdfs:label "participatedBy"@en , "participatedBy"@vi ;
+  rdfs:comment "Used 12 times in data"@en .
+
+kg:rankInSeason rdfs:label "rankInSeason"@en , "rankInSeason"@vi ;
+  rdfs:comment "Used 12 times in data"@en .
+
+kg:goalsScored rdfs:label "goalsScored"@en , "goalsScored"@vi ;
+  rdfs:comment "Used 11 times in data"@en .
+
+kg:FIFA_max_date rdfs:label "FIFA_max_date"@en , "FIFA_max_date"@vi ;
+  rdfs:comment "Used 11 times in data"@en .
+
+kg:FIFA_min_date rdfs:label "FIFA_min_date"@en , "FIFA_min_date"@vi ;
+  rdfs:comment "Used 11 times in data"@en .
+
+kg:winner rdfs:label "winner"@en , "winner"@vi ;
+  rdfs:comment "Used 11 times in data"@en .
+
+kg:Confederation rdfs:label "Confederation"@en , "Confederation"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:draws rdfs:label "draws"@en , "draws"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:hasResult rdfs:label "hasResult"@en , "hasResult"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:awardedAt rdfs:label "awardedAt"@en , "awardedAt"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:EloRank rdfs:label "EloRank"@en , "EloRank"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:FIFA_min rdfs:label "FIFA_min"@en , "FIFA_min"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:points rdfs:label "points"@en , "points"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:pointsInSeason rdfs:label "pointsInSeason"@en , "pointsInSeason"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:goalsScoredInSeason rdfs:label "goalsScoredInSeason"@en , "goalsScoredInSeason"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:goalsConcededInSeason rdfs:label "goalsConcededInSeason"@en , "goalsConcededInSeason"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:gamesPlayedInSeason rdfs:label "gamesPlayedInSeason"@en , "gamesPlayedInSeason"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:winningGamesInSeason rdfs:label "winningGamesInSeason"@en , "winningGamesInSeason"@vi ;
+  rdfs:comment "Used 10 times in data"@en .
+
+kg:subConfederation rdfs:label "subConfederation"@en , "subConfederation"@vi ;
+  rdfs:comment "Used 9 times in data"@en .
+
+kg:Elo_max_date rdfs:label "Elo_max_date"@en , "Elo_max_date"@vi ;
+  rdfs:comment "Used 9 times in data"@en .
+
+kg:Elo_min_date rdfs:label "Elo_min_date"@en , "Elo_min_date"@vi ;
+  rdfs:comment "Used 9 times in data"@en .
+
+kg:FIFA_max rdfs:label "FIFA_max"@en , "FIFA_max"@vi ;
+  rdfs:comment "Used 9 times in data"@en .
+
+kg:st rdfs:label "st"@en , "st"@vi ;
+  rdfs:comment "Used 9 times in data"@en .
+
+kg:t rdfs:label "t"@en , "t"@vi ;
+  rdfs:comment "Used 9 times in data"@en .
+
+kg:h rdfs:label "h"@en , "h"@vi ;
+  rdfs:comment "Used 9 times in data"@en .
+
+kg:goalRate rdfs:label "goalRate"@en , "goalRate"@vi ;
+  rdfs:comment "Used 9 times in data"@en .
+
+kg:Sponsorship rdfs:label "Sponsorship"@en , "Sponsorship"@vi ;
+  rdfs:comment "Used 9 times in data"@en .
+
+kg:years rdfs:label "years"@en , "years"@vi ;
+  rdfs:comment "Used 9 times in data"@en .
+
+kg:drawnGamesInSeason rdfs:label "drawnGamesInSeason"@en , "drawnGamesInSeason"@vi ;
+  rdfs:comment "Used 9 times in data"@en .
+
+kg:FIFA_rank rdfs:label "FIFA_rank"@en , "FIFA_rank"@vi ;
+  rdfs:comment "Used 8 times in data"@en .
+
+kg:FIFA_Rank rdfs:label "FIFA_Rank"@en , "FIFA_Rank"@vi ;
+  rdfs:comment "Used 8 times in data"@en .
+
+kg:b rdfs:label "b"@en , "b"@vi ;
+  rdfs:comment "Used 8 times in data"@en .
+
+kg:bt rdfs:label "bt"@en , "bt"@vi ;
+  rdfs:comment "Used 8 times in data"@en .
+
+kg:bb rdfs:label "bb"@en , "bb"@vi ;
+  rdfs:comment "Used 8 times in data"@en .
+
+kg:hs rdfs:label "hs"@en , "hs"@vi ;
+  rdfs:comment "Used 8 times in data"@en .
+
+kg:hasCompetitionResult rdfs:label "hasCompetitionResult"@en , "hasCompetitionResult"@vi ;
+  rdfs:comment "Used 8 times in data"@en .
+
+kg:Elo_min rdfs:label "Elo_min"@en , "Elo_min"@vi ;
+  rdfs:comment "Used 8 times in data"@en .
+
+kg:hasNickname rdfs:label "hasNickname"@en , "hasNickname"@vi ;
+  rdfs:comment "Used 8 times in data"@en .
+
+kg:resultYear rdfs:label "resultYear"@en , "resultYear"@vi ;
+  rdfs:comment "Used 8 times in data"@en .
+
+kg:previousName rdfs:label "previousName"@en , "previousName"@vi ;
+  rdfs:comment "Used 8 times in data"@en .
+
+kg:disbandedDate rdfs:label "disbandedDate"@en , "disbandedDate"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:isMemberOf rdfs:label "isMemberOf"@en , "isMemberOf"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:coachedTeam rdfs:label "coachedTeam"@en , "coachedTeam"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:EloMax rdfs:label "EloMax"@en , "EloMax"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:EloMin rdfs:label "EloMin"@en , "EloMin"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:EloMinDate rdfs:label "EloMinDate"@en , "EloMinDate"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:region rdfs:label "region"@en , "region"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:Elo_max rdfs:label "Elo_max"@en , "Elo_max"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:participatedInCompetition rdfs:label "participatedInCompetition"@en , "participatedInCompetition"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:achievementType rdfs:label "achievementType"@en , "achievementType"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:isPartOf rdfs:label "isPartOf"@en , "isPartOf"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:hasMidfielders rdfs:label "hasMidfielders"@en , "hasMidfielders"@vi ;
+  rdfs:comment "Used 7 times in data"@en .
+
+kg:FIFATrigramme rdfs:label "FIFATrigramme"@en , "FIFATrigramme"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:ELORank rdfs:label "ELORank"@en , "ELORank"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:captainOf rdfs:label "captainOf"@en , "captainOf"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:goalsConceded rdfs:label "goalsConceded"@en , "goalsConceded"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:EloMaxDate rdfs:label "EloMaxDate"@en , "EloMaxDate"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:FIFAMaxRankDate rdfs:label "FIFAMaxRankDate"@en , "FIFAMaxRankDate"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:FIFA_Trigramme rdfs:label "FIFA_Trigramme"@en , "FIFA_Trigramme"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:description rdfs:label "description"@en , "description"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:rival rdfs:label "rival"@en , "rival"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:worldCupQualificationResult rdfs:label "worldCupQualificationResult"@en , "worldCupQualificationResult"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:opponent rdfs:label "opponent"@en , "opponent"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:coached rdfs:label "coached"@en , "coached"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:NameChange rdfs:label "NameChange"@en , "NameChange"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:oldName rdfs:label "oldName"@en , "oldName"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:newName rdfs:label "newName"@en , "newName"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:code rdfs:label "code"@en , "code"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:championshipTitle rdfs:label "championshipTitle"@en , "championshipTitle"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:winPercentage rdfs:label "winPercentage"@en , "winPercentage"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:AgeGroup rdfs:label "AgeGroup"@en , "AgeGroup"@vi ;
+  rdfs:comment "Used 6 times in data"@en .
+
+kg:Captain rdfs:label "Captain"@en , "Captain"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:ELOMax rdfs:label "ELOMax"@en , "ELOMax"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:ELOMaxDate rdfs:label "ELOMaxDate"@en , "ELOMaxDate"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:ELOMin rdfs:label "ELOMin"@en , "ELOMin"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:ELOMinDate rdfs:label "ELOMinDate"@en , "ELOMinDate"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:competitionResult rdfs:label "competitionResult"@en , "competitionResult"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:topScorerInTeam rdfs:label "topScorerInTeam"@en , "topScorerInTeam"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:gamesPlayed rdfs:label "gamesPlayed"@en , "gamesPlayed"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:goalsFor rdfs:label "goalsFor"@en , "goalsFor"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:goalsAgainst rdfs:label "goalsAgainst"@en , "goalsAgainst"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:FIFA_Max_Date rdfs:label "FIFA_Max_Date"@en , "FIFA_Max_Date"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:FIFA_Min_Date rdfs:label "FIFA_Min_Date"@en , "FIFA_Min_Date"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:Elo_rank rdfs:label "Elo_rank"@en , "Elo_rank"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:currentLeague rdfs:label "currentLeague"@en , "currentLeague"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:Elo_Rank rdfs:label "Elo_Rank"@en , "Elo_Rank"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:firstInternationalMatch rdfs:label "firstInternationalMatch"@en , "firstInternationalMatch"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:FIFAMaxRank rdfs:label "FIFAMaxRank"@en , "FIFAMaxRank"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:fifaRank rdfs:label "fifaRank"@en , "fifaRank"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:recentMatch rdfs:label "recentMatch"@en , "recentMatch"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:Trophy rdfs:label "Trophy"@en , "Trophy"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:count rdfs:label "count"@en , "count"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:hasHistoricalResult rdfs:label "hasHistoricalResult"@en , "hasHistoricalResult"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:Result rdfs:label "Result"@en , "Result"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:yearOfWinning rdfs:label "yearOfWinning"@en , "yearOfWinning"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:kitPattern rdfs:label "kitPattern"@en , "kitPattern"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:Formation rdfs:label "Formation"@en , "Formation"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:Award rdfs:label "Award"@en , "Award"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:loss rdfs:label "loss"@en , "loss"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:hasPreviousSponsor rdfs:label "hasPreviousSponsor"@en , "hasPreviousSponsor"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:stage rdfs:label "stage"@en , "stage"@vi ;
+  rdfs:comment "Used 5 times in data"@en .
+
+kg:team rdfs:label "team"@en , "team"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:affiliatedWith rdfs:label "affiliatedWith"@en , "affiliatedWith"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:secondRegionalCupApps rdfs:label "secondRegionalCupApps"@en , "secondRegionalCupApps"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:largestWinDate rdfs:label "largestWinDate"@en , "largestWinDate"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:pld rdfs:label "pld"@en , "pld"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:w rdfs:label "w"@en , "w"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:l rdfs:label "l"@en , "l"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:gf rdfs:label "gf"@en , "gf"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:ga rdfs:label "ga"@en , "ga"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:FIFA_Max rdfs:label "FIFA_Max"@en , "FIFA_Max"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:FIFA_Min rdfs:label "FIFA_Min"@en , "FIFA_Min"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:matchesPlayed rdfs:label "matchesPlayed"@en , "matchesPlayed"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:yearParticipated rdfs:label "yearParticipated"@en , "yearParticipated"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:otherRole rdfs:label "otherRole"@en , "otherRole"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:Person rdfs:label "Person"@en , "Person"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:Rank rdfs:label "Rank"@en , "Rank"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:FIFAMinRank rdfs:label "FIFAMinRank"@en , "FIFAMinRank"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:FIFAMinRankDate rdfs:label "FIFAMinRankDate"@en , "FIFAMinRankDate"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:stadium rdfs:label "stadium"@en , "stadium"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:eloMax rdfs:label "eloMax"@en , "eloMax"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:eloMaxDate rdfs:label "eloMaxDate"@en , "eloMaxDate"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:eloMin rdfs:label "eloMin"@en , "eloMin"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:eloMinDate rdfs:label "eloMinDate"@en , "eloMinDate"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:ranks rdfs:label "ranks"@en , "ranks"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:currentSeason rdfs:label "currentSeason"@en , "currentSeason"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:manager rdfs:label "manager"@en , "manager"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:eloRank rdfs:label "eloRank"@en , "eloRank"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:fifaMax rdfs:label "fifaMax"@en , "fifaMax"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:fifaMaxDate rdfs:label "fifaMaxDate"@en , "fifaMaxDate"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:fifaMin rdfs:label "fifaMin"@en , "fifaMin"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:fifaMinDate rdfs:label "fifaMinDate"@en , "fifaMinDate"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:largestLossDate rdfs:label "largestLossDate"@en , "largestLossDate"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:afcAsianCupQualificationResult rdfs:label "afcAsianCupQualificationResult"@en , "afcAsianCupQualificationResult"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:hasHistoricalOwner rdfs:label "hasHistoricalOwner"@en , "hasHistoricalOwner"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:hasDefenders rdfs:label "hasDefenders"@en , "hasDefenders"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:hasForwards rdfs:label "hasForwards"@en , "hasForwards"@vi ;
+  rdfs:comment "Used 4 times in data"@en .
+
+kg:Association rdfs:label "Association"@en , "Association"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:Representative rdfs:label "Representative"@en , "Representative"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:established rdfs:label "established"@en , "established"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:competitionYear rdfs:label "competitionYear"@en , "competitionYear"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:dissolvedDate rdfs:label "dissolvedDate"@en , "dissolvedDate"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:worksFor rdfs:label "worksFor"@en , "worksFor"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:firstAppearanceInCompetition rdfs:label "firstAppearanceInCompetition"@en , "firstAppearanceInCompetition"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:secondRegionalCupFirst rdfs:label "secondRegionalCupFirst"@en , "secondRegionalCupFirst"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:secondRegionalCupBest rdfs:label "secondRegionalCupBest"@en , "secondRegionalCupBest"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:bestWorldCupResult rdfs:label "bestWorldCupResult"@en , "bestWorldCupResult"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:confederationsCupApps rdfs:label "confederationsCupApps"@en , "confederationsCupApps"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:confederationsCupBest rdfs:label "confederationsCupBest"@en , "confederationsCupBest"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:confederationsCupFirst rdfs:label "confederationsCupFirst"@en , "confederationsCupFirst"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:hasResultInCompetition rdfs:label "hasResultInCompetition"@en , "hasResultInCompetition"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:badgeSize rdfs:label "badgeSize"@en , "badgeSize"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:currentRanking rdfs:label "currentRanking"@en , "currentRanking"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:managedTeam rdfs:label "managedTeam"@en , "managedTeam"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:top_scorer rdfs:label "top_scorer"@en , "top_scorer"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:body1 rdfs:label "body1"@en , "body1"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:shorts1 rdfs:label "shorts1"@en , "shorts1"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:socks1 rdfs:label "socks1"@en , "socks1"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:body2 rdfs:label "body2"@en , "body2"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:shorts2 rdfs:label "shorts2"@en , "shorts2"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:socks2 rdfs:label "socks2"@en , "socks2"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:history rdfs:label "history"@en , "history"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:totalMatches rdfs:label "totalMatches"@en , "totalMatches"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:isCaptainOf rdfs:label "isCaptainOf"@en , "isCaptainOf"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:affiliation rdfs:label "affiliation"@en , "affiliation"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:didNotQualifyFor rdfs:label "didNotQualifyFor"@en , "didNotQualifyFor"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:badge rdfs:label "badge"@en , "badge"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:hasBestResultInCompetition rdfs:label "hasBestResultInCompetition"@en , "hasBestResultInCompetition"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:stadiumName rdfs:label "stadiumName"@en , "stadiumName"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:sponsored rdfs:label "sponsored"@en , "sponsored"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:Manager rdfs:label "Manager"@en , "Manager"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:countryName rdfs:label "countryName"@en , "countryName"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:cityName rdfs:label "cityName"@en , "cityName"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:competesIn rdfs:label "competesIn"@en , "competesIn"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:firstGameDate rdfs:label "firstGameDate"@en , "firstGameDate"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:largestLossLocation rdfs:label "largestLossLocation"@en , "largestLossLocation"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:medal rdfs:label "medal"@en , "medal"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:loanedTo rdfs:label "loanedTo"@en , "loanedTo"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:InternationalParticipation rdfs:label "InternationalParticipation"@en , "InternationalParticipation"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:startYear rdfs:label "startYear"@en , "startYear"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:reachedStage rdfs:label "reachedStage"@en , "reachedStage"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:youngerTeam rdfs:label "youngerTeam"@en , "youngerTeam"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:hasPattern rdfs:label "hasPattern"@en , "hasPattern"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+kg:CompetitionResult rdfs:label "CompetitionResult"@en , "CompetitionResult"@vi ;
+  rdfs:comment "Used 3 times in data"@en .
+
+# Unused Terms (đã định nghĩa nhưng không sử dụng)
+# Có thể xem xét mapping hoặc xóa bỏ
+# kg:ClubShape - Đã định nghĩa nhưng không sử dụng
+# kg:CompetitionShape - Đã định nghĩa nhưng không sử dụng
+# kg:GoalEventShape - Đã định nghĩa nhưng không sử dụng
+# kg:MatchShape - Đã định nghĩa nhưng không sử dụng
+# kg:PlayerShape - Đã định nghĩa nhưng không sử dụng
+# kg:SeasonShape - Đã định nghĩa nhưng không sử dụng
+# kg:StadiumShape - Đã định nghĩa nhưng không sử dụng
+# kg:TeamShape - Đã định nghĩa nhưng không sử dụng

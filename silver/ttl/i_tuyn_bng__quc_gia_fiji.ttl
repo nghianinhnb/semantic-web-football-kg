@@ -1,0 +1,154 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Fiji a kg:Team ;
+kg:teamName "Fiji national football team" ;
+kg:hasCoach res:coach/RobSherman ;
+kg:hasCaptain res:player/RoyKrishna ;
+kg:homeStadium res:stadium/HFCBankStadium ;
+kg:teamAbbreviation "FIJ" ;
+kg:FIFA_rank 199 ;
+kg:FIFA_max_rank 94 ;
+kg:FIFA_max_date "1994-07-01"^^xsd:date ;
+kg:FIFA_min_rank 199 ;
+kg:FIFA_min_date "2015-07-01"^^xsd:date ;
+kg:Elo_rank 162 ;
+kg:Elo_max_rank 77 ;
+kg:Elo_max_date "1991-09-14"^^xsd:date ;
+kg:Elo_min_rank 162 ;
+kg:Elo_min_date "2017-06-11"^^xsd:date ;
+kg:confederation res:country/Oceania ;
+kg:association res:organization/FijiFA ;
+kg:mostCaps res:player/RoyKrishna ;
+kg:topScorer res:player/RoyKrishna ;
+kg:worldCupApps 0 ;
+kg:regionalCupApps 9 ;
+kg:regionalCupBest "Third place" ;
+kg:regionalCupYear 1998, 2008 ;
+kg:firstGame "1951-10-07"^^xsd:date ;
+kg:largestWin 24-0 ;
+kg:largestLoss 0-13 .
+
+res:coach/RobSherman a kg:Coach ;
+kg:manages res:team/Fiji .
+
+res:player/RoyKrishna a kg:Player, kg:Forward ;
+kg:playsFor res:team/Fiji ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 11 ;
+kg:birthDate "1987-08-30"^^xsd:date ;
+kg:nationality res:country/Fiji ;
+kg:careerGoals 41 ;
+kg:careerMatches 57 .
+
+res:stadium/HFCBankStadium a kg:Stadium ;
+kg:location res:city/Suva ;
+kg:capacity 20000 .
+
+res:organization/FijiFA a kg:Organization ;
+kg:locatedIn res:country/Fiji .
+
+res:country/Fiji a kg:Country .
+
+res:country/Oceania a kg:Region .
+
+res:competition/CopaAmerica a kg:Competition .
+
+res:match/FijiVsNewZealand a kg:Match ;
+kg:homeTeam res:team/Fiji ;
+kg:awayTeam res:team/NewZealand ;
+kg:result "4-6" ;
+kg:kickoffTime "1951-10-07"^^xsd:date .
+
+res:match/FijiVsKiribati a kg:Match ;
+kg:homeTeam res:team/Fiji ;
+kg:awayTeam res:team/Kiribati ;
+kg:result "24-0" ;
+kg:kickoffTime "1979-08-24"^^xsd:date .
+
+res:match/NewZealandVsFiji a kg:Match ;
+kg:homeTeam res:team/NewZealand ;
+kg:awayTeam res:team/Fiji ;
+kg:result "13-0" ;
+kg:kickoffTime "1981-08-16"^^xsd:date .
+
+res:competition/OceaniaCup a kg:Competition .
+
+res:season/OceaniaCup1973 a kg:Season ;
+kg:inCompetition res:competition/OceaniaCup ;
+kg:year "1973"^^xsd:gYear .
+
+res:season/OceaniaCup1980 a kg:Season ;
+kg:inCompetition res:competition/OceaniaCup ;
+kg:year "1980"^^xsd:gYear .
+
+res:season/OceaniaCup1998 a kg:Season ;
+kg:inCompetition res:competition/OceaniaCup ;
+kg:year "1998"^^xsd:gYear .
+
+res:season/OceaniaCup2008 a kg:Season ;
+kg:inCompetition res:competition/OceaniaCup ;
+kg:year "2008"^^xsd:gYear .
+
+res:season/OceaniaCup2024 a kg:Season ;
+kg:inCompetition res:competition/OceaniaCup ;
+kg:year "2024"^^xsd:gYear .
+
+res:team/NewZealand a kg:Team .
+
+res:team/Kiribati a kg:Team .
+
+res:team/PapuaNewGuinea a kg:Team .
+
+res:team/SolomonIslands a kg:Team .
+
+res:team/Tahiti a kg:Team .
+
+res:team/Vanuatu a kg:Team .
+
+res:team/NorthKorea a kg:Team .
+
+res:team/ChinaPR a kg:Team .
+
+res:team/Indonesia a kg:Team .
+
+res:team/India a kg:Team .
+
+res:team/Thailand a kg:Team .
+
+res:team/Japan a kg:Team .
+
+res:team/SouthKorea a kg:Team .
+
+res:team/Brazil a kg:Team .
+
+res:team/Germany a kg:Team .
+
+res:team/Italy a kg:Team .
+
+res:team/France a kg:Team .
+
+res:team/Spain a kg:Team .
+
+res:team/Australia a kg:Team .
+
+res:team/NewCaledonia a kg:Team .
+
+res:team/Nauru a kg:Team .
+
+res:team/FederatedStatesofMicronesia a kg:Team .
+
+res:team/Niue a kg:Team .
+
+res:team/Tonga a kg:Team .
+
+res:team/Samoa a kg:Team .
+
+res:team/WallisandFutuna a kg:Team .
+
+res:team/Tonga a kg:Team .
+
+res:team/Tonga a kg:Team .

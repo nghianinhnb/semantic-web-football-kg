@@ -1,0 +1,353 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Bermuda a kg:Team ;
+kg:teamName "Bermuda" ;
+kg:hasCoach res:coach/Kyle_Lightbourne ;
+kg:hasCaptain res:player/Dante_Leverock ;
+kg:confederation res:country/CONCACAF ;
+kg:association res:country/Bermuda ;
+kg:homeStadium res:stadium/National_Stadium_of_Bermuda ;
+kg:FIFARank 189 ;
+kg:FIFAMax 58 ;
+kg:FIFAMaxDate "1992-12-01"^^xsd:date ;
+kg:FIFAMin 189 ;
+kg:FIFAMinDate "2011-09-01"^^xsd:date ;
+kg:EloRank 177 ;
+kg:EloMax 92 ;
+kg:EloMaxDate "1992-12-01"^^xsd:date ;
+kg:EloMin 177 ;
+kg:EloMinDate "2008-03-01"^^xsd:date ;
+kg:firstInternationalMatch "1964-08-10"^^xsd:date ;
+kg:largestWin "2004-02-29"^^xsd:date ;
+kg:largestLoss "1969-07-01"^^xsd:date ;
+kg:worldCupApps 0 ;
+kg:worldCupBest "Silver medal at the 1967 Pan American Games" ;
+kg:regionalCupApps 1 ;
+kg:regionalCupFirst "2019" ;
+kg:regionalCupBest "Group stage at the 2019 CONCACAF Gold Cup" .
+
+res:coach/Kyle_Lightbourne a kg:Coach ;
+kg:manages res:team/Bermuda .
+
+res:player/Dante_Leverock a kg:Player, kg:Defender ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1992-04-11"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 5 ;
+kg:captainOf res:team/Bermuda .
+
+res:stadium/National_Stadium_of_Bermuda a kg:Stadium ;
+kg:capacity 16000 ;
+kg:homeStadiumOf res:team/Bermuda .
+
+res:country/Bermuda a kg:Country .
+
+res:country/CONCACAF a kg:Confederation .
+
+res:competition/FIFA_World_Cup a kg:Competition .
+
+res:competition/CONCACAF_Gold_Cup a kg:Competition .
+
+res:match/First_International_Match a kg:Match ;
+kg:homeTeam res:team/Bermuda ;
+kg:awayTeam res:team/ISL ;
+kg:venue res:stadium/National_Stadium_of_Bermuda ;
+kg:kickoffTime "1964-08-10T00:00:00Z"^^xsd:dateTime .
+
+res:match/Largest_Victory a kg:Match ;
+kg:homeTeam res:team/Bermuda ;
+kg:awayTeam res:team/Montserrat ;
+kg:venue res:stadium/National_Stadium_of_Bermuda ;
+kg:kickoffTime "2004-02-29T00:00:00Z"^^xsd:dateTime .
+
+res:match/Largest_Defeat a kg:Match ;
+kg:homeTeam res:team/Denmark ;
+kg:awayTeam res:team/Bermuda ;
+kg:venue res:stadium/Aalborg ;
+kg:kickoffTime "1969-07-01T00:00:00Z"^^xsd:dateTime .
+
+res:player/Damon_Ming a kg:Player ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1985-01-01"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 10 ;
+kg:caps 42 .
+
+res:player/Shaun_Goater a kg:Player ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1975-01-01"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 9 ;
+kg:goals 20 .
+
+res:player/Reggie_Lambe a kg:Player ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1991-02-04"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 11 ;
+kg:goals 14 .
+
+res:player/Zeko_Lewis a kg:Player ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1994-06-04"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 7 ;
+kg:goals 11 .
+
+res:player/Nahki_Wells a kg:Player ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1990-06-01"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 17 ;
+kg:goals 20 .
+
+res:player/Kane_Crichlow a kg:Player ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "2000-08-21"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 21 ;
+kg:goals 10 .
+
+res:player/Djair_Parfitt a kg:Player ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1996-10-01"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 19 ;
+kg:goals 6 .
+
+res:player/Enrique_Russell a kg:Player ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "2000-02-05"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 14 ;
+kg:goals 0 .
+
+res:player/Jutorre_Burgess a kg:Player ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "2006-08-10"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 13 ;
+kg:goals 0 .
+
+res:player/Dale_Eve a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "1995-02-09"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 1 ;
+kg:caps 47 .
+
+res:player/Detre_Bell a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "1997-03-08"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 2 ;
+kg:caps 6 .
+
+res:player/Coleridge_Fubler a kg:Player, kg:Goalkeeper ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "2003-10-30"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 3 ;
+kg:caps 0 .
+
+res:player/Lejaun_Simmons a kg:Player, kg:Defender ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1993-04-07"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 4 ;
+kg:caps 38 ;
+kg:goals 6 .
+
+res:player/Justin_Donawa a kg:Player, kg:Defender ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1996-06-27"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 5 ;
+kg:caps 25 ;
+kg:goals 3 .
+
+res:player/Harry_Twite a kg:Player, kg:Defender ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "2005-06-17"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 6 ;
+kg:caps 19 ;
+
+res:player/Reece_Jones a kg:Player, kg:Defender ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "2000-12-07"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 7 ;
+kg:caps 16 .
+
+res:player/J’Nai_Butterfield-Steede a kg:Player, kg:Defender ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1998-03-19"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 8 ;
+kg:caps 7 .
+
+res:player/Deniche_Hill a kg:Player, kg:Defender ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "2004-03-11"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 9 ;
+kg:caps 6 .
+
+res:player/Julian_Carpenter a kg:Player, kg:Defender ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1995-12-06"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 10 ;
+kg:caps 4 ;
+kg:goals 1 .
+
+res:player/Kieron_Richardson a kg:Player, kg:Defender ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "2005-01-28"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 11 ;
+kg:caps 2 .
+
+res:player/Roger_Lee a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1991-07-01"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 12 ;
+kg:caps 47 .
+
+res:player/Willie_Clemons a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1994-09-24"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 13 ;
+kg:caps 33 ;
+kg:goals 2 .
+
+res:player/Ne-Jai_Tucker a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "2002-08-20"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 14 ;
+kg:caps 17 ;
+kg:goals 1 .
+
+res:player/Aunde_Todd a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "2005-05-16"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 15 ;
+kg:caps 14 ;
+kg:goals 1 .
+
+res:player/Keziah_Martin a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "2000-05-21"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 16 ;
+kg:caps 14 .
+
+res:player/Rahzir_Jones a kg:Player, kg:Midfielder ;
+kg:playsFor res:team/Bermuda ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "2000-11-01"^^xsd:date ;
+kg:birthPlace res:city/Hamilton ;
+kg:nationality res:country/Bermuda ;
+kg:shirtNumber 17 ;
+kg:caps 4 .
+
+res:city/Hamilton a kg:City ;
+kg:locatedIn res:country/Bermuda .
+
+res:country/Bermuda a kg:Country .
+
+res:stadium/National_Stadium_of_Bermuda a kg:Stadium ;
+kg:capacity 16000 ;
+kg:locatedIn res:city/Hamilton .
+
+res:position/Goalkeeper a kg:Position .
+
+res:position/Defender a kg:Position .
+
+res:position/Midfielder a kg:Position .
+
+res:position/Forward a kg:Position .
+
+res:competition/FIFA_World_Cup a kg:Competition .
+
+res:competition/CONCACAF_Gold_Cup a kg:Competition .
+
+res:competition/CARICOM_Championship a kg:Competition .
+
+res:season/2019 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Gold_Cup .
+
+res:match/2019_CONCACAF_Gold_Cup a kg:Match ;
+kg:homeTeam res:team/Bermuda ;
+kg:awayTeam res:team/Nicaragua ;
+kg:venue res:stadium/National_Stadium_of_Bermuda ;
+kg:kickoffTime "2019-07-01T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/CONCACAF_Gold_Cup ;
+kg:inSeason res:season/2019 .
+
+res:match/2019_CONCACAF_Gold_Cup_2 a kg:Match ;
+kg:homeTeam res:team/Haiti ;
+kg:awayTeam res:team/Bermuda ;
+kg:venue res:stadium/National_Stadium_of_Bermuda ;
+kg:kickoffTime "2019-07-02T00:00:0

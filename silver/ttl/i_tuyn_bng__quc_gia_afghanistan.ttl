@@ -1,0 +1,131 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Afghanistan a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Afghanistan" ;
+kg:teamAbbreviation "AFG" ;
+kg:hasCoach res:coach/Farhad_Kazemi ;
+kg:hasCaptain res:player/Farshad_Noor ;
+kg:homeStadium res:stadium/Ghazi_Stadium ;
+kg:locatedIn res:country/Afghanistan .
+
+res:country/Afghanistan a kg:Country ;
+rdfs:label "Afghanistan" .
+
+res:stadium/Ghazi_Stadium a kg:Stadium ;
+kg:capacity 25000 ;
+kg:isHomeOf res:team/Afghanistan .
+
+res:coach/Farhad_Kazemi a kg:Coach ;
+kg:manages res:team/Afghanistan .
+
+res:player/Zohib_Islam_Amiri a kg:Player ;
+kg:playsFor res:team/Afghanistan ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 65 .
+
+res:player/Faysal_Shayesteh a kg:Player ;
+kg:playsFor res:team/Afghanistan ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 .
+
+res:player/Farshad_Noor a kg:Player ;
+kg:playsFor res:team/Afghanistan ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 11 ;
+kg:isCaptain res:team/Afghanistan .
+
+res:position/Defender a kg:Defender .
+
+res:position/Forward a kg:Forward .
+
+res:position/Midfielder a kg:Midfielder .
+
+res:position/Goalkeeper a kg:Goalkeeper .
+
+res:competition/SAFF_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá Nam Á" .
+
+res:season/2013_SAFF_Championship a kg:Season ;
+kg:hasSeason res:competition/SAFF_Championship ;
+kg:seasonOf res:competition/SAFF_Championship .
+
+res:match/2013_SAFF_Championship_Final a kg:Match ;
+kg:homeTeam res:team/Afghanistan ;
+kg:awayTeam res:team/India ;
+kg:venue res:stadium/Dasarath ;
+kg:inCompetition res:competition/SAFF_Championship ;
+kg:inSeason res:season/2013_SAFF_Championship .
+
+res:team/India a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Ấn Độ" .
+
+res:stadium/Dasarath a kg:Stadium ;
+kg:locatedIn res:city/Kathmandu .
+
+res:city/Kathmandu a kg:City ;
+kg:locatedIn res:country/Nepal .
+
+res:country/Nepal a kg:Country ;
+rdfs:label "Nepal" .
+
+res:match/2011_SAFF_Championship_Final a kg:Match ;
+kg:homeTeam res:team/India ;
+kg:awayTeam res:team/Afghanistan ;
+kg:venue res:stadium/Dasarath ;
+kg:inCompetition res:competition/SAFF_Championship .
+
+res:competition/Asian_Cup a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Á" .
+
+res:competition/AFC_Challenge_Cup a kg:Competition ;
+kg:competitionName "AFC Challenge Cup" .
+
+res:competition/World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" .
+
+res:organization/FIFA a kg:Organization ;
+kg:organizes res:competition/World_Cup .
+
+res:organization/AFC a kg:Organization ;
+kg:organizes res:competition/Asian_Cup .
+
+res:organization/CAFA a kg:Organization ;
+kg:organizes res:competition/AFC_Challenge_Cup .
+
+res:team/Afghanistan kg:locatedIn res:country/Afghanistan .
+
+res:team/Afghanistan kg:hasCoach res:coach/Farhad_Kazemi .
+
+res:coach/Farhad_Kazemi kg:manages res:team/Afghanistan .
+
+res:team/Afghanistan kg:hasCaptain res:player/Farshad_Noor .
+
+res:player/Farshad_Noor kg:isCaptain res:team/Afghanistan .
+
+res:team/Afghanistan kg:homeStadium res:stadium/Ghazi_Stadium .
+
+res:stadium/Ghazi_Stadium kg:isHomeOf res:team/Afghanistan .
+
+res:team/Afghanistan kg:participatesIn res:season/2013_SAFF_Championship .
+
+res:season/2013_SAFF_Championship kg:hasSeason res:competition/SAFF_Championship .
+
+res:season/2013_SAFF_Championship kg:seasonOf res:competition/SAFF_Championship .
+
+res:match/2013_SAFF_Championship_Final kg:inCompetition res:competition/SAFF_Championship .
+
+res:match/2013_SAFF_Championship_Final kg:inSeason res:season/2013_SAFF_Championship .
+
+res:match/2011_SAFF_Championship_Final kg:inCompetition res:competition/SAFF_Championship .
+
+res:match/2011_SAFF_Championship_Final kg:inSeason res:season/2011_SAFF_Championship .
+
+res:season/2011_SAFF_Championship a kg:Season ;
+kg:hasSeason res:competition/SAFF_Championship ;
+kg:seasonOf res:competition/SAFF_Championship .
+
+res:team/Afghanistan kg:participatesIn res:season/2011_SAFF_Championship .

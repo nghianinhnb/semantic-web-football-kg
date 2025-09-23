@@ -51,11 +51,25 @@ kg:Position a owl:Class ;
   rdfs:subClassOf schema:Enumeration .
 
 # Core Properties with proper domains and ranges
+kg:name a owl:DatatypeProperty ;
+  rdfs:label "name"@en , "tên"@vi ;
+  rdfs:comment "Generic name, aligns with schema:name"@en ;
+  rdfs:domain rdfs:Resource ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf schema:name .
+
 kg:playsFor a owl:ObjectProperty ;
   rdfs:label "plays for"@en , "thi đấu cho"@vi ;
   rdfs:comment "Indicates which team a player currently plays for"@en ;
   rdfs:domain kg:Player ;
   rdfs:range kg:Team .
+
+kg:hasPlayer a owl:ObjectProperty ;
+  rdfs:label "has player"@en , "có cầu thủ"@vi ;
+  rdfs:comment "Team has a player (inverse of playsFor)"@en ;
+  rdfs:domain kg:Team ;
+  rdfs:range kg:Player ;
+  owl:inverseOf kg:playsFor .
 
 kg:birthDate a owl:DatatypeProperty ;
   rdfs:label "birth date"@en , "ngày sinh"@vi ;
@@ -68,6 +82,19 @@ kg:shirtNumber a owl:DatatypeProperty ;
   rdfs:comment "Player's jersey number"@en ;
   rdfs:domain kg:Player ;
   rdfs:range xsd:positiveInteger .
+
+kg:primaryPosition a owl:ObjectProperty ;
+  rdfs:label "primary position"@en , "vị trí sở trường"@vi ;
+  rdfs:comment "Player's primary playing position"@en ;
+  rdfs:domain kg:Player ;
+  rdfs:range kg:Position .
+
+kg:club a owl:ObjectProperty ;
+  rdfs:label "club"@en , "câu lạc bộ"@vi ;
+  rdfs:comment "Club a player plays for (alias of playsFor, range Club)"@en ;
+  rdfs:domain kg:Player ;
+  rdfs:range kg:Club ;
+  rdfs:subPropertyOf kg:playsFor .
 
 # Match properties
 kg:homeTeam a owl:ObjectProperty ;

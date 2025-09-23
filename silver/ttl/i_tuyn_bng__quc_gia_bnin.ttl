@@ -1,0 +1,227 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Bénin a kg:Team ;
+kg:teamName "Bénin" ;
+kg:hasCoach res:coach/Michel_Dussuyer ;
+kg:hasCaptain res:player/Stéphane_Sessègnon ;
+kg:locatedIn res:country/Bénin .
+
+res:country/Bénin a kg:Country ;
+rdfs:label "Bénin" .
+
+res:coach/Michel_Dussuyer a kg:Coach ;
+kg:manages res:team/Bénin .
+
+res:player/Stéphane_Sessègnon a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:isCaptain res:team/Bénin ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+kg:birthDate "1984-06-01"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:stadium/Sân_vận_động_Hữu_nghĩa a kg:Stadium ;
+kg:isHomeOf res:team/Bénin .
+
+res:stadium/Sân_vận_động_Charles_de_Gaulle a kg:Stadium ;
+kg:isHomeOf res:team/Bénin .
+
+res:competition/Cúp_bóng_đá_châu_Aphi a kg:Competition ;
+kg:competitionName "Cúp bóng đá châu Phi" .
+
+res:season/2004 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_châu_Aphi ;
+kg:participatesIn res:team/Bénin .
+
+res:season/2019 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_châu_Aphi ;
+kg:participatesIn res:team/Bénin .
+
+res:match/Bénin_0-1_Nigeria a kg:Match ;
+kg:homeTeam res:team/Bénin ;
+kg:awayTeam res:team/Nigeria ;
+kg:kickoffTime "1959-11-08T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_châu_Aphi .
+
+res:match/Bénin_7-0_MTN a kg:Match ;
+kg:homeTeam res:team/Bénin ;
+kg:awayTeam res:team/MTN ;
+kg:kickoffTime "1961-12-27T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_châu_Aphi .
+
+res:match/Nigeria_10-1_Bénin a kg:Match ;
+kg:homeTeam res:team/Nigeria ;
+kg:awayTeam res:team/Bénin ;
+kg:kickoffTime "1959-11-28T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_châu_Aphi .
+
+res:player/Fabien_Farnolle a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 ;
+kg:birthDate "1985-02-05"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Saturnin_Allagbé a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 16 ;
+kg:birthDate "1993-11-22"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Youssouf_Assogba a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 ;
+kg:birthDate "2001-08-21"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Khaled_Adénon a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 ;
+kg:birthDate "1985-07-28"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Cédric_Hountondji a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 ;
+kg:birthDate "1994-01-19"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Yohan_Roche a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 ;
+kg:birthDate "1997-07-07"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Olivier_Verdon a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 ;
+kg:birthDate "1995-10-05"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/David_Kiki a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 12 ;
+kg:birthDate "1993-11-25"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Moïse_Adiléhou a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 13 ;
+kg:birthDate "1995-11-01"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Junior_Olaitan a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 15 ;
+kg:nationality res:country/Bénin .
+
+res:player/Samadi_Bourou a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 14 ;
+kg:birthDate "1997-07-18"^^xsd:date ;
+kg:nationality res:country/Togo .
+
+res:player/Djalilou_Ouorou a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 18 ;
+kg:birthDate "1997-07-18"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Mattéo_Ahlinvi a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 ;
+kg:birthDate "1999-07-02"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Jordan_Adéoti a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 8 ;
+kg:birthDate "1989-03-12"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Jérôme_Bonou a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 18 ;
+kg:birthDate "1994-01-27"^^xsd:date ;
+kg:nationality res:country/Mali .
+
+res:player/Sessi_D'Almeida a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 18 ;
+kg:birthDate "1995-11-20"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Jodel_Dossou a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 20 ;
+kg:birthDate "1992-03-17"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Rodrigue_Kossi a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 21 ;
+kg:birthDate "2000-07-11"^^xsd:date ;
+kg:nationality res:country/Tunisia .
+
+res:player/Steve_Mounié a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 9 ;
+kg:birthDate "1994-09-29"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Mickaël_Poté a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+kg:birthDate "1984-09-24"^^xsd:date ;
+kg:nationality res:country/Turkey .
+
+res:player/Tidjani_Ananae a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 11 ;
+kg:birthDate "1997-03-27"^^xsd:date ;
+kg:nationality res:country/Turkey .
+
+res:player/Désiré_Segbé_Azankpo a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 19 ;
+kg:birthDate "1993-05-06"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Charbel_Gomez a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 22 ;
+kg:birthDate "2001-01-27"^^xsd:date ;
+kg:nationality res:country/Bénin .
+
+res:player/Marcellin_Koukpo a kg:Player ;
+kg:playsFor res:team/Bénin ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 24 ;
+kg:birthDate "1995-04-06"^^xsd:date ;
+kg:nationality res:country/Algeria .

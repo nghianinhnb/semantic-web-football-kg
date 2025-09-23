@@ -1,0 +1,97 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/DominicaNationalFootballTeam a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Cộng hòa Dominica" ;
+kg:teamAbbreviation "DOM" ;
+kg:hasCoach res:coach/JacquesPassy ;
+kg:hasCaptain res:player/TanoBonnin ;
+kg:homeStadium res:stadium/OlympicFelixSanchezStadium ;
+kg:locatedIn res:country/Cuba ;
+kg:participatesIn res:competition/CONCACAFGoldCup2025 .
+
+res:country/Cuba a kg:Country ;
+rdfs:label "Cộng hòa Dominica" .
+
+res:coach/JacquesPassy a kg:Coach ;
+kg:manages res:team/DominicaNationalFootballTeam .
+
+res:player/TanoBonnin a kg:Player ;
+kg:playsFor res:team/DominicaNationalFootballTeam ;
+kg:isCaptain res:team/DominicaNationalFootballTeam .
+
+res:stadium/OlympicFelixSanchezStadium a kg:Stadium ;
+kg:isHomeOf res:team/DominicaNationalFootballTeam .
+
+res:competition/CONCACAFGoldCup2025 a kg:Competition ;
+kg:competitionName "Cúp Vàng CONCACAF 2025" ;
+kg:organizedBy res:organization/CONCACAF ;
+kg:heldIn res:country/Cuba .
+
+res:organization/CONCACAF a kg:Organization .
+
+res:player/MiguelLloyd a kg:Player ;
+kg:playsFor res:team/DominicaNationalFootballTeam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 1 ;
+kg:birthDate "1982-10-23"^^xsd:date ;
+kg:nationality res:country/Cuba .
+
+res:player/JonathanFana a kg:Player ;
+kg:playsFor res:team/DominicaNationalFootballTeam ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 12 ;
+kg:birthDate "1998-01-24"^^xsd:date ;
+kg:nationality res:country/Cuba .
+
+res:player/XavierValdez a kg:Player ;
+kg:playsFor res:team/DominicaNationalFootballTeam ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 12 ;
+kg:birthDate "2003-11-23"^^xsd:date ;
+kg:nationality res:country/USA .
+
+res:player/JuniorFirpo a kg:Player ;
+kg:playsFor res:team/DominicaNationalFootballTeam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 ;
+kg:birthDate "1996-08-22"^^xsd:date ;
+kg:nationality res:country/Spain .
+
+res:player/RonaldoVasquez a kg:Player ;
+kg:playsFor res:team/DominicaNationalFootballTeam ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 10 ;
+kg:birthDate "1999-06-30"^^xsd:date ;
+kg:nationality res:country/Azerbaijan .
+
+res:player/JeanCarlosLopez a kg:Player ;
+kg:playsFor res:team/DominicaNationalFootballTeam ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 14 ;
+kg:birthDate "1993-11-09"^^xsd:date ;
+kg:nationality res:country/Cuba .
+
+res:player/DornyRomero a kg:Player ;
+kg:playsFor res:team/DominicaNationalFootballTeam ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 17 ;
+kg:birthDate "1998-01-24"^^xsd:date ;
+kg:nationality res:country/Bolivia .
+
+res:player/PeterGonzalez a kg:Player ;
+kg:playsFor res:team/DominicaNationalFootballTeam ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 19 ;
+kg:birthDate "2002-07-25"^^xsd:date ;
+kg:nationality res:country/Spain .
+
+res:player/ErickJapa a kg:Player ;
+kg:playsFor res:team/DominicaNationalFootballTeam ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 25 ;
+kg:birthDate "1999-04-06"^^xsd:date ;
+kg:nationality res:country/Panama .

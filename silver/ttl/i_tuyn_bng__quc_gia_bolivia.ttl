@@ -1,0 +1,89 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Bolivia a kg:Team ;
+kg:teamName "Bolivia" ;
+kg:hasCoach res:coach/Antônio_Carlos_Zago ;
+kg:hasCaptain res:player/Luis_Haquín ;
+kg:homeStadium res:stadium/Sân_vận_động_Hernando_Siles .
+
+res:stadium/Sân_vận_động_Hernando_Siles a kg:Stadium .
+
+res:coach/Antônio_Carlos_Zago a kg:Coach ;
+kg:manages res:team/Bolivia .
+
+res:player/Luis_Haquín a kg:Player ;
+kg:playsFor res:team/Bolivia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 4 .
+
+res:player/Marcelo_Moreno a kg:Player ;
+kg:playsFor res:team/Bolivia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 9 ;
+kg:mostCaps 108 ;
+kg:topScorer 31 .
+
+res:stadium/Sân_vận_động_Hernando_Siles a kg:Stadium .
+
+res:competition/Cúp_bóng_đá_Nam_Mỹ a kg:Competition ;
+kg:competitionName "Cúp bóng đá Nam Mỹ" .
+
+res:team/Bolivia kg:participatesIn res:season/1963 ;
+kg:participatesIn res:season/1997 ;
+kg:participatesIn res:season/1927 ;
+kg:participatesIn res:season/1949 .
+
+res:season/1963 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_Nam_Mỹ .
+
+res:season/1997 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_Nam_Mỹ .
+
+res:season/1927 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_Nam_Mỹ .
+
+res:season/1949 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_Nam_Mỹ .
+
+res:team/Bolivia kg:participatesIn res:season/1930 ;
+kg:participatesIn res:season/1950 ;
+kg:participatesIn res:season/1994 .
+
+res:season/1930 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_thế_giới .
+
+res:season/1950 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_thế_giới .
+
+res:season/1994 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_thế_giới .
+
+res:competition/Giải_vô_địch_bóng_đá_thế_giới a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá thế giới" .
+
+res:competition/Cúp_Liên_đoàn_các_châu_lục a kg:Competition ;
+kg:competitionName "Cúp Liên đoàn các châu lục" .
+
+res:team/Bolivia kg:participatesIn res:season/1999 ;
+kg:participatesIn res:season/2026 .
+
+res:season/1999 a kg:Season ;
+kg:seasonOf res:competition/Cúp_Liên_đoàn_các_châu_lục .
+
+res:season/2026 a kg:Season ;
+kg:seasonOf res:competition/Cúp_Liên_đoàn_các_châu_lục .
+
+res:team/Bolivia kg:participatesIn res:season/1926 .
+
+res:season/1926 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_Nam_Mỹ .
+
+res:team/Bolivia kg:participatesIn res:season/1930 ;
+kg:participatesIn res:season/1950 ;
+kg:participatesIn res:season/1994 .
+
+res:team/Bolivia kg:participatesIn res:season/1999 .

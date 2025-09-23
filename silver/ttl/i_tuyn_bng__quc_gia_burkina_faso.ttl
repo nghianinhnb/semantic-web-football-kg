@@ -1,0 +1,163 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Burkina%20Faso a kg:Team ;
+kg:teamName "Burkina Faso" ;
+kg:teamAbbreviation "BFA" ;
+kg:hasCoach res:coach/Brama%20Traor%C3%A9 ;
+kg:hasCaptain res:player/Bertrand%20Traor%C3%A9 ;
+kg:homeStadium res:stadium/S%E1%BA%AAn%20v%E1%BB%83n%20đ%E1%BB%99ng%204%20th%C3%A1ng%208 ;
+kg:participatesIn res:competition/Africa%20Cup%20of%20Nations ;
+kg:participatesIn res:competition/FIFA%20World%20Cup .
+
+res:coach/Brama%20Traor%C3%A9 a kg:Coach ;
+kg:manages res:team/Burkina%20Faso .
+
+res:player/Bertrand%20Traor%C3%A9 a kg:Player, kg:Forward ;
+kg:playsFor res:team/Burkina%20Faso ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+kg:birthDate "1995-09-06"^^xsd:date ;
+kg:nationality res:country/Burkina%20Faso .
+
+res:stadium/S%E1%BA%AAn%20v%E1%BB%83n%20đ%E1%BB%99ng%204%20th%C3%A1ng%208 a kg:Stadium ;
+kg:isHomeOf res:team/Burkina%20Faso .
+
+res:competition/Africa%20Cup%20of%20Nations a kg:Competition ;
+kg:competitionName "Africa Cup of Nations" ;
+kg:organizedBy res:organization/CFA .
+
+res:competition/FIFA%20World%20Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" ;
+kg:organizedBy res:organization/FIFA .
+
+res:organization/CFA a kg:Organization .
+
+res:organization/FIFA a kg:Organization .
+
+res:player/Charles%20Kabor%C3%A9 a kg:Player ;
+kg:playsFor res:team/Burkina%20Faso ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 10 ;
+kg:birthDate "1985-05-01"^^xsd:date ;
+kg:nationality res:country/Burkina%20Faso .
+
+res:player/Moumouni%20Dagano a kg:Player ;
+kg:playsFor res:team/Burkina%20Faso ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 9 ;
+kg:birthDate "1988-03-15"^^xsd:date ;
+kg:nationality res:country/Burkina%20Faso .
+
+res:country/Burkina%20Faso a kg:Country ;
+rdfs:label "Burkina Faso" .
+
+res:competition/Africa%20Cup%20of%20Nations a kg:Competition ;
+kg:participantCount 24 .
+
+res:team/Burkina%20Faso kg:participatesIn res:season/Africa%20Cup%20of%20Nations%202023 .
+
+res:season/Africa%20Cup%20of%20Nations%202023 a kg:Season ;
+kg:seasonOf res:competition/Africa%20Cup%20of%20Nations .
+
+res:match/Burkina%20Faso%20vs%20Gabon%201960 a kg:Match ;
+kg:homeTeam res:team/Burkina%20Faso ;
+kg:awayTeam res:team/Gabon ;
+kg:kickoffTime "1960-04-14T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Africa%20Cup%20of%20Nations .
+
+res:team/Gabon a kg:Team ;
+kg:teamName "Gabon" ;
+kg:teamAbbreviation "GAB" .
+
+res:match/Burkina%20Faso%20vs%20Algeria%201981 a kg:Match ;
+kg:homeTeam res:team/Algeria ;
+kg:awayTeam res:team/Burkina%20Faso ;
+kg:kickoffTime "1981-08-30T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Africa%20Cup%20of%20Nations .
+
+res:team/Algeria a kg:Team ;
+kg:teamName "Algeria" ;
+kg:teamAbbreviation "ALG" .
+
+res:competition/Africa%20Cup%20of%20Nations a kg:Competition ;
+kg:heldIn res:country/Burkina%20Faso .
+
+res:team/Burkina%20Faso kg:participatesIn res:season/Africa%20Cup%20of%20Nations%202013 .
+
+res:season/Africa%20Cup%20of%20Nations%202013 a kg:Season ;
+kg:seasonOf res:competition/Africa%20Cup%20of%20Nations .
+
+res:match/Burkina%20Faso%20vs%20Ethiopia%202013 a kg:Match ;
+kg:homeTeam res:team/Burkina%20Faso ;
+kg:awayTeam res:team/Ethiopia ;
+kg:kickoffTime "2013-01-25T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Africa%20Cup%20of%20Nations .
+
+res:team/Ethiopia a kg:Team ;
+kg:teamName "Ethiopia" ;
+kg:teamAbbreviation "ETH" .
+
+res:team/Burkina%20Faso kg:participatesIn res:season/Africa%20Cup%20of%20Nations%202017 .
+
+res:season/Africa%20Cup%20of%20Nations%202017 a kg:Season ;
+kg:seasonOf res:competition/Africa%20Cup%20of%20Nations .
+
+res:match/Burkina%20Faso%20vs%20Morocco%202021 a kg:Match ;
+kg:homeTeam res:team/Morocco ;
+kg:awayTeam res:team/Burkina%20Faso ;
+kg:kickoffTime "2021-10-09T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Africa%20Cup%20of%20Nations .
+
+res:team/Morocco a kg:Team ;
+kg:teamName "Morocco" ;
+kg:teamAbbreviation "MAR" .
+
+res:competition/FIFA%20World%20Cup a kg:Competition ;
+kg:heldIn res:country/Burkina%20Faso .
+
+res:team/Burkina%20Faso kg:participatesIn res:season/FIFA%20World%20Cup%202022 .
+
+res:season/FIFA%20World%20Cup%202022 a kg:Season ;
+kg:seasonOf res:competition/FIFA%20World%20Cup .
+
+res:match/Burkina%20Faso%20vs%20France%202022 a kg:Match ;
+kg:homeTeam res:team/France ;
+kg:awayTeam res:team/Burkina%20Faso ;
+kg:kickoffTime "2022-11-20T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/FIFA%20World%20Cup .
+
+res:team/France a kg:Team ;
+kg:teamName "France" ;
+kg:teamAbbreviation "FRA" .
+
+res:competition/Africa%20Cup%20of%20Nations a kg:Competition ;
+kg:participantCount 24 .
+
+res:team/Burkina%20Faso kg:participatesIn res:season/Africa%20Cup%20of%20Nations%202023 .
+
+res:season/Africa%20Cup%20of%20Nations%202023 a kg:Season ;
+kg:seasonOf res:competition/Africa%20Cup%20of%20Nations .
+
+res:match/Burkina%20Faso%20vs%20Togo%202023 a kg:Match ;
+kg:homeTeam res:team/Burkina%20Faso ;
+kg:awayTeam res:team/Togo ;
+kg:kickoffTime "2023-03-28T00:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Africa%20Cup%20of%20Nations .
+
+res:team/Togo a kg:Team ;
+kg:teamName "Togo" ;
+kg:teamAbbreviation "TOG" .
+
+res:team/Burkina%20Faso kg:participatesIn res:season/Africa%20Cup%20of%20Nations%202025 .
+
+res:season/Africa%20Cup%20of%20Nations%202025 a kg:Season ;
+kg:seasonOf res:competition/Africa%20Cup%20of%20Nations .
+
+res:team/Burkina%20Faso kg:participatesIn res:season/Africa%20Cup%20of%20Nations%202027 .
+
+res:season/Africa%20Cup%20of%20Nations%202027 a kg:Season ;
+kg:seasonOf res:competition/Africa%20Cup%20of%20Nations .

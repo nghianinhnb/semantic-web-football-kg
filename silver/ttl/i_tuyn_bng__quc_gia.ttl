@@ -5,129 +5,210 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 res:team/Italy a kg:Team ;
-kg:teamName "Ý" ;
+kg:teamName "Italy" ;
 kg:teamAbbreviation "ITA" ;
-kg:hasCoach res:coach/GennaroGattuso ;
-kg:captain res:player/GianluigiDonnarumma ;
-kg:mostCaps res:player/GianluigiBuffon ;
-kg:topScorer res:player/LuigiRiva ;
-kg:homeStadium res:stadium/MultipleStadiums ;
+kg:hasCoach res:coach/Gennaro_Gattuso ;
+kg:hasCaptain res:player/Gianluigi_Donnarumma ;
+kg:mostCaps res:player/Gianluigi_Buffon ;
+kg:topScorer res:player/Luigi_Riva ;
+kg:homeStadium res:stadium/Multiple_Stadiums ;
 kg:confederation res:country/Europe ;
-kg:association res:organization/ItalianFootballFederation ;
-kg:badgeImage "Logo Italy National Football Team - 2023.svg" ;
-kg:FIFARank ?FIFARank ;
-kg:FIFAMax 1 ;
-kg:FIFAMaxDate "1993-11-01", "2007-02-01", "2007-04-01", "2007-09-01" ;
-kg:FIFAMin 21 ;
-kg:FIFAMinDate "2018-08-01" ;
-kg:ELORank ?ELORank ;
-kg:ELOMax 1 ;
-kg:ELOMaxDate "1934-06-01", "1940-03-01", "2006-07-01", "2006-08-01" ;
-kg:ELOMin 21 ;
-kg:ELOMinDate "1959-11-01" ;
-kg:patternLa1 "_ita24h" ;
-kg:patternB1 "_ita24h" ;
-kg:patternRa1 "_ita24h" ;
-kg:patternSh1 "_ita24h" ;
-kg:patternSo1 "" ;
-kg:leftArm1 "" ;
-kg:body1 "" ;
-kg:rightArm1 "" ;
-kg:shorts1 "" ;
-kg:socks1 "#0000FF" ;
-kg:patternLa2 "_ita24a" ;
-kg:patternB2 "_ita24a" ;
-kg:patternRa2 "_ita24a" ;
-kg:patternSh2 "_ita24a" ;
-kg:patternSo2 "" ;
-kg:leftArm2 "" ;
-kg:body2 "" ;
-kg:rightArm2 "" ;
-kg:shorts2 "" ;
-kg:socks2 "" ;
-kg:firstGame "1910-05-15" ;
-kg:largestWin "1948-08-02" ;
-kg:largestLoss "1924-04-06" ;
-kg:worldCupApps 18 ;
-kg:worldCupFirst 1934 ;
-kg:worldCupBest res:event/WorldCup1934, res:event/WorldCup1938, res:event/WorldCup1982, res:event/WorldCup2006 ;
-kg:regionalCupApps 11 ;
-kg:regionalCupFirst 1968 ;
-kg:regionalCupBest res:event/Euro1968, res:event/Euro2020 ;
-kg:confederationsCupApps 2 ;
-kg:confederationsCupFirst 2009 ;
-kg:confederationsCupBest res:event/ConfederationsCup2013 ;
-kg:medalOlympic res:event/Olympic1936 ;
-kg:medalBronze res:event/Olympic1928, res:event/Olympic2004 .
+kg:association res:organization/Federazione_Italiana_Giuoco_Calcio ;
+kg:badge res:image/Logo_Italy_National_Football_Team_-_2023.svg ;
+kg:badgeSize "140px"^^xsd:string ;
+kg:nickname "Gli Azzurri" ;
+kg:FIFARank res:rank/FIFA_World_Rankings_ITA ;
+kg:FIFAMax "1"^^xsd:integer ;
+kg:FIFAMaxDate "1993-11-01"^^xsd:date , "2007-02-01"^^xsd:date , "2007-04-01"^^xsd:date , "2007-09-01"^^xsd:date ;
+kg:FIFAMin "21"^^xsd:integer ;
+kg:FIFAMinDate "2018-08-01"^^xsd:date ;
+kg:ELORank res:rank/World_Football_Elo_Ratings_Italy ;
+kg:ELOMax "1"^^xsd:integer ;
+kg:ELOMaxDate "1934-06-01"^^xsd:date , "1940-12-01"^^xsd:date , "2006-07-01"^^xsd:date , "2006-08-01"^^xsd:date ;
+kg:ELOMin "21"^^xsd:integer ;
+kg:ELOMinDate "1959-11-01"^^xsd:date ;
+kg:firstGame res:match/Italy_v_France_1910 ;
+kg:largestWin res:match/Italy_v_United_States_1948 ;
+kg:largestLoss res:match/Hungary_v_Italy_1924 ;
+kg:worldCupApps "18"^^xsd:integer ;
+kg:worldCupFirst "1934"^^xsd:gYear ;
+kg:worldCupBest res:event/World_Cup_Champion_1934 , res:event/World_Cup_Champion_1938 , res:event/World_Cup_Champion_1982 , res:event/World_Cup_Champion_2006 ;
+kg:regionalCupApps "11"^^xsd:integer ;
+kg:regionalCupFirst "1968"^^xsd:gYear ;
+kg:regionalCupBest res:event/Euro_Champion_1968 , res:event/Euro_Champion_2020 ;
+kg:confederationsCupApps "2"^^xsd:integer ;
+kg:confederationsCupFirst "2009"^^xsd:gYear ;
+kg:confederationsCupBest res:event/Confederations_Cup_Third_Place_2013 .
 
-res:team/Italy kg:participatesIn res:season/WorldCup1934, res:season/WorldCup1938, res:season/WorldCup1982, res:season/WorldCup2006, res:season/Euro1968, res:season/Euro2020, res:season/ConfederationsCup2009, res:season/ConfederationsCup2013 .
-
-res:coach/GennaroGattuso a kg:Coach ;
-kg:manages res:team/Italy .
-
-res:player/GianluigiDonnarumma a kg:Player ;
+res:player/Gianluigi_Buffon a kg:Player ;
 kg:playsFor res:team/Italy ;
 kg:primaryPosition kg:Goalkeeper ;
-kg:shirtNumber 1 .
+kg:birthDate "1978-01-31"^^xsd:date ;
+kg:birthPlace res:city/Parma ;
+kg:nationality res:country/Italy ;
+kg:height "191"^^xsd:decimal ;
+kg:weight "82"^^xsd:decimal ;
+kg:shirtNumber "1"^^xsd:positiveInteger ;
+kg:preferredFoot kg:LeftFooted ;
+kg:mostCaps "176"^^xsd:integer .
 
-res:player/GianluigiBuffon a kg:Player ;
-kg:playsFor res:team/Italy ;
-kg:primaryPosition kg:Goalkeeper ;
-kg:mostCaps 176 .
-
-res:player/LuigiRiva a kg:Player ;
+res:player/Luigi_Riva a kg:Player ;
 kg:playsFor res:team/Italy ;
 kg:primaryPosition kg:Forward ;
-kg:topScorer 35 .
+kg:birthDate "1942-04-15"^^xsd:date ;
+kg:birthPlace res:city/Sardinia ;
+kg:nationality res:country/Italy ;
+kg:height "183"^^xsd:decimal ;
+kg:weight "75"^^xsd:decimal ;
+kg:shirtNumber "9"^^xsd:positiveInteger ;
+kg:preferredFoot kg:RightFooted ;
+kg:topScorer "35"^^xsd:integer .
 
-res:stadium/MultipleStadiums a kg:Stadium ;
-kg:capacity ?Capacity .
+res:player/Gianluigi_Donnarumma a kg:Player ;
+kg:playsFor res:team/Italy ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1999-02-25"^^xsd:date ;
+kg:birthPlace res:city/Milano ;
+kg:nationality res:country/Italy ;
+kg:height "196"^^xsd:decimal ;
+kg:weight "86"^^xsd:decimal ;
+kg:shirtNumber "1"^^xsd:positiveInteger ;
+kg:preferredFoot kg:LeftFooted ;
+kg:isCaptain res:team/Italy .
 
-res:organization/ItalianFootballFederation a kg:Organization ;
-kg:abbreviation "FIGC" .
+res:player/Gennaro_Gattuso a kg:Coach ;
+kg:manages res:team/Italy ;
+kg:birthDate "1976-06-18"^^xsd:date ;
+kg:birthPlace res:city/Bari ;
+kg:nationality res:country/Italy .
 
-res:country/Europe a kg:Country .
+res:team/Italy kg:participatesIn res:season/World_Cup_1934 , res:season/World_Cup_1938 , res:season/World_Cup_1982 , res:season/World_Cup_2006 , res:season/Euro_1968 , res:season/Euro_2020 .
 
-res:event/WorldCup1934 a kg:Event ;
-kg:eventType kg:WorldCup ;
-kg:year 1934 .
+res:match/Italy_v_France_1910 a kg:Match ;
+kg:homeTeam res:team/Italy ;
+kg:awayTeam res:team/France ;
+kg:venue res:stadium/Milan ;
+kg:kickoffTime "1910-05-15T15:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/World_Cup_1930 .
 
-res:event/WorldCup1938 a kg:Event ;
-kg:eventType kg:WorldCup ;
-kg:year 1938 .
+res:match/Italy_v_United_States_1948 a kg:Match ;
+kg:homeTeam res:team/Italy ;
+kg:awayTeam res:team/United_States ;
+kg:venue res:stadium/Brentford ;
+kg:kickoffTime "1948-08-02T15:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/World_Cup_1950 .
 
-res:event/WorldCup1982 a kg:Event ;
-kg:eventType kg:WorldCup ;
-kg:year 1982 .
+res:match/Hungary_v_Italy_1924 a kg:Match ;
+kg:homeTeam res:team/Hungary ;
+kg:awayTeam res:team/Italy ;
+kg:venue res:stadium/Budapest ;
+kg:kickoffTime "1924-04-06T15:00:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/World_Cup_1930 .
 
-res:event/WorldCup2006 a kg:Event ;
-kg:eventType kg:WorldCup ;
-kg:year 2006 .
+res:event/World_Cup_Champion_1934 a kg:Event ;
+kg:winner res:team/Italy ;
+kg:year "1934"^^xsd:gYear .
 
-res:event/Euro1968 a kg:Event ;
-kg:eventType kg:Euro ;
-kg:year 1968 .
+res:event/World_Cup_Champion_1938 a kg:Event ;
+kg:winner res:team/Italy ;
+kg:year "1938"^^xsd:gYear .
 
-res:event/Euro2020 a kg:Event ;
-kg:eventType kg:Euro ;
-kg:year 2020 .
+res:event/World_Cup_Champion_1982 a kg:Event ;
+kg:winner res:team/Italy ;
+kg:year "1982"^^xsd:gYear .
 
-res:event/ConfederationsCup2009 a kg:Event ;
-kg:eventType kg:ConfederationsCup ;
-kg:year 2009 .
+res:event/World_Cup_Champion_2006 a kg:Event ;
+kg:winner res:team/Italy ;
+kg:year "2006"^^xsd:gYear .
 
-res:event/ConfederationsCup2013 a kg:Event ;
-kg:eventType kg:ConfederationsCup ;
-kg:year 2013 .
+res:event/Euro_Champion_1968 a kg:Event ;
+kg:winner res:team/Italy ;
+kg:year "1968"^^xsd:gYear .
 
-res:event/Olympic1936 a kg:Event ;
-kg:eventType kg:Olympic ;
-kg:year 1936 .
+res:event/Euro_Champion_2020 a kg:Event ;
+kg:winner res:team/Italy ;
+kg:year "2020"^^xsd:gYear .
 
-res:event/Olympic1928 a kg:Event ;
-kg:eventType kg:Olympic ;
-kg:year 1928 .
+res:event/Confederations_Cup_Third_Place_2013 a kg:Event ;
+kg:thirdPlace res:team/Italy ;
+kg:year "2013"^^xsd:gYear .
 
-res:event/Olympic2004 a kg:Event ;
-kg:eventType kg:Olympic ;
-kg:year 2004 .
+res:stadium/Multiple_Stadiums a kg:Stadium ;
+kg:capacity "1000000"^^xsd:positiveInteger .
+
+res:organization/Federazione_Italiana_Giuoco_Calcio a kg:Organization ;
+kg:locatedIn res:country/Italy .
+
+res:country/Italy a kg:Country ;
+kg:name "Italy" ;
+kg:code "IT"^^xsd:string .
+
+res:country/Europe a kg:Country ;
+kg:name "Europe" ;
+kg:code "EU"^^xsd:string .
+
+res:country/France a kg:Country ;
+kg:name "France" ;
+kg:code "FR"^^xsd:string .
+
+res:country/United_States a kg:Country ;
+kg:name "United States" ;
+kg:code "US"^^xsd:string .
+
+res:country/Hungary a kg:Country ;
+kg:name "Hungary" ;
+kg:code "HU"^^xsd:string .
+
+res:country/Sardinia a kg:Country ;
+kg:name "Sardinia" ;
+kg:code "SA"^^xsd:string .
+
+res:city/Parma a kg:City ;
+kg:locatedIn res:country/Italy .
+
+res:city/Milano a kg:City ;
+kg:locatedIn res:country/Italy .
+
+res:city/Bari a kg:City ;
+kg:locatedIn res:country/Italy .
+
+res:city/Sardinia a kg:City ;
+kg:locatedIn res:country/Italy .
+
+res:season/World_Cup_1934 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+
+res:season/World_Cup_1938 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+
+res:season/World_Cup_1982 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+
+res:season/World_Cup_2006 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+
+res:season/Euro_1968 a kg:Season ;
+kg:seasonOf res:competition/Euro ;
+
+res:season/Euro_2020 a kg:Season ;
+kg:seasonOf res:competition/Euro .
+
+res:competition/World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" ;
+kg:organizes res:organization/FIFA .
+
+res:competition/Euro a kg:Competition ;
+kg:competitionName "UEFA European Championship" ;
+kg:organizes res:organization/UEFA .
+
+res:organization/FIFA a kg:Organization ;
+kg:locatedIn res:country/Switzerland .
+
+res:organization/UEFA a kg:Organization ;
+kg:locatedIn res:country/Switzerland .
+
+res:rank/FIFA_World_Rankings_ITA a kg:Rank ;
+kg:ranks res:team/Italy .
+
+res:rank/World_Football_Elo_Ratings_Italy a kg:Rank ;
+kg:ranks res:team/Italy .

@@ -1,0 +1,125 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/NetherlandsNationalFootballTeam a kg:Team ;
+kg:teamName "Hà Lan" ;
+kg:teamAbbreviation "NED" ;
+kg:hasCoach res:coach/RonaldKoeman ;
+kg:hasCaptain res:player/VirgilVanDijk ;
+kg:FIFAWorldRanking 1 ;
+kg:FIFAMaximumRank 1 ;
+kg:FIFAMaximumRankDate "2011-08-01"^^xsd:date ;
+kg:FIFAMinimumRank 36 ;
+kg:FIFAMinimumRankDate "2017-08-01"^^xsd:date ;
+kg:confederation res:organization/UEFA ;
+kg:affiliation res:organization/KoninklijkeNederlandseVoetbalbond ;
+kg:stadium res:stadium/JohanCruyffArena ;
+kg:stadium res:stadium/DeKuip ;
+kg:stadium res:stadium/PhilipsStadion ;
+kg:stadium res:stadium/DeGrolschVeste ;
+kg:mostCaps res:player/WesleySneijder ;
+kg:mostGoals res:player/MemphisDepay ;
+kg:worldCupParticipations "10"^^xsd:positiveInteger ;
+kg:firstWorldCup "1934"^^xsd:gYear ;
+kg:bestWorldCupResult "Á quân" ;
+kg:worldCupYears ( "1974"^^xsd:gYear , "1978"^^xsd:gYear , "2010"^^xsd:gYear ) ;
+kg:euroParticipations "11"^^xsd:positiveInteger ;
+kg:firstEuro "1976"^^xsd:gYear ;
+kg:bestEuroResult "Vô địch" ;
+kg:euroYears ( "1988"^^xsd:gYear ) ;
+kg:uefaNationsLeagueParticipations "3"^^xsd:positiveInteger ;
+kg:uefaNationsLeagueFirst "2018–19"^^xsd:string ;
+kg:uefaNationsLeagueBestResult "Á quân" ;
+kg:olympicBronzeMedals "3"^^xsd:positiveInteger ;
+kg:olympicBronzeYears ( "1908"^^xsd:gYear , "1912"^^xsd:gYear , "1920"^^xsd:gYear ) ;
+kg:rival res:country/Germany ;
+kg:rival res:country/Belgium ;
+kg:rival res:country/France ;
+kg:rival res:country/Brazil ;
+kg:rival res:country/Argentina .
+
+res:player/VirgilVanDijk a kg:Player ;
+kg:playsFor res:team/NetherlandsNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1991-07-08"^^xsd:date ;
+kg:birthPlace res:city/Antwerp ;
+kg:nationality res:country/Netherlands ;
+kg:shirtNumber "4"^^xsd:positiveInteger .
+
+res:player/WesleySneijder a kg:Player ;
+kg:playsFor res:team/NetherlandsNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1984-01-09"^^xsd:date ;
+kg:birthPlace res:city/Amsterdam ;
+kg:nationality res:country/Netherlands ;
+kg:shirtNumber "19"^^xsd:positiveInteger ;
+kg:totalMatches "134"^^xsd:positiveInteger ;
+kg:goalsScored "31"^^xsd:positiveInteger .
+
+res:player/MemphisDepay a kg:Player ;
+kg:playsFor res:team/NetherlandsNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1994-02-13"^^xsd:date ;
+kg:birthPlace res:city/Amsterdam ;
+kg:nationality res:country/Netherlands ;
+kg:shirtNumber "10"^^xsd:positiveInteger ;
+kg:totalMatches "104"^^xsd:positiveInteger ;
+kg:goalsScored "52"^^xsd:positiveInteger .
+
+res:coach/RonaldKoeman a kg:Coach ;
+kg:manages res:team/NetherlandsNationalFootballTeam ;
+kg:birthDate "1969-03-14"^^xsd:date ;
+kg:nationality res:country/Netherlands .
+
+res:stadium/JohanCruyffArena a kg:Stadium ;
+kg:capacity "56,000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Amsterdam ;
+kg:isHomeOf res:team/NetherlandsNationalFootballTeam .
+
+res:stadium/DeKuip a kg:Stadium ;
+kg:capacity "51,000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Rotterdam .
+
+res:stadium/PhilipsStadion a kg:Stadium ;
+kg:capacity "35,000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Eindhoven .
+
+res:stadium/DeGrolschVeste a kg:Stadium ;
+kg:capacity "15,000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Enschede .
+
+res:organization/KoninklijkeNederlandseVoetbalbond a kg:Organization ;
+kg:locatedIn res:country/Netherlands .
+
+res:organization/UEFA a kg:Organization ;
+kg:locatedIn res:country/Europe .
+
+res:country/Netherlands a kg:Country .
+
+res:country/Germany a kg:Country .
+
+res:country/Belgium a kg:Country .
+
+res:country/France a kg:Country .
+
+res:country/Brazil a kg:Country .
+
+res:country/Argentina a kg:Country .
+
+res:city/Antwerp a kg:City ;
+kg:locatedIn res:country/Belgium .
+
+res:city/Amsterdam a kg:City ;
+kg:locatedIn res:country/Netherlands .
+
+res:city/Rotterdam a kg:City ;
+kg:locatedIn res:country/Netherlands .
+
+res:city/Eindhoven a kg:City ;
+kg:locatedIn res:country/Netherlands .
+
+res:city/Enschede a kg:City ;
+kg:locatedIn res:country/Netherlands .

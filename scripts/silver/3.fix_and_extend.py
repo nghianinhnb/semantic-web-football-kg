@@ -59,10 +59,15 @@ def extract_ontology_definitions(ontology_dir: str) -> Set[str]:
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
         
-        # Tìm tất cả các terms đã được định nghĩa (classes, properties, etc.)
-        term_pattern = r'kg:(\w+)\s+a\s+owl:(Class|ObjectProperty|DatatypeProperty)'
-        for match in re.finditer(term_pattern, content):
-            defined_terms.add(match.group(1))
+        # Loại bỏ markdown notation
+        content = re.sub(r'^```turtle\s*\n', '', content, flags=re.MULTILINE)
+        content = re.sub(r'\n```\s*$', '', content, flags=re.MULTILINE)
+        content = re.sub(r'^```\s*$', '', content, flags=re.MULTILINE)
+
+        # Mọi subject bắt đầu bằng kg: ở đầu dòng được coi là "đã định nghĩa"
+        # Không phụ thuộc vào việc có type a owl:... hay không
+        for match in re.finditer(r'(?m)^(kg:(\w+))\s', content):
+            defined_terms.add(match.group(2))
     
     return defined_terms
 
@@ -92,20 +97,7 @@ def extract_ttl_usage(ttl_dir: str) -> Counter:
             
     return terms_used
 
-def categorize_property(prop_name: str) -> str:
-    """Phân loại property dựa trên tên."""
-    object_prop_indicators = [
-        'has', 'plays', 'manages', 'owns', 'participates', 'located', 'birth', 'nationality',
-        'home', 'away', 'venue', 'referee', 'coach', 'owner', 'member', 'captain', 'loaned',
-        'sponsor', 'rival', 'previous', 'new', 'old', 'current', 'best', 'top', 'most'
-    ]
-    
-    prop_lower = prop_name.lower()
-    for indicator in object_prop_indicators:
-        if indicator in prop_lower:
-            return 'ObjectProperty'
-    
-    return 'DatatypeProperty'
+# Bỏ phân loại property/class: chỉ cần có định nghĩa tối thiểu là đủ
 
 def is_effectively_empty_ttl(content: str) -> bool:
     """Kiểm tra file TTL có 'trống' không: có thể có prefix/BASE/PREFIX, comment, dòng trắng
@@ -211,9 +203,7 @@ def create_additional_ontology(defined_terms: Set[str],
     if missing_terms:
         content.append("# Missing Terms (được sử dụng nhưng chưa định nghĩa)")
         for term_name, usage_count in missing_terms:
-            prop_type = categorize_property(term_name)
-            content.append(f"kg:{term_name} a owl:{prop_type} ;")
-            content.append(f"  rdfs:label \"{term_name}\"@en , \"{term_name}\"@vi ;")
+            content.append(f"kg:{term_name} rdfs:label \"{term_name}\"@en , \"{term_name}\"@vi ;")
             content.append(f"  rdfs:comment \"Used {usage_count} times in data\"@en .")
             content.append("")
     

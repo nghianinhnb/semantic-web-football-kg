@@ -1,0 +1,40 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Curaçao a kg:Team ;
+kg:teamName "Curaçao" ;
+kg:teamAbbreviation "CUW" ;
+kg:hasCoach res:person/Guus_Hiddink ;
+kg:hasCaptain res:player/Cuco_Martina ;
+kg:homeStadium res:stadium/Sân_vận_động_Ergilio_Hato ;
+kg:locatedIn res:country/Curaçao .
+
+res:person/Guus_Hiddink a kg:Coach ;
+kg:manages res:team/Curaçao .
+
+res:player/Cuco_Martina a kg:Player ;
+kg:playsFor res:team/Curaçao ;
+kg:primaryPosition kg:Midfielder ;
+kg:isCaptain res:team/Curaçao .
+
+res:stadium/Sân_vận_động_Ergilio_Hato a kg:Stadium ;
+kg:isHomeOf res:team/Curaçao .
+
+res:country/Curaçao a kg:Country .
+
+res:team/Curaçao kg:locatedIn res:country/Curaçao .
+
+res:team/Curaçao kg:hasCoach res:person/Guus_Hiddink .
+
+res:person/Guus_Hiddink kg:manages res:team/Curaçao .
+
+res:player/Cuco_Martina kg:playsFor res:team/Curaçao .
+
+res:player/Cuco_Martina kg:primaryPosition kg:Midfielder .
+
+res:player/Cuco_Martina kg:isCaptain res:team/Curaçao .
+
+res:stadium/Sân_vận_động_Ergilio_Hato kg:isHomeOf res:team/Curaçao .

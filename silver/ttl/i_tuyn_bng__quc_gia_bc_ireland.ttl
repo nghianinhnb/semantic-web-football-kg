@@ -1,0 +1,119 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/North_Ireland a kg:Team ;
+kg:teamName "Bắc Ireland" ;
+kg:hasCoach res:coach/Ian_Baraclough ;
+kg:hasCaptain res:player/Steven_Davis ;
+kg:homeStadium res:stadium/Windsor_Park .
+
+res:coach/Ian_Baraclough a kg:Coach ;
+kg:manages res:team/North_Ireland .
+
+res:player/Steven_Davis a kg:Player ;
+kg:playsFor res:team/North_Ireland ;
+kg:isCaptain res:team/North_Ireland ;
+kg:shirtNumber 12 ;
+kg:primaryPosition kg:Midfielder .
+
+res:stadium/Windsor_Park a kg:Stadium ;
+kg:isHomeOf res:team/North_Ireland .
+
+res:player/David_Healy a kg:Player ;
+kg:playsFor res:team/North_Ireland ;
+kg:primaryPosition kg:Forward ;
+kg:topScorer true .
+
+res:team/North_Ireland kg:mostCaps res:player/Steven_Davis .
+
+res:team/North_Ireland kg:topScorer res:player/David_Healy .
+
+res:team/North_Ireland kg:FIFA_Trigramme "NIR" ;
+kg:nickname "Đội quân xanh trắng, Norn Iron" ;
+kg:association res:organization/Northern_Ireland_Football_Association ;
+kg:confederation res:organization/UEFA ;
+kg:FIFARank "129"^^xsd:integer ;
+kg:FIFAMax 20 ;
+kg:FIFAMaxDate "2017-09"^^xsd:gYearMonth ;
+kg:FIFAMin 129 ;
+kg:FIFAMinDate "2012-09"^^xsd:gYearMonth ;
+kg:EloRank "114"^^xsd:integer ;
+kg:EloMax 5 ;
+kg:EloMaxDate "1982"^^xsd:gYear ;
+kg:EloMin 114 ;
+kg:EloMinDate "2013-11-10"^^xsd:date .
+
+res:organization/Northern_Ireland_Football_Association a kg:Organization .
+
+res:organization/UEFA a kg:Organization .
+
+res:team/North_Ireland kg:firstGame "1882-02-18"^^xsd:date ;
+kg:largestWin "1930-02-01"^^xsd:date ;
+kg:largestLoss "1882-02-18"^^xsd:date .
+
+res:team/North_Ireland kg:worldCupApps 3 ;
+kg:worldCupFirst "1958"^^xsd:gYear ;
+kg:worldCupBest "Tứ kết" .
+
+res:team/North_Ireland kg:regionalCupApps 1 ;
+kg:regionalCupFirst "2016"^^xsd:gYear ;
+kg:regionalCupBest "Vòng 16 đội" .
+
+res:team/North_Ireland kg:participatesIn res:competition/FIFA_World_Cup_1958 ;
+kg:participatesIn res:competition/FIFA_World_Cup_1982 .
+
+res:competition/FIFA_World_Cup_1958 a kg:Competition ;
+kg:competitionName "Giải bóng đá vô địch thế giới 1958" .
+
+res:competition/FIFA_World_Cup_1982 a kg:Competition ;
+kg:competitionName "Giải bóng đá vô địch thế giới 1982" .
+
+res:team/North_Ireland kg:participatesIn res:competition/Euro_2016 .
+
+res:competition/Euro_2016 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá châu Âu 2016" .
+
+res:team/North_Ireland kg:participatesIn res:competition/UEFA_Nations_League_2018–19 ;
+kg:participatesIn res:competition/UEFA_Nations_League_2020–21 ;
+kg:participatesIn res:competition/UEFA_Nations_League_2022–23 .
+
+res:competition/UEFA_Nations_League_2018–19 a kg:Competition ;
+kg:competitionName "UEFA Nations League 2018–19" .
+
+res:competition/UEFA_Nations_League_2020–21 a kg:Competition ;
+kg:competitionName "UEFA Nations League 2020–21" .
+
+res:competition/UEFA_Nations_League_2022–23 a kg:Competition ;
+kg:competitionName "UEFA Nations League 2022–23" .
+
+res:team/North_Ireland kg:participatesIn res:season/UEFA_Nations_League_2018–19 ;
+kg:participatesIn res:season/UEFA_Nations_League_2020–21 ;
+kg:participatesIn res:season/UEFA_Nations_League_2022–23 .
+
+res:season/UEFA_Nations_League_2018–19 a kg:Season ;
+kg:seasonOf res:competition/UEFA_Nations_League_2018–19 .
+
+res:season/UEFA_Nations_League_2020–21 a kg:Season ;
+kg:seasonOf res:competition/UEFA_Nations_League_2020–21 .
+
+res:season/UEFA_Nations_League_2022–23 a kg:Season ;
+kg:seasonOf res:competition/UEFA_Nations_League_2022–23 .
+
+res:team/North_Ireland kg:participatesIn res:season/FIFA_World_Cup_1958 ;
+kg:participatesIn res:season/FIFA_World_Cup_1982 .
+
+res:season/FIFA_World_Cup_1958 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup_1958 .
+
+res:season/FIFA_World_Cup_1982 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup_1982 .
+
+res:team/North_Ireland kg:participatesIn res:season/Euro_2016 .
+
+res:season/Euro_2016 a kg:Season ;
+kg:seasonOf res:competition/Euro_2016 .
+
+res:team/North_Ireland kg:participatesIn res:season/Euro_2016 .

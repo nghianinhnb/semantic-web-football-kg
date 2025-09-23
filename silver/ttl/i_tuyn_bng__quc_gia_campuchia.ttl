@@ -1,0 +1,177 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Campuchia a kg:Team ;
+kg:teamName "Campuchia" ;
+kg:teamAbbreviation "CAM" ;
+kg:hasCoach res:coach/Gyotoku_Koji ;
+kg:hasCaptain res:player/Soeuy_Visal ;
+kg:hasViceCaptain res:player/Kouch_Sokumpheak ;
+kg:mostCaps res:player/Kouch_Sokumpheak ;
+kg:topScorer res:player/Hok_Sochetra ;
+kg:homeStadium res:stadium/San_Van_Dong_Quoc_Gia_Morodok_Techo, res:stadium/San_Van_Dong_Olympic_Phnom_Penh ;
+kg:fifaRank "198"^^xsd:integer ;
+kg:fifaMax "153"^^xsd:integer ;
+kg:fifaMaxDate "1974-03-03"^^xsd:date ;
+kg:fifaMin "198"^^xsd:integer ;
+kg:fifaMinDate "2014-08-01"^^xsd:date ;
+kg:eloRank "220"^^xsd:integer ;
+kg:eloMax "109"^^xsd:integer ;
+kg:eloMaxDate "1974-16-23"^^xsd:date ;
+kg:eloMin "220"^^xsd:integer ;
+kg:eloMinDate "2014-07-01"^^xsd:date ;
+kg:confederation res:organization/AFC ;
+kg:subConfederation res:organization/ASEAN ;
+kg:affiliation res:organization/Football_Federation_of_Cambodia ;
+kg:firstGame "1956-03-07"^^xsd:date ;
+kg:largestWin "11–0" ;
+kg:largestLoss "0–14" ;
+kg:worldCupApps 0 ;
+kg:regionalCupApps 1 ;
+kg:regionalCupFirst "1972" ;
+kg:regionalCupBest "Hạng tư" .
+
+res:stadium/San_Van_Dong_Quoc_Gia_Morodok_Techo a kg:Stadium ;
+kg:name "Sân vận động Quốc gia Morodok Techo" .
+
+res:stadium/San_Van_Dong_Olympic_Phnom_Penh a kg:Stadium ;
+kg:name "Sân vận động Olympic Phnôm Pênh" .
+
+res:organization/AFC a kg:Organization ;
+kg:name "Liên đoàn bóng đá châu Á" .
+
+res:organization/ASEAN a kg:Organization ;
+kg:name "Liên đoàn bóng đá Đông Nam Á" .
+
+res:organization/Football_Federation_of_Cambodia a kg:Organization ;
+kg:name "Liên đoàn Bóng đá Campuchia" .
+
+res:coach/Gyotoku_Koji a kg:Coach ;
+kg:name "Gyotoku Koji" ;
+kg:manages res:team/Campuchia .
+
+res:player/Soeuy_Visal a kg:Player ;
+kg:name "Soeuy Visal" ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 10 ;
+kg:isCaptain res:team/Campuchia .
+
+res:player/Kouch_Sokumpheak a kg:Player ;
+kg:name "Kouch Sokumpheak" ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 10 ;
+kg:mostCaps 65 .
+
+res:player/Hok_Sochetra a kg:Player ;
+kg:name "Hok Sochetra" ;
+kg:primaryPosition kg:Forward ;
+kg:topScorer 20 .
+
+res:player/Soeuy_Visal a kg:Player ;
+kg:name "Soeuy Visal" .
+
+res:player/Kouch_Sokumpheak a kg:Player ;
+kg:name "Kouch Sokumpheak" .
+
+res:player/Um_Vichet a kg:Player ;
+kg:name "Um Vichet" ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 22 .
+
+res:player/Sareth_Krya a kg:Player ;
+kg:name "Sareth Krya" ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 4 .
+
+res:player/Phat_Sokha a kg:Player ;
+kg:name "Phat Sokha" ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 5 .
+
+res:player/Leng_Nora a kg:Player ;
+kg:name "Leng Nora" ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 12 .
+
+res:player/Sareth_Krya a kg:Player ;
+kg:name "Sareth Krya" ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 13 .
+
+res:player/Ouk_Sovann a kg:Player ;
+kg:name "Ouk Sovann" ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 18 .
+
+res:player/Im_Vakhim a kg:Player ;
+kg:name "Im Vakhim" ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 24 .
+
+res:player/Chou_Sinti a kg:Player ;
+kg:name "Chou Sinti" ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 2 .
+
+res:player/In_Sodavid a kg:Player ;
+kg:name "In Sodavid" ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 6 .
+
+res:player/Bong_Samuel a kg:Player ;
+kg:name "Bong Samuel" ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 15 .
+
+res:player/Kim_Sokyuth a kg:Player ;
+kg:name "Kim Sokyuth" ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 16 .
+
+res:player/Sin_Kakada a kg:Player ;
+kg:name "Sin Kakada" ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 17 .
+
+res:player/Sin_Sovannmakara a kg:Player ;
+kg:name "Sin Sovannmakara" ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 19 .
+
+res:player/Min_Ratanak a kg:Player ;
+kg:name "Min Ratanak" ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 26 .
+
+res:player/Lim_Pisoth a kg:Player ;
+kg:name "Lim Pisoth" ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 7 .
+
+res:player/Nhean_Sosidan a kg:Player ;
+kg:name "Nhean Sosidan" ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 8 .
+
+res:player/Sieng_Chanthea a kg:Player ;
+kg:name "Sieng Chanthea" ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 9 .
+
+res:player/Hav_Soknet a kg:Player ;
+kg:name "Hav Soknet" ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 10 .
+
+res:player/Sa_Ty a kg:Player ;
+kg:name "Sa Ty" ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 17 .
+
+res:player/Khoan_Soben a kg:Player ;
+kg:name "Khoan Soben" ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 23 .
