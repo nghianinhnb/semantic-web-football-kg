@@ -1,0 +1,187 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Ao a kg:teamName "Áo"^^xsd:string ;
+a kg:Team ;
+kg:hasCoach res:coach/Irene_Fuhrmann ;
+kg:manages res:coach/Irene_Fuhrmann ;
+kg:locatedIn res:country/Ao ;
+kg:participatesIn res:competition/Euro_2017 .
+
+res:coach/Irene_Fuhrmann a kg:Coach ;
+kg:manages res:team/Ao .
+
+res:player/Carina_Wenninger a kg:Player ;
+kg:playsFor res:team/Ao .
+
+res:player/Sarah_Puntigam a kg:Player ;
+kg:playsFor res:team/Ao ;
+kg:mostCaps "126"^^xsd:positiveInteger .
+
+res:player/Nina_Burger a kg:Player ;
+kg:playsFor res:team/Ao ;
+kg:topScorer "53"^^xsd:positiveInteger .
+
+res:country/Ao a kg:Country ;
+kg:locatedIn res:country/Ao ;
+kg:hasTeam res:team/Ao .
+
+res:competition/Euro_2017 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ châu Âu"^^xsd:string ;
+kg:heldIn res:country/Ao ;
+kg:participantCount "13"^^xsd:positiveInteger ;
+kg:bestResult "Bán kết"^^xsd:string .
+
+res:match/First_Game_Ao_vs_Mex_1970 a kg:Match ;
+kg:homeTeam res:team/Mexico ;
+kg:awayTeam res:team/Ao ;
+kg:result "9–0"^^xsd:string ;
+kg:venue res:place/Bari ;
+kg:kickoffTime "1970-07-06"^^xsd:date .
+
+res:match/Largest_Win_Ao_vs_Arm_2003 a kg:Match ;
+kg:homeTeam res:team/Ao ;
+kg:awayTeam res:team/Armenia ;
+kg:result "11–0"^^xsd:string ;
+kg:venue res:place/Waidhofen_an_der_Ybbs ;
+kg:kickoffTime "2003-05-10"^^xsd:date .
+
+res:match/Largest_Loss_Ao_vs_Mex_1970 a kg:Match ;
+kg:homeTeam res:team/Mexico ;
+kg:awayTeam res:team/Ao ;
+kg:result "9–0"^^xsd:string ;
+kg:venue res:place/Bari ;
+kg:kickoffTime "1970-07-06"^^xsd:date .
+
+res:match/Largest_Loss_Ao_vs_Sui_1970 a kg:Match ;
+kg:homeTeam res:team/Switzerland ;
+kg:awayTeam res:team/Ao ;
+kg:result "9–0"^^xsd:string ;
+kg:kickoffTime "1970-11-08"^^xsd:date .
+
+res:season/Euro_2017 a kg:Season ;
+kg:seasonOf res:competition/Euro_2017 ;
+kg:participatesIn res:team/Ao ;
+kg:pld "5"^^xsd:positiveInteger ;
+kg:w "2"^^xsd:positiveInteger ;
+kg:l "3"^^xsd:positiveInteger ;
+kg:gf "5"^^xsd:positiveInteger ;
+kg:ga "1"^^xsd:positiveInteger .
+
+res:place/Bari a kg:City ;
+kg:locatedIn res:country/Italy .
+
+res:place/Waidhofen_an_der_Ybbs a kg:City ;
+kg:locatedIn res:country/Ao .
+
+res:team/Mexico a kg:Team ;
+kg:teamName "Mexico"^^xsd:string .
+
+res:team/Armenia a kg:Team ;
+kg:teamName "Armenia"^^xsd:string .
+
+res:team/Switzerland a kg:Team ;
+kg:teamName "Switzerland"^^xsd:string .
+
+res:country/Italy a kg:Country ;
+kg:locatedIn res:country/Italy .
+
+res:competition/World_Cup a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ thế giới"^^xsd:string ;
+kg:heldIn res:country/Ao ;
+kg:participantCount "9"^^xsd:positiveInteger .
+
+res:season/World_Cup_2023 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+kg:participatesIn res:team/Ao ;
+kg:result "Không vượt qua vòng loại"^^xsd:string .
+
+res:season/World_Cup_2019 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+kg:participatesIn res:team/Ao ;
+kg:result "Không vượt qua vòng loại"^^xsd:string .
+
+res:season/World_Cup_2015 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+kg:participatesIn res:team/Ao ;
+kg:result "Không vượt qua vòng loại"^^xsd:string .
+
+res:season/World_Cup_2011 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+kg:participatesIn res:team/Ao ;
+kg:result "Không vượt qua vòng loại"^^xsd:string .
+
+res:season/World_Cup_2007 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+kg:participatesIn res:team/Ao ;
+kg:result "Không vượt qua vòng loại"^^xsd:string .
+
+res:season/World_Cup_2003 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+kg:participatesIn res:team/Ao ;
+kg:result "Không vượt qua vòng loại"^^xsd:string .
+
+res:season/World_Cup_1999 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+kg:participatesIn res:team/Ao ;
+kg:result "Không vượt qua vòng loại"^^xsd:string .
+
+res:season/World_Cup_1995 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+kg:participatesIn res:team/Ao ;
+kg:result "Không vượt qua vòng loại"^^xsd:string .
+
+res:season/World_Cup_1991 a kg:Season ;
+kg:seasonOf res:competition/World_Cup ;
+kg:participatesIn res:team/Ao ;
+kg:result "Không tham dự"^^xsd:string .
+
+res:season/Euro_2021 a kg:Season ;
+kg:seasonOf res:competition/Euro_2017 ;
+kg:participatesIn res:team/Ao ;
+kg:pld "4"^^xsd:positiveInteger ;
+kg:w "2"^^xsd:positiveInteger ;
+kg:l "0"^^xsd:positiveInteger ;
+kg:gf "2"^^xsd:positiveInteger ;
+kg:ga "3"^^xsd:positiveInteger ;
+
+res:competition/Euro_2017 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ châu Âu"^^xsd:string ;
+kg:heldIn res:country/Ao ;
+kg:participantCount "13"^^xsd:positiveInteger .
+
+res:season/Euro_2017 a kg:Season ;
+kg:seasonOf res:competition/Euro_2017 ;
+kg:participatesIn res:team/Ao ;
+kg:pld "5"^^xsd:positiveInteger ;
+kg:w "2"^^xsd:positiveInteger ;
+kg:l "3"^^xsd:positiveInteger ;
+kg:gf "5"^^xsd:positiveInteger ;
+kg:ga "1"^^xsd:positiveInteger .
+
+res:season/Euro_2021 a kg:Season ;
+kg:seasonOf res:competition/Euro_2017 ;
+kg:participatesIn res:team/Ao ;
+kg:pld "4"^^xsd:positiveInteger ;
+kg:w "2"^^xsd:positiveInteger ;
+kg:l "0"^^xsd:positiveInteger ;
+kg:gf "2"^^xsd:positiveInteger ;
+kg:ga "3"^^xsd:positiveInteger ;
+kg:bestResult "Tứ kết"^^xsd:string .
+
+res:team/Ao kg:FIFA_Rank "20"^^xsd:positiveInteger ;
+kg:FIFA_Max "20"^^xsd:positiveInteger ;
+kg:FIFA_Min "48"^^xsd:positiveInteger ;
+kg:FIFA_Max_Date "2017-09-01"^^xsd:date , "2022-08-01"^^xsd:date ;
+kg:FIFA_Min_Date "2003-07-01"^^xsd:date .
+
+res:team/Ao kg:association res:organization/Austrian_Football_Association ;
+kg:confederation res:organization/UEFA .
+
+res:organization/Austrian_Football_Association a kg:Organization ;
+kg:name "Österreichischer Fußball-Bund"^^xsd:string .
+
+res:organization/UEFA a kg:Organization ;
+kg:name "Union of European Football Associations"^^xsd:string .

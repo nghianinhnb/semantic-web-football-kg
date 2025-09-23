@@ -1,0 +1,134 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Uraguay a kg:Team ;
+kg:teamName "Uruguay" ;
+kg:hasCoach res:coach/Fernando_Rosa ;
+kg:locatedIn res:country/Uruguay .
+
+res:country/Uruguay a kg:Country ;
+rdfs:label "Uruguay" .
+
+res:coach/Fernando_Rosa a kg:Coach ;
+kg:manages res:team/Uraguay .
+
+res:team/Uraguay kg:teamAbbreviation "URU" ;
+kg:teamName "Uruguay" ;
+kg:locatedIn res:country/Uruguay .
+
+res:team/Uraguay kg:hasCoach res:coach/Fernano_Rosa .
+
+res:player/Gustavo_Sebe a kg:Player ;
+kg:shirtNumber 1 ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Fabricio_Vallarino a kg:Player ;
+kg:shirtNumber 6 ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Gonzalo_Rosa a kg:Player ;
+kg:shirtNumber 11 ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Diego_Pastoriza a kg:Player ;
+kg:shirtNumber 3 ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Pampero a kg:Player ;
+kg:shirtNumber 5 ;
+kg:primaryPosition res:position/Midfielder .
+
+res:player/Richard_Catardo a kg:Player ;
+kg:shirtNumber 4 ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Germán_Parrillo a kg:Player ;
+kg:shirtNumber 2 ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Martin_Diaz a kg:Player ;
+kg:shirtNumber 8 ;
+kg:primaryPosition res:position/Midfielder .
+
+res:player/Ricardo_Martinez a kg:Player ;
+kg:shirtNumber 9 ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Matías_Isaías_Cabrera a kg:Player ;
+kg:shirtNumber 10 ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Marcelo_Capurro a kg:Player ;
+kg:shirtNumber 7 ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Leandro_Ortiz a kg:Player ;
+kg:shirtNumber 12 ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+rdfs:label "Goalkeeper" .
+
+res:position/Defender a kg:Defender ;
+rdfs:label "Defender" .
+
+res:position/Midfielder a kg:Midfielder ;
+rdfs:label "Midfielder" .
+
+res:position/Forward a kg:Forward ;
+rdfs:label "Forward" .
+
+res:competition/World_Beach_Soccer_Championship a kg:Competition ;
+rdfs:label "Giải vô địch bóng đá bãi biển thế giới" .
+
+res:competition/CONMEBOL_Beautiful_Game a kg:Competition ;
+rdfs:label "Giải vô địch bóng đá bãi biển Nam Mỹ" .
+
+res:team/Uraguay kg:participatesIn res:season/2006 ;
+kg:participatesIn res:season/2005 ;
+kg:participatesIn res:season/2007 ;
+kg:participatesIn res:season/2009 ;
+kg:participatesIn res:season/1999 ;
+kg:participatesIn res:season/2011 .
+
+res:season/2006 a kg:Season ;
+kg:seasonOf res:competition/World_Beach_Soccer_Championship .
+
+res:season/2005 a kg:Season ;
+kg:seasonOf res:competition/CONMEBOL_Beautiful_Game .
+
+res:season/2007 a kg:Season ;
+kg:seasonOf res:competition/CONMEBOL_Beautiful_Game .
+
+res:season/2009 a kg:Season ;
+kg:seasonOf res:competition/CONMEBOL_Beautiful_Game .
+
+res:season/1999 a kg:Season ;
+kg:seasonOf res:competition/Mundialito_de_Futebol_de_Praia .
+
+res:season/2011 a kg:Season ;
+kg:seasonOf res:competition/Copa_Latina .
+
+res:competition/World_Beach_Soccer_Championship kg:participantCount 10 ;
+kg:bestResult "Á quân" ;
+kg:heldIn res:country/Uruguay .
+
+res:competition/CONMEBOL_Beautiful_Game kg:bestResult "Á quân" ;
+kg:heldIn res:country/Uruguay .
+
+res:competition/Mundialito_de_Futebol_de_Praia kg:bestResult "Hạng ba" ;
+kg:heldIn res:country/Uruguay .
+
+res:competition/Copa_Latina kg:bestResult "Vô địch" ;
+kg:heldIn res:country/Uruguay .
+
+res:coach/Fernando_Rosa a kg:Coach ;
+kg:manages res:team/Uraguay .
+
+res:assistant_coach/Pablo_Sanguinetti a kg:AssistantCoach ;
+kg:assists res:coach/Fernando_Rosa .
+
+res:representative/Kevork_Kouyoumdjian a kg:Representative ;
+kg:represents res:team/Uraguay .

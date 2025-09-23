@@ -1,0 +1,138 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Israel_Beach_Soccer_National_Team a kg:Team ;
+kg:teamName "Israel" ;
+kg:hasCoach res:coach/Mamon_Amer ;
+kg:manages res:coach/Mamon_Amer ;
+kg:locatedIn res:country/Israel .
+
+res:coach/Mamon_Amer a kg:Coach ;
+kg:name "Mamon Amer" .
+
+res:coach/Liron_Fartook a kg:AssistantCoach ;
+kg:name "Liron Fartook" .
+
+res:team/Israel_Beach_Soccer_National_Team kg:homeStadium res:stadium/Arena_Ido_Keren_Stadium .
+
+res:stadium/Arena_Ido_Keren_Stadium a kg:Stadium ;
+kg:locatedIn res:city/Netanya ;
+kg:capacity 10000 .  # giả định dựa trên thông tin mô tả "Poleg Beach, Netanya"
+
+res:player/Tzahi_Ilos a kg:Player ;
+kg:name "Tzahi Ilos" ;
+kg:playsFor res:team/Israel_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+kg:mostCaps 37 ;
+kg:topScorer 96 .
+
+res:player/Assaf_Raz a kg:Player ;
+kg:name "Assaf Raz" ;
+kg:playsFor res:team/Israel_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/Nisan_Revivo a kg:Player ;
+kg:name "Nisan Revivo" ;
+kg:playsFor res:team/Israel_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 3 .
+
+res:player/Alon_Levi a kg:Player ;
+kg:name "Alon Levi" ;
+kg:playsFor res:team/Israel_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 .
+
+res:player/Sharon_Gormezano a kg:Player ;
+kg:name "Sharon Gormezano" ;
+kg:playsFor res:team/Israel_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 5 .
+
+res:player/Yakir_Shina a kg:Player ;
+kg:name "Yakir Shina" ;
+kg:playsFor res:team/Israel_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 .
+
+res:player/Adam_Lam a kg:Player ;
+kg:name "Adam Lam" ;
+kg:playsFor res:team/Israel_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 .
+
+res:player/Muhammad_Noor_Sarsur a kg:Player ;
+kg:name "Muhammad \"Noor\" Sarsur" ;
+kg:playsFor res:team/Israel_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 8 .
+
+res:player/Vitali_Ganon a kg:Player ;
+kg:name "Vitali Ganon" ;
+kg:playsFor res:team/Israel_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 11 .
+
+res:player/Ben_Volovelski a kg:Player ;
+kg:name "Ben Volovelski" ;
+kg:playsFor res:team/Israel_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 18 .
+
+res:position/Goalkeeper a kg:Position ;
+rdfs:label "Goalkeeper" .
+
+res:position/Defender a kg:Position ;
+rdfs:label "Defender" .
+
+res:position/Midfielder a kg:Position ;
+rdfs:label "Midfielder" .
+
+res:position/Forward a kg:Position ;
+rdfs:label "Forward" .
+
+res:city/Netanya a kg:City ;
+kg:locatedIn res:country/Israel .
+
+res:country/Israel a kg:Country ;
+rdfs:label "Israel" .
+
+res:team/Israel_Beach_Soccer_National_Team kg:participatesIn res:season/2007_EBSL_Preliminary_Event_Athens ;
+
+res:season/2007_EBSL_Preliminary_Event_Athens a kg:Season ;
+kg:competitionName "EBSL Preliminary Event Athens" ;
+kg:heldIn res:country/Greece ;
+kg:participantCount 16 ;
+kg:result "Á quân in Vòng bảng, not promoted" .
+
+res:team/Israel_Beach_Soccer_National_Team kg:participatesIn res:season/2008_Challenge_Cup_Netanya ;
+
+res:season/2008_Challenge_Cup_Netanya a kg:Season ;
+kg:competitionName "Challenge Cup Netanya" ;
+kg:heldIn res:country/Israel ;
+kg:result "Vô địch" .
+
+res:team/Israel_Beach_Soccer_National_Team kg:participatesIn res:season/2009_World_Beach_Soccer_Championship_Qualification ;
+
+res:season/2009_World_Beach_Soccer_Championship_Qualification a kg:Season ;
+kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới" ;
+kg:heldIn res:country/Israel ;
+kg:result "Promoted from Vòng bảng" .
+
+res:team/Israel_Beach_Soccer_National_Team kg:participatesIn res:season/2010_World_Beach_Soccer_Championship_Qualification ;
+
+res:season/2010_World_Beach_Soccer_Championship_Qualification a kg:Season ;
+kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới" ;
+kg:heldIn res:country/Israel ;
+kg:result "Hạng ba in Vòng bảng, not promoted" .
+
+res:team/Israel_Beach_Soccer_National_Team kg:participatesIn res:season/2010_EBSL ;
+
+res:season/2010_EBSL a kg:Season ;
+kg:competitionName "EBSL" ;
+kg:heldIn res:country/Israel ;
+kg:result "clinched to final berth, Hạng ba in Division B (Promotional Final)" .

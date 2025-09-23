@@ -1,0 +1,92 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Somalia_Beach_Football_National_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Somalia" ;
+kg:teamAbbreviation "SOM" ;
+kg:hasCoach res:coach/Ahmed_Mohamed_Ahmed ;
+kg:locatedIn res:country/Somalia .
+
+res:country/Somalia a kg:Country ;
+rdfs:label "Somalia" .
+
+res:coach/Ahmed_Mohamed_Ahmed a kg:Coach ;
+kg:manages res:team/Somalia_Beach_Football_National_Team ;
+rdfs:label "Ahmed Mohamed Ahmed" .
+
+res:player/Adurahman_Munir a kg:Player ;
+kg:playsFor res:team/Somalia_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 ;
+rdfs:label "Adurahman Munir" .
+
+res:player/Samatar_Mustafa a kg:Player ;
+kg:playsFor res:team/Somalia_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 2 ;
+rdfs:label "Samatar Mustafa" .
+
+res:player/Mukhtar_Abdi a kg:Player ;
+kg:playsFor res:team/Somalia_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 ;
+rdfs:label "Mukhtar Abdi" .
+
+res:player/Mohamed_Jamal a kg:Player ;
+kg:playsFor res:team/Somalia_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 ;
+rdfs:label "Mohamed Jamal" .
+
+res:player/Kropf_Pascal a kg:Player ;
+kg:playsFor res:team/Somalia_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 ;
+rdfs:label "Kropf Pascal" .
+
+res:player/Abukar_Mohamed a kg:Player ;
+kg:playsFor res:team/Somalia_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 6 ;
+rdfs:label "Abukar Mohamed" .
+
+res:player/Xaaji_Nuur_Maxamed a kg:Player ;
+kg:playsFor res:team/Somalia_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 7 ;
+rdfs:label "Xaaji Nuur Maxamed" .
+
+res:player/Abas_Geesey a kg:Player ;
+kg:playsFor res:team/Somalia_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 8 ;
+rdfs:label "Abas Geesey" .
+
+res:player/Abdi_Hamdi a kg:Player ;
+kg:playsFor res:team/Somalia_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 9 ;
+rdfs:label "Abdi Hamdi" .
+
+res:player/Abdulkadir_Khadar a kg:Player ;
+kg:playsFor res:team/Somalia_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+rdfs:label "Abdulkadir Khadar" .
+
+res:player/Liban_Fanax_Muhidin a kg:Player ;
+kg:playsFor res:team/Somalia_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 11 ;
+rdfs:label "Liban\"Fanax\" Muhidin" .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+rdfs:label "Goalkeeper" .
+
+res:position/Forward a kg:Forward ;
+rdfs:label "Forward" .
+
+res:position/Defender a kg:Defender ;
+rdfs:label "Defender" .

@@ -1,0 +1,172 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Bangladesh_National_Female_Football_Team a kg:Team ;
+kg:teamName "Bangladesh National Female Football Team" ;
+kg:hasCoach res:coach/Golam_Rabbani ;
+kg:manages res:coach/Golam_Rabbani ;
+kg:homeStadium res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:locatedIn res:country/Bangladesh .
+
+res:coach/Golam_Rabbani a kg:Coach ;
+kg:manages res:team/Bangladesh_National_Female_Football_Team .
+
+res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal a kg:Stadium ;
+kg:isHomeOf res:team/Bangladesh_National_Female_Football_Team .
+
+res:country/Bangladesh a kg:Country ;
+kg:locatedIn res:region/South_Asia .
+
+res:team/Bangladesh_National_Female_Football_Team kg:participatesIn res:competition/South_Asian_Federation_Games_2010 ;
+kg:participatesIn res:competition/SAF_Women_s_Championship_2016 .
+
+res:competition/South_Asian_Federation_Games_2010 a kg:Competition ;
+kg:competitionName "South Asian Federation Games 2010" ;
+kg:organizes res:event/South_Asian_Federation_Games_2010_Womens_Football ;
+
+res:competition/SAF_Women_s_Championship_2016 a kg:Competition ;
+kg:competitionName "SAF Women's Championship 2016" ;
+kg:organizes res:event/SAF_Women_s_Championship_2016_Womens_Football .
+
+res:event/South_Asian_Federation_Games_2010_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/Nepal_National_Female_Football_Team ;
+kg:kickoffTime "2010-01-29"^^xsd:date ;
+kg:venue res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:result "0–1" .
+
+res:event/SAF_Women_s_Championship_2016_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/Pakistan_National_Female_Football_Team ;
+kg:kickoffTime "2016-01-01"^^xsd:date ;
+kg:venue res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:result "2–1" .
+
+res:team/Bangladesh_National_Female_Football_Team kg:participatesIn res:competition/Asian_Women_s_Championship_2010 ;
+kg:participatesIn res:competition/Asian_Women_s_Championship_2014 ;
+kg:participatesIn res:competition/Asian_Women_s_Championship_2018 .
+
+res:competition/Asian_Women_s_Championship_2010 a kg:Competition ;
+kg:competitionName "Asian Women's Championship 2010" ;
+kg:organizes res:event/Asian_Women_s_Championship_2010_Womens_Football .
+
+res:competition/Asian_Women_s_Championship_2014 a kg:Competition ;
+kg:competitionName "Asian Women's Championship 2014" ;
+kg:organizes res:event/Asian_Women_s_Championship_2014_Womens_Football .
+
+res:competition/Asian_Women_s_Championship_2018 a kg:Competition ;
+kg:competitionName "Asian Women's Championship 2018" ;
+kg:organizes res:event/Asian_Women_s_Championship_2018_Womens_Football .
+
+res:event/Asian_Women_s_Championship_2010_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/Bhutan_National_Female_Football_Team ;
+kg:kickoffTime "2010-12-15"^^xsd:date ;
+kg:venue res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:result "9–0" .
+
+res:event/Asian_Women_s_Championship_2014_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/India_National_Female_Football_Team ;
+kg:kickoffTime "2014-01-01"^^xsd:date ;
+kg:venue res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:result "0–1" .
+
+res:event/Asian_Women_s_Championship_2018_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/Sri_Lanka_National_Female_Football_Team ;
+kg:kickoffTime "2018-01-01"^^xsd:date ;
+kg:venue res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:result "2–1" .
+
+res:team/Bangladesh_National_Female_Football_Team kg:participatesIn res:competition/FIFA_Womens_World_Cup_2015 ;
+kg:participatesIn res:competition/FIFA_Womens_World_Cup_2019 .
+
+res:competition/FIFA_Womens_World_Cup_2015 a kg:Competition ;
+kg:competitionName "FIFA Womens World Cup 2015" ;
+kg:organizes res:event/FIFA_Womens_World_Cup_2015_Womens_Football .
+
+res:competition/FIFA_Womens_World_Cup_2019 a kg:Competition ;
+kg:competitionName "FIFA Womens World Cup 2019" ;
+kg:organizes res:event/FIFA_Womens_World_Cup_2019_Womens_Football .
+
+res:event/FIFA_Womens_World_Cup_2015_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/Thailand_National_Female_Football_Team ;
+kg:kickoffTime "2015-01-01"^^xsd:date ;
+kg:venue res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:result "0–9" .
+
+res:event/FIFA_Womens_World_Cup_2019_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/Japan_National_Female_Football_Team ;
+kg:kickoffTime "2019-01-01"^^xsd:date ;
+kg:venue res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:result "0–3" .
+
+res:team/Bangladesh_National_Female_Football_Team kg:participatesIn res:competition/Ashgabat_2016_ASIAD ;
+kg:participatesIn res:competition/Doha_2022_ASIAD ;
+kg:participatesIn res:competition/Hangzhou_2026_ASIAD .
+
+res:competition/Ashgabat_2016_ASIAD a kg:Competition ;
+kg:competitionName "Ashgabat 2016 ASIAD" ;
+kg:organizes res:event/Ashgabat_2016_ASIAD_Womens_Football .
+
+res:competition/Doha_2022_ASIAD a kg:Competition ;
+kg:competitionName "Doha 2022 ASIAD" ;
+kg:organizes res:event/Doha_2022_ASIAD_Womens_Football .
+
+res:competition/Hangzhou_2026_ASIAD a kg:Competition ;
+kg:competitionName "Hangzhou 2026 ASIAD" ;
+kg:organizes res:event/Hangzhou_2026_ASIAD_Womens_Football .
+
+res:event/Ashgabat_2016_ASIAD_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/India_National_Female_Football_Team ;
+kg:kickoffTime "2016-01-01"^^xsd:date ;
+kg:venue res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:result "2–1" .
+
+res:event/Doha_2022_ASIAD_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/China_National_Female_Football_Team ;
+kg:kickoffTime "2022-01-01"^^xsd:date ;
+kg:venue res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:result "0–1" .
+
+res:event/Hangzhou_2026_ASIAD_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/Korea_National_Female_Football_Team ;
+kg:kickoffTime "2026-01-01"^^xsd:date ;
+kg:venue res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:result "1–1" .
+
+res:team/Bangladesh_National_Female_Football_Team kg:participatesIn res:competition/Paris_2024_Olympics ;
+kg:participatesIn res:competition/Los_Angeles_2028_Olympics ;
+kg:participatesIn res:competition/Sydney_2032_Olympics .
+
+res:competition/Paris_2024_Olympics a kg:Competition ;
+kg:competitionName "Paris 2024 Olympics" ;
+kg:organizes res:event/Paris_2024_Olympics_Womens_Football .
+
+res:competition/Los_Angeles_2028_Olympics a kg:Competition ;
+kg:competitionName "Los Angeles 2028 Olympics" ;
+kg:organizes res:event/Los_Angeles_2028_Olympics_Womens_Football .
+
+res:competition/Sydney_2032_Olympics a kg:Competition ;
+kg:competitionName "Sydney 2032 Olympics" ;
+kg:organizes res:event/Sydney_2032_Olympics_Womens_Football .
+
+res:event/Paris_2024_Olympics_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/USA_National_Female_Football_Team ;
+kg:kickoffTime "2024-01-01"^^xsd:date ;
+kg:venue res:stadium/San_Van_Dong_Bir_Sherestha_Shaheed_Shipahi_Mostafa_Kamal ;
+kg:result "0–3" .
+
+res:event/Los_Angeles_2028_Olympics_Womens_Football a kg:Match ;
+kg:homeTeam res:team/Bangladesh_National_Female_Football_Team ;
+kg:awayTeam res:team/Australia_National_Female_Football_Team ;
+kg:kickoff

@@ -1,0 +1,109 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Venezuela_Beach_Soccer_National_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Venezuela" ;
+kg:teamAbbreviation "VEN" ;
+kg:hasCoach res:coach/Roberto_Cavallo ;
+kg:locatedIn res:country/Venezuela ;
+kg:participantCount "3"^^xsd:positiveInteger ;
+kg:heldIn res:country/Venezuela ;
+kg:organizedBy res:organization/FVF ;
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
+kg:bestResult "Tứ kết" ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ" ;
+kg:bestResult "Hạng ba" ;
+kg:participantCount "6"^^xsd:positiveInteger .
+
+res:coach/Roberto_Cavallo a kg:Coach ;
+kg:manages res:team/Venezuela_Beach_Soccer_National_Team .
+
+res:organization/FVF a kg:Organization ;
+kg:organizes res:competition/Giải_vô_địch_bãi_biển_thế_giới ;
+kg:organizes res:competition/Giải_vô_địch_bãi_biển_Nam_Mỹ .
+
+res:competition/Giải_vô_địch_bãi_biển_thế_giới a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
+kg:heldIn res:country/Venezuela ;
+kg:participantCount "3"^^xsd:positiveInteger .
+
+res:competition/Giải_vô_địch_bãi_biển_Nam_Mỹ a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ" ;
+kg:heldIn res:country/Venezuela ;
+kg:participantCount "6"^^xsd:positiveInteger .
+
+res:player/César_Vazquez a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "1"^^xsd:positiveInteger .
+
+res:player/Gian_Luca_Cardone a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "2"^^xsd:positiveInteger .
+
+res:player/Jose_Centeno a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "3"^^xsd:positiveInteger .
+
+res:player/Ronald_Pérez a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "4"^^xsd:positiveInteger .
+
+res:player/Pablo_Ferreira a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "5"^^xsd:positiveInteger .
+
+res:player/Kevin_Camargo a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "6"^^xsd:positiveInteger .
+
+res:player/Edgar_Quintero a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/Francisco_Landaeta a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "8"^^xsd:positiveInteger .
+
+res:player/Marcos_Monsalve a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "9"^^xsd:positiveInteger .
+
+res:player/Pedro_Romero a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "10"^^xsd:positiveInteger .
+
+res:player/Carlos_Longa a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "11"^^xsd:positiveInteger .
+
+res:player/César_Fermin a kg:Player ;
+kg:playsFor res:team/Venezuela_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "12"^^xsd:positiveInteger .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Defender ;
+rdfs:subClassOf kg:Position .
+
+res:position/Midfielder a kg:Midfielder ;
+rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Forward ;
+rdfs:subClassOf kg:Position .
+
+res:country/Venezuela a kg:Country .

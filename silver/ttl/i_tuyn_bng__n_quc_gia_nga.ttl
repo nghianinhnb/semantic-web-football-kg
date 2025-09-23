@@ -1,0 +1,203 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Nga a kg:teamName "Nga" ;
+a kg:Team ;
+kg:hasCoach res:coach/Yuri_Krasnozhan ;
+kg:manages res:coach/Yuri_Krasnozhan ;
+kg:homeStadium res:stadium/Rossiyanka ;
+kg:locatedIn res:country/Nga .
+
+res:country/Nga a kg:Country ;
+rdfs:label "Nga" .
+
+res:coach/Yuri_Krasnozhan a kg:Coach ;
+rdfs:label "Yuri Krasnozhan" .
+
+res:stadium/Rossiyanka a kg:Stadium ;
+rdfs:label "Rossiyanka" ;
+kg:isHomeOf res:team/Nga .
+
+res:team/Nga kg:participatesIn res:season/World_Cup_1999 ;
+kg:participatesIn res:season/European_Championship_1997 .
+
+res:season/World_Cup_1999 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:competition/FIFA_Women_s_World_Cup a kg:Competition ;
+kg:competitionName "FIFA Women's World Cup" ;
+kg:heldIn res:country/Nga .
+
+res:season/European_Championship_1997 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:competition/European_Championship a kg:Competition ;
+kg:competitionName "European Championship" ;
+kg:heldIn res:country/Nga .
+
+res:team/Nga kg:participatesIn res:season/World_Cup_2003 ;
+kg:participatesIn res:season/European_Championship_2001 .
+
+res:season/World_Cup_2003 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:season/European_Championship_2001 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:team/Nga kg:participatesIn res:season/European_Championship_2009 ;
+kg:participatesIn res:season/European_Championship_2013 ;
+kg:participatesIn res:season/European_Championship_2017 .
+
+res:season/European_Championship_2009 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:season/European_Championship_2013 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:season/European_Championship_2017 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:team/Nga kg:participatesIn res:season/Universiade_2017 ;
+kg:participatesIn res:season/Universiade_2019 .
+
+res:season/Universiade_2017 a kg:Season ;
+kg:seasonOf res:competition/Summer_Universiade .
+
+res:season/Universiade_2019 a kg:Season ;
+kg:seasonOf res:competition/Summer_Universiade .
+
+res:competition/Summer_Universiade a kg:Competition ;
+kg:competitionName "Summer Universiade" ;
+kg:heldIn res:country/Nga .
+
+res:team/Nga kg:participatesIn res:season/World_Cup_2023 ;
+
+res:season/World_Cup_2023 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:team/Nga kg:participatesIn res:season/European_Championship_2022 ;
+
+res:season/European_Championship_2022 a kg:Season ;
+kg:seasonOf res:competition/European_Championship .
+
+res:team/Nga kg:participatesIn res:season/Algarve_Cup_1996 ;
+kg:participatesIn res:season/Algarve_Cup_2014 ;
+kg:participatesIn res:season/Algarve_Cup_2016 ;
+kg:participatesIn res:season/Algarve_Cup_2017 ;
+kg:participatesIn res:season/Algarve_Cup_2018 .
+
+res:season/Algarve_Cup_1996 a kg:Season ;
+kg:seasonOf res:competition/Algarve_Cup .
+
+res:season/Algarve_Cup_2014 a kg:Season ;
+kg:seasonOf res:competition/Algarve_Cup .
+
+res:season/Algarve_Cup_2016 a kg:Season ;
+kg:seasonOf res:competition/Algarve_Cup .
+
+res:season/Algarve_Cup_2017 a kg:Season ;
+kg:seasonOf res:competition/Algarve_Cup .
+
+res:season/Algarve_Cup_2018 a kg:Season ;
+kg:seasonOf res:competition/Algarve_Cup .
+
+res:competition/Algarve_Cup a kg:Competition ;
+kg:competitionName "Algarve Cup" ;
+kg:heldIn res:country/Portugal .
+
+res:team/Nga kg:participatesIn res:season/World_Cup_1999 ;
+kg:participatesIn res:season/World_Cup_2003 .
+
+res:team/Nga kg:participatesIn res:season/European_Championship_1997 ;
+kg:participatesIn res:season/European_Championship_2001 ;
+kg:participatesIn res:season/European_Championship_2009 ;
+kg:participatesIn res:season/European_Championship_2013 ;
+kg:participatesIn res:season/European_Championship_2017 .
+
+res:team/Nga kg:participatesIn res:season/Universiade_2017 ;
+kg:participatesIn res:season/Universiade_2019 .
+
+res:team/Nga kg:participatesIn res:season/Algarve_Cup_1996 ;
+kg:participatesIn res:season/Algarve_Cup_2014 ;
+kg:participatesIn res:season/Algarve_Cup_2016 ;
+kg:participatesIn res:season/Algarve_Cup_2017 ;
+kg:participatesIn res:season/Algarve_Cup_2018 .
+
+res:team/Nga kg:hasCaptain res:player/Ksenia_Tsybutovich .
+
+res:player/Ksenia_Tsybutovich a kg:Player ;
+rdfs:label "Ksenia Tsybutovich" ;
+kg:playsFor res:team/Nga .
+
+res:team/Nga kg:mostCaps res:player/Svetlana_Petko .
+
+res:player/Svetlana_Petko a kg:Player ;
+rdfs:label "Svetlana Petko" ;
+kg:playsFor res:team/Nga .
+
+res:team/Nga kg:topScorer res:player/Natalia_Barbashina .
+
+res:player/Natalia_Barbashina a kg:Player ;
+rdfs:label "Natalia Barbashina" ;
+kg:playsFor res:team/Nga .
+
+res:team/Nga kg:FIFARank "11"^^xsd:integer ;
+kg:FIFAMaxRank "11"^^xsd:integer ;
+kg:FIFAMaxRankDate "2003-07-01"^^xsd:date ;
+kg:FIFAMinRank "27"^^xsd:integer ;
+kg:FIFAMinRankDate "2018-06-01"^^xsd:date .
+
+res:team/Nga kg:largestWin res:match/RUS_v_KAZ_8_0_2010 ;
+kg:largestWin res:match/RUS_v_MKD_8_0_2012 .
+
+res:match/RUS_v_KAZ_8_0_2010 a kg:Match ;
+kg:homeTeam res:team/Nga ;
+kg:awayTeam res:team/Kazakhstan ;
+kg:kickoffTime "2010-08-25"^^xsd:date ;
+kg:venue res:stadium/Krasnoarmeysk .
+
+res:match/RUS_v_MKD_8_0_2012 a kg:Match ;
+kg:homeTeam res:team/Nga ;
+kg:awayTeam res:team/Macedonia ;
+kg:kickoffTime "2012-03-31"^^xsd:date ;
+kg:venue res:stadium/Podolsk .
+
+res:team/Nga kg:largestLoss res:match/GER_v_RUS_9_0_2013 .
+
+res:match/GER_v_RUS_9_0_2013 a kg:Match ;
+kg:homeTeam res:team/Germany ;
+kg:awayTeam res:team/Nga ;
+kg:kickoffTime "2013-09-21"^^xsd:date ;
+kg:venue res:stadium/Cottbus .
+
+res:team/Nga kg:worldCupApps "2"^^xsd:positiveInteger ;
+kg:worldCupFirst "1999"^^xsd:gYear ;
+kg:worldCupBest res:season/World_Cup_1999 ;
+kg:worldCupBest res:season/World_Cup_2003 .
+
+res:team/Nga kg:regionalCupApps "5"^^xsd:positiveInteger ;
+kg:regionalCupFirst res:season/European_Championship_1997 ;
+kg:regionalCupBest res:season/European_Championship_1997 ;
+kg:regionalCupBest res:season/European_Championship_2001 ;
+kg:regionalCupBest res:season/European_Championship_2009 ;
+kg:regionalCupBest res:season/European_Championship_2013 ;
+kg:regionalCupBest res:season/European_Championship_2017 .
+
+res:team/Nga kg:medalBronze res:season/Universiade_2017 ;
+kg:medalBronze res:season/Universiade_2019 .
+
+res:season/Universiade_2017 a kg:Season ;
+kg:seasonOf res:competition/Summer_Universiade .
+
+res:season/Universiade_2019 a kg:Season ;
+kg:seasonOf res:competition/Summer_Universiade .
+
+res:team/Nga kg:discontinued "true"^^xsd:boolean ;
+kg:discontinuedReason "Due to Russia's invasion of Ukraine in 2022 and recommendations from the IOC, FIFA, and UEFA."@en ;
+kg:discontinuedDate "2022-02-28"^^xsd:date .
+
+res:team/Nga kg:discontinuedStatus "Banned" ;
+kg:discontinuedAppealResult "Unsuccessful appeal to the Court of Arbitration for Sport."@en .

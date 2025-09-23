@@ -1,0 +1,265 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Zambia a kg:Team ;
+kg:teamName "Zambia" ;
+kg:teamAbbreviation "ZAM" ;
+kg:hasCoach res:coach/Bruce_Mwape ;
+kg:hasCaptain res:player/Barbra_Banda ;
+kg:FIFA_Rank "126"@xsd:integer ;
+kg:FIFA_Max "80"@xsd:integer ;
+kg:FIFA_Max_Date "2022-01-01"@xsd:date ;
+kg:FIFA_Min "126"@xsd:integer ;
+kg:FIFA_Min_Date "2012-03-01"@xsd:date ;
+kg:confederation res:country/Africa ;
+kg:subConfederation res:organization/COSAFA ;
+kg:association res:organization/Football_Association_of_Zambia ;
+kg:world_cup_apps "1"@xsd:integer ;
+kg:world_cup_first "2023"@xsd:gYear ;
+kg:world_cup_best "Vòng bảng"@xsd:string ;
+kg:second_regional_cup_apps "2"@xsd:integer ;
+kg:second_regional_cup_first "2020"@xsd:gYear ;
+kg:second_regional_cup_best "Hạng 9"@xsd:string ;
+kg:regional_cup_apps "4"@xsd:integer ;
+kg:regional_cup_first "1995"@xsd:gYear ;
+kg:regional_cup_best "Hạng ba"@xsd:string .
+
+res:team/Zambia kg:hasNickname "Copper Queens" ;
+kg:hasNickname "She-polopolo" .
+
+res:coach/Bruce_Mwape a kg:Coach ;
+kg:manages res:team/Zambia .
+
+res:player/Barbra_Banda a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "10"@xsd:positiveInteger ;
+kg:goals "22"@xsd:integer ;
+kg:club res:club/Shanghai_Shengli .
+
+res:organization/COSAFA a kg:SubConfederation .
+
+res:organization/CAF a kg:Confederation .
+
+res:organization/Football_Association_of_Zambia a kg:Association .
+
+res:country/Africa a kg:Country .
+
+res:country/Zambia a kg:Country .
+
+res:competition/FIFA_Women_s_World_Cup a kg:Competition .
+
+res:competition/African_Women_s_Championship a kg:Competition .
+
+res:competition/Olympic_Games a kg:Competition .
+
+res:match/Zambia_v_Netherlands a kg:Match ;
+kg:homeTeam res:team/Zambia ;
+kg:awayTeam res:team/Netherlands ;
+kg:result "3–10"@xsd:string ;
+kg:date "2021-07-21"@xsd:date .
+
+res:match/Zambia_v_Japan a kg:Match ;
+kg:homeTeam res:team/Zambia ;
+kg:awayTeam res:team/Japan ;
+kg:result "0–1"@xsd:string ;
+kg:date "2023-08-01"@xsd:date .
+
+res:match/Zambia_v_Costa_Rica a kg:Match ;
+kg:homeTeam res:team/Zambia ;
+kg:awayTeam res:team/Costa_Rica ;
+kg:result "1–0"@xsd:string ;
+kg:date "2023-08-02"@xsd:date .
+
+res:match/Zambia_v_Spain a kg:Match ;
+kg:homeTeam res:team/Zambia ;
+kg:awayTeam res:team/Spain ;
+kg:result "0–1"@xsd:string ;
+kg:date "2023-08-05"@xsd:date .
+
+res:player/Eunice_Sakala a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Leticia_Lungu a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:age "18"@xsd:positiveInteger .
+
+res:player/Agness_Banda a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Mary_Nanyinza a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Catherine_Musonda a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:age "25"@xsd:positiveInteger ;
+kg:club res:club/Indeni_Roses .
+
+res:player/Chitete_Munsaka a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Vast_Phiri a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Defender ;
+kg:age "27"@xsd:positiveInteger ;
+kg:club res:club/ZESCO_United .
+
+res:player/Esther_Banda a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Defender ;
+kg:age "18"@xsd:positiveInteger ;
+kg:club res:club/Bauleni_United .
+
+res:player/Esther_Siamfuko a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Defender ;
+kg:age "18"@xsd:positiveInteger ;
+kg:club res:club/Queens_Academy .
+
+res:player/Bertha_Imponene a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Agness_Musesa a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Lushomo_Mweemba a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Defender ;
+kg:age "21"@xsd:positiveInteger ;
+kg:club res:club/Green_Buffaloes ;
+kg:goals "1"@xsd:integer .
+
+res:player/Anita_Mulenga a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Defender ;
+kg:age "28"@xsd:positiveInteger ;
+kg:club res:club/Green_Buffaloes .
+
+res:player/Martha_Tembo a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Defender ;
+kg:age "25"@xsd:positiveInteger ;
+kg:club res:club/Green_Buffaloes .
+
+res:player/Judith_Soko a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Pauline_Zulu a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Defender ;
+kg:club res:club/Lusaka_Dynamos .
+
+res:player/Margaret_Belemu a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Defender ;
+kg:age "26"@xsd:positiveInteger ;
+kg:club res:club/Shanghai_Shengli ;
+kg:goals "2"@xsd:integer .
+
+res:player/Ireen_Lungu a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:age "26"@xsd:positiveInteger ;
+kg:club res:club/Green_Buffaloes ;
+kg:goals "4"@xsd:integer .
+
+res:player/Mary_Wilombe a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:age "25"@xsd:positiveInteger ;
+kg:club res:club/Red_Arrows ;
+kg:goals "1"@xsd:integer .
+
+res:player/Evarine_Katongo a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:age "20"@xsd:positiveInteger ;
+kg:club res:club/ZISD_Queens .
+
+res:player/Natasha_Witika a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:club res:club/BUSA .
+
+res:player/Avell_Chitundu a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:age "25"@xsd:positiveInteger ;
+kg:club res:club/ZESCO_United ;
+kg:goals "3"@xsd:integer .
+
+res:player/Maweta_Chilenga a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:club res:club/BUSA .
+
+res:player/Norin_Betani a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:club res:club/Indeni_Roses .
+
+res:player/Misozi_Zulu a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:age "29"@xsd:positiveInteger ;
+kg:club res:club/Hakkarigücü_Spor .
+
+res:player/Natasha_Nanyangwe a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Forward ;
+kg:age "24"@xsd:positiveInteger ;
+kg:club res:club/Green_Buffaloes .
+
+res:player/Ochumba_Oseke a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Forward ;
+kg:age "21"@xsd:positiveInteger ;
+kg:club res:club/Red_Arrows ;
+kg:goals "4"@xsd:integer .
+
+res:player/Elizabeth_Mwale a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Forward ;
+kg:club res:club/ZISD_Women .
+
+res:player/Eneless_Phiri a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Forward ;
+kg:club res:club/Police_Doves .
+
+res:player/Jessy_Zulu a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Forward ;
+kg:club res:club/Pataaki .
+
+res:player/Noria_Sosala a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Forward ;
+kg:age "34"@xsd:positiveInteger ;
+kg:club res:club/Indeni_Roses .
+
+res:player/Grace_Chanda a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Forward ;
+kg:age "26"@xsd:positiveInteger ;
+kg:club res:club/BIIK_Kazygurt ;
+kg:goals "10"@xsd:integer .
+
+res:player/Xiomara_Mapepa a kg:Player ;
+kg:playsFor res:team/Zambia ;
+kg:primaryPosition res:position/Forward ;
+kg:age "21"@xsd:positiveInteger ;
+kg:club res:club/Lusaka_Dynamos ;
+kg:goals "2"@xsd:integer .

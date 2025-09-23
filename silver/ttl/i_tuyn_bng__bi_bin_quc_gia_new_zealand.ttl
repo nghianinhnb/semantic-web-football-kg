@@ -1,0 +1,76 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/New Zealand National Beach Soccer Team a kg:Team ;
+kg:teamName "New Zealand National Beach Soccer Team" ;
+kg:locatedIn res:country/New Zealand ;
+kg:organizedBy res:organization/New Zealand Football ;
+kg:heldIn res:country/New Zealand ;
+kg:participatesIn res:competition/Oceania Beach Soccer Championship ;
+kg:participantCount 1 ;
+kg:hasSeason res:season/2007-Oceania-Beach-Soccer-Championship ;
+
+kg:teamAbbreviation "NZL" ;
+kg:association res:organization/New Zealand Football ;
+kg:confederation res:organization/OFC ;
+kg:regionalCupApps 1 ;
+kg:regionalCupFirst res:event/Oceania-Beach-Soccer-Championship-2007 ;
+kg:regionalCupBest "Third place" ;
+kg:bestResultInRegionalCup "Third place" ;
+kg:bestResultInRegionalCupYear "2007" .
+
+res:organization/New Zealand Football a kg:Organization ;
+kg:organizes res:competition/Oceania Beach Soccer Championship .
+
+res:competition/Oceania Beach Soccer Championship a kg:Competition ;
+kg:competitionName "Oceania Beach Soccer Championship" .
+
+res:event/Oceania-Beach-Soccer-Championship-2007 a kg:Event ;
+kg:year "2007" ;
+kg:result "Third place" .
+
+res:season/2007-Oceania-Beach-Soccer-Championship a kg:Season ;
+kg:seasonOf res:competition/Oceania Beach Soccer Championship ;
+kg:year "2007" .
+
+res:player/Mitchell+O'Brien a kg:Player ;
+kg:playsFor res:team/New Zealand National Beach Soccer Team ;
+kg:shirtNumber 1 .
+
+res:player/Simon+Eaddy a kg:Player ;
+kg:playsFor res:team/New Zealand National Beach Soccer Team ;
+kg:shirtNumber 2 .
+
+res:player/Joel+Matthews a kg:Player ;
+kg:playsFor res:team/New Zealand National Beach Soccer Team ;
+kg:shirtNumber 3 .
+
+res:player/David+Samson a kg:Player ;
+kg:playsFor res:team/New Zealand National Beach Soccer Team ;
+kg:shirtNumber 4 .
+
+res:player/Dean+Johnston a kg:Player ;
+kg:playsFor res:team/New Zealand National Beach Soccer Team ;
+kg:shirtNumber 5 .
+
+res:player/Mikael+Munday a kg:Player ;
+kg:playsFor res:team/New Zealand National Beach Soccer Team ;
+kg:shirtNumber 6 .
+
+res:player/Stuart+James+Hogg a kg:Player ;
+kg:playsFor res:team/New Zealand National Beach Soccer Team ;
+kg:shirtNumber 7 .
+
+res:player/Nathan+Fry a kg:Player ;
+kg:playsFor res:team/New Zealand National Beach Soccer Team ;
+kg:shirtNumber 8 .
+
+res:player/Michael+Gwyther a kg:Player ;
+kg:playsFor res:team/New Zealand National Beach Soccer Team ;
+kg:shirtNumber 9 .
+
+res:player/Daniel+Ellensohn a kg:Player ;
+kg:playsFor res:team/New Zealand National Beach Soccer Team ;
+kg:shirtNumber 10 .

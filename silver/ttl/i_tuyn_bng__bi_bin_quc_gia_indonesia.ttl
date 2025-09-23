@@ -1,0 +1,169 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/IndonesiaNationalBeachSoccerTeam a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Indonesia" ;
+kg:hasCoach res:coach/Empty ;
+kg:manages res:coach/Empty ;
+kg:locatedIn res:country/Indonesia ;
+kg:participatesIn res:competition/AsianBeachSoccerChampionship ;
+kg:participatesIn res:competition/SoutheastAsianBeachSoccerChampionship ;
+kg:participatesIn res:competition/AsiaBeachSoccerCup ;
+kg:participatesIn res:competition/AsianSandSportGames ;
+
+kg:firstGame "9–1" ;
+kg:firstGameOpponent res:team/TimorLeste ;
+kg:firstGameLocation res:city/Bali ;
+kg:firstGameDate "2008-10-18"^^xsd:date ;
+
+kg:largestWin "9–1" ;
+kg:largestWinOpponent res:team/TimorLeste ;
+kg:largestWinLocation res:city/Bali ;
+kg:largestWinDate "2008-10-18"^^xsd:date ;
+
+kg:largestLoss "1–6" ;
+kg:largestLossOpponent res:team/UAE ;
+kg:largestLossLocation res:city/Muscat ;
+kg:largestLossDate "2011-02-27"^^xsd:date ;
+
+kg:association res:organization/PSSI ;
+kg:confederation res:organization/AFC ;
+kg:regionalCupApps 1 ;
+kg:regionalCupFirstParticipation "2011"^^xsd:gYear ;
+kg:regionalCupBestResult "Vòng bảng" ;
+kg:secondRegionalCupApps 1 ;
+kg:secondRegionalCupFirstParticipation "2014"^^xsd:gYear ;
+kg:secondRegionalCupBestResult "Vòng bảng" .
+
+res:organization/PSSI a kg:Organization ;
+kg:name "Hiệp hội bóng đá Indonesia" .
+
+res:organization/AFC a kg:Organization ;
+kg:name "Liên đoàn bóng đá châu Á" .
+
+res:team/TimorLeste a kg:Team ;
+kg:teamName "Timor-Leste" .
+
+res:team/UAE a kg:Team ;
+kg:teamName "UAE" .
+
+res:city/Bali a kg:City ;
+kg:name "Bali" ;
+kg:locatedIn res:country/Indonesia .
+
+res:city/Muscat a kg:City ;
+kg:name "Muscat" ;
+kg:locatedIn res:country/Oman .
+
+res:country/Indonesia a kg:Country ;
+kg:name "Indonesia" .
+
+res:country/Oman a kg:Country ;
+kg:name "Oman" .
+
+res:competition/AsianBeachSoccerChampionship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Á" .
+
+res:competition/SoutheastAsianBeachSoccerChampionship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Đông Nam Á" .
+
+res:competition/AsiaBeachSoccerCup a kg:Competition ;
+kg:competitionName "Đại hội thể thao bãi biển châu Á" .
+
+res:coach/Empty a kg:Coach ;
+kg:name "Trống" .
+
+res:player/KadekSudarta a kg:Player ;
+kg:name "Kadek Sudarta" ;
+kg:birthDate "1982-02-03"^^xsd:date ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:playsFor res:team/IndonesiaNationalBeachSoccerTeam ;
+kg:club res:club/Bali .
+
+res:player/MadeHendraAdiSaputra a kg:Player ;
+kg:name "Made Hendra Adi Saputra" ;
+kg:birthDate "1986-04-29"^^xsd:date ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:playsFor res:team/IndonesiaNationalBeachSoccerTeam ;
+kg:club res:club/Bali .
+
+res:player/MadeJuliParimawan a kg:Player ;
+kg:name "Made Juli Parimawan" ;
+kg:birthDate "1986-07-24"^^xsd:date ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition res:position/Defender ;
+kg:playsFor res:team/IndonesiaNationalBeachSoccerTeam ;
+kg:club res:club/Bali .
+
+res:player/WayanMertaJaya a kg:Player ;
+kg:name "Wayan Merta Jaya" ;
+kg:birthDate "1988-05-12"^^xsd:date ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition res:position/Defender ;
+kg:playsFor res:team/IndonesiaNationalBeachSoccerTeam ;
+kg:club res:club/Bali .
+
+res:player/WayanArsaBagia a kg:Player ;
+kg:name "Wayan Arsa Bagia" ;
+kg:birthDate "1985-11-18"^^xsd:date ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition res:position/Forward ;
+kg:playsFor res:team/IndonesiaNationalBeachSoccerTeam ;
+kg:club res:club/Bali .
+
+res:player/DewaKadekDwipayudha a kg:Player ;
+kg:name "Dewa Kadek Dwipayudha" ;
+kg:birthDate "1988-05-09"^^xsd:date ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition res:position/Forward ;
+kg:playsFor res:team/IndonesiaNationalBeachSoccerTeam ;
+kg:club res:club/Bali .
+
+res:player/PutuEdySandiPutra a kg:Player ;
+kg:name "Putu Edy Sandi Putra" ;
+kg:birthDate "1983-10-20"^^xsd:date ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition res:position/Forward ;
+kg:playsFor res:team/IndonesiaNationalBeachSoccerTeam ;
+kg:club res:club/Bali .
+
+res:player/PutuGedeDarmaSuta a kg:Player ;
+kg:name "Putu Gede Darma Suta" ;
+kg:birthDate "1988-10-13"^^xsd:date ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition res:position/Forward ;
+kg:playsFor res:team/IndonesiaNationalBeachSoccerTeam ;
+kg:club res:club/Bali .
+
+res:player/KomangKariana a kg:Player ;
+kg:name "Komang Kariana" ;
+kg:birthDate "1980-09-13"^^xsd:date ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition res:position/Forward ;
+kg:playsFor res:team/IndonesiaNationalBeachSoccerTeam ;
+kg:club res:club/Bali .
+
+res:player/NyomanJumada a kg:Player ;
+kg:name "Nyoman Jumada" ;
+kg:birthDate "1984-08-17"^^xsd:date ;
+kg:nationality res:country/Indonesia ;
+kg:primaryPosition res:position/Forward ;
+kg:playsFor res:team/IndonesiaNationalBeachSoccerTeam ;
+kg:club res:club/Bali .
+
+res:club/Bali a kg:Club ;
+kg:name "Bali" .
+
+res:position/Goalkeeper a kg:Position ;
+kg:name "Goalkeeper" .
+
+res:position/Defender a kg:Position ;
+kg:name "Defender" .
+
+res:position/Forward a kg:Position ;
+kg:name "Forward" .

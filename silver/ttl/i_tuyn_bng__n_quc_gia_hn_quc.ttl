@@ -1,0 +1,247 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Korea_National_Womens_Football_Team a kg:Team ;
+kg:teamName "Hàn Quốc" ;
+kg:teamAbbreviation "KOR" ;
+kg:hasCoach res:coach/Shin_Sang-woo ;
+kg:manages res:coach/Shin_Sang-woo ;
+kg:locatedIn res:country/South_Korea ;
+kg:participantCount 4 ;
+kg:heldIn res:country/South_Korea ;
+kg:competitionName "Đội tuyển bóng đá nữ quốc gia Hàn Quốc" .
+
+res:coach/Shin_Sang-woo a kg:Coach ;
+kg:manages res:team/Korea_National_Womens_Football_Team .
+
+res:country/South_Korea a kg:Country ;
+rdfs:label "Hàn Quốc" .
+
+res:player/Ji_Soyun a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1991-02-21"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:city/Seoul a kg:City ;
+kg:locatedIn res:country/South_Korea .
+
+res:player/Kim_Hyeri a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1990-06-25"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 20 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Lee_Geumin a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1994-04-07"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 19 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Choe_Yuri a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1994-09-16"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 11 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Lim_Seonjoo a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1990-11-27"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 6 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Lee_Geummin a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1994-04-07"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 19 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Kim_Jungmi a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1984-10-16"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 1 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Ryu_Jisoo a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1997-09-03"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 18 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Kim_Mingeong a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1996-09-12"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 21 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Ko_Yoojin a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1997-01-24"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 4 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Lee_Yujin a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2000-05-15"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 5 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Lee_Deokju a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2000-12-26"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 12 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Shin_Nayeong a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1999-10-09"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 7 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Choo_Hyojoo a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2000-07-29"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 22 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Jeong_Yoojin a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2005-10-10"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 2 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Bae_Yebin a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2004-12-07"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 3 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Kim_Shinji a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2004-05-03"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 8 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Ji_Soyun a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1991-02-21"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Jung_Minyoung a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2000-09-28"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 16 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Lee_Youngju a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1992-04-22"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 17 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Lee_Geumin a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1994-04-07"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 19 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Choi_Yoojung a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1992-01-25"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 9 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Choe_Yuri a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1994-09-16"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 11 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Mun_Eunju a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2000-09-01"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:nationality res:country/South_Korea ;
+kg:shirtNumber 13 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Choi_Dakyong a kg:Player ;
+kg:playsFor res:team/Korea_National_Womens_Football_Team ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2000-11-08"^^xsd:date ;
+kg:birthPlace res:city/Seoul ;
+kg:national

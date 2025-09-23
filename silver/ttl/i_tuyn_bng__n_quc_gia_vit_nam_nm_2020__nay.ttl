@@ -1,0 +1,154 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Việt Nam năm 2020 – nay" .
+
+res:match/2020-02-06_VIE_vs_MYA a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:team/Myanmar ;
+kg:venue res:stadium/World_Cup_Jeju ;
+kg:kickoffTime "2020-02-06T17:00:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Vòng_loại_bóng_đá_nữ_Thế_vận_hội_Mùa_hè_2020_khu_vực_châu_Á ;
+kg:inSeason res:season/2020 ;
+kg:referee res:person/Qin_Liang ;
+kg:result "W" .
+
+res:match/2020-02-09_VIE_vs_KOR a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:team/Hàn_Quốc ;
+kg:venue res:stadium/World_Cup_Jeju ;
+kg:kickoffTime "2020-02-09T13:00:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Vòng_loại_bóng_đá_nữ_Thế_vận_hội_Mùa_hè_2020_khu_vực_châu_Á ;
+kg:inSeason res:season/2020 ;
+kg:referee res:person/Edita_Mirabidova ;
+kg:result "L" .
+
+res:match/2020-03-06_VIE_vs_AUS a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:team/Úc ;
+kg:venue res:stadium/McDonald_Jones ;
+kg:kickoffTime "2020-03-06T14:30:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Vòng_loại_bóng_đá_nữ_Thế_vận_hội_Mùa_hè_2020_khu_vực_châu_Á ;
+kg:inSeason res:season/2020 ;
+kg:referee res:person/Abirami_Naidu ;
+kg:result "L" .
+
+res:match/2020-03-11_VIE_vs_AUS a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:team/Úc ;
+kg:venue res:stadium/Cẩm_Phả ;
+kg:kickoffTime "2020-03-11T18:00:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Vòng_loại_bóng_đá_nữ_Thế_vận_hội_Mùa_hè_2020_khu_vực_châu_Á ;
+kg:inSeason res:season/2020 ;
+kg:referee res:person/Thein_Thein_Aye ;
+kg:result "L" .
+
+res:match/2021-01-21_VIE_vs_Hà_Nộ_i_II a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:club/Hà_Nội_II ;
+kg:venue res:stadium/Trung_tâm_đào_tạo_bóng_đá_trẻ_Việt_Nam ;
+kg:kickoffTime "2021-01-21T19:00:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Giao_hữu ;
+kg:inSeason res:season/2021 ;
+kg:referee res:person/Unknown ;
+kg:result "W" .
+
+res:match/2021-09-23_VIE_vs_MDV a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:team/Madagascar ;
+kg:venue res:stadium/Pamir ;
+kg:kickoffTime "2021-09-23T20:00:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Vòng_loại_Cúp_bóng_đá_nữ_châu_Á_2022 ;
+kg:inSeason res:season/2021 ;
+kg:referee res:person/Mahsa_Ghorbani ;
+kg:result "W" .
+
+res:match/2021-09-29_VIE_vs_TJK a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:team/Tajikistan ;
+kg:venue res:stadium/Pamir ;
+kg:kickoffTime "2021-09-29T20:00:rightarrow+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Vòng_loại_Cúp_bóng_đá_nữ_châu_Á_2022 ;
+kg:inSeason res:season/2021 ;
+kg:referee res:person/Pansa_Chaisanit ;
+kg:result "W" .
+
+res:match/2021-12-31_VIE_vs_CD_Pozoalbense a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:club/CD_Pozoalbense ;
+kg:venue res:city/Córdoba ;
+kg:kickoffTime "2021-12-31T01:15:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Giao_hữu ;
+kg:inSeason res:season/2021 ;
+kg:referee res:person/Unknown ;
+kg:result "W" .
+
+res:match/2022-01-02_VIE_vs_CF_La_Solana a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:club/CF_La_Solana ;
+kg:venue res:city/La_Solana ;
+kg:kickoffTime "2022-01-02T23:00:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Giao_hữu ;
+kg:inSeason res:season/2022 ;
+kg:referee res:person/Unknown ;
+kg:result "D" .
+
+res:match/2022-01-04_VIE_vs_Córdoba_CF a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:club/Córdoba_CF ;
+kg:venue res:city/Córdoba ;
+kg:kickoffTime "2022-01-04T23:00:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Giao_hữu ;
+kg:inSeason res:season/2022 ;
+kg:referee res:person/Unknown ;
+kg:result "W" .
+
+res:match/2022-01-06_VIE_vs_Sporting_de_Huelva a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:club/Sporting_de_Huelva ;
+kg:venue res:city/Huelva ;
+kg:kickoffTime "2022-01-06T17:30:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Giao_hữu ;
+kg:inSeason res:season/2022 ;
+kg:referee res:person/Unknown ;
+kg:result "V" .
+
+res:match/2022-01-21_VIE_vs_KOR a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:team/Hàn_Quốc ;
+kg:venue res:stadium/Shree_Shiv_Chatrapati ;
+kg:kickoffTime "2022-01-21T21:00:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_nữ_châu_Á_2022 ;
+kg:inSeason res:season/2022 ;
+kg:referee res:person/Qin_Liang ;
+kg:result "L" .
+
+res:match/2022-01-24_VIE_vs_JPN a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:team/Nhật_Bản ;
+kg:venue res:stadium/Shree_Shiv_Chatrapati ;
+kg:kickoffTime "2022-01-24T21:00:00+07:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_nữ_châu_Á_2022 ;
+kg:inSeason res:season/2022 ;
+kg:referee res:person/Lara_Lee ;
+kg:result "L" .
+
+res:match/2022-01-27_VIE_vs_MYA a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:team/Myanmar ;
+kg:venue res:stadium/DY_Patil ;
+kg:kickoffTime "2022-01-27T13:30:00+05:30"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_nữ_châu_Á_2022 ;
+kg:inSeason res:season/2022 ;
+kg:referee res:person/Ranjita_Devi_Tekcham ;
+kg:result "D" .
+
+res:match/2022-01-30_VIE_vs_CHN a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam_2020–nay ;
+kg:awayTeam res:team/TRUNG_QUỐC ;
+kg:venue res:stadium/DY_Patil ;
+kg:kickoffTime "2022-01-30T19:00:00+07:00"^^xsd:dateTime ;
+kg:inCom

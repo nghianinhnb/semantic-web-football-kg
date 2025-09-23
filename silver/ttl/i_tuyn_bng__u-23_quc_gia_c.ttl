@@ -1,0 +1,61 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/U23_Australia a kg:Team ;
+kg:teamName "Đội tuyển bóng đá U-23 quốc gia Úc" ;
+kg:teamAbbreviation "AUS" ;
+kg:hasCoach res:coach/Graham_Arnold ;
+kg:locatedIn res:country/Australia .
+
+res:coach/Graham_Arnold a kg:Coach ;
+kg:manages res:team/U23_Australia .
+
+res:country/Australia a kg:Country .
+
+res:player/Mark_Viduka a kg:Player ;
+kg:topScorerInTeam res:team/U23_Australia ;
+kg:scoredGoals "17"^^xsd:positiveInteger .
+
+res:team/U23_Australia kg:participatesIn res:competition/Asian_Under_23_Championship ;
+kg:participatesIn res:competition/Olympic_Games .
+
+res:competition/Olympic_Games a kg:Competition ;
+kg:competitionName "Thế vận hội Mùa hè" .
+
+res:competition/Asian_Under_23_Championship a kg:Competition ;
+kg:competitionName "Cúp bóng đá U-23 châu Á" .
+
+res:team/U23_Australia kg:bestResultInCompetition res:competition/Olympic_Games ;
+kg:resultPosition "4th"^^xsd:string .
+
+res:team/U23_Australia kg:bestResultInCompetition res:competition/Asian_Under_23_Championship ;
+kg:resultPosition "3rd"^^xsd:string .
+
+res:team/U23_Australia kg:totalParticipationInCompetition res:competition/Olympic_Games ;
+kg:participantCount "6"^^xsd:positiveInteger .
+
+res:team/U23_Australia kg:totalParticipationInCompetition res:competition/Asian_Under_23_Championship ;
+kg:participantCount "6"^^xsd:positiveInteger .
+
+res:team/U23_Australia kg:firstAppearanceInCompetition res:competition/Olympic_Games ;
+kg:appearanceYear "1992"^^xsd:gYear .
+
+res:team/U23_Australia kg:firstAppearanceInCompetition res:competition/Asian_Under_23_Championship ;
+kg:appearanceYear "2013"^^xsd:gYear .
+
+res:team/U23_Australia kg:mostCaps "17"^^xsd:positiveInteger ;
+kg:topScorer res:player/Mark_Viduka .
+
+res:team/U23_Australia kg:nickname "Olyroos"^^xsd:string .
+
+res:team/U23_Australia kg:affiliatedWith res:organization/Australian_Football_Union ;
+kg:memberOf res:organization/Asian_Football_Confederation ;
+kg:memberOf res:organization/Southeast_Asian_Football_Confederation .
+
+res:organization/Australian_Football_Union a kg:Organization .
+
+res:organization/Asian_Football_Confederation a kg:Organization .
+
+res:organization/Southeast_Asian_Football_Confederation a kg:Organization .

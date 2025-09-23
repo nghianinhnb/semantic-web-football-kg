@@ -1,0 +1,152 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Đông Timor" ;
+kg:teamAbbreviation "TLS" ;
+kg:hasCoach res:coach/Lee_Min-young ;
+kg:locatedIn res:country/Dong_Timor .
+
+res:country/Dong_Timor a kg:Country .
+
+res:coach/Lee_Min-young a kg:Coach ;
+kg:manages res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor .
+
+res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor kg:participatesIn res:season/Giai_vo_dich_bong_da_nu_Dong_Nam_A_2016 .
+
+res:season/Giai_vo_dich_bong_da_nu_Dong_Nam_A_2016 a kg:Season ;
+kg:seasonOf res:competition/Giai_vo_dich_bong_da_nu_Dong_Nam_A ;
+
+res:competition/Giai_vo_dich_bong_da_nu_Dong_Nam_A a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ Đông Nam Á" .
+
+res:match/Tran_ra_mat_dau_tien_Dong_Timor a kg:Match ;
+kg:homeTeam res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor ;
+kg:awayTeam res:team/Myanmar ;
+kg:venue res:place/Mandalay ;
+kg:kickoffTime "2016-07-27"^^xsd:date ;
+kg:inCompetition res:competition/Giai_vo_dich_bong_da_nu_Dong_Nam_A .
+
+res:place/Mandalay a kg:City ;
+kg:locatedIn res:country/Myanmar .
+
+res:team/Myanmar a kg:Team .
+
+res:match/Tran_thang_lon_nhat_Dong_Timor a kg:Match ;
+kg:homeTeam res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor ;
+kg:awayTeam res:team/Singapore ;
+kg:venue res:place/Chonburi ;
+kg:kickoffTime "2019-08-15"^^xsd:date ;
+kg:inCompetition res:competition/Giai_vo_dich_bong_da_nu_Dong_Nam_A .
+
+res:place/Chonburi a kg:City ;
+kg:locatedIn res:country/Thai_Lan .
+
+res:team/Singapore a kg:Team .
+
+res:match/Tran_thua_lon_nhat_Dong_Timor a kg:Match ;
+kg:homeTeam res:team/U_20_Au ;
+kg:awayTeam res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor ;
+kg:venue res:place/Mandalay ;
+kg:kickoffTime "2016-07-29"^^xsd:date ;
+kg:inCompetition res:competition/Giai_vo_dich_bong_da_nu_Dong_Nam_A .
+
+res:team/U_20_Au a kg:Team .
+
+res:competition/Giai_vo_dich_bong_da_nu_the_gioi a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
+
+res:competition/Cup_bong_da_nu_chau_A a kg:Competition ;
+kg:competitionName "Cúp bóng đá nữ châu Á" .
+
+res:competition/Bong_da_Ty_van_hoi_Mua_he a kg:Competition ;
+kg:competitionName "Bóng đá tại Thế vận hội Mùa hè" .
+
+res:competition/Giai_vo_dich_bong_da_nu_ASEAN a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ Đông Nam Á" .
+
+res:competition/Dai_hoi_The_thao_chau_A a kg:Competition ;
+kg:competitionName "Bóng đá tại Đại hội Thể thao châu Á" .
+
+res:competition/Giai_bong_da_nu_SEA_Games a kg:Competition ;
+kg:competitionName "Giải bóng đá nữ SEA Games" .
+
+res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor kg:participatesIn res:season/Giai_vo_dich_bong_da_nu_the_gioi_2019 ;
+kg:participatesIn res:season/Giai_vo_dich_bong_da_nu_the_gioi_2023 ;
+kg:participatesIn res:season/Giai_vo_dich_bong_da_nu_the_gioi_2027 .
+
+res:season/Giai_vo_dich_bong_da_nu_the_gioi_2019 a kg:Season ;
+kg:seasonOf res:competition/Giai_vo_dich_bong_da_nu_the_gioi .
+
+res:season/Giai_vo_dich_bong_da_nu_the_gioi_2023 a kg:Season ;
+kg:seasonOf res:competition/Giai_vo_dich_bong_da_nu_the_gioi .
+
+res:season/Giai_vo_dich_bong_da_nu_the_gioi_2027 a kg:Season ;
+kg:seasonOf res:competition/Giai_vo_dich_bong_da_nu_the_gioi .
+
+res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor kg:participatesIn res:season/Cup_bong_da_nu_chau_A_2018 ;
+kg:participatesIn res:season/Cup_bong_da_nu_chau_A_2022 ;
+kg:participatesIn res:season/Cup_bong_da_nu_chau_A_2026 .
+
+res:season/Cup_bong_da_nu_chau_A_2018 a kg:Season ;
+kg:seasonOf res:competition/Cup_bong_da_nu_chau_A .
+
+res:season/Cup_bong_da_nu_chau_A_2022 a kg:Season ;
+kg:seasonOf res:competition/Cup_bong_da_nu_chau_A .
+
+res:season/Cup_bong_da_nu_chau_A_2026 a kg:Season ;
+kg:seasonOf res:competition/Cup_bong_da_nu_chau_A .
+
+res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor kg:participatesIn res:season/Bong_da_Ty_van_hoi_Mua_he_2016 ;
+kg:participatesIn res:season/Bong_da_Ty_van_hoi_Mua_he_2020 ;
+kg:participatesIn res:season/Bong_da_Ty_van_hoi_Mua_he_2024 ;
+kg:participatesIn res:season/Bong_da_Ty_van_hoi_Mua_he_2028 .
+
+res:season/Bong_da_Ty_van_hoi_Mua_he_2016 a kg:Season ;
+kg:seasonOf res:competition/Bong_da_Ty_van_hoi_Mua_he .
+
+res:season/Bong_da_Ty_van_hoi_Mua_he_2020 a kg:Season ;
+kg:seasonOf res:competition/Bong_da_Ty_van_hoi_Mua_he .
+
+res:season/Bong_da_Ty_van_hoi_Mua_he_2024 a kg:Season ;
+kg:seasonOf res:competition/Bong_da_Ty_van_hoi_Mua_he .
+
+res:season/Bong_da_Ty_van_hoi_Mua_he_2028 a kg:Season ;
+kg:seasonOf res:competition/Bong_da_Ty_van_hoi_Mua_he .
+
+res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor kg:participatesIn res:season/Giai_vo_dich_bong_da_nu_ASEAN_2016 ;
+kg:participatesIn res:season/Giai_vo_dich_bong_da_nu_ASEAN_2018 ;
+kg:participatesIn res:season/Giai_vo_dich_bong_da_nu_ASEAN_2019 ;
+kg:participatesIn res:season/Giai_vo_dich_bong_da_nu_ASEAN_2022 ;
+kg:participatesIn res:season/Giai_vo_dich_bong_da_nu_ASEAN_2025 .
+
+res:season/Giai_vo_dich_bong_da_nu_ASEAN_2016 a kg:Season ;
+kg:seasonOf res:competition/Giai_vo_dich_bong_da_nu_ASEAN .
+
+res:season/Giai_vo_dich_bong_da_nu_ASEAN_2018 a kg:Season ;
+kg:seasonOf res:competition/Giai_vo_dich_bong_da_nu_ASEAN .
+
+res:season/Giai_vo_dich_bong_da_nu_ASEAN_2019 a kg:Season ;
+kg:seasonOf res:competition/Giai_vo_dich_bong_da_nu_ASEAN .
+
+res:season/Giai_vo_dich_bong_da_nu_ASEAN_2022 a kg:Season ;
+kg:seasonOf res:competition/Giai_vo_dich_bong_da_nu_ASEAN .
+
+res:season/Giai_vo_dich_bong_da_nu_ASEAN_2025 a kg:Season ;
+kg:seasonOf res:competition/Giai_vo_dich_bong_da_nu_ASEAN .
+
+res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor kg:participatesIn res:season/Dai_hoi_The_thao_chau_A_2018 ;
+kg:participatesIn res:season/Dai_hoi_The_thao_chau_A_2022 .
+
+res:season/Dai_hoi_The_thao_chau_A_2018 a kg:Season ;
+kg:seasonOf res:competition/Dai_hoi_The_thao_chau_A .
+
+res:season/Dai_hoi_The_thao_chau_A_2022 a kg:Season ;
+kg:seasonOf res:competition/Dai_hoi_The_thao_chau_A .
+
+res:team/Doi_tuyen_bong_da_nu_quoc_gia_Dong_Timor kg:participatesIn res:season/Giai_bong_da_nu_SEA_Games_2001_2023 .
+
+res:season/Giai_bong_da_nu_SEA_Games_2001_2023 a kg:Season ;
+kg:seasonOf res:competition/Giai_bong_da_nu_SEA_Games .

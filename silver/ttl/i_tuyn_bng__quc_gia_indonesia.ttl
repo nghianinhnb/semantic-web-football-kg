@@ -1,0 +1,221 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Indonesia a kg:Team ;
+kg:teamName "Indonesia" ;
+kg:teamAbbreviation "IDN" ;
+kg:hasCoach res:coach/Patrick_Kluivert ;
+kg:participatesIn res:competition/AFC_Asian_Cup ;
+kg:participatesIn res:competition/FIFA_World_Cup_qualification ;
+kg:participatesIn res:competition/ASEAN_Championship .
+
+res:coach/Patrick_Kluivert a kg:Coach ;
+kg:name "Patrick Kluivert" ;
+kg:nationality res:country/Netherlands ;
+kg:manages res:team/Indonesia .
+
+res:team/Indonesia kg:participatesIn res:season/2025 ;
+
+res:competition/AFC_Asian_Cup a kg:Competition ;
+kg:competitionName "AFC Asian Cup" ;
+kg:organizedBy res:organization/AFC ;
+
+res:competition/FIFA_World_Cup_qualification a kg:Competition ;
+kg:competitionName "FIFA World Cup Qualification" ;
+kg:organizedBy res:organization/FIFA ;
+
+res:competition/ASEAN_Championship a kg:Competition ;
+kg:competitionName "ASEAN Championship" ;
+kg:organizedBy res:organization/ASEAN ;
+
+res:season/2025 a kg:Season ;
+kg:seasonOf res:competition/AFC_Asian_Cup ;
+kg:seasonOf res:competition/FIFA_World_Cup_qualification ;
+kg:seasonOf res:competition/ASEAN_Championship .
+
+res:player/Abdul_Kadir a kg:Player ;
+kg:name "Abdul Kadir" ;
+kg:nationality res:country/Indonesia ;
+kg:birthDate "1944-01-01"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:primaryPosition kg:Midfielder ;
+kg:playsFor res:team/Indonesia .
+
+res:player/Jay_Idzes a kg:Player ;
+kg:name "Jay Idzes" ;
+kg:nationality res:country/Indonesia ;
+kg:birthDate "1998-06-02"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:primaryPosition kg:Defender ;
+kg:playsFor res:team/Indonesia .
+
+res:player/Marselino_Ferdinan a kg:Player ;
+kg:name "Marselino Ferdinan" ;
+kg:nationality res:country/Indonesia ;
+kg:birthDate "2004-09-09"^^xsd:date ;
+kg:birthPlace res:city/Jakarta ;
+kg:primaryPosition kg:Forward ;
+kg:playsFor res:team/Indonesia .
+
+res:stadium/Semeni_Bung_Karno a kg:Stadium ;
+kg:name "Semeni Bung Karno" ;
+kg:capacity "100000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Jakarta .
+
+res:stadium/Semeni_Internasional_Jakarta a kg:Stadium ;
+kg:name "Semeni Internasional Jakarta" ;
+kg:capacity "50000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Jakarta .
+
+res:club/Persija_Jakarta a kg:Club ;
+kg:name "Persija Jakarta" ;
+kg:foundedDate "1927-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Semeni_Bung_Karno .
+
+res:club/Borneo_FC a kg:Club ;
+kg:name "Borneo FC" ;
+kg:foundedDate "2014-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Semeni_Internasional_Jakarta .
+
+res:club/Dewa_United a kg:Club ;
+kg:name "Dewa United" ;
+kg:foundedDate "2010-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Semeni_Bung_Karno .
+
+res:club/Persib_Bandung a kg:Club ;
+kg:name "Persib Bandung" ;
+kg:foundedDate "1978-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Semeni_Bung_Karno .
+
+res:match/Indonesia_vs_Japan_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Japan ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-06-10T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Shaun_Evans ;
+kg:result "0-4" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Vietnam_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Vietnam ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-06-15T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Muhammad_Taqi ;
+kg:result "2-0" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Australia_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Australia ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-06-20T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Salman_Falahi ;
+kg:result "0-4" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Iran_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Iran ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-06-25T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Mohammed_Braheh ;
+kg:result "0-5" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Qatar_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Qatar ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-07-01T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Muhammad_Taqi ;
+kg:result "0-2" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Bahrain_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Bahrain ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-07-06T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Adham_Makhadmeh ;
+kg:result "2-2" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_China_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/China ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-07-11T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Omar_Al_Ali ;
+kg:result "1-2" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Japan_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Japan ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-07-16T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Mooud_Bonyadifard ;
+kg:result "0-4" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Saudi_Arabia_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Saudi_Arabia ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-07-21T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Rustam_Lutfullin ;
+kg:result "2-0" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Thailand_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Thailand ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-07-26T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Muhammad_Taqi ;
+kg:result "1-1" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Vietnam_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Vietnam ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-08-01T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Shaun_Evans ;
+kg:result "2-0" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Philippines_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Philippines ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-08-06T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Rustam_Lutfullin ;
+kg:result "2-0" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Malaysia_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/Malaysia ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-08-11T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Muhammad_Taqi ;
+kg:result "1-1" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_South_Korea_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam res:team/South_Korea ;
+kg:venue res:stadium/Semeni_Bung_Karno ;
+kg:kickoffTime "2025-08-16T19:00:00"^^xsd:dateTime ;
+kg:referee res:person/Omar_Al_Ali ;
+kg:result "0-4" ;
+kg:inCompetition res:competition/AFC_Asian_Cup .
+
+res:match/Indonesia_vs_Japan_2025 a kg:Match ;
+kg:homeTeam res:team/Indonesia ;
+kg:awayTeam

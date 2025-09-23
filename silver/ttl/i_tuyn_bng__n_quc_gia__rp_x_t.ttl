@@ -1,0 +1,201 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Saudi_Arabia_Female_National_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Ả Rập Xê Út" ;
+kg:teamAbbreviation "KSA" ;
+kg:hasCoach res:coach/Monika_Staab .
+
+res:coach/Monika_Staab a kg:Coach ;
+kg:manages res:team/Saudi_Arabia_Female_National_Team .
+
+res:player/Sara_Khaled a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/Mona_Abdel_Rahman a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 12 .
+
+res:player/Lama_Al_Anazi a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 22 .
+
+res:player/Bayan_Sadaqah a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 2 .
+
+res:player/Lin_Muhammad a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 3 .
+
+res:player/Talah_Al_Ghamdi a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 4 .
+
+res:player/Lana_Abdel_Razzaq a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 5 .
+
+res:player/Mashael_Al_Harbi a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 15 .
+
+res:player/Atheer_Khaled a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 24 .
+
+res:player/Hessa_Al_Saadallah a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 25 .
+
+res:player/Ohoud_Al_Amari a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 0 .
+
+res:player/Maryam_Al_Tamimi a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 6 .
+
+res:player/Noura_Al_Ibrahim a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 7 .
+
+res:player/Layan_Johari a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 8 .
+
+res:player/Sarah_Hamad a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 10 .
+
+res:player/Dalia_Abu_Laban a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 11 .
+
+res:player/Raghad_Mukhaizin a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 13 .
+
+res:player/Asrar_Al_Shhaibani a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 16 .
+
+res:player/Saba_Tawfiq a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 18 .
+
+res:player/Juri_Tariq a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 21 .
+
+res:player/Farah_Jafri a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 28 .
+
+res:player/Fahda_Al_Saad a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 0 .
+
+res:player/Al_Bandari_Muhammad a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 9 .
+
+res:player/Al_Bandari_Mubarak a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 14 .
+
+res:player/Tahani_Al_Zahrani a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia_Female_National_Team ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 23 .
+
+res:country/Saudi_Arabia a kg:Country ;
+kg:locatedIn res:country/Saudi_Arabia .
+
+res:competition/World_Women_s_Football_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
+
+res:competition/Asian_Women_s_Championship a kg:Competition ;
+kg:competitionName "Cúp bóng đá nữ châu Á" .
+
+res:competition/Asian_Games a kg:Competition ;
+kg:competitionName "Á vận hội" .
+
+res:competition/Arab_Women_s_Championship a kg:Competition ;
+kg:competitionName "Cúp bóng đá nữ Ả Rập" .
+
+res:competition/West_Asian_Women_s_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ Tây Á" .
+
+res:match/First_Match_of_Saudi_Arabia a kg:Match ;
+kg:homeTeam res:team/Saudi_Arabia_Female_National_Team ;
+kg:awayTeam res:team/Seychelles_Female_National_Team ;
+kg:venue res:stadium/Male ;
+kg:kickoffTime "2022-02-20"^^xsd:date ;
+kg:inCompetition res:competition/World_Women_s_Football_Championship .
+
+res:stadium/Male a kg:Stadium ;
+kg:locatedIn res:city/Malé .
+
+res:city/Malé a kg:City ;
+kg:locatedIn res:country/Maldives .
+
+res:country/Maldives a kg:Country ;
+kg:locatedIn res:country/Maldives .
+
+res:team/Seychelles_Female_National_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Seychelles" ;
+kg:teamAbbreviation "SEY" .
+
+res:team/Maldives_Female_National_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Maldives" ;
+kg:teamAbbreviation "MDV" .
+
+res:team/Bhutan_Female_National_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Bhutan" ;
+kg:teamAbbreviation "BHU" .
+
+res:match/First_Match_of_Saudi_Arabia a kg:Match ;
+kg:homeTeam res:team/Saudi_Arabia_Female_National_Team ;
+kg:awayTeam res:team/Seychelles_Female_National_Team ;
+kg:venue res:stadium/Male ;
+kg:kickoffTime "2022-02-20"^^xsd:date .
+
+res:match/Saudi_Arabia_vs_Bhutan a kg:Match ;
+kg:homeTeam res:team/Saudi_Arabia_Female_National_Team ;
+kg:awayTeam res:team/Bhutan_Female_National_Team ;
+kg:venue res:stadium/Abha ;
+kg:kickoffTime "2022-09-28"^^xsd:date .
+
+res:match/Maldives_vs_Saudi_Arabia a kg:Match ;
+kg:homeTeam res:team/Maldives_Female_National_Team ;
+kg:awayTeam res:team/Saudi_Arabia_Female_National_Team ;
+kg:venue res:stadium/Male ;
+kg:kickoffTime "2022-02-24"^^xsd:date .

@@ -1,0 +1,276 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/CampuchiaNationalWomenFootballTeam a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Campuchia" ;
+kg:teamAbbreviation "CAM" ;
+kg:hasCoach res:coach/Gao_Fulin ;
+kg:locatedIn res:country/Campuchia ;
+kg:managedBy res:coach/Gao_Fulin .
+
+res:coach/Gao_Fulin a kg:Coach ;
+kg:name "Gao Fulin" .
+
+res:country/Campuchia a kg:Country ;
+rdfs:label "Campuchia" .
+
+res:competition/FIFAWomenWorldRankings a kg:Competition ;
+kg:competitionName "FIFA Women's World Rankings" .
+
+res:match/CAMvsTLS_20180630 a kg:Match ;
+kg:homeTeam res:team/CampuchiaNationalWomenFootballTeam ;
+kg:awayTeam res:team/EastTimorNationalWomenFootballTeam ;
+kg:score "12–0" ;
+kg:kickoffTime "2018-06-30T13:00:00Z"^^xsd:dateTime ;
+kg:venue res:stadium/SriWijayaBumiStadium ;
+kg:inCompetition res:competition/FIFAWomenWorldRankings .
+
+res:stadium/SriWijayaBumiStadium a kg:Stadium ;
+kg:locatedIn res:city/Palembang ;
+kg:locatedIn res:country/Indonesia .
+
+res:city/Palembang a kg:City ;
+kg:locatedIn res:country/Indonesia .
+
+res:country/Indonesia a kg:Country ;
+rdfs:label "Indonesia" .
+
+res:country/Thailand a kg:Country ;
+rdfs:label "Thailand" .
+
+res:match/CAMvsMAS_20180702 a kg:Match ;
+kg:homeTeam res:team/CampuchiaNationalWomenFootballTeam ;
+kg:awayTeam res:team/MalaysiaNationalWomenFootballTeam ;
+kg:score "0–4" ;
+kg:kickoffTime "2018-07-02T13:00:00+07:00"^^xsd:dateTime ;
+kg:venue res:stadium/SriWijayaBumiStadium ;
+kg:inCompetition res:competition/FIFAWomenWorldRankings .
+
+res:match/THAvsCAM_20180704 a kg:Match ;
+kg:homeTeam res:team/ThailandNationalWomenFootballTeam ;
+kg:awayTeam res:team/CampuchiaNationalWomenFootballTeam ;
+kg:score "11–0" ;
+kg:kickoffTime "2018-07-04T10:00:00+07:00"^^xsd:dateTime ;
+kg:venue res:stadium/SriWijayaBumiStadium ;
+kg:inCompetition res:competition/FIFAWomenWorldRankings .
+
+res:team/ThailandNationalWomenFootballTeam a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Thái Lan" ;
+kg:teamAbbreviation "THA" ;
+kg:locatedIn res:country/Thailand .
+
+res:team/MalaysiaNationalWomenFootballTeam a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Malaysia" ;
+kg:teamAbbreviation "MAS" ;
+kg:locatedIn res:country/Malaysia .
+
+res:country/Malaysia a kg:Country ;
+rdfs:label "Malaysia" .
+
+res:country/EastTimor a kg:Country ;
+rdfs:label "Đông Timor" .
+
+res:organization/CambodianFootballFederation a kg:Organization ;
+kg:name "Liên đoàn bóng đá Campuchia" ;
+kg:locatedIn res:country/Campuchia .
+
+res:organization/ASEANFootballFederation a kg:Organization ;
+kg:name "Liên đoàn bóng đá Đông Nam Á (AFF)" ;
+kg:locatedIn res:region/SoutheastAsia .
+
+res:organization/AFC a kg:Organization ;
+kg:name "Liên đoàn bóng đá châu Á (AFC)" .
+
+res:program/AID27 a kg:Program ;
+kg:sponsor res:organization/AFC ;
+kg:startDate "2008-01-01"^^xsd:date ;
+kg:endDate "2012-12-31"^^xsd:date ;
+kg:financialSupport "24000 USD"^^xsd:decimal .
+
+res:person/SamSchweingruber a kg:Coach ;
+kg:name "Sam Schweingruber" ;
+kg:worksFor res:organization/FIFA .
+
+res:organization/FIFA a kg:Organization ;
+kg:name "FIFA" .
+
+res:event/FirstInternationalMatch a kg:Event ;
+kg:description "Trận đấu quốc tế đầu tiên của đội tuyển bóng đá nữ quốc gia Campuchia" ;
+kg:date "2018-06-30"^^xsd:date .
+
+res:player/NithPean a kg:Player ;
+kg:name "Nith Pean" ;
+kg:playsFor res:team/CampuchiaNationalWomenFootballTeam ;
+kg:firstGoalInNationalTeam "2009"^^xsd:gYear .
+
+res:team/CambodiaU16Women a kg:Team ;
+kg:teamName "Đội tuyển U-16 nữ quốc gia Campuchia" ;
+kg:locatedIn res:country/Campuchia ;
+kg:manager res:person/SamSchweingruber .
+
+res:team/CambodiaU14Women a kg:Team ;
+kg:teamName "Đội tuyển U-14 nữ quốc gia Campuchia" ;
+kg:locatedIn res:country/Campuchia ;
+kg:manager res:person/SamSchweingruber .
+
+res:team/CambodiaU13Women a kg:Team ;
+kg:teamName "Đội tuyển U-13 nữ quốc gia Campuchia" ;
+kg:locatedIn res:country/Campuchia .
+
+res:event/ASEANYouthTournament2011 a kg:Event ;
+kg:name "Giải vô địch U-14 nữ châu Á 2011" ;
+kg:location res:city/Hanoi ;
+kg:participatingTeam res:team/CambodiaU14Women .
+
+res:city/Hanoi a kg:City ;
+kg:locatedIn res:country/Vietnam .
+
+res:country/Vietnam a kg:Country ;
+rdfs:label "Việt Nam" .
+
+res:event/AFCYouthTournament2012 a kg:Event ;
+kg:name "Liên hoan bóng đá nữ trẻ của AFC 2012" ;
+kg:location res:country/Campuchia .
+
+res:event/MinMineAwarenessTournament2008 a kg:Event ;
+kg:name "Giải bóng đá phổ biến kiến thức về bom mìn 2008" ;
+kg:location res:country/Campuchia ;
+kg:participants res:group/FemalePlayersUnder14YearsOld .
+
+res:group/FemalePlayersUnder14YearsOld a kg:Group ;
+kg:member res:player/YoungGirls .
+
+res:person/GneKomSorth a kg:Coach ;
+kg:name "Gne Kom' Sorth" ;
+kg:certification "D" ;
+kg:issuingOrganization res:organization/FIFA .
+
+res:person/LeeHeang a kg:Coach ;
+kg:name "Lee Heang" ;
+kg:certification "D" ;
+kg:issuingOrganization res:organization/FIFA .
+
+res:event/FIFAWorkshopOnWomenFootball2009 a kg:Event ;
+kg:name "Buổi hội thảo về bóng đá nữ 2009" ;
+kg:location res:city/PhnomPenh ;
+kg:organizedBy res:organization/CambodianFootballFederation .
+
+res:city/PhnomPenh a kg:City ;
+kg:locatedIn res:country/Campuchia .
+
+res:event/FIFASupportEvent2010 a kg:Event ;
+kg:name "Sự kiện hỗ trợ bóng đá nữ 2010" ;
+kg:organizedBy res:organization/FIFA .
+
+res:event/FirstFIFARecognizedMatch a kg:Event ;
+kg:name "Trận đấu đầu tiên được FIFA công nhận" ;
+kg:date "2018-06-30"^^xsd:date ;
+kg:result "12–0" ;
+kg:against res:team/EastTimorNationalWomenFootballTeam .
+
+res:competition/AsianWomenChampionship a kg:Competition ;
+kg:competitionName "Cúp bóng đá nữ châu Á" .
+
+res:competition/AsianGames a kg:Competition ;
+kg:competitionName "Đại hội Thể thao châu Á" .
+
+res:competition/SEA_Games a kg:Competition ;
+kg:competitionName "Đại hội Thể thao Đông Nam Á" .
+
+res:competition/ASEANWomenChampionship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ Đông Nam Á" .
+
+res:competition/FIFAWomenWorldCup a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/FIFAWomenWorldRankings ;
+kg:participatesIn res:team/CampuchiaNationalWomenFootballTeam .
+
+res:season/2019 a kg:Season ;
+kg:seasonOf res:competition/FIFAWomenWorldCup .
+
+res:season/2023 a kg:Season ;
+kg:seasonOf res:competition/FIFAWomenWorldCup .
+
+res:season/2027 a kg:Season ;
+kg:seasonOf res:competition/FIFAWomenWorldCup .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/AsianWomenChampionship .
+
+res:season/2022 a kg:Season ;
+kg:seasonOf res:competition/AsianWomenChampionship .
+
+res:season/2026 a kg:Season ;
+kg:seasonOf res:competition/AsianWomenChampionship .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/AsianGames .
+
+res:season/2022 a kg:Season ;
+kg:seasonOf res:competition/AsianGames .
+
+res:season/2026 a kg:Season ;
+kg:seasonOf res:competition/AsianGames .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/ASEANWomenChampionship .
+
+res:season/2019 a kg:Season ;
+kg:seasonOf res:competition/ASEANWomenChampionship .
+
+res:season/2022 a kg:Season ;
+kg:seasonOf res:competition/ASEANWomenChampionship .
+
+res:season/2025 a kg:Season ;
+kg:seasonOf res:competition/ASEANWomenChampionship .
+
+res:season/2019 a kg:Season ;
+kg:seasonOf res:competition/SEA_Games .
+
+res:season/2021 a kg:Season ;
+kg:seasonOf res:competition/SEA_Games .
+
+res:season/2023 a kg:Season ;
+kg:seasonOf res:competition/SEA_Games .
+
+res:season/2026 a kg:Season ;
+kg:seasonOf res:competition/SEA_Games .
+
+res:season/2030 a kg:Season ;
+kg:seasonOf res:competition/AsianGames .
+
+res:season/2034 a kg:Season ;
+kg:seasonOf res:competition/AsianGames .
+
+res:competitionResult/CAM2018 a kg:CompetitionResult ;
+kg:competition res:competition/ASEANWomenChampionship ;
+kg:year "2018"^^xsd:gYear ;
+kg:stage "Vòng bảng" ;
+kg:matches 4 ;
+kg:wins 1 ;
+kg:losses 3 ;
+kg:goalsScored 12 ;
+kg:goalsConceded 27 .
+
+res:competitionResult/CAM2019 a kg:CompetitionResult ;
+kg:competition res:competition/ASEANWomenChampionship ;
+kg:year "2019"^^xsd:gYear ;
+kg:stage "Vòng bảng" ;
+kg:matches 3 ;
+kg:wins 0 ;
+kg:losses 3 ;
+kg:goalsScored 1 ;
+kg:goalsConceded 24 .
+
+res:competitionResult/CAM2022 a kg:CompetitionResult ;
+kg:competition res:competition/ASEANWomenChampionship ;
+kg:year "2022"^^xsd:gYear ;
+kg:stage "Vòng bảng" ;
+kg:matches 4 ;
+kg:wins 1 ;
+kg:

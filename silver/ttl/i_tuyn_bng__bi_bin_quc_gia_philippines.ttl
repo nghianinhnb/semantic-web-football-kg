@@ -1,0 +1,152 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/philippine_beach_soccer_team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Philippines" ;
+kg:teamAbbreviation "PHI" ;
+kg:hasCoach res:coach/ahmed_ayada_mike_athab ;
+kg:locatedIn res:country/philippines ;
+kg:managedBy res:coach/ahmed_ayada_mike_athab ;
+kg:inCompetition res:competition/asia_beach_soccer_championship ;
+kg:inCompetition res:competition/se_asia_beach_soccer_championship ;
+kg:organizedBy res:organization/phl_beach_football_association ;
+kg:sponsor "Columbia Sportswear" , "Everlast" ;
+kg:firstGame res:match/philippines_versus_japan_2006 ;
+kg:largestWin res:match/philippines_versus_myanmar_2016 ;
+kg:largestLoss res:match/philippines_versus_iran_2013 .
+
+res:coach/ahmed_ayada_mike_athab a kg:Coach ;
+kg:name "Ahmed Ayada \"Mike\" Athab" .
+
+res:match/philippines_versus_japan_2006 a kg:Match ;
+kg:homeTeam res:team/philippine_beach_soccer_team ;
+kg:awayTeam res:team/japan_beach_soccer_team ;
+kg:kickoffTime "2006-05-22T00:00:00"^^xsd:dateTime ;
+kg:venue res:stadium/dubai ;
+kg:result "W" ;
+kg:score "16–0" ;
+kg:inCompetition res:competition/asia_beach_soccer_championship_2006 .
+
+res:match/philippines_versus_myanmar_2016 a kg:Match ;
+kg:homeTeam res:team/vietnam_beach_soccer_team ;
+kg:awayTeam res:team/philippine_beach_soccer_team ;
+kg:kickoffTime "2016-12-07T00:00:00"^^xsd:dateTime ;
+kg:venue res:stadium/cung_vien_bien_dong ;
+kg:result "W" ;
+kg:score "3–4" .
+
+res:match/philippines_versus_iran_2013 a kg:Match ;
+kg:homeTeam res:team/qatar_beach_soccer_team ;
+kg:awayTeam res:team/philippine_beach_soccer_team ;
+kg:kickoffTime "2013-01-22T00:00:00"^^xsd:dateTime ;
+kg:venue res:stadium/katara_beach ;
+kg:result "L" ;
+kg:score "0–20" .
+
+res:stadium/dubai a kg:Stadium ;
+kg:locatedIn res:city/dubai ;
+kg:capacity 0 .
+
+res:stadium/cung_vien_bien_dong a kg:Stadium ;
+kg:locatedIn res:city/da_nang ;
+kg:capacity 0 .
+
+res:stadium/katara_beach a kg:Stadium ;
+kg:locatedIn res:city/doha ;
+kg:capacity 0 .
+
+res:city/dubai a kg:City ;
+kg:locatedIn res:country/united_arab_emirates .
+
+res:city/da_nang a kg:City ;
+kg:locatedIn res:country/vietnam .
+
+res:city/doha a kg:City ;
+kg:locatedIn res:country/qatar .
+
+res:country/philippines a kg:Country .
+
+res:country/united_arab_emirates a kg:Country .
+
+res:country/vietnam a kg:Country .
+
+res:country/qatar a kg:Country .
+
+res:organization/phl_beach_football_association a kg:Organization ;
+kg:locatedIn res:country/philippines .
+
+res:competition/asia_beach_soccer_championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Á" .
+
+res:competition/se_asia_beach_soccer_championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Đông Nam Á" .
+
+res:competition/asia_beach_soccer_championship_2006 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Á 2006" ;
+kg:heldIn res:country/united_arab_emirates .
+
+res:team/japan_beach_soccer_team a kg:Team ;
+kg:teamName "Japan National Beach Soccer Team" ;
+kg:teamAbbreviation "JPN" .
+
+res:team/vietnam_beach_soccer_team a kg:Team ;
+kg:teamName "Vietnam National Beach Soccer Team" ;
+kg:teamAbbreviation "VNM" .
+
+res:team/qatar_beach_soccer_team a kg:Team ;
+kg:teamName "Qatar National Beach Soccer Team" ;
+kg:teamAbbreviation "QTR" .
+
+res:player/rory_stephen_mansbridge a kg:Player ;
+kg:name "Rory Stephen Mansbridge" ;
+kg:shirtNumber 1 ;
+kg:primaryPosition res:position/goalkeeper .
+
+res:player/maverick_madayag a kg:Player ;
+kg:name "Maverick Madayag" ;
+kg:shirtNumber 2 .
+
+res:player/alejandro_baldo_jr a kg:Player ;
+kg:name "Alejandro Baldo Jr." ;
+kg:shirtNumber 3 .
+
+res:player/randey_salisad a kg:Player ;
+kg:name "Randy Salisad" ;
+kg:shirtNumber 4 .
+
+res:player/ali_mahmoud_ramos a kg:Player ;
+kg:name "Ali Mahmoud Ramos" ;
+kg:shirtNumber 5 .
+
+res:player/rowell_dalida_abello a kg:Player ;
+kg:name "Rowell Dalida Abello" ;
+kg:shirtNumber 6 .
+
+res:player/jovanie_saludares_simpron a kg:Player ;
+kg:name "Jovanie Saludares Simpron" ;
+kg:shirtNumber 7 .
+
+res:player/ahmad_diab_ibrahim_cebrero a kg:Player ;
+kg:name "Ahmad Diab Ibrahim Cebrero" ;
+kg:shirtNumber 8 .
+
+res:player/marc_andrew_santos a kg:Player ;
+kg:name "Marc Andrew Santos" ;
+kg:shirtNumber 9 .
+
+res:player/rodolfo_vicente_del_rosario a kg:Player ;
+kg:name "Rodolfo Vicente Del Rosario" ;
+kg:shirtNumber 10 .
+
+res:player/jhomar_almento a kg:Player ;
+kg:name "Jhomar Almento" ;
+kg:shirtNumber 11 .
+
+res:player/salem_attar a kg:Player ;
+kg:name "Salem Attar" ;
+kg:shirtNumber 12 .
+
+res:position/goalkeeper a kg:Goalkeeper .

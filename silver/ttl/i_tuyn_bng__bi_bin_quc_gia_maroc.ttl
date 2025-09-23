@@ -1,0 +1,192 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Maroc a kg:Team ;
+kg:teamName "Maroc" ;
+kg:hasCoach "" ;
+kg:manages "" ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
+kg:organizes res:competition/Cúp_bóng_đá_bãi_biển_châu_Aphi .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Phi" ;
+kg:heldIn res:country/Maroc .
+
+res:competition/Cúp_bóng_đá_bãi_biển_châu_Aphi a kg:Competition ;
+kg:competitionName "Cúp bóng đá bãi biển châu Phi" ;
+kg:heldIn res:country/Maroc .
+
+res:country/Maroc a kg:Country ;
+rdfs:label "Maroc" .
+
+res:team/Maroc kg:participatesIn res:season/2006 ;
+kg:participatesIn res:season/2007 ;
+kg:participatesIn res:season/2008 ;
+kg:participatesIn res:season/2009 ;
+kg:participatesIn res:season/2011 ;
+kg:participatesIn res:season/2013 ;
+kg:participatesIn res:season/2015 ;
+kg:participatesIn res:season/2016 .
+
+res:season/2006 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
+kg:participantCount 6 .
+
+res:season/2013 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi ;
+kg:participantCount 6 .
+
+res:season/2016 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_bãi_biển_châu_Aphi .
+
+res:match/Trận_đấu_2016-12-13 a kg:Match ;
+kg:homeTeam res:team/Maroc ;
+kg:awayTeam res:team/Senegal ;
+kg:venue res:stadium/Eko_Atlantic ;
+kg:kickoffTime "2016-12-13T17:30"^^xsd:dateTime ;
+kg:referee res:person/Jelili_Ogunmuyiwa ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_châu_Aphi_2016 ;
+kg:inSeason res:season/2016 .
+
+res:match/Trận_đấu_2016-12-14 a kg:Match ;
+kg:homeTeam res:team/Libya ;
+kg:awayTeam res:team/Maroc ;
+kg:venue res:stadium/Eko_Atlantic ;
+kg:kickoffTime "2016-12-14T16:15"^^xsd:dateTime ;
+kg:referee res:person/Issam_Bousbih ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_châu_Aphi_2016 ;
+kg:inSeason res:season/2016 .
+
+res:match/Trận_đấu_2016-12-15 a kg:Match ;
+kg:homeTeam res:team/Mali ;
+kg:awayTeam res:team/Maroc ;
+kg:venue res:stadium/Eko_Atlantic ;
+kg:kickoffTime "2016-12-15T18:45"^^xsd:dateTime ;
+kg:referee res:person/Wael_Mostafa_El_Sabagh ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_châu_Aphi_2016 ;
+kg:inSeason res:season/2016 .
+
+res:match/Bán_kết_2016-12-17 a kg:Match ;
+kg:homeTeam res:team/Niger ;
+kg:awayTeam res:team/Maroc ;
+kg:venue res:stadium/Eko_Atlantic ;
+kg:kickoffTime "2016-12-17T20:00"^^xsd:dateTime ;
+kg:referee res:person/Said_Nassur_Hachim ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_châu_Aphi_2016 ;
+kg:inSeason res:season/2016 .
+
+res:match/Hạng_tía_2016-12-18 a kg:Match ;
+kg:homeTeam res:team/Maroc ;
+kg:awayTeam res:team/Egypt ;
+kg:venue res:stadium/Eko_Atlantic ;
+kg:kickoffTime "2016-12-18T18:45"^^xsd:dateTime ;
+kg:referee res:person/Yahya_Abdel_Ghani ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_châu_Aphi_2016 ;
+kg:inSeason res:season/2016 .
+
+res:stadium/Eko_Atlantic a kg:Stadium ;
+kg:capacity 0 ;
+kg:locatedIn res:city/Lagos .
+
+res:city/Lagos a kg:City ;
+kg:locatedIn res:country/Nigeria .
+
+res:person/Jelili_Ogunmuyiwa a kg:Referee .
+
+res:person/Issam_Bousbih a kg:Referee .
+
+res:person/Wael_Mostafa_El_Sabagh a kg:Referee .
+
+res:person/Said_Nassur_Hachim a kg:Referee .
+
+res:person/Yahya_Abdel_Ghani a kg:Referee .
+
+res:team/Maroc kg:hasPlayer res:player/Zouheir_Laaroubi ;
+kg:hasPlayer res:player/Hafid_Abdessadek ;
+kg:hasPlayer res:player/Jawad_Ouaddouch ;
+kg:hasPlayer res:player/Achraf_El_Arabi ;
+kg:hasPlayer res:player/Hamza_Abourazzouk ;
+kg:hasPlayer res:player/Abdelmajid_El_Khal ;
+kg:hasPlayer res:player/Nassim_El_Hadaoui ;
+kg:hasPlayer res:player/Mohamed_Rida_Mokhtari ;
+kg:hasPlayer res:player/Nordin_Oulad_El_Haj .
+
+res:player/Zouheir_Laaroubi a kg:Player ;
+kg:playsFor res:team/Maroc ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/Hafid_Abdessadek a kg:Player ;
+kg:playsFor res:team/Maroc ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 6 .
+
+res:player/Jawad_Ouaddouch a kg:Player ;
+kg:playsFor res:team/Maroc ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 9 .
+
+res:player/Achraf_El_Arabi a kg:Player ;
+kg:playsFor res:team/Maroc ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 10 .
+
+res:player/Hamza_Abourazzouk a kg:Player ;
+kg:playsFor res:team/Maroc ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 11 .
+
+res:player/Abdelmajid_El_Khal a kg:Player ;
+kg:playsFor res:team/Maroc ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 12 .
+
+res:player/Nassim_El_Hadaoui a kg:Player ;
+kg:playsFor res:team/Maroc ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 13 .
+
+res:player/Mohamed_Rida_Mokhtari a kg:Player ;
+kg:playsFor res:team/Maroc ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 14 .
+
+res:player/Nordin_Oulad_El_Haj a kg:Player ;
+kg:playsFor res:team/Maroc ;
+kg:primaryPosition kg:Midfielder .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Aphi a kg:Competition ;
+kg:organizes res:season/2006 ;
+kg:organizes res:season/2007 ;
+kg:organizes res:season/2008 ;
+kg:organizes res:season/2009 ;
+kg:organizes res:season/2011 ;
+kg:organizes res:season/2013 ;
+kg:organizes res:season/2015 .
+
+res:season/2006 a kg:Season ;
+kg:hasResult "Hạng 6" .
+
+res:season/2007 a kg:Season ;
+kg:hasResult "Không tham dự" .
+
+res:season/2008 a kg:Season ;
+kg:hasResult "Không tham dự" .
+
+res:season/2009 a kg:Season ;
+kg:hasResult "Vòng 1" .
+
+res:season/2011 a kg:Season ;
+kg:hasResult "Vòng 1" .
+
+res:season/2013 a kg:Season ;
+kg:hasResult "Hạng ba" .
+
+res:season/2015 a kg:Season ;
+kg:hasResult "Hạng 5" .
+
+res:season/2016 a kg:Season ;
+kg:hasResult "Hạng tư" .

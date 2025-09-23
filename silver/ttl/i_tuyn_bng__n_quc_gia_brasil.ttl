@@ -1,0 +1,226 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Brasil a kg:Team ;
+kg:teamName "Brasil" ;
+kg:teamAbbreviation "BRA" ;
+kg:hasCoach res:coach/Arthur_Elias ;
+kg:manages res:coach/Arthur_Elias ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_1991 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_1995 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_1999 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2003 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2007 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2011 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2015 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2019 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2023 ;
+kg:participatesIn res:season/Olympic_Games_1996 ;
+kg:participatesIn res:season/Olympic_Games_2000 ;
+kg:participatesIn res:season/Olympic_Games_2004 ;
+kg:participatesIn res:season/Olympic_Games_2008 ;
+kg:participatesIn res:season/Olympic_Games_2012 ;
+kg:participatesIn res:season/Olympic_Games_2016 ;
+kg:participatesIn res:season/Olympic_Games_2020 ;
+kg:participatesIn res:season/Olympic_Games_2024 ;
+kg:participatesIn res:season/Copa_America_Feminina_1991 ;
+kg:participatesIn res:season/Copa_America_Feminina_1995 ;
+kg:participatesIn res:season/Copa_America_Feminina_1998 ;
+kg:participatesIn res:season/Copa_America_Feminina_2003 ;
+kg:participatesIn res:season/Copa_America_Feminina_2010 ;
+kg:participatesIn res:season/Copa_America_Feminina_2014 ;
+kg:participatesIn res:season/Copa_America_Feminina_2018 ;
+kg:participatesIn res:season/Copa_America_Feminina_2022 ;
+kg:participatesIn res:season/CONCACAF_Championship_2000 ;
+kg:participatesIn res:season/Pan_American_Games_2003 ;
+kg:participatesIn res:season/Pan_American_Games_2007 ;
+kg:participatesIn res:season/Pan_American_Games_2011 ;
+kg:participatesIn res:season/Pan_American_Games_2015 ;
+kg:participatesIn res:season/Pan_American_Games_2023 ;
+kg:participatesIn res:season/Pan_American_Games_2027 .
+
+res:coach/Arthur_Elias a kg:Coach ;
+kg:manages res:team/Brasil .
+
+res:player/Formiga a kg:Player ;
+kg:playsFor res:team/Brasil ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1978-06-07"^^xsd:date ;
+kg:birthPlace res:city/São_Paulo ;
+kg:nationality res:country/Brazil ;
+kg:shirtNumber 10 .
+
+res:player/Marta a kg:Player ;
+kg:playsFor res:team/Brasil ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1986-07-26"^^xsd:date ;
+kg:birthPlace res:city/Rio_de_Janeiro ;
+kg:nationality res:country/Brazil ;
+kg:shirtNumber 10 .
+
+res:player/Rafaelle_Souza a kg:Player ;
+kg:playsFor res:team/Brasil ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1991-06-18"^^xsd:date ;
+kg:birthPlace res:city/São_Paulo ;
+kg:nationality res:country/Brazil ;
+kg:shirtNumber 4 .
+
+res:team/Brasil kg:participatesIn res:season/FIFA_Women's_World_Cup_1991 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_1995 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_1999 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2003 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2007 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2011 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2015 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2019 ;
+kg:participatesIn res:season/FIFA_Women's_World_Cup_2023 .
+
+res:season/FIFA_Women's_World_Cup_1991 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/FIFA_Women's_World_Cup_1995 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/FIFA_Women's_World_Cup_1999 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/FIFA_Women's_World_Cup_2003 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/FIFA_Women's_World_Cup_2007 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/FIFA_Women's_World_Cup_2011 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/FIFA_Women's_World_Cup_2015 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/FIFA_Women's_World_Cup_2019 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/FIFA_Women's_World_Cup_2023 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Olympic_Games_1996 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Olympic_Games_2000 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Olympic_Games_2004 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Olympic_Games_2008 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Olympic_Games_2012 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Olympic_Games_2016 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Olympic_Games_2020 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Olympic_Games_2024 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Copa_America_Feminina_1991 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Copa_America_Feminina_1995 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Copa_America_Feminina_1998 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Copa_America_Feminina_2003 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Copa_America_Feminina_2010 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Copa_America_Feminina_2014 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Copa_America_Feminina_2018 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Copa_America_Feminina_2022 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/CONCACAF_Championship_2000 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Pan_American_Games_2003 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Pan_American_Games_2007 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Pan_American_Games_2011 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Pan_American_Games_2015 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Pan_American_Games_2023 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:season/Pan_American_Games_2027 a kg:Season ;
+kg:hasTeam res:team/Brasil .
+
+res:country/Brazil a kg:Country ;
+kg:locatedIn res:country/Brazil .
+
+res:city/São_Paulo a kg:City ;
+kg:locatedIn res:country/Brazil .
+
+res:city/Rio_de_Janeiro a kg:City ;
+kg:locatedIn res:country/Brazil .
+
+res:competition/FIFA_Women's_World_Cup a kg:Competition ;
+kg:competitionName "FIFA Women's World Cup" .
+
+res:competition/Olympic_Games a kg:Competition ;
+kg:competitionName "Olympic Games" .
+
+res:competition/Copa_America_Feminina a kg:Competition ;
+kg:competitionName "Copa América Femenina" .
+
+res:competition/CONCACAF_Championship a kg:Competition ;
+kg:competitionName "CONCACAF Championship" .
+
+res:competition/Pan_American_Games a kg:Competition ;
+kg:competitionName "Pan American Games" .
+
+res:season/FIFA_Women's_World_Cup_1991 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women's_World_Cup .
+
+res:season/FIFA_Women's_World_Cup_1995 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women's_World_Cup .
+
+res:season/FIFA_Women's_World_Cup_1999 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women's_World_Cup .
+
+res:season/FIFA_Women's_World_Cup_2003 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women's_World_Cup .
+
+res:season/FIFA_Women's_World_Cup_2007 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women's_World_Cup .
+
+res:season/FIFA_Women's_World_Cup_2011 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women's_World_Cup .
+
+res:season/FIFA_Women's_World_Cup_2015 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women's_World_Cup .
+
+res:season/FIFA_Women's_World_Cup_2019 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women's_World_Cup .
+
+res:season/FIFA_Women's_World_Cup_2023 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women's_World

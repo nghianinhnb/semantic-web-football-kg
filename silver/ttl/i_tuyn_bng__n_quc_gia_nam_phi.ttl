@@ -1,0 +1,260 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/NamPhi a kg:Team ;
+kg:teamName "Nam Phi" ;
+kg:teamAbbreviation "RSA" ;
+kg:hasCoach res:coach/DesireeEllis ;
+kg:manages res:coach/DesireeEllis ;
+kg:hasCaptain res:player/JanineVanWyk ;
+kg:mostCaps res:player/JanineVanWyk ;
+kg:topScorer res:player/PortiaModise ;
+kg:FIFARank "48"^^xsd:integer ;
+kg:FIFAMax "48"^^xsd:integer ;
+kg:FIFAMaxDate "2016-08-01"^^xsd:date ;
+kg:FIFAMin "74"^^xsd:integer ;
+kg:FIFAMinDate "2005-06-01"^^xsd:date ;
+kg:firstGame "1993-05-30"^^xsd:date ;
+kg:largestWin "2019-07-31"^^xsd:date ;
+kg:largestLoss "2003-09-07"^^xsd:date ;
+kg:worldCupApps "2"^^xsd:integer ;
+kg:worldCupFirst "2019"^^xsd:gYear ;
+kg:worldCupBest "2023"^^xsd:gYear ;
+kg:regionalCupApps "13"^^xsd:integer ;
+kg:regionalCupFirst "1995"^^xsd:gYear ;
+kg:regionalCupBest "2022"^^xsd:gYear ;
+kg:secondRegionalCupApps "2"^^xsd:integer ;
+kg:secondRegionalCupFirst "2012"^^xsd:gYear ;
+kg:secondRegionalCupBest "2012"^^xsd:gYear .
+
+res:coach/DesireeEllis a kg:Coach ;
+kg:name "Desiree Ellis" .
+
+res:player/JanineVanWyk a kg:Player ;
+kg:name "Janine Van Wyk" ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "7"^^xsd:positiveInteger ;
+kg:mostCaps "170"^^xsd:integer .
+
+res:player/PortiaModise a kg:Player ;
+kg:name "Portia Modise" ;
+kg:primaryPosition res:position/Forward ;
+kg:topGoals "101"^^xsd:integer .
+
+res:player/KebotsengMoletsane a kg:Player ;
+kg:name "Kebotseng Moletsane" ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/DineoMagagula a kg:Player ;
+kg:name "Dineo Magagula" ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/TshidiMuruoa a kg:Player ;
+kg:name "Tshidi Muruoa" ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/FikileMagama a kg:Player ;
+kg:name "Fikile Magama" ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/CimoneSauls a kg:Player ;
+kg:name "Cimone Sauls" ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/KoketsoTlailane a kg:Player ;
+kg:name "Koketso Tlailane" ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/NothandoVilakazi a kg:Player ;
+kg:name "Nothando Vilakazi" ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/TiisetsoMakhubela a kg:Player ;
+kg:name "Tiisetso Makhubela" ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "7"^^xsd:positiveInteger ;
+kg:birthDate "1997-04-24"^^xsd:date .
+
+res:player/Lonathemba a kg:Player ;
+kg:name "Lonathemba" ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/ThatoLetsoso a kg:Player ;
+kg:name "Thato Letsoso" ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/SharolRamaoka a kg:Player ;
+kg:name "Sharol Ramaoka" ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/JamieLeighWitbooi a kg:Player ;
+kg:name "Jamie Leigh Witbooi" ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "15"^^xsd:positiveInteger ;
+kg:nationality res:country/Italy .
+
+res:player/MmabathoMogale a kg:Player ;
+kg:name "Mmabatho Mogale" ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "15"^^xsd:positiveInteger .
+
+res:player/SphumeleleShamase a kg:Player ;
+kg:name "Sphumelele Shamase" ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "15"^^xsd:positiveInteger ;
+kg:nationality res:country/Italy .
+
+res:player/OratileMokwena a kg:Player ;
+kg:name "Oratile Mokwena" ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "15"^^xsd:positiveInteger ;
+kg:birthDate "2001-03-21"^^xsd:date .
+
+res:player/NonhlanhlaMthandi a kg:Player ;
+kg:name "Nonhlanhla Mthandi" ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "15"^^xsd:positiveInteger .
+
+res:player/SinazoNtshota a kg:Player ;
+kg:name "Sinazo Ntshota" ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "15"^^xsd:positiveInteger .
+
+res:player/BusisiweNdimeni a kg:Player ;
+kg:name "Busisiwe Ndими" ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "15"^^xsd:positiveInteger .
+
+res:player/LelonaDaweti a kg:Player ;
+kg:name "Lelona Daweti" ;
+kg:primaryPosition res:position/Forward .
+
+res:player/ZethembisoVilakazi a kg:Player ;
+kg:name "Zethembiso Vilakazi" ;
+kg:primaryPosition res:position/Forward .
+
+res:player/MichelleSampson a kg:Player ;
+kg:name "Michelle Sampson" ;
+kg:primaryPosition res:position/Forward .
+
+res:player/AmandaMkhize a kg:Player ;
+kg:name "Amanda Mkhize" ;
+kg:primaryPosition res:position/Forward .
+
+res:player/LithembaSam a kg:Player ;
+kg:name "Lithemba Sam" ;
+kg:primaryPosition res:position/Forward .
+
+res:position/Defender a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Midfielder a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Goalkeeper a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:country/SouthAfrica a kg:Country ;
+kg:team res:team/NamPhi .
+
+res:competition/CupOfAfrica a kg:Competition ;
+kg:competitionName "Cúp bóng đá nữ châu Phi" .
+
+res:competition/WorldCup a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
+
+res:competition/OlympicGames a kg:Competition ;
+kg:competitionName "Thế vận hội Mùa hè" .
+
+res:team/NamPhi kg:participatesIn res:season/2019 ;
+kg:participatesIn res:season/2023 ;
+kg:participatesIn res:season/2012 .
+
+res:season/2019 a kg:Season ;
+kg:seasonOf res:competition/WorldCup .
+
+res:season/2023 a kg:Season ;
+kg:seasonOf res:competition/WorldCup .
+
+res:season/2012 a kg:Season ;
+kg:seasonOf res:competition/OlympicGames .
+
+res:match/2019 a kg:Match ;
+kg:inCompetition res:competition/WorldCup ;
+kg:inSeason res:season/2019 .
+
+res:match/2023 a kg:Match ;
+kg:inCompetition res:competition/WorldCup ;
+kg:inSeason res:season/2023 .
+
+res:match/2012 a kg:Match ;
+kg:inCompetition res:competition/OlympicGames ;
+kg:inSeason res:season/2012 .
+
+res:team/NamPhi kg:participatesIn res:season/1995 ;
+kg:participatesIn res:season/2000 ;
+kg:participatesIn res:season/2008 ;
+kg:participatesIn res:season/2012 ;
+kg:participatesIn res:season/2018 ;
+kg:participatesIn res:season/2022 .
+
+res:season/1995 a kg:Season ;
+kg:seasonOf res:competition/CupOfAfrica .
+
+res:season/2000 a kg:Season ;
+kg:seasonOf res:competition/CupOfAfrica .
+
+res:season/2008 a kg:Season ;
+kg:seasonOf res:competition/CupOfAfrica .
+
+res:season/2012 a kg:Season ;
+kg:seasonOf res:competition/CupOfAfrica .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/CupOfAfrica .
+
+res:season/2022 a kg:Season ;
+kg:seasonOf res:competition/CupOfAfrica .
+
+res:team/NamPhi kg:win res:match/2022 ;
+kg:loss res:match/1995 ;
+kg:loss res:match/2000 ;
+kg:loss res:match/2008 ;
+kg:loss res:match/2012 ;
+kg:loss res:match/2018 .
+
+res:match/2022 a kg:Match ;
+kg:inCompetition res:competition/CupOfAfrica ;
+kg:inSeason res:season/2022 .
+
+res:match/1995 a kg:Match ;
+kg:inCompetition res:competition/CupOfAfrica ;
+kg:inSeason res:season/1995 .
+
+res:match/2000 a kg:Match ;
+kg:inCompetition res:competition/CupOfAfrica ;
+kg:inSeason res:season/2000 .
+
+res:match/2008 a kg:Match ;
+kg:inCompetition res:competition/CupOfAfrica ;
+kg:inSeason res:season/2008 .
+
+res:match/2012 a kg:Match ;
+kg:inCompetition res:competition/CupOfAfrica ;
+kg:inSeason res:season/2012 .
+
+res:match/2018 a kg:Match ;
+kg:inCompetition res:competition/CupOfAfrica ;
+kg:inSeason res:season/2018 .

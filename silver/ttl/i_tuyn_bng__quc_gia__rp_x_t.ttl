@@ -1,0 +1,288 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Saudi_Arabia a kg:Team ;
+kg:teamName "Saudi Arabia" ;
+kg:teamAbbreviation "KSA" ;
+kg:hasCoach res:coach/Hervé_Renard ;
+kg:hasAssistantCoach res:coach/Adrie_Koster ;
+kg:hasAssistantCoach res:coach/Mark_van_Bommel ;
+kg:hasAssistantCoach res:coach/Roel_Coumans ;
+kg:mostCaps res:player/Mohamed_Al-Deayea ;
+kg:topScorer res:player/Majed_Abdullah ;
+kg:FIFA_rank 56 ;
+kg:FIFA_max 21 ;
+kg:FIFA_max_date "2004-07"^^xsd:gYearMonth ;
+kg:FIFA_min 126 ;
+kg:FIFA_min_date "2012-12"^^xsd:gYearMonth ;
+kg:Elo_rank 27 ;
+kg:Elo_max 27 ;
+kg:Elo_max_date "1998-11"^^xsd:gYearMonth ;
+kg:Elo_min 112 ;
+kg:Elo_min_date "1970-01"^^xsd:gYearMonth ;
+kg:confederation res:organization/AFC ;
+kg:association res:organization/SAFF ;
+kg:captain res:player/Salman_Al-Faraj ;
+kg:badge "Saudi_Arabia_SAFF.jpg" ;
+kg:badge_size 175 ;
+kg:nickname "The Green" ;
+kg:nickname "Green Eagles" .
+
+res:player/Mohamed_Al-Deayea a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1970-01-01"^^xsd:date ;
+kg:birthPlace res:city/Riyadh ;
+kg:nationality res:country/Saudi_Arabia ;
+kg:height 180 ;
+kg:weight 75 ;
+kg:shirtNumber 1 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Majed_Abdullah a kg:Player ;
+kg:playsFor res:team/Saudi_Arabia ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1966-01-01"^^xsd:date ;
+kg:birthPlace res:city/Riyadh ;
+kg:nationality res:country/Saudi_Arabia ;
+kg:height 185 ;
+kg:weight 78 ;
+kg:shirtNumber 9 ;
+kg:preferredFoot kg:RightFooted .
+
+res:coach/Hervé_Renard a kg:Coach ;
+kg:manages res:team/Saudi_Arabia ;
+kg:birthDate "1961-01-01"^^xsd:date ;
+kg:nationality res:country/France .
+
+res:coach/Adrie_Koster a kg:AssistantCoach ;
+kg:manages res:team/Saudi_Arabia ;
+kg:birthDate "1970-01-01"^^xsd:date ;
+kg:nationality res:country/Netherlands .
+
+res:coach/Mark_van_Bommel a kg:AssistantCoach ;
+kg:manages res:team/Saudi_Arabia ;
+kg:birthDate "1981-01-01"^^xsd:date ;
+kg:nationality res:country/Netherlands .
+
+res:coach/Roel_Coumans a kg:AssistantCoach ;
+kg:manages res:team/Saudi_Arabia ;
+kg:birthDate "1968-01-01"^^xsd:date ;
+kg:nationality res:country/Netherlands .
+
+res:team/Saudi_Arabia kg:participatesIn res:season/2022_World_Cup ;
+kg:participatesIn res:season/2023_Asian_Cup ;
+kg:participatesIn res:season/2024_Confederations_Cup ;
+
+res:season/2022_World_Cup a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup .
+
+res:season/2023_Asian_Cup a kg:Season ;
+kg:seasonOf res:competition/Asian_Cup .
+
+res:season/2024_Confederations_Cup a kg:Season ;
+kg:seasonOf res:competition/Confederations_Cup .
+
+res:competition/FIFA_World_Cup a kg:Competition ;
+kg:competitionName "FIFA World Cup" .
+
+res:competition/Asian_Cup a kg:Competition ;
+kg:competitionName "AFC Asian Cup" .
+
+res:competition/Confederations_Cup a kg:Competition ;
+kg:competitionName "Confederations Cup" .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Al_Khor .
+
+res:stadium/Al_Hazm a kg:Stadium ;
+kg:capacity 30000 ;
+kg:locatedIn res:city/Riyadh .
+
+res:stadium/Al_Janoub a kg:Stadium ;
+kg:capacity 60000 ;
+kg:locatedIn res:city/Doha .
+
+res:stadium/Al_Bayt a kg:Stadium ;
+kg:capacity 60000 ;
+kg:

@@ -1,0 +1,76 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Lào a kg:teamName "Lào"^^xsd:string ;
+kg:hasCoach res:coach/Sysaveuysaysanasy ;
+kg:locatedIn res:country/Lào ;
+kg:organizedBy res:organization/Liên%20đoàn%20bóng%20đá%20Lào .
+
+res:organization/Liên%20đoàn%20bóng%20đá%20Lào a kg:Organization ;
+kg:organizes res:competition/Giải%20vô%20địch%20bóng%20đá%20bãi%20biển%20Đông%20Nam%20Á ;
+kg:organizes res:competition/Giải%20vô%20địch%20bóng%20đá%20bãi%20biển%20châu%20Á .
+
+res:competition/Giải%20vô%20địch%20bóng%20đá%20bãi%20biển%20Đông%20Nam%20Á a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Đông Nam Á"^^xsd:string ;
+kg:heldIn res:country/Lào .
+
+res:competition/Giải%20vô%20địch%20bóng%20đá%20bãi%20biển%20châu%20Á a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Á"^^xsd:string ;
+kg:heldIn res:country/Lào .
+
+res:player/Phonepaserth%20Vongsipasong a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "1"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/GK .
+
+res:player/Souvanpheng%20Phanthavong a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "2"^^xsd:positiveInteger .
+
+res:player/Khamala%20Xayalath a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "3"^^xsd:positiveInteger .
+
+res:player/Soukakhone%20Bountathip a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "4"^^xsd:positiveInteger .
+
+res:player/Phouthone%20Innalay a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "5"^^xsd:positiveInteger .
+
+res:player/Phayanh%20Louanglath a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "6"^^xsd:positiveInteger .
+
+res:player/Khitsakhone%20Champathong a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/Thinnakone%20Vongsa a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "8"^^xsd:positiveInteger .
+
+res:player/Phitack%20Kongmathilath a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "9"^^xsd:positiveInteger .
+
+res:player/Chiu%20Nonmany a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "10"^^xsd:positiveInteger .
+
+res:player/Tona%20Bounmalay a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "11"^^xsd:positiveInteger .
+
+res:player/Tu%20Mouakong%20Thao a kg:Player ;
+kg:playsFor res:team/Lào ;
+kg:shirtNumber "12"^^xsd:positiveInteger .
+
+res:coach/Sysaveuysaysanasy a kg:Coach ;
+kg:manages res:team/Lào .
+
+res:country/Lào a kg:Country ;
+rdfs:label "Lào"^^xsd:string .

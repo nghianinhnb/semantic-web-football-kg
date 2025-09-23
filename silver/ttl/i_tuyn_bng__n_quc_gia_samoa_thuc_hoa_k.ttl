@@ -1,0 +1,9 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Samoa_National_Female_Football_Team a kg:Team ;
+kg:teamName "Samoa National Female Football Team" ;
+kg:teamAbbreviation "SAM" ;
+kg:nationality res:country/Samoa .

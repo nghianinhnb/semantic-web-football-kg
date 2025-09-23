@@ -1,0 +1,132 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Uganda_Beach_Football_National_Team a kg:Team ;
+kg:teamName "Uganda" ;
+kg:teamAbbreviation "UGA" ;
+kg:hasCoach res:coach/Kebba_Haruna ;
+kg:manages res:coach/Kebba_Haruna ;
+kg:locatedIn res:country/Uganda .
+
+res:coach/Kebba_Haruna a kg:Coach .
+
+res:country/Uganda a kg:Country .
+
+res:player/Ashadu_Bugembe a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/Kasujja_Davis a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 .
+
+res:player/Naturinda_Ambrose_Sanyu a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 .
+
+res:player/Muganga_Douglas a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 .
+
+res:player/Somoka_Rowch_Peter a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 5 .
+
+res:player/Revita_Jonh a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 6 .
+
+res:player/Semakula_Hamim a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 .
+
+res:player/Tekkwo_Derrick a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 10 .
+
+res:player/Nkuubi_Brian a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 9 .
+
+res:player/Lukooya_Baker a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 .
+
+res:player/Lwezawula_Phillip a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 18 .
+
+res:player/Bunkeddeko_Ali a kg:Player ;
+kg:playsFor res:team/Uganda_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 11 .
+
+res:position/Goalkeeper a kg:Goalkeeper, kg:Position .
+
+res:position/Defender a kg:Defender, kg:Position .
+
+res:position/Midfielder a kg:Midfielder, kg:Position .
+
+res:position/Forward a kg:Forward, kg:Position .
+
+res:stadium/Entebbe_Sports_Beach a kg:Stadium ;
+kg:locatedIn res:city/Entebbe .
+
+res:city/Entebbe a kg:City ;
+kg:locatedIn res:country/Uganda .
+
+res:match/First_Game_Uganda_vs_Zanzibar a kg:Match ;
+kg:homeTeam res:team/Uganda_Beach_Football_National_Team ;
+kg:awayTeam res:team/Zanzibar_Sand_Heroes ;
+kg:venue res:stadium/Entebbe_Sports_Beach ;
+kg:kickoffTime "2014-12-07"^^xsd:date .
+
+res:match/Second_Game_Uganda_vs_Kenya a kg:Match ;
+kg:homeTeam res:team/Uganda_Beach_Football_National_Team ;
+kg:awayTeam res:team/Kenya_Sand_Heroes ;
+kg:venue res:stadium/Mombasa ;
+kg:kickoffTime "2015-02-01"^^xsd:date .
+
+res:match/Largest_Loss_Uganda_vs_Ghana a kg:Match ;
+kg:homeTeam res:team/Ghana ;
+kg:awayTeam res:team/Uganda_Beach_Football_National_Team ;
+kg:venue res:stadium/Accra ;
+kg:kickoffTime "2015-03-22"^^xsd:date .
+
+res:team/Zanzibar_Sand_Heroes a kg:Team ;
+kg:teamName "Zanzibar Sand Heroes" .
+
+res:team/Kenya_Sand_Heroes a kg:Team ;
+kg:teamName "Kenya Sand Heroes" .
+
+res:team/Ghana a kg:Team ;
+kg:teamName "Ghana" .
+
+res:stadium/Mombasa a kg:Stadium ;
+kg:locatedIn res:city/Mombasa .
+
+res:city/Mombasa a kg:City ;
+kg:locatedIn res:country/Kenya .
+
+res:stadium/Accra a kg:Stadium ;
+kg:locatedIn res:city/Accra .
+
+res:city/Accra a kg:City ;
+kg:locatedIn res:country/Ghana .
+
+res:country/Kenya a kg:Country .
+
+res:country/Ghana a kg:Country .

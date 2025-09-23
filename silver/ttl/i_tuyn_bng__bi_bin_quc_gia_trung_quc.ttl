@@ -1,0 +1,207 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Trung Quốc" ;
+kg:hasCoach res:coach/Ross_Ongaro .
+
+res:coach/Ross_Ongaro a kg:Coach ;
+kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc kg:participatesIn res:season/2017 ;
+
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2017 .
+
+res:season/2017 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2017 .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2017 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Á 2017" ;
+kg:heldIn res:country/Trung_Quốc .
+
+res:country/Trung_Quốc a kg:Country ;
+rdfs:label "Trung Quốc" .
+
+res:player/Han_Yn a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber "1" .
+
+res:player/Han_Xo a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "2" ;
+kg:otherRole "đội trưởng" .
+
+res:player/Lyu_Ys a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "3" .
+
+res:player/Sun_Gr a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "5" .
+
+res:player/Hao_Mh a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber "6" .
+
+res:player/Cai_Wm a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber "8" .
+
+res:player/Olu_H a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "9" .
+
+res:player/Wan_Ch a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "10" .
+
+res:player/Sun_D a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber "12" .
+
+res:match/2017-03-04 a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:awayTeam res:team/Bahrain ;
+kg:kickoffTime "2017-03-04T14:30:00+08:00"^^xsd:dateTime ;
+kg:venue res:stadium/Pantai_Batu_Buruk_Kuala_Terengganu ;
+kg:result "L" ;
+kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2017 ;
+kg:referee res:referee/Bakhtiyor_Namazov .
+
+res:stadium/Pantai_Batu_Buruk_Kuala_Terengganu a kg:Stadium ;
+kg:locatedIn res:city/Kuala_Terengganu .
+
+res:city/Kuala_Terengganu a kg:City ;
+kg:locatedIn res:country/Malaysia .
+
+res:team/Bahrain a kg:Team ;
+kg:teamName "Bahrain" .
+
+res:referee/Bakhtiyor_Namazov a kg:Referee ;
+kg:locatedIn res:country/Uzbekistan .
+
+res:match/2017-03-05 a kg:Match ;
+kg:homeTeam res:team/Afghanistan ;
+kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:kickoffTime "2017-03-05T14:30:00+08:00"^^xsd:dateTime ;
+kg:venue res:stadium/Pantai_Batu_Buruk_Kuala_Terengganu ;
+kg:result "L" ;
+kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2017 ;
+kg:referee res:referee/Ebrahim_Yousef_Almansoori .
+
+res:team/Afghanistan a kg:Team ;
+kg:teamName "Afghanistan" .
+
+res:referee/Ebrahim_Yousef_Almansoori a kg:Referee ;
+kg:locatedIn res:country/United_Arab_Emirates .
+
+res:match/2017-03-07 a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:awayTeam res:team/Iran ;
+kg:kickoffTime "2017-03-07T16:00:00+08:00"^^xsd:dateTime ;
+kg:venue res:stadium/Pantai_Batu_Buruk_Kuala_Terengganu ;
+kg:result "L" ;
+kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2017 ;
+kg:referee res:referee/Fallah_Hassan_Al_Balushi .
+
+res:team/Iran a kg:Team ;
+kg:teamName "Iran" .
+
+res:referee/Fallah_Hassan_Al_Balushi a kg:Referee ;
+kg:locatedIn res:country/Oman .
+
+res:match/2017-03-08 a kg:Match ;
+kg:homeTeam res:team/Malaysia ;
+kg:awayTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:kickoffTime "2017-03-08T14:30:00+08:00"^^xsd:dateTime ;
+kg:venue res:stadium/Pantai_Batu_Buruk_Kuala_Terengganu ;
+kg:result "L" ;
+kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2017 ;
+kg:referee res:referee/Yuichi_Hatano .
+
+res:team/Malaysia a kg:Team ;
+kg:teamName "Malaysia" .
+
+res:referee/Yuichi_Hatano a kg:Referee ;
+kg:locatedIn res:country/Japan .
+
+res:match/2017-05-11 a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:awayTeam res:team/Czech_Republic ;
+kg:kickoffTime "2017-05-11T00:00:00+08:00"^^xsd:dateTime ;
+kg:venue res:stadium/Tangshan ;
+kg:result "W" ;
+kg:aet true ;
+kg:penaltyScore "3-1" ;
+kg:inCompetition res:competition/Giao_hữu_2017 .
+
+res:team/Czech_Republic a kg:Team ;
+kg:teamName "Czech Republic" .
+
+res:match/2017-05-12 a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:awayTeam res:team/Chile ;
+kg:kickoffTime "2017-05-12T00:00:00+08:00"^^xsd:dateTime ;
+kg:venue res:stadium/Tangshan ;
+kg:result "W" ;
+kg:inCompetition res:competition/Giao_hữu_2017 .
+
+res:team/Chile a kg:Team ;
+kg:teamName "Chile" .
+
+res:match/2017-05-13 a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:awayTeam res:team/Hungary ;
+kg:kickoffTime "2017-05-13T00:00:00+08:00"^^xsd:dateTime ;
+kg:venue res:stadium/Tangshan ;
+kg:result "L" ;
+kg:inCompetition res:competition/Giao_hữu_2017 .
+
+res:team/Hungary a kg:Team ;
+kg:teamName "Hungary" .
+
+res:match/2017-08-18 a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:awayTeam res:team/Uruguay ;
+kg:kickoffTime "2017-08-18T10:00:00+08:00"^^xsd:dateTime ;
+kg:venue res:stadium/Tangshan ;
+kg:result "L" ;
+kg:inCompetition res:competition/Giao_hữu_2017 .
+
+res:team/Uruguay a kg:Team ;
+kg:teamName "Uruguay" .
+
+res:match/2017-08-19 a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:awayTeam res:team/Mexico ;
+kg:kickoffTime "2017-08-19T10:00:00+08:00"^^xsd:dateTime ;
+kg:venue res:stadium/Tangshan ;
+kg:result "L" ;
+kg:inCompetition res:competition/Giao_hữu_2017 .
+
+res:team/Mexico a kg:Team ;
+kg:teamName "Mexico" .
+
+res:match/2017-08-20 a kg:Match ;
+kg:homeTeam res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Trung_Quốc ;
+kg:awayTeam res:team/Peru ;
+kg:kickoffTime "2017-08-20T00:00:00+08:00"^^xsd:dateTime ;
+kg:venue res:stadium/Tangshan ;
+kg:result "L" ;
+kg:inCompetition res:competition/Giao_hữu_2017 .
+
+res:team/Peru a kg:Team ;
+kg:teamName "Peru" .
+
+res:match/

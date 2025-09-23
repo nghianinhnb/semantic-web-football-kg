@@ -1,0 +1,222 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Nga a kg:Team ;
+kg:teamName "Nga" ;
+kg:hasCoach res:coach/Mikhail_Likhachev ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
+kg:organizes res:competition/Cúp_bóng_đá_bãi_biển_liên_châu_lục .
+
+res:coach/Mikhail_Likhachev a kg:Coach ;
+kg:manages res:team/Nga .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" ;
+kg:heldIn res:country/Nga .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
+kg:heldIn res:country/Brazil .
+
+res:competition/Cúp_bóng_đá_bãi_biển_liên_châu_lục a kg:Competition ;
+kg:competitionName "Cúp bóng đá bãi biển liên châu lục" ;
+kg:heldIn res:country/UAE .
+
+res:team/Nga kg:participatesIn res:season/2007 ;
+kg:participatesIn res:season/2008 ;
+kg:participatesIn res:season/2009 ;
+kg:participatesIn res:season/2010 ;
+kg:participatesIn res:season/2011 ;
+kg:participatesIn res:season/2012 ;
+kg:participatesIn res:season/2013 ;
+kg:participatesIn res:season/2014 ;
+kg:participatesIn res:season/2015 ;
+kg:participatesIn res:season/2016 ;
+kg:participatesIn res:season/2017 .
+
+res:season/2007 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu .
+
+res:season/2008 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu .
+
+res:season/2009 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu .
+
+res:season/2010 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu .
+
+res:season/2011 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu .
+
+res:season/2012 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu .
+
+res:season/2013 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu .
+
+res:season/2014 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu .
+
+res:season/2015 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu .
+
+res:season/2016 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu .
+
+res:season/2017 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu Âu .
+
+res:country/Nga a kg:Country ;
+rdfs:label "Nga" .
+
+res:country/Brazil a kg:Country ;
+rdfs:label "Brazil" .
+
+res:country/UAE a kg:Country ;
+rdfs:label "Các Tiểu vương quốc Ả Rập Thống nhất" .
+
+res:player/Yuri_Krasheninnikov a kg:Player ;
+kg:playsFor res:team/Nga ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 5 ;
+kg:mostCaps 145 ;
+kg:topScorer 121 .
+
+res:player/Dmitry_Shishin a kg:Player ;
+kg:playsFor res:team/Nga ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 6 ;
+kg:topScorer 121 .
+
+res:player/Anton_Shkarin a kg:Player ;
+kg:playsFor res:team/Nga ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 7 ;
+kg:captain true .
+
+res:player/Maksim_Chuzhkov a kg:Player ;
+kg:playsFor res:team/Nga ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/Aleksей_Makarov a kg:Player ;
+kg:playsFor res:team/Nga ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 4 .
+
+res:player/Egor_Shaykov a kg:Player ;
+kg:playsFor res:team/Nga ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 9 .
+
+res:player/Ivan_Ostrovsky a kg:Player ;
+kg:playsFor res:team/Nga ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 12 .
+
+res:player/Vladislav_Aksenov a kg:Player ;
+kg:playsFor res:team/Nga ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 13 .
+
+res:player/Kirill_Romanov a kg:Player ;
+kg:playsFor res:team/Nga ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 15 .
+
+res:player/Boris_Nikonorov a kg:Player ;
+kg:playsFor res:team/Nga ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 20 .
+
+res:match/1996_RUS_vs_ITA a kg:Match ;
+kg:homeTeam res:team/Nga ;
+kg:awayTeam res:team/Italy ;
+kg:kickoffTime "1996-01-30T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
+kg:inSeason res:season/1996 ;
+kg:result "5–1" .
+
+res:match/2010_RUS_vs_ROU a kg:Match ;
+kg:homeTeam res:team/Nga ;
+kg:awayTeam res:team/Romania ;
+kg:kickoffTime "2010-07-23T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
+kg:inSeason res:season/2010 ;
+kg:result "11–1" .
+
+res:match/2016_RUS_vs_BRA a kg:Match ;
+kg:homeTeam res:team/Nga ;
+kg:awayTeam res:team/Brazil ;
+kg:kickoffTime "2016-11-04T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
+kg:inSeason res:season/2016 ;
+kg:result "0–7" .
+
+res:match/2016_RUS_vs_UAE a kg:Match ;
+kg:homeTeam res:team/Nga ;
+kg:awayTeam res:team/UAE ;
+kg:kickoffTime "2016-10-27T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_liên_châu_lục ;
+kg:inSeason res:season/2016 ;
+kg:result "3–3 (4–5 pen)" .
+
+res:match/2016_RUS_vs_HUN a kg:Match ;
+kg:homeTeam res:team/Nga ;
+kg:awayTeam res:team/Hungary ;
+kg:kickoffTime "2016-10-28T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_liên_châu_lục ;
+kg:inSeason res:season/2016 ;
+kg:result "3–0" .
+
+res:match/2016_RUS_vs_JPN a kg:Match ;
+kg:homeTeam res:team/Nga ;
+kg:awayTeam res:team/Japan ;
+kg:kickoffTime "2016-10-29T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_liên_châu_lục ;
+kg:inSeason res:season/2016 ;
+kg:result "3–3 (3–2 pen)" .
+
+res:match/2016_RUS_vs_EGY a kg:Match ;
+kg:homeTeam res:team/Nga ;
+kg:awayTeam res:team/Egypt ;
+kg:kickoffTime "2016-11-01T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_liên_châu_lục ;
+kg:inSeason res:season/2016 ;
+kg:result "10–6" .
+
+res:match/2016_RUS_vs_USA a kg:Match ;
+kg:homeTeam res:team/Nga ;
+kg:awayTeam res:team/USA ;
+kg:kickoffTime "2016-11-02T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_liên_châu_lục ;
+kg:inSeason res:season/2016 ;
+kg:result "9–3" .
+
+res:match/2016_IRN_vs_RUS a kg:Match ;
+kg:homeTeam res:team/Iran ;
+kg:awayTeam res:team/Nga ;
+kg:kickoffTime "2016-11-03T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_liên_châu_lục ;
+kg:inSeason res:season/2016 ;
+kg:result "3–3 (1–3 pen)" .
+
+res:match/2016_RUS_vs_BRA a kg:Match ;
+kg:homeTeam res:team/Brazil ;
+kg:awayTeam res:team/Nga ;
+kg:kickoffTime "2016-11-04T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_liên_châu_lục ;
+kg:inSeason res:season/2016 ;
+kg:result "7–0" .
+
+res:match/2016_RUS_vs_TAH a kg:Match ;
+kg:homeTeam res:team/Nga ;
+kg:awayTeam res:team/Tahiti ;
+kg:kickoffTime "2016-11-05T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Cúp_bóng_đá_bãi_biển_liên_châu_lục ;
+kg:inSeason res:season/2016 ;

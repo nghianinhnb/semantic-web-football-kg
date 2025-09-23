@@ -1,0 +1,251 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/EnglandWomenNationalFootballTeam a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Anh" ;
+kg:teamAbbreviation "ENG" ;
+kg:hasCoach res:coach/SarinaWiegman ;
+kg:manages res:coach/SarinaWiegman ;
+kg:locatedIn res:country/UnitedKingdom ;
+kg:participatesIn res:competition/FIFAWomenWorldCup ;
+kg:participatesIn res:competition/UEFAWomenEuro ;
+
+kg:hasMember res:player/FaraWilliams ;
+kg:hasMember res:player/EllenWhite ;
+kg:hasMember res:player/LeahWilliamson ;
+kg:hasMember res:player/LucyBronze ;
+kg:hasMember res:player/KeiraWalsh ;
+kg:hasMember res:player/GeorgiaStanway ;
+kg:hasMember res:player/EllaToone ;
+kg:hasMember res:player/JordanNobbs ;
+kg:hasMember res:player/RachelDaly ;
+kg:hasMember res:player/BethanyEngland ;
+kg:hasMember res:player/AlessiaRusso ;
+kg:hasMember res:player/LaurenHemp ;
+kg:hasMember res:player/ChloeKelly ;
+kg:hasMember res:player/LauraCoombs ;
+kg:hasMember res:player/KatieZelem ;
+kg:hasMember res:player/LaurenJames ;
+kg:hasMember res:player/NiamhCharles ;
+kg:hasMember res:player/AlexGreenwood ;
+kg:hasMember res:player/MillieBright ;
+kg:hasMember res:player/LotteWubbenMoy ;
+kg:hasMember res:player/EsmeMorgan ;
+kg:hasMember res:player/JessCarter ;
+kg:hasMember res:player/MaryEarps ;
+kg:hasMember res:player/HannahHampton ;
+kg:hasMember res:player/EllieRoebuck ;
+kg:hasMember res:player/LeahWilliamson ;
+kg:hasMember res:player/LucyParker ;
+kg:hasMember res:player/GabbyGeorge ;
+kg:hasMember res:player/DemiStokes ;
+kg:hasMember res:player/LucyStaniforth ;
+kg:hasMember res:player/FranKirby ;
+kg:hasMember res:player/JessPark ;
+kg:hasMember res:player/EbonySalmon ;
+kg:hasMember res:player/NikitaParris ;
+kg:hasMember res:player/BethMead ;
+kg:hasMember res:player/EmilyRamsey ;
+kg:hasMember res:player/SandyMacIver ;
+kg:hasMember res:player/MayaLeTissier ;
+kg:hasMember res:player/LucyParker ;
+kg:hasMember res:player/GabbyGeorge ;
+kg:hasMember res:player/DemiStokes ;
+kg:hasMember res:player/LucyStaniforth ;
+kg:hasMember res:player/FranKirby ;
+kg:hasMember res:player/JessPark ;
+kg:hasMember res:player/EbonySalmon ;
+kg:hasMember res:player/NikitaParris ;
+kg:hasMember res:player/BethMead .
+
+res:coach/SarinaWiegman a kg:Coach ;
+kg:manages res:team/EnglandWomenNationalFootballTeam .
+
+res:player/FaraWilliams a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1981-07-01"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 172 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/EllenWhite a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1986-07-17"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 50 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/LeahWilliamson a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1997-03-29"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 43 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/LucyBronze a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1991-10-28"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 112 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/KeiraWalsh a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1997-04-08"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 65 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/GeorgiaStanway a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1999-01-03"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 57 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/EllaToone a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1999-09-02"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 38 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/JordanNobbs a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1992-12-08"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 71 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/RachelDaly a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1991-12-06"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 76 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/BethanyEngland a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1994-06-03"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 26 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/AlessiaRusso a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1999-02-08"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 29 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/LaurenHemp a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2000-08-07"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 45 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/ChloeKelly a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1998-01-15"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 33 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/LauraCoombs a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1991-01-29"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 7 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/KatieZelem a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1996-01-20"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/LaurenJames a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2001-09-29"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 16 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/NiamhCharles a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1999-06-21"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 9 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/AlexGreenwood a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1993-09-07"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 82 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/MillieBright a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1993-08-21"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 73 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/LotteWubbenMoy a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1999-01-11"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/UnitedKingdom ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:LeftFoot "UNKNOWN" .
+
+res:player/EsmeMorgan a kg:Player ;
+kg:playsFor res:team/EnglandWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2000-10-18"^^xsd:date ;
+kg:birthPlace

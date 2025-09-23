@@ -1,0 +1,120 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Paraguay" ;
+kg:hasCoach res:coach/Gustavo_Zloccowick ;
+kg:locatedIn res:country/Paraguay ;
+kg:organizedBy res:organization/Hiệp_hội_bóng_đá_Paraguay ;
+kg:heldIn res:country/Paraguay ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:organization/Hiệp_hội_bóng_đá_Paraguay a kg:Organization ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:coach/Gustavo_Zloccowick a kg:Coach ;
+kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay .
+
+res:country/Paraguay a kg:Country ;
+rdfs:label "Paraguay" .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ" .
+
+res:player/Rolando_González a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/Juan_López a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 2 .
+
+res:player/Gustavo_Benítez a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 .
+
+res:player/Luis_Ojeda a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 4 .
+
+res:player/Jesús_Rolón a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 .
+
+res:player/Pedro_Morán a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 6 .
+
+res:player/Édgar_Barreto a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 7 .
+
+res:player/Carlos_Carballo a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 8 .
+
+res:player/Sergio_Díaz a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 9 .
+
+res:player/Orlando_Zayas a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 .
+
+res:player/Sergio_Villaverde a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 11 .
+
+res:player/Iván_Fernández a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 12 .
+
+res:position/Goalkeeper a kg:Position ;
+rdfs:subClassOf kg:Goalkeeper .
+
+res:position/Defender a kg:Position ;
+rdfs:subClassOf kg:Defender .
+
+res:position/Midfielder a kg:Position ;
+rdfs:subClassOf kg:Midfielder .
+
+res:position/Forward a kg:Position ;
+rdfs:subClassOf kg:Forward .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới kg:participantCount "9"^^xsd:positiveInteger .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ kg:participantCount "6"^^xsd:positiveInteger .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay kg:bestResultInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
+kg:result "Tứ kết (thứ 7)"^^xsd:string .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay kg:bestResultInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ ;
+kg:result "Á quân"^^xsd:string .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay kg:firstAppearanceInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
+kg:year "2013"^^xsd:gYear .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Paraguay kg:rank "9"^^xsd:positiveInteger ;
+kg:asOf "2017-04"^^xsd:date .

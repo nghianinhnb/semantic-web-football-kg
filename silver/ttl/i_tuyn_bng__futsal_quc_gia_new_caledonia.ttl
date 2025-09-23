@@ -1,0 +1,8 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/New%20Caledonia%20Futsal%20National%20Team a kg:Team ;
+kg:teamName "New Caledonia Futsal National Team" ;
+kg:teamAbbreviation "NC Futsal".

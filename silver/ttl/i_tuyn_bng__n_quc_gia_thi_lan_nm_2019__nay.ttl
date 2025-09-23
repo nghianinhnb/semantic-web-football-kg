@@ -1,0 +1,224 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/THA a kg:Team ;
+kg:teamName "Thái Lan" ;
+kg:teamAbbreviation "THA".
+
+res:match/2019-Cyprus-Cup-THA-v-HUN a kg:Match ;
+kg:homeTeam res:team/THA ;
+kg:awayTeam res:team/HUN ;
+kg:kickoffTime "2019-02-27T18:00:00+02:00"^^xsd:dateTime ;
+kg:venue res:stadium/Antonis_Papadopoulos ;
+kg:inCompetition res:competition/Cyprus_Cup ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Unknown_Referee ;
+kg:result "W"^^xsd:string.
+
+res:stadium/Antonis_Papadopoulos a kg:Stadium ;
+kg:capacity 0 ;
+kg:locatedIn res:city/Larnaca.
+
+res:city/Larnaca a kg:City ;
+kg:locatedIn res:country/Síp.
+
+res:country/Síp a kg:Country.
+
+res:match/2019-Cyprus-Cup-THA-v-MEX a kg:Match ;
+kg:homeTeam res:team/THA ;
+kg:awayTeam res:team/MEX ;
+kg:kickoffTime "2019-03-01T13:00:00+02:00"^^xsd:dateTime ;
+kg:venue res:stadium/GSZ ;
+kg:inCompetition res:competition/Cyprus_Cup ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Unknown_Referee ;
+kg:result "L"^^xsd:string.
+
+res:stadium/GSZ a kg:Stadium ;
+kg:capacity 0 ;
+kg:locatedIn res:city/Larnaca.
+
+res:match/2019-Cyprus-Cup-ITA-v-THA a kg:Match ;
+kg:homeTeam res:team/ITA ;
+kg:awayTeam res:team/THA ;
+kg:kickoffTime "2019-03-04T13:00:00+02:00"^^xsd:dateTime ;
+kg:venue res:stadium/AEK_Arena ;
+kg:inCompetition res:competition/Cyprus_Cup ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Unknown_Referee ;
+kg:result "L"^^xsd:string.
+
+res:stadium/AEK_Arena a kg:Stadium ;
+kg:capacity 0 ;
+kg:locatedIn res:city/Larnaca.
+
+res:match/2019-Cyprus-Cup-NGA-v-THA a kg:Match ;
+kg:homeTeam res:team/NGA ;
+kg:awayTeam res:team/THA ;
+kg:kickoffTime "2019-03-06T15:00:00+02:00"^^xsd:dateTime ;
+kg:venue res:stadium/Paralimni ;
+kg:inCompetition res:competition/Cyprus_Cup ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Unknown_Referee ;
+kg:result "L"^^xsd:string.
+
+res:stadium/Paralimni a kg:Stadium ;
+kg:capacity 0 ;
+kg:locatedIn res:city/Paralimni.
+
+res:city/Paralimni a kg:City ;
+kg:locatedIn res:country/Síp.
+
+res:match/2019-Friendly-FRA-v-THA a kg:Match ;
+kg:homeTeam res:team/FRA ;
+kg:awayTeam res:team/THA ;
+kg:kickoffTime "2019-05-25T16:00:00+02:00"^^xsd:dateTime ;
+kg:venue res:stadium/San_Vien_Dong_Source ;
+kg:inCompetition res:competition/Friendly ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Lina_Lehtovaara ;
+kg:result "L"^^xsd:string.
+
+res:stadium/San_Vien_Dong_Source a kg:Stadium ;
+kg:capacity 7000 ;
+kg:locatedIn res:city/Orleans.
+
+res:city/Orleans a kg:City ;
+kg:locatedIn res:country/Pháp.
+
+res:country/Pháp a kg:Country.
+
+res:match/2019-Friendly-BEL-v-THA a kg:Match ;
+kg:homeTeam res:team/BEL ;
+kg:awayTeam res:team/THA ;
+kg:kickoffTime "2019-06-01T15:30:00+02:00"^^xsd:dateTime ;
+kg:venue res:stadium/Den_Dreef ;
+kg:inCompetition res:competition/Friendly ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Unknown_Referee ;
+kg:result "L"^^xsd:string.
+
+res:stadium/Den_Dreef a kg:Stadium ;
+kg:capacity 0 ;
+kg:locatedIn res:city/Leuven.
+
+res:city/Leuven a kg:City ;
+kg:locatedIn res:country/Bỉ.
+
+res:country/Bỉ a kg:Country.
+
+res:match/2019-WWC-USA-v-THA a kg:Match ;
+kg:homeTeam res:team/USA ;
+kg:awayTeam res:team/THA ;
+kg:kickoffTime "2019-06-11T21:00:00+02:00"^^xsd:dateTime ;
+kg:venue res:stadium/Auguste_Delaune ;
+kg:inCompetition res:competition/Women_World_Cup_2019 ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Laura_Fortunato ;
+kg:result "L"^^xsd:string.
+
+res:stadium/Auguste_Delaune a kg:Stadium ;
+kg:capacity 18591 ;
+kg:locatedIn res:city/Reims.
+
+res:city/Reims a kg:City ;
+kg:locatedIn res:country/Pháp.
+
+res:match/2019-WWC-SWE-v-THA a kg:Match ;
+kg:homeTeam res:team/SWE ;
+kg:awayTeam res:team/THA ;
+kg:kickoffTime "2019-06-16T15:00:00+02:00"^^xsd:dateTime ;
+kg:venue res:stadium/Allianz_Riviera ;
+kg:inCompetition res:competition/Women_World_Cup_2019 ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Salima_Mukansanga ;
+kg:result "L"^^xsd:string.
+
+res:stadium/Allianz_Riviera a kg:Stadium ;
+kg:capacity 9354 ;
+kg:locatedIn res:city/Nice.
+
+res:city/Nice a kg:City ;
+kg:locatedIn res:country/Pháp.
+
+res:match/2019-WWC-THA-v-CHI a kg:Match ;
+kg:homeTeam res:team/THA ;
+kg:awayTeam res:team/CHI ;
+kg:kickoffTime "2019-06-20T21:00:00+02:00"^^xsd:dateTime ;
+kg:venue res:stadium/Roazhon_Park ;
+kg:inCompetition res:competition/Women_World_Cup_2019 ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Anna_Marie_Keighley ;
+kg:result "L"^^xsd:string.
+
+res:stadium/Roazhon_Park a kg:Stadium ;
+kg:capacity 13567 ;
+kg:locatedIn res:city/Rennes.
+
+res:city/Rennes a kg:City ;
+kg:locatedIn res:country/Pháp.
+
+res:match/2019-AFF-Cup-SIN-v-THA a kg:Match ;
+kg:homeTeam res:team/SIN ;
+kg:awayTeam res:team/THA ;
+kg:kickoffTime "2019-08-17T15:00:00+07:00"^^xsd:dateTime ;
+kg:venue res:stadium/IPE_Chon_Buri ;
+kg:inCompetition res:competition/ASEAN_Football_Cup_2019 ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Cong_Thi_Dung ;
+kg:result "W"^^xsd:string.
+
+res:stadium/IPE_Chon_Buri a kg:Stadium ;
+kg:capacity 100 ;
+kg:locatedIn res:city/Chon_Buri.
+
+res:city/Chon_Buri a kg:City ;
+kg:locatedIn res:country/Thái_Lan.
+
+res:country/Thái_Lan a kg:Country.
+
+res:match/2019-AFF-Cup-THA-v-TLS a kg:Match ;
+kg:homeTeam res:team/THA ;
+kg:awayTeam res:team/TLS ;
+kg:kickoffTime "2019-08-19T15:00:00+07:00"^^xsd:dateTime ;
+kg:venue res:stadium/IPE_Chon_Buri ;
+kg:inCompetition res:competition/ASEAN_Football_Cup_2019 ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Cong_Thi_Dung ;
+kg:result "W"^^xsd:string.
+
+res:match/2019-AFF-Cup-PHI-v-THA a kg:Match ;
+kg:homeTeam res:team/PHI ;
+kg:awayTeam res:team/THA ;
+kg:kickoffTime "2019-08-21T18:00:00+07:00"^^xsd:dateTime ;
+kg:venue res:stadium/IPE_Chon_Buri ;
+kg:inCompetition res:competition/ASEAN_Football_Cup_2019 ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/OH_Hyeon_Jeong ;
+kg:result "W"^^xsd:string.
+
+res:match/2019-AFF-Cup-THA-v-MAS a kg:Match ;
+kg:homeTeam res:team/THA ;
+kg:awayTeam res:team/MAS ;
+kg:kickoffTime "2019-08-23T18:00:00+07:00"^^xsd:dateTime ;
+kg:venue res:stadium/IPE_Chon_Buri ;
+kg:inCompetition res:competition/ASEAN_Football_Cup_2019 ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Abirami_Abpai_Naidu ;
+kg:result "W"^^xsd:string.
+
+res:match/2019-AFF-Cup-THA-v-MYA a kg:Match ;
+kg:homeTeam res:team/THA ;
+kg:awayTeam res:team/MYA ;
+kg:kickoffTime "2019-08-25T18:00:00+07:00"^^xsd:dateTime ;
+kg:venue res:stadium/IPE_Chon_Buri ;
+kg:inCompetition res:competition/ASEAN_Football_Cup_2019 ;
+kg:inSeason "2019"^^xsd:gYear ;
+kg:referee res:referee/Rebecca_Durcau ;
+kg:result "W"^^xsd:string.
+
+res:match/2019-AFF-Cup-THA-v-VIE a kg:Match ;
+kg:homeTeam res:

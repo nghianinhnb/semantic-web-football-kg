@@ -1,0 +1,122 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/FIN a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Phần Lan" ;
+kg:teamAbbreviation "FIN" ;
+kg:hasCoach res:coach/Perttu_Nisula ;
+kg:locatedIn res:country/Phần_Lan ;
+kg:participatesIn res:season/2009 .
+
+res:country/Phần_Lan a kg:Country .
+
+res:coach/Perttu_Nisula a kg:Coach ;
+kg:manages res:team/FIN .
+
+res:player/Matias_Sarelius a kg:Player ;
+kg:playsFor res:team/FIN ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Teemu_Jaakkola a kg:Player ;
+kg:playsFor res:team/FIN ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Pauli_Ojalehto a kg:Player ;
+kg:playsFor res:team/FIN ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Mikko_Rauhanen a kg:Player ;
+kg:playsFor res:team/FIN ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Teemu_Terho a kg:Player ;
+kg:playsFor res:team/FIN ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Matias_Juvonen a kg:Player ;
+kg:playsFor res:team/FIN ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Henrik_Henriksson a kg:Player ;
+kg:playsFor res:team/FIN ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Lasse_Lind a kg:Player ;
+kg:playsFor res:team/FIN ;
+kg:primaryPosition res:position/Forward .
+
+res:match/Trận_Đấu_2009_06_27 a kg:Match ;
+kg:homeTeam res:team/EST ;
+kg:awayTeam res:team/FIN ;
+kg:venue res:city/Pärnu ;
+kg:kickoffTime "2009-06-27"^^xsd:date ;
+kg:inCompetition res:competition/Giao_hữu_2009 ;
+kg:referee [] ;
+kg:goal res:player/Lasse_Lind .
+
+res:match/Trận_Đấu_2011_07_07 a kg:Match ;
+kg:homeTeam res:team/FIN ;
+kg:awayTeam res:team/EST ;
+kg:venue res:city/Pori ;
+kg:kickoffTime "2011-07-07"^^xsd:date ;
+kg:inCompetition res:competition/Giao_hữu_2011 ;
+kg:referee [] .
+
+res:match/Trận_Đấu_2017_05_28 a kg:Match ;
+kg:homeTeam res:team/EST ;
+kg:awayTeam res:team/FIN ;
+kg:venue res:city/Tallinn ;
+kg:kickoffTime "2017-05-28"^^xsd:date ;
+kg:inCompetition res:competition/Giao_hữu_2017 ;
+kg:referee [] .
+
+res:match/Trận_Đấu_2017_09_10 a kg:Match ;
+kg:homeTeam res:team/FIN ;
+kg:awayTeam res:team/NOR ;
+kg:venue res:city/Copenhagen ;
+kg:kickoffTime "2017-09-10"^^xsd:date ;
+kg:inCompetition res:competition/Cup_Scandinavia_2017 ;
+kg:referee [] .
+
+res:match/Trận_Đấu_2018_05_27 a kg:Match ;
+kg:homeTeam res:team/EST ;
+kg:awayTeam res:team/FIN ;
+kg:venue res:city/Tallinn ;
+kg:kickoffTime "2018-05-27"^^xsd:date ;
+kg:inCompetition res:competition/Giao_hữu_2018 ;
+kg:referee [] .
+
+res:competition/Giao_hữu_2009 a kg:Competition ;
+kg:competitionName "Giao hữu" .
+
+res:competition/Giao_hữu_2011 a kg:Competition ;
+kg:competitionName "Giao hữu" .
+
+res:competition/Giao_hữu_2017 a kg:Competition ;
+kg:competitionName "Giao hữu" .
+
+res:competition/Cup_Scandinavia_2017 a kg:Competition ;
+kg:competitionName "Cúp Scandinavia 2017" .
+
+res:competition/Giao_hữu_2018 a kg:Competition ;
+kg:competitionName "Giao hữu" .
+
+res:city/Pärnu a kg:City ;
+kg:locatedIn res:country/Estonia .
+
+res:city/Pori a kg:City ;
+kg:locatedIn res:country/Phần_Lan .
+
+res:city/Tallinn a kg:City ;
+kg:locatedIn res:country/Estonia .
+
+res:city/Copenhagen a kg:City ;
+kg:locatedIn res:country/Đan_Mạch .
+
+res:country/Estonia a kg:Country .
+
+res:country/Đan_Mạch a kg:Country .
+
+res:country/Norway a kg:Country .

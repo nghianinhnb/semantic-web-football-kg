@@ -1,0 +1,193 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc kg:teamName "Đội tuyển bóng đá nữ quốc gia Trung Quốc" ;
+kg:teamAbbreviation "CHN" ;
+kg:hasCoach res:coach/Giả_Tú_Toàn ;
+kg:locatedIn res:country/Trung_Quốc ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới ;
+kg:participatesIn res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè ;
+kg:participatesIn res:competition/Cúp_bóng_đá_nữ_châu_Á ;
+kg:participatesIn res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á ;
+kg:participatesIn res:competition/Cúp_bóng_đá_nữ_Đông_Á .
+
+res:country/Trung_Quốc rdfs:label "Trung Quốc" ;
+rdfs:comment "Cộng hòa Nhân dân Trung Hoa" .
+
+res:coach/Giả_Tú_Toàn kg:manages res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc .
+
+res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới kg:competitionName "Giải vô địch bóng đá nữ thế giới" ;
+kg:organizedBy res:organization/FIFA .
+
+res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè kg:competitionName "Bóng đá tại Thế vận hội Mùa hè" ;
+kg:organizedBy res:organization/IOC .
+
+res:competition/Cúp_bóng_đá_nữ_châu_Á kg:competitionName "Cúp bóng đá nữ châu Á" ;
+kg:organizedBy res:organization/AFC .
+
+res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á kg:competitionName "Bóng đá tại Đại hội Thể thao châu Á" ;
+kg:organizedBy res:organization/ASEAN .
+
+res:competition/Cúp_bóng_đá_nữ_Đông_Á kg:competitionName "Cúp bóng đá nữ Đông Á" ;
+kg:organizedBy res:organization/EAFF .
+
+res:player/Từ_Hoan kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1999-03-06"^^xsd:date ;
+kg:birthPlace res:city/Beijing ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 1 .
+
+res:player/Lưu_San_San kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1992-03-16"^^xsd:date ;
+kg:birthPlace res:city/Beijing ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 2 .
+
+res:player/Lâm_Vũ_Bình kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1992-02-28"^^xsd:date ;
+kg:birthPlace res:city/Wuhan ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 3 .
+
+res:player/Lỗ_Gia_Tuệ kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1991-05-26"^^xsd:date ;
+kg:birthPlace res:city/Henan ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 4 .
+
+res:player/Ngô_Hải_Yến kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1993-02-26"^^xsd:date ;
+kg:birthPlace res:city/Wuhan ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 5 .
+
+res:player/Hàn_Bằng kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1989-12-20"^^xsd:date ;
+kg:birthPlace res:city/Guangdong ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 6 .
+
+res:player/Vương_Sảng kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1995-01-23"^^xsd:date ;
+kg:birthPlace res:city/Paris ;
+kg:nationality res:country/Pháp ;
+kg:shirtNumber 7 .
+
+res:player/Lý_Giả_DUệ kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1990-06-08"^^xsd:date ;
+kg:birthPlace res:city/Shanghai ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 8 .
+
+res:player/Dương_Lệ kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1991-01-31"^^xsd:date ;
+kg:birthPlace res:city/Jiangsu ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 9 .
+
+res:player/Lý_Ảnh kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1993-01-07"^^xsd:date ;
+kg:birthPlace res:city/Guangdong ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 10 .
+
+res:player/Vương_San_San kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1990-01-27"^^xsd:date ;
+kg:birthPlace res:city/Dalian ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 11 .
+
+res:player/Bành_Thi_Mộng kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1998-05-12"^^xsd:date ;
+kg:birthPlace res:city/Jiangsu ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 12 .
+
+res:player/Vương_Yên kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1991-08-22"^^xsd:date ;
+kg:birthPlace res:city/Beijing ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 13 .
+
+res:player/Vương_Anh kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1997-11-18"^^xsd:date ;
+kg:birthPlace res:city/Wuhan ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 14 .
+
+res:player/Tống_Doãn kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1995-08-02"^^xsd:date ;
+kg:birthPlace res:city/Dalian ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 15 .
+
+res:player/Lý_Văn kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1989-02-21"^^xsd:date ;
+kg:birthPlace res:city/Dalian ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 16 .
+
+res:player/Cổ_Nhã_Sa kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1990-11-28"^^xsd:date ;
+kg:birthPlace res:city/Beijing ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 17 .
+
+res:player/Tất_Xiều_Lâm kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1989-09-18"^^xsd:date ;
+kg:birthPlace res:city/Dalian ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 18 .
+
+res:player/Đàm_Duệ_Yên kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1994-07-17"^^xsd:date ;
+kg:birthPlace res:city/Guangdong ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 19 .
+
+res:player/Trương_Duệ kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1989-01-17"^^xsd:date ;
+kg:birthPlace res:city/Changchun ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 20 .
+
+res:player/Diêu_Uy kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1997-09-01"^^xsd:date ;
+kg:birthPlace res:city/Wuhan ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 21 .
+
+res:player/Lỗ_Quý_Bình kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1993-04-20"^^xsd:date ;
+kg:birthPlace res:city/Guangdong ;
+kg:nationality res:country/Trung_Quốc ;
+kg:shirtNumber 22 .
+
+res:player/Lưu_Yên_Khẩu kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Trung_Quốc ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1995-12-

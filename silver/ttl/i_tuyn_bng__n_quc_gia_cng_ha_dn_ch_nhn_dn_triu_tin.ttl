@@ -1,0 +1,79 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/North_Korea_Female_National_Football_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Cộng hòa Dân chủ Nhân dân Triều Tiên" ;
+kg:teamAbbreviation "PRK" ;
+kg:hasCoach res:coach/Jo_Song-ok ;
+kg:managedBy res:coach/Jo_Song-ok ;
+kg:member res:player/Ri_Kum-Suk ;
+kg:topScorer res:player/Ri_Kum-Suk ;
+kg:mostInternationalApparences res:player/Ri_Kum-Suk ;
+kg:affiliatedWith res:organization/DKFA ;
+kg:continentalFederation res:organization/AFC ;
+kg:worldRanking "Xếp hạng FIFA" ;
+kg:highestWorldRanking 5 ;
+kg:lowestWorldRanking 12 ;
+kg:firstInternationalMatch "1989-12-21"^^xsd:date ;
+kg:largestWin "2001-06-21"^^xsd:date ;
+kg:largestLoss "2012-07-28"^^xsd:date ;
+kg:numberOfWorldCupAppearances 4 ;
+kg:firstWorldCupAppearance 1999 ;
+kg:bestWorldCupResult "Tứ kết" ;
+kg:numberOfAsiaCupAppearances 11 ;
+kg:firstAsiaCupAppearance 1989 ;
+kg:bestAsiaCupResult "Vô địch" ;
+kg:medalsAtAsianGames [
+kg:competition res:competition/Asian_Games_2002 ;
+kg:medalType "Vàng"
+] , [
+kg:competition res:competition/Asian_Games_2006 ;
+kg:medalType "Vàng"
+] , [
+kg:competition res:competition/Asian_Games_2014 ;
+kg:medalType "Vàng"
+] , [
+kg:competition res:competition/Asian_Games_1998 ;
+kg:medalType "Bạc"
+] , [
+kg:competition res:competition/Asian_Games_2010 ;
+kg:medalType "Bạc"
+] , [
+kg:competition res:competition/Asian_Games_1990 ;
+kg:medalType "Đồng"
+] .
+
+res:coach/Jo_Song-ok a kg:Coach ;
+kg:manages res:team/North_Korea_Female_National_Football_Team .
+
+res:player/Ri_Kum-Suk a kg:Player ;
+kg:playsFor res:team/North_Korea_Female_National_Football_Team ;
+kg:goalsScored 40 ;
+kg:internationalApps 123 .
+
+res:organization/DKFA a kg:Organization ;
+kg:managedTeam res:team/North_Korea_Female_National_Football_Team .
+
+res:organization/AFC a kg:Organization ;
+kg:continent "Châu Á" .
+
+res:competition/Asian_Games_2002 a kg:Competition ;
+kg:competitionName "Đại hội Thể thao châu Á 2002" .
+
+res:competition/Asian_Games_2006 a kg:Competition ;
+kg:competitionName "Đại hội Thể thao châu Á 2006" .
+
+res:competition/Asian_Games_2014 a kg:Competition ;
+kg:competitionName "Đại hội Thể thao châu Á 2014" .
+
+res:competition/Asian_Games_1998 a kg:Competition ;
+kg:competitionName "Đại hội Thể thao châu Á 1998" .
+
+res:competition/Asian_Games_2010 a kg:Competition ;
+kg:competitionName "Đại hội Thể thao châu Á 2010" .
+
+res:competition/Asian_Games_1990 a kg:Competition ;
+kg:competitionName "Đại hội Thể thao châu Á 1990" .

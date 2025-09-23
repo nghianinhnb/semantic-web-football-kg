@@ -1,0 +1,144 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/France_Beach_Soccer_National_Team a kg:Team ;
+kg:teamName "Pháp" ;
+kg:hasCoach res:coach/Stéphane_François ;
+kg:organizes res:competition/World_Beach_Soccer_Championship ;
+kg:organizes res:competition/European_Beach_Soccer_Championship ;
+kg:locatedIn res:country/France .
+
+res:coach/Stéphane_François a kg:Coach ;
+kg:manages res:team/France_Beach_Soccer_National_Team .
+
+res:competition/World_Beach_Soccer_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
+kg:heldIn res:country/France .
+
+res:competition/European_Beach_Soccer_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" ;
+kg:heldIn res:country/France .
+
+res:team/France_Beach_Soccer_National_Team kg:participatesIn res:season/2005_World_Beach_Soccer_Championship ;
+kg:participatesIn res:season/2004_European_Beach_Soccer_Championship ;
+kg:participatesIn res:season/2005_World_Beach_Soccer_Championship .
+
+res:season/2005_World_Beach_Soccer_Championship a kg:Season ;
+kg:seasonOf res:competition/World_Beach_Soccer_Championship .
+
+res:season/2004_European_Beach_Soccer_Championship a kg:Season ;
+kg:seasonOf res:competition/European_Beach_Soccer_Championship .
+
+res:player/Mickael_Pagis a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 9 .
+
+res:player/Roger_Mendy a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 14 .
+
+res:player/Julien_Soares a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 .
+
+res:player/Didier_Samoun a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 .
+
+res:player/Stéphane_François a kg:Player, kg:Coach ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 8 .
+
+res:player/Robin_Gasset a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/Anthony_Fayos a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 .
+
+res:player/Jérémy_Basquaise a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 .
+
+res:player/Jeremy_Bru a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 .
+
+res:player/Romain_Tossem a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 11 .
+
+res:player/Anthony_Mendy a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 12 .
+
+res:player/Denis_Fort a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 16 .
+
+res:player/Jmarc_Edouard a kg:Player ;
+kg:playsFor res:team/France_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 .
+
+res:position/Goalkeeper a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Midfielder a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:country/France a kg:Country ;
+kg:locatedIn res:country/France .
+
+res:team/France_Beach_Soccer_National_Team kg:hasCoach res:coach/Stéphane_François .
+
+res:match/1997_world_qualifier a kg:Match ;
+kg:homeTeam res:team/France_Beach_Soccer_National_Team ;
+kg:awayTeam res:team/Italy ;
+kg:kickoffTime "1997-01-14"^^xsd:date ;
+kg:inCompetition res:competition/World_Beach_Soccer_Championship .
+
+res:match/2001_world_qualifier a kg:Match ;
+kg:homeTeam res:team/France_Beach_Soccer_National_Team ;
+kg:awayTeam res:team/England ;
+kg:kickoffTime "2001-07-07"^^xsd:date ;
+kg:inCompetition res:competition/World_Beach_Soccer_Championship .
+
+res:match/1999_world_qualifier a kg:Match ;
+kg:homeTeam res:team/Brazil ;
+kg:awayTeam res:team/France_Beach_Soccer_National_Team ;
+kg:kickoffTime "1999-01-10"^^xsd:date ;
+kg:inCompetition res:competition/World_Beach_Soccer_Championship .
+
+res:match/2000_world_qualifier a kg:Match ;
+kg:homeTeam res:team/Brazil ;
+kg:awayTeam res:team/France_Beach_Soccer_National_Team ;
+kg:kickoffTime "2000-07-22"^^xsd:date ;
+kg:inCompetition res:competition/World_Beach_Soccer_Championship .
+
+res:match/2013_world_qualifier a kg:Match ;
+kg:homeTeam res:team/Ukraine ;
+kg:awayTeam res:team/France_Beach_Soccer_National_Team ;
+kg:kickoffTime "2013-05-24"^^xsd:date ;
+kg:inCompetition res:competition/World_Beach_Soccer_Championship .

@@ -1,0 +1,80 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Norway a kg:Team ;
+kg:teamName "Na Uy" ;
+kg:hasCoach res:coach/Martin_Sjögren ;
+kg:manages res:coach/Martin_Sjögren ;
+kg:captain res:player/Maren_Mjelde ;
+kg:topScorer res:player/Isabell_Herlovsen ;
+kg:mostCaps res:player/Hege_Riise .
+
+res:coach/Martin_Sjögren a kg:Coach ;
+kg:manages res:team/Norway .
+
+res:player/Maren_Mjelde a kg:Player ;
+kg:playsFor res:team/Norway .
+
+res:player/Hege_Riise a kg:Player ;
+kg:playsFor res:team/Norway ;
+kg:goals 188 .
+
+res:player/Isabell_Herlovsen a kg:Player ;
+kg:playsFor res:team/Norway ;
+kg:goals 67 .
+
+res:player/Marianne_Pettersen a kg:Player ;
+kg:playsFor res:team/Norway ;
+kg:goals 66 ;
+kg:matches 98 ;
+kg:goalRate "0.67"^^xsd:decimal .
+
+res:player/Linda_Medalen a kg:Player ;
+kg:playsFor res:team/Norway ;
+kg:goals 64 ;
+kg:matches 152 ;
+kg:goalRate "0.42"^^xsd:decimal .
+
+res:player/Ann_Kristin_Aarønes a kg:Player ;
+kg:playsFor res:team/Norway ;
+kg:goals 60 ;
+kg:matches 111 ;
+kg:goalRate "0.54"^^xsd:decimal .
+
+res:player/Hege_Riise a kg:Player ;
+kg:playsFor res:team/Norway ;
+kg:goals 58 ;
+kg:matches 188 ;
+kg:goalRate "0.31"^^xsd:decimal .
+
+res:player/Solveig_Gulbrandsen a kg:Player ;
+kg:playsFor res:team/Norway ;
+kg:goals 55 ;
+kg:matches 184 ;
+kg:goalRate "0.30"^^xsd:decimal .
+
+res:player/Dagny_Mellgren a kg:Player ;
+kg:playsFor res:team/Norway ;
+kg:goals 49 ;
+kg:matches 95 ;
+kg:goalRate "0.52"^^xsd:decimal .
+
+res:player/Ada_Hegerberg a kg:Player ;
+kg:playsFor res:team/Norway ;
+kg:goals 38 ;
+kg:matches 66 ;
+kg:goalRate "0.63"^^xsd:decimal .
+
+res:player/Ragnhild_Gulbrandsen a kg:Player ;
+kg:playsFor res:team/Norway ;
+kg:goals 30 ;
+kg:matches 80 ;
+kg:goalRate "0.38"^^xsd:decimal .
+
+res:player/Unni_Lehn a kg:Player ;
+kg:playsFor res:team/Norway ;
+kg:goals 24 ;
+kg:matches 134 ;
+kg:goalRate "0.18"^^xsd:decimal .

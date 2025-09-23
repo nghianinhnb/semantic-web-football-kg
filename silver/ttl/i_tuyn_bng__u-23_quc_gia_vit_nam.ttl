@@ -1,0 +1,211 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/U-23_Viet_Nam a kg:Team ;
+kg:teamName "U-23 Việt Nam" ;
+kg:teamAbbreviation "U-23 VIE" ;
+kg:hasCoach res:coach/Kim_Sang_Sik ;
+kg:manages res:coach/Kim_Sang_Sik ;
+kg:manages res:coach/Hoang_Anh_Tuan ;
+kg:manages res:coach/Dinh_Hong_Vinh ;
+kg:manages res:coach/Le_Minh_Dung ;
+kg:manages res:coach/Cedric_Roger ;
+kg:manages res:coach/Jose_Brandi_Regato_Neto ;
+kg:manages res:coach/Nguyen_The_Anh ;
+kg:manages res:coach/Tran_Duc_Cuong ;
+kg:manages res:coach/Ngo_Viet_Trung ;
+kg:manages res:coach/Hoang_Xuan_Bach ;
+kg:manages res:coach/Doan_Anh_Tuan ;
+kg:manages res:coach/Luu_Quang_Dien_Bien ;
+kg:manages res:coach/Nguyen_Viet_Thang ;
+kg:manages res:coach/Tran_Thi_Hanh ;
+kg:manages res:coach/Le_Phuc_Tu ;
+kg:manages res:coach/Tran_Minh_Chien ;
+kg:manages res:coach/Hua_Hien_Vinh ;
+kg:manages res:coach/Do_Tuan_Luat ;
+kg:manages res:coach/Mai_Xuan_Hop ;
+kg:manages res:coach/Ngo_Tuan_Vinh ;
+kg:manages res:coach/Nguyen_The_Anh ;
+kg:manages res:coach/Tran_Duc_Cuong ;
+kg:manages res:coach/Ngo_Viet_Trung ;
+kg:manages res:coach/Hoang_Xuan_Bach ;
+kg:manages res:coach/Doan_Anh_Tuan ;
+kg:manages res:coach/Luu_Quang_Dien_Bien ;
+kg:manages res:coach/Nguyen_Viet_Thang ;
+kg:manages res:coach/Tran_Thi_Hanh ;
+kg:manages res:coach/Le_Phuc_Tu ;
+kg:manages res:coach/Tran_Minh_Chien ;
+kg:manages res:coach/Hua_Hien_Vinh ;
+kg:manages res:coach/Do_Tuan_Luat ;
+kg:manages res:coach/Mai_Xuan_Hop ;
+kg:manages res:coach/Ngo_Tuan_Vinh ;
+kg:manages res:coach/Do_Tuan_Luat ;
+kg:manages res:coach/Mai_Xuan_Hop ;
+kg:manages res:coach/Ngo_Tuan_Vinh ;
+kg:manages res:coach/Do_Tuan_Luat ;
+kg:manages res:coach/Mai_Xuan_Hop ;
+kg:manages res:coach/Ngo_Tuan_Vinh .
+
+res:coach/Kim_Sang_Sik a kg:Coach ;
+kg:name "Kim Sang-Sik" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Hoang_Anh_Tuan a kg:Coach ;
+kg:name "Hoàng Anh Tuấn" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Dinh_Hong_Vinh a kg:Coach ;
+kg:name "Đinh Hồng Vinh" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Le_Minh_Dung a kg:Coach ;
+kg:name "Lê Minh Dũng" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Cedric_Roger a kg:Coach ;
+kg:name "Cédric Roger" ;
+kg:nationality res:country/France ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Jose_Brandi_Regato_Neto a kg:Coach ;
+kg:name "José Brandi Regato Neto" ;
+kg:nationality res:country/Brazil ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Nguyen_The_Anh a kg:Coach ;
+kg:name "Nguyễn Thế Anh" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Tran_Duc_Cuong a kg:Coach ;
+kg:name "Trần Đức Cường" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Ngo_Viet_Trung a kg:Coach ;
+kg:name "Ngô Việt Trung" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Hoang_Xuan_Bach a kg:Coach ;
+kg:name "Hoàng Xuân Bách" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Doan_Anh_Tuan a kg:Coach ;
+kg:name "Đoàn Anh Tuấn" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Luu_Quang_Dien_Bien a kg:Coach ;
+kg:name "Lưu Quang Điện Biên" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Nguyen_Viet_Thang a kg:Coach ;
+kg:name "Nguyễn Việt Thắng" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Tran_Thi_Hanh a kg:Coach ;
+kg:name "Trần Thị Hành" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Le_Phuc_Tu a kg:Coach ;
+kg:name "Lê Phúc Tứ" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Tran_Minh_Chien a kg:Coach ;
+kg:name "Trần Minh Chiến" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Hua_Hien_Vinh a kg:Coach ;
+kg:name "Hứa Hiền Vinh" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Do_Tuan_Luat a kg:Coach ;
+kg:name "Đỗ Tuần Luật" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Mai_Xuan_Hop a kg:Coach ;
+kg:name "Mai Xuân Hợp" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:coach/Ngo_Tuan_Vinh a kg:Coach ;
+kg:name "Ngô Tuấn Vinh" ;
+kg:nationality res:country/Viet_Nam ;
+kg:manages res:team/U-23_Viet_Nam .
+
+res:team/U-23_Viet_Nam kg:participatesIn res:season/2024 .
+
+res:season/2024 a kg:Season ;
+kg:seasonOf res:competition/AFC_U23_Asian_Cup ;
+kg:seasonOf res:competition/ASEAN_U23_Championship .
+
+res:competition/AFC_U23_Asian_Cup a kg:Competition ;
+kg:competitionName "AFC U-23 Asian Cup" ;
+kg:organizes res:organization/AFC .
+
+res:competition/ASEAN_U23_Championship a kg:Competition ;
+kg:competitionName "ASEAN U-23 Championship" ;
+kg:organizes res:organization/ASEAN_Football_Federation .
+
+res:organization/AFC a kg:Organization ;
+kg:name "AFC" .
+
+res:organization/ASEAN_Football_Federation a kg:Organization ;
+kg:name "ASEAN Football Federation" .
+
+res:match/2024-03-20 a kg:Match ;
+kg:homeTeam res:team/U-23_Viet_Nam ;
+kg:awayTeam res:team/Tajikistan_U23 ;
+kg:kickoffTime "2024-03-20T20:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/AFC_U23_Asian_Cup ;
+kg:inSeason res:season/2024 ;
+kg:referee res:referee/Unknown_Referee_1 ;
+kg:result "Win" .
+
+res:match/2024-03-23 a kg:Match ;
+kg:homeTeam res:team/Tajikistan_U23 ;
+kg:awayTeam res:team/U-23_Viet_Nam ;
+kg:kickoffTime "2024-03-23T20:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/AFC_U23_Asian_Cup ;
+kg:inSeason res:season/2024 ;
+kg:referee res:referee/Unknown_Referee_2 ;
+kg:result "Draw" .
+
+res:match/2024-04-17 a kg:Match ;
+kg:homeTeam res:team/U-23_Viet_Nam ;
+kg:awayTeam res:team/Kuwait_U23 ;
+kg:kickoffTime "2024-04-17T18:30:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/AFC_U23_Asian_Cup ;
+kg:inSeason res:season/2024 ;
+kg:referee res:referee/Unknown_Referee_3 ;
+kg:result "Win" .
+
+res:match/2024-04-20 a kg:Match ;
+kg:homeTeam res:team/U-23_Viet_Nam ;
+kg:awayTeam res:team/Malaysia_U23 ;
+kg:kickoffTime "2024-04-20T16:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/AFC_U23_Asian_Cup ;
+kg:inSeason res:season/2024 ;
+kg:referee res:referee/Unknown_Referee_4 ;
+kg:result "Win" .
+
+res:match/2024-04-23 a kg:Match ;
+kg:homeTeam res:team/U-23_Viet_Nam ;
+kg:awayTeam res:team/Uzbekistan_U23 ;
+kg:kickoffTime "2024-04-23T18:30:

@@ -1,0 +1,225 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/SpainWomenNationalFootballTeam a kg:Team ;
+kg:teamName "Tây Ban Nha" ;
+kg:hasCoach res:coach/SoniaBermudez ;
+kg:manages res:coach/SoniaBermudez ;
+kg:teamAbbreviation "ESP" ;
+kg:locatedIn res:country/Spain .
+
+res:coach/SoniaBermudez a kg:Coach ;
+rdfs:label "Sonia Bermúdez" .
+
+res:country/Spain a kg:Country ;
+rdfs:label "Tây Ban Nha" .
+
+res:player/AlexiaPutellas a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1994-02-04"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 11 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/JenniferHermoso a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1990-05-09"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 9 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/IreneParedes a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1991-07-04"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 4 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/MariaPerez a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1990-10-29"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 21 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/MarionaCaldentey a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1996-03-19"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 8 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/EvaNavarro a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2001-01-27"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 15 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/SalmaParalluelo a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2003-11-13"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 18 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/AlbaRedondo a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1996-08-27"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 17 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/AtheneaDelCastillo a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "2000-10-24"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 22 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/AitanaBonmati a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1998-01-18"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 6 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/OnaBatlle a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1999-06-10"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 2 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/IvanaAndres a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1994-07-13"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 5 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/OlhaneHernandez a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2000-05-04"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 12 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/LaiaCodina a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2000-01-22"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 14 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/OlgaCarmona a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2000-06-12"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 19 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/RocioGalvez a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1997-04-14"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 20 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/TeresaAbelleira a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2000-01-09"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 3 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/ClaudiaZornoza a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1990-10-29"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 21 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/MariaPerezRabaza a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2001-12-24"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 16 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/EstherGonzalez a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1992-12-08"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 9 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/MisaRodriguez a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1999-07-23"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 1 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Enith Salon a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "2001-09-24"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 13 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/CataColl a kg:Player ;
+kg:playsFor res:team/SpainWomenNationalFootballTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "2001-04-23"^^xsd:date ;
+kg:birthPlace res:city/Unknown ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 23 ;
+kg:preferredFoot kg:RightFooted .

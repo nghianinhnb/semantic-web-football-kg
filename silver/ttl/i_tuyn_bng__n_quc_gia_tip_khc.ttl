@@ -1,0 +1,85 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Ti%E1%BA%BFp_Kh%E1%BA%A9c a kg:teamName "Tiệp Khắc" ;
+a kg:Team ;
+kg:locatedIn res:country/Ti%E1%BA%BFp_Kh%E1%BA%A9c ;
+kg:association res:organization/H%E1%BB%8D_i%E1%BA%BFp_h%E1%BB%99i_b%E1%BB%B3ng_g%E1%BA%ADc_Ti%E1%BA%BFp_Kh%E1%BA%A9c ;
+kg:confederation res:organization/UEFA .
+
+res:country/Ti%E1%BA%BFp_Kh%E1%BA%A9c a kg:Country ;
+rdfs:label "Tiệp Khắc" .
+
+res:organization/H%E1%BB%8D_i%E1%BA%BFp_h%E1%BB%99i_b%E1%BB%B3ng_g%E1%BA%ADc_Ti%E1%BA%BFp_Kh%E1%BA%A9c a kg:Organization ;
+rdfs:label "Hiệp hội bóng đá Tiệp Khắc" .
+
+res:organization/UEFA a kg:Organization ;
+rdfs:label "UEFA" .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_cu%E1%BB%91i_c%C3%B9ng a kg:Match ;
+kg:homeTeam res:team/Ti%E1%BA%BFp_Kh%E1%BA%A9c ;
+kg:awayTeam res:team/It%E1%BA%ADy ;
+kg:kickoffTime "1992-09-12"^^xsd:date .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_cu%E1%BB%91i_c%C3%B9ng kg:inCompetition res:competition/Gi%E1%BA%A3i_v%E1%BB%95_d%E1%BB%8Bch_b%E1%BB%B3ng_g%E1%BA%ADc_ch%E1%BA%A9u_Âu_1992 .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt a kg:Match ;
+kg:homeTeam res:team/Ti%E1%BA%BFp_Kh%E1%BA%A9c ;
+kg:awayTeam res:team/Hung_Ng%E1%BA%9B ;
+kg:kickoffTime "1985-00-00"^^xsd:date ;
+kg:result "2-2"^^xsd:string .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt kg:inCompetition res:competition/Gi%E1%BA%A3i_v%E1%BB%95_d%E1%BB%8Bch_b%E1%BB%B3ng_g%E1%BA%ADc_ch%E1%BA%A9u_Âu_1985 .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt kg:inSeason res:season/Mua_giai_1985 .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt kg:homeTeam res:team/Ti%E1%BA%BFp_Kh%E1%BA%A9c .
+
+res:team/Ti%E1%BA%BFp_Kh%E1%BA%A9c kg:foundedDate "1968-02-23"^^xsd:date .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt kg:awayTeam res:team/Hung_Ng%E1%BA%9B .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt kg:kickoffTime "1985-00-00"^^xsd:date .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt kg:result "2-2"^^xsd:string .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt kg:location res:place/Bratislava .
+
+res:place/Bratislava a kg:City ;
+rdfs:label "Bratislava" .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt kg:venue res:stadium/Petrzalka .
+
+res:stadium/Petrzalka a kg:Stadium ;
+rdfs:label "Petržalka" .
+
+res:team/Ti%E1%BA%BFp_Kh%E1%BA%A9c kg:largestWin res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt .
+
+res:team/Ti%E1%BA%BFp_Kh%E1%BA%A9c kg:largestLoss res:match/FRG_5-0_Ti%E1%BA%BFp_Kh%E1%BA%A9c .
+
+res:match/FRG_5-0_Ti%E1%BA%BFp_Kh%E1%BA%A9c a kg:Match ;
+kg:homeTeam res:team/West_Germany ;
+kg:awayTeam res:team/Ti%E1%BA%BFp_Kh%E1%BA%A9c ;
+kg:kickoffTime "1989-11-22"^^xsd:date ;
+kg:result "5-0"^^xsd:string .
+
+res:team/West_Germany a kg:Team ;
+rdfs:label "Tây Đức" .
+
+res:team/Ti%E1%BA%BFp_Kh%E1%BA%A9c kg:firstGame res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt kg:location res:place/Viareggio .
+
+res:place/Viareggio a kg:City ;
+rdfs:label "Viareggio" .
+
+res:place/Viareggio kg:locatedIn res:country/Italy .
+
+res:team/Italy a kg:Team ;
+rdfs:label "Ý" .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt kg:awayTeam res:team/Italy .
+
+res:match/Tr%E1%BA%AAn_qu%E1%BB%91c_t%E1EB%AB_th%E1%BB%B3_nh%E1%BA%ADt kg:kickoffTime "1968-02-23"^^xsd:date .

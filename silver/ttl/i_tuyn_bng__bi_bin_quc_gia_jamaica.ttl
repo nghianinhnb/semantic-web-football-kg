@@ -1,0 +1,106 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Jamaica a kg:Team ;
+kg:teamName "Jamaica" ;
+kg:hasCoach res:coach/Andrew_Francis_Price .
+
+res:coach/Andrew_Francis_Price a kg:Coach ;
+kg:manages res:team/Jamaica .
+
+res:team/Jamaica kg:locatedIn res:country/Jamaica .
+
+res:country/Jamaica a kg:Country .
+
+res:competition/Regional_North_Central_American_and_Caribbean_Beach_Soccer_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" ;
+kg:heldIn res:country/Jamaica ;
+kg:participantCount "4"^^xsd:positiveInteger .
+
+res:season/2006 a kg:Season ;
+kg:seasonOf res:competition/Regional_North_Central_American_and_Caribbean_Beach_Soccer_Championship .
+
+res:team/Jamaica kg:participatesIn res:season/2006 .
+
+res:team/Jamaica kg:inCompetition res:competition/Regional_North_Central_American_and_Caribbean_Beach_Soccer_Championship .
+
+res:team/Jamaica kg:bestResultInCompetition "Hạng 5"^^xsd:string .
+
+res:player/Kirk_Porter a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "1"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Gerald_Neil a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "2"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Ryan_Powell a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "3"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Daemion_Benjamin a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "4"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Rohan_Reid a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "5"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Midfielder .
+
+res:player/Andre_Reid a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "6"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Midfielder .
+
+res:player/Jermaine_Anderson a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "7"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Kevin_Wilson a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "8"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Midfielder .
+
+res:player/Derrick_Planter a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "9"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Phillip_Peddie a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "10"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Gregory_Simpson a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "11"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Elvis_Hart a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "12"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Ovan_Oakley a kg:Player ;
+kg:playsFor res:team/Jamaica ;
+kg:shirtNumber "13"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Forward .
+
+res:position/Goalkeeper a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Midfielder a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Position ;
+rdfs:subClassOf kg:Position .

@@ -1,0 +1,55 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Syria a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Syria" ;
+kg:locatedIn res:country/Syria ;
+kg:hasCoach ?coach ;
+kg:manages ?coach ;
+kg:organizes res:competition/Đại_hội_thể_thao_bãi_biển_châu_Á_2010 ;
+kg:organizes res:competition/Vòng_loại_giải_vô_địch_thế_giới_2011 .
+
+res:country/Syria a kg:Country .
+
+res:competition/Đại_hội_thể_thao_bãi_biển_châu_Á_2010 a kg:Competition ;
+kg:competitionName "Đại hội thể thao bãi biển châu Á 2010" ;
+kg:heldIn res:country/Syria ;
+kg:participantCount "1"^^xsd:positiveInteger .
+
+res:competition/Vòng_loại_giải_vô_địch_thế_giới_2011 a kg:Competition ;
+kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới 2011" ;
+kg:heldIn res:country/Syria ;
+kg:participantCount "1"^^xsd:positiveInteger .
+
+res:player/Rajub_Ahmad a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Syria .
+
+res:player/Omar_Akil a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Syria .
+
+res:player/Ali_Sbihe a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Syria .
+
+res:player/Mged_Chlmoum a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Syria .
+
+res:player/Ahmad_Karakash a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Syria .
+
+res:player/Ali_Sleman a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Syria .
+
+res:player/Omar_Al_Najjar a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Syria .
+
+res:player/Hussam_Kbaili a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Syria .
+
+res:player/Eyad_Al_Shehabi a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Syria .
+
+res:player/Alsaid_Biazid a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Syria .
+Lưu ý: Các triples liên quan đến huấn luyện viên (`?coach`) chưa thể trích xuất do không có thông tin cụ thể trong đoạn văn. Các cầu thủ khác cũng không có thông tin về vị trí, số áo hay quốc tịch nên chỉ tạo triples cơ bản. Nếu cần trích xuất chi tiết hơn với thông tin bổ sung, hãy cung cấp thêm dữ liệu.

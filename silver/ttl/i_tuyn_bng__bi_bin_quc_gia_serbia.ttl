@@ -1,0 +1,163 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Serbia a kg:Team ;
+kg:teamName "Serbia" ;
+kg:teamAbbreviation "SRB" ;
+kg:hasCoach res:coach/Dejan_Knezevic ;
+kg:locatedIn res:country/Serbia ;
+kg:organizedBy res:organization/Uefa ;
+kg:participatesIn res:season/2016_European_Beach_Soccer_Championship ;
+kg:participatesIn res:season/World_Beach_Soccer_Championship_Qualification_Europe .
+
+res:organization/Uefa a kg:Organization ;
+rdfs:label "UEFA" .
+
+res:country/Serbia a kg:Country ;
+rdfs:label "Serbia" .
+
+res:coach/Dejan_Knezevic a kg:Coach ;
+kg:manages res:team/Serbia .
+
+res:season/2016_European_Beach_Soccer_Championship a kg:Season ;
+kg:seasonOf res:competition/European_Beach_Soccer_Championship .
+
+res:competition/European_Beach_Soccer_Championship a kg:Competition ;
+kg:competitionName "European Beach Soccer Championship" .
+
+res:season/World_Beach_Soccer_Championship_Qualification_Europe a kg:Season ;
+kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification_Europe .
+
+res:competition/World_Beach_Soccer_Championship_Qualification_Europe a kg:Competition ;
+kg:competitionName "World Beach Soccer Championship Qualification (Europe)" .
+
+res:player/Filip_Antic a kg:Player ;
+kg:playsFor res:team/Serbia ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 ;
+kg:nationality res:country/Serbia ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Nikola_Mijailovic a kg:Player ;
+kg:playsFor res:team/Serbia ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 ;
+kg:nationality res:country/Serbia ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Nemanja_Vucicevic a kg:Player ;
+kg:playsFor res:team/Serbia ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 11 ;
+kg:nationality res:country/Serbia ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Marko_Milivojevic a kg:Player ;
+kg:playsFor res:team/Serbia ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 ;
+kg:nationality res:country/Serbia ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Nemanja_Filimonovic a kg:Player ;
+kg:playsFor res:team/Serbia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 2 ;
+kg:nationality res:country/Serbia ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Nikola_Valentic a kg:Player ;
+kg:playsFor res:team/Serbia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 6 ;
+kg:nationality res:country/Serbia ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Nikola_Cubrilovic a kg:Player ;
+kg:playsFor res:team/Serbia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 ;
+kg:nationality res:country/Serbia ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Marko_Lazic a kg:Player ;
+kg:playsFor res:team/Serbia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 8 ;
+kg:nationality res:country/Serbia ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Mladen_Jovancic a kg:Player ;
+kg:playsFor res:team/Serbia ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 9 ;
+kg:nationality res:country/Serbia ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Mihailo_Jovanovic a kg:Player ;
+kg:playsFor res:team/Serbia ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+kg:nationality res:country/Serbia ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Mihailo_Pantelic a kg:Player ;
+kg:playsFor res:team/Serbia ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 12 ;
+kg:nationality res:country/Serbia ;
+kg:preferredFoot kg:RightFooted .
+
+res:position/Goalkeeper a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Midfielder a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:match/Serbia_vs_Hungary_2016 a kg:Match ;
+kg:homeTeam res:team/Serbia ;
+kg:awayTeam res:team/Hungary ;
+kg:kickoffTime "2016-06-24"^^xsd:date ;
+kg:venue res:place/Belgrade ;
+kg:inCompetition res:competition/European_Beach_Soccer_Championship ;
+kg:inSeason res:season/2016_European_Beach_Soccer_Championship ;
+kg:result "0–6" .
+
+res:match/Serbia_vs_Czech_Republic_2016 a kg:Match ;
+kg:homeTeam res:team/Serbia ;
+kg:awayTeam res:team/Czech_Republic ;
+kg:kickoffTime "2016-07-24"^^xsd:date ;
+kg:venue res:place/Belgrade ;
+kg:inCompetition res:competition/European_Beach_Soccer_Championship ;
+kg:inSeason res:season/2016_European_Beach_Soccer_Championship ;
+kg:result "4–2" .
+
+res:match/Serbia_vs_Spain_2016 a kg:Match ;
+kg:homeTeam res:team/Serbia ;
+kg:awayTeam res:team/Spain ;
+kg:kickoffTime "2016-06-26"^^xsd:date ;
+kg:venue res:place/Belgrade ;
+kg:inCompetition res:competition/European_Beach_Soccer_Championship ;
+kg:inSeason res:season/2016_European_Beach_Soccer_Championship ;
+kg:result "1–11" .
+
+res:place/Belgrade a kg:City ;
+kg:locatedIn res:country/Serbia ;
+rdfs:label "Belgrade" .
+
+res:team/Hungary a kg:Team ;
+kg:teamName "Hungary" .
+
+res:team/Czech_Republic a kg:Team ;
+kg:teamName "Czech Republic" .
+
+res:team/Spain a kg:Team ;
+kg:teamName "Spain" .

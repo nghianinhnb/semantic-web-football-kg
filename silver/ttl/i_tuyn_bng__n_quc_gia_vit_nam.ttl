@@ -1,0 +1,248 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Việt Nam" ;
+kg:teamAbbreviation "VIE" ;
+kg:hasCoach res:coach/Mai_Đức_Chung ;
+kg:manages res:coach/Mai_Đức_Chung ;
+kg:locatedIn res:country/Việt_Nam .
+
+res:country/Việt_Nam a kg:Country ;
+rdfs:label "Việt Nam" .
+
+res:coach/Mai_Đức_Chung a kg:Coach ;
+kg:manages res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:name "Mai Đức Chung" .
+
+res:player/Huỳnh_Như a kg:Player ;
+kg:name "Huỳnh Như" ;
+kg:birthDate "1991-11-28"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 108 ;
+kg:stats/goals 68
+) .
+
+res:player/Nguyễn_Thị_Tuyết_Dung a kg:Player ;
+kg:name "Nguyễn Thị Tuyết Dung" ;
+kg:birthDate "1993-12-13"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 11 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 128 ;
+kg:stats/goals 52
+) .
+
+res:player/Trần_Thị_Kim_Thanh a kg:Player ;
+kg:name "Trần Thị Kim Thanh" ;
+kg:birthDate "1993-09-18"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 56 ;
+kg:stats/goals 0
+) .
+
+res:player/Khổng_Thị_Hằng a kg:Player ;
+kg:name "Khổng Thị Hằng" ;
+kg:birthDate "1993-10-10"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 2 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 32 ;
+kg:stats/goals 0
+) .
+
+res:player/Quách_Thu_Em a kg:Player ;
+kg:name "Quách Thu Em" ;
+kg:birthDate "1995-08-15"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 3 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 0 ;
+kg:stats/goals 0
+) .
+
+res:player/Hoàng_Thị_Loan a kg:Player ;
+kg:name "Hoàng Thị Loan" ;
+kg:birthDate "1995-02-06"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 47 ;
+kg:stats/goals 2
+) .
+
+res:player/Lê_Thị_DIễm_My a kg:Player ;
+kg:name "Lê Thị Diễm My" ;
+kg:birthDate "1994-03-06"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 24 ;
+kg:stats/goals 0
+) .
+
+res:player/Lương_Thị_Thu_Thương a kg:Player ;
+kg:name "Lương Thị Thu Thương" ;
+kg:birthDate "2000-05-01"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 32 ;
+kg:stats/goals 0
+) .
+
+res:player/Nguyễn_Thị_Mỹ_Anhi a kg:Player ;
+kg:name "Nguyễn Thị Mỹ Anh" ;
+kg:birthDate "1994-11-27"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 7 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 31 ;
+kg:stats/goals 0
+) .
+
+res:player/Trần_Thị_Thu a kg:Player ;
+kg:name "Trần Thị Thu" ;
+kg:birthDate "1991-01-15"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 8 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 42 ;
+kg:stats/goals 2
+) .
+
+res:player/Chương_Thị_Kiều a kg:Player ;
+kg:name "Chương Thị Kiều" ;
+kg:birthDate "1995-08-19"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 9 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 93 ;
+kg:stats/goals 4
+) .
+
+res:player/Trần_Thị_Thu_Thảo a kg:Player ;
+kg:name "Trần Thị Thu Thảo" ;
+kg:birthDate "1993-01-15"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 52 ;
+kg:stats/goals 3
+) .
+
+res:player/Trần_Thị_Duyên a kg:Player ;
+kg:name "Trần Thị Duyên" ;
+kg:birthDate "2000-12-28"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 11 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 9 ;
+kg:stats/goals 1
+) .
+
+res:player/Ân_Thị_Vạn_Sự a kg:Player ;
+kg:name "Ân Thị Vạn Sự" ;
+kg:birthDate "2001-04-29"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 12 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 36 ;
+kg:stats/goals 6
+) .
+
+res:player/Thái_Thị_Thảo a kg:Player ;
+kg:name "Thái Thị Thảo" ;
+kg:birthDate "1995-02-12"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 13 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 52 ;
+kg:stats/goals 13
+) .
+
+res:player/Dương_Thị_Vân a kg:Player ;
+kg:name "Dương Thị Vân" ;
+kg:birthDate "1994-09-20"^^xsd:date ;
+kg:birthPlace res:city/Hà_Nội ;
+kg:nationality res:country/Việt_Nam ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 14 ;
+kg:preferredFoot kg:LeftFooted ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_nữ_quốc_gia_Việt_Nam ;
+kg:careerStats (
+kg:stats/caps 51 ;
+kg:stats/goals 2
+) .
+
+res:player/Nguyễn_Thị_Vạn a kg:Player ;
+kg:name "Nguyễn Thị Vạn" ;
+kg:birthDate "1997-01-10"^^xsd:date ;
+kg:

@@ -1,0 +1,129 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Vietnam_Beach_Soccer_National_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Việt Nam" ;
+kg:teamAbbreviation "VIE" ;
+kg:hasCoach res:coach/Truong_Cong_Tuan ;
+kg:manages res:coach/Truong_Cong_Tuan ;
+kg:locatedIn res:country/Vietnam ;
+kg:homeStadium res:stadium/Nha_Trang_Beach ;
+
+kg:topScorer res:player/Bui_Trans_Tuan_Anh ;
+kg:captain res:player/Tran_Vinh_Phong ;
+kg:viceCaptain res:player/Bui_Tran_Tuan_Anh ;
+kg:rankInBSWW "87"^^xsd:integer ;
+kg:nickname "Rồng Biển" ;
+kg:affiliatedWith res:organization/VFF ;
+kg:memberOf res:organization/ASEAN_Football_Federation ;
+kg:memberOf res:organization/Asian_Football_Confederation .
+
+res:organization/VFF a kg:Organization ;
+kg:name "Liên đoàn bóng đá Việt Nam" ;
+kg:locatedIn res:country/Vietnam .
+
+res:organization/ASEAN_Football_Federation a kg:Organization ;
+kg:name "Liên đoàn bóng đá Đông Nam Á" ;
+kg:locatedIn res:country/Asia .
+
+res:organization/Asian_Football_Confederation a kg:Organization ;
+kg:name "Liên đoàn bóng đá châu Á" ;
+kg:locatedIn res:country/Asia .
+
+res:country/Vietnam a kg:Country ;
+kg:name "Việt Nam" .
+
+res:stadium/Nha_Trang_Beach a kg:Stadium ;
+kg:name "Bãi biển Nha Trang" ;
+kg:locatedIn res:city/Khanh_Hoa .
+
+res:city/Khanh_Hoa a kg:City ;
+kg:name "Khánh Hòa" ;
+kg:locatedIn res:country/Vietnam .
+
+res:coach/Truong_Cong_Tuan a kg:Coach ;
+kg:name "Trương Công Tuân" ;
+kg:coaches res:team/Vietnam_Beach_Soccer_National_Team .
+
+res:player/Tran_Vinh_Phong a kg:Player ;
+kg:name "Trần Vĩnh Phong" ;
+kg:playsFor res:team/Vietnam_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 ;
+kg:topScorerInTeam true .
+
+res:player/Bui_Tran_Tuan_Anh a kg:Player ;
+kg:name "Bùi Trần Tuấn Anh" ;
+kg:playsFor res:team/Vietnam_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+kg:topScorerInTeam true ;
+kg:goalsScored 23 .
+
+res:player/Huynh_Ngoc_Cuong a kg:Player ;
+kg:name "Huỳnh Ngọc Cường" ;
+kg:playsFor res:team/Vietnam_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/AssistantCoach .
+
+res:player/Do_Viet_Cuong a kg:Player ;
+kg:name "Đỗ Viết Cường" ;
+kg:playsFor res:team/Vietnam_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/AssistantCoach .
+
+res:position/Midfielder a kg:Position ;
+kg:name "Tiền vệ" .
+
+res:position/Forward a kg:Position ;
+kg:name "Tiền đạo" .
+
+res:position/AssistantCoach a kg:Position ;
+kg:name "Trợ lý huấn luyện viên" .
+
+res:competition/Beach_Soccer_World_Cup a kg:Competition ;
+kg:name "Giải vô địch bóng đá bãi biển thế giới" .
+
+res:competition/Asian_Beach_Soccer_Championship a kg:Competition ;
+kg:name "Giải vô địch bóng đá bãi biển châu Á" .
+
+res:competition/ASEAN_Beach_Soccer_Championship a kg:Competition ;
+kg:name "Giải vô địch bóng đá bãi biển Đông Nam Á" .
+
+res:match/First_Match a kg:Match ;
+kg:homeTeam res:team/Vietnam_Beach_Soccer_National_Team ;
+kg:awayTeam res:team/Bahrain ;
+kg:venue res:stadium/Bali ;
+kg:kickoffTime "2008-10-18"^^xsd:date .
+
+res:match/Largest_Win a kg:Match ;
+kg:homeTeam res:team/Vietnam_Beach_Soccer_National_Team ;
+kg:awayTeam res:team/Laos ;
+kg:venue res:stadium/Da_Nang ;
+kg:kickoffTime "2016-12-02"^^xsd:date .
+
+res:match/Largest_Loss a kg:Match ;
+kg:homeTeam res:team/UAE ;
+kg:awayTeam res:team/Vietnam_Beach_Soccer_National_Team ;
+kg:venue res:stadium/Phuket ;
+kg:kickoffTime "2014-11-21"^^xsd:date .
+
+res:organization/VFF a kg:Organization ;
+kg:name "Liên đoàn bóng đá Việt Nam" ;
+kg:locatedIn res:country/Vietnam .
+
+res:team/Vietnam_Beach_Soccer_National_Team kg:participatesIn res:season/2016_Asian_Beach_Soccer_Championship ;
+kg:resultInCompetition "Tứ kết"^^xsd:string .
+
+res:team/Vietnam_Beach_Soccer_National_Team kg:participatesIn res:season/2014_Asian_Beach_Soccer_Championship ;
+kg:resultInCompetition "Hạng tư"^^xsd:string .
+
+res:team/Vietnam_Beach_Soccer_National_Team kg:participatesIn res:season/2016_ASEAN_Beach_Soccer_Championship ;
+kg:resultInCompetition "Vô địch"^^xsd:string .
+
+res:team/Vietnam_Beach_Soccer_National_Team kg:participatesIn res:season/2018_ASEAN_Beach_Soccer_Championship ;
+kg:resultInCompetition "Vô địch"^^xsd:string .
+
+res:team/Vietnam_Beach_Soccer_National_Team kg:participatesIn res:season/2014_ASEAN_Beach_Soccer_Championship ;
+kg:resultInCompetition "Á quân"^^xsd:string .

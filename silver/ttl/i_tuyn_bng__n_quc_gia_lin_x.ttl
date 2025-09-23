@@ -1,0 +1,100 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Soviety_Football_National_Women_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Liên Xô" ;
+kg:hasCoach res:coach/Oleg_Lapshin ;
+kg:locatedIn res:country/Lien_Xo .
+
+res:coach/Oleg_Lapshin a kg:Coach ;
+kg:manages res:team/Soviety_Football_National_Women_Team .
+
+res:country/Lien_Xo a kg:Country ;
+rdfs:label "Liên Xô" .
+
+res:match/First_Match a kg:Match ;
+kg:homeTeam res:team/Soviety_Football_National_Women_Team ;
+kg:awayTeam res:team/Bulgaria ;
+kg:venue res:place/Kazanlak ;
+kg:kickoffTime "1990-03-26"^^xsd:date .
+
+res:match/Largest_Win a kg:Match ;
+kg:homeTeam res:team/Soviety_Football_National_Women_Team ;
+kg:awayTeam res:team/Bulgaria ;
+kg:venue res:place/Kazanlak ;
+kg:kickoffTime "1990-03-26"^^xsd:date .
+
+res:match/Largest_Loss a kg:Match ;
+kg:homeTeam res:team/United_States ;
+kg:awayTeam res:team/Soviety_Football_National_Women_Team ;
+kg:venue res:place/Blaine_Minnesota ;
+kg:kickoffTime "1990-08-05"^^xsd:date .
+
+res:match/Final_Match a kg:Match ;
+kg:homeTeam res:team/Soviety_Football_National_Women_Team ;
+kg:awayTeam res:team/Hungary ;
+kg:venue res:place/Lien_Xo ;
+kg:kickoffTime "1991-10-06"^^xsd:date .
+
+res:team/Soviety_Football_National_Women_Team kg:participatesIn res:season/European_Championship_Qualification_1993 ;
+kg:participatesIn res:season/European_Championship_Qualification_1991 .
+
+res:season/European_Championship_Qualification_1991 a kg:Season ;
+kg:seasonOf res:competition/European_Championship_Womens ;
+
+res:season/European_Championship_Qualification_1993 a kg:Season ;
+kg:seasonOf res:competition/European_Championship_Womens .
+
+res:competition/European_Championship_Womens a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ châu Âu" .
+
+res:place/Kazanlak a kg:City ;
+rdfs:label "Kazanlak" ;
+kg:locatedIn res:country/Bulgaria .
+
+res:place/Sevastopol a kg:City ;
+rdfs:label "Sevastopol" ;
+kg:locatedIn res:country/Ukraine .
+
+res:place/Blaine_Minnesota a kg:City ;
+rdfs:label "Blaine, Minnesota" ;
+kg:locatedIn res:country/United_States .
+
+res:team/Bulgaria a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ Bulgaria" .
+
+res:team/Hungary a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ Hungary" .
+
+res:team/United_States a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ Hoa Kỳ" .
+
+res:team/Russia a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ Nga" ;
+kg:replaces res:team/Soviety_Football_National_Women_Team .
+
+res:team/Soviety_Football_National_Women_Team kg:disbanded "1991-12-31"^^xsd:date ;
+kg:established "1990-01-01"^^xsd:date .
+
+res:team/Soviety_Football_National_Women_Team kg:record "9 wins, 9 draws, 16 losses"^^xsd:string .
+
+res:team/Soviety_Football_National_Women_Team kg:managedBy res:coach/Oleg_Lapshin ;
+kg:duration "20 months"^^xsd:string .
+
+res:coach/Oleg_Lapshin a kg:Coach ;
+kg:coachedTeam res:team/Soviety_Football_National_Women_Team ;
+kg:duration "20 months"^^xsd:string .
+
+res:player/Tatyana_Verezubova a kg:Player ;
+kg:playsFor res:team/Soviety_Football_National_Women_Team ;
+kg:primaryPosition res:position/Forward .
+
+res:player/A_Bezmenova a kg:Player ;
+kg:playsFor res:team/Soviety_Football_National_Women_Team ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Irina_Gnutova a kg:Player ;
+kg:playsFor res:team/Soviety_Football_National_Women_Team ;
+kg:primaryPosition res:position/Forward .

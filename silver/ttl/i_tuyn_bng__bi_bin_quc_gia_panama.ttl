@@ -1,0 +1,94 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Panama a kg:Team ;
+kg:teamName "Panama" ;
+kg:hasCoach res:coach/Enrique_Pérez_Silva ;
+kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Panama ;
+kg:heldIn res:country/Panama ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe .
+
+res:organization/Liên_đoàn_bóng_đá_Panama a kg:Organization ;
+rdfs:label "Liên đoàn bóng đá Panama" .
+
+res:country/Panama a kg:Country ;
+rdfs:label "Panama" .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" ;
+kg:participantCount 1 ;
+kg:heldIn res:country/Panama .
+
+res:coach/Enrique_Pérez_Silva a kg:Coach ;
+kg:manages res:team/Panama .
+
+res:player/Francisco_Alejandro_Portillo_Bautista a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/Gilberto_Enrique_Rangel a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 .
+
+res:player/Fernando_Barrera_Cano a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 .
+
+res:player/Alberto_Agustin_Beltran_Barrios a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 4 .
+
+res:player/Apolinar_Gálvez a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 5 .
+
+res:player/Edgar_Rivas_Medina a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 .
+
+res:player/Jorge_Luis_Pérez a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 7 .
+
+res:player/Alejandro_Ruiz a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 8 .
+
+res:player/Luis_Alberto_Quintero_Guevara a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 9 .
+
+res:player/Ricardo_Antonio_Torres a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 10 .
+
+res:player/Eliseo_Blanco a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 11 .
+
+res:player/José_López a kg:Player ;
+kg:playsFor res:team/Panama ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 12 .
+
+res:position/Goalkeeper a kg:Position ;
+rdfs:subClassOf kg:Goalkeeper .
+
+res:position/Defender a kg:Position ;
+rdfs:subClassOf kg:Defender .
+
+res:position/Forward a kg:Position ;
+rdfs:subClassOf kg:Forward .

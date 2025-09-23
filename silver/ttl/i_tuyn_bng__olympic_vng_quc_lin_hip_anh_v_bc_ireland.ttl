@@ -1,0 +1,260 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Olympic_United_Kingdom_Football_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá Olympic Vương quốc Liên hiệp Anh và Bắc Ireland" ;
+kg:teamAbbreviation "GBR" ;
+kg:hasCoach res:coach/Stuart_Pearce ;
+kg:locatedIn res:country/United_Kingdom ;
+kg:managedBy res:coach/Stuart_Pearce ;
+kg:participatesIn res:competition/Olympic_Games .
+
+res:country/United_Kingdom a kg:Country ;
+rdfs:label "Vương quốc Liên hiệp Anh và Bắc Ireland" .
+
+res:coach/Stuart_Pearce a kg:Coach ;
+kg:manages res:team/Olympic_United_Kingdom_Football_Team .
+
+res:competition/Olympic_Games a kg:Competition ;
+kg:competitionName "Thế vận hội Mùa hè" ;
+kg:heldIn res:country/United_Kingdom .
+
+res:team/England_National_Football_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Vương quốc Anh" ;
+kg:locatedIn res:country/England .
+
+res:team/Women_Olympic_United_Kingdom_Football_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ Olympic Vương quốc Liên hiệp Anh và Bắc Ireland" .
+
+res:player/Jack_Butland a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 ;
+kg:birthDate "1993-03-10"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Birmingham_City .
+
+res:player/Jason_Steele a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 18 ;
+kg:birthDate "1990-08-18"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Middlesbrough .
+
+res:player/Neil_Taylor a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 ;
+kg:birthDate "1989-02-07"^^xsd:date ;
+kg:nationality res:country/Wales ;
+kg:club res:club/Swansea_City .
+
+res:player/Ryan_Bertrand a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 ;
+kg:birthDate "1989-08-05"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Chelsea .
+
+res:player/Steven_Caulker a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 ;
+kg:birthDate "1991-12-29"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Tottenham_Hotspur .
+
+res:player/Craig_Dawson a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 ;
+kg:birthDate "1990-05-06"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/West_Bromwich_Albion .
+
+res:player/James_Tomkins a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 12 ;
+kg:birthDate "1989-03-29"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/West_Ham_United .
+
+res:player/Micah_Richards a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 14 ;
+kg:birthDate "1988-06-24"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Manchester_City .
+
+res:player/Danny_Rose a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 4 ;
+kg:birthDate "1990-07-02"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Tottenham_Hotspur .
+
+res:player/Tom_Cleverley a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 ;
+kg:birthDate "1989-08-12"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Manchester_United .
+
+res:player/Joe_Allen a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 8 ;
+kg:birthDate "1990-03-14"^^xsd:date ;
+kg:nationality res:country/Wales ;
+kg:club res:club/Swansea_City .
+
+res:player/Ryan_Giggs a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 11 ;
+kg:birthDate "1973-11-29"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Manchester_United ;
+kg:isCaptain true .
+
+res:player/Jack_Cork a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 13 ;
+kg:birthDate "1989-06-25"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Southampton .
+
+res:player/Aaron_Ramsey a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 15 ;
+kg:birthDate "1990-12-26"^^xsd:date ;
+kg:nationality res:country/Wales ;
+kg:club res:club/Arsenal .
+
+res:player/Scott_Sinclair a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 16 ;
+kg:birthDate "1989-03-25"^^xsd:date ;
+kg:nationality res:country/Wales ;
+kg:club res:club/Swansea_City .
+
+res:player/Daniel_Sturridge a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 9 ;
+kg:birthDate "1989-09-01"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Chelsea .
+
+res:player/Craig_Bellamy a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+kg:birthDate "1979-07-13"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Liverpool .
+
+res:player/Marvin_Sordell a kg:Player ;
+kg:playsFor res:team/Olympic_United_Kingdom_Football_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 17 ;
+kg:birthDate "1991-02-17"^^xsd:date ;
+kg:nationality res:country/United_Kingdom ;
+kg:club res:club/Bolton_Wanderers .
+
+res:club/Birmingham_City a kg:Club ;
+kg:locatedIn res:city/Birmingham .
+
+res:club/Middlesbrough a kg:Club ;
+kg:locatedIn res:city/Middlesbrough .
+
+res:club/Swansea_City a kg:Club ;
+kg:locatedIn res:city/Swansea .
+
+res:club/Chelsea a kg:Club ;
+kg:locatedIn res:city/London .
+
+res:club/Tottenham_Hotspur a kg:Club ;
+kg:locatedIn res:city/London .
+
+res:club/West_Bromwich_Albion a kg:Club ;
+kg:locatedIn res:city/West_Birmingham .
+
+res:club/West_Ham_United a kg:Club ;
+kg:locatedIn res:city/London .
+
+res:club/Manchester_City a kg:Club ;
+kg:locatedIn res:city/Manchester .
+
+res:club/Manchester_United a kg:Club ;
+kg:locatedIn res:city/Manchester .
+
+res:club/Southampton a kg:Club ;
+kg:locatedIn res:city/Southampton .
+
+res:club/Liverpool a kg:Club ;
+kg:locatedIn res:city/Liverpool .
+
+res:club/Bolton_Wanderers a kg:Club ;
+kg:locatedIn res:city/Bolton .
+
+res:city/Birmingham a kg:City ;
+kg:locatedIn res:country/United_Kingdom .
+
+res:city/Middlesbrough a kg:City ;
+kg:locatedIn res:country/United_Kingdom .
+
+res:city/Swansea a kg:City ;
+kg:locatedIn res:country/Wales .
+
+res:city/London a kg:City ;
+kg:locatedIn res:country/United_Kingdom .
+
+res:city/Manchester a kg:City ;
+kg:locatedIn res:country/United_Kingdom .
+
+res:city/Southampton a kg:City ;
+kg:locatedIn res:country/United_Kingdom .
+
+res:city/Liverpool a kg:City ;
+kg:locatedIn res:country/United_Kingdom .
+
+res:city/Bolton a kg:City ;
+kg:locatedIn res:country/United_Kingdom .
+
+res:country/Wales a kg:Country ;
+rdfs:label "Wales" .
+
+res:country/England a kg:Country ;
+rdfs:label "Vương quốc Anh" .
+
+res:position/Goalkeeper a kg:Position .
+
+res:position/Defender a kg:Position .
+
+res:position/Midfielder a kg:Position .
+
+res:position/Forward a kg:Position .
+
+res:match/GBRvsDEN_1908 a kg:Match ;
+kg:homeTeam res:team/Olympic_United_Kingdom_Football_Team ;
+kg:awayTeam res:team/Denmark ;
+kg:kickoffTime "1908-10-24T15:00:00Z"^^xsd:dateTime ;
+kg:venue res:stadium/White_City ;
+kg:referee res:person/John_Lewis ;
+kg:score "2–0" ;
+kg:inCompetition res:competition/Olympic_Games .
+
+res:match/GBRvsDEN_1912 a kg

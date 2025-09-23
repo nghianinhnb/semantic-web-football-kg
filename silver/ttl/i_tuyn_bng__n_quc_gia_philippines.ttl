@@ -1,0 +1,241 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Philippines a kg:Team ;
+kg:teamName "Philippines" ;
+kg:teamAbbreviation "Filipinas" ;
+kg:hasCoach res:coach/Mark_Torcaso ;
+kg:manages res:coach/Mark_Torcaso ;
+kg:homeStadium res:stadium/Rizal_Memorial_Stadium ;
+kg:locatedIn res:country/Philippines .
+
+res:country/Philippines a kg:Country ;
+rdfs:label "Philippines" .
+
+res:stadium/Rizal_Memorial_Stadium a kg:Stadium ;
+kg:isHomeOf res:team/Philippines .
+
+res:coach/Mark_Torcaso a kg:Coach ;
+rdfs:label "Mark Torcaso" .
+
+res:player/Hali_Long a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 5 ;
+kg:birthDate "1995-01-21"^^xsd:date ;
+kg:nationality res:country/Philippines .
+
+res:player/Sarina_Bolden a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 7 ;
+kg:birthDate "1996-06-30"^^xsd:date ;
+kg:nationality res:country/Philippines .
+
+res:player/Kaiya_Jota a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 18 ;
+kg:birthDate "2006-02-05"^^xsd:date ;
+kg:nationality res:country/Philippines .
+
+res:player/Olivia_McDaniel a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 1 ;
+kg:birthDate "1997-10-14"^^xsd:date ;
+kg:nationality res:country/United_States_of_America .
+
+res:player/Kiara_Fontanilla a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 22 ;
+kg:birthDate "2000-07-01"^^xsd:date ;
+kg:nationality res:country/Australia .
+
+res:player/Malea_Cesar a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 2 ;
+kg:birthDate "2003-12-09"^^xsd:date ;
+kg:nationality res:country/Philippines .
+
+res:player/Jessika_Cowart a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 3 ;
+kg:birthDate "1999-10-30"^^xsd:date ;
+kg:nationality res:country/Sweden .
+
+res:player/Angela_Beard a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 13 ;
+kg:birthDate "1997-08-16"^^xsd:date ;
+kg:nationality res:country/Australia .
+
+res:player/Sofia_Harrison a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 16 ;
+kg:birthDate "1999-02-16"^^xsd:date ;
+kg:nationality res:country/Philippines .
+
+res:player/Alicia_Barker a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 17 ;
+kg:birthDate "1998-05-22"^^xsd:date ;
+kg:nationality res:country/United_States_of_America .
+
+res:player/Dominique_Randle a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 19 ;
+kg:birthDate "1994-12-10"^^xsd:date ;
+kg:nationality res:country/Iceland .
+
+res:player/Reina_Bonta a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 23 ;
+kg:birthDate "1999-04-17"^^xsd:date ;
+kg:nationality res:country/Brazil .
+
+res:player/Jaclyn_Sawicki a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 4 ;
+kg:birthDate "1992-11-14"^^xsd:date ;
+kg:nationality res:country/Australia .
+
+res:player/Tahnai_An尼斯 a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 6 ;
+kg:birthDate "1989-06-20"^^xsd:date ;
+kg:nationality res:country/Iceland .
+
+res:player/Sara_Eggesvik a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 8 ;
+kg:birthDate "1997-04-29"^^xsd:date ;
+kg:nationality res:country/Norway .
+
+res:player/Anicka_Castañeda a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 11 ;
+kg:birthDate "1999-12-16"^^xsd:date ;
+kg:nationality res:country/Australia .
+
+res:player/Ryley_Bugay a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 12 ;
+kg:birthDate "1996-01-23"^^xsd:date ;
+kg:nationality res:country/Philippines .
+
+res:player/Meryll_Serrano a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 14 ;
+kg:birthDate "1997-07-20"^^xsd:date ;
+kg:nationality res:country/Norway .
+
+res:player/Quinley_Quezada a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 20 ;
+kg:birthDate "1997-04-07"^^xsd:date ;
+kg:nationality res:country/Serbia .
+
+res:player/Isabella_Flanigan a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 9 ;
+kg:birthDate "2005-02-22"^^xsd:date ;
+kg:nationality res:country/United_States_of_America .
+
+res:player/Chandler_McDaniel a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 10 ;
+kg:birthDate "1998-02-04"^^xsd:date ;
+kg:nationality res:country/United_States_of_America .
+
+res:player/Carleigh_Frilles a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 15 ;
+kg:birthDate "2002-04-11"^^xsd:date ;
+kg:nationality res:country/Australia .
+
+res:player/Katrina_Guillou a kg:Player ;
+kg:playsFor res:team/Philippines ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 21 ;
+kg:birthDate "1993-12-19"^^xsd:date ;
+kg:nationality res:country/Sweden .
+
+res:team/Philippines kg:participatesIn res:season/Asia_Cup_2022 ;
+kg:participatesIn res:season/ASEAN_Championship_2022 .
+
+res:season/Asia_Cup_2022 a kg:Season ;
+kg:seasonOf res:competition/Asian_Womens_Championship .
+
+res:season/ASEAN_Championship_2022 a kg:Season ;
+kg:seasonOf res:competition/ASEAN_Womens_Championship .
+
+res:competition/Asian_Womens_Championship a kg:Competition ;
+kg:competitionName "Cúp bóng đá nữ châu Á" .
+
+res:competition/ASEAN_Womens_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ Đông Nam Á" .
+
+res:competition/FIFA_Womens_World_Cup a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
+
+res:team/Philippines kg:participatesIn res:season/FIFA_Womens_World_Cup_2023 .
+
+res:season/FIFA_Womens_World_Cup_2023 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Womens_World_Cup .
+
+res:match/World_Cup_2023_Philippines_vs_New_Zealand a kg:Match ;
+kg:homeTeam res:team/Philippines ;
+kg:awayTeam res:team/New_Zealand ;
+kg:inCompetition res:competition/FIFA_Womens_World_Cup ;
+kg:inSeason res:season/FIFA_Womens_World_Cup_2023 .
+
+res:match/World_Cup_2023_Philippines_vs_Switzerland a kg:Match ;
+kg:homeTeam res:team/Philippines ;
+kg:awayTeam res:team/Switzerland ;
+kg:inCompetition res:competition/FIFA_Womens_World_Cup ;
+kg:inSeason res:season/FIFA_Womens_World_Cup_2023 .
+
+res:match/World_Cup_2023_Philippines_vs_Norway a kg:Match ;
+kg:homeTeam res:team/Philippines ;
+kg:awayTeam res:team/Norway ;
+kg:inCompetition res:competition/FIFA_Womens_World_Cup ;
+kg:inSeason res:season/FIFA_Womens_World_Cup_2023 .
+
+res:team/Philippines kg:participatesIn res:season/Asia_Cup_2022 ;
+kg:participatesIn res:season/ASEAN_Championship_2022 .
+
+res:team/Philippines kg:participatesIn res:season/FIFA_Womens_World_Cup_2023 .
+
+res:competition/Asian_Womens_Championship kg:organizes res:season/Asia_Cup_2022 ;
+kg:organizes res:season/Asia_Cup_2022 .
+
+res:competition/ASEAN_Womens_Championship kg:organizes res:season/ASEAN_Championship_2022 .
+
+res:competition/FIFA_Womens_World_Cup kg:organizes res:season/FIFA_Womens_World_Cup_2023 .
+
+res:team/Philippines kg:locatedIn res:country/Philippines ;
+
+res:team/Philippines kg:hasCoach res:coach/Mark_Torcaso .
+
+res:coach/Mark_Torcaso kg:manages res:team/Philippines .

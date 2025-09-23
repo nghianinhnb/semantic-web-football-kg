@@ -1,0 +1,16 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Olympic_Uruguay a kg:Team ;
+kg:teamName "Uruguay" ;
+kg:teamAbbreviation "URU" .
+
+res:competition/Olympic a kg:Competition ;
+kg:competitionName "Olympic Games" .
+
+res:season/Olympic_2024 a kg:Season ;
+kg:seasonOf res:competition/Olympic .
+
+res:team/Olympic_Uruguay kg:participatesIn res:season/Olympic_2024 .

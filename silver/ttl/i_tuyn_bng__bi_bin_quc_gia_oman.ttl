@@ -1,0 +1,98 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/OmanNationalBeachSoccerTeam a kg:Team ;
+kg:teamName "Oman National Beach Soccer Team" ;
+kg:hasCoach res:coach/TalibAlThanawi ;
+kg:locatedIn res:country/Oman ;
+kg:organizedBy res:organization/OmanFootballAssociation ;
+kg:participatesIn res:competition/AsianBeachSoccerChampionship ;
+kg:participatesIn res:competition/FIFAWorldBeachSoccerQualifiers ;
+kg:bestResultInCompetition "8th place" ;
+kg:bestResultInRegionalCompetition "Runner-up" ;
+kg:worldCupApps 1 ;
+kg:worldCupBestResult "8th place" ;
+kg:regionalCupApps 2 .
+
+res:organization/OmanFootballAssociation a kg:Organization ;
+kg:organizes res:competition/AsianBeachSoccerChampionship .
+
+res:competition/AsianBeachSoccerChampionship a kg:Competition ;
+kg:competitionName "Asian Beach Soccer Championship" .
+
+res:competition/FIFAWorldBeachSoccerQualifiers a kg:Competition ;
+kg:competitionName "FIFA World Beach Soccer Qualifiers" .
+
+res:coach/TalibAlThanawi a kg:Coach ;
+kg:manages res:team/OmanNationalBeachSoccerTeam .
+
+res:player/HaniAlDhabit a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 .
+
+res:player/AbdullahAlQasmi a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/JumaAlWahaibi a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 .
+
+res:player/YahyaAlAraimi a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 .
+
+res:player/NasserAlMukhaini a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 .
+
+res:player/KhalidAlRajhi a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 .
+
+res:player/JalalAlSinani a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 3 .
+
+res:player/HaithamAlAraimi a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 .
+
+res:player/YaqoobAlAlawi a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 8 .
+
+res:player/FaisalAlBalushi a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 9 .
+
+res:player/IshaqAlQassmi a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 11 .
+
+res:player/HaribShowan a kg:Player ;
+kg:playsFor res:team/OmanNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 12 .
+
+res:stadium/AlMusannahSportsCity a kg:Stadium ;
+kg:locatedIn res:city/Muscat ;
+kg:isHomeOf res:team/OmanNationalBeachSoccerTeam .
+
+res:city/Muscat a kg:City ;
+kg:locatedIn res:country/Oman .
+
+res:country/Oman a kg:Country .

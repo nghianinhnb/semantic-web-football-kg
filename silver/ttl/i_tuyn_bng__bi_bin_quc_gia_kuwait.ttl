@@ -1,0 +1,85 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/KuwaitNationalBeachSoccerTeam a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Kuwait" ;
+kg:teamAbbreviation "KUW" ;
+kg:hasCoach res:coach/JaliAlJuraid ;
+kg:locatedIn res:country/Kuwait .
+
+res:country/Kuwait a kg:Country .
+
+res:coach/JaliAlJuraid a kg:Coach ;
+kg:manages res:team/KuwaitNationalBeachSoccerTeam .
+
+res:player/NawafHajiah a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/YousefAlsaqer a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Forward .
+
+res:player/SoudAlotaibi a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Forward .
+
+res:player/MeshariAlhezami a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Forward .
+
+res:player/MubarakAlsuabaie a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Defender .
+
+res:player/AbdulwahhabAlsafi a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Defender .
+
+res:player/OmarAljaser a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Forward .
+
+res:player/AbdulazizAleid a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Forward .
+
+res:player/AhmadAlbuloushi a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Forward .
+
+res:player/SalemAmaan a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Defender .
+
+res:player/KhaledAlotaibi a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 2 .
+
+res:player/MohammadAshknani a kg:Player ;
+kg:playsFor res:team/KuwaitNationalBeachSoccerTeam ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:position/Goalkeeper a kg:Goalkeeper .
+
+res:position/Forward a kg:Forward .
+
+res:position/Defender a kg:Defender .
+
+res:competition/WorldBeachSoccerChampionshipQualifiersAsia a kg:Competition ;
+kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới khu vực châu Á" ;
+kg:heldIn res:country/Kuwait .
+
+res:season/2011 a kg:Season ;
+kg:seasonOf res:competition/WorldBeachSoccerChampionshipQualifiersAsia .
+
+res:season/2010 a kg:Season ;
+kg:seasonOf res:competition/AsianBeachGames .
+
+res:competition/AsianBeachGames a kg:Competition ;
+kg:competitionName "Đại hội thể thao bãi biển châu Á" ;
+kg:heldIn res:country/Kuwait .

@@ -1,0 +1,83 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/New_Zealand a kg:Team ;
+kg:teamName "New Zealand" ;
+kg:teamAbbreviation "NZL" ;
+kg:hasCoach res:coach/Jitka_Klimková ;
+kg:manages res:coach/Jitka_Klimková ;
+kg:hasCaptain res:player/Ali_Riley ;
+kg:mostCaps res:player/Ria_Percival ;
+kg:topScorer res:player/Amber_Hearn ;
+kg:FIFARank "16"^^xsd:positiveInteger ;
+kg:FIFAMaxRank "16"^^xsd:positiveInteger ;
+kg:FIFAMaxRankDate "2013-12-01"^^xsd:date ;
+kg:FIFAMaxRankDate "2015-07-01"^^xsd:date ;
+kg:FIFAMinRank "24"^^xsd:positiveInteger ;
+kg:FIFAMinRankDate "2006-12-01"^^xsd:date ;
+kg:firstGame "1975-08-25"^^xsd:date ;
+kg:largestWin "1998-10-09"^^xsd:date ;
+kg:largestLoss "2004-02-24"^^xsd:date ;
+kg:worldCupApps "6"^^xsd:positiveInteger ;
+kg:worldCupFirst "1991"^^xsd:gYear ;
+kg:worldCupBest res:competition/Football_World_Cup_1991, res:competition/Football_World_Cup_2007, res:competition/Football_World_Cup_2011, res:competition/Football_World_Cup_2015, res:competition/Football_World_Cup_2019, res:competition/Football_World_Cup_2023 ;
+kg:regionalCupApps "11"^^xsd:positiveInteger ;
+kg:regionalCupFirst "1983"^^xsd:gYear ;
+kg:regionalCupBest res:competition/Oceania_Female_Championship_1983, res:competition/Oceania_Female_Championship_1991, res:competition/Oceania_Female_Championship_2007, res:competition/Oceania_Female_Championship_2010, res:competition/Oceania_Female_Championship_2014, res:competition/Oceania_Female_Championship_2018 ;
+kg:secondRegionalCupApps "5"^^xsd:positiveInteger ;
+kg:secondRegionalCupFirst "2008"^^xsd:gYear ;
+kg:secondRegionalCupBest "8"^^xsd:positiveInteger ;
+kg:secondRegionalCupBestYear "2012"^^xsd:gYear .
+
+res:coach/Jitka_Klimková a kg:Coach ;
+kg:name "Jitka Klimková" .
+
+res:player/Ali_Riley a kg:Player ;
+kg:name "Ali Riley" .
+
+res:player/Ria_Percival a kg:Player ;
+kg:name "Ria Percival" ;
+kg:mostCaps "160"^^xsd:positiveInteger .
+
+res:player/Amber_Hearn a kg:Player ;
+kg:name "Amber Hearn" ;
+kg:topScorer "54"^^xsd:positiveInteger .
+
+res:competition/Football_World_Cup_1991 a kg:Competition ;
+kg:competitionName "World Cup 1991" .
+
+res:competition/Football_World_Cup_2007 a kg:Competition ;
+kg:competitionName "World Cup 2007" .
+
+res:competition/Football_World_Cup_2011 a kg:Competition ;
+kg:competitionName "World Cup 2011" .
+
+res:competition/Football_World_Cup_2015 a kg:Competition ;
+kg:competitionName "World Cup 2015" .
+
+res:competition/Football_World_Cup_2019 a kg:Competition ;
+kg:competitionName "World Cup 2019" .
+
+res:competition/Football_World_Cup_2023 a kg:Competition ;
+kg:competitionName "World Cup 2023" .
+
+res:competition/Oceania_Female_Championship_1983 a kg:Competition ;
+kg:competitionName "Oceania Female Championship 1983" .
+
+res:competition/Oceania_Female_Championship_1991 a kg:Competition ;
+kg:competitionName "Oceania Female Championship 1991" .
+
+res:competition/Oceania_Female_Championship_2007 a kg:Competition ;
+kg:competitionName "Oceania Female Championship 2007" .
+
+res:competition/Oceania_Female_Championship_2010 a kg:Competition ;
+kg:competitionName "Oceania Female Championship 2010" .
+
+res:competition/Oceania_Female_Championship_2014 a kg:Competition ;
+kg:competitionName "Oceania Female Championship 2014" .
+
+res:competition/Oceania_Female_Championship_2018 a kg:Competition ;
+kg:competitionName "Oceania Female Championship 2018" .

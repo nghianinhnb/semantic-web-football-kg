@@ -1,0 +1,239 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac
+a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Đan Mạch" ;
+kg:teamAbbreviation "Denmark" ;
+kg:hasCoach res:coach/Brian_Riemer ;
+kg:manages res:coach/Brian_Riemer ;
+kg:homeStadium res:stadium/Parken ;
+kg:locatedIn res:country/Dan_Mac ;
+kg:participatesIn res:season/UEFA_Euro_2024 ;
+kg:participatesIn res:season/UEFA_Nations_League_2024_25 .
+
+res:stadium/Parken
+a kg:Stadium ;
+kg:capacity 30731 ;
+kg:locatedIn res:city/Copenhagen ;
+kg:isHomeOf res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac .
+
+res:coach/Brian_Riemer
+a kg:Coach ;
+kg:manages res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac .
+
+res:country/Dan_Mac
+a kg:Country ;
+kg:locatedIn res:region/Europa .
+
+res:city/Copenhagen
+a kg:City ;
+kg:locatedIn res:country/Dan_Mac .
+
+res:season/UEFA_Euro_2024
+a kg:Season ;
+kg:seasonOf res:competition/UEFA_European_Championship .
+
+res:competition/UEFA_European_Championship
+a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá châu Âu" ;
+kg:organizedBy res:organization/UEFA .
+
+res:organization/UEFA
+a kg:Organization ;
+kg:organizes res:competition/UEFA_European_Championship .
+
+res:season/UEFA_Nations_League_2024_25
+a kg:Season ;
+kg:seasonOf res:competition/UEFA_Nations_League .
+
+res:competition/UEFA_Nations_League
+a kg:Competition ;
+kg:competitionName "UEFA Nations League" ;
+kg:organizedBy res:organization/UEFA .
+
+res:player/Christian_Eriksen
+a kg:Player ;
+kg:playsFor res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1992-02-14"^^xsd:date ;
+kg:birthPlace res:city/Copenhagen ;
+kg:nationality res:country/Dan_Mac ;
+kg:shirtNumber 10 ;
+kg:preferredFoot res:footedness/Left ;
+
+res:player/Pierre_Emile_Hojbjerg
+a kg:Player ;
+kg:playsFor res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1995-08-05"^^xsd:date ;
+kg:birthPlace res:city/Copenhagen ;
+kg:nationality res:country/Dan_Mac ;
+kg:shirtNumber 23 ;
+kg:preferredFoot res:footedness/Left ;
+
+res:player/Jannik_Vestergaard
+a kg:Player ;
+kg:playsFor res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1992-08-03"^^xsd:date ;
+kg:birthPlace res:city/Copenhagen ;
+kg:nationality res:country/Dan_Mac ;
+kg:shirtNumber 6 ;
+kg:preferredFoot res:footedness/Left ;
+
+res:player/Kasper_Schmeichel
+a kg:Player ;
+kg:playsFor res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "1986-11-05"^^xsd:date ;
+kg:birthPlace res:city/Copenhagen ;
+kg:nationality res:country/Dan_Mac ;
+kg:shirtNumber 1 ;
+kg:preferredFoot res:footedness/Left ;
+
+res:player/Yussuf_Poulsen
+a kg:Player ;
+kg:playsFor res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1994-06-15"^^xsd:date ;
+kg:birthPlace res:city/Copenhagen ;
+kg:nationality res:country/Dan_Mac ;
+kg:shirtNumber 20 ;
+kg:preferredFoot res:footedness/Left ;
+
+res:player/Rasmus_Hojlund
+a kg:Player ;
+kg:playsFor res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "2003-02-04"^^xsd:date ;
+kg:birthPlace res:city/Copenhagen ;
+kg:nationality res:country/Dan_Mac ;
+kg:shirtNumber 9 ;
+kg:preferredFoot res:footedness/Left ;
+
+res:position/Goalkeeper
+a kg:Goalkeeper .
+
+res:position/Defender
+a kg:Defender .
+
+res:position/Midfielder
+a kg:Midfielder .
+
+res:position/Forward
+a kg:Forward .
+
+res:footedness/Left
+a kg:LeftFooted .
+
+res:footedness/Right
+a kg:RightFooted .
+
+res:footedness/Both
+a kg:BothFooted .
+
+res:match/Denmark_vs_Switzerland_2024_03_23
+a kg:Match ;
+kg:homeTeam res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:awayTeam res:team/Switzerland ;
+kg:venue res:stadium/Parken ;
+kg:kickoffTime "2024-03-23T20:00:00+01:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Friendly_Match ;
+kg:inSeason res:season/2024 ;
+kg:referee res:person/Allard_Lindhout ;
+kg:result "Draw" .
+
+res:match/Denmark_vs_Farooe_Islands_2024_03_26
+a kg:Match ;
+kg:homeTeam res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:awayTeam res:team/Farooe_Islands ;
+kg:venue res:stadium/Brondby_Stadion ;
+kg:kickoffTime "2024-03-26T20:15:00+01:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Friendly_Match ;
+kg:inSeason res:season/2024 ;
+kg:referee res:person/Philip_Farrugia ;
+kg:result "Win" .
+
+res:match/Denmark_vs_Sweden_2024_06_05
+a kg:Match ;
+kg:homeTeam res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:awayTeam res:team/Sweden ;
+kg:venue res:stadium/Parken ;
+kg:kickoffTime "2024-06-05T19:00:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Friendly_Match ;
+kg:inSeason res:season/2024 ;
+kg:referee res:person/Kristoffer_Hagenes ;
+kg:result "Win" .
+
+res:match/Denmark_vs_Norway_2024_06_08
+a kg:Match ;
+kg:homeTeam res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:awayTeam res:team/Norway ;
+kg:venue res:stadium/Brondby_Stadion ;
+kg:kickoffTime "2024-06-08T19:30:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Friendly_Match ;
+kg:inSeason res:season/2024 ;
+kg:referee res:person/Stéphanie_Frappart ;
+kg:result "Win" .
+
+res:match/Slovenia_vs_Denmark_2024_06_16
+a kg:Match ;
+kg:homeTeam res:team/Slovenia ;
+kg:awayTeam res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:venue res:stadium/MHPArena ;
+kg:kickoffTime "2024-06-16T18:00:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/UEFA_Euro_2024 ;
+kg:inSeason res:season/UEFA_Euro_2024 ;
+kg:referee res:person/Sandro_Schärer ;
+kg:result "Draw" .
+
+res:match/Denmark_vs England_2024_06_20
+a kg:Match ;
+kg:homeTeam res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:awayTeam res:team/England ;
+kg:venue res:stadium/Waldstadion ;
+kg:kickoffTime "2024-06-20T18:00:rightarrow
+kg:inCompetition res:competition/UEFA_Euro_2024 ;
+kg:inSeason res:season/UEFA_Euro_2024 ;
+kg:referee res:person/Artur_Soares_Dias ;
+kg:result "Draw" .
+
+res:match/Denmark_vs_Serbia_2024_06_25
+a kg:Match ;
+kg:homeTeam res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:awayTeam res:team/Serbia ;
+kg:venue res:stadium/Allianz_Arena ;
+kg:kickoffTime "2024-06-25T21:00:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/UEFA_Euro_2024 ;
+kg:inSeason res:season/UEFA_Euro_2024 ;
+kg:referee res:person/François_Letexier ;
+kg:result "Draw" .
+
+res:match/Germany_vs_Denmark_2024_06_29
+a kg:Match ;
+kg:homeTeam res:team/Germany ;
+kg:awayTeam res:team/Dan_Mac_Dan_Nhan_Dat_Dien_Quoc_Gia_Dan_Mac ;
+kg:venue res:stadium/Westfalenstadion ;
+kg:kickoffTime "2024-06-29T21:00:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/UEFA_Euro_2024 ;
+kg:inSeason res:season/UEFA_Euro_2024 ;
+kg:referee res:person/Michael_Oliver ;
+kg:result "Loss" .
+
+res:competition/Friendly_Match
+a kg:Competition ;
+kg:competitionName "Giao hữu" ;
+kg:organizedBy res:organization/FIFA .
+
+res:competition/UEFA_Euro_2024
+a kg:Competition ;
+kg:competitionName "UEFA Euro 2024" ;
+kg:organizedBy res:organization/UEFA .
+
+res:organization/FIFA
+a kg:Organization ;
+kg:organizes res:competition/F

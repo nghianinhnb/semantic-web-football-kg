@@ -3,6 +3,7 @@
 Script duy nhất để:
 1. Sửa lỗi syntax TTL (bỏ markdown, sửa triples chưa hoàn thiện)
 2. Tạo file additional.ttl chứa các định nghĩa còn thiếu
+3. Xóa các TTL trống (chỉ có prefix/comment, không có triple)
 """
 
 import os
@@ -106,6 +107,49 @@ def categorize_property(prop_name: str) -> str:
     
     return 'DatatypeProperty'
 
+def is_effectively_empty_ttl(content: str) -> bool:
+    """Kiểm tra file TTL có 'trống' không: có thể có prefix/BASE/PREFIX, comment, dòng trắng
+    nhưng KHÔNG có bất kỳ triple nào (câu TTL kết thúc bằng dấu chấm).
+    """
+    # Loại bỏ markdown notation
+    content = re.sub(r'^```turtle\s*\n', '', content, flags=re.MULTILINE)
+    content = re.sub(r'\n```\s*$', '', content, flags=re.MULTILINE)
+    content = re.sub(r'^```\s*$', '', content, flags=re.MULTILINE)
+
+    for raw_line in content.split('\n'):
+        line = raw_line.strip()
+        if not line:
+            continue
+        if line.startswith('#'):
+            continue
+        if line.startswith('@prefix') or line.startswith('@base'):
+            continue
+        # SPARQL-style prefix/base directives also hợp lệ trong Turtle
+        if line.upper().startswith('PREFIX ') or line.upper().startswith('BASE '):
+            continue
+        # Nếu bất kỳ dòng nội dung (không phải directive/comment) kết thúc bằng '.' => có triple
+        if line.endswith('.'):
+            return False
+    return True
+
+def delete_empty_ttl_files(ttl_dir: str) -> Dict[str, int]:
+    """Xóa các TTL 'trống' (chỉ có prefix/comment/dòng trắng, không có triple)."""
+    results = {"deleted": 0, "total": 0}
+    ttl_files = list(Path(ttl_dir).glob("*.ttl"))
+    results["total"] = len(ttl_files)
+
+    for file_path in tqdm(ttl_files, desc="Xóa TTL trống"):
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            if is_effectively_empty_ttl(content):
+                os.remove(file_path)
+                results["deleted"] += 1
+        except Exception as e:
+            print(f"Lỗi xóa file {file_path}: {e}")
+
+    return results
+
 def fix_ttl_files(ttl_dir: str) -> Dict[str, int]:
     """Sửa lỗi syntax trong tất cả files TTL."""
     results = {"fixed": 0, "total": 0}
@@ -205,6 +249,7 @@ def main():
     parser.add_argument("--output", default="additional.ttl", help="File additional ontology")
     parser.add_argument("--min-usage", type=int, default=3, help="Tần suất sử dụng tối thiểu")
     parser.add_argument("--skip-fix", action="store_true", help="Bỏ qua việc sửa TTL files")
+    parser.add_argument("--keep-empty", action="store_true", help="Giữ lại TTL trống, không xóa")
     
     args = parser.parse_args()
     
@@ -212,6 +257,12 @@ def main():
         print("=== BƯỚC 1: SỬA LỖI SYNTAX TTL ===")
         fix_results = fix_ttl_files(args.ttl_dir)
         print(f"Đã sửa {fix_results['fixed']}/{fix_results['total']} files")
+        print("")
+
+    if not args.keep_empty:
+        print("=== BƯỚC 1.5: XÓA TTL TRỐNG ===")
+        del_results = delete_empty_ttl_files(args.ttl_dir)
+        print(f"Đã xóa {del_results['deleted']}/{del_results['total']} files (TTL trống)")
         print("")
     
     print("=== BƯỚC 2: TẠO ADDITIONAL ONTOLOGY ===")

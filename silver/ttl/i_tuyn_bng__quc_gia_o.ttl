@@ -1,0 +1,124 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Ao a kg:Team ;
+kg:teamName "Áo" ;
+kg:hasCoach res:player/Ralf_Rangnick ;
+kg:manages res:player/Ralf_Rangnick ;
+kg:teamAbbreviation "AUT" ;
+kg:locatedIn res:country/Ao ;
+kg:participatesIn res:competition/FIFA_World_Cup ;
+kg:participatesIn res:competition/Euro ;
+kg:participatesIn res:competition/UEFA_Nations_League .
+
+res:player/Ralf_Rangnick a kg:Coach ;
+kg:manages res:team/Ao .
+
+res:player/David_Alaba a kg:Player ;
+kg:playsFor res:team/Ao .
+
+res:player/Marko_Arnautovic a kg:Player ;
+kg:playsFor res:team/Ao ;
+kg:mostCaps 116 .
+
+res:player/Toni_Polster a kg:Player ;
+kg:topScorer 44 .
+
+res:stadium/San_Vien_Dong_Ernst_Happel a kg:Stadium ;
+kg:isHomeOf res:team/Ao .
+
+res:competition/FIFA_World_Cup a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá thế giới" .
+
+res:competition/Euro a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá châu Âu" .
+
+res:competition/UEFA_Nations_League a kg:Competition ;
+kg:competitionName "UEFA Nations League" .
+
+res:country/Ao a kg:Country ;
+rdfs:label "Áo" .
+
+res:team/Ao kg:participatesIn res:season/FIFA_World_Cup_1934 ;
+kg:participatesIn res:season/FIFA_World_Cup_1954 ;
+kg:participatesIn res:season/Euro_2008 ;
+kg:participatesIn res:season/Euro_2020 ;
+kg:participatesIn res:season/Euro_2024 .
+
+res:season/FIFA_World_Cup_1934 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup ;
+kg:result "Hạng tư" ;
+kg:matchesPlayed 4 ;
+kg:wins 2 ;
+kg:losses 2 ;
+kg:goalsScored 7 ;
+kg:goalsConceded 7 .
+
+res:season/FIFA_World_Cup_1954 a kg:Season ;
+kg:seasonOf res:competition/FIFA_World_Cup ;
+kg:result "Hạng ba" ;
+kg:matchesPlayed 3 ;
+kg:wins 4 ;
+kg:losses 1 ;
+kg:goalsScored 17 ;
+kg:goalsConceded 12 .
+
+res:season/Euro_2008 a kg:Season ;
+kg:seasonOf res:competition/Euro ;
+kg:result "Vòng 1" ;
+kg:matchesPlayed 3 ;
+kg:wins 0 ;
+kg:losses 1 ;
+kg:goalsScored 2 ;
+kg:goalsConceded 3 .
+
+res:season/Euro_2020 a kg:Season ;
+kg:seasonOf res:competition/Euro ;
+kg:result "Vòng 16 đội" ;
+kg:matchesPlayed 4 ;
+kg:wins 2 ;
+kg:losses 2 ;
+kg:goalsScored 5 ;
+kg:goalsConceded 5 .
+
+res:season/Euro_2024 a kg:Season ;
+kg:seasonOf res:competition/Euro ;
+kg:result "Vòng 16 đội" ;
+kg:matchesPlayed 4 ;
+kg:wins 2 ;
+kg:losses 2 ;
+kg:goalsScored 7 ;
+kg:goalsConceded 6 .
+
+res:season/UEFA_Nations_League_2018_19 a kg:Season ;
+kg:seasonOf res:competition/UEFA_Nations_League ;
+kg:rank 18 ;
+kg:matchesPlayed 4 ;
+kg:wins 2 ;
+kg:draws 1 ;
+kg:losses 1 ;
+kg:goalsScored 3 ;
+kg:goalsConceded 2 .
+
+res:season/UEFA_Nations_League_2020_21 a kg:Season ;
+kg:seasonOf res:competition/UEFA_Nations_League ;
+kg:rank 18 ;
+kg:matchesPlayed 6 ;
+kg:wins 4 ;
+kg:draws 1 ;
+kg:losses 1 ;
+kg:goalsScored 9 ;
+kg:goalsConceded 6 .
+
+res:season/UEFA_Nations_League_2022_23 a kg:Season ;
+kg:seasonOf res:competition/UEFA_Nations_League ;
+kg:rank 13 ;
+kg:matchesPlayed 6 ;
+kg:wins 1 ;
+kg:draws 1 ;
+kg:losses 4 ;
+kg:goalsScored 6 ;
+kg:goalsConceded 10 .

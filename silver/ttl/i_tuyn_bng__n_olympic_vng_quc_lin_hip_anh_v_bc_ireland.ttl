@@ -1,0 +1,141 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Wang_quoc_Lien_hop_Anh_va_Bac_Ireland a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ Olympic Vương quốc Liên hiệp Anh và Bắc Ireland" ;
+kg:teamAbbreviation "GBR" ;
+kg:hasCoach res:coach/Hope_Powell ;
+kg:manages res:coach/Hope_Powell ;
+kg:locatedIn res:country/Anh ;
+
+kg:participatesIn res:season/Bong_da_tai_The_van_hoi_Mua_he_2012_Nu ;
+kg:participatesIn res:season/Bong_da_tai_The_van_hoi_Mua_he_2020_Nu .
+
+res:coach/Hope_Powell a kg:Coach ;
+kg:manages res:team/Wang_quoc_Lien_hop_Anh_va_Bac_Ireland .
+
+res:team/Wang_quoc_Lien_hop_Anh_va_Bac_Ireland kg:hasCaptain res:player/Casey_Stoney .
+
+res:player/Casey_Stoney a kg:Player ;
+kg:playsFor res:team/Wang_quoc_Lien_hop_Anh_va_Bac_Ireland ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "6"^^xsd:positiveInteger ;
+kg:nationality res:country/Anh .
+
+res:player/Steph_Houghton a kg:Player ;
+kg:playsFor res:team/Wang_quoc_Lien_hop_Anh_va_Bac_Ireland ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber "3"^^xsd:positiveInteger ;
+kg:nationality res:country/Anh ;
+kg:topScorer "3"^^xsd:positiveInteger .
+
+res:team/Wang_quoc_Lien_hop_Anh_va_Bac_Ireland kg:hasMember res:player/Karen_Bardsley ;
+kg:hasMember res:player/Rachel_Brown ;
+kg:hasMember res:player/Alex_Scott ;
+kg:hasMember res:player/Sophie_Bradley ;
+kg:hasMember res:player/Claire_Rafferty ;
+kg:hasMember res:player/Dunia_Susi ;
+kg:hasMember res:player/Jill_Scott ;
+kg:hasMember res:player/Fara_Williams ;
+kg:hasMember res:player/Anita_Asante ;
+kg:hasMember res:player/Karen_Carney ;
+kg:hasMember res:player/Ellen_White ;
+kg:hasMember res:player/Kelly_Smith ;
+kg:hasMember res:player/Rachel_Yankey ;
+kg:hasMember res:player/Eniola_Aluko ;
+kg:hasMember res:player/Rachel_Williams ;
+kg:hasMember res:player/Kim_Little .
+
+res:match/UK_vs_SWE a kg:Match ;
+kg:homeTeam res:team/Wang_quoc_Lien_hop_Anh_va_Bac_Ireland ;
+kg:awayTeam res:team/Thu_Wei ;
+kg:venue res:stadium/San_Van_Dong_Riverside ;
+kg:kickoffTime "2012-07-20T16:00:00Z"^^xsd:dateTime ;
+kg:referee res:referee/Florence_Guillemin .
+
+res:match/UK_vs_New_Zealand a kg:Match ;
+kg:homeTeam res:team/Wang_quoc_Lien_hop_Anh_va_Bac_Ireland ;
+kg:awayTeam res:team/New_Zealand ;
+kg:venue res:stadium/San_Thien_Nien_Ky ;
+kg:kickoffTime "2012-07-25T16:00:00Z"^^xsd:dateTime ;
+kg:referee res:referee/Kari_Seitz .
+
+res:match/UK_vs_Cameroon a kg:Match ;
+kg:homeTeam res:team/Wang_quoc_Lien_hop_Anh_va_Bac_Ireland ;
+kg:awayTeam res:team/Cameroon ;
+kg:venue res:stadium/San_Thien_Nien_Ky ;
+kg:kickoffTime "2012-07-28T17:15:00Z"^^xsd:dateTime ;
+kg:referee res:referee/Hong_Eun_Ah .
+
+res:match/UK_vs_Brazil a kg:Match ;
+kg:homeTeam res:team/Wang_quoc_Lien_hop_Anh_va_Bac_Ireland ;
+kg:awayTeam res:team/Brazil ;
+kg:venue res:stadium/San_Wembley ;
+kg:kickoffTime "2012-07-30T19:45:00Z"^^xsd:dateTime ;
+kg:referee res:referee/Carol_Anne_Chendar .
+
+res:match/UK_vs_Canada a kg:Match ;
+kg:homeTeam res:team/Wang_quoc_Lien_hop_Anh_va_Bac_Ireland ;
+kg:awayTeam res:team/Canada ;
+kg:venue res:stadium/San_Ricoh_Arena ;
+kg:kickoffTime "2012-08-03T19:30:00Z"^^xsd:dateTime ;
+kg:referee res:referee/Yamagishi_Sachiko .
+
+res:stadium/San_Van_Dong_Riverside a kg:Stadium ;
+kg:capacity "24.445"^^xsd:positiveInteger .
+
+res:stadium/San_Thien_Nien_Ky a kg:Stadium ;
+kg:capacity "31.141"^^xsd:positiveInteger .
+
+res:stadium/San_Wembley a kg:Stadium ;
+kg:capacity "70.584"^^xsd:positiveInteger .
+
+res:stadium/San_Ricoh_Arena a kg:Stadium ;
+kg:capacity "28.828"^^xsd:positiveInteger .
+
+res:referee/Florence_Guillemin a kg:Referee .
+
+res:referee/Kari_Seitz a kg:Referee .
+
+res:referee/Hong_Eun_Ah a kg:Referee .
+
+res:referee/Carol_Anne_Chendar a kg:Referee .
+
+res:referee/Yamagishi_Sachiko a kg:Referee .
+
+res:season/Bong_da_tai_The_van_hoi_Mua_he_2012_Nu a kg:Season ;
+kg:seasonOf res:competition/Bong_da_tai_The_van_hoi_Mua_he_2012_Nu ;
+kg:participantCount "4"^^xsd:positiveInteger .
+
+res:season/Bong_da_tai_The_van_hoi_Mua_he_2020_Nu a kg:Season ;
+kg:seasonOf res:competition/Bong_da_tai_The_van_hoi_Mua_he_2020_Nu ;
+kg:participantCount "4"^^xsd:positiveInteger .
+
+res:competition/Bong_da_tai_The_van_hoi_Mua_he_2012_Nu a kg:Competition ;
+kg:competitionName "Bóng đá tại Thế vận hội Mùa hè 2012 - Nữ" ;
+kg:heldIn res:country/Anh .
+
+res:competition/Bong_da_tai_The_van_hoi_Mua_he_2020_Nu a kg:Competition ;
+kg:competitionName "Bóng đá tại Thế vận hội Mùa hè 2020 - Nữ" ;
+kg:heldIn res:country/Anh .
+
+res:country/Anh a kg:Country ;
+kg:locatedIn res:region/Europa .
+
+res:country/Thu_Wei a kg:Country ;
+kg:locatedIn res:region/Europa .
+
+res:country/New_Zealand a kg:Country ;
+kg:locatedIn res:region/Oceania .
+
+res:country/Cameroon a kg:Country ;
+kg:locatedIn res:region/Africa .
+
+res:country/Brazil a kg:Country ;
+kg:locatedIn res:region/America .
+
+res:country/Canada a kg:Country ;
+kg:locatedIn res:region/America .

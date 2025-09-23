@@ -1,0 +1,136 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Thái Lan" ;
+kg:teamAbbreviation "THA" ;
+kg:hasCoach res:coach/Abolfazl_Khodabandehloo ;
+kg:locatedIn res:country/Thái_Lan ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2002 ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2005 ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2013 ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2015 ;
+kg:participatesIn res:competition/Bóng_đá_bãi_biển_tại_Đại_hội_thể_thao_bãi_biển_châu_Á_2008 ;
+kg:participatesIn res:competition/Bóng_đá_bãi_biển_tại_Đại_hội_thể_thao_bãi_biển_châu_Á_2010 ;
+kg:participatesIn res:competition/Bóng_đá_bãi_biển_tại_Đại_hội_thể_thao_bãi_biển_châu_Á_2012 ;
+kg:participatesIn res:competition/Bóng_đá_bãi_biển_tại_Đại_hội_thể_thao_bãi_biển_châu_Á_2014 ;
+kg:participatesIn res:competition/Bóng_đá_bãi_biển_tại_Đại_hội_thể_thao_bãi_biển_châu_Á_2016 ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Đông_Nam_A_2014 ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Đông_Nam_A_2018 .
+
+res:country/Thái_Lan a kg:Country .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2002 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2002" .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2005 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2005" .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2013 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Á 2013" .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Á_2015 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Á 2015" .
+
+res:competition/Bóng_đá_bãi_biển_tại_Đại_hội_thể_thao_bãi_biển_châu_Á_2008 a kg:Competition ;
+kg:competitionName "Bóng đá bãi biển tại Đại hội thể thao bãi biển châu Á 2008" .
+
+res:competition/Bóng_đá_bãi_biển_tại_Đại_hội_thể_thao_bãi_biển_châu_Á_2010 a kg:Competition ;
+kg:competitionName "Bóng đá bãi biển tại Đại hội thể thao bãi biển châu Á 2010" .
+
+res:competition/Bóng_đá_bãi_biển_tại_Đại_hội_thể_thao_bãi_biển_châu_Á_2012 a kg:Competition ;
+kg:competitionName "Bóng đá bãi biển tại Đại hội thể thao bãi biển châu Á 2012" .
+
+res:competition/Bóng_đá_bãi_biển_tại_Đại_hội_thể_thao_bãi_biển_châu_Á_2014 a kg:Competition ;
+kg:competitionName "Bóng đá bãi biển tại Đại hội thể thao bãi biển châu Á 2014" .
+
+res:competition/Bóng_đá_bãi_biển_tại_Đại_hội_thể_thao_bãi_biển_châu_Á_2016 a kg:Competition ;
+kg:competitionName "Bóng đá bãi biển tại Đại hội thể thao bãi biển châu Á 2016" .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Đông_Nam_A_2014 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Đông Nam Á 2014" .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Đông_Nam_A_2018 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Đông Nam Á 2018" .
+
+res:coach/Abolfazl_Khodabandehloo a kg:Coach ;
+kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan .
+
+res:player/Chukiat_Chimwong a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 1 ;
+kg:nationality res:country/Thái_Lan ;
+kg:primaryPosition kg:Goalkeeper .
+
+res:player/Prakit_Dankhunthod a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 2 ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Natee_Jeepon a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 3 ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Kittin_Lorjanad a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 4 ;
+kg:nationality res:country/Thái_Lan ;
+kg:primaryPosition kg:Defender .
+
+res:player/Pongsak_Khongkaew a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 5 ;
+kg:nationality res:country/Thái_Lan ;
+kg:primaryPosition kg:Defender .
+
+res:player/Manus_Madtoha a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 6 ;
+kg:nationality res:country/Thái_Lan ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Piyapong_Songpiew a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 7 ;
+kg:nationality res:country/Thái_Lan ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Keerati_Jongsatisatean a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 8 ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Tanandon_Praracha a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 9 ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Komkrit_Nanan a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 10 ;
+kg:nationality res:country/Thái_Lan ;
+kg:primaryPosition kg:Forward .
+
+res:player/Chattana a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 11 ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Parinya_Pandee a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 12 ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Vitoon_Tapinna a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 13 ;
+kg:nationality res:country/Thái_Lan ;
+kg:primaryPosition kg:Midfielder .
+
+res:player/Anuphong_Pramanee a kg:Player ;
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Thái_Lan ;
+kg:shirtNumber 14 ;
+kg:nationality res:country/Thái_Lan .

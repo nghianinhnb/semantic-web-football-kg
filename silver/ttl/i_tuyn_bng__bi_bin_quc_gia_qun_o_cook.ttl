@@ -1,0 +1,62 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Quần_đảo_Cook a kg:Team ;
+kg:teamName "Quần đảo Cook" ;
+kg:organizedBy res:organization/Hiệp_hội_bóng_đá_Quần_đảo_Cook ;
+kg:heldIn res:country/Quần_đảo_Cook ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Đại_Âu ;
+kg:participantCount "1"^^xsd:positiveInteger ;
+kg:bestResult "Hạng tư năm 2006"^^xsd:string .
+
+res:organization/Hiệp_hội_bóng_đá_Quần_đảo_Cook a kg:Organization .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Đại_Âu a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Đại Dương" ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Đại_Âu ;
+kg:heldIn res:country/Quần_đảo_Cook .
+
+res:country/Quần_đảo_Cook a kg:Country .
+
+res:player/Rouruoaroa_Une a kg:Player ;
+kg:playsFor res:team/Quần_đảo_Cook ;
+kg:shirtNumber "1"^^xsd:positiveInteger .
+
+res:player/John_Pareanga a kg:Player ;
+kg:playsFor res:team/Quần_đảo_Cook ;
+kg:shirtNumber "2"^^xsd:positiveInteger ;
+kg:primaryPosition res:position/Đội_trưởng .
+
+res:player/Eugene_Tattuava a kg:Player ;
+kg:playsFor res:team/Quần_đảo_Cook ;
+kg:shirtNumber "3"^^xsd:positiveInteger .
+
+res:player/Grover_Harmon a kg:Player ;
+kg:playsFor res:team/Quần_đảo_Cook ;
+kg:shirtNumber "4"^^xsd:positiveInteger .
+
+res:player/Teariki_Mateariki a kg:Player ;
+kg:playsFor res:team/Quần_đảo_Cook ;
+kg:shirtNumber "5"^^xsd:positiveInteger .
+
+res:player/Paavo_Mustonen a kg:Player ;
+kg:playsFor res:team/Quần_đảo_Cook ;
+kg:shirtNumber "6"^^xsd:positiveInteger .
+
+res:player/Ruatoto_Henry a kg:Player ;
+kg:playsFor res:team/Quần_đảo_Cook ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/Eddie_Brogan a kg:Player ;
+kg:playsFor res:team/Quần_đảo_Cook ;
+kg:shirtNumber "8"^^xsd:positiveInteger .
+
+res:player/Tereapii_Angene a kg:Player ;
+kg:playsFor res:team/Quần_đảo_Cook ;
+kg:shirtNumber "9"^^xsd:positiveInteger .
+
+res:player/Anonga_Tisam a kg:Player ;
+kg:playsFor res:team/Quần_đảo_Cook ;
+kg:shirtNumber "11"^^xsd:positiveInteger .

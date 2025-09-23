@@ -1,0 +1,24 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Tunisia_National_Beach_Soccer_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Tunisia" ;
+kg:teamAbbreviation "TUN" ;
+kg:hasCoach [] ;
+kg:manages [] ;
+rdfs:label "Tunisia National Beach Soccer Team" .
+
+res:country/Tunisia a kg:Country ;
+rdfs:label "Tunisia" .
+
+res:organization/Liên_đoàn_bóng_đá_Tunisia a kg:Organization ;
+kg:locatedIn res:country/Tunisia ;
+rdfs:label "Liên đoàn bóng đá Tunisia" .
+
+res:team/Tunisia_National_Beach_Soccer_Team kg:managedBy res:organization/Liên_đoàn_bóng_đá_Tunisia .
+
+res:team/Tunisia_National_Beach_Soccer_Team kg:hasNickname "Les Aigles de Carthage" .
+
+res:team/Tunisia_National_Beach_Soccer_Team kg:memberOf kg:Confederation/CAF .

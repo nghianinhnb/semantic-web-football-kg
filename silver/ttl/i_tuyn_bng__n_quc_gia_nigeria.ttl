@@ -1,0 +1,235 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Nigeria a kg:Team ;
+kg:teamName "Nigeria" ;
+kg:teamAbbreviation "NGA" ;
+kg:hasCoach res:coach/Randy_Waldrum ;
+kg:manages res:coach/Randy_Waldrum ;
+kg:teamName "Super Falcons" ;
+rdfs:label "Đội tuyển bóng đá nữ quốc gia Nigeria" .
+
+res:coach/Randy_Waldrum a kg:Coach ;
+kg:manages res:team/Nigeria .
+
+res:player/Chiamaka_Nnadozie a kg:Player ;
+kg:playsFor res:team/Nigeria ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 16 ;
+kg:birthDate "2000-12-08"^^xsd:date ;
+kg:nationality res:country/Nigeria .
+
+res:player/Onome_Ebi a kg:Player ;
+kg:playsFor res:team/Nigeria ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 5 ;
+kg:birthDate "1983-05-08"^^xsd:date ;
+kg:nationality res:country/Nigeria ;
+kg:mostCaps 109 .
+
+res:player/Perpetua_Nkwocha a kg:Player ;
+kg:playsFor res:team/Nigeria ;
+kg:primaryPosition kg:Forward ;
+kg:topScorer 80 ;
+kg:birthDate "1983-05-08"^^xsd:date ;
+kg:nationality res:country/Nigeria .
+
+res:country/Nigeria a kg:Country ;
+rdfs:label "Nigeria" .
+
+res:competition/FIFA_Women_s_World_Cup a kg:Competition ;
+kg:competitionName "FIFA Women's World Cup" .
+
+res:competition/African_Women_s_Championship a kg:Competition ;
+kg:competitionName "African Women's Championship" .
+
+res:competition/WAFU_Zone_B_Women_s_Cup a kg:Competition ;
+kg:competitionName "WAFU Zone B Women's Cup" .
+
+res:season/1991 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:season/1995 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:season/1999 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:season/2003 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:season/2007 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:season/2011 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:season/2015 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:season/2019 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:season/2023 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:season/2027 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup .
+
+res:match/1991 a kg:Match ;
+kg:inCompetition res:competition/FIFA_Women_s_World_Cup ;
+kg:inSeason res:season/1991 ;
+kg:homeTeam res:team/Nigeria ;
+kg:awayTeam res:team/Ghana ;
+kg:kickoffTime "1991-02-16"^^xsd:date .
+
+res:match/2019 a kg:Match ;
+kg:inCompetition res:competition/FIFA_Women_s_World_Cup ;
+kg:inSeason res:season/2019 ;
+kg:homeTeam res:team/Cote_d_Ivoire ;
+kg:awayTeam res:team/Nigeria ;
+kg:kickoffTime "2019-05-11"^^xsd:date .
+
+res:match/1995 a kg:Match ;
+kg:inCompetition res:competition/FIFA_Women_s_World_Cup ;
+kg:inSeason res:season/1995 ;
+kg:homeTeam res:team/Norway ;
+kg:awayTeam res:team/Nigeria ;
+kg:kickoffTime "1995-06-06"^^xsd:date .
+
+res:match/2010 a kg:Match ;
+kg:inCompetition res:competition/FIFA_Women_s_World_Cup ;
+kg:inSeason res:season/2010 ;
+kg:homeTeam res:team/Germany ;
+kg:awayTeam res:team/Nigeria ;
+kg:kickoffTime "2010-10-25"^^xsd:date .
+
+res:match/2018 a kg:Match ;
+kg:inCompetition res:competition/FIFA_Women_s_World_Cup ;
+kg:inSeason res:season/2018 ;
+kg:homeTeam res:team/France ;
+kg:awayTeam res:team/Nigeria ;
+kg:kickoffTime "2018-04-06"^^xsd:date .
+
+res:season/2000 a kg:Season ;
+kg:seasonOf res:competition/African_Women_s_Championship .
+
+res:season/2004 a kg:Season ;
+kg:seasonOf res:competition/African_Women_s_Championship .
+
+res:season/2010 a kg:Season ;
+kg:seasonOf res:competition/African_Women_s_Championship .
+
+res:season/2014 a kg:Season ;
+kg:seasonOf res:competition/African_Women_s_Championship .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/African_Women_s_Championship .
+
+res:season/2022 a kg:Season ;
+kg:seasonOf res:competition/African_Women_s_Championship .
+
+res:match/2000 a kg:Match ;
+kg:inCompetition res:competition/African_Women_s_Championship ;
+kg:inSeason res:season/2000 ;
+kg:homeTeam res:team/Nigeria ;
+kg:awayTeam res:team/South_Africa ;
+kg:kickoffTime "2000-08-XX"^^xsd:date .
+
+res:match/2004 a kg:Match ;
+kg:inCompetition res:competition/African_Women_s_Championship ;
+kg:inSeason res:season/2004 ;
+kg:homeTeam res:team/Nigeria ;
+kg:awayTeam res:team/South_Africa ;
+kg:kickoffTime "2004-08-XX"^^xsd:date .
+
+res:match/2018 a kg:Match ;
+kg:inCompetition res:competition/African_Women_s_Championship ;
+kg:inSeason res:season/2018 ;
+kg:homeTeam res:team/Nigeria ;
+kg:awayTeam res:team/South_Africa ;
+kg:kickoffTime "2018-08-XX"^^xsd:date .
+
+res:competition/African_Women_s_Championship a kg:Competition ;
+kg:competitionName "African Women's Championship" .
+
+res:competition/WAFU_Zone_B_Women_s_Cup a kg:Competition ;
+kg:competitionName "WAFU Zone B Women's Cup" .
+
+res:season/2018 a kg:Season ;
+kg:seasonOf res:competition/WAFU_Zone_B_Women_s_Cup .
+
+res:season/2019 a kg:Season ;
+kg:seasonOf res:competition/WAFU_Zone_B_Women_s_Cup .
+
+res:match/2018 a kg:Match ;
+kg:inCompetition res:competition/WAFU_Zone_B_Women_s_Cup ;
+kg:inSeason res:season/2018 ;
+kg:homeTeam res:team/Nigeria ;
+kg:awayTeam res:team/Other_Country ;
+kg:kickoffTime "2018-08-XX"^^xsd:date .
+
+res:match/2019 a kg:Match ;
+kg:inCompetition res:competition/WAFU_Zone_B_Women_s_Cup ;
+kg:inSeason res:season/2019 ;
+kg:homeTeam res:team/Nigeria ;
+kg:awayTeam res:team/Other_Country ;
+kg:kickoffTime "2019-08-XX"^^xsd:date .
+
+res:team/Nigeria kg:participatesIn res:season/1991 ;
+kg:participatesIn res:season/1995 ;
+kg:participatesIn res:season/1999 ;
+kg:participatesIn res:season/2003 ;
+kg:participatesIn res:season/2007 ;
+kg:participatesIn res:season/2011 ;
+kg:participatesIn res:season/2015 ;
+kg:participatesIn res:season/2019 ;
+kg:participatesIn res:season/2023 .
+
+res:team/Nigeria kg:participatesIn res:season/2000 ;
+kg:participatesIn res:season/2004 ;
+kg:participatesIn res:season/2010 ;
+kg:participatesIn res:season/2014 ;
+kg:participatesIn res:season/2018 ;
+kg:participatesIn res:season/2022 .
+
+res:team/Nigeria kg:participatesIn res:season/2018 ;
+kg:participatesIn res:season/2019 .
+
+res:team/Nigeria kg:worldCupApps 8 ;
+kg:worldCupFirst 1991 ;
+kg:worldCupBest "Tứ kết" ;
+kg:worldCupYear 1999 .
+
+res:team/Nigeria kg:regionalCupApps 4 ;
+kg:regionalCupFirst 2000 ;
+kg:regionalCupBest "Tứ kết" ;
+kg:regionalCupYear 2004 .
+
+res:team/Nigeria kg:secondRegionalCupApps 14 ;
+kg:secondRegionalCupFirst 1991 ;
+kg:secondRegionalCupBest "Vô địch" ;
+kg:secondRegionalCupYears (1991, 1995, 1998, 2000, 2002, 2004, 2006, 2010, 2014, 2016, 2018) .
+
+res:team/Nigeria kg:thirdRegionalCupApps 2 ;
+kg:thirdRegionalCupFirst 2018 ;
+kg:thirdRegionalCupBest "Vô địch" ;
+kg:thirdRegionalCupYears (2018, 2019) .
+
+res:team/Nigeria kg:FIFARank "X" ;
+kg:FIFAMax 23 ;
+kg:FIFAMaxDate "2003-07-XX"^^xsd:date ;
+kg:FIFAMin 46 ;
+kg:FIFAMinDate "2022-08-XX"^^xsd:date .
+
+res:team/Nigeria kg:largestWin "15–0" ;
+kg:largestWinDate "2019-05-11"^^xsd:date .
+
+res:team/Nigeria kg:largestLoss "8–0" ;
+kg:largestLossDates ("1995-06-06", "2010-10-25", "2018-04-06") .
+
+res:team/Nigeria kg:medalGold "2003 Abuja" ;
+kg:medalGold "2007 Algiers" .

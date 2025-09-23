@@ -43,7 +43,7 @@ Bạn là chuyên gia trích xuất tri thức từ văn bản tiếng Việt.
 Nhiệm vụ: Từ đoạn văn sau về "{title}", trích xuất các triples (Subject-Predicate-Object) và xuất ra đúng Turtle (.ttl). 
 
 ĐOẠN VĂN:
-{content or 'Không có nội dung'}
+{content or title}
 
 ONTOLOGY ĐẦY ĐỦ:
 @prefix kg: <https://kg-football.vn/ontology#> .
@@ -88,13 +88,6 @@ CÁC CLASS CHÍNH:
 - kg:Season
 - kg:Organization
 
-# Other
-- kg:Footedness - rdfs:subClassOf schema:Enumeration
-- kg:LeftFooted - rdfs:subClassOf kg:Footedness
-- kg:RightFooted - rdfs:subClassOf kg:Footedness
-- kg:BothFooted - rdfs:subClassOf kg:Footedness
-- kg:AgeGroup - rdfs:subClassOf schema:Enumeration
-
 CÁC PROPERTY CHÍNH:
 # Player Properties
 - kg:playsFor - domain: kg:Player, range: kg:Team
@@ -105,7 +98,6 @@ CÁC PROPERTY CHÍNH:
 - kg:height - domain: kg:Player, range: xsd:decimal
 - kg:weight - domain: kg:Player, range: xsd:decimal
 - kg:shirtNumber - domain: kg:Player, range: xsd:positiveInteger
-- kg:preferredFoot - domain: kg:Player, range: kg:Footedness
 
 # Team Properties
 - kg:teamName - domain: kg:Team, range: xsd:string
@@ -187,7 +179,7 @@ def main() -> None:
     total = len(items)
     print(f"Bắt đầu chuyển đổi {total} items sang TTL...")
 
-    for item in tqdm(items[236:], total=total-236, desc="Converting to TTL", unit="item"):
+    for item in tqdm(items[663:], total=total-663, desc="Converting to TTL", unit="item"):
         title = item.get("title", "").strip() or "Untitled"
         content = item.get("content", "").strip()
 

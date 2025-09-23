@@ -1,0 +1,93 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/East_Timor a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Đông Timor" ;
+kg:teamAbbreviation "TLS" ;
+kg:hasCoach res:coach/Milan_Petakovic ;
+kg:manages res:coach/Milan_Petakovic ;
+kg:homeStadium res:stadium/National_Stadium_Dili ;
+kg:locatedIn res:country/East_Timor .
+
+res:coach/Milan_Petakovic a kg:Coach ;
+kg:manages res:team/East_Timor .
+
+res:stadium/National_Stadium_Dili a kg:Stadium ;
+kg:capacity 20000 ;
+kg:isHomeOf res:team/East_Timor .
+
+res:country/East_Timor a kg:Country ;
+kg:locatedIn res:place/Asia .
+
+res:player/Anggisu_Barbossa a kg:Player ;
+kg:playsFor res:team/East_Timor ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 30 .
+
+res:player/Rufino_Gama a kg:Player ;
+kg:playsFor res:team/East_Timor ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 7 .
+
+res:player/Armindo_de_Almeida a kg:Player ;
+kg:playsFor res:team/East_Timor ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 10 ;
+kg:isCaptain true .
+
+res:player/Joao_Pedro a kg:Player ;
+kg:playsFor res:team/East_Timor ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 10 ;
+kg:isCaptain false .
+
+res:player/Gali_Freitas a kg:Player ;
+kg:playsFor res:team/East_Timor ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 21 ;
+kg:isCaptain true .
+
+res:match/East_Timor_vs_Sri_Lanka a kg:Match ;
+kg:homeTeam res:team/East_Timor ;
+kg:awayTeam res:team/Sri_Lanka ;
+kg:kickoffTime "2003-03-21T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Asian_Cup_Qualification_2004 ;
+kg:result "2-3" .
+
+res:match/East_Timor_vs_Cambodia a kg:Match ;
+kg:homeTeam res:team/East_Timor ;
+kg:awayTeam res:team/Cambodia ;
+kg:kickoffTime "2012-10-05T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/ASEAN_Championship_2012 ;
+kg:result "5-1" .
+
+res:match/East_Timor_vs_Kuwait a kg:Match ;
+kg:homeTeam res:team/East_Timor ;
+kg:awayTeam res:team/Kuwait ;
+kg:kickoffTime "2015-11-17T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/Asian_Cup_Qualification_2019 ;
+kg:result "0-10" .
+
+res:match/East_Timor_vs_Thailand a kg:Match ;
+kg:homeTeam res:team/Thailand ;
+kg:awayTeam res:team/East_Timor ;
+kg:kickoffTime "2024-12-08T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/ASEAN_Championship_2024 ;
+kg:result "10-0" .
+
+res:competition/Asian_Cup_Qualification_2004 a kg:Competition ;
+kg:competitionName "Vòng loại Cúp bóng đá châu Á 2004" .
+
+res:competition/ASEAN_Championship_2012 a kg:Competition ;
+kg:competitionName "ASEAN Championship 2012" .
+
+res:competition/ASEAN_Championship_2024 a kg:Competition ;
+kg:competitionName "ASEAN Championship 2024" .
+
+res:competition/Asian_Cup_Qualification_2019 a kg:Competition ;
+kg:competitionName "Vòng loại Asian Cup 2019" .
+
+res:country/East_Timor a kg:Country ;
+kg:locatedIn res:place/Asia .

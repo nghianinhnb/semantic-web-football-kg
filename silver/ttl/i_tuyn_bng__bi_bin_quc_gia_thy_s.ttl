@@ -1,0 +1,92 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Swiss_Beach_Soccer_National_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Thụy Sĩ" ;
+kg:teamAbbreviation "SUI" ;
+kg:hasCoach res:coach/Angelo_Schirinzi ;
+kg:locatedIn res:country/Switzerland .
+
+res:coach/Angelo_Schirinzi a kg:Coach ;
+kg:manages res:team/Swiss_Beach_Soccer_National_Team .
+
+res:player/Mo_Jaeggy a kg:Player ;
+kg:playsFor res:team/Swiss_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "8"^^xsd:positiveInteger .
+
+res:player/Noel_Ott a kg:Player ;
+kg:playsFor res:team/Swiss_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "11"^^xsd:positiveInteger .
+
+res:player/Nico_Stalder a kg:Player ;
+kg:playsFor res:team/Swiss_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "1"^^xsd:positiveInteger .
+
+res:player/Samuel_Lutz a kg:Player ;
+kg:playsFor res:team/Swiss_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "2"^^xsd:positiveInteger .
+
+res:player/Kaspar_Jaeggy a kg:Player ;
+kg:playsFor res:team/Swiss_Beash_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "3"^^xsd:positiveInteger .
+
+res:player/Michael_Misev a kg:Player ;
+kg:playsFor res:team/Swiss_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "5"^^xsd:positiveInteger .
+
+res:player/Stephan_Leu a kg:Player ;
+kg:playsFor res:team/Swiss_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "6"^^xsd:positiveInteger .
+
+res:player/Sandro_Spaccarotella a kg:Player ;
+kg:playsFor res:team/Swiss_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/Dejan_Stankovic a kg:Player ;
+kg:playsFor res:team/Swiss_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "9"^^xsd:positiveInteger .
+
+res:player/Philipp_Borer a kg:Player ;
+kg:playsFor res:team/Swiss_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "10"^^xsd:positiveInteger .
+
+res:player/Valentin_Jaeggy a kg:Player ;
+kg:playsFor res:team/Swiss_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "12"^^xsd:positiveInteger .
+
+res:player/Angelo_Schirinzi a kg:Player ;
+kg:playsFor res:team/Swiss_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "15"^^xsd:positiveInteger .
+
+res:country/Switzerland a kg:Country ;
+rdfs:label "Thụy Sĩ" .
+
+res:competition/European_Beach_Soccer_Championship_2005 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu 2005" ;
+kg:organizes res:team/Swiss_Beach_Soccer_National_Team .
+
+res:competition/FIBA_World_Beach_Soccer_Championship_2009 a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2009" ;
+kg:organizes res:team/Swiss_Beach_Soccer_National_Team .
+
+res:competition/European_Beach_Soccer_Superfinal_2011 a kg:Competition ;
+kg:competitionName "Superfinal Giải vô địch bóng đá bãi biển châu Âu 2011" ;
+kg:organizes res:team/Swiss_Beach_Soccer_National_Team .
+
+res:competition/European_Beach_Soccer_Superfinal_2012 a kg:Competition ;
+kg:competitionName "Superfinal Giải vô địch bóng đá bãi biển châu Âu 2012" ;
+kg:organizes res:team/Swiss_Beach_Soccer_National_Team .

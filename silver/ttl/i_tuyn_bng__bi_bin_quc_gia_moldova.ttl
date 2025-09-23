@@ -1,0 +1,80 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Moldova_Beach_Football_National_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Moldova" ;
+kg:teamAbbreviation "MDA" ;
+kg:hasCoach res:coach/Gosperschi ;
+kg:locatedIn res:country/Moldova ;
+kg:managedBy res:coach/Gosperschi .
+
+res:country/Moldova a kg:Country .
+
+res:coach/Gosperschi a kg:Coach ;
+kg:manages res:team/Moldova_Beach_Football_National_Team .
+
+res:player/Ruslan_Istrati a kg:Player ;
+kg:playsFor res:team/Moldova_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/Dumitru_Botuc a kg:Player ;
+kg:playsFor res:team/Moldova_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 .
+
+res:player/Vitalii_Lungu a kg:Player ;
+kg:playsFor res:team/Moldova_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 .
+
+res:player/Vitalii_Budigai a kg:Player ;
+kg:playsFor res:team/Moldova_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 .
+
+res:player/Leonid_Podsnov a kg:Player ;
+kg:playsFor res:team/Moldova_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 .
+
+res:player/Maxim_Chiper a kg:Player ;
+kg:playsFor res:team/Moldova_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 8 .
+
+res:player/Andrei_Negara a kg:Player ;
+kg:playsFor res:team/Moldova_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+a kg:Captain .
+
+res:player/Alexandr_Antonov a kg:Player ;
+kg:playsFor res:team/Moldova_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 13 .
+
+res:player/Valeriu_Baesu a kg:Player ;
+kg:playsFor res:team/Moldova_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 15 .
+
+res:player/Oleg_Chitoroagi a kg:Player ;
+kg:playsFor res:team/Moldova_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 12 .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+rdfs:label "Goalkeeper" .
+
+res:position/Defender a kg:Defender ;
+rdfs:label "Defender" .
+
+res:position/Midfielder a kg:Midfielder ;
+rdfs:label "Midfielder" .
+
+res:position/Forward a kg:Forward ;
+rdfs:label "Forward" .

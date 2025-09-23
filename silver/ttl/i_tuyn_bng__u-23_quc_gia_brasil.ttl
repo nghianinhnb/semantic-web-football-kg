@@ -1,0 +1,92 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/U23Brasil a kg:Team ;
+kg:teamName "Đội tuyển bóng đá U-23 quốc gia Brasil" ;
+kg:teamAbbreviation "Olympic Brasil" ;
+kg:hasCoach res:coach/RamonMenezes ;
+kg:locatedIn res:country/Brasil ;
+kg:participatesIn res:competition/OlympicGames ;
+kg:participatesIn res:competition/SouthAmericanGames .
+
+res:country/Brasil a kg:Country .
+
+res:competition/OlympicGames a kg:Competition ;
+kg:competitionName "Thế vận hội Mùa hè" ;
+kg:organizes res:competition/OlympicFootballTournament .
+
+res:competition/SouthAmericanGames a kg:Competition ;
+kg:competitionName "Đại hội Thể thao Liên châu Mỹ" ;
+kg:organizes res:competition/SouthAmericanFootballTournament .
+
+res:competition/OlympicFootballTournament a kg:Competition ;
+kg:competitionName "Bóng đá tại Thế vận hội Mùa hè" .
+
+res:competition/SouthAmericanFootballTournament a kg:Competition ;
+kg:competitionName "Bóng đá tại Đại hội Thể thao Liên châu Mỹ" .
+
+res:coach/RamonMenezes a kg:Coach ;
+kg:manages res:team/U23Brasil .
+
+res:team/U23Brasil kg:participatesIn res:season/Olympic2016 ;
+kg:participatesIn res:season/Olympic2020 ;
+kg:participatesIn res:season/SouthAmericanGames1963 ;
+kg:participatesIn res:season/SouthAmericanGames1975 ;
+kg:participatesIn res:season/SouthAmericanGames1979 ;
+kg:participatesIn res:season/SouthAmericanGames1987 .
+
+res:season/Olympic2016 a kg:Season ;
+kg:seasonOf res:competition/OlympicFootballTournament .
+
+res:season/Olympic2020 a kg:Season ;
+kg:seasonOf res:competition/OlympicFootballTournament .
+
+res:season/SouthAmericanGames1963 a kg:Season ;
+kg:seasonOf res:competition/SouthAmericanFootballTournament .
+
+res:season/SouthAmericanGames1975 a kg:Season ;
+kg:seasonOf res:competition/SouthAmericanFootballTournament .
+
+res:season/SouthAmericanGames1979 a kg:Season ;
+kg:seasonOf res:competition/SouthAmericanFootballTournament .
+
+res:season/SouthAmericanGames1987 a kg:Season ;
+kg:seasonOf res:competition/SouthAmericanFootballTournament .
+
+res:team/U23Brasil kg:hasAchievement res:medal/Gold2016 ;
+kg:hasAchievement res:medal/Gold2020 ;
+kg:hasAchievement res:medal/Silver1984 ;
+kg:hasAchievement res:medal/Silver1988 ;
+kg:hasAchievement res:medal/Silver2012 ;
+kg:hasAchievement res:medal/Bronze1996 ;
+kg:hasAchievement res:medal/Bronze2008 .
+
+res:medal/Gold2016 a kg:Medal ;
+kg:medalType "Gold" ;
+kg:awardedAt res:season/Olympic2016 .
+
+res:medal/Gold2020 a kg:Medal ;
+kg:medalType "Gold" ;
+kg:awardedAt res:season/Olympic2020 .
+
+res:medal/Silver1984 a kg:Medal ;
+kg:medalType "Silver" ;
+kg:awardedAt res:season/Olympic1984 .
+
+res:medal/Silver1988 a kg:Medal ;
+kg:medalType "Silver" ;
+kg:awardedAt res:season/Olympic1988 .
+
+res:medal/Silver2012 a kg:Medal ;
+kg:medalType "Silver" ;
+kg:awardedAt res:season/Olympic2012 .
+
+res:medal/Bronze1996 a kg:Medal ;
+kg:medalType "Bronze" ;
+kg:awardedAt res:season/Olympic1996 .
+
+res:medal/Bronze2008 a kg:Medal ;
+kg:medalType "Bronze" ;
+kg:awardedAt res:season/Olympic2008 .

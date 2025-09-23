@@ -1,0 +1,129 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Turkey_Beach_Football_National_Team a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Thổ Nhĩ Kỳ" ;
+kg:teamAbbreviation "TUR" ;
+kg:hasCoach res:coach/Vedat_Uysal ;
+kg:manages res:coach/Vedat_Uysal ;
+kg:participatesIn res:competition/World_Beach_Football_Championship ;
+kg:participatesIn res:competition/European_Beach_Football_Championship ;
+kg:participatesIn res:competition/Intercontinental_Beach_Football_Cup ;
+kg:participatesIn res:competition/BSWW_Mundialito ;
+kg:participatesIn res:competition/European_Sports_Games ;
+kg:participatesIn res:competition/Mediterranean_Beach_Sports_Games .
+
+res:coach/Vedat_Uysal a kg:Coach ;
+kg:manages res:team/Turkey_Beach_Football_National_Team .
+
+res:competition/World_Beach_Football_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+
+res:competition/European_Beach_Football_Championship a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" .
+
+res:competition/Intercontinental_Beach_Football_Cup a kg:Competition ;
+kg:competitionName "Cúp bóng đá bãi biển liên châu lục" .
+
+res:competition/BSWW_Mundialito a kg:Competition ;
+kg:competitionName "BSWW Mundialito" .
+
+res:competition/European_Sports_Games a kg:Competition ;
+kg:competitionName "Đại hội thể thao châu Âu" .
+
+res:competition/Mediterranean_Beach_Sports_Games a kg:Competition ;
+kg:competitionName "Đại hội thể thao bãi biển Địa Trung Hải" .
+
+res:player/Ahmet_Shanlidere a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/Erkan_Anzaflioglu a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 ;
+kg:mostCaps 57 .
+
+res:player/Onur_Zayim a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 .
+
+res:player/Yucel_Ergun a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 ;
+kg:captain true .
+
+res:player/Erhan_Eriten a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 6 .
+
+res:player/Tamer_Ay a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 .
+
+res:player/B_Ayhan_Sezer a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 8 .
+
+res:player/I_Kerem_Sinc a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 9 .
+
+res:player/Adil_Muftuoglu a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+kg:topScorer true .
+
+res:player/Baris_Terzioglu a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 11 .
+
+res:player/Telle_Metin a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 18 .
+
+res:player/Mutlu_Koktas a kg:Player ;
+kg:playsFor res:team/Turkey_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 12 .
+
+res:position/Goalkeeper a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Defender a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Midfielder a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:position/Forward a kg:Position ;
+rdfs:subClassOf kg:Position .
+
+res:team/Turkey_Beach_Football_National_Team kg:managedBy res:coach/Vedat_Uysal .
+
+res:coach/Vedat_Uysal kg:manages res:team/Turkey_Beach_Football_National_Team .
+
+res:team/Turkey_Beach_Football_National_Team kg:participatesIn res:competition/World_Beach_Football_Championship .
+
+res:team/Turkey_Beach_Football_National_Team kg:participatesIn res:competition/European_Beach_Football_Championship .
+
+res:team/Turkey_Beach_Football_National_Team kg:participatesIn res:competition/Intercontinental_Beach_Football_Cup .
+
+res:team/Turkey_Beach_Football_National_Team kg:participatesIn res:competition/BSWW_Mundialito .
+
+res:team/Turkey_Beach_Football_National_Team kg:participatesIn res:competition/European_Sports_Games .
+
+res:team/Turkey_Beach_Football_National_Team kg:participatesIn res:competition/Mediterranean_Beach_Sports_Games .

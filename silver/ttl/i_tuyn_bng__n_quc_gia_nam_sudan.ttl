@@ -4,5 +4,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://kg-football.vn/resource/player/Đào_Tấn_Lộc>
-a kg:Player ;
+res:team/Nam_Sudan a kg:Team ;
+kg:teamName "Nam Sudan" ;
+kg:teamAbbreviation "NSD".

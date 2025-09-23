@@ -1,0 +1,94 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Trinidad%20v%C3%A0%20Tobago a kg:Team ;
+kg:teamName "Trinidad và Tobago" ;
+kg:hasCoach res:coach/Benyam%20Astorga ;
+kg:organizedBy res:organization/CONCACAF ;
+kg:locatedIn res:country/Trinidad%20v%C3%A0%20Tobago ;
+kg:participantCount "2"@xsd:positiveInteger ;
+kg:heldIn res:country/Trinidad%20v%C3%A0%20Tobago .
+
+res:organization/CONCACAF a kg:Organization ;
+kg:organizes res:competition/North%2C%20Central%20American%20and%20Caribbean%20Beach%20Soccer%20Championship .
+
+res:competition/North%2C%20Central%20American%20and%20Caribbean%20Beach%20Soccer%20Championship a kg:Competition ;
+kg:competitionName "North, Central American and Caribbean Beach Soccer Championship" .
+
+res:coach/Benyam%20Astorga a kg:Coach ;
+kg:manages res:team/Trinidad%20v%C3%A0%20Tobago .
+
+res:player/Chad%20Appoo a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Kevon%20Woodley a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Ryan%20Augustine a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Defender ;
+kg:captain true .
+
+res:player/Victor%20Thomas a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Zane%20Coker a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/Lemuel%20Lyons a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Jesse%20Bailey a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Hakeem%20King a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Defender .
+
+res:player/Kerwin%20Stafford a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Forward .
+
+res:player/David%20Mc%20Douggall a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Kareem%20Perry a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Forward .
+
+res:player/Makan%20Hislop a kg:Player ;
+kg:playsFor res:team/Trinidad%20v%C3%A0%20Tobago ;
+kg:primaryPosition res:position/Forward .
+
+res:position/Forward a kg:Position ;
+rdfs:subClassOf kg:Forward .
+
+res:position/Defender a kg:Position ;
+rdfs:subClassOf kg:Defender .
+
+res:position/Goalkeeper a kg:Position ;
+rdfs:subClassOf kg:Goalkeeper .
+
+res:country/Trinidad%20v%C3%A0%20Tobago a kg:Country ;
+kg:locatedIn res:region/Caribbean .
+
+res:organization/CONCACAF a kg:Organization ;
+kg:locatedIn res:region/North%20America .
+
+res:competition/North%2C%20Central%20American%20and%20Caribbean%20Beach%20Soccer%20Championship a kg:Competition ;
+kg:competitionName "North, Central American and Caribbean Beach Soccer Championship" ;
+kg:heldIn res:country/Trinidad%20v%C3%A0%20Tobago ;
+kg:participantCount "6"@xsd:positiveInteger .
+
+res:team/Trinidad%20v%C3%A0%20Tobago a kg:Team ;
+kg:rankWorldwide "50"@xsd:positiveInteger ;
+kg:rankConcacaf "7"@xsd:positiveInteger .

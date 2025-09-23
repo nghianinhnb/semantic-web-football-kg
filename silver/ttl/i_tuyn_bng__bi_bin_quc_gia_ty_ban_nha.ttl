@@ -1,0 +1,131 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha a kg:Team ;
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Tây Ban Nha" ;
+kg:teamAbbreviation "ESP" ;
+kg:hasCoach res:coach/Joaquin_Alonso ;
+kg:locatedIn res:country/Tay_Ban_Nha .
+
+res:country/Tay_Ban_Nha a kg:Country ;
+rdfs:label "Tây Ban Nha" .
+
+res:coach/Joaquin_Alonso a kg:Coach ;
+kg:manages res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_1998 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_1999 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2000 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2001 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2002 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2003 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2004 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2005 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2006 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2007 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2008 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2009 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2011 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2013 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2015 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2017 .
+
+res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_1998 a kg:Season ;
+kg:seasonOf res:competition/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi ;
+kg:participantCount 24 .
+
+res:competition/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
+kg:heldIn res:country/Tay_Ban_Nha .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_1998 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_1999 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_2000 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_2001 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_2003 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_2006 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_2008 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_2009 ;
+kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_2014 .
+
+res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_1998 a kg:Season ;
+kg:seasonOf res:competition/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au ;
+kg:participantCount 16 .
+
+res:competition/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" ;
+kg:heldIn res:country/Tay_Ban_Nha .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Copa_Latina_2000 ;
+kg:participatesIn res:season/Copa_Latina_2004 .
+
+res:season/Copa_Latina_2000 a kg:Season ;
+kg:seasonOf res:competition/Copa_Latina ;
+kg:participantCount 16 .
+
+res:competition/Copa_Latina a kg:Competition ;
+kg:competitionName "Copa Latina (bóng đá bãi biển)" ;
+kg:heldIn res:country/Tay_Ban_Nha .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Mundialito_de_Futebol_de_Praia_1997 ;
+kg:participatesIn res:season/Mundialito_de_Futebol_de_Praia_2004 ;
+kg:participatesIn res:season/Mundialito_de_Futebol_de_Praia_2001 ;
+kg:participatesIn res:season/Mundialito_de_Futebol_de_Praia_2003 ;
+kg:participatesIn res:season/Mundialito_de_Futebol_de_Praia_2009 .
+
+res:season/Mundialito_de_Futebol_de_Praia_1997 a kg:Season ;
+kg:seasonOf res:competition/Mundialito_de_Futebol_de_Praia ;
+kg:participantCount 16 .
+
+res:competition/Mundialito_de_Futebol_de_Praia a kg:Competition ;
+kg:competitionName "Mundialito de Futebol de Praia" ;
+kg:heldIn res:country/Tay_Ban_Nha .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Vong_Loi_Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2008_Khu_Vuc_Chau_Au ;
+kg:participatesIn res:season/Vong_Loi_Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2009_Khu_Vuc_Chau_Au ;
+kg:participatesIn res:season/Vong_Loi_Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2013_Khu_Vuc_Chau_Au ;
+kg:participatesIn res:season/Vong_Loi_Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2011_Khu_Vuc_Chau_Au ;
+kg:participatesIn res:season/Vong_Loi_Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2015_Khu_Vuc_Chau_Au ;
+kg:participatesIn res:season/Vong_Loi_Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2017_Khu_Vuc_Chau_Au .
+
+res:season/Vong_Loi_Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2008_Khu_Vuc_Chau_Au a kg:Season ;
+kg:seasonOf res:competition/Vong_Loi_Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_Khu_Vuc_Chau_Au ;
+kg:participantCount 8 .
+
+res:competition/Vong_Loi_Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_Khu_Vuc_Chau_Au a kg:Competition ;
+kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới khu vực châu Âu" ;
+kg:heldIn res:country/Tay_Ban_Nha .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2000 ;
+kg:result "Hạng ba" ;
+kg:resultYear "2000"^^xsd:date .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2003 ;
+kg:result "Á quân" ;
+kg:resultYear "2003"^^xsd:date .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2004 ;
+kg:result "Á quân" ;
+kg:resultYear "2004"^^xsd:date .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_The_Gioi_2013 ;
+kg:result "Á quân" ;
+kg:resultYear "2013"^^xsd:date .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_1999 ;
+kg:result "Vô địch" ;
+kg:resultYear "1999"^^xsd:date .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_2000 ;
+kg:result "Vô địch" ;
+kg:resultYear "2000"^^xsd:date .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_2001 ;
+kg:result "Vô địch" ;
+kg:resultYear "2001"^^xsd:date .
+
+res:team/Ten_Doi_Tuyen_Bong_DA_Bai_Bien_Quoc_Gia_Tay_Ban_Nha kg:participatesIn res:season/Giai_Vo_Dich_Bong_DA_Bai_Bien_Chau_Au_2003 ;
+kg:result "Vô địch" ;
+kg:resultYear "2003"^^

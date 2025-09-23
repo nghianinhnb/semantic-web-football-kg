@@ -1,0 +1,204 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Thái_Lan a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Thái Lan" ;
+kg:teamAbbreviation "THA" ;
+kg:hasCoach res:coach/Ikeda_Futoshi ;
+kg:locatedIn res:country/Thái_Lan ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_nữ_thế_giới_2015 ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_nữ_thế_giới_2019 ;
+kg:participatesIn res:season/Cúp_bóng_đá_nữ_châu_Á_1983 ;
+kg:participatesIn res:season/Cúp_bóng_đá_nữ_châu_Á_2003 ;
+kg:participatesIn res:season/Cúp_bóng_đá_nữ_châu_Á_2006 ;
+kg:participatesIn res:season/Cúp_bóng_đá_nữ_châu_Á_2008 ;
+kg:participatesIn res:season/Cúp_bóng_đá_nữ_châu_Á_2010 ;
+kg:participatesIn res:season/Cúp_bóng_đá_nữ_châu_Á_2014 ;
+kg:participatesIn res:season/Cúp_bóng_đá_nữ_châu_Á_2018 ;
+kg:participatesIn res:season/Cúp_bóng_đá_nữ_châu_Á_2022 .
+
+res:coach/Ikeda_Futoshi a kg:Coach ;
+kg:manages res:team/Thái_Lan .
+
+res:country/Thái_Lan a kg:Country ;
+rdfs:label "Thái Lan" .
+
+res:season/Giải_vô_địch_bóng_đá_nữ_thế_giới_2015 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới ;
+kg:participantCount 32 .
+
+res:season/Giải_vô_địch_bóng_đá_nữ_thế_giới_2019 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới ;
+kg:participantCount 32 .
+
+res:season/Cúp_bóng_đá_nữ_châu_Á_1983 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_nữ_châu_Á ;
+kg:participantCount 8 .
+
+res:season/Cúp_bóng_đá_nữ_châu_Á_2003 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_nữ_châu_Á ;
+kg:participantCount 8 .
+
+res:season/Cúp_bóng_đá_nữ_châu_Á_2006 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_nữ_châu_Á ;
+kg:participantCount 8 .
+
+res:season/Cúp_bóng_đá_nữ_châu_Á_2008 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_nữ_châu_Á ;
+kg:participantCount 8 .
+
+res:season/Cúp_bóng_đá_nữ_châu_Á_2010 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_nữ_châu_Á ;
+kg:participantCount 8 .
+
+res:season/Cúp_bóng_đá_nữ_châu_Á_2014 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_nữ_châu_Á ;
+kg:participantCount 8 .
+
+res:season/Cúp_bóng_đá_nữ_châu_Á_2018 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_nữ_châu_Á ;
+kg:participantCount 8 .
+
+res:season/Cúp_bóng_đá_nữ_châu_Á_2022 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_nữ_châu_Á ;
+kg:participantCount 8 .
+
+res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ thế giới" ;
+kg:organizes res:organization/FIFA .
+
+res:competition/Cúp_bóng_đá_nữ_châu_Á a kg:Competition ;
+kg:competitionName "Cúp bóng đá nữ châu Á" ;
+kg:organizes res:organization/AFC .
+
+res:organization/FIFA a kg:Organization ;
+kg:organizedBy res:organization/FIFA .
+
+res:organization/AFC a kg:Organization ;
+kg:organizedBy res:organization/AFC .
+
+res:match/THA_vs_AUS_1975 a kg:Match ;
+kg:homeTeam res:team/Thái_Lan ;
+kg:awayTeam res:team/Đài_Lan ;
+kg:kickoffTime "1975-08-25T00:00:00Z"^^xsd:dateTime ;
+kg:venue res:stadium/Hong_Kong ;
+kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới ;
+kg:inSeason res:season/Giải_vô_địch_bóng_đá_nữ_thế_giới_1991 ;
+kg:result "3–2" .
+
+res:match/THA_vs_LAOS_2012 a kg:Match ;
+kg:homeTeam res:team/Thái_Lan ;
+kg:awayTeam res:team/Lào ;
+kg:kickoffTime "2012-09-22T00:00:00Z"^^xsd:dateTime ;
+kg:venue res:stadium/Hồ_Chí_Minh ;
+kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới ;
+kg:inSeason res:season/Giải_vô_địch_bóng_đá_nữ_thế_giới_2015 ;
+kg:result "14–1" .
+
+res:match/PRK_vs_THA_1998 a kg:Match ;
+kg:homeTeam res:team/Bắc_Kinh ;
+kg:awayTeam res:team/Thái_Lan ;
+kg:kickoffTime "1998-12-12T00:00:00Z"^^xsd:dateTime ;
+kg:venue res:stadium/Băng_Cốc ;
+kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_nữ_thế_giới ;
+kg:inSeason res:season/Giải_vô_địch_bóng_đá_nữ_thế_giới_1999 ;
+kg:result "15–0" .
+
+res:player/Waraporn_Boonsing a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1989-01-19"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan ;
+kg:shirtNumber 142 .
+
+res:player/Pitsamai_Sornsai a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1989-01-19"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan ;
+kg:shirtNumber 75 .
+
+res:player/Nipawan_Panyosuk a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1995-03-15"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Kanchanathat_Poomsri a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "2003-01-17"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Saowalak_Peng-ngam a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1996-11-30"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Jiraporn_Mongkoldee a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1998-08-13"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Thichanan_Sodchuen a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "2003-02-01"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Pawarisa_Homyamyen a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "2004-01-31"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Tiffany_Sornpao a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "1998-05-22"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Kanjanaporn_Saengkoon a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1996-07-18"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Uraiporn_Yongkul a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1998-08-17"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Supaporn_Intaraprasit a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "2004-02-18"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Thanchanok_Cheunarom a kg:Player ;
+kg:playsFor res:team/Thái_Lan ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "2006-06-30"^^xsd:date ;
+kg:birthPlace res:city/Băng_Cốc ;
+kg:nationality res:country/Thái_Lan .
+
+res:player/Natcha_Kaewanta a kg:Player ;
+kg:plays

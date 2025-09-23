@@ -1,0 +1,198 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Đế_quốc_Nga a kg:Team ;
+kg:teamName "Đế quốc Nga" ;
+kg:locatedIn res:country/Nga .
+
+res:country/Nga a kg:Country .
+
+res:organization/Liên_hợp_bóng_đá_toàn_Nga a kg:Organization ;
+kg:locatedIn res:country/Nga .
+
+res:team/Đế_quốc_Nga kg:hasCoach res:coach/Georges_Duperron .
+
+res:coach/Georges_Duperron a kg:Coach ;
+kg:manages res:team/Đế_quốc_Nga .
+
+res:coach/Robert_Fulda a kg:Coach ;
+kg:manages res:team/Đế_quốc_Nga .
+
+res:player/Vasily_Zhitarev a kg:Player ;
+kg:playsFor res:team/Đế_quốc_Nga ;
+kg:primaryPosition res:position/Forward ;
+kg:birthPlace res:city/Sankt_Peterburg ;
+kg:nationality res:country/Nga ;
+kg:birthDate "1910-10-16"^^xsd:date .
+
+res:city/Sankt_Peterburg a kg:City ;
+kg:locatedIn res:country/Nga .
+
+res:city/Moskva a kg:City ;
+kg:locatedIn res:country/Nga .
+
+res:city/Stockholm a kg:City ;
+kg:locatedIn res:country/Thụy_Điển .
+
+res:country/Thụy_Điển a kg:Country .
+
+res:country/Bohemia a kg:Country .
+
+res:country/Phần_Lan a kg:Country .
+
+res:country/Hungary a kg:Country .
+
+res:country/Norway a kg:Country .
+
+res:country/German_Empire a kg:Country .
+
+res:stadium/Sân_vận_động_Thể_thao a kg:Stadium ;
+kg:locatedIn res:city/Sankt_Peterburg .
+
+res:stadium/Sân_vận_động_ZKS a kg:Stadium ;
+kg:locatedIn res:city/Moskva .
+
+res:stadium/Sân_vận_động_Nevsky a kg:Stadium ;
+kg:locatedIn res:city/Sankt_Peterburg .
+
+res:stadium/Union_Golf_Club a kg:Stadium ;
+kg:locatedIn res:city/Moskva .
+
+res:stadium/Sân_vận_động_Olympic_Stockholm a kg:Stadium ;
+kg:locatedIn res:city/Stockholm .
+
+res:stadium/Tranebergs_Idrottsplats a kg:Stadium ;
+kg:locatedIn res:city/Stockholm .
+
+res:stadium/Sokolniki_Park a kg:Stadium ;
+kg:locatedIn res:city/Moskva .
+
+res:stadium/Bislett a kg:Stadium ;
+kg:locatedIn res:country/Na_Uy .
+
+res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 a kg:Competition ;
+kg:competitionName "Bóng đá tại Thế vận hội Mùa hè 1912" ;
+kg:heldIn res:country/Sweden .
+
+res:season/1912 a kg:Season ;
+kg:seasonOf res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 .
+
+res:match/Trận_Đấu_1910-10-16 a kg:Match ;
+kg:homeTeam res:team/Đế_quốc_Nga ;
+kg:awayTeam res:team/Bohemia ;
+kg:venue res:stadium/Sân_vận_động_Thể_thao ;
+kg:kickoffTime "1910-10-16"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1910-10-16 .
+
+res:match/Trận_Đấu_1910-10-23 a kg:Match ;
+kg:homeTeam res:team/Đế_quốc_Nga ;
+kg:awayTeam res:team/Bohemia ;
+kg:venue res:stadium/Sân_vận_động_ZKS ;
+kg:kickoffTime "1910-10-23"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1910-10-23 .
+
+res:match/Trận_Đấu_1911-09-04 a kg:Match ;
+kg:homeTeam res:team/Đế_quốc_Nga ;
+kg:awayTeam res:team/Anh ;
+kg:venue res:stadium/Sân_vận_động_Nevsky ;
+kg:kickoffTime "1911-09-04"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1911-09-04 .
+
+res:match/Trận_Đấu_1912-06-30 a kg:Match ;
+kg:homeTeam res:team/Phần_Lan ;
+kg:awayTeam res:team/Đế_quốc_Nga ;
+kg:venue res:stadium/Sân_vận_động_Olympic_Stockholm ;
+kg:kickoffTime "1912-06-30"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1912-06-30 .
+
+res:match/Trận_Đấu_1912-07-01 a kg:Match ;
+kg:homeTeam res:team/Đế_quốc_Nga ;
+kg:awayTeam res:team/German_Empire ;
+kg:venue res:stadium/Sân_vận_động_Olympic_Stockholm ;
+kg:kickoffTime "1912-07-01"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1912-07-01 .
+
+res:match/Trận_Đấu_1912-07-03 a kg:Match ;
+kg:homeTeam res:team/Đế_quốc_Nga ;
+kg:awayTeam res:team/Na_Uy ;
+kg:venue res:stadium/Tranebergs_Idrottsplats ;
+kg:kickoffTime "1912-07-03"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1912-07-03 .
+
+res:match/Trận_Đấu_1912-07-12 a kg:Match ;
+kg:homeTeam res:team/Đế_quốc_Nga ;
+kg:awayTeam res:team/Hungary ;
+kg:venue res:stadium/Sokolniki_Park ;
+kg:kickoffTime "1912-07-12"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1912-07-12 .
+
+res:match/Trận_Đấu_1913-04-29 a kg:Match ;
+kg:homeTeam res:team/Đế_quốc_Nga ;
+kg:awayTeam res:team/Thụy_Điển ;
+kg:venue res:stadium/Sân_vận_động_Nevsky ;
+kg:kickoffTime "1913-04-29"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1913-04-29 .
+
+res:match/Trận_Đấu_1913-05-04 a kg:Match ;
+kg:homeTeam res:team/Đế_quốc_Nga ;
+kg:awayTeam res:team/Thụy_Điển ;
+kg:venue res:stadium/Sokolniki_Park ;
+kg:kickoffTime "1913-05-04"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1913-05-04 .
+
+res:match/Trận_Đấu_1913-09-14 a kg:Match ;
+kg:homeTeam res:team/Đế_quốc_Nga ;
+kg:awayTeam res:team/Norway ;
+kg:venue res:stadium/Sokolniki_Park ;
+kg:kickoffTime "1913-09-14"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1913-09-14 .
+
+res:match/Trận_Đấu_1914-07-05 a kg:Match ;
+kg:homeTeam res:team/Đế_quốc_Nga ;
+kg:awayTeam res:team/Thụy_Điển ;
+kg:venue res:stadium/Sân_vận_động_Olympic_Stockholm ;
+kg:kickoffTime "1914-07-05"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1914-07-05 .
+
+res:match/Trận_Đấu_1914-07-12 a kg:Match ;
+kg:homeTeam res:team/Norway ;
+kg:awayTeam res:team/Đế_quốc_Nga ;
+kg:venue res:stadium/Bislett ;
+kg:kickoffTime "1914-07-12"^^xsd:date ;
+kg:inCompetition res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1912 ;
+kg:inSeason res:season/1912 ;
+kg:referee res:referee/Unknown_Referee_1914-07-12 .
+
+res:player/Vasily_Zhitarev kg:mostCaps "8"^^xsd:positiveInteger ;
+kg:topScorer "4"^^xsd:positiveInteger .
+
+res:player/Nikita_Khromov kg:mostCaps "6"^^xsd:positiveInteger .
+
+res:player/Vasily_Butusov kg:mostCaps "5"^^xsd:positiveInteger ;
+kg:goals "1"^^xsd:positiveInteger .
+
+res:player/Andrei_Akimov kg:mostCaps "4"^^xsd:

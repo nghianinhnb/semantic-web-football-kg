@@ -1,0 +1,112 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Puerto_Rico_Beach_Football_National_Team a kg:Team ;
+kg:teamName "Puerto Rico" ;
+kg:hasCoach res:coach/Vitor_Hugo_Barros ;
+kg:organizedBy res:organization/Liên_hoàn_bóng_đá_Puerto_Rico ;
+kg:heldIn res:country/Puerto_Rico ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe ;
+kg:participantCount "2"^^xsd:positiveInteger ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" .
+
+res:organization/Liên_hoàn_bóng_đá_Puerto_Rico a kg:Organization ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" .
+
+res:coach/Vitor_Hugo_Barros a kg:Coach ;
+kg:manages res:team/Puerto_Rico_Beach_Football_National_Team .
+
+res:coach/Eieri_Jordan a kg:AssistantCoach ;
+kg:manages res:team/Puerto_Rico_Beach_Football_National_Team .
+
+res:player/Javier_Moya a kg:Player ;
+kg:playsFor res:team/Puerto_Rico_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "1"^^xsd:positiveInteger .
+
+res:player/Francisco_Quiles a kg:Player ;
+kg:playsFor res:team/Puerto_Rico_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "2"^^xsd:positiveInteger .
+
+res:player/Carlos_Vendrell a kg:Player ;
+kg:playsFor res:team/Puerto_Rico_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "3"^^xsd:positiveInteger .
+
+res:player/Joshua_Martínez a kg:Player ;
+kg:playsFor res:team/Puerto_Rico_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "4"^^xsd:positiveInteger .
+
+res:player/Héctor_Rivera a kg:Player ;
+kg:playsFor res:team/Puerto_Rico_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "5"^^xsd:positiveInteger .
+
+res:player/Alex_Santos a kg:Player ;
+kg:playsFor res:team/Puerto_Rico_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "6"^^xsd:positiveInteger .
+
+res:player/Carlos_Astondoa a kg:Player ;
+kg:playsFor res:team/Puerto_Rico_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/Dorian_González a kg:Player ;
+kg:playsFor res:team/Puerto_Rico_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "8"^^xsd:positiveInteger .
+
+res:player/Eieri_Jordan a kg:Player ;
+kg:playsFor res:team/Puerto_Rico_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "9"^^xsd:positiveInteger .
+
+res:player/Joseph_Pereira a kg:Player ;
+kg:playsFor res:team/Puerto_Rico_Beach_Football_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "10"^^xsd:positiveInteger .
+
+res:position/Goalkeeper a kg:Goalkeeper, kg:Position .
+
+res:position/Midfielder a kg:Midfielder, kg:Position .
+
+res:position/Defender a kg:Defender, kg:Position .
+
+res:position/Forward a kg:Forward, kg:Position .
+
+res:country/Puerto_Rico a kg:Country ;
+rdfs:label "Puerto Rico" .
+
+res:organization/Liên_hoàn_bóng_đá_Puerto_Rico a kg:Organization ;
+rdfs:label "Liên đoàn bóng đá Puerto Rico" .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe a kg:Competition ;
+rdfs:label "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" .
+
+res:team/Puerto_Rico_Beach_Football_National_Team a kg:Team ;
+rdfs:label "Đội tuyển bóng đá bãi biển quốc gia Puerto Rico" .
+
+res:match/Nassau_Bahamas_2013 a kg:Match ;
+kg:homeTeam res:team/Bahamas ;
+kg:awayTeam res:team/Puerto_Rico_Beach_Football_National_Team ;
+kg:venue res:place/Nassau ;
+kg:kickoffTime "2013-05-08"^^xsd:date ;
+kg:inCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe .
+
+res:place/Nassau a kg:City ;
+kg:locatedIn res:country/Bahamas ;
+rdfs:label "Nassau" .
+
+res:country/Bahamas a kg:Country ;
+rdfs:label "Bahamas" .
+
+res:team/Bahamas a kg:Team ;
+rdfs:label "Bahamas" .

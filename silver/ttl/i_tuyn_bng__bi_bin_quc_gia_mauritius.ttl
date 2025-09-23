@@ -1,0 +1,163 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/MauritiusNationalBeachSoccerTeam a kg:Team ;
+kg:teamName "Mauritius National Beach Soccer Team" ;
+kg:teamAbbreviation "MRI" ;
+kg:hasCoach res:coach/EddyRose ;
+kg:participatesIn res:season/2009 ;
+kg:participatesIn res:season/2011 .
+
+res:coach/EddyRose a kg:Coach ;
+kg:manages res:team/MauritiusNationalBeachSoccerTeam .
+
+res:player/KevinJeanLouis a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 1 .
+
+res:player/GuillanoEdouard a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 2 .
+
+res:player/ChristopherLenclume a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 3 .
+
+res:player/JeanMarieChavry a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber 4 .
+
+res:player/JonathanErnest a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 5 .
+
+res:player/AshleyLemince a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 6 .
+
+res:player/GravelAzie a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 7 .
+
+res:player/KellyMariva a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Midfielder ;
+kg:shirtNumber 8 ;
+a kg:Captain .
+
+res:player/DavidAzie a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 9 .
+
+res:player/StefaneArthee a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 10 .
+
+res:player/ JonathanMoutou a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber 18 .
+
+res:player/KingsleyMitraille a kg:Player ;
+kg:playsFor res:team/MauritiusNationalBeachSoccerTeam ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber 11 .
+
+res:match/MRIvsNBB20090701 a kg:Match ;
+kg:homeTeam res:team/MauritiusNationalBeachSoccerTeam ;
+kg:awayTeam res:team/Nigeria ;
+kg:kickoffTime "2009-07-01T00:00:00Z"^^xsd:dateTime ;
+kg:result "0–13"^^xsd:string ;
+kg:venue res:stadium/Durban ;
+
+res:match/MRIvsREU20090508 a kg:Match ;
+kg:homeTeam res:team/MauritiusNationalBeachSoccerTeam ;
+kg:awayTeam res:team/Reunion ;
+kg:kickoffTime "2009-05-08T00:00:00Z"^^xsd:dateTime ;
+kg:result "3–2"^^xsd:string ;
+kg:venue res:stadium/LeTampon ;
+
+res:match/MRIvsFRA20110513 a kg:Match ;
+kg:homeTeam res:team/France ;
+kg:awayTeam res:team/MauritiusNationalBeachSoccerTeam ;
+kg:kickoffTime "2011-05-13T15:00:00+04:00"^^xsd:dateTime ;
+kg:result "10–3"^^xsd:string ;
+kg:venue res:stadium/StadeRogerBernard ;
+kg:referee res:referee/Blaya .
+
+res:match/MRIvsENG20110514 a kg:Match ;
+kg:homeTeam res:team/England ;
+kg:awayTeam res:team/MauritiusNationalBeachSoccerTeam ;
+kg:kickoffTime "2011-05-14T15:00:rightarrow+04:00"^^xsd:dateTime ;
+kg:result "4–0"^^xsd:string ;
+kg:venue res:stadium/StadeRogerBernard .
+
+res:match/MRIvsREU20110515 a kg:Match ;
+kg:homeTeam res:team/MauritiusNationalBeachSoccerTeam ;
+kg:awayTeam res:team/Reunion ;
+kg:kickoffTime "2011-05-15T15:00:00+04:00"^^xsd:dateTime ;
+kg:result "6–8"^^xsd:string ;
+kg:venue res:stadium/StadeRogerBernard ;
+kg:referee res:referee/Unknown .
+
+res:stadium/Durban a kg:Stadium ;
+kg:locatedIn res:city/Durban .
+
+res:stadium/LeTampon a kg:Stadium ;
+kg:locatedIn res:city/LeTampon .
+
+res:stadium/StadeRogerBernard a kg:Stadium ;
+kg:locatedIn res:city/LeTampon .
+
+res:city/Durban a kg:City ;
+kg:locatedIn res:country/SouthAfrica .
+
+res:city/LeTampon a kg:City ;
+kg:locatedIn res:country/Reunion .
+
+res:country/Mauritius a kg:Country .
+
+res:country/SouthAfrica a kg:Country .
+
+res:country/Reunion a kg:Country .
+
+res:competition/FestisableDuTampon a kg:Competition ;
+kg:competitionName "Festisable du Tampon" ;
+kg:heldIn res:country/Reunion .
+
+res:season/2009 a kg:Season ;
+kg:seasonOf res:competition/FestisableDuTampon .
+
+res:season/2011 a kg:Season ;
+kg:seasonOf res:competition/FestisableDuTampon .
+
+res:competition/AfricanBeachSoccerChampionship a kg:Competition ;
+kg:competitionName "African Beach Soccer Championship" ;
+kg:heldIn res:country/Mauritius .
+
+res:competition/WorldBeachSoccerChampionship a kg:Competition ;
+kg:competitionName "World Beach Soccer Championship" .
+
+res:team/MauritiusNationalBeachSoccerTeam kg:participatesIn res:season/2009 ;
+kg:participatesIn res:season/2011 .
+
+res:team/MauritiusNationalBeachSoccerTeam kg:inCompetition res:competition/FestisableDuTampon ;
+kg:inCompetition res:competition/AfricanBeachSoccerChampionship ;
+kg:inCompetition res:competition/WorldBeachSoccerChampionship .
+
+res:competition/AfricanBeachSoccerChampionship kg:participantCount 9 ;
+kg:heldIn res:country/Mauritius .
+
+res:competition/WorldBeachSoccerChampionship kg:participantCount 24 ;
+kg:heldIn res:country/VariousCountries .

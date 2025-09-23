@@ -1,0 +1,197 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Thụy%20Điển <kg:type> kg:Team ;
+<kg:teamName> "Thụy Điển" ;
+<kg:hasCoach> res:person/Peter%20Gerhardsson ;
+<kg:manages> res:person/Peter%20Gerhardsson ;
+<kg:teamAbbreviation> "SWE" ;
+<kg:locatedIn> res:country/Thụy%20Điển ;
+<kg:homeStadium> res:stadium/Gamla%20Ullevi ;
+<kg:isHomeOf> res:stadium/Gamla%20Ullevi ;
+<kg:participatesIn> res:competition/Giải%20vô%20địch%20bóng%20đá%20nữ%20thế%20giới ;
+<kg:participatesIn> res:competition/Giải%20vô%20địch%20bóng%20đá%20nữ%20châu%20Âu ;
+<kg:participatesIn> res:competition/Bóng%20đá%20tại%20Thế%20vận%20hội%20Mùa%20hè .
+
+res:person/Peter%20Gerhardsson <kg:type> kg:Coach ;
+<kg:name> "Peter Gerhardsson" .
+
+res:stadium/Gamla%20Ullevi <kg:type> kg:Stadium ;
+<kg:capacity> 12000 .
+
+res:country/Thụy%20Điển <kg:type> kg:Country ;
+<kg:name> "Thụy Điển" .
+
+res:competition/Giải%20vô%20địch%20bóng%20đá%20nữ%20thế%20giới <kg:type> kg:Competition ;
+<kg:competitionName> "Giải vô địch bóng đá nữ thế giới" .
+
+res:competition/Giải%20vô%20địch%20bóng%20đá%20nữ%20châu%20Âu <kg:type> kg:Competition ;
+<kg:competitionName> "Giải vô địch bóng đá nữ châu Âu" .
+
+res:competition/Bóng%20đá%20tại%20Thế%20vận%20hội%20Mùa%20hè <kg:type> kg:Competition ;
+<kg:competitionName> "Bóng đá tại Thế vận hội Mùa hè" .
+
+res:player/Caroline%20Seger <kg:type> kg:Player ;
+<kg:name> "Caroline Seger" ;
+<kg:birthDate> "1985-03-19"^^xsd:date ;
+<kg:birthPlace> res:city/Stockholm ;
+<kg:nationality> res:country/Thụy%20Điển ;
+<kg:primaryPosition> res:position/Midfielder ;
+<kg:shirtNumber> 17 ;
+<kg:playsFor> res:team/Thụy%20Điển ;
+<kg:preferredFoot> kg:RightFooted ;
+<kg:height> 168.0^^xsd:decimal ;
+<kg:weight> 63.0^^xsd:decimal ;
+<kg:careerStats> "238 caps, 32 goals" .
+
+res:player/Lotta%20Schelin <kg:type> kg:Player ;
+<kg:name> "Lotta Schelin" ;
+<kg:birthDate> "1986-05-16"^^xsd:date ;
+<kg:birthPlace> res:city/Stockholm ;
+<kg:nationality> res:country/Thụy%20Điển ;
+<kg:primaryPosition> res:position/Forward ;
+<kg:shirtNumber> 8 ;
+<kg:playsFor> res:team/Thụy%20Điển ;
+<kg:preferredFoot> kg:RightFooted ;
+<kg:height> 170.0^^xsd:decimal ;
+<kg:weight> 62.0^^xsd:decimal ;
+<kg:careerStats> "88 goals in international matches" .
+
+res:player/Zecira%20Musovic <kg:type> kg:Player ;
+<kg:name> "Zećira Mušović" ;
+<kg:birthDate> "1996-05-26"^^xsd:date ;
+<kg:birthPlace> res:city/Sarajevo ;
+<kg:nationality> res:country/Serbia ;
+<kg:primaryPosition> res:position/Goalkeeper ;
+<kg:shirtNumber> 1 ;
+<kg:playsFor> res:team/Thụy%20Điển ;
+<kg:preferredFoot> kg:LeftFooted ;
+<kg:height> 185.0^^xsd:decimal ;
+<kg:weight> 72.0^^xsd:decimal ;
+<kg:careerStats> "16 caps, 0 goals" .
+
+res:player/Jennifer%20Falk <kg:type> kg:Player ;
+<kg:name> "Jennifer Falk" ;
+<kg:birthDate> "1993-04-26"^^xsd:date ;
+<kg:birthPlace> res:city/Stockholm ;
+<kg:nationality> res:country/Thụy%20Điển ;
+<kg:primaryPosition> res:position/Goalkeeper ;
+<kg:shirtNumber> 12 ;
+<kg:playsFor> res:team/Thụy%20Điển ;
+<kg:preferredFoot> kg:RightFooted ;
+<kg:height> 183.0^^xsd:decimal ;
+<kg:weight> 70.0^^xsd:decimal ;
+<kg:careerStats> "17 caps, 0 goals" .
+
+res:player/Kosovare%20Asllani <kg:type> kg:Player ;
+<kg:name> "Kosovare Asllani" ;
+<kg:birthDate> "1989-07-29"^^xsd:date ;
+<kg:birthPlace> res:city/Malmö ;
+<kg:nationality> res:country/Sweden ;
+<kg:primaryPosition> res:position/Midfielder ;
+<kg:shirtNumber> 9 ;
+<kg:playsFor> res:team/Thụy%20Điển ;
+<kg:preferredFoot> kg:RightFooted ;
+<kg:height> 172.0^^xsd:decimal ;
+<kg:weight> 65.0^^xsd:decimal ;
+<kg:careerStats> "176 caps, 45 goals" .
+
+res:player/Filippa%20Angeldahl <kg:type> kg:Player ;
+<kg:name> "Filippa Angeldahl" ;
+<kg:birthDate> "1997-07-14"^^xsd:date ;
+<kg:birthPlace> res:city/Stockholm ;
+<kg:nationality> res:country/Thụy%20Điển ;
+<kg:primaryPosition> res:position/Midfielder ;
+<kg:shirtNumber> 16 ;
+<kg:playsFor> res:team/Thụy%20Điển ;
+<kg:preferredFoot> kg:LeftFooted ;
+<kg:height> 175.0^^xsd:decimal ;
+<kg:weight> 63.0^^xsd:decimal ;
+<kg:careerStats> "42 caps, 12 goals" .
+
+res:player/Stina%20Blackstenius <kg:type> kg:Player ;
+<kg:name> "Stina Blackstenius" ;
+<kg:birthDate> "1996-02-05"^^xsd:date ;
+<kg:birthPlace> res:city/Stockholm ;
+<kg:nationality> res:country/Thụy%20Điển ;
+<kg:primaryPosition> res:position/Forward ;
+<kg:shirtNumber> 11 ;
+<kg:playsFor> res:team/Thụy%20Điển ;
+<kg:preferredFoot> kg:RightFooted ;
+<kg:height> 173.0^^xsd:decimal ;
+<kg:weight> 64.0^^xsd:decimal ;
+<kg:careerStats> "97 caps, 29 goals" .
+
+res:player/Sofia%20Jakobsson <kg:type> kg:Player ;
+<kg:name> "Sofia Jakobsson" ;
+<kg:birthDate> "1990-04-23"^^xsd:date ;
+<kg:birthPlace> res:city/Stockholm ;
+<kg:nationality> res:country/Thụy%20Điển ;
+<kg:primaryPosition> res:position/Forward ;
+<kg:shirtNumber> 10 ;
+<kg:playsFor> res:team/Thụy%20Điển ;
+<kg:preferredFoot> kg:RightFooted ;
+<kg:height> 176.0^^xsd:decimal ;
+<kg:weight> 66.0^^xsd:decimal ;
+<kg:careerStats> "148 caps, 23 goals" .
+
+res:player/Fridolina%20Rolfö <kg:type> kg:Player ;
+<kg:name> "Fridolina Rolfö" ;
+<kg:birthDate> "1993-11-24"^^xsd:date ;
+<kg:birthPlace> res:city/Stockholm ;
+<kg:nationality> res:country/Thụy%20Điển ;
+<kg:primaryPosition> res:position/Forward ;
+<kg:shirtNumber> 18 ;
+<kg:playsFor> res:team/Thụy%20Điển ;
+<kg:preferredFoot> kg:RightFooted ;
+<kg:height> 174.0^^xsd:decimal ;
+<kg:weight> 65.0^^xsd:decimal ;
+<kg:careerStats> "83 caps, 28 goals" .
+
+res:player/Lina%20Hurtig <kg:type> kg:Player ;
+<kg:name> "Lina Hurtig" ;
+<kg:birthDate> "1995-09-05"^^xsd:date ;
+<kg:birthPlace> res:city/Stockholm ;
+<kg:nationality> res:country/Thụy%20Điển ;
+<kg:primaryPosition> res:position/Forward ;
+<kg:shirtNumber> 8 ;
+<kg:playsFor> res:team/Thụy%20Điển ;
+<kg:preferredFoot> kg:RightFooted ;
+<kg:height> 173.0^^xsd:decimal ;
+<kg:weight> 63.0^^xsd:decimal ;
+<kg:careerStats> "68 caps, 20 goals" .
+
+res:position/Goalkeeper <kg:type> kg:Position ;
+<rdfs:label> "Goalkeeper" .
+
+res:position/Defender <kg:type> kg:Position ;
+<rdfs:label> "Defender" .
+
+res:position/Midfielder <kg:type> kg:Position ;
+<rdfs:label> "Midfielder" .
+
+res:position/Forward <kg:type> kg:Position ;
+<rdfs:label> "Forward" .
+
+res:city/Stockholm <kg:type> kg:City ;
+<kg:name> "Stockholm" ;
+<kg:locatedIn> res:country/Thụy%20Điển .
+
+res:city/Sarajevo <kg:type> kg:City ;
+<kg:name> "Sarajevo" ;
+<kg:locatedIn> res:country/Serbia .
+
+res:country/Serbia <kg:type> kg:Country ;
+<kg:name> "Serbia" .
+
+res:country/Thụy%20Điển <kg:type> kg:Country ;
+<kg:name> "Thụy Điển" .
+
+res:stadium/Gamla%20Ullevi <kg:type> kg:Stadium ;
+<kg:name> "Gamla Ullevi" ;
+<kg:locatedIn> res:city/Gothenburg ;
+<kg:capacity> 12000 .
+
+res:city

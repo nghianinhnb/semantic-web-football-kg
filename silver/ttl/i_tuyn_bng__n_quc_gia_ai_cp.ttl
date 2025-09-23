@@ -1,0 +1,211 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Ai%20C%E1%BA%A1p
+a kg:Team ;
+kg:teamName "Đội tuyển bóng đá nữ quốc gia Ai Cập" ;
+kg:teamAbbreviation "EGY" ;
+kg:hasCoach res:coach/Mohamed%20Mostafa%20Abdelhameed ;
+kg:locatedIn res:country/Ai%20C%E1%BA%A1p ;
+kg:homeStadium res:stadium/Cairo%20International%20Stadium ;
+kg:participatesIn res:competition/FIFA%20Women's%20World%20Cup ;
+kg:participatesIn res:competition/African%20Women's%20Championship .
+
+res:country/Ai%20C%E1%BA%A1p
+a kg:Country ;
+rdfs:label "Ai Cập" .
+
+res:stadium/Cairo%20International%20Stadium
+a kg:Stadium ;
+kg:locatedIn res:city/Cairo .
+
+res:coach/Mohamed%20Mostafa%20Abdelhameed
+a kg:Coach ;
+kg:manages res:team/Ai%20C%E1%BA%A1p .
+
+res:competition/FIFA%20Women's%20World%20Cup
+a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ thế giới" .
+
+res:competition/African%20Women's%20Championship
+a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá nữ châu Phi" .
+
+res:player/Elham%20Eid
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "1994-09-26"^^xsd:date ;
+kg:birthPlace res:city/Cairo ;
+kg:nationality res:country/Ai%20C%E1%BA%A1p ;
+kg:shirtNumber 1 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:player/Farah%20Samer
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "2001-07-02"^^xsd:date ;
+kg:birthPlace res:city/Cairo ;
+kg:nationality res:country/Ai%20C%E1%BA%A1p ;
+kg:shirtNumber 16 .
+
+res:player/Amina%20Ahmed
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 23 .
+
+res:player/Basant%20AbdAlazeez
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Defender ;
+kg:birthPlace res:city/Cairo ;
+kg:nationality res:country/Ai%20C%E1%BA%A1p ;
+kg:shirtNumber 4 .
+
+res:player/Mervat%20Farouk
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1993-06-05"^^xsd:date ;
+kg:nationality res:country/Ai%20C%E1%BA%A1p ;
+kg:shirtNumber 5 .
+
+res:player/Hend%20Ismail
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 .
+
+res:player/Madiha%20Habib
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 20 .
+
+res:player/Sherouk%20Sayed
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1999-11-26"^^xsd:date ;
+kg:nationality res:country/Romania ;
+kg:shirtNumber 2 .
+
+res:player/Hayam%20Abdellatif
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 3 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Omnia%20Mahmoud
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1994-02-06"^^xsd:date ;
+kg:nationality res:country/Ai%20C%E1%BA%A1p ;
+kg:shirtNumber 8 .
+
+res:player/Samia%20Adam
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1996-04-19"^^xsd:date ;
+kg:nationality res:country/Turkey ;
+kg:shirtNumber 13 .
+
+res:player/Engy%20Attia
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1986-09-04"^^xsd:date ;
+kg:shirtNumber 19 .
+
+res:player/Mahira%20El%20Danbouki
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1997-11-01"^^xsd:date ;
+kg:shirtNumber 22 .
+
+res:player/Sara%20Ismael
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1999-01-23"^^xsd:date ;
+kg:nationality res:country/Spain ;
+kg:shirtNumber 27 .
+
+res:player/Sarah%20Essam
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 .
+
+res:player/Menna%20Tarek
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1999-03-01"^^xsd:date ;
+kg:nationality res:country/Ai%20C%E1%BA%A1p ;
+kg:shirtNumber 11 .
+
+res:player/Salwa%20El%20Metwaly
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 14 .
+
+res:player/Nada%20Abo%20Zid
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 17 .
+
+res:player/Omneya%20Samir
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 24 .
+
+res:player/Manar%20Salem
+a kg:Player ;
+kg:playsFor res:team/Ai%20C%E1%BA%A1p ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 27 .
+
+res:position/Goalkeeper
+a kg:Position ;
+rdfs:subClassOf kg:Goalkeeper .
+
+res:position/Defender
+a kg:Position ;
+rdfs:subClassOf kg:Defender .
+
+res:position/Midfielder
+a kg:Position ;
+rdfs:subClassOf kg:Midfielder .
+
+res:position/Forward
+a kg:Position ;
+rdfs:subClassOf kg:Forward .
+
+res:city/Cairo
+a kg:City ;
+kg:locatedIn res:country/Ai%20C%E1%BA%A1p .
+
+res:country/Romania
+a kg:Country ;
+rdfs:label "Romania" .
+
+res:country/Turkey
+a kg:Country ;
+rdfs:label "Turkey" .
+
+res:country/Spain
+a kg:Country ;
+rdfs:label "Spain" .

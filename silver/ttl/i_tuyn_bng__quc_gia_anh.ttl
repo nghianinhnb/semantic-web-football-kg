@@ -1,0 +1,281 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/England a kg:Team ;
+kg:teamName "England" ;
+kg:teamAbbreviation "ENG" ;
+kg:hasCoach res:coach/Thomas_Tuchel ;
+kg:manages res:coach/Thomas_Tuchel ;
+kg:hasCoach res:coach/Lee_Carsley ;
+kg:manages res:coach/Lee_Carsley ;
+kg:hasCoach res:coach/Gareth_Southgate ;
+kg:manages res:coach/Gareth_Southgate ;
+kg:hasCoach res:coach/Sam_Allardyce ;
+kg:manages res:coach/Sam_Allardyce ;
+kg:hasCoach res:coach/Roy_Hodgson ;
+kg:manages res:coach/Roy_Hodgson ;
+kg:hasCoach res:coach/Steve_McClaren ;
+kg:manages res:coach/Steve_McClaren ;
+kg:hasCoach res:coach/Fabio_Capello ;
+kg:manages res:coach/Fabio_Capello ;
+kg:hasCoach res:coach/Howard_Wilkinson ;
+kg:manages res:coach/Howard_Wilkinson ;
+kg:hasCoach res:coach/Glenn_Hoddle ;
+kg:manages res:coach/Glenn_Hoddle ;
+kg:hasCoach res:coach/Terry_Venables ;
+kg:manages res:coach/Terry_Venables ;
+kg:hasCoach res:coach/Kevin_Keegan ;
+kg:manages res:coach/Kevin_Keegan ;
+kg:hasCoach res:coach/Graham_Taylor ;
+kg:manages res:coach/Graham_Taylor ;
+kg:hasCoach res:coach/Bobby_Robson ;
+kg:manages res:coach/Bobby_Robson ;
+kg:hasCoach res:coach/Ron_Greenwood ;
+kg:manages res:coach/Ron_Greenwood ;
+kg:hasCoach res:coach/Don_Revie ;
+kg:manages res:coach/Don_Revie ;
+kg:hasCoach res:coach/Joe_Mercer ;
+kg:manages res:coach/Joe_Mercer ;
+kg:hasCoach res:coach/Sir_Alf_Ramsey ;
+kg:manages res:coach/Sir_Alf_Ramsey ;
+kg:hasCoach res:coach/Sir_Walter_Winterbottom ;
+kg:manages res:coach/Sir_Walter_Winterbottom ;
+kg:homeStadium res:stadium/Wembley_Stadium .
+
+res:stadium/Wembley_Stadium a kg:Stadium ;
+kg:capacity 90000 ;
+kg:isHomeOf res:team/England .
+
+res:coach/Thomas_Tuchel a kg:Coach ;
+kg:name "Thomas Tuchel" ;
+kg:manages res:team/England .
+
+res:coach/Lee_Carsley a kg:Coach ;
+kg:name "Lee Carsley" ;
+kg:manages res:team/England .
+
+res:coach/Gareth_Southgate a kg:Coach ;
+kg:name "Gareth Southgate" ;
+kg:manages res:team/England .
+
+res:coach/Sam_Allardyce a kg:Coach ;
+kg:name "Sam Allardyce" ;
+kg:manages res:team/England .
+
+res:coach/Roy_Hodgson a kg:Coach ;
+kg:name "Roy Hodgson" ;
+kg:manages res:team/England .
+
+res:coach/Steve_McClaren a kg:Coach ;
+kg:name "Steve McClaren" ;
+kg:manages res:team/England .
+
+res:coach/Fabio_Capello a kg:Coach ;
+kg:name "Fabio Capello" ;
+kg:manages res:team/England .
+
+res:coach/Howard_Wilkinson a kg:Coach ;
+kg:name "Howard Wilkinson" ;
+kg:manages res:team/England .
+
+res:coach/Glenn_Hoddle a kg:Coach ;
+kg:name "Glenn Hoddle" ;
+kg:manages res:team/England .
+
+res:coach/Terry_Venables a kg:Coach ;
+kg:name "Terry Venables" ;
+kg:manages res:team/England .
+
+res:coach/Kevin_Keegan a kg:Coach ;
+kg:name "Kevin Keegan" ;
+kg:manages res:team/England .
+
+res:coach/Graham_Taylor a kg:Coach ;
+kg:name "Graham Taylor" ;
+kg:manages res:team/England .
+
+res:coach/Bobby_Robson a kg:Coach ;
+kg:name "Bobby Robson" ;
+kg:manages res:team/England .
+
+res:coach/Ron_Greenwood a kg:Coach ;
+kg:name "Ron Greenwood" ;
+kg:manages res:team/England .
+
+res:coach/Don_Revie a kg:Coach ;
+kg:name "Don Revie" ;
+kg:manages res:team/England .
+
+res:coach/Joe_Mercer a kg:Coach ;
+kg:name "Joe Mercer" ;
+kg:manages res:team/England .
+
+res:coach/Sir_Alf_Ramsey a kg:Coach ;
+kg:name "Sir Alf Ramsey" ;
+kg:manages res:team/England .
+
+res:coach/Sir_Walter_Winterbottom a kg:Coach ;
+kg:name "Sir Walter Winterbottom" ;
+kg:manages res:team/England .
+
+res:player/Peter_Shilton a kg:Player ;
+kg:name "Peter Shilton" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1949-08-29"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/England ;
+kg:shirtNumber 1 .
+
+res:player/Harry_Kane a kg:Player ;
+kg:name "Harry Kane" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Forward ;
+kg:birthDate "1993-07-28"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/England ;
+kg:shirtNumber 10 .
+
+res:player/Jude_Bellingham a kg:Player ;
+kg:name "Jude Bellingham" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2003-06-29"^^xsd:date ;
+kg:birthPlace res:city/Manchester ;
+kg:nationality res:country/England ;
+kg:shirtNumber 4 .
+
+res:player/Declan_Rice a kg:Player ;
+kg:name "Declan Rice" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1999-01-14"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/England ;
+kg:shirtNumber 4 .
+
+res:player/Jordan_Pickford a kg:Player ;
+kg:name "Jordan Pickford" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:birthDate "1994-03-07"^^xsd:date ;
+kg:birthPlace res:city/Sunderland ;
+kg:nationality res:country/England ;
+kg:shirtNumber 1 .
+
+res:player/Trent_Alexander_Arnold a kg:Player ;
+kg:name "Trent Alexander-Arnold" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1998-10-07"^^xsd:date ;
+kg:birthPlace res:city/Liverpool ;
+kg:nationality res:country/England ;
+kg:shirtNumber 6 .
+
+res:player/Reece_James a kg:Player ;
+kg:name "Reece James" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1999-12-08"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/England ;
+kg:shirtNumber 3 .
+
+res:player/Cole_Palmer a kg:Player ;
+kg:name "Cole Palmer" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2002-05-06"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/England ;
+kg:shirtNumber 20 .
+
+res:player/Kyle_Walker a kg:Player ;
+kg:name "Kyle Walker" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1990-05-28"^^xsd:date ;
+kg:birthPlace res:city/Surrey ;
+kg:nationality res:country/England ;
+kg:shirtNumber 2 .
+
+res:player/Dan_Burn a kg:Player ;
+kg:name "Dan Burn" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1992-05-09"^^xsd:date ;
+kg:birthPlace res:city/Newcastle ;
+kg:nationality res:country/England ;
+kg:shirtNumber 12 .
+
+res:player/Ezri_Konsa a kg:Player ;
+kg:name "Ezri Konsa" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1997-10-23"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/England ;
+kg:shirtNumber 5 .
+
+res:player/Levi_Colwill a kg:Player ;
+kg:name "Levi Colwill" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2003-02-26"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/England ;
+kg:shirtNumber 6 .
+
+res:player/Myles_Lewis_Skelly a kg:Player ;
+kg:name "Myles Lewis-Skelly" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "2006-09-26"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/England ;
+kg:shirtNumber 21 .
+
+res:player/Trevoh_Chalobah a kg:Player ;
+kg:name "Trevoh Chalobah" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Defender ;
+kg:birthDate "1999-07-05"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/England ;
+kg:shirtNumber 23 .
+
+res:player/Declan_Rice a kg:Player ;
+kg:name "Declan Rice" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1999-01-14"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/England ;
+kg:shirtNumber 4 .
+
+res:player/Morgan_Gibbs_White a kg:Player ;
+kg:name "Morgan Gibbs-White" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "2000-01-27"^^xsd:date ;
+kg:birthPlace res:city/Notts ;
+kg:nationality res:country/England ;
+kg:shirtNumber 7 .
+
+res:player/Jordan_Henderson a kg:Player ;
+kg:name "Jordan Henderson" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "1990-06-17"^^xsd:date ;
+kg:birthPlace res:city/Sunderland ;
+kg:nationality res:country/England ;
+kg:shirtNumber 8 .
+
+res:player/Jude_Bellingham a kg:Player ;
+kg:name "Jude Bellingham" ;
+kg:playsFor res:team/England ;
+kg:primaryPosition kg:Midfielder ;
+kg:birthDate "20

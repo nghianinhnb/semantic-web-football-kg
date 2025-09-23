@@ -1,0 +1,229 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/GermanyNationalFootballTeam a kg:Team ;
+kg:teamName "Đội tuyển bóng đá quốc gia Đức" ;
+kg:teamAbbreviation "GER" ;
+kg:hasCoach res:coach/JulianNagelsmann ;
+kg:manages res:coach/JulianNagelsmann .
+
+res:coach/JulianNagelsmann a kg:Coach ;
+kg:manages res:team/GermanyNationalFootballTeam .
+
+res:player/LotharMatthaus a kg:Player ;
+kg:playsFor res:team/GermanyNationalFootballTeam ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1961-06-19"^^xsd:date ;
+kg:birthPlace res:city/Kassel ;
+kg:nationality res:country/Germany ;
+kg:height "183"^^xsd:decimal ;
+kg:weight "78"^^xsd:decimal ;
+kg:shirtNumber "10"^^xsd:positiveInteger ;
+kg:preferredFoot res:footedness/RightFooted .
+
+res:player/MiroslavKlose a kg:Player ;
+kg:playsFor res:team/GermanyNationalFootballTeam ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1978-06-19"^^xsd:date ;
+kg:birthPlace res:city/Schwerin ;
+kg:nationality res:country/Germany ;
+kg:height "188"^^xsd:decimal ;
+kg:weight "82"^^xsd:decimal ;
+kg:shirtNumber "11"^^xsd:positiveInteger ;
+kg:preferredFoot res:footedness/LeftFooted .
+
+res:player/JoshuaKimmich a kg:Player ;
+kg:playsFor res:team/GermanyNationalFootballTeam ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1995-02-08"^^xsd:date ;
+kg:birthPlace res:city/Berlin ;
+kg:nationality res:country/Germany ;
+kg:height "183"^^xsd:decimal ;
+kg:weight "74"^^xsd:decimal ;
+kg:shirtNumber "6"^^xsd:positiveInteger ;
+kg:preferredFoot res:footedness/RightFooted .
+
+res:country/Germany a kg:Country ;
+rdfs:label "Đức" .
+
+res:city/Berlin a kg:City ;
+kg:locatedIn res:country/Germany .
+
+res:city/Kassel a kg:City ;
+kg:locatedIn res:country/Germany .
+
+res:city/Stuttgart a kg:City ;
+kg:locatedIn res:country/Germany .
+
+res:stadium/AllianzArena a kg:Stadium ;
+kg:capacity "60000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Munich .
+
+res:stadium/Westfalenstadion a kg:Stadium ;
+kg:capacity "81360"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Dortmund .
+
+res:stadium/MHPArena a kg:Stadium ;
+kg:capacity "55000"^^xsd:positiveInteger ;
+kg:locatedIn res:city/Stuttgart .
+
+res:position/Defender a kg:Defender .
+
+res:position/Midfielder a kg:Midfielder .
+
+res:position/Forward a kg:Forward .
+
+res:competition/FIFAWorldCup a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá thế giới" ;
+kg:heldIn res:country/Germany .
+
+res:competition/Euro a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá châu Âu" ;
+kg:heldIn res:country/Germany .
+
+res:season/2024 a kg:Season ;
+kg:hasSeason res:competition/Euro .
+
+res:season/2025 a kg:Season ;
+kg:hasSeason res:competition/Euro .
+
+res:match/Euro2024GroupStageGermanyVsScotland a kg:Match ;
+kg:homeTeam res:team/GermanyNationalFootballTeam ;
+kg:awayTeam res:team/Scotland ;
+kg:venue res:stadium/AllianzArena ;
+kg:kickoffTime "2024-06-14T21:00:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Euro ;
+kg:inSeason res:season/2024 ;
+kg:result "Win" .
+
+res:match/Euro2024GroupStageGermanyVsHungary a kg:Match ;
+kg:homeTeam res:team/GermanyNationalFootballTeam ;
+kg:awayTeam res:team/Hungary ;
+kg:venue res:stadium/MHPArena ;
+kg:kickoffTime "2024-06-19T18:00:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Euro ;
+kg:inSeason res:season/2024 ;
+kg:result "Win" .
+
+res:match/Euro2024GroupStageSwitzerlandVsGermany a kg:Match ;
+kg:homeTeam res:team/Switzerland ;
+kg:awayTeam res:team/GermanyNationalFootballTeam ;
+kg:venue res:stadium/Waldstadion ;
+kg:kickoffTime "2024-06-23T21:00:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Euro ;
+kg:inSeason res:season/2024 ;
+kg:result "Draw" .
+
+res:match/Euro2024RoundOf16GermanyVsDenmark a kg:Match ;
+kg:homeTeam res:team/GermanyNationalFootballTeam ;
+kg:awayTeam res:team/Denmark ;
+kg:venue res:stadium/Westfalenstadion ;
+kg:kickoffTime "2024-06-29T21:00:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Euro ;
+kg:inSeason res:season/2024 ;
+kg:result "Win" .
+
+res:match/Euro2024QuarterFinalSpainVsGermany a kg:Match ;
+kg:homeTeam res:team/Spain ;
+kg:awayTeam res:team/GermanyNationalFootballTeam ;
+kg:venue res:stadium/MHPArena ;
+kg:kickoffTime "2024-07-05T18:00:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/Euro ;
+kg:inSeason res:season/2024 ;
+kg:result "Loss" .
+
+res:match/NationsLeague2024GermanyVsHungary a kg:Match ;
+kg:homeTeam res:team/GermanyNationalFootballTeam ;
+kg:awayTeam res:team/Hungary ;
+kg:venue res:stadium/MerkurSpielArena ;
+kg:kickoffTime "2024-09-07T20:45:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/NationsLeague ;
+kg:inSeason res:season/2024 ;
+kg:result "Win" .
+
+res:match/NationsLeague2024NetherlandsVsGermany a kg:Match ;
+kg:homeTeam res:team/Netherlands ;
+kg:awayTeam res:team/GermanyNationalFootballTeam ;
+kg:venue res:stadium/JohanCruyffArena ;
+kg:kickoffTime "2024-09-10T20:45:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/NationsLeague ;
+kg:inSeason res:season/2024 ;
+kg:result "Draw" .
+
+res:match/NationsLeague2024GermanyVsBosnia a kg:Match ;
+kg:homeTeam res:team/GermanyNationalFootballTeam ;
+kg:awayTeam res:team/Bosnia ;
+kg:venue res:stadium/BilinoPolje ;
+kg:kickoffTime "2024-10-11T20:45:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/NationsLeague ;
+kg:inSeason res:season/2024 ;
+kg:result "Win" .
+
+res:match/NationsLeague2024GermanyVsNetherlands a kg:Match ;
+kg:homeTeam res:team/GermanyNationalFootballTeam ;
+kg:awayTeam res:team/Netherlands ;
+kg:venue res:stadium/AllianzArena ;
+kg:kickoffTime "2024-10-14T20:45:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/NationsLeague ;
+kg:inSeason res:season/2024 ;
+kg:result "Win" .
+
+res:match/NationsLeague2024GermanyVsBosnia a kg:Match ;
+kg:homeTeam res:team/GermanyNationalFootballTeam ;
+kg:awayTeam res:team/Bosnia ;
+kg:venue res:stadium/EuropaPark ;
+kg:kickoffTime "2024-11-16T20:45:00+01:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/NationsLeague ;
+kg:inSeason res:season/2024 ;
+kg:result "Win" .
+
+res:match/NationsLeague2024GermanyVsHungary a kg:Match ;
+kg:homeTeam res:team/GermanyNationalFootballTeam ;
+kg:awayTeam res:team/Hungary ;
+kg:venue res:stadium/PuskasArena ;
+kg:kickoffTime "2024-11-19T20:45:00+01:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/NationsLeague ;
+kg:inSeason res:season/2024 ;
+kg:result "Draw" .
+
+res:match/NationsLeague2024ItalyVsGermany a kg:Match ;
+kg:homeTeam res:team/Italy ;
+kg:awayTeam res:team/GermanyNationalFootballTeam ;
+kg:venue res:stadium/SanSiro ;
+kg:kickoffTime "2025-03-20T20:45:00+01:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/NationsLeague ;
+kg:inSeason res:season/2025 ;
+kg:result "Win" .
+
+res:match/NationsLeague2024GermanyVsItaly a kg:Match ;
+kg:homeTeam res:team/GermanyNationalFootballTeam ;
+kg:awayTeam res:team/Italy ;
+kg:venue res:stadium/Westfalenstadion ;
+kg:kickoffTime "2025-03-23T20:45:00+01:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/NationsLeague ;
+kg:inSeason res:season/2025 ;
+kg:result "Draw" .
+
+res:match/NationsLeague2024PortugalVsGermany a kg:Match ;
+kg:homeTeam res:team/Portugal ;
+kg:awayTeam res:team/GermanyNationalFootballTeam ;
+kg:venue res:stadium/AllianzArena ;
+kg:kickoffTime "2025-06-04T21:00:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/NationsLeague ;
+kg:inSeason res:season/2025 ;
+kg:result "Loss" .
+
+res:match/NationsLeague2024FranceVsGermany a kg:Match ;
+kg:homeTeam res:team/France ;
+kg:awayTeam res:team/GermanyNationalFootballTeam ;
+kg:venue res:stadium/MHPArena ;
+kg:kickoffTime "2025-06-08T15:00:00+02:00"^^xsd:dateTime ;
+kg:inCompetition res:competition/NationsLeague ;
+kg:inSeason res:season/2025 ;
+kg:result "Loss" .
+
+res:competition/NationsLeague a kg:Competition ;
+kg:

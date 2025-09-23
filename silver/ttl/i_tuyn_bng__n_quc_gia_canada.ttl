@@ -1,0 +1,282 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Canada a kg:Team ;
+kg:teamName "Canada" ;
+kg:hasCoach res:coach/Bev_Priestman ;
+kg:manages res:coach/Bev_Priestman ;
+kg:teamAbbreviation "CAN" ;
+kg:locatedIn res:country/Canada .
+
+res:coach/Bev_Priestman a kg:Coach ;
+rdfs:label "Bev Priestman" .
+
+res:team/Canada kg:participatesIn res:season/FIFA_Women_s_World_Cup_2023 .
+
+res:team/Canada kg:participatesIn res:season/CONCACAF_Womens_Championship_2022 .
+
+res:team/Canada kg:participatesIn res:season/Olympic_Games_2020 .
+
+res:team/Canada kg:participatesIn res:season/Pan_American_Games_2023 .
+
+res:season/FIFA_Women_s_World_Cup_2023 a kg:Season ;
+kg:seasonOf res:competition/FIFA_Women_s_World_Cup ;
+kg:participantCount 32 .
+
+res:season/CONCACAF_Womens_Championship_2022 a kg:Season ;
+kg:seasonOf res:competition/CONCACAF_Womens_Championship ;
+kg:participantCount 12 .
+
+res:season/Olympic_Games_2020 a kg:Season ;
+kg:seasonOf res:competition/Olympic_Games ;
+kg:participantCount 12 .
+
+res:season/Pan_American_Games_2023 a kg:Season ;
+kg:seasonOf res:competition/Pan_American_Games ;
+kg:participantCount 10 .
+
+res:competition/FIFA_Women_s_World_Cup a kg:Competition ;
+kg:competitionName "FIFA Women's World Cup" ;
+kg:organizedBy res:organization/FIFA ;
+kg:heldIn res:country/World .
+
+res:competition/CONCACAF_Womens_Championship a kg:Competition ;
+kg:competitionName "CONCACAF Womens Championship" ;
+kg:organizedBy res:organization/CONCACAF ;
+kg:heldIn res:country/Canada .
+
+res:competition/Olympic_Games a kg:Competition ;
+kg:competitionName "Olympic Games" ;
+kg:organizedBy res:organization/International_Olympic_Committee ;
+kg:heldIn res:country/World .
+
+res:competition/Pan_American_Games a kg:Competition ;
+kg:competitionName "Pan American Games" ;
+kg:organizedBy res:organization/OCDE ;
+kg:heldIn res:country/World .
+
+res:organization/FIFA a kg:Organization ;
+rdfs:label "Fédération Internationale de Football Association" .
+
+res:organization/CONCACAF a kg:Organization ;
+rdfs:label "Confederation of North, Central America and Caribbean Association Football" .
+
+res:organization/International_Olympic_Committee a kg:Organization ;
+rdfs:label "International Olympic Committee" .
+
+res:organization/OCDE a kg:Organization ;
+rdfs:label "Organization of American States" .
+
+res:country/Canada a kg:Country ;
+rdfs:label "Canada" .
+
+res:country/World a kg:Country ;
+rdfs:label "World" .
+
+res:player/Christine_Sinclair a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1983-06-12"^^xsd:date ;
+kg:birthPlace res:city/Halifax ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 12 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:city/Halifax a kg:City ;
+kg:locatedIn res:country/Canada .
+
+res:player/Jessie_Fleming a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1998-03-11"^^xsd:date ;
+kg:birthPlace res:city/Windsor ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 17 ;
+kg:preferredFoot kg:LeftFooted .
+
+res:city/Windsor a kg:City ;
+kg:locatedIn res:country/Canada .
+
+res:player/Kadeisha_Buchanan a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1995-11-05"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 3 ;
+kg:preferredFoot kg:RightFooted .
+
+res:city/London a kg:City ;
+kg:locatedIn res:country/United_Kingdom .
+
+res:player/Sophie_Schmidt a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1988-06-28"^^xsd:date ;
+kg:birthPlace res:city/Vancouver ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 13 ;
+kg:preferredFoot kg:RightFooted .
+
+res:city/Vancouver a kg:City ;
+kg:locatedIn res:country/Canada .
+
+res:player/Adriana_Leon a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1992-10-02"^^xsd:date ;
+kg:birthPlace res:city/Montreal ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 19 ;
+kg:preferredFoot kg:RightFooted .
+
+res:city/Montreal a kg:City ;
+kg:locatedIn res:country/Canada .
+
+res:player/Janine_Beckie a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Defender ;
+kg:birthDate "1995-03-19"^^xsd:date ;
+kg:birthPlace res:city/Calgary ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 5 ;
+kg:preferredFoot kg:RightFooted .
+
+res:city/Calgary a kg:City ;
+kg:locatedIn res:country/Canada .
+
+res:player/Charmaine_Hooper a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1986-07-22"^^xsd:date ;
+kg:birthPlace res:city/Toronto ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 15 ;
+kg:preferredFoot kg:RightFooted .
+
+res:city/Toronto a kg:City ;
+kg:locatedIn res:country/Canada .
+
+res:player/Desiree_Scott a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "2010-09-23"^^xsd:date ;
+kg:birthPlace res:city/New_York ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 21 ;
+kg:preferredFoot kg:RightFooted .
+
+res:city/New_York a kg:City ;
+kg:locatedIn res:country/United_States_of_America .
+
+res:player/Evelyne_Viens a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1997-02-06"^^xsd:date ;
+kg:birthPlace res:city/Malmö ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 11 ;
+kg:preferredFoot kg:RightFooted .
+
+res:city/Malmö a kg:City ;
+kg:locatedIn res:country/Sweden .
+
+res:player/Nichelle_Prince a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1995-02-19"^^xsd:date ;
+kg:birthPlace res:city/Houston ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 15 ;
+kg:preferredFoot kg:RightFooted .
+
+res:city/Houston a kg:City ;
+kg:locatedIn res:country/United_States_of_America .
+
+res:player/Cloé_Lacasse a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1993-07-07"^^xsd:date ;
+kg:birthPlace res:city/London ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 20 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Erin_Mcleod a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:birthDate "2002-08-05"^^xsd:date ;
+kg:birthPlace res:city/Portugal ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 1 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Diana_Matheson a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1983-06-12"^^xsd:date ;
+kg:birthPlace res:city/Toronto ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 13 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Andrea_Neil a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1991-08-22"^^xsd:date ;
+kg:birthPlace res:city/Toronto ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 7 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Silvana_Burtini a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1987-11-15"^^xsd:date ;
+kg:birthPlace res:city/Brazil ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 9 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Kara_Lang a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "2002-08-05"^^xsd:date ;
+kg:birthPlace res:city/Canada ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 10 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Desiree_Scott a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "2010-09-23"^^xsd:date ;
+kg:birthPlace res:city/New_York ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 21 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Andrea_Neil a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Forward ;
+kg:birthDate "1991-08-22"^^xsd:date ;
+kg:birthPlace res:city/Toronto ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 7 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Sophie_Schmidt a kg:Player ;
+kg:playsFor res:team/Canada ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1988-06-28"^^xsd:date ;
+kg:birthPlace res:city/Vancouver ;
+kg:nationality res:country/Canada ;
+kg:shirtNumber 13 ;
+kg:preferredFoot kg:RightFooted .
+
+res:player/Janine_Beckie a kg:Player ;
+kg:playsFor res:team/Canada ;
+

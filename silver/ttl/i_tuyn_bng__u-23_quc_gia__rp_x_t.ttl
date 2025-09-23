@@ -1,0 +1,104 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/U-23 Ả Rập Xê Út a kg:Team ;
+kg:teamName "U-23 Ả Rập Xê Út" ;
+kg:teamAbbreviation "KSA" ;
+kg:hasCoach res:coach/Saad_Al-Shehri ;
+kg:locatedIn res:country/Ả_Rập_Xê_Út ;
+kg:participatesIn res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè ;
+kg:participatesIn res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á ;
+kg:participatesIn res:competition/Cúp_bóng_đá_U-23_châu_Á ;
+kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_U-23_GCC .
+
+res:coach/Saad_Al-Shehri a kg:Coach ;
+kg:manages res:team/U-23 Ả Rập Xê Út .
+
+res:country/Ả_Rập_Xê_Út a kg:Country .
+
+res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè a kg:Competition ;
+kg:competitionName "Bóng đá tại Thế vận hội Mùa hè" .
+
+res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á a kg:Competition ;
+kg:competitionName "Bóng đá tại Đại hội Thể thao châu Á" .
+
+res:competition/Cúp_bóng_đá_U-23_châu_Á a kg:Competition ;
+kg:competitionName "Cúp bóng đá U-23 châu Á" .
+
+res:competition/Giải_vô_địch_bóng_đá_U-23_GCC a kg:Competition ;
+kg:competitionName "Giải vô địch bóng đá U-23 GCC" .
+
+res:stadium/Sân_vận_động_Quốc_tế_Nhà_vua_Fahd a kg:Stadium ;
+kg:capacity 60000 .
+
+res:team/U-23 Ả Rập Xê Út kg:homeStadium res:stadium/Sân_vận_động_Quốc_tế_Nhà_vua_Fahd .
+
+res:team/U-23 Ả Rập Xê Út kg:participatesIn res:season/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1996 ;
+kg:participatesIn res:season/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_2020 .
+
+res:team/U-23 Ả Rập Xê Út kg:participatesIn res:season/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á_2014 ;
+kg:participatesIn res:season/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á_2018 .
+
+res:team/U-23 Ả Rập Xê Út kg:participatesIn res:season/Cúp_bóng_đá_U-23_châu_Á_2013 ;
+kg:participatesIn res:season/Cúp_bóng_đá_U-23_châu_Á_2016 ;
+kg:participatesIn res:season/Cúp_bóng_đá_U-23_châu_Á_2018 ;
+kg:participatesIn res:season/Cúp_bóng_đá_U-23_châu_Á_2020 ;
+kg:participatesIn res:season/Cúp_bóng_đá_U-23_châu_Á_2022 ;
+kg:participatesIn res:season/Cúp_bóng_đá_U-23_châu_Á_2024 .
+
+res:team/U-23 Ả Rập Xê Út kg:participatesIn res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2008 ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2010 ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2011 ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2012 ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2013 ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2015 .
+
+res:season/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_1996 a kg:Season ;
+kg:seasonOf res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè .
+
+res:season/Bóng_đá_tại_Thế_vận_hội_Mùa_hè_2020 a kg:Season ;
+kg:seasonOf res:competition/Bóng_đá_tại_Thế_vận_hội_Mùa_hè .
+
+res:season/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á_2014 a kg:Season ;
+kg:seasonOf res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á .
+
+res:season/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á_2018 a kg:Season ;
+kg:seasonOf res:competition/Bóng_đá_tại_Đại_hội_Thể_thao_châu_Á .
+
+res:season/Cúp_bóng_đá_U-23_châu_Á_2013 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_U-23_châu_Á .
+
+res:season/Cúp_bóng_đá_U-23_châu_Á_2016 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_U-23_châu_Á .
+
+res:season/Cúp_bóng_đá_U-23_châu_Á_2018 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_U-23_châu_Á .
+
+res:season/Cúp_bóng_đá_U-23_châu_Á_2020 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_U-23_châu_Á .
+
+res:season/Cúp_bóng_đá_U-23_châu_Á_2022 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_U-23_châu_Á .
+
+res:season/Cúp_bóng_đá_U-23_châu_Á_2024 a kg:Season ;
+kg:seasonOf res:competition/Cúp_bóng_đá_U-23_châu_Á .
+
+res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2008 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_U-23_GCC .
+
+res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2010 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_U-23_GCC .
+
+res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2011 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_U-23_GCC .
+
+res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2012 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_U-23_GCC .
+
+res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2013 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_U-23_GCC .
+
+res:season/Giải_vô_địch_bóng_đá_U-23_GCC_2015 a kg:Season ;
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_U-23_GCC .

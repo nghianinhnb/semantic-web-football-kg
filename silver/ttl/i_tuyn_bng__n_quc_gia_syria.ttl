@@ -1,0 +1,168 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Syria a kg:Team ;
+kg:teamName "Syria" ;
+kg:hasCoach res:coach/Abd_Alghani_Tatish ;
+kg:manages res:coach/Abd_Alghani_Tatish ;
+kg:locatedIn res:country/Syria ;
+kg:member res:player/Manar_Mounther ;
+kg:captain res:player/Manar_Mounther ;
+kg:FIFARank "128"^^xsd:integer ;
+kg:FIFAMaxRank "104"^^xsd:integer ;
+kg:FIFAMaxRankDate "2017-12"^^xsd:gYearMonth ;
+kg:FIFAMinRank "148"^^xsd:integer ;
+kg:FIFAMinRankDate "2015-09"^^xsd:gYearMonth ;
+kg:FIFATrigramme "SYR" ;
+kg:affiliatedWith res:organization/Syrian_Football_Association ;
+kg:participatesIn res:competition/West_Asian_Womens_Championship ;
+kg:bestResultInCompetition res:event/West_Asian_Womens_Championship_2005 ;
+kg:rankInCompetition "3"^^xsd:integer ;
+kg:firstMatch res:match/Syria_vs_Iran_2005 ;
+kg:largestWin res:match/Syria_vs_Qatar_2010 ;
+kg:largestLoss res:match/Syria_vs_Myanmar_2017 ;
+kg:didNotQualifyFor res:event/FIFA_Womens_World_Cup_2003, res:event/FIFA_Womens_World_Cup_2007, res:event/FIFA_Womens_World_Cup_2011, res:event/FIFA_Womens_World_Cup_2015, res:event/FIFA_Womens_World_Cup_2019 ;
+kg:didNotQualifyFor res:event/Olympics_Womens_Football_1996, res:event/Olympics_Womens_Football_2000, res:event/Olympics_Womens_Football_2004, res:event/Olympics_Womens_Football_2008, res:event/Olympics_Womens_Football_2012, res:event/Olympics_Womens_Football_2016, res:event/Olympics_Womens_Football_2020 ;
+kg:didNotQualifyFor res:event/Asian_Womens_Championship_2003, res:event/Asian_Womens_Championship_2006, res:event/Asian_Womens_Championship_2008, res:event/Asian_Womens_Championship_2010, res:event/Asian_Womens_Championship_2014, res:event/Asian_Womens_Championship_2018 .
+
+res:coach/Abd_Alghani_Tatish a kg:Coach ;
+kg:name "Abd Alghani Tatish" .
+
+res:player/Manar_Mounther a kg:Player ;
+kg:name "Manar Mounther" ;
+kg:memberOf res:team/Syria .
+
+res:organization/Syrian_Football_Association a kg:Organization ;
+kg:name "Syrian Football Association" .
+
+res:event/West_Asian_Womens_Championship_2005 a kg:Competition ;
+kg:competitionName "West Asian Womens Championship 2005" .
+
+res:event/FIFA_Womens_World_Cup_2003 a kg:Competition ;
+kg:competitionName "FIFA Womens World Cup 2003" .
+
+res:event/FIFA_Womens_World_Cup_2007 a kg:Competition ;
+kg:competitionName "FIFA Womens World Cup 2007" .
+
+res:event/FIFA_Womens_World_Cup_2011 a kg:Competition ;
+kg:competitionName "FIFA Womens World Cup 2011" .
+
+res:event/FIFA_Womens_World_Cup_2015 a kg:Competition ;
+kg:competitionName "FIFA Womens World Cup 2015" .
+
+res:event/FIFA_Womens_World_Cup_2019 a kg:Competition ;
+kg:competitionName "FIFA Womens World Cup 2019" .
+
+res:event/Olympics_Womens_Football_1996 a kg:Competition ;
+kg:competitionName "Olympics Womens Football 1996" .
+
+res:event/Olympics_Womens_Football_2000 a kg:Competition ;
+kg:competitionName "Olympics Womens Football 2000" .
+
+res:event/Olympics_Womens_Football_2004 a kg:Competition ;
+kg:competitionName "Olympics Womens Football 2004" .
+
+res:event/Olympics_Womens_Football_2008 a kg:Competition ;
+kg:competitionName "Olympics Womens Football 2008" .
+
+res:event/Olympics_Womens_Football_2012 a kg:Competition ;
+kg:competitionName "Olympics Womens Football 2012" .
+
+res:event/Olympics_Womens_Football_2016 a kg:Competition ;
+kg:competitionName "Olympics Womens Football 2016" .
+
+res:event/Olympics_Womens_Football_2020 a kg:Competition ;
+kg:competitionName "Olympics Womens Football 2020" .
+
+res:event/Asian_Womens_Championship_2003 a kg:Competition ;
+kg:competitionName "Asian Womens Championship 2003" .
+
+res:event/Asian_Womens_Championship_2006 a kg:Competition ;
+kg:competitionName "Asian Womens Championship 2006" .
+
+res:event/Asian_Womens_Championship_2008 a kg:Competition ;
+kg:competitionName "Asian Womens Championship 2008" .
+
+res:event/Asian_Womens_Championship_2010 a kg:Competition ;
+kg:competitionName "Asian Womens Championship 2010" .
+
+res:event/Asian_Womens_Championship_2014 a kg:Competition ;
+kg:competitionName "Asian Womens Championship 2014" .
+
+res:event/Asian_Womens_Championship_2018 a kg:Competition ;
+kg:competitionName "Asian Womens Championship 2018" .
+
+res:event/West_Asian_Womens_Championship_2005 a kg:Competition ;
+kg:competitionName "West Asian Womens Championship 2005" .
+
+res:event/West_Asian_Womens_Championship_2007 a kg:Competition ;
+kg:competitionName "West Asian Womens Championship 2007" .
+
+res:event/West_Asian_Womens_Championship_2010 a kg:Competition ;
+kg:competitionName "West Asian Womens Championship 2010" .
+
+res:event/West_Asian_Womens_Championship_2011 a kg:Competition ;
+kg:competitionName "West Asian Womens Championship 2011" .
+
+res:event/West_Asian_Womens_Championship_2014 a kg:Competition ;
+kg:competitionName "West Asian Womens Championship 2014" .
+
+res:event/Arab_Womens_Championship_2006 a kg:Competition ;
+kg:competitionName "Arab Womens Championship 2006" .
+
+res:event/Arab_Womens_Cup_2010 a kg:Competition ;
+kg:competitionName "Arab Womens Cup 2010" .
+
+res:match/Syria_vs_Iran_2005 a kg:Match ;
+kg:homeTeam res:team/Syria ;
+kg:awayTeam res:team/Iran ;
+kg:venue res:place/Amman ;
+kg:kickoffTime "2005-09-23"^^xsd:date .
+
+res:match/Syria_vs_Qatar_2010 a kg:Match ;
+kg:homeTeam res:team/Syria ;
+kg:awayTeam res:team/Qatar ;
+kg:venue res:place/Manama ;
+kg:kickoffTime "2010-10-22"^^xsd:date .
+
+res:match/Syria_vs_Myanmar_2017 a kg:Match ;
+kg:homeTeam res:team/Myanmar ;
+kg:awayTeam res:team/Syria ;
+kg:venue res:place/Hanoi ;
+kg:kickoffTime "2017-04-07"^^xsd:date .
+
+res:country/Syria a kg:Country ;
+kg:name "Syria" .
+
+res:place/Amman a kg:City ;
+kg:name "Amman" ;
+kg:locatedIn res:country/Jordan .
+
+res:place/Manama a kg:City ;
+kg:name "Manama" ;
+kg:locatedIn res:country/Bahrain .
+
+res:place/Hanoi a kg:City ;
+kg:name "Hanoi" ;
+kg:locatedIn res:country/Vietnam .
+
+res:country/Jordan a kg:Country ;
+kg:name "Jordan" .
+
+res:country/Bahrain a kg:Country ;
+kg:name "Bahrain" .
+
+res:country/Vietnam a kg:Country ;
+kg:name "Vietnam" .
+
+res:team/Iran a kg:Team ;
+kg:teamName "Iran" .
+
+res:team/Qatar a kg:Team ;
+kg:teamName "Qatar" .
+
+res:team/Myanmar a kg:Team ;
+kg:teamName "Myanmar" .

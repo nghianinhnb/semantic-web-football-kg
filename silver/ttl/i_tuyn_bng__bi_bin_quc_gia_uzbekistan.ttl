@@ -1,0 +1,74 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/UzbekistanNationalBeachSoccerTeam a kg:Team ;
+kg:teamName "Uzbekistan National Beach Soccer Team" ;
+kg:locatedIn res:country/Uzbekistan ;
+kg:hasCoach res:coach/AkhadjonYusupov ;
+kg:organizedBy res:organization/UFF .
+
+res:organization/UFF a kg:Organization ;
+kg:organizes res:competition/AsianBeachSoccerChampionship .
+
+res:coach/AkhadjonYusupov a kg:Coach ;
+kg:manages res:team/UzbekistanNationalBeachSoccerTeam .
+
+res:player/GanisherKholmurodov a kg:Player ;
+kg:playsFor res:team/UzbekistanNationalBeachSoccerTeam ;
+kg:shirtNumber 1 ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/FarkhodMirakhmedov a kg:Player ;
+kg:playsFor res:team/UzbekistanNationalBeachSoccerTeam ;
+kg:shirtNumber 2 .
+
+res:player/TokhirAbdurazzakov a kg:Player ;
+kg:playsFor res:team/UzbekistanNationalBeachSoccerTeam ;
+kg:shirtNumber 3 .
+
+res:player/SarvarShaakhmedov a kg:Player ;
+kg:playsFor res:team/UzbekistanNationalBeachSoccerTeam ;
+kg:shirtNumber 6 .
+
+res:player/FeruzFakhriddinov a kg:Player ;
+kg:playsFor res:team/UzbekistanNationalBeachSoccerTeam ;
+kg:shirtNumber 7 .
+
+res:player/SarvarKholmurodov a kg:Player ;
+kg:playsFor res:team/UzbekistanNationalBeachSoccerTeam ;
+kg:shirtNumber 9 .
+
+res:player/JamoliddinSharipov a kg:Player ;
+kg:playsFor res:team/UzbekistanNationalBeachSoccerTeam ;
+kg:shirtNumber 10 .
+
+res:player/Khazratkulov a kg:Player ;
+kg:playsFor res:team/UzbekistanNationalBeachSoccerTeam ;
+kg:shirtNumber 12 ;
+kg:primaryPosition res:position/Goalkeeper .
+
+res:player/JafarIrismetov a kg:Player ;
+kg:playsFor res:team/UzbekistanNationalBeachSoccerTeam ;
+kg:shirtNumber 11 ;
+kg:primaryPosition res:position/Forward .
+
+res:player/FarkhodJumaev a kg:Player ;
+kg:playsFor res:team/UzbekistanNationalBeachSoccerTeam ;
+kg:shirtNumber 13 ;
+kg:primaryPosition res:position/Forward .
+
+res:competition/AsianBeachSoccerChampionship a kg:Competition ;
+kg:competitionName "Asian Beach Soccer Championship" ;
+kg:heldIn res:country/Uzbekistan .
+
+res:competition/AsianBeachGames a kg:Competition ;
+kg:competitionName "Asian Beach Games" ;
+kg:heldIn res:country/Uzbekistan .
+
+res:country/Uzbekistan a kg:Country ;
+rdfs:label "Uzbekistan" .
+
+res:organization/UFF a kg:Organization ;
+rdfs:label "Uzbekistan Football Federation" .
