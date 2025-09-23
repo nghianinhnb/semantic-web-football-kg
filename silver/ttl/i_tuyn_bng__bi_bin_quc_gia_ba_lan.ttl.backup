@@ -1,0 +1,147 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Ba_Lan a kg:Team ;
+    kg:teamName "Ba Lan" ;
+    kg:hasCoach res:coach/Marcin_Stanislawski ;
+    kg:locatedIn res:country/Ba_Lan .
+
+res:coach/Marcin_Stanislawski a kg:Coach ;
+    kg:manages res:team/Ba_Lan .
+
+res:country/Ba_Lan a kg:Country .
+
+res:team/Ba_Lan kg:participatesIn res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2017_khu_vuc_chau_Au .
+
+res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2017_khu_vuc_chau_Au a kg:Season ;
+    kg:seasonOf res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au .
+
+res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au a kg:Competition ;
+    kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới khu vực châu Âu" .
+
+res:team/Ba_Lan kg:participatesIn res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2008_khu_vuc_chau_Au .
+
+res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2008_khu_vuc_chau_Au a kg:Season ;
+    kg:seasonOf res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au .
+
+res:team/Ba_Lan kg:participatesIn res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2009_khu_vuc_chau_Au .
+
+res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2009_khu_vuc_chau_Au a kg:Season ;
+    kg:seasonOf res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au .
+
+res:team/Ba_Lan kg:participatesIn res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2011_khu_vuc_chau_Au .
+
+res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2011_khu_vuc_chau_Au a kg:Season ;
+    kg:seasonOf res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au .
+
+res:team/Ba_Lan kg:participatesIn res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2013_khu_vuc_chau_Au .
+
+res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2013_khu_vuc_chau_Au a kg:Season ;
+    kg:seasonOf res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au .
+
+res:team/Ba_Lan kg:participatesIn res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2015_khu_vuc_chau_Au .
+
+res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2015_khu_vuc_chau_Au a kg:Season ;
+    kg:seasonOf res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au .
+
+res:team/Ba_Lan kg:participatesIn res:season/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_2017_khu_vuc_chau_Au .
+
+res:team/Ba_Lan kg:hasCaptain res:player/Witold_Ziober .
+
+res:player/Witold_Ziober a kg:Player ;
+    kg:playsFor res:team/Ba_Lan .
+
+res:player/Maciej_Marciniak a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 1 .
+
+res:player/Tomasz_Lenart a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 5 .
+
+res:player/Witold_Ziober a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 7 .
+
+res:player/Boguslaw_Saganowski a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 8 .
+
+res:player/Lukasz_Stasiak a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 9 .
+
+res:player/Piotr_Klepczarek a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 11 .
+
+res:player/Szymon_Gasinski a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 12 .
+
+res:player/Jakub_Jesionowski a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 14 .
+
+res:player/Kamil_Kucharski a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 17 .
+
+res:player/Filip_Gac a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 18 .
+
+res:player/Dominik_Depta a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 19 .
+
+res:player/Karim_Madani a kg:Player ;
+    kg:playsFor res:team/Ba_Lan ;
+    kg:shirtNumber 20 .
+
+res:team/Ba_Lan kg:participatesIn res:competition/Giai_vo_dich_bong_da_bai_bien_chau_Au .
+
+res:competition/Giai_vo_dich_bong_da_bai_bien_chau_Au a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển châu Âu" .
+
+res:team/Ba_Lan kg:participatesIn res:competition/Giai_vo_dich_bong_da_bai_bien_the_gioi .
+
+res:competition/Giai_vo_dich_bong_da_bai_bien_the_gioi a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+
+res:team/Ba_Lan kg:participatesIn res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au .
+
+res:match/2003-08-02_POL_vs_NOR a kg:Match ;
+    kg:homeTeam res:team/Ba_Lan ;
+    kg:awayTeam res:team/NOR ;
+    kg:venue res:stadium/Chodecz ;
+    kg:kickoffTime "2003-08-02"^^xsd:date ;
+    kg:inCompetition res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au .
+
+res:match/2006-07-09_POL_vs_GRE a kg:Match ;
+    kg:homeTeam res:team/Ba_Lan ;
+    kg:awayTeam res:team/GRE ;
+    kg:venue res:stadium/Poddębice ;
+    kg:kickoffTime "2006-07-09"^^xsd:date ;
+    kg:inCompetition res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au .
+
+res:match/2009-05-23_POL_vs_POR a kg:Match ;
+    kg:homeTeam res:team/Ba_Lan ;
+    kg:awayTeam res:team/POR ;
+    kg:venue res:stadium/Rome ;
+    kg:kickoffTime "2009-05-23"^^xsd:date ;
+    kg:inCompetition res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au .
+
+res:team/Ba_Lan kg:hasBestResultInCompetition res:competition/Giai_vo_dich_bong_da_bai_bien_chau_Au ;
+    kg:result "Hạng ba" ;
+    kg:year "2006" .
+
+res:team/Ba_Lan kg:hasBestResultInCompetition res:competition/Giai_vo_dich_bong_da_bai_bien_the_gioi ;
+    kg:result "Hạng 11" ;
+    kg:year "2006" .
+
+res:team/Ba_Lan kg:hasBestResultInCompetition res:competition/Vong_loai_Giai_vo_dich_bong_da_bai_bien_the_gioi_khu_vuc_chau_Au ;
+    kg:result "Vô địch" ;
+    kg:year "2017" .

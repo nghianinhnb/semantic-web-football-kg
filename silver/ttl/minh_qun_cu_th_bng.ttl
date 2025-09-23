@@ -5,13 +5,13 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://kg-football.vn/resource/player/Đỗ_Minh_Quân>
-    a kg:Player ; 
-    kg:playsFor res:team/?? ;
-    kg:primaryPosition res:position/?? ;
-    kg:birthDate ?? ;
-    kg:birthPlace res:city/?? ;
-    kg:nationality res:country/?? ;
-    kg:height ?? ;
-    kg:weight ?? ;
-    kg:shirtNumber ?? ;
-    kg:preferredFoot kg:??.
+a kg:Player ;
+kg:playsFor res:team/?? ;
+kg:primaryPosition res:position/?? ;
+kg:birthDate ?? ;
+kg:birthPlace res:city/?? ;
+kg:nationality res:country/?? ;
+kg:height ?? ;
+kg:weight ?? ;
+kg:shirtNumber ?? ;
+kg:preferredFoot kg:??.

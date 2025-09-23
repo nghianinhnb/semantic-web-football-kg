@@ -3,12 +3,12 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 [] a kg:Player ;
-    kg:playsFor res:team/El_Elche ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:birthDate "1987-05-17"^^xsd:date ;
-    kg:birthPlace res:city/Albacete ;
-    kg:nationality res:country/Spain ;
-    kg:height 1.83 ;
-    kg:weight 73 ;
-    kg:shirtNumber 8 ;
-    kg:preferredFoot res:footedness/LeftFooted .
+kg:playsFor res:team/El_Elche ;
+kg:primaryPosition res:position/Midfielder ;
+kg:birthDate "1987-05-17"^^xsd:date ;
+kg:birthPlace res:city/Albacete ;
+kg:nationality res:country/Spain ;
+kg:height 1.83 ;
+kg:weight 73 ;
+kg:shirtNumber 8 ;
+kg:preferredFoot res:footedness/LeftFooted .

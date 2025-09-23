@@ -1,0 +1,104 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Fiji_National_Beach_Soccer_Team a kg:Team ;
+    kg:teamName "Fiji National Beach Soccer Team" ;
+    kg:hasCoach res:coach/Intiaz_Khan ;
+    kg:locatedIn res:country/Fiji ;
+    kg:organizedBy res:organization/OFC ;
+    kg:participantCount "2"^^xsd:positiveInteger ;
+    kg:heldIn res:country/Fiji .
+
+res:organization/OFC a kg:Organization ;
+    rdfs:label "OFC" .
+
+res:country/Fiji a kg:Country ;
+    rdfs:label "Fiji" .
+
+res:coach/Intiaz_Khan a kg:Coach ;
+    kg:manages res:team/Fiji_National_Beach_Soccer_Team .
+
+res:player/Benaminio_Mateinaqara a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:shirtNumber "1"^^xsd:positiveInteger .
+
+res:player/Luke_Rawadamu a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber "2"^^xsd:positiveInteger .
+
+res:player/Archie_Watkins a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber "3"^^xsd:positiveInteger .
+
+res:player/Sandeep_Nair a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:shirtNumber "4"^^xsd:positiveInteger .
+
+res:player/Sanaila_Dakaica a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber "5"^^xsd:positiveInteger .
+
+res:player/Jo_Dugucagi a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber "6"^^xsd:positiveInteger .
+
+res:player/Maciu_Dunadamu a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:shirtNumber "7"^^xsd:positiveInteger .
+
+res:player/Shailend_Buisena a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber "8"^^xsd:positiveInteger .
+
+res:player/Epeli_Saukuru a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber "9"^^xsd:positiveInteger .
+
+res:player/Rajnesh_Ratan a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber "10"^^xsd:positiveInteger .
+
+res:player/Veresa_Toma a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:shirtNumber "11"^^xsd:positiveInteger .
+
+res:player/Sheik_Moshin a kg:Player ;
+    kg:playsFor res:team/Fiji_National_Beach_Soccer_Team ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:shirtNumber "20"^^xsd:positiveInteger .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+    rdfs:label "Goalkeeper" .
+
+res:position/Defender a kg:Defender ;
+    rdfs:label "Defender" .
+
+res:position/Midfielder a kg:Midfielder ;
+    rdfs:label "Midfielder" .
+
+res:position/Forward a kg:Forward ;
+    rdfs:label "Forward" .
+
+res:competition/Oceanian_Beach_Soccer_Championship a kg:Competition ;
+    kg:competitionName "Oceanian Beach Soccer Championship" ;
+    kg:heldIn res:country/Fiji .
+
+res:season/2009 a kg:Season ;
+    kg:seasonOf res:competition/Oceanian_Beach_Soccer_Championship .
+
+res:season/2011 a kg:Season ;
+    kg:seasonOf res:competition/Oceanian_Beach_Soccer_Championship ;
+    kg:participantCount "3"^^xsd:positiveInteger .

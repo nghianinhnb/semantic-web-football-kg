@@ -1,0 +1,71 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Greece_National_Beach_Football_Team a kg:Team ;
+    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Hy Lạp" ;
+    kg:hasCoach res:coach/Stefanos_Soilemes ;
+    kg:locatedIn res:country/Hy_Lạp ;
+    kg:managedBy res:coach/Stefanos_Soilemes .
+
+res:coach/Stefanos_Soilemes a kg:Coach ;
+    kg:name "Stefanos Soilemes" .
+
+res:country/Hy_Lạp a kg:Country ;
+    rdfs:label "Hy Lạp" .
+
+res:player/Dimitrios_Nikolaou a kg:Player ;
+    kg:playsFor res:team/Greece_National_Beach_Football_Team ;
+    kg:primaryPosition kg:Goalkeeper ;
+    kg:shirtNumber 1 .
+
+res:player/Konstantinos_Papastathopoulos a kg:Player ;
+    kg:playsFor res:team/Greece_National_Beach_Football_Team ;
+    kg:primaryPosition kg:Defender ;
+    kg:shirtNumber 4 .
+
+res:player/Theophilos_Triantafyllidis a kg:Player ;
+    kg:playsFor res:team/Greece_National_Beach_Football_Team ;
+    kg:primaryPosition kg:Defender ;
+    kg:shirtNumber 5 ;
+    kg:topScorer true ;
+    kg:mostCaps true .
+
+res:player/Nikos_Bertsias a kg:Player ;
+    kg:playsFor res:team/Greece_National_Beach_Football_Team ;
+    kg:primaryPosition kg:Forward ;
+    kg:shirtNumber 8 .
+
+res:player/Ioannis_Dellaportas a kg:Player ;
+    kg:playsFor res:team/Greece_National_Beach_Football_Team ;
+    kg:primaryPosition kg:Midfielder ;
+    kg:shirtNumber 9 .
+
+res:player/Paraskevas_Konstantakopoulos a kg:Player ;
+    kg:playsFor res:team/Greece_National_Beach_Football_Team ;
+    kg:primaryPosition kg:Midfielder ;
+    kg:shirtNumber 10 ;
+    kg:captain true .
+
+res:player/Panagiotis_Pertsas a kg:Player ;
+    kg:playsFor res:team/Greece_National_Beach_Football_Team ;
+    kg:primaryPosition kg:Goalkeeper ;
+    kg:shirtNumber 12 .
+
+res:player/Nektarios_Bertsias a kg:Player ;
+    kg:playsFor res:team/Greece_National_Beach_Football_Team ;
+    kg:primaryPosition kg:Midfielder ;
+    kg:shirtNumber 15 .
+
+res:player/Eleftherios_Kouvaras a kg:Player ;
+    kg:playsFor res:team/Greece_National_Beach_Football_Team ;
+    kg:primaryPosition kg:Forward ;
+    kg:shirtNumber 18 .
+
+res:player/Ilias_Bousmpouras a kg:Player ;
+    kg:playsFor res:team/Greece_National_Beach_Football_Team ;
+    kg:primaryPosition kg:Forward ;
+    kg:shirtNumber 20 .
+```

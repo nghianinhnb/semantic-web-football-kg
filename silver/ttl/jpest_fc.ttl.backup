@@ -1,0 +1,199 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:club/Újpest FC a kg:Club ;
+    kg:teamName "Újpest Football Club" ;
+    kg:teamAbbreviation "UTE" ;
+    kg:foundedDate "1885-06-16"^^xsd:date ;
+    kg:homeStadium res:stadium/Szusza Ferenc Stadion ;
+    kg:hasOwner res:owner/Roderick Duchâtelet ;
+    kg:hasCoach res:coach/Michael Oenning ;
+    kg:locatedIn res:city/Budapest .
+
+res:stadium/Szusza Ferenc Stadion a kg:Stadium ;
+    kg:capacity 14817 ;
+    kg:isHomeOf res:club/Újpest FC .
+
+res:owner/Roderick Duchâtelet a kg:Owner ;
+    kg:owns res:club/Újpest FC .
+
+res:coach/Michael Oenning a kg:Coach ;
+    kg:manages res:club/Újpest FC .
+
+res:club/Újpest FC B a kg:Club ;
+    kg:teamName "Újpest Football Club \"B\"" ;
+    kg:teamAbbreviation "UTE-B" ;
+    kg:foundedDate "2007-01-01"^^xsd:date ;
+    kg:locatedIn res:city/Budapest .
+
+res:city/Budapest a kg:City .
+
+res:competition/NB I a kg:Competition ;
+    kg:competitionName "National Borsé (NB I)" .
+
+res:season/2021–22 a kg:Season ;
+    kg:participatesIn res:club/Újpest FC .
+
+res:club/Újpest FC kg:position "6/12" .
+
+res:club/Újpest FC kg:website "http://www.ujpestfc.hu/" .
+
+res:club/Újpest FC kg:current "Újpest FC mùa giải 2020–21" .
+
+res:club/Újpest FC kg:nickname "Lilák (Purples), Dózsa" .
+
+res:stadium/Szusza Ferenc Stadion kg:locatedIn res:city/Budapest .
+
+res:club/Újpest FC kg:leagues res:competition/NB I .
+
+res:club/Újpest FC kg:manager res:coach/Michael Oenning .
+
+res:club/Újpest FC kg:owner res:owner/Roderick Duchâtelet .
+
+res:club/Újpest FC kg:history "Được thành lập vào năm 1885, Újpest đã lọt đến hạng đấu cao nhất - giải vô địch Hungary vào năm 1905 và chỉ bị rớt hạng một lần kể từ đó. Câu lạc bộ đã trở thành một phần của giải vô địch Hungary trong 108 năm liên tiếp. Újpest đã trở thành nhà vô địch bóng đá Hungary tới 20 lần, đoạt Cúp bóng đá Hungary 11 lần và Siêu cúp bóng đá Hungary 3 lần." .
+
+res:club/Újpest FC kg:trophies [
+    a kg:Trophy ;
+    kg:name "Vô địch Giải vô địch Quốc gia Hungary" ;
+    kg:count 20 ;
+] , [
+    a kg:Trophy ;
+    kg:name "Vô địch Cúp bóng đá Hungary" ;
+    kg:count 11 ;
+] , [
+    a kg:Trophy ;
+    kg:name "Vô địch Siêu cúp bóng đá Hungary" ;
+    kg:count 3 ;
+] , [
+    a kg:Trophy ;
+    kg:name "Vô địch Cúp Mitropa" ;
+    kg:count 2 ;
+] , [
+    a kg:Trophy ;
+    kg:name "Vô địch Coupe des Nations 1930" ;
+    kg:count 1 ;
+] .
+
+res:club/Újpest FC kg:internationalParticipation [
+    a kg:InternationalParticipation ;
+    kg:competition "Inter-Cities Fairs Cup" ;
+    kg:year "1968–69" ;
+    kg:result "Á quân" ;
+] , [
+    a kg:InternationalParticipation ;
+    kg:competition "UEFA Cup Winners' Cup" ;
+    kg:year "1961–62" ;
+    kg:result "Á quân" ;
+] , [
+    a kg:InternationalParticipation ;
+    kg:competition "UEFA Champions League" ;
+    kg:year "1973–74" ;
+    kg:result "Vòng bán kết" ;
+] .
+
+res:club/Újpest FC kg:stadiumHistory [
+    a kg:StadiumHistory ;
+    kg:stadiumName "Megyeri úti stadium" ;
+    kg:startYear "1922" ;
+    kg:endYear "2003" ;
+] , [
+    a kg:StadiumHistory ;
+    kg:stadiumName "Szusza Ferenc Stadion" ;
+    kg:startYear "2003" ;
+] .
+
+res:club/Újpest FC kg:sponsorship [
+    a kg:Sponsorship ;
+    kg:sponsor "Joma" ;
+    kg:years "2016–2017, 2017–2018" ;
+] , [
+    a kg:Sponsorship ;
+    kg:sponsor "Coca-Cola" ;
+    kg:years "Hiện tại" ;
+] , [
+    a kg:Sponsorship ;
+    kg:sponsor "Microsoft" ;
+    kg:years "Hiện tại" ;
+] , [
+    a kg:Sponsorship ;
+    kg:sponsor "Acquaworld Budapest" ;
+    kg:years "Hiện tại" ;
+] , [
+    a kg:Sponsorship ;
+    kg:sponsor "Ramada Resort Budapest" ;
+    kg:years "Hiện tại" ;
+] , [
+    a kg:Sponsorship ;
+    kg:sponsor "Puebla ticket" ;
+    kg:years "Hiện tại" ;
+] , [
+    a kg:Sponsorship ;
+    kg:sponsor "Karzol Trans" ;
+    kg:years "Hiện tại" ;
+] , [
+    a kg:Sponsorship ;
+    kg:sponsor "Szókép Nyomdaipari Kft." ;
+    kg:years "Hiện tại" ;
+] , [
+    a kg:Sponsorship ;
+    kg:sponsor "Lamborghini" ;
+    kg:years "Hiện tại" ;
+] .
+
+res:club/Újpest FC kg:logoColor "Purple" .
+
+res:club/Újpest FC kg:colors "Purple, White" .
+
+res:club/Újpest FC kg:rival res:club/Ferencvárosi TC .
+
+res:club/Újpest FC kg:location "Újpest, Budapest" .
+
+res:club/Újpest FC kg:historyOfNames [
+    a kg:NameChange ;
+    kg:oldName "Újpesti Torna Egylet" ;
+    kg:newName "Újpest FC" ;
+    kg:date "1926" ;
+] , [
+    a kg:NameChange ;
+    kg:oldName "Újpest FC" ;
+    kg:newName "Bp. Dózsa SE" ;
+    kg:date "1950" ;
+] , [
+    a kg:NameChange ;
+    kg:oldName "Bp. Dózsa SE" ;
+    kg:newName "Újpesti TE" ;
+    kg:date "1956" ;
+] , [
+    a kg:NameChange ;
+    kg:oldName "Újpesti TE" ;
+    kg:newName "Ú. Dózsa SC" ;
+    kg:date "1957" ;
+] , [
+    a kg:NameChange ;
+    kg:oldName "Ú. Dózsa SC" ;
+    kg:newName "Újpesti TE" ;
+    kg:date "1991" ;
+] , [
+    a kg:NameChange ;
+    kg:oldName "Újpesti TE" ;
+    kg:newName "Újpest FC" ;
+    kg:date "1998" ;
+] .
+
+res:club/Újpest FC kg:historyOfOwnership [
+    a kg:OwnershipChange ;
+    kg:previousOwner "Unknown" ;
+    kg:newOwner res:owner/Roderick Duchâtelet ;
+    kg:date "2011" ;
+] .
+
+res:club/Újpest FC kg:historyOfManagers [
+    a kg:ManagerHistory ;
+    kg:managerName "Michael Oenning" ;
+    kg:startYear "2020" ;
+    kg:endYear "Present" ;
+] .
+```

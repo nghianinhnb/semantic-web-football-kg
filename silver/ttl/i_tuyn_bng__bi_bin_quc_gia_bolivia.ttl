@@ -4,178 +4,178 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 res:team/BoliviaNationalBeachSoccerTeam a kg:Team ;
-    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Bolivia" ;
-    kg:hasCoach res:coach/AntonioGigliotti ;
-    kg:locatedIn res:country/Bolivia ;
-    kg:organizedBy res:organization/FederacionBolivianaDeFutbol .
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Bolivia" ;
+kg:hasCoach res:coach/AntonioGigliotti ;
+kg:locatedIn res:country/Bolivia ;
+kg:organizedBy res:organization/FederacionBolivianaDeFutbol .
 
 res:organization/FederacionBolivianaDeFutbol a kg:Organization ;
-    rdfs:label "Federación Boliviana de Fútbol" .
+rdfs:label "Federación Boliviana de Fútbol" .
 
 res:coach/AntonioGigliotti a kg:Coach ;
-    rdfs:label "Antonio Gigliotti" .
+rdfs:label "Antonio Gigliotti" .
 
 res:player/RembertoPortales a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "1" ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "1" ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:nationality res:country/Bolivia .
 
 res:player/CarlosGuardia a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "2" ;
-    kg:primaryPosition res:position/Forward ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "2" ;
+kg:primaryPosition res:position/Forward ;
+kg:nationality res:country/Bolivia .
 
 res:player/MarceloGuzman a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "3" ;
-    kg:primaryPosition res:position/Defender ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "3" ;
+kg:primaryPosition res:position/Defender ;
+kg:nationality res:country/Bolivia .
 
 res:player/JorgeSuarez a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "4" ;
-    kg:primaryPosition res:position/Defender ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "4" ;
+kg:primaryPosition res:position/Defender ;
+kg:nationality res:country/Bolivia .
 
 res:player/OliverAlgarañaz a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "5" ;
-    kg:primaryPosition res:position/Forward ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "5" ;
+kg:primaryPosition res:position/Forward ;
+kg:nationality res:country/Bolivia .
 
 res:player/YhonnyMoron a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "6" ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "6" ;
+kg:primaryPosition res:position/Midfielder ;
+kg:nationality res:country/Bolivia .
 
 res:player/PabloZapata a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "7" ;
-    kg:primaryPosition res:position/Forward ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "7" ;
+kg:primaryPosition res:position/Forward ;
+kg:nationality res:country/Bolivia .
 
 res:player/JulioZambrano a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "8" ;
-    kg:primaryPosition res:position/Forward ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "8" ;
+kg:primaryPosition res:position/Forward ;
+kg:nationality res:country/Bolivia .
 
 res:player/IverCastedo a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "9" ;
-    kg:primaryPosition res:position/Forward ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "9" ;
+kg:primaryPosition res:position/Forward ;
+kg:nationality res:country/Bolivia .
 
 res:player/PedroLopez a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "10" ;
-    kg:primaryPosition res:position/Forward ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "10" ;
+kg:primaryPosition res:position/Forward ;
+kg:nationality res:country/Bolivia .
 
 res:player/BerthyAlpire a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "11" ;
-    kg:primaryPosition res:position/Forward ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "11" ;
+kg:primaryPosition res:position/Forward ;
+kg:nationality res:country/Bolivia .
 
 res:player/CarlosCarreño a kg:Player ;
-    kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:shirtNumber "12" ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:nationality res:country/Bolivia .
+kg:playsFor res:team/BoliviaNationalBeachSoccerTeam ;
+kg:shirtNumber "12" ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:nationality res:country/Bolivia .
 
 res:position/Goalkeeper a kg:Position ;
-    rdfs:label "Goalkeeper" .
+rdfs:label "Goalkeeper" .
 
 res:position/Defender a kg:Position ;
-    rdfs:label "Defender" .
+rdfs:label "Defender" .
 
 res:position/Midfielder a kg:Position ;
-    rdfs:label "Midfielder" .
+rdfs:label "Midfielder" .
 
 res:position/Forward a kg:Position ;
-    rdfs:label "Forward" .
+rdfs:label "Forward" .
 
 res:country/Bolivia a kg:Country ;
-    rdfs:label "Bolivia" .
+rdfs:label "Bolivia" .
 
 res:competition/WorldBeachSoccerChampionship a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
 
 res:competition/CONMEBOLBeachSoccerChampionship a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới khu vực Nam Mỹ" .
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới khu vực Nam Mỹ" .
 
 res:competition/CopaAmericaBeachSoccer a kg:Competition ;
-    kg:competitionName "Copa América de Beach Soccer" .
+kg:competitionName "Copa América de Beach Soccer" .
 
 res:season/2015 a kg:Season ;
-    kg:seasonOf res:competition/CONMEBOLBeachSoccerChampionship .
+kg:seasonOf res:competition/CONMEBOLBeachSoccerChampionship .
 
 res:season/2017 a kg:Season ;
-    kg:seasonOf res:competition/CONMEBOLBeachSoccerChampionship .
+kg:seasonOf res:competition/CONMEBOLBeachSoccerChampionship .
 
 res:season/2016 a kg:Season ;
-    kg:seasonOf res:competition/CopaAmericaBeachSoccer .
+kg:seasonOf res:competition/CopaAmericaBeachSoccer .
 
 res:season/2018 a kg:Season ;
-    kg:seasonOf res:competition/CopaAmericaBeachSoccer .
+kg:seasonOf res:competition/CopaAmericaBeachSoccer .
 
 res:season/2014 a kg:Season ;
-    kg:seasonOf res:competition/BolivarBeachGames .
+kg:seasonOf res:competition/BolivarBeachGames .
 
 res:competition/BolivarBeachGames a kg:Competition ;
-    kg:competitionName "Đại hội thể thao bãi biển Bolivar" .
+kg:competitionName "Đại hội thể thao bãi biển Bolivar" .
 
 res:match/2014-12-07-BOLvsSLV a kg:Match ;
-    kg:homeTeam res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:awayTeam res:team/SLV ;
-    kg:kickoffTime "2014-12-07" ;
-    kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
+kg:homeTeam res:team/BoliviaNationalBeachSoccerTeam ;
+kg:awayTeam res:team/SLV ;
+kg:kickoffTime "2014-12-07" ;
+kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
 
 res:match/2014-12-12-BOLvsDOM a kg:Match ;
-    kg:homeTeam res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:awayTeam res:team/DOM ;
-    kg:kickoffTime "2014-12-12" ;
-    kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
+kg:homeTeam res:team/BoliviaNationalBeachSoccerTeam ;
+kg:awayTeam res:team/DOM ;
+kg:kickoffTime "2014-12-12" ;
+kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
 
 res:match/2018-03-04-BOLvsURU a kg:Match ;
-    kg:homeTeam res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:awayTeam res:team/URU ;
-    kg:kickoffTime "2018-03-04" ;
-    kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
+kg:homeTeam res:team/BoliviaNationalBeachSoccerTeam ;
+kg:awayTeam res:team/URU ;
+kg:kickoffTime "2018-03-04" ;
+kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
 
 res:match/2015-02-03-BRAvsBOL a kg:Match ;
-    kg:homeTeam res:team/BRA ;
-    kg:awayTeam res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:kickoffTime "2015-02-03" ;
-    kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
+kg:homeTeam res:team/BRA ;
+kg:awayTeam res:team/BoliviaNationalBeachSoccerTeam ;
+kg:kickoffTime "2015-02-03" ;
+kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
 
 res:match/2016-12-13-BRAvsBOL a kg:Match ;
-    kg:homeTeam res:team/BRA ;
-    kg:awayTeam res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:kickoffTime "2016-12-13" ;
-    kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
+kg:homeTeam res:team/BRA ;
+kg:awayTeam res:team/BoliviaNationalBeachSoccerTeam ;
+kg:kickoffTime "2016-12-13" ;
+kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
 
 res:match/2017-02-07-URUvsBOL a kg:Match ;
-    kg:homeTeam res:team/URU ;
-    kg:awayTeam res:team/BoliviaNationalBeachSoccerTeam ;
-    kg:kickoffTime "2017-02-07" ;
-    kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
+kg:homeTeam res:team/URU ;
+kg:awayTeam res:team/BoliviaNationalBeachSoccerTeam ;
+kg:kickoffTime "2017-02-07" ;
+kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship .
 
 res:team/BoliviaNationalBeachSoccerTeam kg:participatesIn res:season/2015 ;
-    kg:participatesIn res:season/2017 ;
-    kg:participatesIn res:season/2016 ;
-    kg:participatesIn res:season/2018 ;
-    kg:participatesIn res:season/2014 .
+kg:participatesIn res:season/2017 ;
+kg:participatesIn res:season/2016 ;
+kg:participatesIn res:season/2018 ;
+kg:participatesIn res:season/2014 .
 
 res:team/BoliviaNationalBeachSoccerTeam kg:inCompetition res:competition/WorldBeachSoccerChampionship ;
-    kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship ;
-    kg:inCompetition res:competition/CopaAmericaBeachSoccer ;
-    kg:inCompetition res:competition/BolivarBeachGames .
+kg:inCompetition res:competition/CONMEBOLBeachSoccerChampionship ;
+kg:inCompetition res:competition/CopaAmericaBeachSoccer ;
+kg:inCompetition res:competition/BolivarBeachGames .
 
 res:team/BoliviaNationalBeachSoccerTeam kg:bestResultInCompetition res:competition/CONMEBOLBeachSoccerChampionship ;
-    kg:bestResultInCompetition res:competition/CopaAmericaBeachSoccer ;
-    kg:bestResultInCompetition res:competition/BolivarBeachGames .
+kg:bestResultInCompetition res:competition/CopaAmericaBeachSoccer ;
+kg:bestResultInCompetition res:competition/BolivarBeachGames .

@@ -1,0 +1,39 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:club/Qu%E1%BA%A3n_khu_7 a kg:Club ;
+    kg:teamName "Quân khu 7" ;
+    kg:teamAbbreviation "QK7" ;
+    kg:foundedDate "19xx"^^xsd:gYear ;
+    kg:dissolvedDate "2011-10-03"^^xsd:date ;
+    kg:homeStadium res:stadium/Qu%E1%BA%A3n_khu_7 ;
+    kg:hasCoach res:coach/Do%C3%A0n_Minh_Xu%C3%AAng ;
+    kg:participatesIn res:season/2008 ;
+    kg:locatedIn res:city/Ho_Ch_i_Minh .
+
+res:stadium/Qu%E1%BA%A3n_khu_7 a kg:Stadium ;
+    kg:capacity 25000 ;
+    kg:isHomeOf res:club/Qu%E1%BA%A3n_khu_7 ;
+    kg:locatedIn res:city/Ho_Ch_i_Minh .
+
+res:city/Ho_Ch_i_Minh a kg:City ;
+    kg:locatedIn res:country/Viet_Nam .
+
+res:country/Viet_Nam a kg:Country .
+
+res:coach/Do%C3%A0n_Minh_Xu%C3%AAng a kg:Coach ;
+    kg:manages res:club/Qu%E1%BA%A3n_khu_7 .
+
+res:season/2008 a kg:Season ;
+    kg:seasonOf res:competition/Gi%E1%BA%A3i_b%E1%BB%99ng_da_h%E1%BA%B5ng_nh%E1%BA%ADt_qu%E1%BB%93c_gia .
+
+res:competition/Gi%E1%BA%A3i_b%E1%BB%99ng_da_h%E1%BA%B5ng_nh%E1%BA%ADt_qu%E1%BB%93c_gia a kg:Competition ;
+    kg:competitionName "Giải bóng đá hạng nhất quốc gia" .
+
+res:club/Qu%E1%BA%A3n_khu_7 kg:position "Hạng 14 (xuống hạng)"^^xsd:string ;
+    kg:kit_alt1 "Red jersey, red shorts and red socks"^^xsd:string ;
+    kg:kit_alt2 "Blue jersey with blue sleeves, white shorts, blue socks"^^xsd:string .
+```

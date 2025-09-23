@@ -1,4 +1,3 @@
-```turtle
 @prefix kg: <https://kg-football.vn/ontology#> .
 @prefix res: <https://kg-football.vn/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -6,53 +5,52 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) a kg:Club ;
-    kg:teamName "Câu lạc bộ bóng đá Công an Thành phố Hồ Chí Minh"^^xsd:string ;
-    kg:teamAbbreviation "CATPHCM"^^xsd:string ;
-    kg:foundedDate "1975-11-01"^^xsd:date ;
-    kg:homeStadium res:stadium/Sân_vận_động_Thống_Nhất ;
-    kg:hasOwner res:person/Lương_Đức_Minh ;
-    kg:hasCoach res:coach/Lê_Huỳnh_Đức ;
-    kg:participatesIn res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia_Việt_Nam (V.League 1) ;
-    kg:locatedIn res:city/Thành_phố_Hồ_Chí_Minh .
+kg:teamName "Câu lạc bộ bóng đá Công an Thành phố Hồ Chí Minh"^^xsd:string ;
+kg:teamAbbreviation "CATPHCM"^^xsd:string ;
+kg:foundedDate "1975-11-01"^^xsd:date ;
+kg:homeStadium res:stadium/Sân_vận_động_Thống_Nhất ;
+kg:hasOwner res:person/Lương_Đức_Minh ;
+kg:hasCoach res:coach/Lê_Huỳnh_Đức ;
+kg:participatesIn res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia_Việt_Nam (V.League 1) ;
+kg:locatedIn res:city/Thành_phố_Hồ_Chí_Minh .
 
 res:stadium/Sân_vận_động_Thống_Nhất a kg:Stadium ;
-    kg:capacity "15000"^^xsd:positiveInteger ;
-    kg:isHomeOf res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) .
+kg:capacity "15000"^^xsd:positiveInteger ;
+kg:isHomeOf res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) .
 
 res:person/Lương_Đức_Minh a kg:Owner ;
-    kg:owns res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) .
+kg:owns res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) .
 
 res:coach/Lê_Huỳnh_Đức a kg:Coach ;
-    kg:manages res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) .
+kg:manages res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) .
 
 res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia_Việt_Nam (V.League 1) a kg:Competition ;
-    kg:competitionName "Giải bóng đá Vô địch Quốc gia Việt Nam"^^xsd:string ;
-    kg:organizedBy res:organization/Liên_đoàn_Bóng_đá_Việt_Nam .
+kg:competitionName "Giải bóng đá Vô địch Quốc gia Việt Nam"^^xsd:string ;
+kg:organizedBy res:organization/Liên_đoàn_Bóng_đá_Việt_Nam .
 
 res:organization/Liên_đoàn_Bóng_đá_Việt_Nam a kg:Organization ;
-    kg:organizes res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia_Việt_Nam (V.League 1) .
+kg:organizes res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia_Việt_Nam (V.League 1) .
 
 res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) kg:participatesIn res:season/Mùa_giải_2024–25 ;
-    kg:position "Thứ 10"^^xsd:string .
+kg:position "Thứ 10"^^xsd:string .
 
 res:season/Mùa_giải_2024–25 a kg:Season ;
-    kg:seasonOf res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia_Việt_Nam (V.League 1) ;
+kg:seasonOf res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia_Việt_Nam (V.League 1) ;
 
 res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) kg:hasOwner res:person/Lương_Đức_Minh ;
-    kg:hasCoach res:coach/Lê_Huỳnh_Đức .
+kg:hasCoach res:coach/Lê_Huỳnh_Đức .
 
 res:person/Lương_Đức_Minh a kg:Person ;
-    kg:name "Lương Đức Minh"^^xsd:string ;
-    kg:locatedIn res:city/Thành_phố_Hồ_Chí_Minh .
+kg:name "Lương Đức Minh"^^xsd:string ;
+kg:locatedIn res:city/Thành_phố_Hồ_Chí_Minh .
 
 res:coach/Lê_Huỳnh_Đức a kg:Coach ;
-    kg:name "Lê Huỳnh Đức"^^xsd:string ;
-    kg:locatedIn res:city/Thành_phố_Hồ_Chí_Minh .
+kg:name "Lê Huỳnh Đức"^^xsd:string ;
+kg:locatedIn res:city/Thành_phố_Hồ_Chí_Minh .
 
 res:city/Thành_phố_Hồ_Chí_Minh a kg:City ;
-    kg:name "Thành phố Hồ Chí Minh"^^xsd:string .
+kg:name "Thành phố Hồ Chí Minh"^^xsd:string .
 
 res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) kg:hasSeason res:season/Mùa_giải_2024–25 .
 
 res:season/Mùa_giải_2024–25 kg:hasCompetition res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia_Việt_Nam (V.League 1) .
-```

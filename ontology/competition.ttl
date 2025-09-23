@@ -65,11 +65,6 @@ kg:participantCount a owl:DatatypeProperty ;
   rdfs:domain kg:Competition ;
   rdfs:range xsd:positiveInteger .
 
-kg:AgeGroup a owl:Class ;
-  rdfs:label "Age Group"@en , "Nhóm tuổi"@vi ;
-  rdfs:comment "Age group for competition"@en ;
-  rdfs:subClassOf schema:Enumeration .
-
 kg:competitionName a owl:DatatypeProperty ;
   rdfs:label "competition name"@en , "tên giải đấu"@vi ;
   rdfs:comment "Official name of the competition"@en ;

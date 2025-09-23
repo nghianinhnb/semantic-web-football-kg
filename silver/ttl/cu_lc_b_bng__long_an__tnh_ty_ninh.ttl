@@ -1,4 +1,3 @@
-```turtle
 @prefix kg: <https://kg-football.vn/ontology#> .
 @prefix res: <https://kg-football.vn/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -6,164 +5,163 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh a kg:teamName "Câu lạc bộ bóng đá Long An – tỉnh Tây Ninh" ;
-    a kg:Club ;
-    kg:foundedDate "2000-01-01"^^xsd:date ;
-    kg:homeStadium res:stadium/Long+An ;
-    kg:hasOwner res:owner/Cong+ty+co+phan+phat+triển+the+thao+Long+An ;
-    kg:teamAbbreviation "LAFC" ;
-    kg:participatesIn res:season/Mua+g%E1%BA%ADi+2024–25 ;
-    kg:hasCoach res:coach/Trinh+Duy+Quang .
+a kg:Club ;
+kg:foundedDate "2000-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Long+An ;
+kg:hasOwner res:owner/Cong+ty+co+phan+phat+triển+the+thao+Long+An ;
+kg:teamAbbreviation "LAFC" ;
+kg:participatesIn res:season/Mua+g%E1%BA%ADi+2024–25 ;
+kg:hasCoach res:coach/Trinh+Duy+Quang .
 
 res:stadium/Long+An a kg:Stadium ;
-    kg:capacity 19975 ;
-    kg:isHomeOf res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+kg:capacity 19975 ;
+kg:isHomeOf res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
 
 res:owner/Cong+ty+co+phan+phat+triển+the+thao+Long+An a kg:Owner ;
-    kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
 
 res:coach/Trinh+Duy+Quang a kg:Coach ;
-    kg:manages res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+kg:manages res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
 
 res:season/Mua+g%E1%BA%ADi+2024–25 a kg:Season ;
-    kg:seasonOf res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia ;
-    kg:participatesIn res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+kg:seasonOf res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia ;
+kg:participatesIn res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
 
 res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia a kg:Competition ;
-    kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia" .
+kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia" .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:participatesIn res:season/Mua+g%E1%BA%ADi+2024–25 ;
-    kg:hasPosition "Thứ 8" .
+kg:hasPosition "Thứ 8" .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasSeason res:season/Mua+g%E1%BA%ADi+2024–25 ;
-    kg:inCompetition res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia .
+kg:inCompetition res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasPreviousName "Câu lạc bộ bóng đá Gạch Đồng Tâm Long An" ;
-    kg:hasPreviousName "Câu lạc bộ bóng đá Đồng Tâm Long An" .
+kg:hasPreviousName "Câu lạc bộ bóng đá Đồng Tâm Long An" .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasPreviousSeason res:season/Mua+g%E1%BA%ADi+2024–25 ;
-    kg:previousSeasonResult "Thứ 8" .
+kg:previousSeasonResult "Thứ 8" .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasPreviousCompetition res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia ;
-    kg:previousCompetitionResult "Thứ 8" .
+kg:previousCompetitionResult "Thứ 8" .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasAchievement res:achievement/Vo+dich+V+League+2005 ;
-    kg:hasAchievement res:achievement/Vo+dich+V+League+2006 ;
-    kg:hasAchievement res:achievement/Vo+dich+Hanh+Nhat+2001–02 ;
-    kg:hasAchievement res:achievement/Vo+dich+Hanh+Nhat+2012 ;
-    kg:hasAchievement res:achievement/Cup+Quoc+gia+2005 ;
-    kg:hasAchievement res:achievement/Sieu+Cup+Quoc+gia+2006 .
+kg:hasAchievement res:achievement/Vo+dich+V+League+2006 ;
+kg:hasAchievement res:achievement/Vo+dich+Hanh+Nhat+2001–02 ;
+kg:hasAchievement res:achievement/Vo+dich+Hanh+Nhat+2012 ;
+kg:hasAchievement res:achievement/Cup+Quoc+gia+2005 ;
+kg:hasAchievement res:achievement/Sieu+Cup+Quoc+gia+2006 .
 
 res:achievement/Vo+dich+V+League+2005 a kg:Achievement ;
-    kg:year "2005"^^xsd:gYear ;
-    kg:competition res:competition/Giai+b%E1%BA%ABn+da+vo+di+chinh+Qu%E1%BB%91c+gia .
+kg:year "2005"^^xsd:gYear ;
+kg:competition res:competition/Giai+b%E1%BA%ABn+da+vo+di+chinh+Qu%E1%BB%91c+gia .
 
 res:achievement/Vo+dich+V+League+2006 a kg:Achievement ;
-    kg:year "2006"^^xsd:gYear ;
-    kg:competition res:competition/Giai+b%E1%BA%ABn+da+vo+di+chinh+Qu%E1%BB%91c+gia .
+kg:year "2006"^^xsd:gYear ;
+kg:competition res:competition/Giai+b%E1%BA%ABn+da+vo+di+chinh+Qu%E1%BB%91c+gia .
 
 res:achievement/Vo+dich+Hanh+Nhat+2001–02 a kg:Achievement ;
-    kg:year "2001–02" ;
-    kg:competition res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia .
+kg:year "2001–02" ;
+kg:competition res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia .
 
 res:achievement/Vo+dich+Hanh+Nhat+2012 a kg:Achievement ;
-    kg:year "2012"^^xsd:gYear ;
-    kg:competition res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia .
+kg:year "2012"^^xsd:gYear ;
+kg:competition res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia .
 
 res:achievement/Cup+Quoc+gia+2005 a kg:Achievement ;
-    kg:year "2005"^^xsd:gYear ;
-    kg:competition res:competition/Cup+Quoc+gia .
+kg:year "2005"^^xsd:gYear ;
+kg:competition res:competition/Cup+Quoc+gia .
 
 res:achievement/Sieu+Cup+Quoc+gia+2006 a kg:Achievement ;
-    kg:year "2006"^^xsd:gYear ;
-    kg:competition res:competition/Sieu+Cup+Quoc+gia .
+kg:year "2006"^^xsd:gYear ;
+kg:competition res:competition/Sieu+Cup+Quoc+gia .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasHistoricalName "Đội bóng đá Long An" ;
-    kg:hasHistoricalName "Câu lạc bộ bóng đá Gạch Đồng Tâm Long An" ;
-    kg:hasHistoricalName "Câu lạc bộ bóng đá Đồng Tâm Long An" .
+kg:hasHistoricalName "Câu lạc bộ bóng đá Gạch Đồng Tâm Long An" ;
+kg:hasHistoricalName "Câu lạc bộ bóng đá Đồng Tâm Long An" .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasHistoricalOwner res:owner/Cong+ty+Co+Phan+Dong+Tam ;
-    kg:hasHistoricalOwner res:owner/Cong+ty+TNHH+The+thao+Dong+Tam ;
-    kg:hasHistoricalOwner res:owner/Cong+ty+Trach+nghiem+huu+hoi+Hoang+Phat ;
-    kg:hasHistoricalOwner res:owner/Cong+ty+Co+Phan+Dong+Tam+Long+An .
+kg:hasHistoricalOwner res:owner/Cong+ty+TNHH+The+thao+Dong+Tam ;
+kg:hasHistoricalOwner res:owner/Cong+ty+Trach+nghiem+huu+hoi+Hoang+Phat ;
+kg:hasHistoricalOwner res:owner/Cong+ty+Co+Phan+Dong+Tam+Long+An .
 
 res:owner/Cong+ty+Co+Phan+Dong+Tam a kg:Owner ;
-    kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
 
 res:owner/Cong+ty+TNHH+The+thao+Dong+Tam a kg:Owner ;
-    kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
 
 res:owner/Cong+ty+Trach+nghiem+huu+hoi+Hoang+Phat a kg:Owner ;
-    kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
 
 res:owner/Cong+ty+Co+Phan+Dong+Tam+Long+An a kg:Owner ;
-    kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasHistoricalStadium res:stadium/Long+An .
 
 res:stadium/Long+An a kg:Stadium ;
-    kg:capacity 19975 ;
-    kg:isHomeOf res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+kg:capacity 19975 ;
+kg:isHomeOf res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasHistoricalCompetition res:competition/AFC+Champions+League+2006 ;
-    kg:hasHistoricalCompetition res:competition/AFC+Champions+League+2007 .
+kg:hasHistoricalCompetition res:competition/AFC+Champions+League+2007 .
 
 res:competition/AFC+Champions+League+2006 a kg:Competition ;
-    kg:competitionName "AFC Champions League 2006" ;
-    kg:organizes res:season/Mua+g%E1%BA%ADi+2006 .
+kg:competitionName "AFC Champions League 2006" ;
+kg:organizes res:season/Mua+g%E1%BA%ADi+2006 .
 
 res:competition/AFC+Champions+League+2007 a kg:Competition ;
-    kg:competitionName "AFC Champions League 2007" ;
-    kg:organizes res:season/Mua+g%E1%BA%ADi+2007 .
+kg:competitionName "AFC Champions League 2007" ;
+kg:organizes res:season/Mua+g%E1%BA%ADi+2007 .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2000–01 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2001–02 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2002–03 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2003–04 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2004–05 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2005–06 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2006–07 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2007–08 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2008–09 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2009–10 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2010–11 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2011–12 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2012–13 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2013–14 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2014–15 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2015–16 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2016–17 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2017–18 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2018–19 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2019–20 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2020–21 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2021–22 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2022–23 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2023–24 ;
-    kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2024–25 .
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2001–02 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2002–03 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2003–04 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2004–05 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2005–06 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2006–07 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2007–08 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2008–09 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2009–10 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2010–11 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2011–12 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2012–13 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2013–14 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2014–15 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2015–16 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2016–17 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2017–18 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2018–19 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2019–20 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2020–21 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2021–22 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2022–23 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2023–24 ;
+kg:hasHistoricalSeason res:season/Mua+g%E1%BA%ADi+2024–25 .
 
 res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasHistoricalResult res:result/Vo+dich+2001–02 ;
-    kg:hasHistoricalResult res:result/Thang+hang+2012 ;
-    kg:hasHistoricalResult res:result/Xuong+hag+2011 ;
-    kg:hasHistoricalResult res:result/Xuong+hag+2017 ;
-    kg:hasHistoricalResult res:result/Xuong+hag+2016 .
+kg:hasHistoricalResult res:result/Thang+hang+2012 ;
+kg:hasHistoricalResult res:result/Xuong+hag+2011 ;
+kg:hasHistoricalResult res:result/Xuong+hag+2017 ;
+kg:hasHistoricalResult res:result/Xuong+hag+2016 .
 
 res:result/Vo+dich+2001–02 a kg:Result ;
-    kg:season res:season/Mua+g%E1%BA%ADi+2001–02 ;
-    kg:position "Vô địch" .
+kg:season res:season/Mua+g%E1%BA%ADi+2001–02 ;
+kg:position "Vô địch" .
 
 res:result/Thang+hang+2012 a kg:Result ;
-    kg:season res:season/Mua+g%E1%BA%ADi+2012 ;
-    kg:position "Vô địch" .
+kg:season res:season/Mua+g%E1%BA%ADi+2012 ;
+kg:position "Vô địch" .
 
 res:result/Xuong+hag+2011 a kg:Result ;
-    kg:season res:season/Mua+g%E1%BA%ADi+2011 ;
-    kg:position "Thứ 13" .
+kg:season res:season/Mua+g%E1%BA%ADi+2011 ;
+kg:position "Thứ 13" .
 
 res:result/Xuong+hag+2017 a kg:Result ;
-    kg:season res:season/Mua+g%E1%BA%ADi+2017 ;
-    kg:position "Thứ 14" .
+kg:season res:season/Mua+g%E1%BA%ADi+2017 ;
+kg:position "Thứ 14" .
 
 res:result/Xuong+hag+2016 a kg:Result ;
-    kg:season res:season/Mua+g%E1%BA%ADi+2016 ;
-    kg:position "Thứ 13" .
-```
+kg:season res:season/Mua+g%E1%BA%ADi+2016 ;
+kg:position "Thứ 13" .

@@ -1,0 +1,45 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:club/Thép_Xanh_Nam_Định a kg:Club ;
+    kg:teamName "Câu lạc bộ bóng đá Thép Xanh Nam Định" ;
+    kg:teamAbbreviation "TXNĐ" ;
+    kg:foundedDate "1965-01-01"^^xsd:date ;
+    kg:homeStadium res:stadium/Thiên_Trường ;
+    kg:hasOwner res:person/Xuân_Thiện_Group ;
+    kg:hasCoach res:coach/Vũ_Hồng_Việt ;
+    kg:participatesIn res:season/2024–25 ;
+    kg:locatedIn res:city/Nam_Định .
+
+res:stadium/Thiên_Trường a kg:Stadium ;
+    kg:capacity 30000 ;
+    kg:isHomeOf res:club/Thép_Xanh_Nam_Định .
+
+res:person/Xuân_Thiện_Group a kg:Owner ;
+    kg:owns res:club/Thép_Xanh_Nam_Định .
+
+res:coach/Vũ_Hồng_Việt a kg:Coach ;
+    kg:manages res:club/Thép_Xanh_Nam_Định .
+
+res:season/2024–25 a kg:Season ;
+    kg:seasonOf res:competition/V.League_1 .
+
+res:competition/V.League_1 a kg:Competition ;
+    kg:competitionName "V.League 1" .
+
+res:city/Nam_Định a kg:City ;
+    kg:locatedIn res:country/Vietnam .
+
+res:country/Vietnam a kg:Country .
+
+res:club/Thép_Xanh_Nam_Định kg:participatesIn res:season/2025–26 .
+
+res:season/2025–26 a kg:Season ;
+    kg:seasonOf res:competition/V.League_1 .
+
+res:club/Thép_Xanh_Nam_Định kg:hasOwner res:person/Xuân_Thiện_Group .
+
+res:club/Thép_Xanh_Nam_Định kg:hasCoach res:coach/Vũ_Hồng_Việt .

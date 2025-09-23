@@ -1,215 +1,213 @@
-```turtle
 @prefix kg: <https://kg-football.vn/ontology#> .
 @prefix res: <https://kg-football.vn/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 res:team/Estonia a kg:Team ;
-    kg:teamName "Estonia" ;
-    kg:hasCoach res:coach/Rando_Rand ;
-    kg:hasCoach res:coach/Kristian_Marmor ;
-    kg:organizedBy res:organization/Uefa ;
-    kg:managedBy res:coach/Rando_Rand ;
-    kg:managedBy res:coach/Kristian_Marmor ;
-    kg:managedBy res:coach/Fredo_Getulio ;
-    kg:managedBy res:coach/Kert_Haavistu ;
-    kg:managedBy res:coach/Reigo_Tonsberg ;
-    kg:participatesIn res:season/2007_European_Beach_Soccer_Championship ;
-    kg:participatesIn res:season/2008_European_Beach_Soccer_Championship ;
-    kg:participatesIn res:season/2009_European_Beach_Soccer_Championship ;
-    kg:participatesIn res:season/2012_European_Beach_Soccer_Championship ;
-    kg:participatesIn res:season/2013_European_Beach_Soccer_Championship ;
-    kg:participatesIn res:season/2014_European_Beach_Soccer_Championship ;
-    kg:participatesIn res:season/2015_European_Beach_Soccer_Championship ;
-    kg:participatesIn res:season/2016_European_Beach_Soccer_Championship ;
-    kg:participatesIn res:season/2017_European_Beach_Soccer_Championship ;
-    kg:participatesIn res:season/2007_World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:season/2008_World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:season/2009_World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:season/2010_World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:season/2011_World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:season/2012_World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:season/2013_World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:season/2014_World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:season/2015_World_Beach_Soccer_Championship_Qualification .
+kg:teamName "Estonia" ;
+kg:hasCoach res:coach/Rando_Rand ;
+kg:hasCoach res:coach/Kristian_Marmor ;
+kg:organizedBy res:organization/Uefa ;
+kg:managedBy res:coach/Rando_Rand ;
+kg:managedBy res:coach/Kristian_Marmor ;
+kg:managedBy res:coach/Fredo_Getulio ;
+kg:managedBy res:coach/Kert_Haavistu ;
+kg:managedBy res:coach/Reigo_Tonsberg ;
+kg:participatesIn res:season/2007_European_Beach_Soccer_Championship ;
+kg:participatesIn res:season/2008_European_Beach_Soccer_Championship ;
+kg:participatesIn res:season/2009_European_Beach_Soccer_Championship ;
+kg:participatesIn res:season/2012_European_Beach_Soccer_Championship ;
+kg:participatesIn res:season/2013_European_Beach_Soccer_Championship ;
+kg:participatesIn res:season/2014_European_Beach_Soccer_Championship ;
+kg:participatesIn res:season/2015_European_Beach_Soccer_Championship ;
+kg:participatesIn res:season/2016_European_Beach_Soccer_Championship ;
+kg:participatesIn res:season/2017_European_Beach_Soccer_Championship ;
+kg:participatesIn res:season/2007_World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:season/2008_World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:season/2009_World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:season/2010_World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:season/2011_World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:season/2012_World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:season/2013_World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:season/2014_World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:season/2015_World_Beach_Soccer_Championship_Qualification .
 
 res:coach/Rando_Rand a kg:Coach ;
-    kg:manages res:team/Estonia ;
-    kg:name "Rando Rand" .
+kg:manages res:team/Estonia ;
+kg:name "Rando Rand" .
 
 res:coach/Kristian_Marmor a kg:Coach ;
-    kg:manages res:team/Estonia ;
-    kg:name "Kristian Marmor" .
+kg:manages res:team/Estonia ;
+kg:name "Kristian Marmor" .
 
 res:coach/Fredo_Getulio a kg:Coach ;
-    kg:manages res:team/Estonia ;
-    kg:name "Fredo Getulio" .
+kg:manages res:team/Estonia ;
+kg:name "Fredo Getulio" .
 
 res:coach/Kert_Haavistu a kg:Coach ;
-    kg:manages res:team/Estonia ;
-    kg:name "Kert Haavistu" .
+kg:manages res:team/Estonia ;
+kg:name "Kert Haavistu" .
 
 res:coach/Reigo_Tonsberg a kg:Coach ;
-    kg:manages res:team/Estonia ;
-    kg:name "Reigo Tonsberg" .
+kg:manages res:team/Estonia ;
+kg:name "Reigo Tonsberg" .
 
 res:organization/Uefa a kg:Organization ;
-    kg:organizes res:competition/European_Beach_Soccer_Championship .
+kg:organizes res:competition/European_Beach_Soccer_Championship .
 
 res:season/2007_European_Beach_Soccer_Championship a kg:Season ;
-    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "7th in Stage 2" .
+kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+kg:participatesIn res:team/Estonia ;
+kg:result "7th in Stage 2" .
 
 res:season/2008_European_Beach_Soccer_Championship a kg:Season ;
-    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "7th in Stage 2" .
+kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+kg:participatesIn res:team/Estonia ;
+kg:result "7th in Stage 2" .
 
 res:season/2009_European_Beach_Soccer_Championship a kg:Season ;
-    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "Did not participate" .
+kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+kg:participatesIn res:team/Estonia ;
+kg:result "Did not participate" .
 
 res:season/2012_European_Beach_Soccer_Championship a kg:Season ;
-    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "6th in Division B" .
+kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+kg:participatesIn res:team/Estonia ;
+kg:result "6th in Division B" .
 
 res:season/2013_European_Beach_Soccer_Championship a kg:Season ;
-    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "7th in Division B (Promotional Final)" .
+kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+kg:participatesIn res:team/Estonia ;
+kg:result "7th in Division B (Promotional Final)" .
 
 res:season/2014_European_Beach_Soccer_Championship a kg:Season ;
-    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "8th in Division B (Promotional Final)" .
+kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+kg:participatesIn res:team/Estonia ;
+kg:result "8th in Division B (Promotional Final)" .
 
 res:season/2015_European_Beach_Soccer_Championship a kg:Season ;
-    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "2nd in Division B (Promotional Final)" .
+kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+kg:participatesIn res:team/Estonia ;
+kg:result "2nd in Division B (Promotional Final)" .
 
 res:season/2016_European_Beach_Soccer_Championship a kg:Season ;
-    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "4th in Division B (Promotional Final)" .
+kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+kg:participatesIn res:team/Estonia ;
+kg:result "4th in Division B (Promotional Final)" .
 
 res:season/2017_European_Beach_Soccer_Championship a kg:Season ;
-    kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "2nd in Division B (Promotional Final)" .
+kg:seasonOf res:competition/European_Beach_Soccer_Championship ;
+kg:participatesIn res:team/Estonia ;
+kg:result "2nd in Division B (Promotional Final)" .
 
 res:season/2007_World_Beach_Soccer_Championship_Qualification a kg:Season ;
-    kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "Lost 1–3 to Ukraine" .
+kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:team/Estonia ;
+kg:result "Lost 1–3 to Ukraine" .
 
 res:season/2008_World_Beach_Soccer_Championship_Qualification a kg:Season ;
-    kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "Did not qualify" .
+kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:team/Estonia ;
+kg:result "Did not qualify" .
 
 res:season/2009_World_Beach_Soccer_Championship_Qualification a kg:Season ;
-    kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "Did not qualify" .
+kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:team/Estonia ;
+kg:result "Did not qualify" .
 
 res:season/2010_World_Beach_Soccer_Championship_Qualification a kg:Season ;
-    kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "Did not qualify" .
+kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:team/Estonia ;
+kg:result "Did not qualify" .
 
 res:season/2011_World_Beach_Soccer_Championship_Qualification a kg:Season ;
-    kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "Did not qualify" .
+kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:team/Estonia ;
+kg:result "Did not qualify" .
 
 res:season/2012_World_Beach_Soccer_Championship_Qualification a kg:Season ;
-    kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "Did not qualify" .
+kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:team/Estonia ;
+kg:result "Did not qualify" .
 
 res:season/2013_World_Beach_Soccer_Championship_Qualification a kg:Season ;
-    kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "Did not qualify" .
+kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:team/Estonia ;
+kg:result "Did not qualify" .
 
 res:season/2014_World_Beach_Soccer_Championship_Qualification a kg:Season ;
-    kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "Did not qualify" .
+kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:team/Estonia ;
+kg:result "Did not qualify" .
 
 res:season/2015_World_Beach_Soccer_Championship_Qualification a kg:Season ;
-    kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
-    kg:participatesIn res:team/Estonia ;
-    kg:result "Did not qualify" .
+kg:seasonOf res:competition/World_Beach_Soccer_Championship_Qualification ;
+kg:participatesIn res:team/Estonia ;
+kg:result "Did not qualify" .
 
 res:competition/European_Beach_Soccer_Championship a kg:Competition ;
-    kg:competitionName "European Beach Soccer Championship" ;
-    kg:organizedBy res:organization/Uefa .
+kg:competitionName "European Beach Soccer Championship" ;
+kg:organizedBy res:organization/Uefa .
 
 res:competition/World_Beach_Soccer_Championship_Qualification a kg:Competition ;
-    kg:competitionName "World Beach Soccer Championship Qualification" .
+kg:competitionName "World Beach Soccer Championship Qualification" .
 
 res:player/Kristian_Marmor a kg:Player ;
-    kg:playsFor res:team/Estonia ;
-    kg:primaryPosition kg:Forward ;
-    kg:shirtNumber "6" ;
-    kg:name "Kristian Marmor" .
+kg:playsFor res:team/Estonia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "6" ;
+kg:name "Kristian Marmor" .
 
 res:player/Taavi_Tamm a kg:Player ;
-    kg:playsFor res:team/Estonia ;
-    kg:primaryPosition kg:Goalkeeper ;
-    kg:shirtNumber "1" ;
-    kg:name "Taavi Tamm" .
+kg:playsFor res:team/Estonia ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber "1" ;
+kg:name "Taavi Tamm" .
 
 res:player/Ervin_Stuf a kg:Player ;
-    kg:playsFor res:team/Estonia ;
-    kg:primaryPosition kg:Forward ;
-    kg:shirtNumber "2" ;
-    kg:name "Ervin Stüf" .
+kg:playsFor res:team/Estonia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "2" ;
+kg:name "Ervin Stüf" .
 
 res:player/Roman_Minlibajev a kg:Player ;
-    kg:playsFor res:team/Estonia ;
-    kg:primaryPosition kg:Defender ;
-    kg:shirtNumber "3" ;
-    kg:name "Roman Minlibajev" .
+kg:playsFor res:team/Estonia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "3" ;
+kg:name "Roman Minlibajev" .
 
 res:player/Priit_Maeorg a kg:Player ;
-    kg:playsFor res:team/Estonia ;
-    kg:primaryPosition kg:Defender ;
-    kg:shirtNumber "5" ;
-    kg:name "Priit Mäeorg" .
+kg:playsFor res:team/Estonia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "5" ;
+kg:name "Priit Mäeorg" .
 
 res:player/Rasmus_Munskind a kg:Player ;
-    kg:playsFor res:team/Estonia ;
-    kg:primaryPosition kg:Forward ;
-    kg:shirtNumber "9" ;
-    kg:name "Rasmus Munskind" .
+kg:playsFor res:team/Estonia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "9" ;
+kg:name "Rasmus Munskind" .
 
 res:player/Marko_Trusalu a kg:Player ;
-    kg:playsFor res:team/Estonia ;
-    kg:primaryPosition kg:Defender ;
-    kg:shirtNumber "10" ;
-    kg:name "Marko Truusalu" .
+kg:playsFor res:team/Estonia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "10" ;
+kg:name "Marko Truusalu" .
 
 res:player/Sten_Teino a kg:Player ;
-    kg:playsFor res:team/Estonia ;
-    kg:primaryPosition kg:Defender ;
-    kg:shirtNumber "11" ;
-    kg:name "Sten Teino" .
+kg:playsFor res:team/Estonia ;
+kg:primaryPosition kg:Defender ;
+kg:shirtNumber "11" ;
+kg:name "Sten Teino" .
 
 res:player/Ragnar_Rump a kg:Player ;
-    kg:playsFor res:team/Estonia ;
-    kg:primaryPosition kg:Forward ;
-    kg:shirtNumber "12" ;
-    kg:name "Ragnar Rump" .
+kg:playsFor res:team/Estonia ;
+kg:primaryPosition kg:Forward ;
+kg:shirtNumber "12" ;
+kg:name "Ragnar Rump" .
 
 res:player/Marten_Rimmel a kg:Player ;
-    kg:playsFor res:team/Estonia ;
-    kg:primaryPosition kg:Goalkeeper ;
-    kg:shirtNumber "21" ;
-    kg:name "Marten Rimmel" .
-```
+kg:playsFor res:team/Estonia ;
+kg:primaryPosition kg:Goalkeeper ;
+kg:shirtNumber "21" ;
+kg:name "Marten Rimmel" .

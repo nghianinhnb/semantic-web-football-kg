@@ -1,0 +1,101 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Cameroon National Beach Soccer Team a kg:Team ;
+    kg:teamName "Cameroon National Beach Soccer Team" ;
+    kg:teamAbbreviation "CMR" ;
+    kg:hasCoach res:coach/Jean Pierre Bahabege Ngwe ;
+    kg:locatedIn res:country/Cameroon ;
+    kg:organizedBy res:organization/African Football Confederation ;
+    kg:participatesIn res:competition/African Beach Soccer Championship ;
+    kg:participantCount 3 ;
+    kg:competitionResult "Champion" ;
+    kg:competitionYear "2006"^^xsd:gYear ;
+    kg:competitionResult "Runner-up" ;
+    kg:competitionYear "2008"^^xsd:gYear .
+
+res:country/Cameroon a kg:Country ;
+    rdfs:label "Cameroon" .
+
+res:organization/African Football Confederation a kg:Organization ;
+    rdfs:label "African Football Confederation" .
+
+res:competition/African Beach Soccer Championship a kg:Competition ;
+    kg:competitionName "African Beach Soccer Championship" .
+
+res:coach/Jean Pierre Bahabege Ngwe a kg:Coach ;
+    kg:manages res:team/Cameroon National Beach Soccer Team ;
+    rdfs:label "Jean Pierre Bahabege Ngwe" .
+
+res:player/Jean Kengne a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:shirtNumber 1 .
+
+res:player/Franck Batoum a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 2 .
+
+res:player/Bernard Nkolo a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 3 .
+
+res:player/Bertrand Abissonono a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 4 .
+
+res:player/Ekwalla Eyoum a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 5 .
+
+res:player/Bruno Ndengue a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 6 .
+
+res:player/Djibril Abouem a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 7 .
+
+res:player/Joan Etame a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 8 .
+
+res:player/Eric Yopa a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 9 .
+
+res:player/Aime Yombi a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 10 .
+
+res:player/Jean-Claude Nkoumou a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 11 .
+
+res:player/Marc Belle a kg:Player ;
+    kg:playsFor res:team/Cameroon National Beach Soccer Team ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:shirtNumber 12 .
+
+res:position/Goalkeeper a kg:Goalkeeper ;
+    rdfs:label "Goalkeeper" .
+
+res:position/Defender a kg:Defender ;
+    rdfs:label "Defender" .
+
+res:position/Forward a kg:Forward ;
+    rdfs:label "Forward" .
+```

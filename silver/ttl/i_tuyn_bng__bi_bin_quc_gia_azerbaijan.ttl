@@ -5,121 +5,121 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 res:team/Azerbaijan_Beach_Soccer_National_Team a kg:Team ;
-    kg:teamName "Azerbaijan Beach Soccer National Team" ;
-    kg:teamAbbreviation "AZE" ;
-    kg:hasCoach res:coach/Bahram_Hatamov ;
-    kg:manages res:coach/Bahram_Hatamov ;
-    kg:locatedIn res:country/Azerbaijan ;
-    kg:participatesIn res:competition/European_Beach_Soccer_Championship ;
-    kg:participatesIn res:competition/World_Beach_Soccer_Championship ;
-    kg:participatesIn res:competition/Intercontinental_Beach_Soccer_Cup ;
-    kg:participatesIn res:competition/BSWW_Mundialito ;
-    kg:participatesIn res:competition/European_Sports_Games .
+kg:teamName "Azerbaijan Beach Soccer National Team" ;
+kg:teamAbbreviation "AZE" ;
+kg:hasCoach res:coach/Bahram_Hatamov ;
+kg:manages res:coach/Bahram_Hatamov ;
+kg:locatedIn res:country/Azerbaijan ;
+kg:participatesIn res:competition/European_Beach_Soccer_Championship ;
+kg:participatesIn res:competition/World_Beach_Soccer_Championship ;
+kg:participatesIn res:competition/Intercontinental_Beach_Soccer_Cup ;
+kg:participatesIn res:competition/BSWW_Mundialito ;
+kg:participatesIn res:competition/European_Sports_Games .
 
 res:country/Azerbaijan a kg:Country ;
-    rdfs:label "Azerbaijan" .
+rdfs:label "Azerbaijan" .
 
 res:coach/Bahram_Hatamov a kg:Coach ;
-    rdfs:label "Bahram Hatamov" .
+rdfs:label "Bahram Hatamov" .
 
 res:competition/European_Beach_Soccer_Championship a kg:Competition ;
-    kg:competitionName "European Beach Soccer Championship" ;
-    kg:organizedBy res:organization/UEFA ;
-    kg:heldIn res:country/Azerbaijan .
+kg:competitionName "European Beach Soccer Championship" ;
+kg:organizedBy res:organization/UEFA ;
+kg:heldIn res:country/Azerbaijan .
 
 res:competition/World_Beach_Soccer_Championship a kg:Competition ;
-    kg:competitionName "World Beach Soccer Championship" ;
-    kg:organizedBy res:organization/FIFA .
+kg:competitionName "World Beach Soccer Championship" ;
+kg:organizedBy res:organization/FIFA .
 
 res:competition/Intercontinental_Beach_Soccer_Cup a kg:Competition ;
-    kg:competitionName "Intercontinental Beach Soccer Cup" .
+kg:competitionName "Intercontinental Beach Soccer Cup" .
 
 res:competition/BSWW_Mundialito a kg:Competition ;
-    kg:competitionName "BSWW Mundialito" .
+kg:competitionName "BSWW Mundialito" .
 
 res:competition/European_Sports_Games a kg:Competition ;
-    kg:competitionName "European Sports Games" .
+kg:competitionName "European Sports Games" .
 
 res:organization/UEFA a kg:Organization ;
-    rdfs:label "UEFA" .
+rdfs:label "UEFA" .
 
 res:organization/FIFA a kg:Organization ;
-    rdfs:label "FIFA" .
+rdfs:label "FIFA" .
 
 res:player/Emin_Kurdov a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber 1 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
 
 res:player/Elvin_Guliyev a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 2 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 .
 
 res:player/Ramin_Guliyev a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 4 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 .
 
 res:player/Abbas_Zeynal a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber 7 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 7 .
 
 res:player/Mehraliev_Nahid a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber 8 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 8 .
 
 res:player/Abdul_Aliyev a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber 9 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 9 .
 
 res:player/Elhad_Guliyev a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 10 ;
-    kg:other "Captain" .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 10 ;
+kg:other "Captain" .
 
 res:player/Mamadov_Orkhan a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 11 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 11 .
 
 res:player/Borisov_Vitaliy a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 14 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 14 .
 
 res:player/Elhagi_Akhmadov a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 17 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 17 .
 
 res:player/Jomard_Bakshaliyev a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 18 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 18 .
 
 res:player/Asif_Zeynal a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 20 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 20 .
 
 res:player/Shirinbaev_Vagif a kg:Player ;
-    kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber 12 .
+kg:playsFor res:team/Azerbaijan_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 12 .
 
 res:position/Goalkeeper a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Defender a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Midfielder a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Forward a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .

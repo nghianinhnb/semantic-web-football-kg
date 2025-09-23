@@ -4,102 +4,102 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 res:team/Bờ_Biển_Ngà a kg:Team ;
-    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Bờ Biển Ngà" ;
-    kg:teamAbbreviation "CIV" ;
-    kg:hasCoach res:coach/Lohognon_Soro .
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Bờ Biển Ngà" ;
+kg:teamAbbreviation "CIV" ;
+kg:hasCoach res:coach/Lohognon_Soro .
 
 res:coach/Lohognon_Soro a kg:Coach ;
-    kg:manages res:team/Bờ_Biển_Ngà .
+kg:manages res:team/Bờ_Biển_Ngà .
 
 res:player/Yaya_Bakayoko a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 1 ;
-    kg:primaryPosition res:position/Goalkeeper .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 1 ;
+kg:primaryPosition res:position/Goalkeeper .
 
 res:player/Landry_Djimi a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 2 ;
-    kg:primaryPosition res:position/Forward .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 2 ;
+kg:primaryPosition res:position/Forward .
 
 res:player/Isaac_Beda a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 3 ;
-    kg:primaryPosition res:position/Defender .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 3 ;
+kg:primaryPosition res:position/Defender .
 
 res:player/Guy_Djedjed a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 4 ;
-    kg:primaryPosition res:position/Forward .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 4 ;
+kg:primaryPosition res:position/Forward .
 
 res:player/Lacine_Diomande a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 5 ;
-    kg:primaryPosition res:position/Defender .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 5 ;
+kg:primaryPosition res:position/Defender .
 
 res:player/Mamadou_DiarraSSouba a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 6 ;
-    kg:primaryPosition res:position/Defender .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 6 ;
+kg:primaryPosition res:position/Defender .
 
 res:player/Bile_Kablan a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 7 ;
-    kg:primaryPosition res:position/Forward .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 7 ;
+kg:primaryPosition res:position/Forward .
 
 res:player/Moustapha_Sakanoko a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 8 ;
-    kg:primaryPosition res:position/Forward .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 8 ;
+kg:primaryPosition res:position/Forward .
 
 res:player/Kouassitchi_Daniel a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 9 ;
-    kg:primaryPosition res:position/Forward .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 9 ;
+kg:primaryPosition res:position/Forward .
 
 res:player/Thierry_Bahi a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 10 ;
-    kg:primaryPosition res:position/Forward .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 10 ;
+kg:primaryPosition res:position/Forward .
 
 res:player/Eric_Tchetche a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 11 ;
-    kg:primaryPosition res:position/Forward .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 11 ;
+kg:primaryPosition res:position/Forward .
 
 res:player/Armand_Kouadio a kg:Player ;
-    kg:playsFor res:team/Bờ_Biển_Ngà ;
-    kg:shirtNumber 12 ;
-    kg:primaryPosition res:position/Goalkeeper .
+kg:playsFor res:team/Bờ_Biển_Ngà ;
+kg:shirtNumber 12 ;
+kg:primaryPosition res:position/Goalkeeper .
 
 res:position/Goalkeeper a kg:Goalkeeper ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Defender a kg:Defender ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Forward a kg:Forward ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" .
 
 res:season/2009 a kg:Season ;
-    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới .
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới .
 
 res:team/Bờ_Biển_Ngà kg:participatesIn res:season/2009 .
 
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Afric a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển châu Phi" .
+kg:competitionName "Giải vô địch bóng đá bãi biển châu Phi" .
 
 res:season/2009 a kg:Season ;
-    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Afric .
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Afric .
 
 res:team/Bờ_Biển_Ngà kg:participatesIn res:season/2009 .
 
 res:team/Bờ_Biển_Ngà kg:participantCount 12 .
 
 res:team/Bờ_Biển_Ngà kg:bestResultInCompetition "Hạng 11" ;
-    kg:bestResultInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới .
+kg:bestResultInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới .
 
 res:team/Bờ_Biển_Ngà kg:bestResultInCompetition "Á quân" ;
-    kg:bestResultInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Afric .
+kg:bestResultInCompetition res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Afric .

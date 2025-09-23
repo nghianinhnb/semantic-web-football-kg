@@ -1,0 +1,108 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Bồ Đào Nha" .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:teamAbbreviation "POR" .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasCoach res:coach/Mário_Narciso .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:manages res:coach/Mário_Narciso .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_Âu .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:organizes res:competition/Mundialito .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:organizes res:competition/Copa_Latina .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:locatedIn res:country/Bồ_Đào_Nha .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:participatesIn res:season/2005 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:participatesIn res:season/2006 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:participatesIn res:season/2007 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:participatesIn res:season/2008 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:participatesIn res:season/2009 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:participatesIn res:season/2011 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:participatesIn res:season/2013 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:participatesIn res:season/2015 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:participatesIn res:season/2017 .
+
+res:coach/Mário_Narciso kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:coach/Mário_Narciso kg:nationality res:country/Bồ_Đào_Nha .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasAssistantCoach res:coach/Luís_Bilro .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasAssistantCoach res:coach/Tiago_Reis .
+
+res:coach/Luís_Bilro kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:coach/Luís_Bilro kg:nationality res:country/Bồ_Đào_Nha .
+
+res:coach/Tiago_Reis kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:coach/Tiago_Reis kg:nationality res:country/Bồ_Đào_Nha .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Tiago_Petrony .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Rui_Coimbra .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Léo_Martins .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Bruno_Torres .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Jordan_Santos .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Alan_Cavalcanti .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Madjer .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Zé_Maria .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Bruno_Novo .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Belchior .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Bê_Martins .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasPlayer res:player/Elinton_Andrade .
+
+res:player/Tiago_Petrony kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Tiago_Petrony kg:primaryPosition kg:Goalkeeper .
+res:player/Tiago_Petrony kg:shirtNumber "1"^^xsd:positiveInteger .
+
+res:player/Rui_Coimbra kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Rui_Coimbra kg:primaryPosition kg:Defender .
+res:player/Rui_Coimbra kg:shirtNumber "2"^^xsd:positiveInteger .
+
+res:player/Léo_Martins kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Léo_Martins kg:primaryPosition kg:Defender .
+res:player/Léo_Martins kg:shirtNumber "3"^^xsd:positiveInteger .
+
+res:player/Bruno_Torres kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Bruno_Torres kg:primaryPosition kg:Defender .
+res:player/Bruno_Torres kg:shirtNumber "4"^^xsd:positiveInteger .
+
+res:player/Jordan_Santos kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Jordan_Santos kg:primaryPosition kg:Midfielder .
+res:player/Jordan_Santos kg:shirtNumber "5"^^xsd:positiveInteger .
+res:player/Jordan_Santos kg:isCaptain true .
+
+res:player/Alan_Cavalcanti kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Alan_Cavalcanti kg:primaryPosition kg:Defender .
+res:player/Alan_Cavalcanti kg:shirtNumber "6"^^xsd:positiveInteger .
+
+res:player/Madjer kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Madjer kg:primaryPosition kg:Midfielder .
+res:player/Madjer kg:shirtNumber "7"^^xsd:positiveInteger .
+res:player/Madjer kg:isCaptain true .
+
+res:player/Zé_Maria kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Zé_Maria kg:primaryPosition kg:Midfielder .
+res:player/Zé_Maria kg:shirtNumber "8"^^xsd:positiveInteger .
+
+res:player/Bruno_Novo kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Bruno_Novo kg:primaryPosition kg:Forward .
+res:player/Bruno_Novo kg:shirtNumber "9"^^xsd:positiveInteger .
+
+res:player/Belchior kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Belchior kg:primaryPosition kg:Forward .
+res:player/Belchior kg:shirtNumber "10"^^xsd:positiveInteger .
+
+res:player/Bê_Martins kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Bê_Martins kg:primaryPosition kg:Defender .
+res:player/Bê_Martins kg:shirtNumber "11"^^xsd:positiveInteger .
+
+res:player/Elinton_Andrade kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha .
+res:player/Elinton_Andrade kg:primaryPosition kg:Goalkeeper .
+res:player/Elinton_Andrade kg:shirtNumber "12"^^xsd:positiveInteger .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasCompetitionResult res:competitionResult/2005 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasCompetitionResult res:competitionResult/2006 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasCompetitionResult res:competitionResult/2007 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasCompetitionResult res:competitionResult/2008 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasCompetitionResult res:competitionResult/2009 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasCompetitionResult res:competitionResult/2011 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasCompetitionResult res:competitionResult/2013 .
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Bồ_Đào_Nha kg:hasCompetitionResult res:competitionResult/2015 .
+res:team/Đội_tuyển_bóng_đá_b

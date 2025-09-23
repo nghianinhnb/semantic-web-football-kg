@@ -4,105 +4,105 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina a kg:Team ;
-    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Argentina" ;
-    kg:teamAbbreviation "ARG" ;
-    kg:hasCoach res:coach/Gustavo_Casado ;
-    kg:manages res:coach/Gustavo_Casado ;
-    kg:locatedIn res:country/Argentina ;
-    kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
-    kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ ;
-    kg:homeStadium res:stadium/Ezeiza .
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Argentina" ;
+kg:teamAbbreviation "ARG" ;
+kg:hasCoach res:coach/Gustavo_Casado ;
+kg:manages res:coach/Gustavo_Casado ;
+kg:locatedIn res:country/Argentina ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ ;
+kg:homeStadium res:stadium/Ezeiza .
 
 res:country/Argentina a kg:Country .
 
 res:stadium/Ezeiza a kg:Stadium .
 
 res:coach/Gustavo_Casado a kg:Coach ;
-    kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina .
+kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina .
 
 res:assistant_coach/Esteban_Pizzi a kg:AssistantCoach ;
-    kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina .
+kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina .
 
 res:delegate/Gustavo_R_Lorenzo a kg:Delegate ;
-    kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina .
+kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina .
 
 res:player/Marcelo_Salgueiro a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber "1" .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "1" .
 
 res:player/Jonathan_Levi a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber "2" .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "2" .
 
 res:player/Santiago_Hilaire a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber "3" .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "3" .
 
 res:player/Rodrigo_Lopez a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber "8" .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "8" .
 
 res:player/Luciano_Franceschini a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber "6" .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "6" .
 
 res:player/Federico_Costas a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber "10" .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "10" .
 
 res:player/Lucas_Medero a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber "14" ;
-    kg:captain true .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "14" ;
+kg:captain true .
 
 res:player/Federico_Hilaire a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber "7" .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "7" .
 
 res:player/Luciano_Sirico a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber "9" .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "9" .
 
 res:player/Cesar_Leguizamon a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber "11" .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "11" .
 
 res:player/Cristian_Cuevas a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber "4" .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "4" .
 
 res:player/Dardo_Cortes a kg:Player ;
-    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber "12" .
+kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Argentina ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "12" .
 
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
-    kg:heldIn res:country/Argentina .
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới" ;
+kg:heldIn res:country/Argentina .
 
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Nam_Mỹ a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ" ;
-    kg:heldIn res:country/Argentina .
+kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ" ;
+kg:heldIn res:country/Argentina .
 
 res:position/Goalkeeper a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Defender a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Midfielder a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Forward a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .

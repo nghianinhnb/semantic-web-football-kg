@@ -1,141 +1,139 @@
-```turtle
 @prefix kg: <https://kg-football.vn/ontology#> .
 @prefix res: <https://kg-football.vn/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 res:team/Gruzia a kg:Team ;
-    kg:teamName "Gruzia" ;
-    kg:hasCoach res:coach/Jaba_Tchanturia .
+kg:teamName "Gruzia" ;
+kg:hasCoach res:coach/Jaba_Tchanturia .
 
 res:coach/Jaba_Tchanturia a kg:Coach ;
-    kg:manages res:team/Gruzia .
+kg:manages res:team/Gruzia .
 
 res:team/Gruzia kg:participatesIn res:season/2008 ;
-    kg:participatesIn res:season/2016 .
+kg:participatesIn res:season/2016 .
 
 res:season/2008 a kg:Season ;
-    kg:seasonOf res:competition/FIFA_Beach_Soccer_World_Cup_Qualification_Europe_2008 .
+kg:seasonOf res:competition/FIFA_Beach_Soccer_World_Cup_Qualification_Europe_2008 .
 
 res:season/2016 a kg:Season ;
-    kg:seasonOf res:competition/FIFA_Beach_Soccer_World_Cup_Qualification_Europe_2017 .
+kg:seasonOf res:competition/FIFA_Beach_Soccer_World_Cup_Qualification_Europe_2017 .
 
 res:competition/FIFA_Beach_Soccer_World_Cup_Qualification_Europe_2008 a kg:Competition ;
-    kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới 2008 khu vực châu Âu" .
+kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới 2008 khu vực châu Âu" .
 
 res:competition/FIFA_Beach_Soccer_World_Cup_Qualification_Europe_2017 a kg:Competition ;
-    kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới 2017 khu vực châu Âu" .
+kg:competitionName "Vòng loại giải vô địch bóng đá bãi biển thế giới 2017 khu vực châu Âu" .
 
 res:team/Gruzia kg:inCompetition res:competition/FIFA_Beach_Soccer_World_Cup_Qualification_Europe_2008 ;
-    kg:inCompetition res:competition/FIFA_Beach_Soccer_World_Cup_Qualification_Europe_2017 .
+kg:inCompetition res:competition/FIFA_Beach_Soccer_World_Cup_Qualification_Europe_2017 .
 
 res:match/2008_05_11_GEO_vs_PORT a kg:Match ;
-    kg:homeTeam res:team/Gruzia ;
-    kg:awayTeam res:team/Portugal ;
-    kg:venue res:stadium/Benidorm ;
-    kg:kickoffTime "2008-05-11T00:00:00Z"^^xsd:dateTime ;
-    kg:inCompetition res:competition/FIFA_Beash_Soccer_World_Cup_Qualification_Europe_2008 .
+kg:homeTeam res:team/Gruzia ;
+kg:awayTeam res:team/Portugal ;
+kg:venue res:stadium/Benidorm ;
+kg:kickoffTime "2008-05-11T00:00:00Z"^^xsd:dateTime ;
+kg:inCompetition res:competition/FIFA_Beash_Soccer_World_Cup_Qualification_Europe_2008 .
 
 res:stadium/Benidorm a kg:Stadium ;
-    kg:locatedIn res:city/Benidorm .
+kg:locatedIn res:city/Benidorm .
 
 res:city/Benidorm a kg:City ;
-    kg:locatedIn res:country/Spain .
+kg:locatedIn res:country/Spain .
 
 res:country/Spain a kg:Country ;
-    kg:teamName "Tây Ban Nha" .
+kg:teamName "Tây Ban Nha" .
 
 res:team/Portugal a kg:Team ;
-    kg:teamName "Bồ Đào Nha" .
+kg:teamName "Bồ Đào Nha" .
 
 res:country/Italy a kg:Country ;
-    kg:teamName "Ý" .
+kg:teamName "Ý" .
 
 res:country/Russia a kg:Country ;
-    kg:teamName "Nga" .
+kg:teamName "Nga" .
 
 res:player/Khvicha_Makharadze a kg:Player ;
-    kg:playsFor res:team/Gruzia ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber 1 ;
-    kg:nationality res:country/Georgia .
+kg:playsFor res:team/Gruzia ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 ;
+kg:nationality res:country/Georgia .
 
 res:player/Gocha_Beridze a kg:Player ;
-    kg:playsFor res:team/Gruzia ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 3 ;
-    kg:nationality res:country/Georgia .
+kg:playsFor res:team/Gruzia ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 3 ;
+kg:nationality res:country/Georgia .
 
 res:player/Zaur_Kekelidze a kg:Player ;
-    kg:playsFor res:team/Gruzia ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 5 ;
-    kg:nationality res:country/Georgia .
+kg:playsFor res:team/Gruzia ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 5 ;
+kg:nationality res:country/Georgia .
 
 res:player/Vaja_Ivaniadze a kg:Player ;
-    kg:playsFor res:team/Gruzia ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 6 ;
-    kg:nationality res:country/Georgia .
+kg:playsFor res:team/Gruzia ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 ;
+kg:nationality res:country/Georgia .
 
 res:player/Levan_Nadaraya a kg:Player ;
-    kg:playsFor res:team/Gruzia ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 7 ;
-    kg:nationality res:country/Georgia .
+kg:playsFor res:team/Gruzia ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 7 ;
+kg:nationality res:country/Georgia .
 
 res:player/Kakhi_Todadze a kg:Player ;
-    kg:playsFor res:team/Gruzia ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber 11 ;
-    kg:nationality res:country/Georgia .
+kg:playsFor res:team/Gruzia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 11 ;
+kg:nationality res:country/Georgia .
 
 res:player/Roman_Aslanyan a kg:Player ;
-    kg:playsFor res:team/Gruzia ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber 13 ;
-    kg:nationality res:country/Georgia .
+kg:playsFor res:team/Gruzia ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 13 ;
+kg:nationality res:country/Georgia .
 
 res:player/Levan_Partenadze a kg:Player ;
-    kg:playsFor res:team/Gruzia ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 14 ;
-    kg:nationality res:country/Georgia .
+kg:playsFor res:team/Gruzia ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 14 ;
+kg:nationality res:country/Georgia .
 
 res:player/Nukri_Goguadze a kg:Player ;
-    kg:playsFor res:team/Gruzia ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 16 ;
-    kg:nationality res:country/Georgia .
+kg:playsFor res:team/Gruzia ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 16 ;
+kg:nationality res:country/Georgia .
 
 res:player/Zurabi_Shamiladze a kg:Player ;
-    kg:playsFor res:team/Gruzia ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber 20 ;
-    kg:nationality res:country/Georgia .
+kg:playsFor res:team/Gruzia ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 20 ;
+kg:nationality res:country/Georgia .
 
 res:country/Georgia a kg:Country ;
-    kg:teamName "Gruzia" .
+kg:teamName "Gruzia" .
 
 res:club/FC_Dinamo_Batumi a kg:Club ;
-    kg:locatedIn res:city/Batumi ;
-    kg:isHomeOf res:stadium/Sports_Stadium_Batumi .
+kg:locatedIn res:city/Batumi ;
+kg:isHomeOf res:stadium/Sports_Stadium_Batumi .
 
 res:city/Batumi a kg:City ;
-    kg:locatedIn res:country/Georgia .
+kg:locatedIn res:country/Georgia .
 
 res:stadium/Sports_Stadium_Batumi a kg:Stadium ;
-    kg:locatedIn res:city/Batumi .
+kg:locatedIn res:city/Batumi .
 
 res:position/Goalkeeper a kg:Goalkeeper ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Defender a kg:Defender ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Midfielder a kg:Midfielder ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Forward a kg:Forward ;
-    rdfs:subClassOf kg:Position .
-```
+rdfs:subClassOf kg:Position .

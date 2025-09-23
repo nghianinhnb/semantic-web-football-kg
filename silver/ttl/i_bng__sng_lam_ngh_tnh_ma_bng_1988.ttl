@@ -4,4 +4,4 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 res:team/Sông Lam Nghệ Tĩnh a kg:teamName "Sông Lam Nghệ Tĩnh" ;
-    a kg:Team .
+a kg:Team .

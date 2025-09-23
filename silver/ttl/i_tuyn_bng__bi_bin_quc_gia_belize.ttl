@@ -4,94 +4,94 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 res:team/Belize a kg:Team ;
-    kg:teamName "Belize" ;
-    kg:hasCoach res:coach/Renan_Couoh ;
-    kg:locatedIn res:country/Belize ;
-    kg:organizedBy res:organization/CONCACAF ;
-    kg:participatesIn res:competition/Caribbean_North_Central_American_Beach_Soccer_Championship .
+kg:teamName "Belize" ;
+kg:hasCoach res:coach/Renan_Couoh ;
+kg:locatedIn res:country/Belize ;
+kg:organizedBy res:organization/CONCACAF ;
+kg:participatesIn res:competition/Caribbean_North_Central_American_Beach_Soccer_Championship .
 
 res:organization/CONCACAF a kg:Organization ;
-    kg:organizes res:competition/Caribbean_North_Central_American_Beach_Soccer_Championship .
+kg:organizes res:competition/Caribbean_North_Central_American_Beach_Soccer_Championship .
 
 res:competition/Caribbean_North_Central_American_Beach_Soccer_Championship a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" ;
-    kg:heldIn res:country/Belize ;
-    kg:participantCount 12 .
+kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe" ;
+kg:heldIn res:country/Belize ;
+kg:participantCount 12 .
 
 res:country/Belize a kg:Country ;
-    rdfs:label "Belize" .
+rdfs:label "Belize" .
 
 res:coach/Renan_Couoh a kg:Coach ;
-    kg:manages res:team/Belize .
+kg:manages res:team/Belize .
 
 res:player/Frank_Lopez a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber 1 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
 
 res:player/Sean_Mas a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 2 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 .
 
 res:player/John_King a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber 3 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 3 .
 
 res:player/Franz_Nunez a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 4 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 4 .
 
 res:player/Jeremy_James a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber 5 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 5 .
 
 res:player/Elton_Gordon a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 6 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 6 .
 
 res:player/Dennis_Serano a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 7 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 7 .
 
 res:player/Lloyd_Nunez a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 8 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 8 .
 
 res:player/Lionel_Cabral a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber 9 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 9 .
 
 res:player/Keithon_Dyer a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber 10 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 10 .
 
 res:player/Shawn_Vasquez a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 11 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 11 .
 
 res:player/Rugerri_Trejo a kg:Player ;
-    kg:playsFor res:team/Belize ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber 12 .
+kg:playsFor res:team/Belize ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 12 .
 
 res:position/Goalkeeper a kg:Position ;
-    rdfs:subClassOf kg:Goalkeeper .
+rdfs:subClassOf kg:Goalkeeper .
 
 res:position/Defender a kg:Position ;
-    rdfs:subClassOf kg:Defender .
+rdfs:subClassOf kg:Defender .
 
 res:position/Midfielder a kg:Position ;
-    rdfs:subClassOf kg:Midfielder .
+rdfs:subClassOf kg:Midfielder .
 
 res:position/Forward a kg:Position ;
-    rdfs:subClassOf kg:Forward .
+rdfs:subClassOf kg:Forward .

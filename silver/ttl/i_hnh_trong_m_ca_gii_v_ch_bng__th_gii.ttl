@@ -5,4 +5,4 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá thế giới" .
+kg:competitionName "Giải vô địch bóng đá thế giới" .

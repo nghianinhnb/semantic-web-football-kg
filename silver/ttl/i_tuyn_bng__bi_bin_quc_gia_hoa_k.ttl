@@ -1,138 +1,136 @@
-```turtle
 @prefix kg: <https://kg-football.vn/ontology#> .
 @prefix res: <https://kg-football.vn/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 res:team/Hoa_Ky a kg:Team ;
-    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Hoa Kỳ" ;
-    kg:hasCoach res:coach/Eddie_Soto ;
-    kg:locatedIn res:country/Hoa_Ky ;
-    kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_1995 ;
-    kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2005 ;
-    kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2006 ;
-    kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2007 ;
-    kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2013 ;
-    kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2006 ;
-    kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2013 ;
-    kg:organizes res:competition/Visit_Puerto_Vallarta_Cup_2017 .
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Hoa Kỳ" ;
+kg:hasCoach res:coach/Eddie_Soto ;
+kg:locatedIn res:country/Hoa_Ky ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_1995 ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2005 ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2006 ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2007 ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2013 ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2006 ;
+kg:organizes res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2013 ;
+kg:organizes res:competition/Visit_Puerto_Vallarta_Cup_2017 .
 
 res:country/Hoa_Ky a kg:Country ;
-    rdfs:label "Hoa Kỳ" .
+rdfs:label "Hoa Kỳ" .
 
 res:coach/Eddie_Soto a kg:Coach ;
-    kg:manages res:team/Hoa_Ky .
+kg:manages res:team/Hoa_Ky .
 
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_1995 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 1995" ;
-    kg:heldIn res:country/Hoa_Ky ;
-    kg:participantCount 13 .
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 1995" ;
+kg:heldIn res:country/Hoa_Ky ;
+kg:participantCount 13 .
 
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2005 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2005" ;
-    kg:heldIn res:country/Brazil ;
-    kg:participantCount 13 .
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2005" ;
+kg:heldIn res:country/Brazil ;
+kg:participantCount 13 .
 
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2006 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2006" ;
-    kg:heldIn res:country/Brazil ;
-    kg:participantCount 13 .
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2006" ;
+kg:heldIn res:country/Brazil ;
+kg:participantCount 13 .
 
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2007 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2007" ;
-    kg:heldIn res:country/Brazil ;
-    kg:participantCount 13 .
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2007" ;
+kg:heldIn res:country/Brazil ;
+kg:participantCount 13 .
 
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2013 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2013" ;
-    kg:heldIn res:country/Tahiti ;
-    kg:participantCount 13 .
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 2013" ;
+kg:heldIn res:country/Tahiti ;
+kg:participantCount 13 .
 
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2006 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe 2006" ;
-    kg:heldIn res:country/Hoa_Ky ;
-    kg:participantCount 4 .
+kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe 2006" ;
+kg:heldIn res:country/Hoa_Ky ;
+kg:participantCount 4 .
 
 res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2013 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe 2013" ;
-    kg:heldIn res:country/Hoa_Ky ;
-    kg:participantCount 4 .
+kg:competitionName "Giải vô địch bóng đá bãi biển Bắc, Trung Mỹ và Caribe 2013" ;
+kg:heldIn res:country/Hoa_Ky ;
+kg:participantCount 4 .
 
 res:competition/Visit_Puerto_Vallarta_Cup_2017 a kg:Competition ;
-    kg:competitionName "Visit Puerto Vallarta Cup 2017" ;
-    kg:heldIn res:country/Hoa_Ky ;
-    kg:participantCount 10 .
+kg:competitionName "Visit Puerto Vallarta Cup 2017" ;
+kg:heldIn res:country/Hoa_Ky ;
+kg:participantCount 10 .
 
 res:player/Juan_Cervantes a kg:Player ;
-    kg:playsFor res:team/Hoa_Ky ;
-    kg:primaryPosition kg:Goalkeeper .
+kg:playsFor res:team/Hoa_Ky ;
+kg:primaryPosition kg:Goalkeeper .
 
 res:player/Chris_Toth a kg:Player ;
-    kg:playsFor res:team/Hoa_Ky ;
-    kg:primaryPosition kg:Goalkeeper .
+kg:playsFor res:team/Hoa_Ky ;
+kg:primaryPosition kg:Goalkeeper .
 
 res:player/Christian_Blandon a kg:Player ;
-    kg:playsFor res:team/Hoa_Ky ;
-    kg:primaryPosition kg:Defender .
+kg:playsFor res:team/Hoa_Ky ;
+kg:primaryPosition kg:Defender .
 
 res:player/Adriano_Dos_Santos a kg:Player ;
-    kg:playsFor res:team/Hoa_Ky ;
-    kg:primaryPosition kg:Defender .
+kg:playsFor res:team/Hoa_Ky ;
+kg:primaryPosition kg:Defender .
 
 res:player/Jonathan_Greenfield a kg:Player ;
-    kg:playsFor res:team/Hoa_Ky ;
-    kg:primaryPosition kg:Defender .
+kg:playsFor res:team/Hoa_Ky ;
+kg:primaryPosition kg:Defender .
 
 res:player/Oscar_Reyes a kg:Player ;
-    kg:playsFor res:team/Hoa_Ky ;
-    kg:primaryPosition kg:Defender .
+kg:playsFor res:team/Hoa_Ky ;
+kg:primaryPosition kg:Defender .
 
 res:player/David_Mondragon a kg:Player ;
-    kg:playsFor res:team/Hoa_Ky ;
-    kg:primaryPosition kg:Defender .
+kg:playsFor res:team/Hoa_Ky ;
+kg:primaryPosition kg:Defender .
 
 res:player/Jason_Leopoldo a kg:Player ;
-    kg:playsFor res:team/Hoa_Ky ;
-    kg:primaryPosition kg:Forward .
+kg:playsFor res:team/Hoa_Ky ;
+kg:primaryPosition kg:Forward .
 
 res:player/Nick_Perera a kg:Player ;
-    kg:playsFor res:team/Hoa_Ky ;
-    kg:primaryPosition kg:Forward .
+kg:playsFor res:team/Hoa_Ky ;
+kg:primaryPosition kg:Forward .
 
 res:player/Lucas_Roque a kg:Player ;
-    kg:playsFor res:team/Hoa_Ky ;
-    kg:primaryPosition kg:Forward .
+kg:playsFor res:team/Hoa_Ky ;
+kg:primaryPosition kg:Forward .
 
 res:team/Hoa_Ky kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_1995 ;
-    kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2005 ;
-    kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2006 ;
-    kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2007 ;
-    kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2013 ;
-    kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2006 ;
-    kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2013 ;
-    kg:participatesIn res:season/Visit_Puerto_Vallarta_Cup_2017 .
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2005 ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2006 ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2007 ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2013 ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2006 ;
+kg:participatesIn res:season/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2013 ;
+kg:participatesIn res:season/Visit_Puerto_Vallarta_Cup_2017 .
 
 res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_1995 a kg:Season ;
-    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_1995 .
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_1995 .
 
 res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2005 a kg:Season ;
-    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2005 .
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2005 .
 
 res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2006 a kg:Season ;
-    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2006 .
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2006 .
 
 res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2007 a kg:Season ;
-    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2007 .
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2007 .
 
 res:season/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2013 a kg:Season ;
-    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2013 .
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_thế_giới_2013 .
 
 res:season/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2006 a kg:Season ;
-    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2006 .
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2006 .
 
 res:season/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2013 a kg:Season ;
-    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2013 .
+kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_Bắc_Trung_Mỹ_và_Caribe_2013 .
 
 res:season/Visit_Puerto_Vallarta_Cup_2017 a kg:Season ;
-    kg:seasonOf res:competition/Visit_Puerto_Vallarta_Cup_2017 .
-```
+kg:seasonOf res:competition/Visit_Puerto_Vallarta_Cup_2017 .

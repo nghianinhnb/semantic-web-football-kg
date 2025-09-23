@@ -5,130 +5,130 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 res:team/Andorra a kg:Team ;
-    kg:teamName "Andorra" ;
-    kg:teamAbbreviation "AND" ;
-    kg:hasCoach res:coach/Xavier_de_la_Rosa ;
-    kg:locatedIn res:country/Andorra ;
-    kg:participatesIn res:season/European_Beach_Soccer_League_B ;
-    kg:organizes res:competition/European_Beach_Soccer_League ;
-    kg:organizes res:competition/World_Beach_Soccer_Cup_2008 ;
-    kg:organizes res:competition/World_Beach_Soccer_Cup_2009 ;
-    kg:organizes res:competition/World_Beach_Soccer_Cup_2011 ;
-    kg:organizes res:competition/World_Beach_Soccer_Cup_2013 ;
-    kg:organizes res:competition/World_Beach_Soccer_Cup_2015 ;
-    kg:organizes res:competition/World_Beach_Soccer_Cup_2017 .
+kg:teamName "Andorra" ;
+kg:teamAbbreviation "AND" ;
+kg:hasCoach res:coach/Xavier_de_la_Rosa ;
+kg:locatedIn res:country/Andorra ;
+kg:participatesIn res:season/European_Beach_Soccer_League_B ;
+kg:organizes res:competition/European_Beach_Soccer_League ;
+kg:organizes res:competition/World_Beach_Soccer_Cup_2008 ;
+kg:organizes res:competition/World_Beach_Soccer_Cup_2009 ;
+kg:organizes res:competition/World_Beach_Soccer_Cup_2011 ;
+kg:organizes res:competition/World_Beach_Soccer_Cup_2013 ;
+kg:organizes res:competition/World_Beach_Soccer_Cup_2015 ;
+kg:organizes res:competition/World_Beach_Soccer_Cup_2017 .
 
 res:country/Andorra a kg:Country ;
-    rdfs:label "Andorra" .
+rdfs:label "Andorra" .
 
 res:coach/Xavier_de_la_Rosa a kg:Coach ;
-    kg:manages res:team/Andorra .
+kg:manages res:team/Andorra .
 
 res:team/Andorra kg:participatesIn res:season/European_Beach_Soccer_League_B .
 
 res:competition/European_Beach_Soccer_League a kg:Competition ;
-    kg:competitionName "European Beach Soccer League" .
+kg:competitionName "European Beach Soccer League" .
 
 res:season/European_Beach_Soccer_League_B a kg:Season ;
-    kg:seasonOf res:competition/European_Beach_Soccer_League .
+kg:seasonOf res:competition/European_Beach_Soccer_League .
 
 res:competition/World_Beach_Soccer_Cup_2008 a kg:Competition ;
-    kg:competitionName "World Beach Soccer Cup 2008" .
+kg:competitionName "World Beach Soccer Cup 2008" .
 
 res:competition/World_Beach_Soccer_Cup_2009 a kg:Competition ;
-    kg:competitionName "World Beach Soccer Cup 2009" .
+kg:competitionName "World Beach Soccer Cup 2009" .
 
 res:competition/World_Beach_Soccer_Cup_2011 a kg:Competition ;
-    kg:competitionName "World Beach Soccer Cup 2011" .
+kg:competitionName "World Beach Soccer Cup 2011" .
 
 res:competition/World_Beach_Soccer_Cup_2013 a kg:Competition ;
-    kg:competitionName "World Beach Soccer Cup 2013" .
+kg:competitionName "World Beach Soccer Cup 2013" .
 
 res:competition/World_Beach_Soccer_Cup_2015 a kg:Competition ;
-    kg:competitionName "World Beach Soccer Cup 2015" .
+kg:competitionName "World Beach Soccer Cup 2015" .
 
 res:competition/World_Beach_Soccer_Cup_2017 a kg:Competition ;
-    kg:competitionName "World Beach Soccer Cup 2017" .
+kg:competitionName "World Beach Soccer Cup 2017" .
 
 res:team/Andorra kg:hasPlayer res:player/Andre_Ferreira .
 
 res:player/Andre_Ferreira a kg:Player ;
-    kg:playsFor res:team/Andorra ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber "1" .
+kg:playsFor res:team/Andorra ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "1" .
 
 res:team/Andorra kg:hasPlayer res:player/Adria_Caminal .
 
 res:player/Adria_Caminal a kg:Player ;
-    kg:playsFor res:team/Andorra ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber "4" .
+kg:playsFor res:team/Andorra ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "4" .
 
 res:team/Andorra kg:hasPlayer res:player/Arnau_Rodriguez .
 
 res:player/Arnau_Rodriguez a kg:Player ;
-    kg:playsFor res:team/Andorra ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber "5" .
+kg:playsFor res:team/Andorra ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "5" .
 
 res:team/Andorra kg:hasPlayer res:player/Jordi_Alaez .
 
 res:player/Jordi_Alaez a kg:Player ;
-    kg:playsFor res:team/Andorra ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber "6" .
+kg:playsFor res:team/Andorra ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "6" .
 
 res:team/Andorra kg:hasPlayer res:player/Àlex_Martínez .
 
 res:player/Àlex_Martínez a kg:Player ;
-    kg:playsFor res:team/Andorra ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber "7" .
+kg:playsFor res:team/Andorra ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "7" .
 
 res:team/Andorra kg:hasPlayer res:player/Oscar_Neira .
 
 res:player/Oscar_Neira a kg:Player ;
-    kg:playsFor res:team/Andorra ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber "8" .
+kg:playsFor res:team/Andorra ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "8" .
 
 res:team/Andorra kg:hasPlayer res:player/Alex_Villagrasa .
 
 res:player/Alex_Villagrasa a kg:Player ;
-    kg:playsFor res:team/Andorra ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber "9" .
+kg:playsFor res:team/Andorra ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "9" .
 
 res:team/Andorra kg:hasPlayer res:player/Gabriel_Fernandez .
 
 res:player/Gabriel_Fernandez a kg:Player ;
-    kg:playsFor res:team/Andorra ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber "10" .
+kg:playsFor res:team/Andorra ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "10" .
 
 res:team/Andorra kg:hasPlayer res:player/Aleix_Viladot .
 
 res:player/Aleix_Viladot a kg:Player ;
-    kg:playsFor res:team/Andorra ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber "11" .
+kg:playsFor res:team/Andorra ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "11" .
 
 res:team/Andorra kg:hasPlayer res:player/Eric_Flinch .
 
 res:player/Eric_Flinch a kg:Player ;
-    kg:playsFor res:team/Andorra ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber "15" ;
-    kg:other "đội trưởng" .
+kg:playsFor res:team/Andorra ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "15" ;
+kg:other "đội trưởng" .
 
 res:position/Goalkeeper a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Midfielder a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Defender a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Forward a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .

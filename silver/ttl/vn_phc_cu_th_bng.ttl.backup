@@ -1,0 +1,62 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:player/Do_Van_Phuoc a kg:Player ;
+    kg:playsFor res:team/The_Cong ;
+    kg:playsFor res:team/National_Team_Vietnam ;
+    kg:birthDate "1955-01-01"^^xsd:date ;
+    kg:nationality res:country/Vietnam ;
+    kg:currentRole kg:Representative .
+
+res:team/The_Cong a kg:Club .
+
+res:team/National_Team_Vietnam a kg:Team .
+
+res:country/Vietnam a kg:Country .
+
+res:person/Do_Van_Phuoc a kg:Person ;
+    kg:name "Đỗ Văn Phúc" ;
+    kg:birthDate "1955-01-01"^^xsd:date ;
+    kg:nationality res:country/Vietnam .
+
+res:award/Vo_Dich_Hang_2_Mien_Bac_Hong_Ha a kg:Award ;
+    kg:winner res:player/Do_Van_Phuoc ;
+    kg:date "1978-01-01"^^xsd:date ;
+    kg:description "Vô địch hạng 2 miền Bắc – Giải Hồng Hà với CLB BĐ Quân đoàn 1".
+
+res:award/Vo_Dich_Quoc_Nha a kg:Award ;
+    kg:winner res:player/Do_Van_Phuoc ;
+    kg:date "1981-01-01"^^xsd:date ;
+    kg:year "1981/1982" .
+
+res:award/Huy_Chuong_Bac_Quoc_Nha a kg:Award ;
+    kg:winner res:player/Do_Van_Phuoc ;
+    kg:date "1984-01-01"^^xsd:date .
+
+res:award/Kien_Tuong_The_Thao_Quoc_Gia a kg:Award ;
+    kg:winner res:player/Do_Van_Phuoc ;
+    kg:date "1983-01-01"^^xsd:date .
+
+res:award/Ky_Niem_Chuong_Vi_Su_Nghiep_The_Thao a kg:Award ;
+    kg:winner res:player/Do_Van_Phuoc ;
+    kg:date "2007-01-01"^^xsd:date .
+
+res:person/Du_Van_Luc a kg:Person ;
+    kg:name "Đỗ Văn Lực" ;
+    kg:nationality res:country/Vietnam ;
+    kg:role kg:Footballer .
+
+res:team/Buu_Dien a kg:Team .
+
+res:club/CLB_BD_Quan_Doan_1 a kg:Club .
+
+res:organization/VFF a kg:Organization .
+
+res:person/Do_Van_Phuoc a kg:Representative ;
+    kg:representing res:organization/VFF ;
+    kg:location res:country/Germany .
+```

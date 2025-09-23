@@ -4,83 +4,83 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 res:team/Belarus National Beach Soccer Team a kg:Team ;
-    kg:teamName "Belarus National Beach Soccer Team" ;
-    kg:hasCoach res:coach/Nicolas Alejandro ;
-    kg:locatedIn res:country/Belarus ;
-    kg:organizes res:competition/Belarus National Beach Soccer Team .
+kg:teamName "Belarus National Beach Soccer Team" ;
+kg:hasCoach res:coach/Nicolas Alejandro ;
+kg:locatedIn res:country/Belarus ;
+kg:organizes res:competition/Belarus National Beach Soccer Team .
 
 res:country/Belarus a kg:Country ;
-    rdfs:label "Belarus" .
+rdfs:label "Belarus" .
 
 res:coach/Nicolas Alejandro a kg:Coach ;
-    kg:manages res:team/Belarus National Beach Soccer Team .
+kg:manages res:team/Belarus National Beach Soccer Team .
 
 res:player/Ihar Bryshtel a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 8 ;
-    kg:topScorer "56" ;
-    kg:captain true .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 8 ;
+kg:topScorer "56" ;
+kg:captain true .
 
 res:player/Ivan Kanstantsinau a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:shirtNumber 48 ;
-    kg:mostCaps "48" .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:shirtNumber 48 ;
+kg:mostCaps "48" .
 
 res:player/Valeri Makarevich a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber 1 .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 1 .
 
 res:player/Vadzim Bokach a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 2 .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 2 .
 
 res:player/Ivan Konstantinov a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 4 .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 4 .
 
 res:player/Dzianis Samsonov a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber 5 .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber 5 .
 
 res:player/Ivan Miranovich a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 7 .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 7 .
 
 res:player/Andrei Davidovich a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 9 .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 9 .
 
 res:player/Aleh Slavutsin a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber 10 .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 10 .
 
 res:player/Dzmitry Shymanouski a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber 11 .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber 11 .
 
 res:player/Ilia Savich a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 13 .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 13 .
 
 res:player/Dzmitry Kamzolau a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber 20 .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber 20 .
 
 res:player/Aliaksandr Kavaleu a kg:Player ;
-    kg:playsFor res:team/Belarus National Beach Soccer Team ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber 12 .
+kg:playsFor res:team/Belarus National Beach Soccer Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber 12 .
 
 res:position/Forward a kg:Forward .
 
@@ -91,49 +91,49 @@ res:position/Midfielder a kg:Midfielder .
 res:position/Goalkeeper a kg:Goalkeeper .
 
 res:competition/Belarus National Beach Soccer Team a kg:Competition ;
-    kg:competitionName "Belarus National Beach Soccer Team" .
+kg:competitionName "Belarus National Beach Soccer Team" .
 
 res:match/FirstGame a kg:Match ;
-    kg:homeTeam res:team/Belarus National Beach Soccer Team ;
-    kg:awayTeam res:team/Poland ;
-    kg:kickoffTime "2008-05-07T00:00:00" ;
-    kg:venue res:city/Chodecz .
+kg:homeTeam res:team/Belarus National Beach Soccer Team ;
+kg:awayTeam res:team/Poland ;
+kg:kickoffTime "2008-05-07T00:00:00" ;
+kg:venue res:city/Chodecz .
 
 res:match/LargestWin a kg:Match ;
-    kg:homeTeam res:team/Belarus National Beach Soccer Team ;
-    kg:awayTeam res:team/Serbia ;
-    kg:kickoffTime "2016-09-03T00:00:00" ;
-    kg:venue res:city/Jesolo .
+kg:homeTeam res:team/Belarus National Beach Soccer Team ;
+kg:awayTeam res:team/Serbia ;
+kg:kickoffTime "2016-09-03T00:00:00" ;
+kg:venue res:city/Jesolo .
 
 res:match/LargestLoss a kg:Match ;
-    kg:homeTeam res:team/Belarus National Beach Soccer Team ;
-    kg:awayTeam res:team/Russia ;
-    kg:kickoffTime "2011-03-30T00:00:00" ;
-    kg:venue res:city/Saint Petersburg .
+kg:homeTeam res:team/Belarus National Beach Soccer Team ;
+kg:awayTeam res:team/Russia ;
+kg:kickoffTime "2011-03-30T00:00:00" ;
+kg:venue res:city/Saint Petersburg .
 
 res:city/Chodecz a kg:City ;
-    kg:locatedIn res:country/Poland .
+kg:locatedIn res:country/Poland .
 
 res:city/Jesolo a kg:City ;
-    kg:locatedIn res:country/Italy .
+kg:locatedIn res:country/Italy .
 
 res:city/Saint Petersburg a kg:City ;
-    kg:locatedIn res:country/Russia .
+kg:locatedIn res:country/Russia .
 
 res:city/Chodecz a kg:City ;
-    rdfs:label "Chodecz" .
+rdfs:label "Chodecz" .
 
 res:city/Jesolo a kg:City ;
-    rdfs:label "Jesolo" .
+rdfs:label "Jesolo" .
 
 res:city/Saint Petersburg a kg:City ;
-    rdfs:label "Saint Petersburg" .
+rdfs:label "Saint Petersburg" .
 
 res:country/Poland a kg:Country ;
-    rdfs:label "Poland" .
+rdfs:label "Poland" .
 
 res:country/Italy a kg:Country ;
-    rdfs:label "Italy" .
+rdfs:label "Italy" .
 
 res:country/Russia a kg:Country ;
-    rdfs:label "Russia" .
+rdfs:label "Russia" .

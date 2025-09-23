@@ -1,0 +1,16 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:team/Sông_Lam_Nghệ_Tĩnh a kg:Team ;
+    kg:teamName "Sông Lam Nghệ Tĩnh" ;
+    kg:teamAbbreviation "SLNT" ;
+    kg:participatesIn res:season/Mua_Bóng_1990 . 
+
+res:season/Mua_Bóng_1990 a kg:Season ;
+    kg:seasonOf res:competition/Vô_Danh_Vietnam_League_1990 . 
+
+res:competition/Vô_Danh_Vietnam_League_1990 a kg:Competition ;
+    kg:competitionName "Vô Danh Vietnam League 1990" .

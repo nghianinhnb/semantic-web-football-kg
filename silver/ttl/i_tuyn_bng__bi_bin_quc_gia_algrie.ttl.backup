@@ -1,0 +1,108 @@
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie a kg:Team ;
+    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Algérie" ;
+    kg:teamAbbreviation "ALG" ;
+    kg:hasCoach res:coach/Lakhdar_Belloumi ;
+    kg:locatedIn res:country/Algérie ;
+    kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Algerie ;
+    kg:participatesIn res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi .
+
+res:organization/Liên_đoàn_bóng_đá_Algerie a kg:Organization .
+
+res:country/Algérie a kg:Country .
+
+res:coach/Lakhdar_Belloumi a kg:Coach ;
+    kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển châu Phi" ;
+    kg:heldIn res:country/Algérie ;
+    kg:participantCount 1 .
+
+res:player/Mhamed_Haniched a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:shirtNumber 1 .
+
+res:player/Tarek_Ghoul a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 2 .
+
+res:player/Mustapha_Maza a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 4 .
+
+res:player/Brahim_Arafat_Mezouar a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:shirtNumber 5 .
+
+res:player/Moulay_Haddou a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie ;
+    kg:primaryPosition res:position/Defender ;
+    kg:shirtNumber 6 .
+
+res:player/Fayçal_Badji a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:shirtNumber 8 .
+
+res:player/Farid_Ghazi a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 9 .
+
+res:player/Mohamed_Reda_Abbaci a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie ;
+    kg:primaryPosition res:position/Midfielder ;
+    kg:shirtNumber 10 .
+
+res:player/Fawzi_Moussouni a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie ;
+    kg:primaryPosition res:position/Forward ;
+    kg:shirtNumber 11 .
+
+res:player/Farid_Belmellat a kg:Player ;
+    kg:playsFor res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie ;
+    kg:primaryPosition res:position/Goalkeeper ;
+    kg:shirtNumber 22 .
+
+res:assistant_coach/Mourad_Slatni a kg:AssistantCoach ;
+    kg:manages res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie .
+
+res:organization/Liên_đoàn_bóng_đá_Algerie a kg:Organization .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi a kg:Competition ;
+    kg:competitionName "Giải vô địch bóng đá bãi biển châu Phi" ;
+    kg:heldIn res:country/Algérie ;
+    kg:participantCount 1 .
+
+res:season/2011 a kg:Season ;
+    kg:hasSeason res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi ;
+    kg:seasonOf res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie kg:participatesIn res:season/2011 .
+
+res:competition/Giải_vô_địch_bóng_đá_bãi_biển_châu_phi kg:organizedBy res:organization/Liên_đoàn_bóng_đá_Algerie .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie kg:hasCoach res:coach/Lakhdar_Belloumi .
+
+res:team/Đội_tuyển_bóng_đá_bãi_biển_quốc_gia_Algerie kg:locatedIn res:country/Algérie .
+
+res:position/Goalkeeper a kg:Goalkeeper .
+
+res:position/Defender a kg:Defender .
+
+res:position/Midfielder a kg:Midfielder .
+
+res:position/Forward a kg:Forward .
+
+res:country/Algérie a kg:Country .
+
+res:organization/Liên_đoàn_bóng_đá_Algerie a kg:Organization .

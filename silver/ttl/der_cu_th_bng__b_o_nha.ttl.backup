@@ -1,0 +1,275 @@
+```turtle
+@prefix kg: <https://kg-football.vn/ontology#> .
+@prefix res: <https://kg-football.vn/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+res:player/Eder a kg:Player ;
+    kg:primaryPosition res:position/Forward ;
+    kg:birthDate "1987-12-22"^^xsd:date ;
+    kg:birthPlace res:city/Bissau ;
+    kg:nationality res:country/Portugal ;
+    kg:height "1.90"^^xsd:decimal ;
+    kg:name "Éder" ;
+    kg:fullName "Éderzito António Macedo Lopes" ;
+    kg:image "Eder 2020.jpg" ;
+    kg:caption "Eder thi đấu cho Lokomotiv Moscow năm 2020" .
+
+res:city/Bissau a kg:City ;
+    rdfs:label "Bissau" ;
+    kg:locatedIn res:country/Guinea-Bissau .
+
+res:country/Portugal a kg:Country ;
+    rdfs:label "Bồ Đào Nha" .
+
+res:country/Guinea-Bissau a kg:Country ;
+    rdfs:label "Guinea-Bissau" .
+
+res:position/Forward a kg:Forward .
+
+res:team/AcademicCoimbra a kg:Club ;
+    kg:teamName "Académica" .
+
+res:team/Braga a kg:Club ;
+    kg:teamName "Braga" .
+
+res:team/SwanseaCity a kg:Club ;
+    kg:teamName "Swansea City" .
+
+res:team/Lille a kg:Club ;
+    kg:teamName "Lille" .
+
+res:team/LokomotivMoscow a kg:Club ;
+    kg:teamName "Lokomotiv Moscow" .
+
+res:team/AlRaed a kg:Club ;
+    kg:teamName "Al Raed" .
+
+res:team/Tourizense a kg:Club ;
+    kg:teamName "Tourizense" .
+
+res:team/OliveiraHospital a kg:Club ;
+    kg:teamName "Oliveira Hospital" .
+
+res:season/2006-2007 a kg:Season ;
+    kg:seasonOf res:competition/SegundaDivisao .
+
+res:season/2007-2008 a kg:Season ;
+    kg:seasonOf res:competition/SegundaDivisao .
+
+res:season/2008-2009 a kg:Season ;
+    kg:seasonOf res:competition/SegundaDivisao .
+
+res:season/2008-2009 a kg:Season ;
+    kg:seasonOf res:competition/PrimeiraLiga .
+
+res:season/2009-2010 a kg:Season ;
+    kg:seasonOf res:competition/PrimeiraLiga .
+
+res:season/2010-2011 a kg:Season ;
+    kg:seasonOf res:competition/PrimeiraLiga .
+
+res:season/2011-2012 a kg:Season ;
+    kg:seasonOf res:competition/PrimeiraLiga .
+
+res:season/2012-2013 a kg:Season ;
+    kg:seasonOf res:competition/PrimeiraLiga .
+
+res:season/2013-2014 a kg:Season ;
+    kg:seasonOf res:competition/PrimeiraLiga .
+
+res:season/2014-2015 a kg:Season ;
+    kg:seasonOf res:competition/PrimeiraLiga .
+
+res:season/2015-2016 a kg:Season ;
+    kg:seasonOf res:competition/PremierLeague .
+
+res:season/2015-2016 a kg:Season ;
+    kg:seasonOf res:competition/Ligue1 .
+
+res:season/2016-2017 a kg:Season ;
+    kg:seasonOf res:competition/Ligue1 .
+
+res:season/2017-2018 a kg:Season ;
+    kg:seasonOf res:competition/RussianPremierLeague .
+
+res:season/2018-2019 a kg:Season ;
+    kg:seasonOf res:competition/RussianPremierLeague .
+
+res:season/2019-2020 a kg:Season ;
+    kg:seasonOf res:competition/RussianPremierLeague .
+
+res:season/2020-2021 a kg:Season ;
+    kg:seasonOf res:competition/RussianPremierLeague .
+
+res:season/2021-2022 a kg:Season ;
+    kg:seasonOf res:competition/SaudiProLeague .
+
+res:competition/SegundaDivisao a kg:Competition ;
+    kg:competitionName "Segunda Divisão" .
+
+res:competition/PrimeiraLiga a kg:Competition ;
+    kg:competitionName "Primeira Liga" .
+
+res:competition/PremierLeague a kg:Competition ;
+    kg:competitionName "Premier League" .
+
+res:competition/Ligue1 a kg:Competition ;
+    kg:competitionName "Ligue 1" .
+
+res:competition/RussianPremierLeague a kg:Competition ;
+    kg:competitionName "Russian Premier League" .
+
+res:competition/SaudiProLeague a kg:Competition ;
+    kg:competitionName "Saudi Professional League" .
+
+res:player/Eder kg:playsFor res:team/Tourizense ;
+    kg:participatesIn res:season/2006-2007 ;
+    kg:participatesIn res:season/2007-2008 ;
+    kg:participatesIn res:season/2008-2009 .
+
+res:player/Eder kg:playsFor res:team/AcademicCoimbra ;
+    kg:participatesIn res:season/2008-2009 ;
+    kg:participatesIn res:season/2009-2010 ;
+    kg:participatesIn res:season/2010-2011 ;
+    kg:participatesIn res:season/2011-2012 .
+
+res:player/Eder kg:playsFor res:team/Braga ;
+    kg:participatesIn res:season/2012-2013 ;
+    kg:participatesIn res:season/2013-2014 ;
+    kg:participatesIn res:season/2014-2015 .
+
+res:player/Eder kg:playsFor res:team/SwanseaCity ;
+    kg:participatesIn res:season/2015-2016 .
+
+res:player/Eder kg:playsFor res:team/Lille ;
+    kg:participatesIn res:season/2015-2016 ;
+    kg:participatesIn res:season/2016-2017 .
+
+res:player/Eder kg:playsFor res:team/LokomotivMoscow ;
+    kg:participatesIn res:season/2017-2018 ;
+    kg:participatesIn res:season/2018-2019 ;
+    kg:participatesIn res:season/2019-2020 ;
+    kg:participatesIn res:season/2020-2021 .
+
+res:player/Eder kg:playsFor res:team/AlRaed ;
+    kg:participatesIn res:season/2021-2022 .
+
+res:player/Eder kg:hasStats [
+    a kg:PlayerStats ;
+    kg:club res:team/Tourizense ;
+    kg:season res:season/2006-2007 ;
+    kg:matches 7 ;
+    kg:goals 1
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/Tourizense ;
+    kg:season res:season/2007-2008 ;
+    kg:matches 34 ;
+    kg:goals 10
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/Tourizense ;
+    kg:season res:season/2008-2009 ;
+    kg:matches 1 ;
+    kg:goals 0
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/AcademicCoimbra ;
+    kg:season res:season/2008-2009 ;
+    kg:matches 24 ;
+    kg:goals 1
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/AcademicCoimbra ;
+    kg:season res:season/2009-2010 ;
+    kg:matches 22 ;
+    kg:goals 4
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/AcademicCoimbra ;
+    kg:season res:season/2010-2011 ;
+    kg:matches 21 ;
+    kg:goals 2
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/AcademicCoimbra ;
+    kg:season res:season/2011-2012 ;
+    kg:matches 16 ;
+    kg:goals 5
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/Braga ;
+    kg:season res:season/2012-2013 ;
+    kg:matches 18 ;
+    kg:goals 13
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/Braga ;
+    kg:season res:season/2013-2014 ;
+    kg:matches 13 ;
+    kg:goals 3
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/Braga ;
+    kg:season res:season/2014-2015 ;
+    kg:matches 29 ;
+    kg:goals 10
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/SwanseaCity ;
+    kg:season res:season/2015-2016 ;
+    kg:matches 13 ;
+    kg:goals 0
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/Lille ;
+    kg:season res:season/2015-2016 ;
+    kg:matches 13 ;
+    kg:goals 6
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/Lille ;
+    kg:season res:season/2016-2017 ;
+    kg:matches 31 ;
+    kg:goals 6
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/LokomotivMoscow ;
+    kg:season res:season/2017-2018 ;
+    kg:matches 18 ;
+    kg:goals 4
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/LokomotivMoscow ;
+    kg:season res:season/2018-2019 ;
+    kg:matches 22 ;
+    kg:goals 1
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/LokomotivMoscow ;
+    kg:season res:season/2019-2020 ;
+    kg:matches 23 ;
+    kg:goals 5
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/LokomotivMoscow ;
+    kg:season res:season/2020-2021 ;
+    kg:matches 20 ;
+    kg:goals 1
+] , [
+    a kg:PlayerStats ;
+    kg:club res:team/AlRaed ;
+    kg:season res:season/2021-2022 ;
+    kg:matches 22 ;
+    kg:goals 6
+].
+
+res:player/Eder kg:participatesIn res:competition/UEFAEuro2016 ;
+    kg:goals 3 ;
+    kg:matches 11 .
+
+res:player/Eder kg:participatesIn res:competition/FIFAWorldCup2014 ;
+    kg:goals 0 ;
+    kg:matches 10 .
+```

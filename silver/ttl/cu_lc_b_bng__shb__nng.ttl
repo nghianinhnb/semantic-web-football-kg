@@ -1,4 +1,3 @@
-```turtle
 @prefix kg: <https://kg-football.vn/ontology#> .
 @prefix res: <https://kg-football.vn/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -6,31 +5,30 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 res:club/SHB_Da_Nang a kg:Club ;
-    kg:teamName "Câu lạc bộ bóng đá SHB Đà Nẵng" ;
-    kg:teamAbbreviation "SHBĐN" ;
-    kg:hasOwner res:owner/Cong_ty_co_phan_The_thao_SHB_Da_Nang ;
-    kg:homeStadium res:stadium/Hoa_Xuan ;
-    kg:foundedDate "1976-01-01"^^xsd:date ;
-    kg:hasCoach res:coach/Le_Duc_Tuan .
+kg:teamName "Câu lạc bộ bóng đá SHB Đà Nẵng" ;
+kg:teamAbbreviation "SHBĐN" ;
+kg:hasOwner res:owner/Cong_ty_co_phan_The_thao_SHB_Da_Nang ;
+kg:homeStadium res:stadium/Hoa_Xuan ;
+kg:foundedDate "1976-01-01"^^xsd:date ;
+kg:hasCoach res:coach/Le_Duc_Tuan .
 
 res:owner/Cong_ty_co_phan_The_thao_SHB_Da_Nang a kg:Owner ;
-    kg:owns res:club/SHB_Da_Nang .
+kg:owns res:club/SHB_Da_Nang .
 
 res:stadium/Hoa_Xuan a kg:Stadium ;
-    kg:capacity 20000 ;
-    kg:isHomeOf res:club/SHB_Da_Nang .
+kg:capacity 20000 ;
+kg:isHomeOf res:club/SHB_Da_Nang .
 
 res:coach/Le_Duc_Tuan a kg:Coach ;
-    kg:manages res:club/SHB_Da_Nang .
+kg:manages res:club/SHB_Da_Nang .
 
 res:competition/V_League_1 a kg:Competition ;
-    kg:competitionName "V.League 1" .
+kg:competitionName "V.League 1" .
 
 res:season/Mua_giai_2024_25 a kg:Season ;
-    kg:seasonOf res:competition/V_League_1 ;
-    kg:participatesIn res:club/SHB_Da_Nang .
+kg:seasonOf res:competition/V_League_1 ;
+kg:participatesIn res:club/SHB_Da_Nang .
 
 res:club/SHB_Da_Nang kg:inCompetition res:competition/V_League_1 ;
-    kg:inSeason res:season/Mua_giai_2024_25 ;
-    kg:position "Thứ 13 (đá play-off)"^xsd:string .
-```
+kg:inSeason res:season/Mua_giai_2024_25 ;
+kg:position "Thứ 13 (đá play-off)"^xsd:string .

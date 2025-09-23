@@ -5,4 +5,4 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://kg-football.vn/resource/player/Đào_Tấn_Lộc>
-  a kg:Player ;
+a kg:Player ;

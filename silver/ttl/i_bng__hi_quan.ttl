@@ -1,169 +1,167 @@
-```turtle
 @prefix kg: <https://kg-football.vn/ontology#> .
 @prefix res: <https://kg-football.vn/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 res:club/Hải_quan a kg:Club ;
-    kg:teamName "Đội bóng đá Hải quan" ;
-    kg:teamAbbreviation "HQ" ;
-    kg:foundedDate "1976-01-01"^^xsd:date ;
-    kg:homeStadium res:stadium/Thống_Nhất ;
-    kg:hasOwner res:organization/Cục_Hải_quan_Thành_phố_Hồ_Chí_Minh ;
-    kg:participatesIn res:competition/Vô_địch_Quốc_gia .
+kg:teamName "Đội bóng đá Hải quan" ;
+kg:teamAbbreviation "HQ" ;
+kg:foundedDate "1976-01-01"^^xsd:date ;
+kg:homeStadium res:stadium/Thống_Nhất ;
+kg:hasOwner res:organization/Cục_Hải_quan_Thành_phố_Hồ_Chí_Minh ;
+kg:participatesIn res:competition/Vô_địch_Quốc_gia .
 
 res:stadium/Thống_Nhất a kg:Stadium ;
-    kg:capacity 30000 ;
-    kg:isHomeOf res:club/Hải_quan .
+kg:capacity 30000 ;
+kg:isHomeOf res:club/Hải_quan .
 
 res:organization/Cục_Hải_quan_Thành_phố_Hồ_Chí_Minh a kg:Owner .
 
 res:competition/Vô_địch_Quốc_gia a kg:Competition ;
-    kg:competitionName "Vô địch Quốc gia" .
+kg:competitionName "Vô địch Quốc gia" .
 
 res:club/Hải_quan kg:participatesIn res:season/1982 ;
-    kg:participatesIn res:season/1983 ;
-    kg:participatesIn res:season/1980 ;
-    kg:participatesIn res:season/1986 ;
-    kg:participatesIn res:season/1991 ;
-    kg:participatesIn res:season/1996 ;
-    kg:participatesIn res:season/1997 ;
-    kg:participatesIn res:season/2001-02 .
+kg:participatesIn res:season/1983 ;
+kg:participatesIn res:season/1980 ;
+kg:participatesIn res:season/1986 ;
+kg:participatesIn res:season/1991 ;
+kg:participatesIn res:season/1996 ;
+kg:participatesIn res:season/1997 ;
+kg:participatesIn res:season/2001-02 .
 
 res:season/1982 a kg:Season ;
-    kg:seasonOf res:competition/Vô_địch_Quốc_gia .
+kg:seasonOf res:competition/Vô_địch_Quốc_gia .
 
 res:season/1983 a kg:Season ;
-    kg:seasonOf res:competition/Vô_địch_Quốc_gia .
+kg:seasonOf res:competition/Vô_địch_Quốc_gia .
 
 res:season/1980 a kg:Season ;
-    kg:seasonOf res:competition/Vô_địch_Quốc_gia .
+kg:seasonOf res:competition/Vô_địch_Quốc_gia .
 
 res:season/1986 a kg:Season ;
-    kg:seasonOf res:competition/Vô_địch_Quốc_gia .
+kg:seasonOf res:competition/Vô_địch_Quốc_gia .
 
 res:season/1991 a kg:Season ;
-    kg:seasonOf res:competition/Vô_địch_Quốc_gia .
+kg:seasonOf res:competition/Vô_địch_Quốc_gia .
 
 res:season/1996 a kg:Season ;
-    kg:seasonOf res:competition/Vô_địch_Quốc_gia .
+kg:seasonOf res:competition/Vô_địch_Quốc_gia .
 
 res:season/1997 a kg:Season ;
-    kg:seasonOf res:competition/Vô_địch_Quốc_gia .
+kg:seasonOf res:competition/Vô_địch_Quốc_gia .
 
 res:season/2001-02 a kg:Season ;
-    kg:seasonOf res:competition/Vô_địch_Quốc_gia .
+kg:seasonOf res:competition/Vô_địch_Quốc_gia .
 
 res:club/Hải_quan kg:hasAchievement [
-    a kg:Achievement ;
-    kg:achievementType "Vô địch" ;
-    kg:season res:season/1991
+a kg:Achievement ;
+kg:achievementType "Vô địch" ;
+kg:season res:season/1991
 ] ;
-    kg:hasAchievement [
-    a kg:Achievement ;
-    kg:achievementType "Á quân" ;
-    kg:season res:season/1982
+kg:hasAchievement [
+a kg:Achievement ;
+kg:achievementType "Á quân" ;
+kg:season res:season/1982
 ] ;
-    kg:hasAchievement [
-    a kg:Achievement ;
-    kg:achievementType "Á quân" ;
-    kg:season res:season/1983
+kg:hasAchievement [
+a kg:Achievement ;
+kg:achievementType "Á quân" ;
+kg:season res:season/1983
 ] ;
-    kg:hasAchievement [
-    a kg:Achievement ;
-    kg:achievementType "Hạng Ba" ;
-    kg:season res:season/1980
+kg:hasAchievement [
+a kg:Achievement ;
+kg:achievementType "Hạng Ba" ;
+kg:season res:season/1980
 ] ;
-    kg:hasAchievement [
-    a kg:Achievement ;
-    kg:achievementType "Hạng Ba" ;
-    kg:season res:season/1986
+kg:hasAchievement [
+a kg:Achievement ;
+kg:achievementType "Hạng Ba" ;
+kg:season res:season/1986
 ] ;
-    kg:hasAchievement [
-    a kg:Achievement ;
-    kg:achievementType "Vô địch" ;
-    kg:season res:season/1996
+kg:hasAchievement [
+a kg:Achievement ;
+kg:achievementType "Vô địch" ;
+kg:season res:season/1996
 ] ;
-    kg:hasAchievement [
-    a kg:Achievement ;
-    kg:achievementType "Vô địch" ;
-    kg:season res:season/1997
+kg:hasAchievement [
+a kg:Achievement ;
+kg:achievementType "Vô địch" ;
+kg:season res:season/1997
 ] .
 
 res:club/Hải_quan kg:dissolvedDate "2003-01-01"^^xsd:date .
 
 res:player/Lê_Văn_Tâm a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Đỗ_Văn_Khá a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Đỗ_Cẩu a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Đỗ_Khải a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Hồ_Thanh_Chinh a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Hồ_Thanh_Cang a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Hồ_Thanh_Dũng a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Hồ_Thanh_Đức a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Đinh_Thanh_Hải a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Nguyễn_Chí_Mỹ a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Âu_Dương_Thanh a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Nguyễn_Tấn_Quyền a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Lưu_Tấn_Phước a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Lưu_Tấn_Liêm a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Trương_Văn_Dưỡng a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Nguyễn_Kim_Hằng a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Nguyễn_Hoàng_Minh a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Nguyễn_Đăng_Khôi a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Thái_Công_Hoàng a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Phan_Văn_Tần a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Nguyễn_Văn_Thành a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Lê_Kim_Thanh a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Lê_Văn_Sang a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Vũ_Nhật_Thành a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
+kg:playsFor res:club/Hải_quan .
 
 res:player/Hồ_Thanh_Hưng a kg:Player ;
-    kg:playsFor res:club/Hải_quan .
-```
+kg:playsFor res:club/Hải_quan .

@@ -5,4 +5,4 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 res:player/Óscar_Cortés a kg:Player ;
-    kg:birthDate "2003-01-01"^^xsd:date .
+kg:birthDate "2003-01-01"^^xsd:date .

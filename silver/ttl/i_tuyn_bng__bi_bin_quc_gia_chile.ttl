@@ -5,125 +5,125 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 res:team/Chile_Beach_Soccer_National_Team a kg:Team ;
-    kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Chile" ;
-    kg:teamAbbreviation "CHI" ;
-    kg:hasCoach res:coach/Miguel_Angel_Gamboa ;
-    kg:locatedIn res:country/Chile ;
-    kg:participantCount "1"^^xsd:positiveInteger ;
-    kg:participatesIn res:competition/FIBA_World_Beach_Soccer_Championship_1998 ;
-    kg:participatesIn res:competition/South_American_Beach_Soccer_Championship_2008 ;
-    kg:participatesIn res:competition/South_American_Beach_Soccer_Championship_2009 ;
-    kg:participatesIn res:competition/South_American_Beach_Soccer_Championship_2011 ;
-    kg:participatesIn res:competition/South_American_Beach_Soccer_Championship_2013 ;
-    kg:participatesIn res:competition/South_American_Beach_Soccer_Championship_2015 .
+kg:teamName "Đội tuyển bóng đá bãi biển quốc gia Chile" ;
+kg:teamAbbreviation "CHI" ;
+kg:hasCoach res:coach/Miguel_Angel_Gamboa ;
+kg:locatedIn res:country/Chile ;
+kg:participantCount "1"^^xsd:positiveInteger ;
+kg:participatesIn res:competition/FIBA_World_Beach_Soccer_Championship_1998 ;
+kg:participatesIn res:competition/South_American_Beach_Soccer_Championship_2008 ;
+kg:participatesIn res:competition/South_American_Beach_Soccer_Championship_2009 ;
+kg:participatesIn res:competition/South_American_Beach_Soccer_Championship_2011 ;
+kg:participatesIn res:competition/South_American_Beach_Soccer_Championship_2013 ;
+kg:participatesIn res:competition/South_American_Beach_Soccer_Championship_2015 .
 
 res:competition/FIBA_World_Beach_Soccer_Championship_1998 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 1998" ;
-    kg:heldIn res:country/Chile .
+kg:competitionName "Giải vô địch bóng đá bãi biển thế giới 1998" ;
+kg:heldIn res:country/Chile .
 
 res:competition/South_American_Beach_Soccer_Championship_2008 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2008" ;
-    kg:heldIn res:country/Chile .
+kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2008" ;
+kg:heldIn res:country/Chile .
 
 res:competition/South_American_Beach_Soccer_Championship_2009 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2009" ;
-    kg:heldIn res:country/Chile .
+kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2009" ;
+kg:heldIn res:country/Chile .
 
 res:competition/South_American_Beach_Soccer_Championship_2011 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2011" ;
-    kg:heldIn res:country/Chile .
+kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2011" ;
+kg:heldIn res:country/Chile .
 
 res:competition/South_American_Beach_Soccer_Championship_2013 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2013" ;
-    kg:heldIn res:country/Chile .
+kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2013" ;
+kg:heldIn res:country/Chile .
 
 res:competition/South_American_Beach_Soccer_Championship_2015 a kg:Competition ;
-    kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2015" ;
-    kg:heldIn res:country/Chile .
+kg:competitionName "Giải vô địch bóng đá bãi biển Nam Mỹ 2015" ;
+kg:heldIn res:country/Chile .
 
 res:coach/Miguel_Angel_Gamboa a kg:Coach ;
-    kg:manages res:team/Chile_Beach_Soccer_National_Team .
+kg:manages res:team/Chile_Beach_Soccer_National_Team .
 
 res:player/Orlando_Echeverria a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber "1"^^xsd:positiveInteger ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "1"^^xsd:positiveInteger ;
+kg:nationality res:country/Chile .
 
 res:player/Mauro_Abarca a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber "3"^^xsd:positiveInteger ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "3"^^xsd:positiveInteger ;
+kg:nationality res:country/Chile .
 
 res:player/Kevin_Flores a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber "4"^^xsd:positiveInteger ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "4"^^xsd:positiveInteger ;
+kg:nationality res:country/Chile .
 
 res:player/Jose_Prieto a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:shirtNumber "5"^^xsd:positiveInteger ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:shirtNumber "5"^^xsd:positiveInteger ;
+kg:nationality res:country/Chile .
 
 res:player/Fabian_Cabezas a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber "7"^^xsd:positiveInteger ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "7"^^xsd:positiveInteger ;
+kg:nationality res:country/Chile .
 
 res:player/Juan_Barraza a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber "8"^^xsd:positiveInteger ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "8"^^xsd:positiveInteger ;
+kg:nationality res:country/Chile .
 
 res:player/Sebastian_Vega a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber "9"^^xsd:positiveInteger ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "9"^^xsd:positiveInteger ;
+kg:nationality res:country/Chile .
 
 res:player/Daniel_Duran a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:shirtNumber "10"^^xsd:positiveInteger ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:shirtNumber "10"^^xsd:positiveInteger ;
+kg:nationality res:country/Chile .
 
 res:player/Victor_Belaunde a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Forward ;
-    kg:shirtNumber "11"^^xsd:positiveInteger ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Forward ;
+kg:shirtNumber "11"^^xsd:positiveInteger ;
+kg:nationality res:country/Chile .
 
 res:player/Pablo_Rodriguez a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Goalkeeper ;
-    kg:shirtNumber "12"^^xsd:positiveInteger ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Goalkeeper ;
+kg:shirtNumber "12"^^xsd:positiveInteger ;
+kg:nationality res:country/Chile .
 
 res:player/Jean_Duran a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Defender ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Defender ;
+kg:nationality res:country/Chile .
 
 res:player/Sebastian_Bolivar a kg:Player ;
-    kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
-    kg:primaryPosition res:position/Midfielder ;
-    kg:nationality res:country/Chile .
+kg:playsFor res:team/Chile_Beach_Soccer_National_Team ;
+kg:primaryPosition res:position/Midfielder ;
+kg:nationality res:country/Chile .
 
 res:position/Goalkeeper a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Defender a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Midfielder a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:position/Forward a kg:Position ;
-    rdfs:subClassOf kg:Position .
+rdfs:subClassOf kg:Position .
 
 res:country/Chile a kg:Country .
