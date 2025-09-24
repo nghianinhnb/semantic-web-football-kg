@@ -1,4 +1,4 @@
-res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) a kg:Club
+res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh_2025 a kg:Club
 ; kg:teamName "Câu lạc bộ bóng đá Công an Thành phố Hồ Chí Minh"^^xsd:string
 ; kg:teamAbbreviation "CATPHCM"^^xsd:string
 ; kg:foundedDate "1975-11-01"^^xsd:date
@@ -9,20 +9,20 @@ res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) 
 ; kg:locatedIn res:city/Thành_phố_Hồ_Chí_Minh .
 res:stadium/Sân_vận_động_Thống_Nhất a kg:Stadium
 ; kg:capacity "15000"^^xsd:positiveInteger
-; kg:isHomeOf res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) .
+; kg:isHomeOf res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh_2025 .
 res:person/Lương_Đức_Minh a kg:Owner
-; kg:owns res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) .
+; kg:owns res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh_2025 .
 res:coach/Lê_Huỳnh_Đức a kg:Coach
-; kg:manages res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) .
+; kg:manages res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh_2025 .
 res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia_Việt_Nam (V.League 1) a kg:Competition
 ; kg:competitionName "Giải bóng đá Vô địch Quốc gia Việt Nam"^^xsd:string
 ; kg:organizedBy res:organization/Liên_đoàn_Bóng_đá_Việt_Nam .
 res:organization/Liên_đoàn_Bóng_đá_Việt_Nam a kg:Organization
 ; kg:organizes res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia_Việt_Nam (V.League 1) .
-res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) kg:participatesIn res:season/Mùa_giải_2024–25 .
+res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh_2025 kg:participatesIn res:season/Mùa_giải_2024–25 .
 res:season/Mùa_giải_2024–25 a kg:Season
 ; kg:seasonOf res:competition/Giải_bóng_đá_Vô_địch_Quốc_gia_Việt_Nam (V.League 1)
-; res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) kg:hasOwner res:person/Lương_Đức_Minh
+; res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh_2025 kg:hasOwner res:person/Lương_Đức_Minh
 ; kg:hasCoach res:coach/Lê_Huỳnh_Đức .
 res:person/Lương_Đức_Minh kg:name "Lương Đức Minh"^^xsd:string
 ; kg:locatedIn res:city/Thành_phố_Hồ_Chí_Minh .
@@ -31,4 +31,4 @@ res:coach/Lê_Huỳnh_Đức a kg:Coach
 ; kg:locatedIn res:city/Thành_phố_Hồ_Chí_Minh .
 res:city/Thành_phố_Hồ_Chí_Minh a kg:City
 ; kg:name "Thành phố Hồ Chí Minh"^^xsd:string .
-res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh (2025) kg:hasSeason res:season/Mùa_giải_2024–25 .
+res:club/Câu_lạc_bộ_bóng_đá_Công_an_Thành_phố_Hồ_Chí_Minh_2025 kg:hasSeason res:season/Mùa_giải_2024–25 .

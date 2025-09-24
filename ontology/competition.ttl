@@ -15,7 +15,7 @@ kg:Competition a owl:Class ;
 # Season
 kg:Season a owl:Class ;
   rdfs:label "Season"@en , "Mùa giải"@vi ;
-  rdfs:comment "Football season"@en ;
+  rdfs:comment "Football season"@en .
 
 kg:hasSeason a owl:ObjectProperty ;
   rdfs:label "has season"@en , "có mùa giải"@vi ;

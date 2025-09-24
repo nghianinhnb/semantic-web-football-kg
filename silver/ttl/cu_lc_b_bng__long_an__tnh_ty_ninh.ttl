@@ -1,4 +1,4 @@
-res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh a kg:teamName "Câu lạc bộ bóng đá Long An – tỉnh Tây Ninh"
+res:club/Long_An_Tây_Ninh a kg:teamName "Câu lạc bộ bóng đá Long An – tỉnh Tây Ninh"
 ; a kg:Club
 ; kg:foundedDate "2000-01-01"^^xsd:date
 ; kg:homeStadium res:stadium/Long+An
@@ -8,30 +8,30 @@ res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh a kg:teamName "Câu lạc bộ bóng
 ; kg:hasCoach res:coach/Trinh+Duy+Quang .
 res:stadium/Long+An a kg:Stadium
 ; kg:capacity 19975
-; kg:isHomeOf res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+; kg:isHomeOf res:club/Long_An_Tây_Ninh .
 res:owner/Cong+ty+co+phan+phat+triển+the+thao+Long+An a kg:Owner
-; kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+; kg:owns res:club/Long_An_Tây_Ninh .
 res:coach/Trinh+Duy+Quang a kg:Coach
-; kg:manages res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+; kg:manages res:club/Long_An_Tây_Ninh .
 res:season/Mua+g%E1%BA%ADi+2024–25 a kg:Season
 ; kg:seasonOf res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia
-; kg:participatesIn res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+; kg:participatesIn res:club/Long_An_Tây_Ninh .
 res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia a kg:Competition
 ; kg:competitionName "Giải bóng đá Hạng Nhất Quốc gia" .
-res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:participatesIn res:season/Mua+g%E1%BA%ADi+2024–25 .
-res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh kg:hasSeason res:season/Mua+g%E1%BA%ADi+2024–25
+res:club/Long_An_Tây_Ninh kg:participatesIn res:season/Mua+g%E1%BA%ADi+2024–25 .
+res:club/Long_An_Tây_Ninh kg:hasSeason res:season/Mua+g%E1%BA%ADi+2024–25
 ; kg:inCompetition res:competition/Giai+b%E1%BA%ABn+da+h%E1%BA%ADng+Nh%E1%BA%ADt+Qu%E1%BB%91c+gia .
 res:owner/Cong+ty+Co+Phan+Dong+Tam a kg:Owner
-; kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+; kg:owns res:club/Long_An_Tây_Ninh .
 res:owner/Cong+ty+TNHH+The+thao+Dong+Tam a kg:Owner
-; kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+; kg:owns res:club/Long_An_Tây_Ninh .
 res:owner/Cong+ty+Trach+nghiem+huu+hoi+Hoang+Phat a kg:Owner
-; kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+; kg:owns res:club/Long_An_Tây_Ninh .
 res:owner/Cong+ty+Co+Phan+Dong+Tam+Long+An a kg:Owner
-; kg:owns res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+; kg:owns res:club/Long_An_Tây_Ninh .
 res:stadium/Long+An a kg:Stadium
 ; kg:capacity 19975
-; kg:isHomeOf res:club/Long+An+-+t%E1%BB%99+T%C3%A2y+Ninh .
+; kg:isHomeOf res:club/Long_An_Tây_Ninh .
 res:competition/AFC+Champions+League+2006 a kg:Competition
 ; kg:competitionName "AFC Champions League 2006"
 ; kg:organizes res:season/Mua+g%E1%BA%ADi+2006 .

@@ -4,20 +4,29 @@ res:club/Cần_Thơ a kg:Club
 ; kg:foundedDate "1976-01-01"^^xsd:date
 ; kg:homeStadium res:stadium/Cần_Thơ
 ; kg:hasOwner res:owner/Nguyễn_Thanh_Long .
+
 res:stadium/Cần_Thơ a kg:Stadium
 ; kg:capacity 30000
 ; kg:isHomeOf res:club/Cần_Thơ .
+
 res:owner/Nguyễn_Thanh_Long a kg:Owner
 ; kg:owns res:club/Cần_Thơ .
-res:club/Cần_Thơ kg:participatesIn res:season/2024
-; res:season/2024 a kg:Season
+
+res:club/Cần_Thơ kg:participatesIn res:season/2024 .
+
+res:season/2024 a kg:Season
 ; kg:seasonOf res:competition/Hạng_Ba_Que_Hiệp_Viet_Nam .
+
 res:competition/Hạng_Ba_Que_Hiệp_Viet_Nam a kg:Competition
 ; kg:competitionName "Giải bóng đá Hạng Ba Quốc gia Việt Nam" .
+
 res:club/Cần_Thơ kg:hasCoach res:coach/Vũ_Quang_Bảo .
+
 res:coach/Vũ_Quang_Bảo a kg:Coach
 ; kg:manages res:club/Cần_Thơ .
+
 res:club/Cần_Thơ kg:locatedIn res:city/Cần_Thơ .
+
 res:city/Cần_Thơ a kg:City
 ; kg:locatedIn res:country/Viet_Nam .
 res:country/Viet_Nam a kg:Country .
@@ -54,78 +63,79 @@ res:club/Cần_Thơ kg:hasPlayer res:player/Võ_Anh_Quốc
 ; kg:hasPlayer res:player/Nguyễn_Hồ_Hồng_Phú
 ; kg:hasPlayer res:player/Trần_Thanh_Hiệp
 ; kg:hasPlayer res:player/Bùi_Đăng_Quang .
+
 res:player/Võ_Anh_Quốc a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+; kg:primaryPosition kg:Goalkeeper .
 res:player/Huỳnh_Phương_Nam a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender .
 res:player/TRẦN_VĂN_TRIỆU a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender .
 res:player/Phùng_Quốc_Huy a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender .
 res:player/Đinh_Công_Lý a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender .
 res:player/Pham_Thanh_Danh a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Nguyễn_Đặng_Chí_Năng a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender .
 res:player/Nguyễn_Xuân_Trường_Thịnh a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Lê_Nhật_Hào a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Forward "UNKNOWN" .
+; kg:primaryPosition kg:Forward .
 res:player/Giang_Minh_Nhã a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender .
 res:player/Trương_Phú_Qui a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Forward "UNKNOWN" .
+; kg:primaryPosition kg:Forward .
 res:player/Lê_Huỳnh_Trung_Hiếu a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Trần_Đàm_Phúc_Thịnh a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Danh_Oai a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Forward "UNKNOWN" .
+; kg:primaryPosition kg:Forward .
 res:player/Lê_Tài_Nguyên a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Lê_Hoàng_Tỷ a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Lê_Nguyễn_Hoàng_Quân a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender .
 res:player/Phó_Trường_Phát a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender .
 res:player/Lê_Minh_Nghĩa a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender .
 res:player/Nguyễn_Hoàng_Sang a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender .
 res:player/Nguyễn_Minh_Trí a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Nguyễn_Hồ_Hồng_Phú a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+; kg:primaryPosition kg:Goalkeeper .
 res:player/Trần_Thanh_Hiệp a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+; kg:primaryPosition kg:Goalkeeper .
 res:player/Bùi_Đăng_Quang a kg:Player
 ; kg:playsFor res:team/Trẻ_Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:club/Cần_Thơ kg:hasPlayer res:player/Lương_Văn_Phước
 ; kg:hasPlayer res:player/Trình_Hận_Quốc_Bảo
 ; kg:hasPlayer res:player/Trương_Dương_Minh_Mẫn
@@ -149,43 +159,43 @@ res:club/Cần_Thơ kg:hasPlayer res:player/Lương_Văn_Phước
 ; kg:hasPlayer res:player/Dương_Văn_An .
 res:player/Lương_Văn_Phước a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Trình_Hận_Quốc_Bảo a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Trương_Dương_Minh_Mẫn a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Trương_Hữu_Nhã a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Mohamed_Koné a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Phan_Kim_Long a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Diego_Molares a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Paulo_Henrique_Baborsa a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/William_Dos_Santos a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Da_Silva a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Diabate_Souleymane a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Nguyễn_Huy_Hoàng a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Lê_Văn_Trương a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .
 res:player/Nguyễn_Thế_Anh a kg:Player
 ; kg:playsFor res:club/Cần_Thơ
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder .

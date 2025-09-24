@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  silk-workbench:
+    image: silkworkbench/silk-framework
+    container_name: silk-workbench
+    ports:
+      - "80:80"
+    volumes:
+      - C:\Users\nghia\.cache\silk-workbench-data:/opt/silk/workspace
+    depends_on:
+      - fuseki
+
+  fuseki:
+    image: stain/jena-fuseki
+    container_name: kg-football-fuseki
+    ports:
+      - "3030:3030"
+    environment:
+      - ADMIN_PASSWORD=admin
+      - FUSEKI_DATASET=football 
+      - FUSEKI_MEM=1
+    volumes:
+      - C:\Users\nghia\.cache\fuseki-data:/fuseki

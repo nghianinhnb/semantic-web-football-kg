@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
-import argparse
 import os
 import sys
 import time
-from urllib.parse import quote
 
 import re
 import requests
@@ -47,8 +45,9 @@ def ensure_prefixes(content: bytes) -> bytes:
     return PREFIX_HEADER + content
 
 
-def load_ttl_file(base_url: str, dataset: str, ttl_path: str, graph_uri: str, admin_user: str | None = None, admin_pass: str | None = None) -> None:
-    update_url = f"{base_url}/{dataset}/data?graph={quote(graph_uri, safe=':/#?=&') }"
+def load_ttl_file(base_url: str, dataset: str, ttl_path: str, admin_user: str | None = None, admin_pass: str | None = None) -> None:
+    # Always load into default graph
+    update_url = f"{base_url}/{dataset}/data"
     with open(ttl_path, "rb") as f:
         data_bytes = ensure_prefixes(f.read())
         # Replace prefixed res:LOCAL with full IRI if LOCAL contains invalid chars like '/'
@@ -68,51 +67,70 @@ def load_ttl_file(base_url: str, dataset: str, ttl_path: str, graph_uri: str, ad
         auth = (admin_user, admin_pass) if admin_user or admin_pass else None
         resp = requests.post(update_url, data=data_bytes, headers=headers, auth=auth)
         if resp.status_code not in (200, 201, 204):
-            raise RuntimeError(f"Failed to load {ttl_path} into {graph_uri}: {resp.status_code} {resp.text}")
+            raise RuntimeError(f"Failed to load {ttl_path} into default graph: {resp.status_code} {resp.text}")
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Load TTL files into Fuseki as named graphs")
-    parser.add_argument("--fuseki", default="http://localhost:3030", help="Fuseki base URL")
-    parser.add_argument("--dataset", default="football", help="Dataset name")
-    parser.add_argument("--ttl_dir", default=os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "silver", "ttl")), help="Directory of TTL files")
-    parser.add_argument("--graph_base", default="http://kg.local/silver/", help="Base URI for named graphs")
-    parser.add_argument("--admin_user", default="admin", help="Fuseki admin user")
-    parser.add_argument("--admin_pass", default="admin", help="Fuseki admin password")
-    args = parser.parse_args()
-
-    ttl_dir = os.path.abspath(args.ttl_dir)
-    if not os.path.isdir(ttl_dir):
-        print(f"TTL directory not found: {ttl_dir}", file=sys.stderr)
-        sys.exit(1)
+    # Fixed configuration: always load to default graph of local dataset "football"
+    base_url = "http://localhost:3030"
+    dataset = "football"
+    admin_user = "admin"
+    admin_pass = "admin"
+    
+    # Load ontology first, then data
+    ontology_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "ontology"))
+    ttl_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "silver", "ttl"))
 
     # Create dataset if missing
-    ensure_dataset(args.fuseki, args.dataset, args.admin_user, args.admin_pass)
+    ensure_dataset(base_url, dataset, admin_user, admin_pass)
 
-    files = [f for f in os.listdir(ttl_dir) if f.endswith('.ttl')]
-    files.sort()
-    errors: list[tuple[str, str]] = []
-    ok_count = 0
-    for filename in tqdm(files, desc="Loading TTL into Fuseki"):
-        path = os.path.join(ttl_dir, filename)
-        name_no_ext = os.path.splitext(filename)[0]
-        graph_uri = f"{args.graph_base}{name_no_ext}"
-        try:
-            load_ttl_file(args.fuseki, args.dataset, path, graph_uri, args.admin_user, args.admin_pass)
-            ok_count += 1
-        except Exception as ex:  # noqa: BLE001
-            errors.append((filename, str(ex)))
-        # brief sleep to avoid overwhelming endpoint
-        time.sleep(0.02)
+    all_errors: list[tuple[str, str]] = []
+    total_ok = 0
 
+    # Step 1: Load ontology files first
+    if os.path.isdir(ontology_dir):
+        print("Loading ontology files...")
+        ontology_files = [f for f in os.listdir(ontology_dir) if f.endswith('.ttl')]
+        ontology_files.sort()
+        
+        for filename in tqdm(ontology_files, desc="Loading Ontology"):
+            path = os.path.join(ontology_dir, filename)
+            try:
+                load_ttl_file(base_url, dataset, path, admin_user, admin_pass)
+                total_ok += 1
+            except Exception as ex:  # noqa: BLE001
+                all_errors.append((f"ontology/{filename}", str(ex)))
+            time.sleep(0.02)
+    else:
+        print(f"Warning: Ontology directory not found: {ontology_dir}")
+
+    # Step 2: Load data files
+    if os.path.isdir(ttl_dir):
+        print("Loading data files...")
+        data_files = [f for f in os.listdir(ttl_dir) if f.endswith('.ttl')]
+        data_files.sort()
+        
+        for filename in tqdm(data_files, desc="Loading Data"):
+            path = os.path.join(ttl_dir, filename)
+            try:
+                load_ttl_file(base_url, dataset, path, admin_user, admin_pass)
+                total_ok += 1
+            except Exception as ex:  # noqa: BLE001
+                all_errors.append((f"data/{filename}", str(ex)))
+            time.sleep(0.02)
+    else:
+        print(f"Warning: Data directory not found: {ttl_dir}")
+
+    # Generate report
     report_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "linking", "load_report.txt"))
     os.makedirs(os.path.dirname(report_path), exist_ok=True)
     with open(report_path, "w", encoding="utf-8") as rf:
-        rf.write(f"Loaded OK: {ok_count}\n")
-        rf.write(f"Failed: {len(errors)}\n")
-        for fname, msg in errors:
+        rf.write(f"Loaded OK: {total_ok}\n")
+        rf.write(f"Failed: {len(all_errors)}\n")
+        for fname, msg in all_errors:
             rf.write(f"- {fname}: {msg}\n")
-    print(f"Done. OK={ok_count}, Failed={len(errors)}. Report: {report_path}")
+    
+    print(f"Done. OK={total_ok}, Failed={len(all_errors)}. Report: {report_path}")
 
 
 if __name__ == "__main__":

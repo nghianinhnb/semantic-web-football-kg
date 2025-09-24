@@ -5,7 +5,7 @@ res:club/An+Giang a kg:Club
 ; kg:foundedDate "2010-01-01"^^xsd:date
 ; kg:homeStadium res:stadium/Yet+Kieu
 ; kg:hasSeason res:season/2024
-; kg:participatesIn res:competition/V.League+2 .
+; kg:participatesIn res:V_League_2 .
 res:stadium/Yet+Kieu a kg:Stadium
 ; kg:capacity 0
 ; kg:isHomeOf res:club/An+Giang .
@@ -13,93 +13,93 @@ res:city/Long+Xuyen a kg:City
 ; kg:locatedIn res:country/Viet+Nam .
 res:country/Viet+Nam a kg:Country .
 res:season/2024 a kg:Season
-; kg:seasonOf res:competition/V.League+2 .
-res:competition/V.League+2 a kg:Competition
+; kg:seasonOf res:V_League_2 .
+res:V_League_2 a kg:Competition
 ; kg:competitionName "V.League 2" .
 res:player/Nguyen+Manh+Cuong a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+; kg:primaryPosition kg:Goalkeeper  .
 res:player/Vo+Nguyen+Phuong+Duy a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender  .
 res:player/Nguyen+Phan+The+Lam a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender  .
 res:player/Vo+Hoang+Uy a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder  .
 res:player/Vo+Dinh+Lam a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder  .
 res:player/Pham+Ngo+Tan+Tai a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Forward "UNKNOWN" .
+; kg:primaryPosition kg:Forward  .
 res:player/Ha+Kien+Cuong a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Forward "UNKNOWN" .
+; kg:primaryPosition kg:Forward  .
 res:player/Nguyen+Van+Van a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder  .
 res:player/Le+TuAN+Anh a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder  .
 res:player/Nguyen+Ngoc+Son a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder  .
 res:player/Nguyen+Van+Vinh a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Forward "UNKNOWN" .
+; kg:primaryPosition kg:Forward  .
 res:player/Mai+Le+Trung+Kien a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder  .
 res:player/Truong+Van+Du a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder  .
 res:player/Vo+Van+Cong a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder  .
 res:player/Vo+Van+Huy a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender  .
 res:player/Nguyen+CAo+Vy a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender  .
 res:player/Radostin+Nguyen a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder  .
 res:player/Nguyen+Van+Trong a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender  .
 res:player/Nguyen+Tri+Tan a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender  .
 res:player/Tong+Van+Hop a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder  .
 res:player/Ngo+Kim+Long a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender  .
 res:player/Pham+Hoang+Dang a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+; kg:primaryPosition kg:Goalkeeper  .
 res:player/Duan+Thanh+Nha a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Goalkeeper "UNKNOWN" .
+; kg:primaryPosition kg:Goalkeeper  .
 res:player/Le+Huu+Phuc a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Midfielder "UNKNOWN" .
+; kg:primaryPosition kg:Midfielder  .
 res:player/Nguyen+Kim+Nhat a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Forward "UNKNOWN" .
+; kg:primaryPosition kg:Forward  .
 res:player/Nguyen+Hoang+Duy a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender  .
 res:player/Au+Duong+Quan a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Defender "UNKNOWN" .
+; kg:primaryPosition kg:Defender  .
 res:player/Duong+Gia+Bao a kg:Player
 ; kg:playsFor res:club/An+Giang
-; kg:primaryPosition kg:Forward "UNKNOWN" .
+; kg:primaryPosition kg:Forward  .
 res:coach/Pham+Huy+Ky a kg:Coach
 ; kg:manages res:club/An+Giang .
 res:coach/To+Ba+Nhan a kg:Coach

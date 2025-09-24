@@ -1,4 +1,4 @@
-res:club/Lâm_Đồng_F.C. a kg:Club
+res:club/Lâm_Đồng_FC a kg:Club
 ; kg:teamName "Câu lạc bộ bóng đá Lâm Đồng"
 ; kg:foundedDate "1990-01-01"^^xsd:date
 ; kg:homeStadium res:stadium/Sân_vận_động_Đà_Lạt
@@ -6,16 +6,16 @@ res:club/Lâm_Đồng_F.C. a kg:Club
 ; kg:participatesIn res:season/2025 .
 res:stadium/Sân_vận_động_Đà_Lạt a kg:Stadium
 ; kg:capacity 20000
-; kg:isHomeOf res:club/Lâm_Đồng_F.C. .
+; kg:isHomeOf res:club/Lâm_Đồng_FC .
 res:coach/Nguyễn_Trung_Kiên a kg:Coach
-; kg:manages res:club/Lâm_Đồng_F.C. .
+; kg:manages res:club/Lâm_Đồng_FC .
 res:coach/Đoàn_Quốc_Việt a kg:Coach
-; kg:manages res:club/Lâm_Đồng_F.C. .
+; kg:manages res:club/Lâm_Đồng_FC .
 res:competition/Giải_hạng_nhì a kg:Competition
 ; kg:competitionName "Giải bóng đá hạng Nhì Quốc gia Việt Nam" .
 res:season/2025 a kg:Season
 ; kg:seasonOf res:competition/Giải_hạng_nhì .
-res:club/Lâm_Đồng_F.C. kg:participatesIn res:season/2025 .
+res:club/Lâm_Đồng_FC kg:participatesIn res:season/2025 .
 res:player/Thân_Thái_Đạt a kg:Player
 ; kg:playsFor res:club/Lâm_Đồng_F.C .
 res:player/Phùng_Khắc_Nhất a kg:Player
