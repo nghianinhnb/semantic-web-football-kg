@@ -1,16 +1,10 @@
-#!/usr/bin/env python3
-"""
-Script để xử lý file alignment_players.ttl (external linking),
-lọc các cặp entity có measure >= 0.96 và < 1.0,
-và tạo các triple owl:sameAs để đẩy lên Fuseki.
-"""
-
 import os
 import sys
 import xml.etree.ElementTree as ET
-from typing import List, Tuple
+from typing import List, Tuple, Optional
 import requests
 from tqdm import tqdm
+import argparse
 
 
 def parse_alignment_ttl(file_path: str, threshold: float = 0.96) -> List[Tuple[str, str, float]]:
@@ -76,14 +70,11 @@ def generate_owl_sameas_ttl(matches: List[Tuple[str, str, float]], threshold: fl
         "@prefix schema: <http://schema.org/> .\n"
         "@prefix kg: <https://kg-football.vn/ontology#> .\n"
         "@prefix res: <https://kg-football.vn/resource/> .\n\n"
-        f"# Các triple owl:sameAs từ external linking với measure >= {threshold}\n\n"
     )
 
     lines = [header]
     for entity1, entity2, measure in matches:
-        lines.append(f"# Measure: {measure}")
-        lines.append(f"<{entity1}> owl:sameAs <{entity2}> .")
-        lines.append(f"<{entity2}> owl:sameAs <{entity1}> .\n")
+        lines.append(f"<{entity1}> owl:sameAs <{entity2}> .\n")
 
     return "\n".join(lines)
 
@@ -100,7 +91,7 @@ def ensure_dataset(base_url: str, dataset: str, admin_user: str, admin_pass: str
         raise RuntimeError(f"Cannot create dataset {dataset}: {resp.status_code} {resp.text}")
 
 
-def load_ttl_to_fuseki(base_url: str, dataset: str, ttl_content: str, admin_user: str | None = None, admin_pass: str | None = None) -> None:
+def load_ttl_to_fuseki(base_url: str, dataset: str, ttl_content: str, admin_user: Optional[str] = None, admin_pass: Optional[str] = None) -> None:
     update_url = f"{base_url}/{dataset}/data"
     data_bytes = ttl_content.encode("utf-8")
     headers = {"Content-Type": "text/turtle"}
@@ -115,16 +106,24 @@ def main() -> None:
     dataset = "football"
     admin_user = "admin"
     admin_pass = "admin"
-    threshold = 0.7
+
+    # CLI args
+    parser = argparse.ArgumentParser(description="Upload owl:sameAs triples to Fuseki from alignment TTL file")
+    default_input = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "linking", "links", "internal_linking.ttl"))
+    parser.add_argument("-f", "--file", dest="input_path", default=default_input, help="Đường dẫn tới file alignment TTL để upload")
+    parser.add_argument("-t", "--threshold", dest="threshold", type=float, default=0.7, help="Ngưỡng measure tối thiểu để chọn cặp entity")
+    args = parser.parse_args()
+
+    threshold = args.threshold
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    input_path = os.path.abspath(os.path.join(script_dir, "..", "..", "linking", "links", "external_linking.ttl"))
+    input_path = args.input_path
 
     if not os.path.exists(input_path):
         print(f"Lỗi: Không tìm thấy file {input_path}")
         sys.exit(1)
 
-    print("Bước 1: Đang parse file alignment_players.ttl...")
+    print(f"Bước 1: Đang parse file: {input_path} ...")
     matches = parse_alignment_ttl(input_path, threshold)
 
     if not matches:

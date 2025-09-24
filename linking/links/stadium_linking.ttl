@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+    xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+    xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+    xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'>
+<Alignment>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/NationalStadiumDili"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Beijing_National_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4539473684210531</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/National_Stadium_Bahrain"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Beijing_National_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.12499999999999978</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Robina_Stadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Robinson_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.04761904761904767</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Robina_Stadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Rodina_Stadium_(Khimki)"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.23809523809523825</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Hong_Kong_Stadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Hong_Kong_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.529411764705882</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/GhaziStadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Ghazi_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8461538461538467</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Roazhon_Park"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Roazhon_Park"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6666666666666659</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Melbourne_Rectangular_Stadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Melbourne_Rectangular_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7241379310344824</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Ghazi_Stadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Ghazi_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6923076923076927</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Coxs_Bazar_Stadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Cox's_Bazar_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.37231968810916194</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Antonis_Papadopoulos"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Antonis_Papadopoulos_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2571428571428571</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Zentralstadion"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Zentralstadion_(1956)"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/NationalStadiumDili"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Zosimades_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.003759398496240851</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Cairo%20International%20Stadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Cairo_International_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.46475507765830315</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Windsor_Park"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Windsor_Park"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6666666666666659</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Allianz_Riviera"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Allianz_Riviera"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7333333333333336</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Addis_Ababa_Stadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Addis_Ababa_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5789473684210533</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Adelaide_Oval"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Adelaide_Oval"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6923076923076927</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Estadio_Monumental"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Estadio_Chihuahua"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.10317460317460281</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Estadio_Monumental"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Estadio_Monumental_%22U%22"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7777777777777775</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Estadio_Monumental"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Estadio_Monumental_David_Arellano"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7777777777777775</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Estadio_Monumental"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Estadio_Monumental_de_Maturín"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.061302681992337016</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Jalan_Besar_Stadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Jalan_Besar_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5789473684210533</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Sports_Stadium_Batumi"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Sports_Stadium,_Berhampur"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.09523809523809512</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Bahir_Dar_Stadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Bahir_Dar_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.529411764705882</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/Changlimithang_Stadium"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/Changlimithang_Stadium"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8181818181818183</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/NationalStadiumDili"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/National_Stadium_(Kaohsiung)"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4539473684210531</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/NationalStadiumDili"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/National_Stadium_(Thailand)"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4539473684210531</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/NationalStadiumDili"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/National_Stadium,_Lagos"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.4539473684210531</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/National_Stadium_Bahrain"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/National_Stadium_(Kaohsiung)"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.12499999999999978</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/National_Stadium_Bahrain"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/National_Stadium_(Thailand)"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.12499999999999978</measure>
+      </Cell>
+    </map>
+<map>
+      <Cell>
+          <entity1 rdf:resource="https://kg-football.vn/resource/stadium/National_Stadium_Bahrain"/>
+          <entity2 rdf:resource="http://dbpedia.org/resource/National_Stadium,_Lagos"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.12499999999999978</measure>
+      </Cell>
+    </map>
+</Alignment>
+</rdf:RDF>
